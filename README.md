@@ -197,7 +197,8 @@ project does not claim it.
 
 ## Status
 
-Usable work in progress, on QtWebEngine: browsing with tabs (placed top, bottom, left or right), profiles of
+Usable work in progress, on QtWebEngine: browsing with tabs (placed top, bottom, left or right; a tab moves to a window of its own from its right-click menu or by
+dragging it off the strip), profiles of
 isolated data with a Chrome-like popup of tiles, installed web apps and their tile page, downloads with a folder of
 your choice, zoom per site, find-in-page, per-site protection switch, automatic rejection of cookie dialogs, Burn,
 68 interface languages. Not built yet: the fingerprint and GPC protection, the Tor window, permission prompts,

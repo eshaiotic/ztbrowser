@@ -792,6 +792,9 @@ msgstr "Общ публичен лиценз на GNU (GNU GPL), версия 3 
 msgid "Apache License, Version 2.0"
 msgstr "Лиценз на Apache, версия 2.0"
 
+msgid "Move to New Window"
+msgstr "Преместване в нов прозорец"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Публичен лиценз на Mozilla, версия 2.0"
 

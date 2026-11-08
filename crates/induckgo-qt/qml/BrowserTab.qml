@@ -6,6 +6,9 @@ import io.induckgo.browser
 // One page: a Chromium view with the scripts every page gets.
 WebEngineView {
     id: view
+    /// The window that holds this tab; it changes when the tab moves to another window, and the tab's requests
+    /// (open a link in a new tab, answer the apps page) go to the window that holds it now.
+    property var owner: null
     property string startAddress
     property string smoothWheelSource
     property string extensionPromptSource

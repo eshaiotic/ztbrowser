@@ -792,6 +792,9 @@ msgstr "《GNU 通用公眾授權條款 3.0》或更新版本"
 msgid "Apache License, Version 2.0"
 msgstr "《Apache 授權條款 2.0》"
 
+msgid "Move to New Window"
+msgstr "移至新視窗"
+
 msgid "Mozilla Public License 2.0"
 msgstr "《Mozilla 公眾授權條款 2.0》"
 

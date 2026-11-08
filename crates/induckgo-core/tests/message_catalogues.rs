@@ -1,7 +1,7 @@
 //! Every language's catalogue holds exactly the messages the code uses, so no screen mixes two languages.
 //!
 //! The code's messages are found in the sources (`tr!("...")` in the application, `catalogue.text("...")` in this
-//! crate). `locales/template.pot` lists them for translators; run
+//! crate, `bridge.message("...")` in the Qt edition's QML files). `locales/template.pot` lists them for translators; run
 //! `INDUCKGO_BLESS_TEMPLATE=1 cargo test -p induckgo-core --test message_catalogues` after adding or changing a
 //! message to rewrite it.
 
@@ -42,6 +42,18 @@ impl CatalogueScenario {
                     messages.insert(Self::unescape_rust(&capture[1]));
                 }
             });
+        }
+        let qml_pattern = Regex::new(r#"\bbridge\.message\(\s*"((?:[^"\\]|\\.)*)""#).expect("a valid pattern");
+        let qml_directory = self.root.join("induckgo-qt/qml");
+        for entry in fs::read_dir(&qml_directory).expect("a readable QML directory").filter_map(Result::ok) {
+            if entry.path().extension().is_some_and(|extension| extension == "qml") {
+                let source = fs::read_to_string(entry.path()).expect("a readable QML file");
+                let code: String =
+                    source.lines().filter(|line| !line.trim_start().starts_with("//")).collect::<Vec<_>>().join("\n");
+                for capture in qml_pattern.captures_iter(&code) {
+                    messages.insert(Self::unescape_rust(&capture[1]));
+                }
+            }
         }
         messages
     }

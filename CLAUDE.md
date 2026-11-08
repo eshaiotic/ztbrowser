@@ -26,7 +26,7 @@ This file is an index; the content lives in the linked documents.
 
 ## Plans
 
-- [Window start-up optimizations](docs/en/plans/2026-11-06-window-startup-optimizations-plan.md) — measured start times, what is done, six candidate optimizations (not approved), measurement protocol. New start-up ideas are added here.
+- [Window start-up optimizations](docs/en/plans/2026-11-06-window-startup-optimizations-plan.md) — requirement: first frame under 0.3 s; measured start times and floors, what is done, six candidates (not approved), measurement protocol. New start-up ideas are added here.
 - [Optymalizacje startu okna (PL)](docs/pl/plans/2026-11-06-window-startup-optimizations-plan.md) — polish mirror of the start-up plan.
 
 ## Reports
@@ -67,4 +67,5 @@ This file is an index; the content lives in the linked documents.
 - Changing Guard's list conversion (or upgrading `adblock`): bump `GuardRuleList::CONVERSION_REVISION`, else old compiled lists stay.
 - Manual GUI runs: isolate `XDG_DATA_HOME`/`XDG_CACHE_HOME`/`XDG_CONFIG_HOME` so the user's real profiles stay untouched.
 - Tor window (`--tor`): never let it load before Tor is connected or fall back to a direct connection (architecture §4.1).
+- Qt edition icons: never rely on `icon.color` of a Controls button (Plasma's Breeze style ignores it for plain SVGs, so icons vanish on a dark bar); draw them with `TintedIcon` (`IconButton` does; test `tests/icon_button_tinting.rs`).
 - Qt edition: every Chromium connection goes through the in-process gate proxy (`--proxy-server`), so `--host-resolver-rules` does nothing; a test or tool that must reach a fake host names it through `http_proxy`/`https_proxy` (see `tests/tracker_blocking.rs`).

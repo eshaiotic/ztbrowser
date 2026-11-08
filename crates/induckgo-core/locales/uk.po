@@ -792,6 +792,9 @@ msgstr "Загальна громадська ліцензія GNU (GNU GPL), в
 msgid "Apache License, Version 2.0"
 msgstr "Ліцензія Apache, версія 2.0"
 
+msgid "Move to New Window"
+msgstr "Перемістити в нове вікно"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Громадська ліцензія Mozilla 2.0"
 

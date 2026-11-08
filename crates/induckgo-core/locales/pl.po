@@ -792,6 +792,9 @@ msgstr "Licencja GNU GPL, wersja 3 lub późniejsza"
 msgid "Apache License, Version 2.0"
 msgstr "Licencja Apache w wersji 2.0"
 
+msgid "Move to New Window"
+msgstr "Przenieś do nowego okna"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Licencja publiczna Mozilli 2.0"
 

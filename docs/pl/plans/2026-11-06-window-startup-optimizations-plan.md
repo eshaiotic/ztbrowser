@@ -1,7 +1,7 @@
 # Optymalizacje startu okna — plan
 
-**Status:** propozycje. Nic z sekcji 1–6 nie jest zatwierdzone ani rozpoczęte; wdrożenie danej sekcji zaczyna się
-dopiero po wyraźnej akceptacji. Angielski oryginał: `docs/en/plans/2026-11-06-window-startup-optimizations-plan.md`.
+**Status:** propozycje. **Wymaganie (właściciel, 2026-11-06): okno pojawia się w mniej niż 0,3 s.** Nic z sekcji 1–6
+nie jest zatwierdzone ani rozpoczęte; wdrożenie danej sekcji zaczyna się dopiero po wyraźnej akceptacji. Angielski oryginał: `docs/en/plans/2026-11-06-window-startup-optimizations-plan.md`.
 
 ## Problem, prostymi słowami
 
@@ -43,12 +43,45 @@ ochrony (żeby nie liczyć pobierania przy pierwszym starcie):
 | AppImage 1.2.3 z `dist/` | 4 | 1,73 s | 1,23–2,12 s |
 
 Wcześniej tego samego dnia, w innej serii: paczka 0,61 s, AppImage 1,47 s, a *te same pliki rozpakowane do katalogu*
-0,65 s. Puste okno Qt Quick otwiera się w 176–275 ms (`docs/pl/reports/performance-analysis.md` §4.2, zmierzone przy
-decyzji o migracji), więc około 0,45 s startu paczki to praca InDuckGo lub Chromium.
+0,65 s. Samo okno Qt Quick otwiera się w 0,11 s, a okno z pustym widokiem www w 0,50 s (sekcja o wymaganiu niżej; 176–275 ms
+z `docs/pl/reports/performance-analysis.md` §4.2 to starszy pomiar porównania z czasów GTK), więc około 0,6 s startu
+paczki to więcej, niż potrzebuje gołe okno, i około 0,2 s więcej niż potrzebuje gołe okno z widokiem www.
 **Jeszcze nie zmierzono:** startu przez launcher KDE, drugiego uruchomienia, które tylko przekazuje adres do działającej
 instancji, ani tego, gdzie w tych 0,72 s ucieka czas (sekcja 1).
 
 ![Start okna: ścieżka krytyczna i miejsca, w których działają planowane prace](../../assets/diagrams/plan-window-startup-critical-path.pl.svg)
+
+## Wymaganie: poniżej 0,3 s
+
+Właściciel wymaga startu poniżej **0,3 s**. Plan rozumie to jako **czas do pierwszej klatki** (miara ze stanu
+wyjściowego), a nie czas do ukazania się strony; strona nie może pojawić się tak wcześnie (zob. niżej). Proszę
+potwierdzić lub poprawić tę interpretację, zanim sekcja 3 zostanie zatwierdzona.
+
+**Czy to osiągalne? Zmierzone dolne granice** (2026-11-06, ten sam protokół co stan wyjściowy, po 6 uruchomień,
+program `qml6` z Qt, więc to dolne granice, a nie prognozy dla własnego kodu startu InDuckGo):
+
+| Minimalny program | Mediana | Zakres |
+|---|---|---|
+| Samo okno Qt Quick | 0,11 s | 0,10–0,15 s |
+| Okno z pustym `WebEngineView` (`about:blank`) | 0,50 s | 0,33–0,54 s |
+| InDuckGo, paczka Arch (stan wyjściowy wyżej) | 0,72 s | 0,55–0,89 s |
+
+Co z tego wynika:
+
+1. **Sam QtWebEngine kosztuje około 0,4 s**, zanim okno, które go zawiera, pokaże pierwszą klatkę. Pierwsza klatka
+   czekająca na widok www nie zmieści się więc w 0,3 s, choćby cała reszta była dopracowana; InDuckGo jest już tylko
+   około 0,2 s ponad gołym oknem z widokiem www.
+2. **Cel jest osiągalny tylko przez pokazanie okna najpierw i uruchomienie silnika www za nim** — pojawia się pasek
+   narzędzi i pasek kart, obszar treści jest jeszcze pusty. To sekcja 3, którą cel zamienia z opcji w główną pracę.
+   Budżet na wszystko, co jest na drodze do tej pierwszej klatki (exec i dynamiczne łączenie dużych bibliotek
+   Chromium, Qt, nasz QML, sprawdzenie jednej instancji), to około 0,3 − 0,11 ≈ 0,19 s; sekcja 1 musi zmierzyć, ile
+   z tego zużywa dziś.
+3. **Strona i tak pojawi się później**, po instalacji polityk i utworzeniu widoku www (według powyższej dolnej
+   granicy około 0,5 s lub więcej). Plan śledzi *czas do strony* jako drugą liczbę obok pierwszej klatki, żeby cel
+   nigdy nie został osiągnięty przez ukrycie oczekiwania.
+4. **AppImage nie osiągnie 0,3 s żadną dotąd zmierzoną opcją** (najlepiej: 0,65 s z rozpakowanymi plikami, sekcja 5).
+   Czy start z oknem na pierwszym miejscu usuwa też z drogi do pierwszej klatki koszt montowania i rozpakowywania
+   AppImage, nie jest zmierzone. Dopóki nie jest, wymaganie odnosi się do paczek.
 
 ## Już zrobione
 
@@ -81,9 +114,11 @@ pierwsza klatka — i wypisywać je, gdy poprosi o to zmienna środowiskowa. Pom
 wyjściowego, zamienić w małe, zatwierdzone narzędzie deweloperskie obok `induckgo-test-report`, żeby każdą kolejną
 liczbę dało się odtworzyć.
 
-**Dlaczego.** Stan wyjściowy mówi, że paczka potrzebuje około 0,45 s więcej niż puste okno Qt Quick, ale nie *gdzie*.
+**Dlaczego.** Stan wyjściowy mówi, że paczka potrzebuje około 0,6 s więcej niż samo okno Qt Quick, ale nie *gdzie*.
 Sekcje 2–4 są zgadywaniem, dopóki nie ma tego rozkładu, a zgadnięcie kroku poza ścieżką krytyczną niczego nie zmienia.
-Ta sekcja jest bramką dla 2, 3 i 4: każda z nich rusza tylko wtedy, gdy jej krok stanowi zauważalną część z 0,72 s.
+Ta sekcja jest bramką dla 2 i 4: każda rusza tylko wtedy, gdy jej krok stanowi zauważalną część drogi do pierwszej
+klatki. Sekcja 3 jest wymagana przez cel 0,3 s w każdym przypadku; rozkład powie, ile z budżetu 0,19 s jej zostaje.
+Dodaje też *czas do strony* jako drugi punkt.
 
 **Gotowe, gdy.** Tabela w raporcie wydajności pokazuje udział każdego punktu, z co najmniej dziesięciu uruchomień.
 
@@ -97,21 +132,28 @@ realny koszt, podzielić ją tak, by wątek roboczy mógł ruszyć wcześniej.
 **Ryzyko.** Spalenie danych musi nadal kończyć się, zanim cokolwiek otworzy pliki profilu; podział musi zachować tę
 kolejność.
 
-## 3. Tworzyć okno, gdy wątek roboczy jeszcze składa reguły
+## 3. Pokazać okno najpierw, stronę potem (wymagane dla celu 0,3 s)
 
-**Co.** Dziś okno powstaje po złączeniu, więc procesy renderera i GPU Chromium (diagram, dolny pas) startują nie
-wcześniej niż to. Po `open_profile` wątek główny mógłby tworzyć okno i pierwszy widok www, gdy wątek roboczy kończy,
-a wczytanie pierwszej strony zacząć dopiero po `install_policies`. Raport z czasów GTK proponował to samo ułożenie
-(`performance-analysis.md` §6, propozycja 2, „do 200 ms do strony”).
+**Co.** Dziś okno powstaje po złączeniu, więc pierwsza klatka czeka na profil Chromium, reguły i widok www. Nowa
+kolejność: Qt startuje, pokazywane jest okno **bez żadnego widoku www** (pasek narzędzi, pasek kart, pusty obszar
+treści — to pierwsza klatka), a dopiero potem `open_profile` działa obok wątku roboczego. Po złączeniu i
+`install_policies` powstaje pierwszy widok www (wtedy startują jego procesy renderera i GPU) i zaczyna się
+wczytywanie pierwszej strony. W QML widok www karty musi więc powstawać na żądanie (loader, który aplikacja włącza
+po `install_policies`), a nie być częścią okna od początku.
 
-**Ograniczenie.** Zysk istnieje tylko wtedy, gdy wątek roboczy jeszcze działa, kiedy wraca `open_profile`; sekcja 1
-powie, który z dwóch jest dłuższy. Profil musi być otwarty przed utworzeniem pierwszego widoku www, więc to nakłada
-się na ogon wątku roboczego, a nie na samo `open_profile`.
+**Dlaczego.** Zmierzone dolne granice (sekcja o wymaganiu) pokazują, że pierwsza klatka z widokiem www nie może być
+szybsza niż około 0,5 s, a gołe okno potrzebuje około 0,11 s. Raport z czasów GTK proponował ten sam pomysł z własnych
+powodów (`performance-analysis.md` §6, propozycja 2, „do 200 ms do strony”).
 
-**Ryzyko i reguła, która zostaje.** Dopóki polityki nie są zainstalowane, Chromium odrzuca każde żądanie, więc strona
-wczytana za wcześnie pokazałaby stronę błędu zamiast poczekać. Wczytanie trzeba *zacząć* po `install_policies`. Okno
-Tor nadal nie może niczego wczytać przed połączeniem z Tor, a pierwszy start nadal musi pobrać dane przed jakąkolwiek
-stroną.
+**Ryzyko i reguły, które zostają.** Dopóki polityki nie są zainstalowane, Chromium odrzuca każde żądanie, a okno do
+tego czasu nie ma widoku www, więc nic nie może się wczytać bez ochrony. Wczytanie pierwszej strony trzeba *zacząć*
+po `install_policies`; pierwszy start nadal musi pobrać dane przed jakąkolwiek stroną; okno Tor nadal nie może
+niczego wczytać przed połączeniem z Tor. Widoczne okno z pustym obszarem treści przez kilkaset milisekund to decyzja
+interfejsu: pusty obszar musi wyglądać na zamierzony (własne tło karty i już wypełniony pasek adresu), a nie na
+zepsuty, a Fire, wyszukiwanie, powiększenie i pobieranie nie mogą sięgać po widok www, którego jeszcze nie ma.
+
+**Gotowe, gdy.** Pierwsza klatka jest poniżej 0,3 s w rozkładzie z sekcji 1, a *czas do strony* nie jest gorszy niż
+dziś.
 
 ## 4. Sprawdzić, czy QML jest kompilowany z wyprzedzeniem
 
@@ -171,7 +213,8 @@ adresy). Może tu nie być nic do optymalizowania; dopóki nie zmierzono, raport
 ## Dziennik decyzji
 
 - Nakładanie wybrano, bo reguły i profil są niezależne i były dwoma najdłuższymi krokami wątku głównego.
-- Sekcje 2–4 są celowo zależne od sekcji 1: trzy prawdopodobne optymalizacje, żadna niezmierzona, to sposób, w jaki
-  start robi się bardziej skomplikowany, a nie szybszy.
+- Sekcja 3 jest wymagana przez cel 0,3 s, bo zmierzone dolne granice wykluczają każdą pierwszą klatkę czekającą na
+  widok www. Sekcje 2 i 4 pozostają zależne od sekcji 1: prawdopodobne optymalizacje, żadna niezmierzona, to sposób,
+  w jaki start robi się bardziej skomplikowany, a nie szybszy.
 - Sekcja 5 to wymiana miejsca na dysku za szybkość, którą może zrobić tylko właściciel; jest wypisana, by wybór był
   widoczny, a nie dlatego, że jest bezwarunkowo polecana.

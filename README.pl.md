@@ -203,7 +203,8 @@ tego nie twierdzi.
 
 ## Stan
 
-Projekt w toku, ale używalny, na QtWebEngine: karty (u góry, na dole, z lewej lub z prawej), profile z odizolowanymi
+Projekt w toku, ale używalny, na QtWebEngine: karty (u góry, na dole, z lewej lub z prawej; kartę można przenieść do osobnego okna z jej menu pod prawym przyciskiem
+myszy lub przeciągając ją poza pasek), profile z odizolowanymi
 danymi i kafelkowym oknem wyboru jak w Chrome, aplikacje webowe z kafelkową stroną, pobieranie do wybranego folderu,
 powiększenie osobno dla witryny, wyszukiwanie na stronie, przełącznik ochrony dla witryny, automatyczne odrzucanie
 okien zgody na cookies, Wymaż dane przeglądania, 68 języków interfejsu. Jeszcze nie ma: ochrony przed odciskiem

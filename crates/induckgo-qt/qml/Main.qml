@@ -79,10 +79,7 @@ ApplicationWindow {
     function plain(text) { return bridge.message(text).replace("_", "") }
 
     function openTab(address) {
-        const tab = tabComponent.createObject(tabStack, { startAddress: address || bridge.home_page() })
-        tab.openInNewTab.connect(function(target) { window.openTab(target) })
-        tab.urlChanged.connect(function() { window.applyZoom(tab) })
-        tab.appsLinkClicked.connect(window.answerAppsLink)
+        const tab = tabComponent.createObject(tabStack, { startAddress: address || bridge.home_page(), owner: window })
         tabList = tabList.concat([tab])
         currentIndex = tabList.length - 1
         if (!address) addressBar.forceActiveFocus()
@@ -128,10 +125,36 @@ ApplicationWindow {
 
     function closeTab(index) {
         if (tabList.length <= 1) { Qt.quit(); return }
+        releaseTab(index).destroy()
+    }
+
+    // The tab leaves this window's list; the page is kept alive for whoever takes it.
+    function releaseTab(index) {
         const tab = tabList[index]
         tabList = tabList.filter(function(_, position) { return position !== index })
         currentIndex = Math.min(index < currentIndex ? currentIndex - 1 : currentIndex, tabList.length - 1)
-        tab.destroy()
+        return tab
+    }
+
+    // A tab that came from another window of this process, page and history alive: the view is re-parented, so
+    // the page keeps its scroll position, its forms and its place in the history.
+    property var adoptedTab: null
+    function adoptTab(tab) {
+        tab.owner = window
+        tab.parent = tabStack
+        tabList = tabList.concat([tab])
+        currentIndex = tabList.length - 1
+        applyZoom(tab)
+    }
+
+    // The tab becomes the only tab of a window of its own. A window with one tab has nothing to give, and a web
+    // app is one window with one site.
+    readonly property bool canMoveTabs: tabList.length > 1 && !isWebApp
+    function moveTabToNewWindow(index) {
+        if (!canMoveTabs) return
+        const created = Qt.createComponent("qrc:/qt/qml/io/induckgo/browser/qml/Main.qml")
+        if (created.status !== Component.Ready) { toast(created.errorString()); return }
+        created.createObject(null, { adoptedTab: releaseTab(index) })
     }
 
     // Another window of the same profile: it shares the process, the protections and the downloads.
@@ -615,6 +638,8 @@ ApplicationWindow {
         closeTip: ""
         onSelected: function(index) { window.currentIndex = index }
         onCloseRequested: function(index) { window.closeTab(index) }
+        moveTip: bridge.message("Move to New Window")
+        onMoveRequested: function(index) { window.moveTabToNewWindow(index) }
     }
 
     // The frameless window is resized from its edges and corners.
@@ -641,13 +666,17 @@ ApplicationWindow {
     Component {
         id: tabComponent
         BrowserTab {
+            id: newTab
             smoothWheelSource: bridge.smooth_wheel_script()
             extensionPromptSource: bridge.duckduckgo_extension_prompt_script()
             resourceHintSource: bridge.resource_hint_blocking_script()
             cookieNoticeSource: bridge.cookie_notice_script()
-            guardSource: window.guardSource
+            guardSource: owner ? owner.guardSource : ""
             appBridge: webApps
-            keepsToSite: window.isWebApp
+            keepsToSite: owner ? owner.isWebApp : false
+            onOpenInNewTab: function(target) { owner.openTab(target) }
+            onUrlChanged: owner.applyZoom(newTab)
+            onAppsLinkClicked: function(address) { owner.answerAppsLink(address) }
         }
     }
 
@@ -847,6 +876,7 @@ ApplicationWindow {
 
     Component.onCompleted: {
         refreshCurrentProfile()
+        if (window.adoptedTab) { window.adoptTab(window.adoptedTab); return }
         if (window.isWebApp) { window.openTab(window.launch.webApp.startUrl); return }
         if (window.launch.addresses.length === 0) { window.openTab(""); return }
         window.launch.addresses.forEach(function(typed) { window.openTab(bridge.destination(typed)) })

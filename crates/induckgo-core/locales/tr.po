@@ -792,6 +792,9 @@ msgstr "GNU Genel Kamu Lisansı, sürüm 3 ya da sonrası"
 msgid "Apache License, Version 2.0"
 msgstr "Apache Lisansı, Sürüm 2.0"
 
+msgid "Move to New Window"
+msgstr "Yeni pencereye taşı"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Mozilla Kamu Lisansı 2.0"
 

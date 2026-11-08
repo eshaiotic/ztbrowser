@@ -792,6 +792,9 @@ msgstr "ГНУ Општа јавна дозвола, издање 3 или но�
 msgid "Apache License, Version 2.0"
 msgstr "Апачева дозвола, издање 2.0"
 
+msgid "Move to New Window"
+msgstr "Премести у нови прозор"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Мозилина јавна дозвола 2.0"
 

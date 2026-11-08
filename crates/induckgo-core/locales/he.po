@@ -792,6 +792,9 @@ msgstr "הרישיון הציבורי הכללי של גנו, גרסה 3 או כ
 msgid "Apache License, Version 2.0"
 msgstr "רישיון אפאצ'י, גרסה 2.0"
 
+msgid "Move to New Window"
+msgstr "העבר לחלון חדש"
+
 msgid "Mozilla Public License 2.0"
 msgstr "הרישיון הציבורי של מוזילה, גרסה 2.0"
 

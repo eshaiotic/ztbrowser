@@ -13,8 +13,17 @@ Rectangle {
     property string placement: "top"
     readonly property bool vertical: placement === "left" || placement === "right"
 
+    /// The words of the menu entry that moves a tab to a window of its own.
+    property string moveTip
+
     signal selected(int index)
     signal closeRequested(int index)
+    /// The tab at `index` is to become a window of its own: asked for by the tab's menu, or by dragging the tab
+    /// away from the strip.
+    signal moveRequested(int index)
+
+    /// How far (in pixels) a dragged tab must leave the strip, across its length, to become a window.
+    readonly property int tearOffDistance: 40
 
     color: palette.window
     implicitHeight: vertical ? 0 : 38
@@ -71,6 +80,31 @@ Rectangle {
                 TapHandler {
                     acceptedButtons: Qt.MiddleButton
                     onTapped: strip.closeRequested(tabItem.index)
+                }
+                TapHandler {
+                    acceptedButtons: Qt.RightButton
+                    onTapped: tabMenu.popup()
+                }
+                Menu {
+                    id: tabMenu
+                    MenuItem {
+                        text: strip.moveTip
+                        enabled: strip.tabs.length > 1
+                        onTriggered: strip.moveRequested(tabItem.index)
+                    }
+                }
+                // A tab dragged off the strip, along its width or height, leaves for a window of its own.
+                DragHandler {
+                    id: tearOff
+                    target: null
+                    acceptedButtons: Qt.LeftButton
+                    onActiveChanged: {
+                        if (active || strip.tabs.length < 2) return
+                        const at = strip.mapFromItem(null, centroid.scenePosition.x, centroid.scenePosition.y)
+                        const away = strip.vertical ? Math.max(-at.x, at.x - strip.width)
+                                                    : Math.max(-at.y, at.y - strip.height)
+                        if (away > strip.tearOffDistance) strip.moveRequested(tabItem.index)
+                    }
                 }
 
                 RowLayout {

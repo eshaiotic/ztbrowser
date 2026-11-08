@@ -792,6 +792,9 @@ msgstr "GNU Vispārīgā Publiskā Licence 3. versija vai jaunāka"
 msgid "Apache License, Version 2.0"
 msgstr "Apache license, 2.0 versija"
 
+msgid "Move to New Window"
+msgstr "Pārvietot uz jaunu logu"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Mozilla publiskā licence 2.0"
 

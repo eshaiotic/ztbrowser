@@ -792,6 +792,9 @@ msgstr "GNU Lesser General Public License Version 3"
 msgid "Apache License, Version 2.0"
 msgstr "Apache License, Version 2.0"
 
+msgid "Move to New Window"
+msgstr "ახალ ფანჯარაში გადატანა"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Mozilla Public License 2.0"
 

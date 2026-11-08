@@ -792,6 +792,9 @@ msgstr "نگارش ۳ یا بالاتر پروانهٔ جامع همگانی گ�
 msgid "Apache License, Version 2.0"
 msgstr "نگارش ۲٫۰ پروانهٔ آپاچی"
 
+msgid "Move to New Window"
+msgstr "انتقال به پنجره جدید"
+
 msgid "Mozilla Public License 2.0"
 msgstr "نگارش ۲٫۰ پروانهٔ همگانی موزیلا"
 

@@ -792,6 +792,9 @@ msgstr "Γενική δημόσια άδεια GNU, έκδοση 3 ή νεότε
 msgid "Apache License, Version 2.0"
 msgstr "Άδεια Apache, Έκδοση 2.0"
 
+msgid "Move to New Window"
+msgstr "Μετακίνηση σε νέο παράθυρο"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Δημόσια άδεια Mozilla 2.0"
 

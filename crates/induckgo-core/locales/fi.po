@@ -792,6 +792,9 @@ msgstr "GNU General Public -lisenssi (GPL), versio 3 tai myöhempi"
 msgid "Apache License, Version 2.0"
 msgstr "Apache-lisenssi, versio 2.0"
 
+msgid "Move to New Window"
+msgstr "Siirrä uuteen ikkunaan"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Mozilla Public -lisenssi 2.0"
 

@@ -1,7 +1,7 @@
 # Window start-up optimizations — plan
 
-**Status:** proposals. Nothing in sections 1–6 is approved or started; implementation begins only after explicit
-approval of the section it belongs to. Polish mirror: `docs/pl/plans/2026-11-06-window-startup-optimizations-plan.md`.
+**Status:** proposals. **Requirement (owner, 2026-11-06): the window appears in under 0.3 s.** Nothing in sections
+1–6 is approved or started; implementation begins only after explicit approval of the section it belongs to. Polish mirror: `docs/pl/plans/2026-11-06-window-startup-optimizations-plan.md`.
 
 ## The problem, in plain words
 
@@ -43,12 +43,45 @@ Time to first frame, interleaved runs, each with its own `XDG_*` directories and
 | AppImage 1.2.3 from `dist/` | 4 | 1.73 s | 1.23–2.12 s |
 
 Earlier the same day, with another set of runs: package 0.61 s, AppImage 1.47 s, and the *same files extracted to
-a directory* 0.65 s. An empty Qt Quick window opens in 176–275 ms (`docs/en/reports/performance-analysis.md` §4.2,
-measured for the migration decision), so about 0.45 s of the package's start is InDuckGo's own work or Chromium's.
+a directory* 0.65 s. A bare Qt Quick window opens in 0.11 s and one holding an empty web view in 0.50 s (requirement section below; the
+176–275 ms in `docs/en/reports/performance-analysis.md` §4.2 are an older measurement of the GTK-era comparison),
+so about 0.6 s of the package's start is more than a bare window needs and about 0.2 s more than a bare web-view window.
 **Not measured yet:** the start through KDE's launcher, a second launch that only forwards to the running
 instance, and where inside the 0.72 s the time goes (section 1).
 
 ![Window start-up: the critical path and where the planned work acts](../../assets/diagrams/plan-window-startup-critical-path.en.svg)
+
+## Requirement: under 0.3 s
+
+The owner requires a start below **0.3 s**. This plan reads that as the **time to first frame** (the metric of the
+baseline), not the time until a page is visible; the page cannot come that early (see below). Please confirm or
+correct this reading before section 3 is approved.
+
+**Is it reachable? Measured floors** (2026-11-06, same protocol as the baseline, 6 runs each, Qt's `qml6` runner,
+so these are floors and not predictions for InDuckGo's own start-up code):
+
+| Minimal program | Median | Range |
+|---|---|---|
+| A bare Qt Quick window | 0.11 s | 0.10–0.15 s |
+| A window holding an empty `WebEngineView` (`about:blank`) | 0.50 s | 0.33–0.54 s |
+| InDuckGo, Arch package (baseline above) | 0.72 s | 0.55–0.89 s |
+
+What follows from it:
+
+1. **QtWebEngine alone costs about 0.4 s** before a window that contains it can show its first frame. A first
+   frame that waits for the web view therefore cannot meet 0.3 s, however well everything else is tuned;
+   InDuckGo is already only about 0.2 s above a bare web-view window.
+2. **The target is reachable only by showing the window first and bringing the web engine up behind it** — the
+   toolbar and tab strip appear, the content area is still empty. That is section 3, which the target turns from an
+   option into the main work. The budget for everything on the way to that first frame (exec and dynamic linking
+   of the large Chromium libraries, Qt, our QML, the single-instance check) is about 0.3 − 0.11 ≈ 0.19 s; section 1
+   must measure how much of it is spent today.
+3. **The page will still appear later**, after the policies are installed and the web view exists (about 0.5 s or
+   more by the floor above). The plan tracks *time to page* as a second number next to the first frame, so that the
+   target is never met by hiding the wait.
+4. **The AppImage cannot meet 0.3 s with any option measured so far** (best: 0.65 s with the files extracted,
+   section 5). Whether a window-first start also removes the AppImage's mount-and-decompress cost from the path to
+   the first frame is not measured. Until it is, the requirement is read as applying to the packages.
 
 ## Already done
 
@@ -81,10 +114,11 @@ frame — and print them when an environment variable asks for it. Turn the Wayl
 baseline into a small committed developer tool next to `induckgo-test-report`, so every later number is
 reproducible by anyone.
 
-**Why.** The baseline says the package needs about 0.45 s more than an empty Qt Quick window, but not *where*.
+**Why.** The baseline says the package needs about 0.6 s more than a bare Qt Quick window, but not *where*.
 Sections 2–4 are guesses until this breakdown exists, and a guess that shortens a step off the critical path
-changes nothing. This section is the gate for 2, 3 and 4: each of them starts only if its step shows up as a
-meaningful share of the 0.72 s.
+changes nothing. This section is the gate for 2 and 4: each starts only if its step shows up as a meaningful share
+of the path to the first frame. Section 3 is required by the 0.3 s target in any case; the breakdown tells how much
+of the 0.19 s budget is left for it. It also adds *time to page* as a second milestone.
 
 **Done when.** A table in the performance report shows the share of every milestone, from at least ten runs.
 
@@ -97,20 +131,28 @@ as a real cost, split it so the worker can start earlier.
 
 **Risk.** A burn must still finish before anything opens the profile's files; the split must keep that order.
 
-## 3. Create the window while the worker is still assembling
+## 3. Show the window first, the page after (required for the 0.3 s target)
 
-**What.** Today the window is created after the join, so Chromium's renderer and GPU processes (diagram, bottom
-lane) start no earlier than that. After `open_profile` the main thread could create the window and the first web view while the
-worker finishes, and start the first page load only after `install_policies`. The GTK-era report proposed the
-same ordering (`performance-analysis.md` §6, proposal 2, "up to 200 ms to page").
+**What.** Today the window is created after the join, so the first frame waits for Chromium's profile, the rules
+and the web view. The new order: Qt starts, the window **without any web view** is shown (toolbar, tab strip,
+empty content area — the first frame), and only then does `open_profile` run next to the worker. After the join and
+`install_policies` the first web view is created (its renderer and GPU processes start then) and the first page
+load begins. In QML the tab's web view must therefore be created on demand (a loader that the application enables
+after `install_policies`) instead of being part of the window from the start.
 
-**Limit.** The gain exists only if the worker is still running when `open_profile` returns; section 1 says which
-of the two is longer. The profile must be open before the first web view is created, so this overlaps the
-worker's tail, not `open_profile` itself.
+**Why.** The measured floors (requirement section) show that a first frame containing a web view cannot be faster
+than about 0.5 s, and a bare window needs about 0.11 s. The GTK-era report proposed the same idea for its own
+reasons (`performance-analysis.md` §6, proposal 2, "up to 200 ms to page").
 
-**Risk, and the rule that stays.** Until policies are installed Chromium refuses every request, so a page loaded
-early would show an error page instead of waiting. The load must be *started* after `install_policies`. The Tor
-window must still load nothing before Tor is connected, and the first start must still download before any page.
+**Risk, and the rules that stay.** Until policies are installed Chromium refuses every request, and the window
+holds no web view until then, so nothing can load unprotected. The first page load must be *started* after
+`install_policies`; the first start must still download before any page; the Tor window must still load nothing
+before Tor is connected. A visible window with an empty content area for a few hundred milliseconds is a
+user-interface decision: the empty area must look intentional (the tab's own background and the address bar
+already filled), not broken, and Fire, find, zoom and downloads must not touch a web view that does not exist yet.
+
+**Done when.** The first frame is below 0.3 s in the section 1 breakdown, and *time to page* has not become worse
+than today's.
 
 ## 4. Check that the QML is compiled ahead of time
 
@@ -170,7 +212,8 @@ report would only be guessing.
 
 - The overlap was chosen because the rules and the profile are independent and were the two longest steps of the
   main thread.
-- Sections 2–4 are deliberately conditional on section 1: three plausible optimizations, none measured, is how a
+- Section 3 is required by the 0.3 s target, because the measured floors rule out any first frame that waits for
+  the web view. Sections 2 and 4 stay conditional on section 1: plausible optimizations, none measured, are how a
   start-up gets complicated without getting faster.
 - Section 5 is a trade of disk space for speed that only the owner can make; it is listed so the choice is
   visible, not because it is recommended unconditionally.

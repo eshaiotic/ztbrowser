@@ -792,6 +792,9 @@ msgstr "GNU பொது உரிமம், பதிப்பு 3 அல்�
 msgid "Apache License, Version 2.0"
 msgstr "Apache License, Version 2.0"
 
+msgid "Move to New Window"
+msgstr "புதிய சாளரத்திற்கு நகர்த்து"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Mozilla Public License 2.0"
 

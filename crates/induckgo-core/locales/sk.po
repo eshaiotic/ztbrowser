@@ -792,6 +792,9 @@ msgstr "GNU General Public License (všeobecná zverejňovacia licencia GNU), ve
 msgid "Apache License, Version 2.0"
 msgstr "Licencia Apache, verzia 2.0"
 
+msgid "Move to New Window"
+msgstr "Presunúť do nového okna"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Licencia Mozilla Public License 2.0"
 

@@ -792,6 +792,9 @@ msgstr "Splošno javno dovoljenje GNU, različice 3 ali kasnejše"
 msgid "Apache License, Version 2.0"
 msgstr "Dovoljenje Apache, različica 2.0"
 
+msgid "Move to New Window"
+msgstr "Premakni v novo okno"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Javno dovoljenje Mozilla 2.0"
 

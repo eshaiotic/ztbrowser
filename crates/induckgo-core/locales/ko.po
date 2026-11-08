@@ -792,6 +792,9 @@ msgstr "GNU 일반 공중 사용 허가서 버전 3 이상"
 msgid "Apache License, Version 2.0"
 msgstr "아파치 라이선스 버전 2.0"
 
+msgid "Move to New Window"
+msgstr "새 창으로 이동"
+
 msgid "Mozilla Public License 2.0"
 msgstr "모질라 공중 라이선스 2.0"
 

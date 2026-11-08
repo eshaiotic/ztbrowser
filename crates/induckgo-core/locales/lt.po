@@ -792,6 +792,9 @@ msgstr "GNU bendroji vieša licencija, 3 arba vėlesnė versija"
 msgid "Apache License, Version 2.0"
 msgstr "Apache licencija, 2.0 versija"
 
+msgid "Move to New Window"
+msgstr "Perkelti į naują langą"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Mozilla viešoji licencija 2.0"
 

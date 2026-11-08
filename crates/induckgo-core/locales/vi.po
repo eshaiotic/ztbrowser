@@ -792,6 +792,9 @@ msgstr "Giấy phép Công GNU phiên bản 3 hay mới hơn"
 msgid "Apache License, Version 2.0"
 msgstr "Giấy phép Apache, Phiên bản 2.0"
 
+msgid "Move to New Window"
+msgstr "Chuyển sang cửa sổ mới"
+
 msgid "Mozilla Public License 2.0"
 msgstr "Giấy phép Công Mozilla 2.0"
 

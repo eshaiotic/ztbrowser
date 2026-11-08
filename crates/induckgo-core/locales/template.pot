@@ -427,6 +427,9 @@ msgstr ""
 msgid "Manage Profiles…"
 msgstr ""
 
+msgid "Move to New Window"
+msgstr ""
+
 msgid "Mozilla Public License 2.0"
 msgstr ""
 
