@@ -27,6 +27,12 @@
   </provides>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="1.2.4" date="2026-11-08">
+      <description>
+        <p>Fixed: the toolbar icons were invisible on a dark bar under Plasma's Breeze style; they are now drawn in the colour of the bar's text.</p>
+        <p>A tab can be moved to a window of its own: right-click it and choose "Move to New Window", or drag it off the tab strip. The page keeps running.</p>
+      </description>
+    </release>
     <release version="1.2.3" date="2026-11-05">
       <description>
         <p>Cookie dialogs are rejected at once with DuckDuckGo's autoconsent library, Facebook's included, and never accepted. A site whose shield you switched off is left alone.</p>

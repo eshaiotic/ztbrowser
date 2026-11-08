@@ -9,7 +9,7 @@
 %global _lto_cflags %{nil}
 
 Name:           induckgo
-Version:        1.2.3
+Version:        1.2.4
 Release:        1%{?dist}
 Summary:        Privacy-first browser on QtWebEngine (Chromium), built on DuckDuckGo's open-source tracker protections
 License:        GPL-3.0-or-later
@@ -67,6 +67,10 @@ install -Dm0644 assets/icons/io.github.induckgo.InDuckGo.svg -t %{buildroot}%{_d
 %{_datadir}/icons/hicolor/scalable/apps/io.github.induckgo.InDuckGo.svg
 
 %changelog
+* Sun Nov 08 2026 Michał Ligus <eshaiotic@eshaiotic.io> - 1.2.4-1
+- Fixed: the toolbar icons were invisible on a dark bar under Plasma's Breeze style; they are now drawn in the colour of the bar's text.
+- A tab can be moved to a window of its own: right-click it and choose "Move to New Window", or drag it off the tab strip. The page keeps running.
+
 * Thu Nov 05 2026 Michał Ligus <eshaiotic@eshaiotic.io> - 1.2.3-1
 - Cookie dialogs are rejected at once (DuckDuckGo's autoconsent, Facebook's included) and never accepted; a site whose shield is off is left alone.
 - Fixed: the page scripts were not applied, so DuckDuckGo offered a browser extension the browser does not install and Guard hid no page elements.

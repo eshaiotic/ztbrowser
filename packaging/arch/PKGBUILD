@@ -5,7 +5,7 @@
 # The flags of /etc/makepkg.conf apply, so the package may be tuned for this machine's processor.
 
 pkgname=induckgo
-pkgver=1.2.3
+pkgver=1.2.4
 pkgrel=1
 pkgdesc="Privacy-first browser on QtWebEngine (Chromium), built on DuckDuckGo's open-source tracker protections"
 arch=('x86_64' 'aarch64')
@@ -24,7 +24,9 @@ _repository="$(realpath "$startdir/../..")"
 
 prepare() {
   cd "$_repository"
-  if ! grep -qx "version = \"$pkgver\"" Cargo.toml; then
+  # pacman versions have no hyphen: a release candidate 1.2.4-rc.1 of Cargo is 1.2.4rc1 here.
+  local cargo_version="${pkgver/rc/-rc.}"
+  if ! grep -qx "version = \"$cargo_version\"" Cargo.toml; then
     error "pkgver $pkgver differs from the version in Cargo.toml"
     return 1
   fi
