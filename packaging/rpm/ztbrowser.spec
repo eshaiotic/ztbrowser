@@ -9,7 +9,7 @@
 %global _lto_cflags %{nil}
 
 Name:           ztbrowser
-Version:        1.2.4
+Version:        1.3.0
 Release:        1%{?dist}
 Summary:        Privacy-first browser on QtWebEngine (Chromium), built on DuckDuckGo's open-source tracker protections
 License:        GPL-3.0-or-later
@@ -72,6 +72,10 @@ install -Dm0644 assets/icons/io.github.ztbrowser.ZTBrowser.svg -t %{buildroot}%{
 %{_datadir}/icons/hicolor/scalable/apps/io.github.ztbrowser.ZTBrowser.svg
 
 %changelog
+* Mon Nov 09 2026 Michał Ligus <eshaiotic@eshaiotic.io> - 1.3.0-1
+- InDuckGo is now ZTBrowser, with a new logo. The first start moves InDuckGo's profiles, logins, installed web apps and settings over, and this package replaces the induckgo package.
+- ZTBrowser can become the default browser: it offers the change once at start and in Preferences, and never makes it without you.
+
 * Sun Nov 08 2026 Michał Ligus <eshaiotic@eshaiotic.io> - 1.2.4-1
 - Fixed: the toolbar icons were invisible on a dark bar under Plasma's Breeze style; they are now drawn in the colour of the bar's text.
 - A tab can be moved to a window of its own: right-click it and choose "Move to New Window", or drag it off the tab strip. The page keeps running.
