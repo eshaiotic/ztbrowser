@@ -1,6 +1,6 @@
 # Smooth mouse-wheel scrolling
 
-InDuckGo animates every step of the mouse wheel the way Chromium does: 120 px in about 180 ms, easing in and out,
+ZTBrowser animates every step of the mouse wheel the way Chromium does: 120 px in about 180 ms, easing in and out,
 instead of WebKitGTK's abrupt 93 px in about 90 ms.
 
 ## 1. The problem
@@ -9,7 +9,7 @@ WebKitGTK scrolls a wheel step at once, in six or seven frames, and the first fr
 Brave this reads as a jerk: the page "jumps" on every notch even though the frame rate is fine. WebKit offers no
 setting for the length or shape of this animation, and replacing the engine (QtWebEngine, CEF) was measured and
 rejected: QtWebEngine does not give Chromium's animation, and a Chromium engine would mean rewriting the interface
-and the whole protection layer. So InDuckGo plays the animation itself.
+and the whole protection layer. So ZTBrowser plays the animation itself.
 
 ## 2. Vocabulary
 
@@ -24,7 +24,7 @@ and the whole protection layer. So InDuckGo plays the animation itself.
 
 ![A wheel step goes from the wheel event through the page script to a frame-by-frame scroll](../../assets/diagrams/architecture-smooth-wheel.en.svg)
 
-- **`induckgo-core`** holds the numbers: `SmoothWheelScroll` (120 px per notch, 180 ms, two progress tables built
+- **`ztbrowser-core`** holds the numbers: `SmoothWheelScroll` (120 px per notch, 180 ms, two progress tables built
   from `CubicBezierEasing`) and `ScrollingPreferences` (`smoothWheel`, on by default). Their tests
   (`tests/smooth_wheel_scroll.rs`, `tests/cubic_bezier_easing.rs`, `tests/scrolling_preferences.rs`) pin Chromium's
   measured profile: the first frame moves at most 4 px, no frame more than 22 px, the peak lies around the middle,
@@ -59,7 +59,7 @@ One notch in the same test (X11 wheel events through XTest, pixels the page move
 |---|---|---|---|---|
 | WebKitGTK (before) | 86–93 | 6–7 | ~90 ms | 5,12,34,21,10,3,1 |
 | Brave / Chromium | 120 | 11–12 | 167–183 ms | 2,5,10,13,16,18,17,15,12,7,4,1 |
-| InDuckGo (smooth wheel) | 120 | 11–12 | 161–183 ms | 1,6,9,14,17,18,18,15,12,7,2,1 |
+| ZTBrowser (smooth wheel) | 120 | 11–12 | 161–183 ms | 1,6,9,14,17,18,18,15,12,7,2,1 |
 
 Also verified: a page with `scroll-behavior: smooth`, a scrollable box inside a page (the box scrolls first), and
 15 notches 40 ms apart (continuous, no stop between notches).

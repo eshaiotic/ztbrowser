@@ -1,6 +1,6 @@
 # Downloads
 
-InDuckGo saves a download where the person wants it, never overwrites an existing file, and keeps the five
+ZTBrowser saves a download where the person wants it, never overwrites an existing file, and keeps the five
 latest downloads one click away (a button in the toolbar and an entry in the main menu both open the same list) and the
 whole history in a manager.
 
@@ -24,7 +24,7 @@ earlier, and could not tell how far a large download had got.
 
 ![A download goes from WebKit through the tracker and the center to the list](../../assets/diagrams/architecture-downloads.en.svg)
 
-- **`induckgo-core`** holds the decisions, with no GTK: `DownloadFileName` cleans the name a website suggests and
+- **`ztbrowser-core`** holds the decisions, with no GTK: `DownloadFileName` cleans the name a website suggests and
   finds a free path, `DownloadSettings` is the two stored choices (ask where to save; download folder), and
   `DownloadHistory` is the history (500 entries at most) with each entry's state (in progress, finished, failed);
   `latest_after` yields the few entries a window shows after its own "Clear List" (a running download stays visible).

@@ -1,4 +1,4 @@
-// InDuckGo: DuckDuckGo's own pages offer a browser extension to every Chromium browser. InDuckGo has the
+// ZTBrowser: DuckDuckGo's own pages offer a browser extension to every Chromium browser. ZTBrowser has the
 // protections built in and runs no extensions, so on duckduckgo.com the offer is hidden instead of the page
 // being told something untrue about this browser.
 (function () {

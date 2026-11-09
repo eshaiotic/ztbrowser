@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.ztbrowser.ZTBrowser</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>ZTBrowser</name>
+  <summary>Privacy-first browser with DuckDuckGo's tracker protections</summary>
+  <description>
+    <p>
+      ZTBrowser is a web browser on QtWebEngine (Chromium) that blocks third-party trackers with DuckDuckGo's
+      open-source protections and its own filter lists, upgrades connections to HTTPS and removes tracking
+      parameters from links. It has no extension support, by design.
+    </p>
+    <p>
+      Every profile and every site installed as an app runs in its own process with its own cookies and
+      storage, so a link clicked in the browser never reaches the session of your bank or mailbox.
+    </p>
+    <p>ZTBrowser is an independent project, not affiliated with or endorsed by Duck Duck Go, Inc.</p>
+  </description>
+  <url type="homepage">https://github.com/eshaiotic/ztbrowser</url>
+  <launchable type="desktop-id">io.github.ztbrowser.ZTBrowser.desktop</launchable>
+  <developer id="io.github.ztbrowser">
+    <name>Michał Ligus</name>
+  </developer>
+  <provides>
+    <binary>ztbrowser</binary>
+  </provides>
+  <!-- ZTBrowser was called InDuckGo up to 1.2.4: software centres offer ZTBrowser as its successor. -->
+  <replaces>
+    <id>io.github.induckgo.InDuckGo</id>
+  </replaces>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.2.4" date="2026-11-08">
+      <description>
+        <p>Fixed: the toolbar icons were invisible on a dark bar under Plasma's Breeze style; they are now drawn in the colour of the bar's text.</p>
+        <p>A tab can be moved to a window of its own: right-click it and choose "Move to New Window", or drag it off the tab strip. The page keeps running.</p>
+      </description>
+    </release>
+    <release version="1.2.3" date="2026-11-05">
+      <description>
+        <p>Cookie dialogs are rejected at once with DuckDuckGo's autoconsent library, Facebook's included, and never accepted. A site whose shield you switched off is left alone.</p>
+        <p>Fixed: the page scripts were not applied, so DuckDuckGo offered a browser extension the browser does not install and Guard hid no page elements.</p>
+      </description>
+    </release>
+    <release version="1.2.2" date="2026-11-05">
+      <description>
+        <p>ZTBrowser now runs on QtWebEngine (Chromium) with a Qt Quick interface, replacing WebKitGTK.</p>
+        <p>Tracker protection: DuckDuckGo's rules are evaluated as DuckDuckGo evaluates them, advertising and analytics trackers are blocked on every page, connections a page opens before any request are refused, and the protection data is downloaded on first start and kept current. On 12 popular sites 5 trackers got through, against 6 for the WebKitGTK edition, 8 for Brave and 109 for Chrome.</p>
+        <p>Not yet in this edition: fingerprint and Global Privacy Control protection, the Tor window, automatic rejection of cookie pop-ups, bookmarks and history.</p>
+      </description>
+    </release>
+    <release version="1.2.1" date="2026-11-05">
+      <description>
+        <p>The WebKitGTK browser behaves as in 1.2.0. The shared core gained tab placement, window button style and profile tile preferences for the upcoming Qt edition, which is not packaged yet.</p>
+        <p>Interface texts for the new features were added to all translations.</p>
+      </description>
+    </release>
+    <release version="1.2.0" date="2026-11-05">
+      <description>
+        <p>The WebKitGTK browser behaves as in 1.1.2. The shared core gained the groundwork of the upcoming Qt edition, which is not packaged yet.</p>
+        <p>Interface texts for the new features were added to all translations.</p>
+      </description>
+    </release>
+    <release version="1.1.2" date="2026-11-04">
+      <description>
+        <p>Smooth mouse-wheel scrolling: every wheel step is animated like in Chromium, with a switch in the preferences.</p>
+        <p>Faster scrolling on pages with scroll animations.</p>
+      </description>
+    </release>
+    <release version="1.1.1" date="2026-11-04">
+      <description>
+        <p>Interface language: choose among 68 languages in the preferences.</p>
+        <p>Downloads: a list in the toolbar, a choice of save folder, a clear-list button and a manager with the whole history.</p>
+        <p>Faster pages: drawing with GTK's OpenGL renderer instead of copying every frame through memory.</p>
+      </description>
+    </release>
+    <release version="1.1.0" date="2026-11-03">
+      <description>
+        <p>Tor window: browsing through ZTBrowser's own Tor, with bridges, onion services and New Identity.</p>
+        <p>Toolbar: an onion button for the Tor window, and preferences to choose the toolbar's buttons.</p>
+      </description>
+    </release>
+    <release version="1.0.1" date="2026-11-03">
+      <description>
+        <p>New application icon.</p>
+      </description>
+    </release>
+    <release version="1.0.0" date="2026-11-02"/>
+  </releases>
+</component>

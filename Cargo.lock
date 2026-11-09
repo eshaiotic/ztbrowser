@@ -878,79 +878,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "induckgo"
-version = "1.2.4"
-dependencies = [
- "futures-channel",
- "gdk4",
- "gio",
- "glib",
- "gtk4",
- "induckgo-core",
- "javascriptcore6",
- "libadwaita",
- "serde_json",
- "soup3",
- "url",
- "webkit6",
-]
-
-[[package]]
-name = "induckgo-bench"
-version = "1.2.4"
-dependencies = [
- "serde_json",
-]
-
-[[package]]
-name = "induckgo-core"
-version = "1.2.4"
-dependencies = [
- "adblock",
- "form_urlencoded",
- "idna",
- "psl",
- "regex",
- "serde_json",
- "tempfile",
- "url",
-]
-
-[[package]]
-name = "induckgo-engine-qt"
-version = "1.2.4"
-dependencies = [
- "cxx",
- "cxx-qt",
- "cxx-qt-build",
- "induckgo-core",
-]
-
-[[package]]
-name = "induckgo-qt"
-version = "1.2.4"
-dependencies = [
- "base64",
- "cxx",
- "cxx-qt",
- "cxx-qt-build",
- "cxx-qt-lib",
- "induckgo-core",
- "induckgo-engine-qt",
- "serde_json",
- "tempfile",
- "url",
-]
-
-[[package]]
-name = "induckgo-test-report"
-version = "1.2.4"
-dependencies = [
- "roxmltree",
- "serde_json",
-]
-
-[[package]]
 name = "itertools"
 version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1780,3 +1707,76 @@ name = "zmij"
 version = "1.0.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
+
+[[package]]
+name = "ztbrowser"
+version = "1.2.4"
+dependencies = [
+ "futures-channel",
+ "gdk4",
+ "gio",
+ "glib",
+ "gtk4",
+ "javascriptcore6",
+ "libadwaita",
+ "serde_json",
+ "soup3",
+ "url",
+ "webkit6",
+ "ztbrowser-core",
+]
+
+[[package]]
+name = "ztbrowser-bench"
+version = "1.2.4"
+dependencies = [
+ "serde_json",
+]
+
+[[package]]
+name = "ztbrowser-core"
+version = "1.2.4"
+dependencies = [
+ "adblock",
+ "form_urlencoded",
+ "idna",
+ "psl",
+ "regex",
+ "serde_json",
+ "tempfile",
+ "url",
+]
+
+[[package]]
+name = "ztbrowser-engine-qt"
+version = "1.2.4"
+dependencies = [
+ "cxx",
+ "cxx-qt",
+ "cxx-qt-build",
+ "ztbrowser-core",
+]
+
+[[package]]
+name = "ztbrowser-qt"
+version = "1.2.4"
+dependencies = [
+ "base64",
+ "cxx",
+ "cxx-qt",
+ "cxx-qt-build",
+ "cxx-qt-lib",
+ "serde_json",
+ "tempfile",
+ "url",
+ "ztbrowser-core",
+ "ztbrowser-engine-qt",
+]
+
+[[package]]
+name = "ztbrowser-test-report"
+version = "1.2.4"
+dependencies = [
+ "roxmltree",
+ "serde_json",
+]

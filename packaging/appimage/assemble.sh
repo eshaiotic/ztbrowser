@@ -1,5 +1,5 @@
 #!/bin/sh
-# Assembles InDuckGo-<version>-x86_64.AppImage in /dist from the binary given as the only argument.
+# Assembles ZTBrowser-<version>-x86_64.AppImage in /dist from the binary given as the only argument.
 # Runs inside the Fedora build container (packaging/appimage/build.sh); VERSION comes from packaging/release.sh.
 #
 # An AppImage is a small runtime program followed by a SquashFS image of the application directory; the
@@ -9,7 +9,7 @@
 # window uses are copied from the build container. The image therefore runs on any x86_64 Linux whose glibc is
 # at least as new as the container's (see the README for the number), with only the graphics stack (Mesa,
 # X11/Wayland) taken from the host.
-# The price is that the engine's security updates arrive with a new InDuckGo release, not with the distribution.
+# The price is that the engine's security updates arrive with a new ZTBrowser release, not with the distribution.
 set -eu
 
 runtime_url=https://github.com/AppImage/type2-runtime/releases/download/20251108/runtime-x86_64
@@ -22,7 +22,7 @@ fi
 
 binary=$1
 work=$(mktemp -d)
-image="/dist/InDuckGo-${VERSION}-x86_64.AppImage"
+image="/dist/ZTBrowser-${VERSION}-x86_64.AppImage"
 
 # Where this distribution keeps Qt: the layout differs between distributions, qmake knows (Fedora also calls it
 # qmake-qt6).
@@ -36,9 +36,9 @@ translations=$(qt_query QT_INSTALL_TRANSLATIONS)
 curl -fsSL --proto '=https' --tlsv1.2 -o "$work/runtime" "$runtime_url"
 echo "$runtime_sha256  $work/runtime" | sha256sum --check --quiet
 
-app=$work/InDuckGo.AppDir
+app=$work/ZTBrowser.AppDir
 mkdir -p "$app/usr/bin" "$app/usr/lib/qt6/plugins" "$app/usr/lib/qt6/qml" "$app/usr/share/qt6/translations"
-install -m0755 "$binary" "$app/usr/bin/induckgo"
+install -m0755 "$binary" "$app/usr/bin/ztbrowser"
 install -m0755 "$libexec/QtWebEngineProcess" "$app/usr/lib/qt6/QtWebEngineProcess"
 cp -a "$data/resources" "$app/usr/share/qt6/resources"
 cp -a "$translations/qtwebengine_locales" "$app/usr/share/qt6/translations/qtwebengine_locales"
@@ -72,20 +72,20 @@ copy_needed_libraries() {
       [ -e "$app/usr/lib/$name" ] || cp -L "$library" "$app/usr/lib/$name"
     done
 }
-find "$app" -type f \( -name '*.so' -o -name '*.so.*' -o -name induckgo -o -name QtWebEngineProcess \) |
+find "$app" -type f \( -name '*.so' -o -name '*.so.*' -o -name ztbrowser -o -name QtWebEngineProcess \) |
   while read -r file; do ldd "$file" 2>/dev/null; done | copy_needed_libraries
 find "$app/usr/lib" -maxdepth 1 -type f -name '*.so*' |
   while read -r file; do ldd "$file" 2>/dev/null; done | copy_needed_libraries
 strip --strip-unneeded "$app"/usr/lib/*.so* 2>/dev/null || true
 
 install -Dm0755 /src/packaging/appimage/AppRun "$app/AppRun"
-install -Dm0644 /src/packaging/linux/io.github.induckgo.InDuckGo.desktop -t "$app"
-install -Dm0644 /src/packaging/linux/io.github.induckgo.InDuckGo.desktop -t "$app/usr/share/applications"
-install -Dm0644 /src/packaging/linux/io.github.induckgo.InDuckGo.metainfo.xml -t "$app/usr/share/metainfo"
-install -Dm0644 /src/assets/icons/io.github.induckgo.InDuckGo.svg -t "$app"
-install -Dm0644 /src/assets/icons/io.github.induckgo.InDuckGo.svg -t "$app/usr/share/icons/hicolor/scalable/apps"
-install -Dm0644 /src/NOTICE /src/LICENSE -t "$app/usr/share/doc/induckgo"
-ln -s io.github.induckgo.InDuckGo.svg "$app/.DirIcon"
+install -Dm0644 /src/packaging/linux/io.github.ztbrowser.ZTBrowser.desktop -t "$app"
+install -Dm0644 /src/packaging/linux/io.github.ztbrowser.ZTBrowser.desktop -t "$app/usr/share/applications"
+install -Dm0644 /src/packaging/linux/io.github.ztbrowser.ZTBrowser.metainfo.xml -t "$app/usr/share/metainfo"
+install -Dm0644 /src/assets/icons/io.github.ztbrowser.ZTBrowser.svg -t "$app"
+install -Dm0644 /src/assets/icons/io.github.ztbrowser.ZTBrowser.svg -t "$app/usr/share/icons/hicolor/scalable/apps"
+install -Dm0644 /src/NOTICE /src/LICENSE -t "$app/usr/share/doc/ztbrowser"
+ln -s io.github.ztbrowser.ZTBrowser.svg "$app/.DirIcon"
 
 mksquashfs "$app" "$work/image.squashfs" -root-owned -noappend -comp zstd -quiet
 cat "$work/runtime" "$work/image.squashfs" > "$image"

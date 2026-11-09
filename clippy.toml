@@ -1,2 +1,2 @@
 # Product names used in prose; ".." keeps clippy's default list.
-doc-valid-idents = ["DuckDuckGo", "InDuckGo", "WebKit", "WebKitGTK", "TrackerRadarKit", "LinkCleaner", "IndexedDB", "AppImage", "EasyList", "EasyPrivacy", "AdGuard", "JUnit", ".."]
+doc-valid-idents = ["DuckDuckGo", "ZTBrowser", "InDuckGo", "WebKit", "WebKitGTK", "TrackerRadarKit", "LinkCleaner", "IndexedDB", "AppImage", "EasyList", "EasyPrivacy", "AdGuard", "JUnit", ".."]

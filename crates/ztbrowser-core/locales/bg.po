@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: bg\n"
+
+msgid "About ZTBrowser"
+msgstr "Относно ZTBrowser"
+
+msgid "Access denied"
+msgstr "Достъпът е отказан"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Да се разреши ли на {requesting} да използва своите бисквитки и данни, докато сте в {current}?"
+
+msgid "Allow {site} to know your location?"
+msgstr "Да се разреши ли на {site} да вижда местоположението ви?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "Да се разреши ли на {site} да чете буфера за обмен?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "Да се разреши ли на {site} да показва известия?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "Да се разреши ли на {site} да използва камерата и микрофона ви?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "Да се разреши ли на {site} да използва камерата ви?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "Да се разреши ли на {site} да използва микрофона ви?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "Да се разреши ли на {site} да използва екрана ви?"
+
+msgid "App data cleared"
+msgstr "Данните на приложението са изчистени"
+
+msgid "Appearance"
+msgstr "Външен вид"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "Влиза в сила при следващото стартиране на ZTBrowser"
+
+msgid "Asking for relay descriptors"
+msgstr "Заявяване на описания на релета"
+
+msgid "Asking for the network status"
+msgstr "Заявяване на състоянието на мрежата"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Back and Forward"
+msgstr "Назад и напред"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Най-добър избор навсякъде, където Tor не е блокиран."
+
+msgid "Bridges I provide"
+msgstr "Мостове, които предоставям"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Мостовете са непубликувани релета на Tor за мрежи, които блокират Tor."
+
+msgid "Browsing data burned"
+msgstr "Данните от сърфирането са изтрити"
+
+msgid "Burn Browsing Data"
+msgstr "Изтриване на данните от сърфирането"
+
+msgid "Burn Browsing Data?"
+msgstr "Да се изтрият ли данните от сърфирането?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Бутони около адресната лента в прозорците на този профил."
+
+msgid "C_lear"
+msgstr "_Изчисти"
+
+msgid "Cannot Connect to Tor"
+msgstr "Не може да се осъществи връзка с Tor"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Контролният порт на Tor е недостъпен: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Контролната бисквитка на Tor не може да се прочете: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Старият файл на контролния порт на Tor не може да се премахне: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "Изтегленото не може да се запази: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Tor не може да се стартира: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Конфигурацията на Tor не може да се запише: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Не може да се записва в контролния порт на Tor: {error}"
+
+msgid "Certificate for {name}"
+msgstr "Сертификат за {name}"
+
+msgid "Check the address for a typo."
+msgstr "Проверете адреса за правописна грешка."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Проверете адреса, включително номера на порта след двоеточието, ако има такъв."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Проверете мрежовия кабел или Wi-Fi връзката."
+
+msgid "Check your internet connection."
+msgstr "Проверете интернет връзката си."
+
+msgid "Clear App Data…"
+msgstr "Изчистване на данните на приложението…"
+
+msgid "Clear Data of {name}?"
+msgstr "Да се изчистят ли данните на {name}?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Затворете разделите или приложенията, от които нямате нужда, и презаредете страницата."
+
+msgid "Close {name} before deleting it"
+msgstr "Затворете {name}, преди да го изтриете"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Затваря всички раздели и прозорци на този профил и изтрива бисквитките, данните на сайтовете, кеша и историята му."
+
+msgid "Connect"
+msgstr "Свързване"
+
+msgid "Connect directly"
+msgstr "Директно свързване"
+
+msgid "Connected"
+msgstr "Свързано"
+
+msgid "Connected to a relay directory server"
+msgstr "Свързано със сървър на директорията на релетата"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Свързано с реле за изграждане на вериги"
+
+msgid "Connected to pluggable transport"
+msgstr "Свързано с приставен транспорт"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Свързано с приставен транспорт за изграждане на вериги"
+
+msgid "Connected to proxy"
+msgstr "Свързано с прокси"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Свързано с прокси за изграждане на вериги"
+
+msgid "Connected to the Tor network"
+msgstr "Свързано с мрежата на Tor"
+
+msgid "Connecting to Tor"
+msgstr "Свързване с Tor"
+
+msgid "Connecting to a relay directory server"
+msgstr "Свързване със сървър на директорията на релетата"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Свързване с реле за изграждане на вериги"
+
+msgid "Connecting to pluggable transport"
+msgstr "Свързване с приставен транспорт"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Свързване с приставен транспорт за изграждане на вериги"
+
+msgid "Connecting to proxy"
+msgstr "Свързване с прокси"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Свързване с прокси за изграждане на вериги"
+
+msgid "Connection Settings…"
+msgstr "Настройки на връзката…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, конфигурацията за поверителност и алгоритъмът за правила на TrackerRadarKit."
+
+msgid "Could not install the app: {error}"
+msgstr "Приложението не можа да се инсталира: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Не можа да се премахне всичко: {error}"
+
+msgid "Delete"
+msgstr "Изтрий"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Изтриване на бисквитките, данните на сайтовете и кеша на този профил"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Маскирани връзки към вградените мостове на Tor Browser."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Маскирани връзки към вградените мостове на Tor Browser. Изисква {package}."
+
+msgid "Download failed: {error}"
+msgstr "Изтеглянето не успя: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Изтегля се по време на работа от DuckDuckGo; лиценз CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "Изтеглено: {name}"
+
+msgid "DuckDuckGo protections"
+msgstr "Защити на DuckDuckGo"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Всяко приложение работи в собствен прозорец и процес, със собствени бисквитки и вписвания."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Всеки профил пази собствени бисквитки, вписвания, история и кеш и работи като отделен процес."
+
+msgid "Establishing a Tor circuit"
+msgstr "Изграждане на верига на Tor"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Установяване на шифрована връзка с директорията"
+
+msgid "File not found"
+msgstr "Файлът не е намерен"
+
+msgid "Find in Page…"
+msgstr "Търсене в страницата…"
+
+msgid "Find in page"
+msgstr "Търсене в страницата"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Ръкостискането със сървър на директорията на релетата приключи"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Ръкостискането с реле за изграждане на вериги приключи"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Приключване на ръкостискането със сървър на директорията на релетата"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Приключване на ръкостискането с реле за изграждане на вериги"
+
+msgid "Forward"
+msgstr "Напред"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "От bridges.torproject.org, по имейл или от познат."
+
+msgid "Go to Home Page"
+msgstr "Към началната страница"
+
+msgid "Go to the previous or next page"
+msgstr "Към предишната или следващата страница"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Отидете на началната страница на сайта и потърсете страницата оттам."
+
+msgid "How to Reach Tor"
+msgstr "Как да се свържете с Tor"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Ако сривът се повтори след презареждане, възможно е самата страница да е повредена."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Ако адресът е верен, възможно е сайтът вече да не съществува."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Ако имате профил в този сайт, впишете се и опитайте отново."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "Ако използвате VPN или собствен DNS сървър, проверете дали работи."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "Ако използвате VPN, защитна стена или прокси, проверете дали не блокират сайта."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "Филтърни списъци на ZTBrowser Guard"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "ZTBrowser не може да отвори {host}, защото този компютър не е свързан с мрежа."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser не намери сървър на адрес {host}."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser не се свързва с {host} през този порт."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "Собственият Tor на ZTBrowser се свързва. Нищо не напуска този прозорец, докато връзката не бъде осъществена."
+
+msgid "Install Site as App"
+msgstr "Инсталиране на сайта като приложение"
+
+msgid "Install Site as App…"
+msgstr "Инсталиране на сайта като приложение…"
+
+msgid "Install as App"
+msgstr "Инсталиране като приложение"
+
+msgid "Installed Apps"
+msgstr "Инсталирани приложения"
+
+msgid "Installed Apps…"
+msgstr "Инсталирани приложения…"
+
+msgid "Installed {name}"
+msgstr "Инсталирано: {name}"
+
+msgid "Interface"
+msgstr "Интерфейс"
+
+msgid "Issued by {name}"
+msgstr "Издаден от {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Възможно е да е преместен, преименуван или изтрит."
+
+msgid "Language"
+msgstr "Език"
+
+msgid "Load Insecure Page"
+msgstr "Зареждане на незащитената страница"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Презареждане на страницата или спиране на зареждането"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Заредена е достатъчно информация от директорията за изграждане на вериги"
+
+msgid "Loading authority certificates"
+msgstr "Зареждане на сертификати на удостоверяващите органи"
+
+msgid "Loading relay descriptors"
+msgstr "Зареждане на описания на релета"
+
+msgid "Loading the network status"
+msgstr "Зареждане на състоянието на мрежата"
+
+msgid "Main Menu"
+msgstr "Главно меню"
+
+msgid "Manage Profiles…"
+msgstr "Управление на профилите…"
+
+msgid "New Identity"
+msgstr "Нова самоличност"
+
+msgid "New Identity?"
+msgstr "Нова самоличност?"
+
+msgid "New Tab"
+msgstr "Нов раздел"
+
+msgid "New Tor Window"
+msgstr "Нов прозорец на Tor"
+
+msgid "New Window"
+msgstr "Нов прозорец"
+
+msgid "New identity"
+msgstr "Нова самоличност"
+
+msgid "New profile name"
+msgstr "Име на новия профил"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "По един мост на ред, например: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Като приложения могат да се инсталират само уеб страници"
+
+msgid "Open"
+msgstr "Отвори"
+
+msgid "Open Page in Browser"
+msgstr "Отваряне на страницата в браузъра"
+
+msgid "Open a new tab"
+msgstr "Отваряне на нов раздел"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Отваряне на прозорец, чийто трафик минава само през Tor"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Други приложения не се отварят от прозореца на Tor: те биха се свързали извън Tor."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Страниците не се отварят, докато прозорецът на Tor не се свърже."
+
+msgid "Paste at least one bridge."
+msgstr "Поставете поне един мост."
+
+msgid "Preferences"
+msgstr "Предпочитания"
+
+msgid "Preferences…"
+msgstr "Предпочитания…"
+
+msgid "Profiles"
+msgstr "Профили"
+
+msgid "Protect This Site"
+msgstr "Защита на този сайт"
+
+msgid "Protection Shield"
+msgstr "Щит за защита"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Четенето от контролния порт на Tor не успя: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "Свържете отново VPN, ако използвате такъв."
+
+msgid "Reload"
+msgstr "Презареждане"
+
+msgid "Reload Page"
+msgstr "Презареждане на страницата"
+
+msgid "Reset Zoom"
+msgstr "Нулиране на мащаба"
+
+msgid "Search Engine"
+msgstr "Търсачка"
+
+msgid "Search {engine}"
+msgstr "Търсене с {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "Търсене с {engine} или въвеждане на адрес"
+
+msgid "Show in Folder"
+msgstr "Показване в папката"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Изписва ви от профилите и изтрива бисквитките, данните на сайтовете и кеша на това приложение. Всичко останало остава непроменено."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Част от данните не можаха да бъдат изтрити: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "Нещо се обърка при зареждането на {host}."
+
+msgid "Starting"
+msgstr "Стартиране"
+
+msgid "Starting Tor…"
+msgstr "Стартиране на Tor…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Включване или изключване на защитата от тракери за сайта"
+
+msgid "System default ({language})"
+msgstr "Като в системата ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "Органът, издал сертификата, го е отнел."
+
+msgid "The bridge line has no address: {line}"
+msgstr "Редът на моста няма адрес: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "Сертификатът не можа да бъде проверен."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "Сертификатът е подписан с алгоритъм, който вече не е сигурен."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "Сертификатът още не е валиден. Проверете дали датата и часът на този компютър са верни."
+
+msgid "The certificate was issued for a different site."
+msgstr "Сертификатът е издаден за друг сайт."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "Сертификатът не е издаден от орган, на който този компютър има доверие."
+
+msgid "The connection to {host} was interrupted."
+msgstr "Връзката с {host} беше прекъсната."
+
+msgid "The icon at the end of the address bar"
+msgstr "Иконата в края на адресната лента"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "Езикът се променя при рестартиране на ZTBrowser"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "Езикът на менютата, диалозите и съобщенията във всеки профил и уеб приложение."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "Проблемът е от страна на сайта. Опитайте отново след няколко минути."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Възможно е сайтът да е спрян за поддръжка. Опитайте отново след няколко минути."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Възможно е сайтът да е претоварен. Опитайте отново след няколко минути."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "Мостовете {transport} изискват програма, която не е инсталирана; инсталирайте {package}"
+
+msgid "There is no file at {path}."
+msgstr "На път {path} няма файл."
+
+msgid "This address is blocked"
+msgstr "Този адрес е блокиран"
+
+msgid "This connection isn’t private"
+msgstr "Тази връзка не е защитена"
+
+msgid "This page"
+msgstr "Тази страница"
+
+msgid "This page can’t be found"
+msgstr "Страницата не е намерена"
+
+msgid "This page can’t be loaded"
+msgstr "Страницата не може да се зареди"
+
+msgid "This page crashed"
+msgstr "Страницата се срина"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Тази страница е в друг сайт и не е част от {name}"
+
+msgid "This page isn’t working"
+msgstr "Страницата не работи"
+
+msgid "This page ran out of memory"
+msgstr "На страницата ѝ свърши паметта"
+
+msgid "This site can’t be found"
+msgstr "Сайтът не е намерен"
+
+msgid "This site can’t be reached"
+msgstr "Сайтът е недостъпен"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "През браузърите на доброволци; работи в повечето мрежи с цензура."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "През браузърите на доброволци; работи в повечето мрежи с цензура. Изисква {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Бутони на лентата с инструменти"
+
+msgid "Tor Connection"
+msgstr "Връзка с Tor"
+
+msgid "Tor Connection…"
+msgstr "Връзка с Tor…"
+
+msgid "Tor Window"
+msgstr "Прозорец на Tor"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor не може да използва пътя {path}"
+
+msgid "Tor closed its control port"
+msgstr "Tor затвори контролния си порт"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor не успя да смени веригите: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor не отвори контролния си порт"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor не е инсталиран. Инсталирайте пакета tor на вашата дистрибуция; прозорецът на Tor стартира собствен Tor и не се нуждае от работеща услуга на Tor."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor не отвори локален SOCKS порт"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor отказа: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor съобщи за проблем"
+
+msgid "Tor stopped."
+msgstr "Tor спря."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Контролната бисквитка на Tor е повредена"
+
+msgid "Tracker Data Set"
+msgstr "Набор от данни за тракери"
+
+msgid "Tracker protection on this site"
+msgstr "Защита от тракери в този сайт"
+
+msgid "Try Again"
+msgstr "Опитайте отново"
+
+msgid "Try again in a few minutes."
+msgstr "Опитайте отново след няколко минути."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Изключете самолетния режим, ако е включен."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "Превръща филтърните списъци на ZTBrowser Guard в правила за WebKit. Изходен код: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Деинсталиране"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Непознат транспорт на мост: {name}"
+
+msgid "Valid until {date}"
+msgstr "Валиден до {date}"
+
+msgid "Your Bridges"
+msgstr "Вашите мостове"
+
+msgid "You’re offline"
+msgstr "Не сте онлайн"
+
+msgid "Zoom In"
+msgstr "Увеличаване"
+
+msgid "Zoom Out"
+msgstr "Намаляване"
+
+msgid "_Allow"
+msgstr "_Разреши"
+
+msgid "_Burn"
+msgstr "_Изтрий"
+
+msgid "_Cancel"
+msgstr "_Отказ"
+
+msgid "_Deny"
+msgstr "_Забрани"
+
+msgid "_Install"
+msgstr "_Инсталирай"
+
+msgid "_New Identity"
+msgstr "_Нова самоличност"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) или obfs4proxy от AUR (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) или snowflake-pt-client от AUR (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "Сайтът {host} не може да обработи заявката в момента."
+
+msgid "{host} couldn’t answer this request."
+msgstr "Сайтът {host} не успя да отговори на тази заявка."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} не предлага защитена връзка"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "Сайтът {host} не ви позволява да виждате тази страница."
+
+msgid "{host} has no page at this address."
+msgstr "Сайтът {host} няма страница на този адрес."
+
+msgid "{host} refused the connection."
+msgstr "Сайтът {host} отказа връзката."
+
+msgid "{host} took too long to respond."
+msgstr "Сайтът {host} отговаря твърде бавно."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "Страницата {host} използва повече памет, отколкото е позволено, затова ZTBrowser я спря."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} ще се отвори в собствен прозорец, а бисквитките и вписванията ще се пазят отделно от браузъра и всички други приложения."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — уеб приложение на ZTBrowser"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} не е аргумент на мост"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} не е IP адрес и порт"
+
+msgid "{url} answered {status}"
+msgstr "{url} отговори: {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} не върна очаквания документ"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} е по-голям от позволеното"
+
+msgid "{url} is not a valid address"
+msgstr "{url} не е валиден адрес"
+
+msgid "© their maintainers"
+msgstr "© техните поддръжници"
+
+msgid "Ask Where to Save Each File"
+msgstr "Питане къде да се запише всеки файл"
+
+msgid "Choose Folder"
+msgstr "Избор на папка"
+
+msgid "Download Folder"
+msgstr "Папка за изтегляне"
+
+msgid "Download failed"
+msgstr "Изтеглянето е неуспешно"
+
+msgid "Downloading…"
+msgstr "Изтегляне…"
+
+msgid "Downloading… {percent}%"
+msgstr "Изтегляне… {percent}%"
+
+msgid "Downloads"
+msgstr "Изтегляния"
+
+msgid "Go to Download Folder"
+msgstr "Към папката за изтегляне"
+
+msgid "No downloads yet"
+msgstr "Все още няма изтегляния"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Иначе файловете отиват направо в папката за изтегляне"
+
+msgid "Save File"
+msgstr "Запазване на файл"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Петте последни изтегляния и папката за изтегляне"
+
+msgid "_Save"
+msgstr "_Запазване"
+
+msgid "_Select"
+msgstr "_Избор"
+
+msgid "Show All Downloads"
+msgstr "Показване на всички изтегляния"
+
+msgid "Clear List"
+msgstr "Изчистване на списъка"
+
+msgid "Remove from List"
+msgstr "Премахване от списъка"
+
+msgid "Clear History"
+msgstr "Изчистване на историята"
+
+msgid "Search Downloads"
+msgstr "Търсене в изтеглените"
+
+msgid "File Moved or Deleted"
+msgstr "Файлът е преместен или изтрит"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Анимира всяка стъпка на колелцето на мишката. Вече отворените страници трябва да бъдат презаредени."
+
+msgid "Scrolling"
+msgstr "Превъртане"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Плавно превъртане с колелцето на мишката"
+
+msgid "Details"
+msgstr "Подробности"
+
+msgid "Legal"
+msgstr "Правна информация"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "This application comes with absolutely no warranty. See the {license} for details."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "Общ публичен лиценз на GNU (GNU GPL), версия 3 или по-нова"
+
+msgid "Apache License, Version 2.0"
+msgstr "Лиценз на Apache, версия 2.0"
+
+msgid "Move to New Window"
+msgstr "Преместване в нов прозорец"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Публичен лиценз на Mozilla, версия 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "Триклаузов лиценз на BSD"
+
+msgid "Wide Address Bar"
+msgstr "Широка адресна лента"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "Адресната лента заема цялото място в лентата с инструменти; изключена остава къса и центрирана по средата"
+
+msgid "No apps installed yet"
+msgstr "Още няма инсталирани приложения"
+
+msgid "Uninstall {name}?"
+msgstr "Деинсталиране на {name}?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Изтрива приложението заедно с бисквитките, вписванията и данните му. Това не може да бъде отменено."
+
+msgid "Tab Position"
+msgstr "Позиция на разделите"
+
+msgid "Top"
+msgstr "Горе"
+
+msgid "Bottom"
+msgstr "Долу"
+
+msgid "Left"
+msgstr "Вляво"
+
+msgid "Right"
+msgstr "Вдясно"
+
+msgid "Window Buttons"
+msgstr "Бутони на прозореца"
+
+msgid "Default"
+msgstr "По подразбиране"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Добавяне на профил"
+
+msgid "Delete profile {name}?"
+msgstr "Да се изтрие ли профилът {name}?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Изтрива профила заедно с бисквитките, вписванията, историята и кеша му. Това не може да бъде отменено."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser не е браузърът ви по подразбиране"
+
+msgid "Make Default"
+msgstr "Задаване по подразбиране"
+
+msgid "Don't Ask Again"
+msgstr "Не питай отново"
+
+msgid "Close"
+msgstr "Затваряне"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "ZTBrowser не можа да бъде зададен като браузър по подразбиране: {error}"
+
+msgid "Default Browser"
+msgstr "Браузър по подразбиране"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "ZTBrowser отваря връзките от други програми"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Връзките от други програми се отварят в {browser}"
+
+msgid "Another browser opens links from other programs"
+msgstr "Друг браузър отваря връзките от други програми"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Само инсталиран ZTBrowser може да отваря връзките от други програми"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Работната среда не съобщава кой браузър отваря връзките"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "Питане при стартиране на ZTBrowser"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Предлагане ZTBrowser да стане браузър по подразбиране, докато друг браузър отваря връзките"

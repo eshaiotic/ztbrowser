@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ca\n"
+
+msgid "About ZTBrowser"
+msgstr "Quant al ZTBrowser"
+
+msgid "Access denied"
+msgstr "Accés denegat"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Vols permetre que {requesting} utilitzi les seves galetes i dades mentre ets a {current}?"
+
+msgid "Allow {site} to know your location?"
+msgstr "Vols permetre que {site} conegui la teva ubicació?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "Vols permetre que {site} llegeixi el teu porta-retalls?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "Vols permetre que {site} mostri notificacions?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "Vols permetre que {site} utilitzi la teva càmera i el teu micròfon?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "Vols permetre que {site} utilitzi la teva càmera?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "Vols permetre que {site} utilitzi el teu micròfon?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "Vols permetre que {site} utilitzi la teva pantalla?"
+
+msgid "App data cleared"
+msgstr "Dades de l’aplicació netejades"
+
+msgid "Appearance"
+msgstr "Aparença"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "S’aplica la propera vegada que s’iniciï el ZTBrowser"
+
+msgid "Asking for relay descriptors"
+msgstr "Sol·licitant els descriptors de relés"
+
+msgid "Asking for the network status"
+msgstr "Sol·licitant l’estat de la xarxa"
+
+msgid "Back"
+msgstr "Enrere"
+
+msgid "Back and Forward"
+msgstr "Enrere i endavant"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Ideal allà on Tor no està bloquejat."
+
+msgid "Bridges I provide"
+msgstr "Ponts que proporciono jo"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Els ponts són relés de Tor no llistats, pensats per a xarxes que bloquegen Tor."
+
+msgid "Browsing data burned"
+msgstr "Dades de navegació esborrades"
+
+msgid "Burn Browsing Data"
+msgstr "Esborra les dades de navegació"
+
+msgid "Burn Browsing Data?"
+msgstr "Vols esborrar les dades de navegació?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Botons que es mostren al voltant de la barra d’adreces a les finestres d’aquest perfil."
+
+msgid "C_lear"
+msgstr "_Neteja"
+
+msgid "Cannot Connect to Tor"
+msgstr "No es pot connectar amb Tor"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "No es pot accedir al port de control de Tor: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "No es pot llegir la galeta de control de Tor: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "No es pot eliminar el fitxer antic del port de control de Tor: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "No es pot desar la descàrrega: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "No es pot iniciar Tor: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "No es pot escriure la configuració de Tor: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "No es pot escriure al port de control de Tor: {error}"
+
+msgid "Certificate for {name}"
+msgstr "Certificat de {name}"
+
+msgid "Check the address for a typo."
+msgstr "Comprova que l’adreça no tingui cap error d’escriptura."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Comprova l’adreça, incloent-hi el número de port després dels dos punts, si n’hi ha."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Comprova el cable de xarxa o la connexió Wi-Fi."
+
+msgid "Check your internet connection."
+msgstr "Comprova la teva connexió a internet."
+
+msgid "Clear App Data…"
+msgstr "Neteja les dades de l’aplicació…"
+
+msgid "Clear Data of {name}?"
+msgstr "Vols netejar les dades de {name}?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Tanca les pestanyes o les aplicacions que no necessitis i torna a carregar la pàgina."
+
+msgid "Close {name} before deleting it"
+msgstr "Tanca {name} abans d’eliminar-lo"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Tanca totes les pestanyes i finestres d’aquest perfil i n’elimina les galetes, les dades dels llocs, la memòria cau i l’historial."
+
+msgid "Connect"
+msgstr "Connecta"
+
+msgid "Connect directly"
+msgstr "Connecta directament"
+
+msgid "Connected"
+msgstr "Connectat"
+
+msgid "Connected to a relay directory server"
+msgstr "Connectat a un servidor de directori de relés"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Connectat a un relé per construir circuits"
+
+msgid "Connected to pluggable transport"
+msgstr "Connectat al transport connectable"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Connectat al transport connectable per construir circuits"
+
+msgid "Connected to proxy"
+msgstr "Connectat al servidor intermediari"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Connectat al servidor intermediari per construir circuits"
+
+msgid "Connected to the Tor network"
+msgstr "Connectat a la xarxa Tor"
+
+msgid "Connecting to Tor"
+msgstr "Connectant amb Tor"
+
+msgid "Connecting to a relay directory server"
+msgstr "Connectant amb un servidor de directori de relés"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Connectant amb un relé per construir circuits"
+
+msgid "Connecting to pluggable transport"
+msgstr "Connectant amb el transport connectable"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Connectant amb el transport connectable per construir circuits"
+
+msgid "Connecting to proxy"
+msgstr "Connectant amb el servidor intermediari"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Connectant amb el servidor intermediari per construir circuits"
+
+msgid "Connection Settings…"
+msgstr "Paràmetres de connexió…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, la configuració de privadesa i l’algorisme de regles de TrackerRadarKit."
+
+msgid "Could not install the app: {error}"
+msgstr "No s’ha pogut instal·lar l’aplicació: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "No s’ha pogut eliminar tot: {error}"
+
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Elimina les galetes, les dades dels llocs i la memòria cau d’aquest perfil"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Connexions dissimulades als ponts integrats de Tor Browser."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Connexions dissimulades als ponts integrats de Tor Browser. Requereix {package}."
+
+msgid "Download failed: {error}"
+msgstr "Ha fallat la descàrrega: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Es descarrega en temps d’execució des de DuckDuckGo; amb llicència CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "{name} descarregat"
+
+msgid "DuckDuckGo protections"
+msgstr "Proteccions de DuckDuckGo"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Cada aplicació s’executa en la seva pròpia finestra i procés, amb galetes i inicis de sessió propis."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Cada perfil conserva les seves pròpies galetes, inicis de sessió, historial i memòria cau, i s’executa com a procés independent."
+
+msgid "Establishing a Tor circuit"
+msgstr "Establint un circuit de Tor"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Establint una connexió xifrada amb el directori"
+
+msgid "File not found"
+msgstr "No s’ha trobat el fitxer"
+
+msgid "Find in Page…"
+msgstr "Cerca a la pàgina…"
+
+msgid "Find in page"
+msgstr "Cerca a la pàgina"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Negociació acabada amb un servidor de directori de relés"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Negociació acabada amb un relé per construir circuits"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Acabant la negociació amb un servidor de directori de relés"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Acabant la negociació amb un relé per construir circuits"
+
+msgid "Forward"
+msgstr "Endavant"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "De bridges.torproject.org, per correu electrònic o d’un amic."
+
+msgid "Go to Home Page"
+msgstr "Vés a la pàgina d’inici"
+
+msgid "Go to the previous or next page"
+msgstr "Vés a la pàgina anterior o a la següent"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Vés a la pàgina d’inici del lloc i cerca-hi la pàgina."
+
+msgid "How to Reach Tor"
+msgstr "Com arribar a Tor"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Si torna a fallar després de recarregar-la, potser la pàgina mateixa està malmesa."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Si l’adreça és correcta, potser el lloc ja no existeix."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Si tens un compte en aquest lloc, inicia la sessió i torna-ho a provar."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "Si utilitzes una VPN o el teu propi servidor DNS, comprova que funcioni."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "Si utilitzes una VPN, un tallafoc o un servidor intermediari, comprova que no bloquegi el lloc."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "Llistes de filtres de ZTBrowser Guard"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "El ZTBrowser no pot obrir {host} perquè aquest ordinador no està connectat a cap xarxa."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "El ZTBrowser no ha trobat cap servidor a {host}."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "El ZTBrowser no es connecta a {host} per aquest port."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "El Tor propi del ZTBrowser s’està connectant. No surt res d’aquesta finestra fins que estigui connectat."
+
+msgid "Install Site as App"
+msgstr "Instal·la el lloc com a aplicació"
+
+msgid "Install Site as App…"
+msgstr "Instal·la el lloc com a aplicació…"
+
+msgid "Install as App"
+msgstr "Instal·la com a aplicació"
+
+msgid "Installed Apps"
+msgstr "Aplicacions instal·lades"
+
+msgid "Installed Apps…"
+msgstr "Aplicacions instal·lades…"
+
+msgid "Installed {name}"
+msgstr "{name} instal·lat"
+
+msgid "Interface"
+msgstr "Interfície"
+
+msgid "Issued by {name}"
+msgstr "Emès per {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Potser l’han mogut, canviat de nom o eliminat."
+
+msgid "Language"
+msgstr "Llengua"
+
+msgid "Load Insecure Page"
+msgstr "Carrega la pàgina no segura"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Torna a carregar la pàgina o atura’n la càrrega"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "S’ha carregat prou informació de directori per construir circuits"
+
+msgid "Loading authority certificates"
+msgstr "Carregant els certificats d’autoritat"
+
+msgid "Loading relay descriptors"
+msgstr "Carregant els descriptors de relés"
+
+msgid "Loading the network status"
+msgstr "Carregant l’estat de la xarxa"
+
+msgid "Main Menu"
+msgstr "Menú principal"
+
+msgid "Manage Profiles…"
+msgstr "Gestiona els perfils…"
+
+msgid "New Identity"
+msgstr "Nova identitat"
+
+msgid "New Identity?"
+msgstr "Vols una nova identitat?"
+
+msgid "New Tab"
+msgstr "Pestanya nova"
+
+msgid "New Tor Window"
+msgstr "Finestra nova de Tor"
+
+msgid "New Window"
+msgstr "Finestra nova"
+
+msgid "New identity"
+msgstr "Nova identitat"
+
+msgid "New profile name"
+msgstr "Nom del perfil nou"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "Un pont per línia, per exemple: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Només es poden instal·lar pàgines web com a aplicacions"
+
+msgid "Open"
+msgstr "Obre"
+
+msgid "Open Page in Browser"
+msgstr "Obre la pàgina al navegador"
+
+msgid "Open a new tab"
+msgstr "Obre una pestanya nova"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Obre una finestra el trànsit de la qual passa només per Tor"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Les altres aplicacions no s’obren des de la finestra de Tor: es connectarien fora de Tor."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Les pàgines no s’obren fins que la finestra de Tor estigui connectada."
+
+msgid "Paste at least one bridge."
+msgstr "Enganxa com a mínim un pont."
+
+msgid "Preferences"
+msgstr "Preferències"
+
+msgid "Preferences…"
+msgstr "Preferències…"
+
+msgid "Profiles"
+msgstr "Perfils"
+
+msgid "Protect This Site"
+msgstr "Protegeix aquest lloc"
+
+msgid "Protection Shield"
+msgstr "Escut de protecció"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Ha fallat la lectura del port de control de Tor: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "Torna a connectar la teva VPN, si en utilitzes una."
+
+msgid "Reload"
+msgstr "Torna a carregar"
+
+msgid "Reload Page"
+msgstr "Torna a carregar la pàgina"
+
+msgid "Reset Zoom"
+msgstr "Restableix el zoom"
+
+msgid "Search Engine"
+msgstr "Cercador"
+
+msgid "Search {engine}"
+msgstr "Cerca a {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "Cerca a {engine} o escriu una adreça"
+
+msgid "Show in Folder"
+msgstr "Mostra a la carpeta"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Tanca la teva sessió i elimina les galetes, les dades dels llocs i la memòria cau d’aquesta aplicació. No es veu afectat res més."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Algunes dades no s’han pogut eliminar: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "Alguna cosa ha anat malament en carregar {host}."
+
+msgid "Starting"
+msgstr "Iniciant"
+
+msgid "Starting Tor…"
+msgstr "Iniciant Tor…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Activa o desactiva la protecció contra els rastrejadors per al lloc"
+
+msgid "System default ({language})"
+msgstr "Valor per defecte del sistema ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "L’autoritat que va emetre el certificat l’ha revocat."
+
+msgid "The bridge line has no address: {line}"
+msgstr "La línia del pont no té cap adreça: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "No s’ha pogut verificar el certificat."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "El certificat està signat amb un algorisme que ja no és segur."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "El certificat encara no és vàlid. Comprova que la data i l’hora d’aquest ordinador siguin correctes."
+
+msgid "The certificate was issued for a different site."
+msgstr "El certificat es va emetre per a un altre lloc."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "El certificat no el va emetre cap autoritat en què aquest ordinador confiï."
+
+msgid "The connection to {host} was interrupted."
+msgstr "S’ha interromput la connexió amb {host}."
+
+msgid "The icon at the end of the address bar"
+msgstr "La icona al final de la barra d’adreces"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "La llengua canvia quan es reinicia el ZTBrowser"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "La llengua dels menús, els diàlegs i els missatges, a tots els perfils i aplicacions web."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "El problema és al lloc. Torna-ho a provar d’aquí a uns minuts."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Potser el lloc està en manteniment. Torna-ho a provar d’aquí a uns minuts."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Potser el lloc està sobrecarregat. Torna-ho a provar d’aquí a uns minuts."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "Els ponts {transport} necessiten un programa que no està instal·lat; instal·la {package}"
+
+msgid "There is no file at {path}."
+msgstr "No hi ha cap fitxer a {path}."
+
+msgid "This address is blocked"
+msgstr "Aquesta adreça està bloquejada"
+
+msgid "This connection isn’t private"
+msgstr "Aquesta connexió no és privada"
+
+msgid "This page"
+msgstr "Aquesta pàgina"
+
+msgid "This page can’t be found"
+msgstr "No es pot trobar aquesta pàgina"
+
+msgid "This page can’t be loaded"
+msgstr "No es pot carregar aquesta pàgina"
+
+msgid "This page crashed"
+msgstr "Aquesta pàgina ha fallat"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Aquesta pàgina és en un altre lloc i no forma part de {name}"
+
+msgid "This page isn’t working"
+msgstr "Aquesta pàgina no funciona"
+
+msgid "This page ran out of memory"
+msgstr "Aquesta pàgina s’ha quedat sense memòria"
+
+msgid "This site can’t be found"
+msgstr "No es pot trobar aquest lloc"
+
+msgid "This site can’t be reached"
+msgstr "No es pot accedir a aquest lloc"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Mitjançant els navegadors de voluntaris; funciona a la majoria de xarxes censurades."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Mitjançant els navegadors de voluntaris; funciona a la majoria de xarxes censurades. Requereix {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Botons de la barra d’eines"
+
+msgid "Tor Connection"
+msgstr "Connexió amb Tor"
+
+msgid "Tor Connection…"
+msgstr "Connexió amb Tor…"
+
+msgid "Tor Window"
+msgstr "Finestra de Tor"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor no pot utilitzar la ruta {path}"
+
+msgid "Tor closed its control port"
+msgstr "Tor ha tancat el seu port de control"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor no ha pogut canviar de circuit: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor no ha obert el seu port de control"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor no està instal·lat. Instal·la el paquet tor de la teva distribució; la finestra de Tor inicia el seu propi Tor i no necessita cap servei de Tor en execució."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor no ha obert cap port SOCKS local"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor ho ha rebutjat: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor ha informat d’un problema"
+
+msgid "Tor stopped."
+msgstr "Tor s’ha aturat."
+
+msgid "Tor's control cookie is damaged"
+msgstr "La galeta de control de Tor està malmesa"
+
+msgid "Tracker Data Set"
+msgstr "Conjunt de dades de rastrejadors"
+
+msgid "Tracker protection on this site"
+msgstr "Protecció contra rastrejadors en aquest lloc"
+
+msgid "Try Again"
+msgstr "Torna-ho a provar"
+
+msgid "Try again in a few minutes."
+msgstr "Torna-ho a provar d’aquí a uns minuts."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Desactiva el mode d’avió, si està activat."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "Converteix les llistes de filtres de ZTBrowser Guard en regles de WebKit. Font: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Desinstal·la"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Transport de pont desconegut: {name}"
+
+msgid "Valid until {date}"
+msgstr "Vàlid fins al {date}"
+
+msgid "Your Bridges"
+msgstr "Els teus ponts"
+
+msgid "You’re offline"
+msgstr "Estàs fora de línia"
+
+msgid "Zoom In"
+msgstr "Amplia"
+
+msgid "Zoom Out"
+msgstr "Redueix"
+
+msgid "_Allow"
+msgstr "_Permet"
+
+msgid "_Burn"
+msgstr "_Esborra"
+
+msgid "_Cancel"
+msgstr "_Cancel·la"
+
+msgid "_Deny"
+msgstr "_Denega"
+
+msgid "_Install"
+msgstr "_Instal·la"
+
+msgid "_New Identity"
+msgstr "_Nova identitat"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) o obfs4proxy de l’AUR (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) o snowflake-pt-client de l’AUR (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} no pot atendre la sol·licitud ara mateix."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} no ha pogut respondre a aquesta sol·licitud."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} no ofereix una connexió segura"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} no et permet veure aquesta pàgina."
+
+msgid "{host} has no page at this address."
+msgstr "{host} no té cap pàgina en aquesta adreça."
+
+msgid "{host} refused the connection."
+msgstr "{host} ha rebutjat la connexió."
+
+msgid "{host} took too long to respond."
+msgstr "{host} ha trigat massa a respondre."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} ha utilitzat més memòria de la que pot utilitzar una pàgina, així que el ZTBrowser l’ha aturada."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} s’obrirà en la seva pròpia finestra, amb galetes i inicis de sessió separats del navegador i de totes les altres aplicacions."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — aplicació web del ZTBrowser"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} no és un argument de pont"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} no és una adreça IP amb port"
+
+msgid "{url} answered {status}"
+msgstr "{url} ha respost {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} no ha retornat el document esperat"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} és més gran del que es permet"
+
+msgid "{url} is not a valid address"
+msgstr "{url} no és una adreça vàlida"
+
+msgid "© their maintainers"
+msgstr "© els seus mantenidors"
+
+msgid "Ask Where to Save Each File"
+msgstr "Pregunta on desar cada fitxer"
+
+msgid "Choose Folder"
+msgstr "Trieu la carpeta"
+
+msgid "Download Folder"
+msgstr "Carpeta de baixades"
+
+msgid "Download failed"
+msgstr "La baixada ha fallat"
+
+msgid "Downloading…"
+msgstr "S'està baixant…"
+
+msgid "Downloading… {percent}%"
+msgstr "S'està baixant… {percent}%"
+
+msgid "Downloads"
+msgstr "Baixades"
+
+msgid "Go to Download Folder"
+msgstr "Ves a la carpeta de baixades"
+
+msgid "No downloads yet"
+msgstr "Encara no hi ha cap baixada"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Altrament, els fitxers van directament a la carpeta de baixades"
+
+msgid "Save File"
+msgstr "Desa el fitxer"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Les cinc últimes baixades i la carpeta de baixades"
+
+msgid "_Save"
+msgstr "_Desa"
+
+msgid "_Select"
+msgstr "_Selecciona"
+
+msgid "Show All Downloads"
+msgstr "Mostra totes les baixades"
+
+msgid "Clear List"
+msgstr "Esborra la llista"
+
+msgid "Remove from List"
+msgstr "Elimina de la llista"
+
+msgid "Clear History"
+msgstr "Esborra l'historial"
+
+msgid "Search Downloads"
+msgstr "Cerca a les baixades"
+
+msgid "File Moved or Deleted"
+msgstr "Fitxer mogut o suprimit"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Anima cada pas de la roda del ratolí. Les pàgines que ja són obertes s'han de tornar a carregar."
+
+msgid "Scrolling"
+msgstr "Desplaçament"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Desplaçament suau amb la roda del ratolí"
+
+msgid "Details"
+msgstr "Detalls"
+
+msgid "Legal"
+msgstr "Legal"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "Aquesta aplicació no té absolutament cap garantia. Vegeu la {license} per a més detalls."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "Llicència pública general de GNU, versió 3 o posterior"
+
+msgid "Apache License, Version 2.0"
+msgstr "Llicència Apache, versió 2.0"
+
+msgid "Move to New Window"
+msgstr "Mou a una finestra nova"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Llicència pública de Mozilla 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "Llicència BSD de 3 clàusules"
+
+msgid "Wide Address Bar"
+msgstr "Barra d'adreces ampla"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "La barra d'adreces ocupa tot l'espai de la barra d'eines; desactivat, es manté curta i centrada"
+
+msgid "No apps installed yet"
+msgstr "Encara no hi ha cap aplicació instal·lada"
+
+msgid "Uninstall {name}?"
+msgstr "Voleu desinstal·lar {name}?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Suprimeix l'aplicació amb les seves galetes, inicis de sessió i dades. Aquesta acció no es pot desfer."
+
+msgid "Tab Position"
+msgstr "Posició de les pestanyes"
+
+msgid "Top"
+msgstr "A dalt"
+
+msgid "Bottom"
+msgstr "A baix"
+
+msgid "Left"
+msgstr "A l'esquerra"
+
+msgid "Right"
+msgstr "A la dreta"
+
+msgid "Window Buttons"
+msgstr "Botons de la finestra"
+
+msgid "Default"
+msgstr "Per defecte"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Afegeix un perfil"
+
+msgid "Delete profile {name}?"
+msgstr "Voleu suprimir el perfil {name}?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Suprimeix el perfil amb les seves galetes, inicis de sessió, historial i memòria cau. Aquesta acció no es pot desfer."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "El ZTBrowser no és el vostre navegador per defecte"
+
+msgid "Make Default"
+msgstr "Fes-lo per defecte"
+
+msgid "Don't Ask Again"
+msgstr "No ho tornis a preguntar"
+
+msgid "Close"
+msgstr "Tanca"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "No s’ha pogut fer que el ZTBrowser sigui el navegador per defecte: {error}"
+
+msgid "Default Browser"
+msgstr "Navegador per defecte"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "El ZTBrowser obre els enllaços d’altres programes"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Els enllaços d’altres programes s’obren amb {browser}"
+
+msgid "Another browser opens links from other programs"
+msgstr "Un altre navegador obre els enllaços d’altres programes"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Només un ZTBrowser instal·lat pot obrir els enllaços d’altres programes"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "L’escriptori no indica quin navegador obre els enllaços"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "Pregunta en iniciar el ZTBrowser"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Ofereix fer que el ZTBrowser sigui el navegador per defecte mentre un altre navegador obri els enllaços"

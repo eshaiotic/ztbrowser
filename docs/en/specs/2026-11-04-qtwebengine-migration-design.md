@@ -1,16 +1,16 @@
-# Design: InDuckGo 1.2.0 on QtWebEngine (Chromium)
+# Design: ZTBrowser 1.2.0 on QtWebEngine (Chromium)
 
 Status: **draft for approval (builder check done, owner answers included)** · Branch: `feature/1.2.0` · Date: 2026-11-04 · Polish mirror:
 `docs/pl/specs/2026-11-04-qtwebengine-migration-design.md`
 
 ## 1. Why this exists
 
-InDuckGo 1.1.2 is built on **WebKitGTK**, the web engine of GNOME. Over many iterations its page rendering never
+ZTBrowser 1.1.2 is built on **WebKitGTK**, the web engine of GNOME. Over many iterations its page rendering never
 felt like Brave's. Three real causes were found and fixed (a slow graphics renderer, a page script re-testing
 elements on every animation frame, WebKit's abrupt mouse-wheel animation), but the last measurement, on the
 owner's resolution (see §3), still shows the engine itself as the limit:
 
-| Test (bpxglobal.com, 8 s scripted scroll, real GPU, fullscreen 3840×2160) | Brave 156 | QtWebEngine (Chromium 140) | InDuckGo 1.1.2 (WebKitGTK) |
+| Test (bpxglobal.com, 8 s scripted scroll, real GPU, fullscreen 3840×2160) | Brave 156 | QtWebEngine (Chromium 140) | ZTBrowser 1.1.2 (WebKitGTK) |
 |---|---|---|---|
 | frames per second | 59.8 | 57.7 | 43.8 |
 | 95th-percentile frame gap | 16.8 ms | 16.7 ms | 35 ms |
@@ -28,14 +28,14 @@ for Qt, with the user interface rewritten in Qt.
 |---|---|
 | **Engine** | The software that loads and draws web pages (WebKit, Chromium). |
 | **QtWebEngine** | Qt's packaging of Chromium. It exposes a small API (profiles, views, interceptors) instead of Chrome's whole browser. |
-| **Profile** | One person's separate world of cookies, storage, cache and permissions. InDuckGo runs one process per profile. |
+| **Profile** | One person's separate world of cookies, storage, cache and permissions. ZTBrowser runs one process per profile. |
 | **Interceptor** | A callback the engine calls for every network request *before* it is sent, which may let it pass, block it or redirect it. |
 | **Farbling** | Brave's technique of adding small, per-site random noise to values a page can read (canvas, audio, WebGL), so a browser cannot be recognised by them. It needs patches inside Chromium. |
 | **Fingerprinting** | Recognising a browser by the combination of its many technical details instead of by cookies. |
 | **Storage partitioning** | Keeping what an embedded third-party frame stores separate for every site that embeds it, so it cannot link visits across sites. |
-| **Content Scope Scripts** | DuckDuckGo's open-source JavaScript that hardens page APIs. InDuckGo already runs it. |
-| **Guard** | InDuckGo's name for its generic element hiding and filter-list engine (built on the `adblock` crate). |
-| **Port / adapter** | A *port* is an interface owned by the domain (`induckgo-core`); an *adapter* implements it for a concrete technology (GTK, Qt). |
+| **Content Scope Scripts** | DuckDuckGo's open-source JavaScript that hardens page APIs. ZTBrowser already runs it. |
+| **Guard** | ZTBrowser's name for its generic element hiding and filter-list engine (built on the `adblock` crate). |
+| **Port / adapter** | A *port* is an interface owned by the domain (`ztbrowser-core`); an *adapter* implements it for a concrete technology (GTK, Qt). |
 | **Shim** | A thin C++ layer that gives Rust access to Qt classes that Rust bindings do not cover. |
 
 ## 3. Goals, non-goals, anti-goals
@@ -51,7 +51,7 @@ for Qt, with the user interface rewritten in Qt.
 3. **The interface exactly as it is now:** toolbar buttons, address bar, main menu with icons, downloads list
    and manager, preferences with the interface-language page, Tor window, web apps, profiles. Same words in
    all 66 languages.
-4. **Everything InDuckGo protects today keeps working:** tracker blocking, Guard, Content Scope Scripts, HTTPS
+4. **Everything ZTBrowser protects today keeps working:** tracker blocking, Guard, Content Scope Scripts, HTTPS
    upgrades, link cleaning, per-site unprotected list, burn data, GPC.
 5. **Protections go beyond DuckDuckGo and Brave where the engine allows it** (§6): default-deny for third
    parties, strict storage partitioning, uniform fingerprint profile, per-site Tor isolation, hardened network
@@ -80,11 +80,11 @@ for Qt, with the user interface rewritten in Qt.
 - Rules of `docs/en/engineering-rules.md` and the global rules apply: object-oriented Rust, one file ≤ 1000
   lines, imports from the defining module, TDD/BDD scenario tests, no shortcuts, zero known vulnerabilities
   (`cargo audit` in CI).
-- Layering (Clean Architecture): `induckgo-core` stays free of GUI and engine types. The engine and the toolkit
+- Layering (Clean Architecture): `ztbrowser-core` stays free of GUI and engine types. The engine and the toolkit
   are *adapters*.
 - Distribution: deb/rpm/Arch packages depend on the distribution's Qt; AppImage bundles Qt (§10).
 - Data licences: DuckDuckGo's data (Tracker Radar, blocklists, privacy configuration, Smarter Encryption list)
-  is CC BY-NC-SA 4.0. As today, InDuckGo **downloads it at run time and never ships it in the repository or the
+  is CC BY-NC-SA 4.0. As today, ZTBrowser **downloads it at run time and never ships it in the repository or the
   packages.** Code licences: Content Scope Scripts Apache-2.0, `autoconsent` MPL-2.0, `adblock` MPL-2.0.
 - Work happens on branch `feature/1.2.0`; `main` and the released 1.1.2 stay untouched until 1.2.0 passes §8.
 
@@ -94,24 +94,24 @@ for Qt, with the user interface rewritten in Qt.
 
 ### 5.1 Layers
 
-- **`induckgo-core`** (kept, extended): domain rules and **ports**. It already holds protection rules, Guard
+- **`ztbrowser-core`** (kept, extended): domain rules and **ports**. It already holds protection rules, Guard
   lists, profiles, web apps, zoom, downloads, scrolling, Tor settings, language catalogues. It gains the ports
   `RequestPolicy` (decide pass/block/redirect for a request), `CookiePolicy` (decide per cookie access),
   `PageScripts` (which scripts run where), `ProfileStorage` and `DataBurner`. Nothing in it names Qt or GTK.
-- **`induckgo-engine-qt`** (new): the QtWebEngine adapter. A C++ shim (≈ 300–500 lines estimated by the
+- **`ztbrowser-engine-qt`** (new): the QtWebEngine adapter. A C++ shim (≈ 300–500 lines estimated by the
   research) holds the Qt subclasses (`QWebEngineUrlRequestInterceptor`, the cookie filter, scheme handlers)
   and calls Rust through a stable C interface. The Rust side implements the ports above.
-- **`induckgo-qt`** (new): the application: windows, tabs, menus, dialogs, built with Qt and bound to Rust
-  with `cxx-qt` (KDAB, actively maintained, 0.10 at the time of writing). Reuses `induckgo-core` for every
+- **`ztbrowser-qt`** (new): the application: windows, tabs, menus, dialogs, built with Qt and bound to Rust
+  with `cxx-qt` (KDAB, actively maintained, 0.10 at the time of writing). Reuses `ztbrowser-core` for every
   decision.
-- **`induckgo`** (GTK, existing): kept building until §10 says it can go.
+- **`ztbrowser`** (GTK, existing): kept building until §10 says it can go.
 - **Tor window:** its own process with `--proxy-server=socks5://…`, because QtWebEngine's proxy is
   process-wide. This matches today's design (one process per window kind).
 
 ### 5.2 Why ports first
 
 The engine has already been replaced once in this document's history. Every decision about *what* to block,
-hide, strip or allow stays in `induckgo-core` behind ports so that a future change of engine (for example to
+hide, strip or allow stays in `ztbrowser-core` behind ports so that a future change of engine (for example to
 CEF, if Qt's Chromium stays old) rewrites only an adapter.
 
 ### 5.3 The interface toolkit (author's recommendation, to be confirmed by a short spike)
@@ -160,7 +160,7 @@ documentation) gave this map. "Hook" is how it is done on QtWebEngine.
 
 DuckDuckGo's on-page overlays (the Duck Player overlay on video pages, Click to Load placeholders for blocked
 embeds, the cookie pop-up handling of `autoconsent`) are page-level features in DuckDuckGo's own browsers too.
-QtWebEngine has no native surface to draw them on, so InDuckGo implements them as **scripts injected into the
+QtWebEngine has no native surface to draw them on, so ZTBrowser implements them as **scripts injected into the
 page** (`QWebEngineScript`, own script world, so the page cannot read or tamper with them). The owner agreed
 on 2026-11-04: *"the overlay known from DDG may be in JS since there is no other option"*. Consequences: they
 cannot run inside workers, and a hostile page can notice (not alter) that the overlay is present; both are
@@ -186,7 +186,7 @@ Chosen because they are possible with the hooks above and their breakage is cont
 6. **Leak tests in the build:** tests that start the Tor process and assert no direct DNS and no WebRTC
    address leaks.
 7. **Reference tests:** DuckDuckGo's open `privacy-reference-tests` (request blocking, GPC, URL parameters,
-   referrer, HTTPS upgrades, first-party cookie expiry) run against `induckgo-core`, so parity with DuckDuckGo
+   referrer, HTTPS upgrades, first-party cookie expiry) run against `ztbrowser-core`, so parity with DuckDuckGo
    is *checked*, not claimed.
 
 ### Honest limits (stated in the product's documentation too)
@@ -211,7 +211,7 @@ on the 140 base for its next release. For a privacy browser this is a real risk.
 
 ## 8. Success criteria and how they are measured
 
-The benchmark of this document is kept **in the repository** (a dev tool crate beside `induckgo-test-report`),
+The benchmark of this document is kept **in the repository** (a dev tool crate beside `ztbrowser-test-report`),
 not in `/tmp`, and run on the owner's resolutions.
 
 | Criterion | Pass if |
@@ -242,7 +242,7 @@ The GTK application stays releasable until the Qt one passes §8.
 1. **Spike (throw-away):** QML `WebEngineView` + interceptor + cookie filter + script from `cxx-qt` and the
    shim; confirms §5.3 and passes the performance gate of §11a. *Decision point.*
 2. **Shell:** window, tabs, address bar, profile with persistent storage, same look.
-3. **Protections:** ports in `induckgo-core`; interceptor, cookie filter, scripts, Guard, Content Scope Scripts;
+3. **Protections:** ports in `ztbrowser-core`; interceptor, cookie filter, scripts, Guard, Content Scope Scripts;
    reference tests.
 4. **Everyday features:** downloads (list, manager, clear), permissions, zoom, find in page, menu with icons,
    preferences, smooth wheel script.
@@ -265,10 +265,10 @@ structure, how the benchmark tool is packaged, and the order inside each step of
   CEF behind the same ports (§9), not more work on QtWebEngine. If the shim hooks cannot be reached from
   `cxx-qt`, the fallback is Qt Widgets first, CEF second.
 - **Translations.** QML text is looked up through a small `cxx-qt` object that calls the existing `tr!`
-  catalogues in `induckgo-core`. Qt's own `.ts`/`.qm` files are **not** used, so there is one source of
+  catalogues in `ztbrowser-core`. Qt's own `.ts`/`.qm` files are **not** used, so there is one source of
   strings and the "never a mix of languages" rule holds by construction.
 - **Existing GTK-only state.** Whatever domain state (downloads list, zoom, permissions, find-in-page, tab and
-  session state) is still tied to GTK types is extracted into `induckgo-core` as part of the Qt work. The GTK
+  session state) is still tied to GTK types is extracted into `ztbrowser-core` as part of the Qt work. The GTK
   crate is *not* refactored for its own sake: it only follows when the extraction is a pure move.
 - **Tor leak guarantee.** The Tor process starts Chromium with `--proxy-server=socks5://…` and
   `--host-resolver-rules="MAP * ~NOTFOUND, EXCLUDE <proxy host>"`, with WebRTC disabled; the leak tests of §8
@@ -276,7 +276,7 @@ structure, how the benchmark tool is packaged, and the order inside each step of
 - **Reference tests.** `privacy-reference-tests` are fetched in CI at test time (never committed, because of
   CC BY-NC-SA); the required suites are those matching the features finished in §10 step 3, and the list grows
   with each feature.
-- **Minimum engine version.** A constant in `induckgo-core`, raised per release. Below it: a visible warning in
+- **Minimum engine version.** A constant in `ztbrowser-core`, raised per release. Below it: a visible warning in
   normal windows; **refusal to start** for the Tor window (anonymity is the point there).
 - **Strict mode** is a separate *Strict* profile, off in the default profile (§6). The **120 fps** criterion is
   optional headroom (§3). The **AppImage** bundles Qt and is allowed to be large (§10 step 7).

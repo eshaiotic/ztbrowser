@@ -1,5 +1,5 @@
 #!/bin/sh
-# Installs InDuckGo as a package of this system's package manager, so it can be removed cleanly later.
+# Installs ZTBrowser as a package of this system's package manager, so it can be removed cleanly later.
 #
 #   Arch and its derivatives (CachyOS, EndeavourOS, Manjaro, ...): builds the pacman package from this
 #   checkout and installs it with pacman.
@@ -24,17 +24,42 @@ require_package() {
   fi
 }
 
+# Asks whether ZTBrowser should open the web links of other programs, and changes nothing unless the answer is yes.
+# Only asked on a terminal, never as root (that would change root's default browser, not the person's), and not
+# when ZTBrowser already is the default. ZTBrowser's Preferences offer the same change later.
+offer_default_browser() {
+  entry=io.github.ztbrowser.ZTBrowser.desktop
+  if [ ! -t 0 ] || [ "$(id -u)" -eq 0 ] || ! command -v xdg-settings >/dev/null; then
+    return 0
+  fi
+  if [ "$(xdg-settings get default-web-browser 2>/dev/null)" = "$entry" ]; then
+    return 0
+  fi
+  printf 'Make ZTBrowser your default browser, so it opens links from other programs? [y/N] '
+  read -r answer || answer=""
+  case "$answer" in
+    [yY]*)
+      if xdg-settings set default-web-browser "$entry"; then
+        echo "ZTBrowser is now your default browser."
+      else
+        echo "Could not make ZTBrowser your default browser; its Preferences can do it later." >&2
+      fi
+      ;;
+    *) echo "Your default browser is unchanged; ZTBrowser's Preferences can change it later." ;;
+  esac
+}
+
 # shellcheck source=/dev/null # the running system describes itself here
 . /etc/os-release
 case " ${ID:-} ${ID_LIKE:-} " in
   *" arch "*)
     "$repository/packaging/release.sh" arch
-    package=$(newest_package 'induckgo-*.pkg.tar.*')
+    package=$(newest_package 'ztbrowser-*.pkg.tar.*')
     require_package "$package" arch
     sudo pacman -U "$package"
     ;;
   *" fedora "*)
-    package=$(newest_package 'induckgo-*.rpm')
+    package=$(newest_package 'ztbrowser-*.rpm')
     require_package "$package" rpm
     sudo dnf install -y "$package"
     ;;
@@ -44,4 +69,5 @@ case " ${ID:-} ${ID_LIKE:-} " in
     ;;
 esac
 
-echo "InDuckGo installed. Start it from the application menu or with: induckgo"
+echo "ZTBrowser installed. Start it from the application menu or with: ztbrowser"
+offer_default_browser

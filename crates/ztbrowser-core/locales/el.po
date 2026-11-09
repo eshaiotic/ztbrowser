@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: el\n"
+
+msgid "About ZTBrowser"
+msgstr "Σχετικά με το ZTBrowser"
+
+msgid "Access denied"
+msgstr "Δεν επιτρέπεται η πρόσβαση"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Να επιτραπεί στο {requesting} να χρησιμοποιεί τα cookies και τα δεδομένα του ενώ βρίσκεστε στο {current};"
+
+msgid "Allow {site} to know your location?"
+msgstr "Να επιτραπεί στο {site} να γνωρίζει την τοποθεσία σας;"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "Να επιτραπεί στο {site} να διαβάζει το πρόχειρό σας;"
+
+msgid "Allow {site} to show notifications?"
+msgstr "Να επιτραπεί στο {site} να εμφανίζει ειδοποιήσεις;"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "Να επιτραπεί στο {site} να χρησιμοποιεί την κάμερα και το μικρόφωνό σας;"
+
+msgid "Allow {site} to use your camera?"
+msgstr "Να επιτραπεί στο {site} να χρησιμοποιεί την κάμερά σας;"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "Να επιτραπεί στο {site} να χρησιμοποιεί το μικρόφωνό σας;"
+
+msgid "Allow {site} to use your screen?"
+msgstr "Να επιτραπεί στο {site} να χρησιμοποιεί την οθόνη σας;"
+
+msgid "App data cleared"
+msgstr "Τα δεδομένα της εφαρμογής διαγράφηκαν"
+
+msgid "Appearance"
+msgstr "Εμφάνιση"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "Εφαρμόζεται την επόμενη φορά που θα ξεκινήσει το ZTBrowser"
+
+msgid "Asking for relay descriptors"
+msgstr "Αίτημα για περιγραφείς αναμεταδοτών"
+
+msgid "Asking for the network status"
+msgstr "Αίτημα για την κατάσταση του δικτύου"
+
+msgid "Back"
+msgstr "Πίσω"
+
+msgid "Back and Forward"
+msgstr "Πίσω και Εμπρός"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Ιδανικό παντού όπου το Tor δεν είναι αποκλεισμένο."
+
+msgid "Bridges I provide"
+msgstr "Γέφυρες που παρέχω"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Οι γέφυρες είναι μη καταχωρισμένοι αναμεταδότες Tor για δίκτυα που αποκλείουν το Tor."
+
+msgid "Browsing data burned"
+msgstr "Τα δεδομένα περιήγησης διαγράφηκαν"
+
+msgid "Burn Browsing Data"
+msgstr "Διαγραφή δεδομένων περιήγησης"
+
+msgid "Burn Browsing Data?"
+msgstr "Διαγραφή δεδομένων περιήγησης;"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Κουμπιά που εμφανίζονται γύρω από τη γραμμή διευθύνσεων στα παράθυρα αυτού του προφίλ."
+
+msgid "C_lear"
+msgstr "Ε_κκαθάριση"
+
+msgid "Cannot Connect to Tor"
+msgstr "Αδυναμία σύνδεσης με το Tor"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Αδυναμία πρόσβασης στη θύρα ελέγχου του Tor: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Αδυναμία ανάγνωσης του cookie ελέγχου του Tor: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Αδυναμία αφαίρεσης του παλιού αρχείου θύρας ελέγχου του Tor: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "Αδυναμία αποθήκευσης της λήψης: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Αδυναμία εκκίνησης του Tor: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Αδυναμία εγγραφής της διαμόρφωσης του Tor: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Αδυναμία εγγραφής στη θύρα ελέγχου του Tor: {error}"
+
+msgid "Certificate for {name}"
+msgstr "Πιστοποιητικό για το {name}"
+
+msgid "Check the address for a typo."
+msgstr "Ελέγξτε τη διεύθυνση για ορθογραφικά λάθη."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Ελέγξτε τη διεύθυνση, συμπεριλαμβανομένου του αριθμού θύρας μετά την άνω και κάτω τελεία, αν υπάρχει."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Ελέγξτε το καλώδιο δικτύου ή τη σύνδεση Wi-Fi."
+
+msgid "Check your internet connection."
+msgstr "Ελέγξτε τη σύνδεσή σας στο διαδίκτυο."
+
+msgid "Clear App Data…"
+msgstr "Εκκαθάριση δεδομένων εφαρμογής…"
+
+msgid "Clear Data of {name}?"
+msgstr "Εκκαθάριση δεδομένων του {name};"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Κλείστε καρτέλες ή εφαρμογές που δεν χρειάζεστε και ανανεώστε τη σελίδα."
+
+msgid "Close {name} before deleting it"
+msgstr "Κλείστε το {name} πριν το διαγράψετε"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Κλείνει όλες τις καρτέλες και τα παράθυρα αυτού του προφίλ και διαγράφει τα cookies, τα δεδομένα ιστότοπων, την προσωρινή μνήμη και το ιστορικό του."
+
+msgid "Connect"
+msgstr "Σύνδεση"
+
+msgid "Connect directly"
+msgstr "Απευθείας σύνδεση"
+
+msgid "Connected"
+msgstr "Συνδέθηκε"
+
+msgid "Connected to a relay directory server"
+msgstr "Συνδέθηκε με διακομιστή καταλόγου αναμεταδοτών"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Συνδέθηκε με αναμεταδότη για τη δημιουργία κυκλωμάτων"
+
+msgid "Connected to pluggable transport"
+msgstr "Συνδέθηκε με προσαρτώμενη μεταφορά"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Συνδέθηκε με προσαρτώμενη μεταφορά για τη δημιουργία κυκλωμάτων"
+
+msgid "Connected to proxy"
+msgstr "Συνδέθηκε με διαμεσολαβητή"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Συνδέθηκε με διαμεσολαβητή για τη δημιουργία κυκλωμάτων"
+
+msgid "Connected to the Tor network"
+msgstr "Συνδέθηκε με το δίκτυο Tor"
+
+msgid "Connecting to Tor"
+msgstr "Σύνδεση με το Tor"
+
+msgid "Connecting to a relay directory server"
+msgstr "Σύνδεση με διακομιστή καταλόγου αναμεταδοτών"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Σύνδεση με αναμεταδότη για τη δημιουργία κυκλωμάτων"
+
+msgid "Connecting to pluggable transport"
+msgstr "Σύνδεση με προσαρτώμενη μεταφορά"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Σύνδεση με προσαρτώμενη μεταφορά για τη δημιουργία κυκλωμάτων"
+
+msgid "Connecting to proxy"
+msgstr "Σύνδεση με διαμεσολαβητή"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Σύνδεση με διαμεσολαβητή για τη δημιουργία κυκλωμάτων"
+
+msgid "Connection Settings…"
+msgstr "Ρυθμίσεις σύνδεσης…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, η διαμόρφωση απορρήτου και ο αλγόριθμος κανόνων TrackerRadarKit."
+
+msgid "Could not install the app: {error}"
+msgstr "Δεν ήταν δυνατή η εγκατάσταση της εφαρμογής: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Δεν ήταν δυνατή η αφαίρεση όλων των δεδομένων: {error}"
+
+msgid "Delete"
+msgstr "Διαγραφή"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Διαγραφή των cookies, των δεδομένων ιστότοπων και της προσωρινής μνήμης αυτού του προφίλ"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Συγκαλυμμένες συνδέσεις προς τις ενσωματωμένες γέφυρες του Tor Browser."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Συγκαλυμμένες συνδέσεις προς τις ενσωματωμένες γέφυρες του Tor Browser. Απαιτείται το {package}."
+
+msgid "Download failed: {error}"
+msgstr "Η λήψη απέτυχε: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Λαμβάνεται κατά την εκτέλεση από το DuckDuckGo· διατίθεται με άδεια CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "Ελήφθη το {name}"
+
+msgid "DuckDuckGo protections"
+msgstr "Προστασίες DuckDuckGo"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Κάθε εφαρμογή εκτελείται στο δικό της παράθυρο και διεργασία, με δικά της cookies και συνδέσεις."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Κάθε προφίλ διατηρεί δικά του cookies, συνδέσεις, ιστορικό και προσωρινή μνήμη και εκτελείται ως ξεχωριστή διεργασία."
+
+msgid "Establishing a Tor circuit"
+msgstr "Δημιουργία κυκλώματος Tor"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Δημιουργία κρυπτογραφημένης σύνδεσης καταλόγου"
+
+msgid "File not found"
+msgstr "Το αρχείο δεν βρέθηκε"
+
+msgid "Find in Page…"
+msgstr "Εύρεση στη σελίδα…"
+
+msgid "Find in page"
+msgstr "Εύρεση στη σελίδα"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Ολοκληρώθηκε η χειραψία με διακομιστή καταλόγου αναμεταδοτών"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Ολοκληρώθηκε η χειραψία με αναμεταδότη για τη δημιουργία κυκλωμάτων"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Ολοκλήρωση της χειραψίας με διακομιστή καταλόγου αναμεταδοτών"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Ολοκλήρωση της χειραψίας με αναμεταδότη για τη δημιουργία κυκλωμάτων"
+
+msgid "Forward"
+msgstr "Εμπρός"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "Από το bridges.torproject.org, με e-mail ή από κάποιον φίλο."
+
+msgid "Go to Home Page"
+msgstr "Μετάβαση στην αρχική σελίδα"
+
+msgid "Go to the previous or next page"
+msgstr "Μετάβαση στην προηγούμενη ή την επόμενη σελίδα"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Μεταβείτε στην αρχική σελίδα του ιστότοπου και αναζητήστε τη σελίδα από εκεί."
+
+msgid "How to Reach Tor"
+msgstr "Πώς να φτάσετε στο Tor"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Αν καταρρεύσει ξανά μετά την ανανέωση, η ίδια η σελίδα ίσως είναι προβληματική."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Αν η διεύθυνση είναι σωστή, ο ιστότοπος ίσως δεν υπάρχει πια."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Αν έχετε λογαριασμό σε αυτόν τον ιστότοπο, συνδεθείτε και δοκιμάστε ξανά."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "Αν χρησιμοποιείτε VPN ή δικό σας διακομιστή DNS, ελέγξτε ότι λειτουργεί."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "Αν χρησιμοποιείτε VPN, τείχος προστασίας ή διαμεσολαβητή, ελέγξτε ότι δεν αποκλείει τον ιστότοπο."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "Λίστες φίλτρων του ZTBrowser Guard"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "Το ZTBrowser δεν μπορεί να ανοίξει το {host} επειδή αυτός ο υπολογιστής δεν είναι συνδεδεμένος σε δίκτυο."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "Το ZTBrowser δεν βρήκε διακομιστή στο {host}."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "Το ZTBrowser δεν συνδέεται στο {host} μέσω αυτής της θύρας."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "Το ενσωματωμένο Tor του ZTBrowser συνδέεται. Τίποτα δεν φεύγει από αυτό το παράθυρο μέχρι να συνδεθεί."
+
+msgid "Install Site as App"
+msgstr "Εγκατάσταση ιστότοπου ως εφαρμογής"
+
+msgid "Install Site as App…"
+msgstr "Εγκατάσταση ιστότοπου ως εφαρμογής…"
+
+msgid "Install as App"
+msgstr "Εγκατάσταση ως εφαρμογής"
+
+msgid "Installed Apps"
+msgstr "Εγκατεστημένες εφαρμογές"
+
+msgid "Installed Apps…"
+msgstr "Εγκατεστημένες εφαρμογές…"
+
+msgid "Installed {name}"
+msgstr "Εγκαταστάθηκε το {name}"
+
+msgid "Interface"
+msgstr "Διεπαφή"
+
+msgid "Issued by {name}"
+msgstr "Εκδόθηκε από {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Ίσως έχει μετακινηθεί, μετονομαστεί ή διαγραφεί."
+
+msgid "Language"
+msgstr "Γλώσσα"
+
+msgid "Load Insecure Page"
+msgstr "Φόρτωση μη ασφαλούς σελίδας"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Φόρτωση της σελίδας ξανά ή διακοπή της φόρτωσης"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Φορτώθηκαν αρκετές πληροφορίες καταλόγου για τη δημιουργία κυκλωμάτων"
+
+msgid "Loading authority certificates"
+msgstr "Φόρτωση πιστοποιητικών αρχών"
+
+msgid "Loading relay descriptors"
+msgstr "Φόρτωση περιγραφέων αναμεταδοτών"
+
+msgid "Loading the network status"
+msgstr "Φόρτωση της κατάστασης του δικτύου"
+
+msgid "Main Menu"
+msgstr "Κύριο μενού"
+
+msgid "Manage Profiles…"
+msgstr "Διαχείριση προφίλ…"
+
+msgid "New Identity"
+msgstr "Νέα ταυτότητα"
+
+msgid "New Identity?"
+msgstr "Νέα ταυτότητα;"
+
+msgid "New Tab"
+msgstr "Νέα καρτέλα"
+
+msgid "New Tor Window"
+msgstr "Νέο παράθυρο Tor"
+
+msgid "New Window"
+msgstr "Νέο παράθυρο"
+
+msgid "New identity"
+msgstr "Νέα ταυτότητα"
+
+msgid "New profile name"
+msgstr "Όνομα νέου προφίλ"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "Μία γέφυρα ανά γραμμή, για παράδειγμα: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Μόνο ιστοσελίδες μπορούν να εγκατασταθούν ως εφαρμογές"
+
+msgid "Open"
+msgstr "Άνοιγμα"
+
+msgid "Open Page in Browser"
+msgstr "Άνοιγμα της σελίδας στο πρόγραμμα περιήγησης"
+
+msgid "Open a new tab"
+msgstr "Άνοιγμα νέας καρτέλας"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Άνοιγμα παραθύρου του οποίου η κίνηση περνά μόνο μέσω του Tor"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Άλλες εφαρμογές δεν ανοίγουν από το παράθυρο Tor: θα συνδέονταν εκτός Tor."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Οι σελίδες παραμένουν κλειστές μέχρι να συνδεθεί το παράθυρο Tor."
+
+msgid "Paste at least one bridge."
+msgstr "Επικολλήστε τουλάχιστον μία γέφυρα."
+
+msgid "Preferences"
+msgstr "Προτιμήσεις"
+
+msgid "Preferences…"
+msgstr "Προτιμήσεις…"
+
+msgid "Profiles"
+msgstr "Προφίλ"
+
+msgid "Protect This Site"
+msgstr "Προστασία αυτού του ιστότοπου"
+
+msgid "Protection Shield"
+msgstr "Ασπίδα προστασίας"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Η ανάγνωση της θύρας ελέγχου του Tor απέτυχε: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "Συνδεθείτε ξανά στο VPN σας, αν χρησιμοποιείτε."
+
+msgid "Reload"
+msgstr "Ανανέωση"
+
+msgid "Reload Page"
+msgstr "Ανανέωση σελίδας"
+
+msgid "Reset Zoom"
+msgstr "Επαναφορά ζουμ"
+
+msgid "Search Engine"
+msgstr "Μηχανή αναζήτησης"
+
+msgid "Search {engine}"
+msgstr "Αναζήτηση στο {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "Αναζήτηση στο {engine} ή εισαγωγή διεύθυνσης"
+
+msgid "Show in Folder"
+msgstr "Εμφάνιση στον φάκελο"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Σας αποσυνδέει και διαγράφει τα cookies, τα δεδομένα ιστότοπων και την προσωρινή μνήμη αυτής της εφαρμογής. Τίποτα άλλο δεν επηρεάζεται."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Ορισμένα δεδομένα δεν ήταν δυνατό να διαγραφούν: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "Κάτι πήγε στραβά κατά τη φόρτωση του {host}."
+
+msgid "Starting"
+msgstr "Εκκίνηση"
+
+msgid "Starting Tor…"
+msgstr "Εκκίνηση του Tor…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Απενεργοποίηση ή ενεργοποίηση της προστασίας από ιχνηλάτες για τον ιστότοπο"
+
+msgid "System default ({language})"
+msgstr "Προεπιλογή συστήματος ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "Η αρχή που εξέδωσε το πιστοποιητικό το έχει ανακαλέσει."
+
+msgid "The bridge line has no address: {line}"
+msgstr "Η γραμμή γέφυρας δεν έχει διεύθυνση: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "Το πιστοποιητικό δεν ήταν δυνατό να επαληθευτεί."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "Το πιστοποιητικό είναι υπογεγραμμένο με αλγόριθμο που δεν είναι πλέον ασφαλής."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "Το πιστοποιητικό δεν είναι ακόμη έγκυρο. Ελέγξτε ότι η ημερομηνία και η ώρα αυτού του υπολογιστή είναι σωστές."
+
+msgid "The certificate was issued for a different site."
+msgstr "Το πιστοποιητικό εκδόθηκε για διαφορετικό ιστότοπο."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "Το πιστοποιητικό δεν εκδόθηκε από αρχή που εμπιστεύεται αυτός ο υπολογιστής."
+
+msgid "The connection to {host} was interrupted."
+msgstr "Η σύνδεση με το {host} διακόπηκε."
+
+msgid "The icon at the end of the address bar"
+msgstr "Το εικονίδιο στο τέλος της γραμμής διευθύνσεων"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "Η γλώσσα αλλάζει όταν γίνει επανεκκίνηση του ZTBrowser"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "Η γλώσσα των μενού, των διαλόγων και των μηνυμάτων, σε κάθε προφίλ και εφαρμογή ιστού."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "Το πρόβλημα βρίσκεται στην πλευρά του ιστότοπου. Δοκιμάστε ξανά σε λίγα λεπτά."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Ο ιστότοπος ίσως είναι εκτός λειτουργίας για συντήρηση. Δοκιμάστε ξανά σε λίγα λεπτά."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Ο ιστότοπος ίσως είναι υπερφορτωμένος. Δοκιμάστε ξανά σε λίγα λεπτά."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "Οι γέφυρες {transport} χρειάζονται ένα πρόγραμμα που δεν είναι εγκατεστημένο· εγκαταστήστε το {package}"
+
+msgid "There is no file at {path}."
+msgstr "Δεν υπάρχει αρχείο στο {path}."
+
+msgid "This address is blocked"
+msgstr "Αυτή η διεύθυνση είναι αποκλεισμένη"
+
+msgid "This connection isn’t private"
+msgstr "Αυτή η σύνδεση δεν είναι ιδιωτική"
+
+msgid "This page"
+msgstr "Αυτή η σελίδα"
+
+msgid "This page can’t be found"
+msgstr "Δεν είναι δυνατή η εύρεση αυτής της σελίδας"
+
+msgid "This page can’t be loaded"
+msgstr "Δεν είναι δυνατή η φόρτωση αυτής της σελίδας"
+
+msgid "This page crashed"
+msgstr "Αυτή η σελίδα κατέρρευσε"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Αυτή η σελίδα βρίσκεται σε άλλον ιστότοπο και δεν ανήκει στο {name}"
+
+msgid "This page isn’t working"
+msgstr "Αυτή η σελίδα δεν λειτουργεί"
+
+msgid "This page ran out of memory"
+msgstr "Αυτή η σελίδα εξάντλησε τη μνήμη"
+
+msgid "This site can’t be found"
+msgstr "Δεν είναι δυνατή η εύρεση αυτού του ιστότοπου"
+
+msgid "This site can’t be reached"
+msgstr "Δεν είναι δυνατή η πρόσβαση σε αυτόν τον ιστότοπο"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Μέσω των προγραμμάτων περιήγησης εθελοντών· λειτουργεί στα περισσότερα λογοκριμένα δίκτυα."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Μέσω των προγραμμάτων περιήγησης εθελοντών· λειτουργεί στα περισσότερα λογοκριμένα δίκτυα. Απαιτείται το {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Κουμπιά γραμμής εργαλείων"
+
+msgid "Tor Connection"
+msgstr "Σύνδεση Tor"
+
+msgid "Tor Connection…"
+msgstr "Σύνδεση Tor…"
+
+msgid "Tor Window"
+msgstr "Παράθυρο Tor"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Το Tor δεν μπορεί να χρησιμοποιήσει τη διαδρομή {path}"
+
+msgid "Tor closed its control port"
+msgstr "Το Tor έκλεισε τη θύρα ελέγχου του"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Το Tor δεν μπόρεσε να αλλάξει κυκλώματα: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Το Tor δεν άνοιξε τη θύρα ελέγχου του"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Το Tor δεν είναι εγκατεστημένο. Εγκαταστήστε το πακέτο tor της διανομής σας· το παράθυρο Tor εκκινεί το δικό του Tor και δεν χρειάζεται υπηρεσία Tor σε λειτουργία."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Το Tor δεν άνοιξε τοπική θύρα SOCKS"
+
+msgid "Tor refused: {reason}"
+msgstr "Το Tor αρνήθηκε: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Το Tor ανέφερε πρόβλημα"
+
+msgid "Tor stopped."
+msgstr "Το Tor σταμάτησε."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Το cookie ελέγχου του Tor είναι κατεστραμμένο"
+
+msgid "Tracker Data Set"
+msgstr "Σύνολο δεδομένων ιχνηλατών"
+
+msgid "Tracker protection on this site"
+msgstr "Προστασία από ιχνηλάτες σε αυτόν τον ιστότοπο"
+
+msgid "Try Again"
+msgstr "Δοκιμή ξανά"
+
+msgid "Try again in a few minutes."
+msgstr "Δοκιμάστε ξανά σε λίγα λεπτά."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Απενεργοποιήστε τη λειτουργία πτήσης, αν είναι ενεργή."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "Μετατρέπει τις λίστες φίλτρων του ZTBrowser Guard σε κανόνες WebKit. Πηγή: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Απεγκατάσταση"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Άγνωστη μεταφορά γέφυρας: {name}"
+
+msgid "Valid until {date}"
+msgstr "Ισχύει έως {date}"
+
+msgid "Your Bridges"
+msgstr "Οι γέφυρές σας"
+
+msgid "You’re offline"
+msgstr "Είστε εκτός σύνδεσης"
+
+msgid "Zoom In"
+msgstr "Μεγέθυνση"
+
+msgid "Zoom Out"
+msgstr "Σμίκρυνση"
+
+msgid "_Allow"
+msgstr "Να _επιτραπεί"
+
+msgid "_Burn"
+msgstr "_Διαγραφή"
+
+msgid "_Cancel"
+msgstr "_Ακύρωση"
+
+msgid "_Deny"
+msgstr "Α_πόρριψη"
+
+msgid "_Install"
+msgstr "_Εγκατάσταση"
+
+msgid "_New Identity"
+msgstr "_Νέα ταυτότητα"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) ή obfs4proxy από το AUR (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) ή snowflake-pt-client από το AUR (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "Το {host} δεν μπορεί να χειριστεί το αίτημα αυτή τη στιγμή."
+
+msgid "{host} couldn’t answer this request."
+msgstr "Το {host} δεν μπόρεσε να απαντήσει σε αυτό το αίτημα."
+
+msgid "{host} does not offer a secure connection"
+msgstr "Το {host} δεν προσφέρει ασφαλή σύνδεση"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "Το {host} δεν σας επιτρέπει να δείτε αυτή τη σελίδα."
+
+msgid "{host} has no page at this address."
+msgstr "Το {host} δεν έχει σελίδα σε αυτή τη διεύθυνση."
+
+msgid "{host} refused the connection."
+msgstr "Το {host} απέρριψε τη σύνδεση."
+
+msgid "{host} took too long to respond."
+msgstr "Το {host} άργησε πολύ να απαντήσει."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "Το {host} χρησιμοποίησε περισσότερη μνήμη από όση επιτρέπεται σε μια σελίδα, γι' αυτό το ZTBrowser το σταμάτησε."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "Το {host} θα ανοίξει στο δικό του παράθυρο, με cookies και συνδέσεις χωριστά από το πρόγραμμα περιήγησης και κάθε άλλη εφαρμογή."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — εφαρμογή ιστού ZTBrowser"
+
+msgid "{text} is not a bridge argument"
+msgstr "Το {text} δεν είναι όρισμα γέφυρας"
+
+msgid "{text} is not an IP address and port"
+msgstr "Το {text} δεν είναι διεύθυνση IP και θύρα"
+
+msgid "{url} answered {status}"
+msgstr "Το {url} απάντησε {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "Το {url} δεν επέστρεψε το αναμενόμενο έγγραφο"
+
+msgid "{url} is larger than allowed"
+msgstr "Το {url} είναι μεγαλύτερο από το επιτρεπόμενο"
+
+msgid "{url} is not a valid address"
+msgstr "Το {url} δεν είναι έγκυρη διεύθυνση"
+
+msgid "© their maintainers"
+msgstr "© οι συντηρητές τους"
+
+msgid "Ask Where to Save Each File"
+msgstr "Ερώτηση για τη θέση αποθήκευσης κάθε αρχείου"
+
+msgid "Choose Folder"
+msgstr "Επιλογή φακέλου"
+
+msgid "Download Folder"
+msgstr "Φάκελος λήψεων"
+
+msgid "Download failed"
+msgstr "Η λήψη απέτυχε"
+
+msgid "Downloading…"
+msgstr "Λήψη…"
+
+msgid "Downloading… {percent}%"
+msgstr "Λήψη… {percent}%"
+
+msgid "Downloads"
+msgstr "Λήψεις"
+
+msgid "Go to Download Folder"
+msgstr "Μετάβαση στον φάκελο λήψεων"
+
+msgid "No downloads yet"
+msgstr "Δεν υπάρχουν ακόμα λήψεις"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Διαφορετικά, τα αρχεία αποθηκεύονται απευθείας στον φάκελο λήψεων"
+
+msgid "Save File"
+msgstr "Αποθήκευση αρχείου"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Οι πέντε πιο πρόσφατες λήψεις και ο φάκελος λήψεων"
+
+msgid "_Save"
+msgstr "Απο_θήκευση"
+
+msgid "_Select"
+msgstr "_Επιλογή"
+
+msgid "Show All Downloads"
+msgstr "Εμφάνιση όλων των λήψεων"
+
+msgid "Clear List"
+msgstr "Εκκαθάριση λίστας"
+
+msgid "Remove from List"
+msgstr "Αφαίρεση από τη λίστα"
+
+msgid "Clear History"
+msgstr "Εκκαθάριση ιστορικού"
+
+msgid "Search Downloads"
+msgstr "Αναζήτηση στις λήψεις"
+
+msgid "File Moved or Deleted"
+msgstr "Το αρχείο μετακινήθηκε ή διαγράφηκε"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Κινεί κάθε βήμα της ροδέλας του ποντικιού. Οι σελίδες που είναι ήδη ανοιχτές χρειάζονται επαναφόρτωση."
+
+msgid "Scrolling"
+msgstr "Κύλιση"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Ομαλή κύλιση με τη ροδέλα του ποντικιού"
+
+msgid "Details"
+msgstr "Λεπτομέριες"
+
+msgid "Legal"
+msgstr "Νομικά"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "Αυτή η εφαρμογή έρχεται με καμία απολύτως εγγύηση. Δείτε το {license} για λεπτομέρειες."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "Γενική δημόσια άδεια GNU, έκδοση 3 ή νεότερη"
+
+msgid "Apache License, Version 2.0"
+msgstr "Άδεια Apache, Έκδοση 2.0"
+
+msgid "Move to New Window"
+msgstr "Μετακίνηση σε νέο παράθυρο"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Δημόσια άδεια Mozilla 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "BSD 3-Άδεια ρήτρας"
+
+msgid "Wide Address Bar"
+msgstr "Πλατιά γραμμή διευθύνσεων"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "Η γραμμή διευθύνσεων καλύπτει όλο τον χώρο της γραμμής εργαλείων· όταν είναι απενεργοποιημένη, μένει κοντή και κεντραρισμένη"
+
+msgid "No apps installed yet"
+msgstr "Δεν έχει εγκατασταθεί ακόμη καμία εφαρμογή"
+
+msgid "Uninstall {name}?"
+msgstr "Απεγκατάσταση του {name};"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Διαγράφει την εφαρμογή μαζί με τα cookies, τις συνδέσεις και τα δεδομένα της. Δεν μπορεί να αναιρεθεί."
+
+msgid "Tab Position"
+msgstr "Θέση καρτελών"
+
+msgid "Top"
+msgstr "Πάνω"
+
+msgid "Bottom"
+msgstr "Κάτω"
+
+msgid "Left"
+msgstr "Αριστερά"
+
+msgid "Right"
+msgstr "Δεξιά"
+
+msgid "Window Buttons"
+msgstr "Κουμπιά παραθύρου"
+
+msgid "Default"
+msgstr "Προεπιλογή"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Προσθήκη προφίλ"
+
+msgid "Delete profile {name}?"
+msgstr "Διαγραφή του προφίλ {name};"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Διαγράφει το προφίλ μαζί με τα cookies, τις συνδέσεις, το ιστορικό και την προσωρινή μνήμη του. Δεν μπορεί να αναιρεθεί."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "Το ZTBrowser δεν είναι το προεπιλεγμένο πρόγραμμα περιήγησής σας"
+
+msgid "Make Default"
+msgstr "Ορισμός ως προεπιλογής"
+
+msgid "Don't Ask Again"
+msgstr "Να μην ερωτηθώ ξανά"
+
+msgid "Close"
+msgstr "Κλείσιμο"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "Δεν ήταν δυνατό να οριστεί το ZTBrowser ως προεπιλεγμένο πρόγραμμα περιήγησης: {error}"
+
+msgid "Default Browser"
+msgstr "Προεπιλεγμένο πρόγραμμα περιήγησης"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "Το ZTBrowser ανοίγει τους συνδέσμους από άλλα προγράμματα"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Οι σύνδεσμοι από άλλα προγράμματα ανοίγουν στο {browser}"
+
+msgid "Another browser opens links from other programs"
+msgstr "Άλλο πρόγραμμα περιήγησης ανοίγει τους συνδέσμους από άλλα προγράμματα"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Μόνο ένα εγκατεστημένο ZTBrowser μπορεί να ανοίγει συνδέσμους από άλλα προγράμματα"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Η επιφάνεια εργασίας δεν αναφέρει ποιο πρόγραμμα περιήγησης ανοίγει τους συνδέσμους"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "Ερώτηση κατά την εκκίνηση του ZTBrowser"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Πρόταση να γίνει το ZTBrowser το προεπιλεγμένο πρόγραμμα περιήγησης όσο άλλο πρόγραμμα ανοίγει τους συνδέσμους"

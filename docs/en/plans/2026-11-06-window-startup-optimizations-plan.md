@@ -5,7 +5,7 @@
 
 ## The problem, in plain words
 
-When you click InDuckGo in the application menu, a window must appear. The time between the click and the first
+When you click ZTBrowser in the application menu, a window must appear. The time between the click and the first
 picture on screen is the **time to first frame**. It is the delay a person feels, so it is what this plan tries to
 shorten. A browser is slow to start for a structural reason: before it can show a page it must start a
 user-interface toolkit (Qt), start Chromium (the web engine, which runs in several processes), and assemble the
@@ -39,7 +39,7 @@ Time to first frame, interleaved runs, each with its own `XDG_*` directories and
 
 | Build | Runs | Median | Range |
 |---|---|---|---|
-| Arch package (`/usr/bin/induckgo`, built with `target-cpu=native` and the Cargo profile's `lto = "fat"`) | 4 | 0.72 s | 0.55–0.89 s |
+| Arch package (`/usr/bin/ztbrowser`, built with `target-cpu=native` and the Cargo profile's `lto = "fat"`) | 4 | 0.72 s | 0.55–0.89 s |
 | AppImage 1.2.3 from `dist/` | 4 | 1.73 s | 1.23–2.12 s |
 
 Earlier the same day, with another set of runs: package 0.61 s, AppImage 1.47 s, and the *same files extracted to
@@ -58,19 +58,19 @@ baseline), not the time until a page is visible; the page cannot come that early
 correct this reading before section 3 is approved.
 
 **Is it reachable? Measured floors** (2026-11-06, same protocol as the baseline, 6 runs each, Qt's `qml6` runner,
-so these are floors and not predictions for InDuckGo's own start-up code):
+so these are floors and not predictions for ZTBrowser's own start-up code):
 
 | Minimal program | Median | Range |
 |---|---|---|
 | A bare Qt Quick window | 0.11 s | 0.10–0.15 s |
 | A window holding an empty `WebEngineView` (`about:blank`) | 0.50 s | 0.33–0.54 s |
-| InDuckGo, Arch package (baseline above) | 0.72 s | 0.55–0.89 s |
+| ZTBrowser, Arch package (baseline above) | 0.72 s | 0.55–0.89 s |
 
 What follows from it:
 
 1. **QtWebEngine alone costs about 0.4 s** before a window that contains it can show its first frame. A first
    frame that waits for the web view therefore cannot meet 0.3 s, however well everything else is tuned;
-   InDuckGo is already only about 0.2 s above a bare web-view window.
+   ZTBrowser is already only about 0.2 s above a bare web-view window.
 2. **The target is reachable only by showing the window first and bringing the web engine up behind it** — the
    toolbar and tab strip appear, the content area is still empty. That is section 3, which the target turns from an
    option into the main work. The budget for everything on the way to that first frame (exec and dynamic linking
@@ -91,7 +91,7 @@ What follows from it:
 - **Guard's engine is built after the first-start download.** The overlap first built it from the cache before
   the worker had downloaded anything, so a first start would have run with empty Guard lists until the next check
   six hours later. `ProtectionUpdates::starting_protection` now builds it after the download; two scenario tests
-  in `crates/induckgo-qt/tests/protection_updates.rs` fail if that order is lost.
+  in `crates/ztbrowser-qt/tests/protection_updates.rs` fail if that order is lost.
 - **The menu entry no longer shadows the package** (commit `d92f9a0`). An entry an AppImage wrote earlier took
   precedence over the installed package's entry and kept starting the slower AppImage; the AppImage now
   withdraws its entry when a package owns the entry system-wide.
@@ -111,7 +111,7 @@ What follows from it:
 **What.** Record the monotonic time at named points of the start — process start, `QGuiApplication` created,
 session opened, worker started and joined, `open_profile` returned, policies installed, window created, first
 frame — and print them when an environment variable asks for it. Turn the Wayland-log measurement used for the
-baseline into a small committed developer tool next to `induckgo-test-report`, so every later number is
+baseline into a small committed developer tool next to `ztbrowser-test-report`, so every later number is
 reproducible by anyone.
 
 **Why.** The baseline says the package needs about 0.6 s more than a bare Qt Quick window, but not *where*.
@@ -156,7 +156,7 @@ than today's.
 
 ## 4. Check that the QML is compiled ahead of time
 
-**What.** `crates/induckgo-qt/build.rs` lists the QML files of the interface. Qt can compile QML to bytecode or
+**What.** `crates/ztbrowser-qt/build.rs` lists the QML files of the interface. Qt can compile QML to bytecode or
 C++ at build time (`qmlcachegen`) so that start-up does not parse and compile it; whether our build does that is
 **unknown today**. Find out (Qt's QML logging categories can show whether compiled units were loaded), and if
 they were not, enable it.
@@ -168,7 +168,7 @@ they were not, enable it.
 
 **What.** The AppImage costs about one second more than the package (1.73 s against 0.72 s) because every launch
 mounts the squashfs through FUSE and decompresses on demand; the same files extracted to a directory start in
-0.65 s. `AppRun` could, on first start, copy the tree to `${XDG_CACHE_HOME:-~/.cache}/induckgo/appimage-<build>/`
+0.65 s. `AppRun` could, on first start, copy the tree to `${XDG_CACHE_HOME:-~/.cache}/ztbrowser/appimage-<build>/`
 (extract to a sibling directory, then rename it into place), and on later starts `exec` the cached copy.
 
 **Costs to decide with the owner.** About 540 MB of disk per version (the uncompressed image is 542 MB), a slower
@@ -179,7 +179,7 @@ and nobody else can write). Packages remain the fast route on Arch and Fedora; t
 ## 6. Measure the launcher path and the second launch
 
 **What.** Time the start through KDE's launcher (`kioclient exec <desktop file>`) against the direct binary, and
-the time from a second `induckgo` invocation to the window of the instance that is already running (the
+the time from a second `ztbrowser` invocation to the window of the instance that is already running (the
 single-instance socket forwards the addresses). Nothing may need optimizing here; until it is measured, the
 report would only be guessing.
 

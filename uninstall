@@ -1,8 +1,10 @@
 #!/bin/sh
-# Removes the InDuckGo package. Your profiles and installed web apps are kept, so a reinstall finds them.
+# Removes the ZTBrowser package, and the InDuckGo package (ZTBrowser's name up to 1.2.4) when it is still
+# installed. Your profiles and installed web apps are kept, so a reinstall finds them.
 #
-#   --purge   also deletes your InDuckGo data: every profile (cookies, logins, history, site data), the
-#             protection cache and the launchers of installed web apps. This cannot be undone.
+#   --purge   also deletes your data under both names: every profile (cookies, logins, history, site data), the
+#             protection cache, the launchers of installed web apps and the menu entries an AppImage wrote for
+#             itself. This cannot be undone.
 #
 # Usage: ./uninstall [--purge]
 set -eu
@@ -17,32 +19,66 @@ case "${1:-}" in
     ;;
 esac
 
-if $purge && pgrep -u "$(id -u)" -x induckgo >/dev/null; then
-  echo "InDuckGo is running. Close the browser and its web apps first." >&2
+if $purge && pgrep -u "$(id -u)" -x 'ztbrowser|induckgo' >/dev/null; then
+  echo "ZTBrowser or InDuckGo is running. Close the browser and its web apps first." >&2
   exit 1
 fi
 
-if command -v pacman >/dev/null && pacman -Qq induckgo >/dev/null 2>&1; then
-  sudo pacman -R induckgo
-elif command -v dpkg-query >/dev/null && dpkg-query -W -f='${Status}' induckgo 2>/dev/null | grep -q installed; then
-  sudo apt-get remove -y induckgo
-elif command -v rpm >/dev/null && rpm -q induckgo >/dev/null 2>&1; then
-  sudo dnf remove -y induckgo
+pacman_has() { pacman -Qq "$1" >/dev/null 2>&1; }
+dpkg_has() { dpkg-query -W -f='${Status}' "$1" 2>/dev/null | grep -q 'install ok installed'; }
+rpm_has() { rpm -q "$1" >/dev/null 2>&1; }
+
+# The package names, new and former, that the given check reports as installed, separated by spaces.
+installed_packages() {
+  for name in ztbrowser induckgo; do
+    if "$1" "$name"; then
+      printf '%s ' "$name"
+    fi
+  done
+}
+
+packages=""
+if command -v pacman >/dev/null; then
+  packages=$(installed_packages pacman_has)
+  remove="sudo pacman -R"
+fi
+if [ -z "$packages" ] && command -v dpkg-query >/dev/null; then
+  packages=$(installed_packages dpkg_has)
+  remove="sudo apt-get remove -y"
+fi
+if [ -z "$packages" ] && command -v rpm >/dev/null; then
+  packages=$(installed_packages rpm_has)
+  remove="sudo dnf remove -y"
+fi
+if [ -n "$packages" ]; then
+  # shellcheck disable=SC2086 # both the command and the package list are meant to split into words
+  $remove $packages
 else
-  echo "No InDuckGo package is installed."
+  echo "No ZTBrowser or InDuckGo package is installed."
 fi
 
 if $purge; then
   data=${XDG_DATA_HOME:-$HOME/.local/share}
   cache=${XDG_CACHE_HOME:-$HOME/.cache}
-  for launcher in "$data"/applications/io.github.induckgo.InDuckGo.WebApp.*.desktop; do
+  for launcher in "$data"/applications/io.github.ztbrowser.ZTBrowser.WebApp.*.desktop \
+    "$data"/applications/io.github.induckgo.InDuckGo.WebApp.*.desktop; do
     if [ -e "$launcher" ]; then
       rm -f -- "$launcher"
     fi
   done
-  rm -rf -- "$data/induckgo" "$cache/induckgo"
+  # The menu entry an AppImage wrote for itself carries a marker line; an entry without it is the person's own.
+  for entry in "$data/applications/io.github.ztbrowser.ZTBrowser.desktop" \
+    "$data/applications/io.github.induckgo.InDuckGo.desktop"; do
+    if grep -qE '^X-(ZTBrowser|InDuckGo)-AppImage=' "$entry" 2>/dev/null; then
+      rm -f -- "$entry"
+    fi
+  done
+  rm -f -- "$data/icons/hicolor/scalable/apps/io.github.ztbrowser.ZTBrowser.svg" \
+    "$data/icons/hicolor/scalable/apps/io.github.induckgo.InDuckGo.svg"
+  # Qt's own caches (compiled QML and shaders) are named after the application name.
+  rm -rf -- "$data/ztbrowser" "$cache/ztbrowser" "$data/induckgo" "$cache/induckgo" "$cache/ZTBrowser" "$cache/InDuckGo"
   if command -v update-desktop-database >/dev/null; then
     update-desktop-database "$data/applications" 2>/dev/null || true
   fi
-  echo "Deleted InDuckGo data: $data/induckgo, $cache/induckgo and the web app launchers."
+  echo "Deleted ZTBrowser and InDuckGo data in $data and $cache, the web app launchers and the AppImage menu entries."
 fi

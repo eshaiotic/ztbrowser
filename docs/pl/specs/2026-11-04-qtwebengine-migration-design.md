@@ -1,16 +1,16 @@
-# Projekt: InDuckGo 1.2.0 na QtWebEngine (Chromium)
+# Projekt: ZTBrowser 1.2.0 na QtWebEngine (Chromium)
 
 Status: **szkic do zatwierdzenia (kontrola wykonawcy zrobiona, odpowiedzi właściciela uwzględnione)** · Gałąź: `feature/1.2.0` · Data: 2026-11-04 · Wersja kanoniczna (EN):
 `docs/en/specs/2026-11-04-qtwebengine-migration-design.md`
 
 ## 1. Po co ten dokument
 
-InDuckGo 1.1.2 działa na **WebKitGTK**, silniku przeglądarkowym GNOME. Mimo wielu iteracji rysowanie stron nigdy
+ZTBrowser 1.1.2 działa na **WebKitGTK**, silniku przeglądarkowym GNOME. Mimo wielu iteracji rysowanie stron nigdy
 nie dorównało Brave. Znaleziono i naprawiono trzy realne przyczyny (wolny renderer graficzny, skrypt strony
 sprawdzający elementy w każdej klatce animacji, gwałtowna animacja kółka myszy w WebKit), ale ostatni pomiar, na
 rozdzielczości właściciela (zob. §3), nadal wskazuje sam silnik jako ograniczenie:
 
-| Test (bpxglobal.com, 8 s przewijania skryptem, prawdziwe GPU, pełny ekran 3840×2160) | Brave 156 | QtWebEngine (Chromium 140) | InDuckGo 1.1.2 (WebKitGTK) |
+| Test (bpxglobal.com, 8 s przewijania skryptem, prawdziwe GPU, pełny ekran 3840×2160) | Brave 156 | QtWebEngine (Chromium 140) | ZTBrowser 1.1.2 (WebKitGTK) |
 |---|---|---|---|
 | klatki na sekundę | 59,8 | 57,7 | 43,8 |
 | 95. percentyl odstępu między klatkami | 16,8 ms | 16,7 ms | 35 ms |
@@ -28,14 +28,14 @@ jak Brave, ze wszystkimi optymalizacjami i interfejsem dokładnie takim jak tera
 |---|---|
 | **Silnik** | Oprogramowanie ładujące i rysujące strony (WebKit, Chromium). |
 | **QtWebEngine** | Pakiet Qt z Chromium. Udostępnia małe API (profile, widoki, interceptory) zamiast całej przeglądarki Chrome. |
-| **Profil** | Osobny świat cookies, pamięci, cache i uprawnień jednej osoby. InDuckGo uruchamia jeden proces na profil. |
+| **Profil** | Osobny świat cookies, pamięci, cache i uprawnień jednej osoby. ZTBrowser uruchamia jeden proces na profil. |
 | **Interceptor** | Funkcja wywoływana przez silnik dla każdego żądania sieciowego *przed* wysłaniem; może je przepuścić, zablokować lub przekierować. |
 | **Farbling** | Technika Brave: drobny, losowy (per witryna) szum w wartościach dostępnych dla strony (canvas, audio, WebGL), aby nie dało się rozpoznać przeglądarki. Wymaga łatek wewnątrz Chromium. |
 | **Fingerprinting** | Rozpoznawanie przeglądarki po zestawie wielu szczegółów technicznych zamiast po cookies. |
 | **Partycjonowanie pamięci** | Oddzielne przechowywanie danych osadzonej ramki zewnętrznej dla każdej witryny, która ją osadza, aby nie łączyła wizyt między witrynami. |
-| **Content Scope Scripts** | Otwartoźródłowy JavaScript DuckDuckGo utwardzający API stron. InDuckGo już go uruchamia. |
-| **Guard** | Nazwa w InDuckGo dla generycznego ukrywania elementów i silnika list filtrów (na bazie crate `adblock`). |
-| **Port / adapter** | *Port* to interfejs należący do domeny (`induckgo-core`); *adapter* implementuje go dla konkretnej technologii (GTK, Qt). |
+| **Content Scope Scripts** | Otwartoźródłowy JavaScript DuckDuckGo utwardzający API stron. ZTBrowser już go uruchamia. |
+| **Guard** | Nazwa w ZTBrowserze dla generycznego ukrywania elementów i silnika list filtrów (na bazie crate `adblock`). |
+| **Port / adapter** | *Port* to interfejs należący do domeny (`ztbrowser-core`); *adapter* implementuje go dla konkretnej technologii (GTK, Qt). |
 | **Shim** | Cienka warstwa C++ dająca Rustowi dostęp do klas Qt, których nie obejmują wiązania Rusta. |
 
 ## 3. Cele, nie-cele, anty-cele
@@ -51,7 +51,7 @@ jak Brave, ze wszystkimi optymalizacjami i interfejsem dokładnie takim jak tera
 3. **Interfejs dokładnie taki jak teraz:** przyciski paska, pasek adresu, menu główne z ikonami, lista i menedżer
    pobierania, preferencje ze stroną języka interfejsu, okno Tor, aplikacje webowe, profile. Te same słowa w
    66 językach.
-4. **Wszystko, co InDuckGo chroni dziś, nadal działa:** blokowanie trackerów, Guard, Content Scope Scripts,
+4. **Wszystko, co ZTBrowser chroni dziś, nadal działa:** blokowanie trackerów, Guard, Content Scope Scripts,
    podnoszenie do HTTPS, czyszczenie linków, lista witryn bez ochrony, wypalanie danych, GPC.
 5. **Ochrona wykracza poza DuckDuckGo i Brave tam, gdzie pozwala silnik** (§6): domyślna odmowa dla stron
    trzecich, ścisłe partycjonowanie pamięci, jednolity profil odcisku, izolacja Tor per witryna, utwardzona
@@ -80,11 +80,11 @@ jak Brave, ze wszystkimi optymalizacjami i interfejsem dokładnie takim jak tera
 - Obowiązują reguły `docs/en/engineering-rules.md` i reguły globalne: Rust zorientowany obiektowo, plik ≤ 1000
   linii, importy z modułu definiującego, testy scenariuszowe TDD/BDD, brak skrótów, zero znanych podatności
   (`cargo audit` w CI).
-- Warstwy (Clean Architecture): `induckgo-core` pozostaje wolny od typów GUI i silnika. Silnik i toolkit to
+- Warstwy (Clean Architecture): `ztbrowser-core` pozostaje wolny od typów GUI i silnika. Silnik i toolkit to
   *adaptery*.
 - Dystrybucja: paczki deb/rpm/Arch zależą od Qt dystrybucji; AppImage dołącza Qt (§10).
 - Licencje danych: dane DuckDuckGo (Tracker Radar, listy blokowania, konfiguracja prywatności, lista Smarter
-  Encryption) są na CC BY-NC-SA 4.0. Jak dziś, InDuckGo **pobiera je w czasie działania i nigdy nie dołącza do
+  Encryption) są na CC BY-NC-SA 4.0. Jak dziś, ZTBrowser **pobiera je w czasie działania i nigdy nie dołącza do
   repozytorium ani paczek.** Licencje kodu: Content Scope Scripts Apache-2.0, `autoconsent` MPL-2.0, `adblock`
   MPL-2.0.
 - Praca na gałęzi `feature/1.2.0`; `main` i wydane 1.1.2 pozostają nietknięte, dopóki 1.2.0 nie przejdzie §8.
@@ -95,24 +95,24 @@ jak Brave, ze wszystkimi optymalizacjami i interfejsem dokładnie takim jak tera
 
 ### 5.1 Warstwy
 
-- **`induckgo-core`** (zachowany, rozszerzony): reguły domenowe i **porty**. Ma już reguły ochrony, listy Guard,
+- **`ztbrowser-core`** (zachowany, rozszerzony): reguły domenowe i **porty**. Ma już reguły ochrony, listy Guard,
   profile, aplikacje webowe, zoom, pobieranie, przewijanie, ustawienia Tor, katalogi języków. Dostaje porty
   `RequestPolicy` (decyzja: przepuść/zablokuj/przekieruj żądanie), `CookiePolicy` (decyzja per dostęp do cookie),
   `PageScripts` (które skrypty gdzie działają), `ProfileStorage` i `DataBurner`. Nic w nim nie wymienia Qt ani
   GTK.
-- **`induckgo-engine-qt`** (nowy): adapter QtWebEngine. Shim C++ (≈ 300–500 linii wg badania) zawiera
+- **`ztbrowser-engine-qt`** (nowy): adapter QtWebEngine. Shim C++ (≈ 300–500 linii wg badania) zawiera
   podklasy Qt (`QWebEngineUrlRequestInterceptor`, filtr cookies, obsługa schematów) i woła Rusta przez stabilny
   interfejs C. Strona Rusta implementuje powyższe porty.
-- **`induckgo-qt`** (nowy): aplikacja: okna, karty, menu, dialogi, zbudowana w Qt i powiązana z Rustem przez
-  `cxx-qt` (KDAB, aktywnie rozwijany, w chwili pisania 0.10). Używa `induckgo-core` do każdej decyzji.
-- **`induckgo`** (GTK, istniejący): buduje się do czasu, aż §10 pozwoli go usunąć.
+- **`ztbrowser-qt`** (nowy): aplikacja: okna, karty, menu, dialogi, zbudowana w Qt i powiązana z Rustem przez
+  `cxx-qt` (KDAB, aktywnie rozwijany, w chwili pisania 0.10). Używa `ztbrowser-core` do każdej decyzji.
+- **`ztbrowser`** (GTK, istniejący): buduje się do czasu, aż §10 pozwoli go usunąć.
 - **Okno Tor:** własny proces z `--proxy-server=socks5://…`, bo proxy w QtWebEngine jest globalne dla procesu.
   Zgadza się to z obecnym projektem (jeden proces na rodzaj okna).
 
 ### 5.2 Dlaczego porty najpierw
 
 Silnik został już raz wymieniony w historii tego dokumentu. Każda decyzja, *co* blokować, ukrywać, wycinać lub
-zezwalać, zostaje w `induckgo-core` za portami, aby przyszła zmiana silnika (np. na CEF, jeśli Chromium w Qt
+zezwalać, zostaje w `ztbrowser-core` za portami, aby przyszła zmiana silnika (np. na CEF, jeśli Chromium w Qt
 zostanie w tyle) przepisywała tylko adapter.
 
 ### 5.3 Toolkit interfejsu (rekomendacja autora, do potwierdzenia krótkim spike’iem)
@@ -160,7 +160,7 @@ dało tę mapę. „Hak” to sposób realizacji w QtWebEngine.
 
 Nakładki DuckDuckGo na stronach (nakładka Duck Player na stronach wideo, zastępniki Click to Load dla
 zablokowanych osadzeń, obsługa okien cookie przez `autoconsent`) są w przeglądarkach DuckDuckGo również
-funkcjami warstwy strony. QtWebEngine nie ma natywnej powierzchni do ich rysowania, więc InDuckGo realizuje je
+funkcjami warstwy strony. QtWebEngine nie ma natywnej powierzchni do ich rysowania, więc ZTBrowser realizuje je
 jako **skrypty wstrzykiwane do strony** (`QWebEngineScript`, własny świat skryptów, aby strona nie mogła ich
 czytać ani ruszać). Właściciel zgodził się 2026-11-04: *„nakładka znana z DDG może być w JS, skoro nie ma innej
 możliwości”*. Konsekwencje: nie działają w workerach, a wroga strona może zauważyć (nie zmienić), że nakładka
@@ -186,7 +186,7 @@ Wybrane, bo są możliwe przy powyższych hakach, a ich skutki uboczne dają si�
 6. **Testy wycieków w buildzie:** testy uruchamiające proces Tor i sprawdzające brak bezpośredniego DNS i
    wycieków adresów WebRTC.
 7. **Testy referencyjne:** otwarte `privacy-reference-tests` DuckDuckGo (blokowanie żądań, GPC, parametry URL,
-   referrer, podnoszenie do HTTPS, wygasanie cookies pierwszej strony) uruchamiane na `induckgo-core`, aby
+   referrer, podnoszenie do HTTPS, wygasanie cookies pierwszej strony) uruchamiane na `ztbrowser-core`, aby
    zgodność z DuckDuckGo była *sprawdzana*, a nie deklarowana.
 
 ### Uczciwe ograniczenia (podane też w dokumentacji produktu)
@@ -213,7 +213,7 @@ Dlatego:
 ## 8. Kryteria sukcesu i sposób pomiaru
 
 Benchmark z tego dokumentu jest utrzymywany **w repozytorium** (crate narzędziowy obok
-`induckgo-test-report`), nie w `/tmp`, i uruchamiany w rozdzielczościach właściciela.
+`ztbrowser-test-report`), nie w `/tmp`, i uruchamiany w rozdzielczościach właściciela.
 
 | Kryterium | Zaliczone, gdy |
 |---|---|
@@ -243,7 +243,7 @@ Aplikacja GTK pozostaje wydawalna, dopóki Qt nie przejdzie §8.
 1. **Spike (jednorazowy):** QML `WebEngineView` + interceptor + filtr cookies + skrypt z `cxx-qt` i shimu;
    potwierdza §5.3 i przechodzi bramkę wydajności z §11a. *Punkt decyzyjny.*
 2. **Powłoka:** okno, karty, pasek adresu, profil z trwałą pamięcią, ten sam wygląd.
-3. **Ochrony:** porty w `induckgo-core`; interceptor, filtr cookies, skrypty, Guard, Content Scope Scripts;
+3. **Ochrony:** porty w `ztbrowser-core`; interceptor, filtr cookies, skrypty, Guard, Content Scope Scripts;
    testy referencyjne.
 4. **Funkcje codzienne:** pobieranie (lista, menedżer, czyszczenie), uprawnienia, zoom, szukanie na stronie,
    menu z ikonami, preferencje, skrypt płynnego kółka, nakładki DDG jako skrypty.
@@ -266,10 +266,10 @@ spakowania narzędzia benchmarkowego i kolejność wewnątrz każdego kroku z §
   za tymi samymi portami (§9), nie dalsza praca nad QtWebEngine. Jeśli haków shimu nie da się osiągnąć z
   `cxx-qt`, wariant zapasowy to najpierw Qt Widgets, potem CEF.
 - **Tłumaczenia.** Tekst QML jest pobierany przez mały obiekt `cxx-qt` wołający istniejące katalogi `tr!` w
-  `induckgo-core`. Własne pliki Qt `.ts`/`.qm` **nie** są używane, więc jest jedno źródło napisów, a zasada
+  `ztbrowser-core`. Własne pliki Qt `.ts`/`.qm` **nie** są używane, więc jest jedno źródło napisów, a zasada
   „nigdy mieszanki języków” działa z konstrukcji.
 - **Istniejący stan związany z GTK.** Stan domenowy (lista pobierania, zoom, uprawnienia, szukanie na stronie,
-  stan kart i sesji) wciąż powiązany z typami GTK jest wydzielany do `induckgo-core` w ramach prac nad Qt.
+  stan kart i sesji) wciąż powiązany z typami GTK jest wydzielany do `ztbrowser-core` w ramach prac nad Qt.
   Crate GTK **nie** jest refaktoryzowany dla samego refaktoru: podąża tylko, gdy wydzielenie to czyste
   przeniesienie.
 - **Gwarancja braku wycieków w Tor.** Proces Tor uruchamia Chromium z `--proxy-server=socks5://…` i
@@ -278,7 +278,7 @@ spakowania narzędzia benchmarkowego i kolejność wewnątrz każdego kroku z §
 - **Testy referencyjne.** `privacy-reference-tests` są pobierane w CI w czasie testu (nigdy nie commitowane, ze
   względu na CC BY-NC-SA); wymagane zestawy odpowiadają funkcjom ukończonym w §10 krok 3, a lista rośnie z
   każdą funkcją.
-- **Minimalna wersja silnika.** Stała w `induckgo-core`, podnoszona z każdym wydaniem. Poniżej: widoczne
+- **Minimalna wersja silnika.** Stała w `ztbrowser-core`, podnoszona z każdym wydaniem. Poniżej: widoczne
   ostrzeżenie w zwykłych oknach; **odmowa startu** dla okna Tor (tam anonimowość jest celem).
 - **Tryb ścisły** to osobny profil *Ścisły*, wyłączony w profilu domyślnym (§6). Kryterium **120 fps** to
   opcjonalny zapas (§3). **AppImage** dołącza Qt i może być duży (§10 krok 7).

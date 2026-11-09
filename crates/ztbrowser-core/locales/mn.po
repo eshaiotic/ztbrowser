@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: mn\n"
+
+msgid "About ZTBrowser"
+msgstr "ZTBrowser-ийн тухай"
+
+msgid "Access denied"
+msgstr "Хандахыг хориглолоо"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Та {current} хуудсыг үзэж байх үед {requesting} өөрийн күүки болон өгөгдлийг ашиглахыг зөвшөөрөх үү?"
+
+msgid "Allow {site} to know your location?"
+msgstr "{site} таны байршлыг мэдэхийг зөвшөөрөх үү?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "{site} таны түр санах ойн агуулгыг уншихыг зөвшөөрөх үү?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "{site} мэдэгдэл харуулахыг зөвшөөрөх үү?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "{site} таны камер болон микрофоныг ашиглахыг зөвшөөрөх үү?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "{site} таны камерыг ашиглахыг зөвшөөрөх үү?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "{site} таны микрофоныг ашиглахыг зөвшөөрөх үү?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "{site} таны дэлгэцийг ашиглахыг зөвшөөрөх үү?"
+
+msgid "App data cleared"
+msgstr "Аппын өгөгдлийг цэвэрлэлээ"
+
+msgid "Appearance"
+msgstr "Гадаад төрх"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "ZTBrowser дараа удаа эхлэхэд хэрэгжинэ"
+
+msgid "Asking for relay descriptors"
+msgstr "Релейний тодорхойлогчдыг асууж байна"
+
+msgid "Asking for the network status"
+msgstr "Сүлжээний төлвийг асууж байна"
+
+msgid "Back"
+msgstr "Буцах"
+
+msgid "Back and Forward"
+msgstr "Буцах ба урагш"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Tor хаагдаагүй бүх газарт хамгийн тохиромжтой."
+
+msgid "Bridges I provide"
+msgstr "Миний өгөх гүүрүүд"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Гүүр гэдэг нь Tor-ыг хаадаг сүлжээнд зориулсан, жагсаалтад ороогүй Tor релей юм."
+
+msgid "Browsing data burned"
+msgstr "Хөтчийн өгөгдлийг устгалаа"
+
+msgid "Burn Browsing Data"
+msgstr "Хөтчийн өгөгдлийг устгах"
+
+msgid "Burn Browsing Data?"
+msgstr "Хөтчийн өгөгдлийг устгах уу?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Энэ профайлын цонхнуудад хаягийн мөрийн хажууд харагдах товчнууд."
+
+msgid "C_lear"
+msgstr "Цэв_эрлэх"
+
+msgid "Cannot Connect to Tor"
+msgstr "Tor-т холбогдож чадсангүй"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Tor-ын удирдлагын портод хүрч чадсангүй: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Tor-ын удирдлагын күүкиг уншиж чадсангүй: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Tor-ын удирдлагын портын хуучин файлыг устгаж чадсангүй: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "Татаж авсан файлыг хадгалж чадсангүй: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Tor-ыг эхлүүлж чадсангүй: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Tor-ын тохиргоог бичиж чадсангүй: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Tor-ын удирдлагын порт руу бичиж чадсангүй: {error}"
+
+msgid "Certificate for {name}"
+msgstr "{name}-ийн гэрчилгээ"
+
+msgid "Check the address for a typo."
+msgstr "Хаягийг буруу бичсэн эсэхийг шалгана уу."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Хаягийг шалгана уу. Хэрэв хос цэгийн дараа портын дугаар байвал түүнийг мөн шалгана уу."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Сүлжээний кабель эсвэл Wi-Fi холболтоо шалгана уу."
+
+msgid "Check your internet connection."
+msgstr "Интернэт холболтоо шалгана уу."
+
+msgid "Clear App Data…"
+msgstr "Аппын өгөгдлийг цэвэрлэх…"
+
+msgid "Clear Data of {name}?"
+msgstr "{name}-ийн өгөгдлийг цэвэрлэх үү?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Хэрэггүй таб эсвэл аппуудаа хаагаад хуудсыг дахин ачаална уу."
+
+msgid "Close {name} before deleting it"
+msgstr "Устгахынхаа өмнө {name}-ийг хаана уу"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Энэ профайлын бүх таб болон цонхыг хааж, күүки, сайтын өгөгдөл, кэш, түүхийг устгана."
+
+msgid "Connect"
+msgstr "Холбогдох"
+
+msgid "Connect directly"
+msgstr "Шууд холбогдох"
+
+msgid "Connected"
+msgstr "Холбогдсон"
+
+msgid "Connected to a relay directory server"
+msgstr "Релейний лавлах серверт холбогдлоо"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Хэлхээ байгуулах релейд холбогдлоо"
+
+msgid "Connected to pluggable transport"
+msgstr "Залгагдах тээвэрлэлтэд холбогдлоо"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Хэлхээ байгуулах залгагдах тээвэрлэлтэд холбогдлоо"
+
+msgid "Connected to proxy"
+msgstr "Прокси-д холбогдлоо"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Хэлхээ байгуулах прокси-д холбогдлоо"
+
+msgid "Connected to the Tor network"
+msgstr "Tor сүлжээнд холбогдлоо"
+
+msgid "Connecting to Tor"
+msgstr "Tor-т холбогдож байна"
+
+msgid "Connecting to a relay directory server"
+msgstr "Релейний лавлах серверт холбогдож байна"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Хэлхээ байгуулах релейд холбогдож байна"
+
+msgid "Connecting to pluggable transport"
+msgstr "Залгагдах тээвэрлэлтэд холбогдож байна"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Хэлхээ байгуулах залгагдах тээвэрлэлтэд холбогдож байна"
+
+msgid "Connecting to proxy"
+msgstr "Прокси-д холбогдож байна"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Хэлхээ байгуулах прокси-д холбогдож байна"
+
+msgid "Connection Settings…"
+msgstr "Холболтын тохиргоо…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, нууцлалын тохиргоо болон TrackerRadarKit-ийн дүрмийн алгоритм."
+
+msgid "Could not install the app: {error}"
+msgstr "Аппыг суулгаж чадсангүй: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Бүгдийг нь устгаж чадсангүй: {error}"
+
+msgid "Delete"
+msgstr "Устгах"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Энэ профайлын күүки, сайтын өгөгдөл, кэшийг устгах"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Tor Browser-ийн суулгасан гүүрүүдэд нэгдэх, нуугдмал холболт."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Tor Browser-ийн суулгасан гүүрүүдэд нэгдэх, нуугдмал холболт. {package} шаардлагатай."
+
+msgid "Download failed: {error}"
+msgstr "Татаж авах амжилтгүй боллоо: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Ажиллах үедээ DuckDuckGo-оос татаж авна; CC BY-NC-SA 4.0 лицензтэй."
+
+msgid "Downloaded {name}"
+msgstr "{name}-ийг татаж авлаа"
+
+msgid "DuckDuckGo protections"
+msgstr "DuckDuckGo-ийн хамгаалалтууд"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Апп бүр өөрийн цонх, процесс, өөрийн күүки болон нэвтрэлттэйгээр ажиллана."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Профайл бүр өөрийн күүки, нэвтрэлт, түүх, кэшийг хадгалж, тусдаа процесс болж ажиллана."
+
+msgid "Establishing a Tor circuit"
+msgstr "Tor хэлхээ байгуулж байна"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Шифрлэгдсэн лавлах холболтыг байгуулж байна"
+
+msgid "File not found"
+msgstr "Файл олдсонгүй"
+
+msgid "Find in Page…"
+msgstr "Хуудаснаас хайх…"
+
+msgid "Find in page"
+msgstr "Хуудаснаас хайх"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Релейний лавлах сервертэй гар барилт дууслаа"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Хэлхээ байгуулах релейтэй гар барилт дууслаа"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Релейний лавлах сервертэй гар барилтыг дуусгаж байна"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Хэлхээ байгуулах релейтэй гар барилтыг дуусгаж байна"
+
+msgid "Forward"
+msgstr "Урагш"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "bridges.torproject.org-оос, имэйлээр эсвэл найзаасаа авна."
+
+msgid "Go to Home Page"
+msgstr "Нүүр хуудас руу очих"
+
+msgid "Go to the previous or next page"
+msgstr "Өмнөх эсвэл дараагийн хуудас руу очих"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Сайтын нүүр хуудас руу очоод хуудсыг тэндээс хайна уу."
+
+msgid "How to Reach Tor"
+msgstr "Tor-т хэрхэн холбогдох вэ"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Дахин ачаалсны дараа дахин гацвал хуудас өөрөө эвдэрсэн байж магадгүй."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Хаяг зөв бол сайт байхаа больсон байж магадгүй."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Хэрэв энэ сайтад бүртгэлтэй бол нэвтэрч ороод дахин оролдоно уу."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "VPN эсвэл өөрийн DNS сервер ашигладаг бол ажиллаж байгаа эсэхийг шалгана уу."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "VPN, галт хана эсвэл прокси ашигладаг бол сайтыг хаагаагүй эсэхийг шалгана уу."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "ZTBrowser Guard-ын шүүлтүүрийн жагсаалтууд"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "Энэ компьютер сүлжээнд холбогдоогүй тул ZTBrowser {host} хаягийг нээж чадсангүй."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser {host} хаягаас сервер олсонгүй."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser энэ порт дээр {host} хаягт холбогддоггүй."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "ZTBrowser-ийн өөрийн Tor холбогдож байна. Холбогдох хүртэл энэ цонхноос юу ч гарахгүй."
+
+msgid "Install Site as App"
+msgstr "Сайтыг апп болгон суулгах"
+
+msgid "Install Site as App…"
+msgstr "Сайтыг апп болгон суулгах…"
+
+msgid "Install as App"
+msgstr "Апп болгон суулгах"
+
+msgid "Installed Apps"
+msgstr "Суулгасан аппууд"
+
+msgid "Installed Apps…"
+msgstr "Суулгасан аппууд…"
+
+msgid "Installed {name}"
+msgstr "{name}-ийг суулгалаа"
+
+msgid "Interface"
+msgstr "Интерфейс"
+
+msgid "Issued by {name}"
+msgstr "Олгосон: {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Зөөгдсөн, нэр нь солигдсон эсвэл устгагдсан байж магадгүй."
+
+msgid "Language"
+msgstr "Хэл"
+
+msgid "Load Insecure Page"
+msgstr "Аюултай хуудсыг ачаалах"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Хуудсыг дахин ачаалах эсвэл ачаалахыг зогсоох"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Хэлхээ байгуулахад хангалттай лавлах мэдээллийг ачааллаа"
+
+msgid "Loading authority certificates"
+msgstr "Сертификатжуулах байгууллагын гэрчилгээг ачаалж байна"
+
+msgid "Loading relay descriptors"
+msgstr "Релейний тодорхойлогчдыг ачаалж байна"
+
+msgid "Loading the network status"
+msgstr "Сүлжээний төлвийг ачаалж байна"
+
+msgid "Main Menu"
+msgstr "Үндсэн цэс"
+
+msgid "Manage Profiles…"
+msgstr "Профайлуудыг удирдах…"
+
+msgid "New Identity"
+msgstr "Шинэ дүр"
+
+msgid "New Identity?"
+msgstr "Шинэ дүр авах уу?"
+
+msgid "New Tab"
+msgstr "Шинэ таб"
+
+msgid "New Tor Window"
+msgstr "Шинэ Tor цонх"
+
+msgid "New Window"
+msgstr "Шинэ цонх"
+
+msgid "New identity"
+msgstr "Шинэ дүр"
+
+msgid "New profile name"
+msgstr "Шинэ профайлын нэр"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "Мөр бүрд нэг гүүр, жишээ нь: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Зөвхөн вэб хуудсыг апп болгон суулгаж болно"
+
+msgid "Open"
+msgstr "Нээх"
+
+msgid "Open Page in Browser"
+msgstr "Хуудсыг хөтөчид нээх"
+
+msgid "Open a new tab"
+msgstr "Шинэ таб нээх"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Бүх урсгал нь зөвхөн Tor-оор дамждаг цонх нээх"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Tor цонхноос бусад програмыг нээхгүй: тэд Tor-оос гадуур холбогдох болно."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Tor цонх холбогдох хүртэл хуудсууд нээгдэхгүй."
+
+msgid "Paste at least one bridge."
+msgstr "Дор хаяж нэг гүүр буулгана уу."
+
+msgid "Preferences"
+msgstr "Тохиргоо"
+
+msgid "Preferences…"
+msgstr "Тохиргоо…"
+
+msgid "Profiles"
+msgstr "Профайлууд"
+
+msgid "Protect This Site"
+msgstr "Энэ сайтыг хамгаалах"
+
+msgid "Protection Shield"
+msgstr "Хамгаалалтын бамбай"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Tor-ын удирдлагын портыг унших амжилтгүй боллоо: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "VPN ашигладаг бол дахин холбогдоно уу."
+
+msgid "Reload"
+msgstr "Дахин ачаалах"
+
+msgid "Reload Page"
+msgstr "Хуудсыг дахин ачаалах"
+
+msgid "Reset Zoom"
+msgstr "Томруулалтыг анхны байдалд оруулах"
+
+msgid "Search Engine"
+msgstr "Хайлтын систем"
+
+msgid "Search {engine}"
+msgstr "{engine}-аар хайх"
+
+msgid "Search {engine} or enter address"
+msgstr "{engine}-аар хайх эсвэл хаяг оруулах"
+
+msgid "Show in Folder"
+msgstr "Хавтсанд харуулах"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Таныг системээс гаргаж, энэ аппын күүки, сайтын өгөгдөл, кэшийг устгана. Өөр юуг ч өөрчлөхгүй."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Зарим өгөгдлийг устгаж чадсангүй: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "{host} хаягийг ачаалах үед алдаа гарлаа."
+
+msgid "Starting"
+msgstr "Эхэлж байна"
+
+msgid "Starting Tor…"
+msgstr "Tor эхэлж байна…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Энэ сайтад мөрдөгчөөс хамгаалалтыг асаах эсвэл унтраах"
+
+msgid "System default ({language})"
+msgstr "Системийн үндсэн хэл ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "Гэрчилгээг олгосон байгууллага үүнийг хүчингүй болгосон."
+
+msgid "The bridge line has no address: {line}"
+msgstr "Гүүрийн мөрөнд хаяг алга: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "Гэрчилгээг баталгаажуулж чадсангүй."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "Гэрчилгээг аюулгүй байхаа больсон алгоритмаар гарын үсэг зурсан байна."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "Гэрчилгээ хараахан хүчинтэй болоогүй байна. Энэ компьютерийн огноо, цаг зөв эсэхийг шалгана уу."
+
+msgid "The certificate was issued for a different site."
+msgstr "Гэрчилгээг өөр сайтад зориулж олгосон байна."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "Гэрчилгээг энэ компьютерийн итгэдэг байгууллага олгоогүй байна."
+
+msgid "The connection to {host} was interrupted."
+msgstr "{host} хаягтай холболт тасарлаа."
+
+msgid "The icon at the end of the address bar"
+msgstr "Хаягийн мөрийн төгсгөлд байгаа дүрс"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "ZTBrowser-ийг дахин эхлүүлэхэд хэл солигдоно"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "Бүх профайл болон вэб аппын цэс, харилцах цонх, мессежийн хэл."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "Асуудал сайтын талд байна. Хэдэн минутын дараа дахин оролдоно уу."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Сайт засвар үйлчилгээнд орсон байж магадгүй. Хэдэн минутын дараа дахин оролдоно уу."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Сайтад ачаалал хэт ихэссэн байж магадгүй. Хэдэн минутын дараа дахин оролдоно уу."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "{transport} гүүрүүдэд суулгаагүй програм хэрэгтэй; {package}-ийг суулгана уу"
+
+msgid "There is no file at {path}."
+msgstr "{path} дээр файл алга."
+
+msgid "This address is blocked"
+msgstr "Энэ хаяг хаагдсан байна"
+
+msgid "This connection isn’t private"
+msgstr "Энэ холболт нууцлалтай биш байна"
+
+msgid "This page"
+msgstr "Энэ хуудас"
+
+msgid "This page can’t be found"
+msgstr "Энэ хуудас олдсонгүй"
+
+msgid "This page can’t be loaded"
+msgstr "Энэ хуудсыг ачаалж чадсангүй"
+
+msgid "This page crashed"
+msgstr "Энэ хуудас гацлаа"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Энэ хуудас өөр сайтад байгаа бөгөөд {name}-ийн нэг хэсэг биш"
+
+msgid "This page isn’t working"
+msgstr "Энэ хуудас ажиллахгүй байна"
+
+msgid "This page ran out of memory"
+msgstr "Энэ хуудасны санах ой дууслаа"
+
+msgid "This site can’t be found"
+msgstr "Энэ сайт олдсонгүй"
+
+msgid "This site can’t be reached"
+msgstr "Энэ сайтад хүрч чадсангүй"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Сайн дурынхны хөтчөөр дамжина; цензуртэй ихэнх сүлжээнд ажиллана."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Сайн дурынхны хөтчөөр дамжина; цензуртэй ихэнх сүлжээнд ажиллана. {package} шаардлагатай."
+
+msgid "Toolbar Buttons"
+msgstr "Хэрэгслийн мөрийн товчнууд"
+
+msgid "Tor Connection"
+msgstr "Tor холболт"
+
+msgid "Tor Connection…"
+msgstr "Tor холболт…"
+
+msgid "Tor Window"
+msgstr "Tor цонх"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor {path} зам дээр ажиллаж чадахгүй"
+
+msgid "Tor closed its control port"
+msgstr "Tor удирдлагын портоо хаалаа"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor хэлхээг сольж чадсангүй: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor удирдлагын портоо нээсэнгүй"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor суулгагдаагүй байна. Өөрийн дистрибутын tor багцыг суулгана уу; Tor цонх өөрийн Tor-ыг эхлүүлдэг тул Tor үйлчилгээг ажиллуулах шаардлагагүй."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor дотоод SOCKS порт нээсэнгүй"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor татгалзлаа: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor асуудал мэдээллээ"
+
+msgid "Tor stopped."
+msgstr "Tor зогслоо."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Tor-ын удирдлагын күүки гэмтсэн байна"
+
+msgid "Tracker Data Set"
+msgstr "Мөрдөгчийн өгөгдлийн багц"
+
+msgid "Tracker protection on this site"
+msgstr "Энэ сайтын мөрдөгчөөс хамгаалалт"
+
+msgid "Try Again"
+msgstr "Дахин оролдох"
+
+msgid "Try again in a few minutes."
+msgstr "Хэдэн минутын дараа дахин оролдоно уу."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Нислэгийн горим асаалттай бол унтраана уу."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "ZTBrowser Guard-ын шүүлтүүрийн жагсаалтыг WebKit-ийн дүрэм болгон хөрвүүлнэ. Эх сурвалж: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Суулгацыг устгах"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Үл мэдэгдэх гүүрийн тээвэрлэлт: {name}"
+
+msgid "Valid until {date}"
+msgstr "Хүчинтэй хугацаа: {date} хүртэл"
+
+msgid "Your Bridges"
+msgstr "Таны гүүрүүд"
+
+msgid "You’re offline"
+msgstr "Та офлайн байна"
+
+msgid "Zoom In"
+msgstr "Томруулах"
+
+msgid "Zoom Out"
+msgstr "Жижигрүүлэх"
+
+msgid "_Allow"
+msgstr "_Зөвшөөрөх"
+
+msgid "_Burn"
+msgstr "_Устгах"
+
+msgid "_Cancel"
+msgstr "_Цуцлах"
+
+msgid "_Deny"
+msgstr "_Татгалзах"
+
+msgid "_Install"
+msgstr "_Суулгах"
+
+msgid "_New Identity"
+msgstr "_Шинэ дүр"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) эсвэл AUR-ын obfs4proxy (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) эсвэл AUR-ын snowflake-pt-client (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} одоогоор хүсэлтийг боловсруулж чадахгүй байна."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} энэ хүсэлтэд хариу өгч чадсангүй."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} аюулгүй холболт санал болгодоггүй"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} танд энэ хуудсыг харахыг зөвшөөрөхгүй байна."
+
+msgid "{host} has no page at this address."
+msgstr "{host} дээр энэ хаягт хуудас алга."
+
+msgid "{host} refused the connection."
+msgstr "{host} холболтоос татгалзлаа."
+
+msgid "{host} took too long to respond."
+msgstr "{host} хэт удаан хариу өглөө."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} хуудсанд зөвшөөрөгдсөнөөс илүү санах ой ашигласан тул ZTBrowser үүнийг зогсоолоо."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} өөрийн цонхонд нээгдэх бөгөөд күүки болон нэвтрэлт нь хөтөч болон бусад бүх аппаас тусдаа хадгалагдана."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — ZTBrowser вэб апп"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} нь гүүрийн аргумент биш"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} нь IP хаяг ба порт биш"
+
+msgid "{url} answered {status}"
+msgstr "{url} {status} гэж хариулав"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} хүлээгдсэн баримтыг буцаасангүй"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} зөвшөөрөгдсөнөөс том байна"
+
+msgid "{url} is not a valid address"
+msgstr "{url} хүчинтэй хаяг биш"
+
+msgid "© their maintainers"
+msgstr "© тэдгээрийн хөгжүүлэгчид"
+
+msgid "Ask Where to Save Each File"
+msgstr "Файл бүрийг хаана хадгалахыг асуух"
+
+msgid "Choose Folder"
+msgstr "Хавтас сонгох"
+
+msgid "Download Folder"
+msgstr "Татаж авсан файлын хавтас"
+
+msgid "Download failed"
+msgstr "Татаж авч чадсангүй"
+
+msgid "Downloading…"
+msgstr "Татаж авч байна…"
+
+msgid "Downloading… {percent}%"
+msgstr "Татаж авч байна… {percent}%"
+
+msgid "Downloads"
+msgstr "Татаж авсан файлууд"
+
+msgid "Go to Download Folder"
+msgstr "Татаж авсан файлын хавтас руу очих"
+
+msgid "No downloads yet"
+msgstr "Татаж авсан файл алга"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Үгүй бол файлууд шууд татаж авсан файлын хавтаст хадгалагдана"
+
+msgid "Save File"
+msgstr "Файл хадгалах"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Сүүлийн таван татаж авалт болон татаж авсан файлын хавтас"
+
+msgid "_Save"
+msgstr "_Хадгалах"
+
+msgid "_Select"
+msgstr "_Сонгох"
+
+msgid "Show All Downloads"
+msgstr "Бүх татаж авсныг харуулах"
+
+msgid "Clear List"
+msgstr "Жагсаалтыг цэвэрлэх"
+
+msgid "Remove from List"
+msgstr "Жагсаалтаас хасах"
+
+msgid "Clear History"
+msgstr "Түүхийг цэвэрлэх"
+
+msgid "Search Downloads"
+msgstr "Татаж авсан файл хайх"
+
+msgid "File Moved or Deleted"
+msgstr "Файл зөөгдсөн эсвэл устгагдсан"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Хулганы дугуйны алхам бүрийг хөдөлгөөнтэй болгоно. Аль хэдийн нээлттэй байгаа хуудсуудыг дахин ачаалах шаардлагатай."
+
+msgid "Scrolling"
+msgstr "Гүйлгэх"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Хулганы дугуйгаар жигд гүйлгэх"
+
+msgid "Details"
+msgstr "Details"
+
+msgid "Legal"
+msgstr "Legal"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "This application comes with absolutely no warranty. See the {license} for details."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, version 3 or later"
+
+msgid "Apache License, Version 2.0"
+msgstr "Apache License, Version 2.0"
+
+msgid "Move to New Window"
+msgstr "Шинэ цонх руу зөөх"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Mozilla Public License 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "BSD 3-Clause License"
+
+msgid "Wide Address Bar"
+msgstr "Өргөн хаягийн мөр"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "Хаягийн мөр хэрэгслийн мөрийн бүх чөлөөт зайг эзэлнэ; унтраавал богино, голд байрлана"
+
+msgid "No apps installed yet"
+msgstr "Одоогоор суулгасан апп алга"
+
+msgid "Uninstall {name}?"
+msgstr "{name}-г устгах уу?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Аппыг түүний күүки, нэвтрэлт, өгөгдлийн хамт устгана. Үүнийг буцаах боломжгүй."
+
+msgid "Tab Position"
+msgstr "Табуудын байрлал"
+
+msgid "Top"
+msgstr "Дээд"
+
+msgid "Bottom"
+msgstr "Доод"
+
+msgid "Left"
+msgstr "Зүүн"
+
+msgid "Right"
+msgstr "Баруун"
+
+msgid "Window Buttons"
+msgstr "Цонхны товчнууд"
+
+msgid "Default"
+msgstr "Үндсэн"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Профайл нэмэх"
+
+msgid "Delete profile {name}?"
+msgstr "{name} профайлыг устгах уу?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Профайлыг түүний күүки, нэвтрэлт, түүх, кэшийн хамт устгана. Үүнийг буцаах боломжгүй."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser таны өгөгдмөл хөтөч биш байна"
+
+msgid "Make Default"
+msgstr "Өгөгдмөл болгох"
+
+msgid "Don't Ask Again"
+msgstr "Дахиж бүү асуу"
+
+msgid "Close"
+msgstr "Хаах"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "ZTBrowser-ийг өгөгдмөл хөтөч болгож чадсангүй: {error}"
+
+msgid "Default Browser"
+msgstr "Өгөгдмөл хөтөч"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "Бусад программын холбоосыг ZTBrowser нээдэг"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Бусад программын холбоос {browser}-д нээгддэг"
+
+msgid "Another browser opens links from other programs"
+msgstr "Бусад программын холбоосыг өөр хөтөч нээдэг"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Бусад программын холбоосыг зөвхөн суулгасан ZTBrowser нээж чадна"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Ажлын талбар холбоосыг аль хөтөч нээдгийг заадаггүй"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "ZTBrowser эхлэхэд асуух"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Өөр хөтөч холбоосыг нээж байхад ZTBrowser-ийг өгөгдмөл хөтөч болгохыг санал болгох"

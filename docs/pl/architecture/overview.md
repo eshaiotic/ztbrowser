@@ -1,6 +1,6 @@
-# Architektura InDuckGo
+# Architektura ZTBrowsera
 
-Ten dokument opisuje, jak zbudowane jest InDuckGo i dlaczego właśnie tak. Jest pisany dla osoby, która
+Ten dokument opisuje, jak zbudowany jest ZTBrowser i dlaczego właśnie tak. Jest pisany dla osoby, która
 programuje, ale nigdy nie pracowała nad przeglądarką. Każde pojęcie spoza wiedzy ogólnej jest wyjaśnione w
 [Słowniku](#2-słownik).
 
@@ -14,7 +14,7 @@ stronę.
 DuckDuckGo publikuje jako open source ochronę przed śledzeniem ze swojej przeglądarki dla macOS: listę
 trackerów, reguły decydujące, co blokować, wyjątki per witryna, dzięki którym strony działają, oraz skrypty
 przeciw fingerprintingowi. Tamta przeglądarka używa silnika **WebKit**, a Linux ma ten sam silnik jako
-**WebKitGTK**. InDuckGo przenosi tę ochronę do przeglądarki WebKitGTK na Linuksa, **całkowicie bez obsługi
+**WebKitGTK**. ZTBrowser przenosi tę ochronę do przeglądarki WebKitGTK na Linuksa, **całkowicie bez obsługi
 rozszerzeń**.
 
 Projekt kształtują jeszcze dwa cele:
@@ -29,9 +29,9 @@ Projekt kształtują jeszcze dwa cele:
 
 | Pojęcie | Znaczenie |
 |---|---|
-| WebKitGTK | Linuksowe wydanie WebKit, silnika, który pobiera, renderuje i uruchamia strony. InDuckGo używa jego API dla GTK 4, `webkitgtk-6.0`. |
+| WebKitGTK | Linuksowe wydanie WebKit, silnika, który pobiera, renderuje i uruchamia strony. ZTBrowser używa jego API dla GTK 4, `webkitgtk-6.0`. |
 | Reguła blokowania treści | Reguła JSON, którą WebKit kompiluje i sprawdza, zanim żądanie opuści komputer: „jeśli URL pasuje do wzorca, zablokuj go” (albo podnieś do HTTPS). Reguły są grupowane w *listy reguł*. |
-| Tracker Data Set (TDS) | Lista domen śledzących DuckDuckGo: kto jest ich właścicielem i które ich żądania są dozwolone. Licencja CC BY-NC-SA 4.0, więc InDuckGo pobiera ją w trakcie działania i nigdy jej nie dystrybuuje. |
+| Tracker Data Set (TDS) | Lista domen śledzących DuckDuckGo: kto jest ich właścicielem i które ich żądania są dozwolone. Licencja CC BY-NC-SA 4.0, więc ZTBrowser pobiera ją w trakcie działania i nigdy jej nie dystrybuuje. |
 | Konfiguracja prywatności | „Rozdzielnia” DuckDuckGo: która ochrona jest włączona i na których witrynach musi być wyłączona, bo je psuje (*wyjątki*). |
 | Content Scope Scripts (C-S-S) | JavaScript DuckDuckGo działający w każdej stronie i ramce: blokuje fingerprinting i ogłasza GPC. Apache-2.0, wersja 20.0.0 leży w `assets/`. |
 | GPC (Global Privacy Control) | Sygnał „nie sprzedawaj i nie udostępniaj moich danych”; w niektórych stanach USA wiążący prawnie. |
@@ -41,10 +41,10 @@ Projekt kształtują jeszcze dwa cele:
 | Profil | Osobna tożsamość przeglądarki z własnymi cookies, magazynem, cache, historią i uprawnieniami witryn. |
 | Aplikacja webowa (PWA) | Strona zainstalowana jako aplikacja pulpitu: własne okno, ikona i pozycja w menu. |
 | Sufiks publiczny, domena rejestrowalna | `co.uk` i `github.io` to *sufiksy publiczne*: każdy może zarejestrować nazwę pod nimi. *Domena rejestrowalna* to sufiks plus jedna etykieta (`bbc.co.uk`). Dwa hosty z tą samą domeną rejestrowalną to *ta sama witryna*. |
-| Identyfikator aplikacji | Nazwa D-Bus działającej aplikacji GTK, np. `io.github.induckgo.InDuckGo`. GTK uruchamia tylko jeden proces na identyfikator. |
+| Identyfikator aplikacji | Nazwa D-Bus działającej aplikacji GTK, np. `io.github.ztbrowser.ZTBrowser`. GTK uruchamia tylko jeden proces na identyfikator. |
 | Plik desktop | Plik `.desktop` w `~/.local/share/applications`, który dodaje aplikację do menu pulpitu. |
 | Ogień (Fire) | Przycisk, który jednym kliknięciem usuwa dane przeglądania profilu. |
-| InDuckGo Guard | Własne zabezpieczenia InDuckGo ponad DuckDuckGo: listy filtrów społeczności, ochrona przed fingerprintingiem, którą DuckDuckGo zostawia wyłączoną, i nagłówek GPC (§5.6). |
+| ZTBrowser Guard | Własne zabezpieczenia ZTBrowsera ponad DuckDuckGo: listy filtrów społeczności, ochrona przed fingerprintingiem, którą DuckDuckGo zostawia wyłączoną, i nagłówek GPC (§5.6). |
 | Lista filtrów | Plik tekstowy z regułami blokowania i ukrywania w składni Adblock Plus (`\|\|ads.example^` blokuje domenę, `##.ad` ukrywa elementy, `@@` oznacza wyjątek), utrzymywany przez wolontariuszy. Te same listy czytają uBlock Origin, Brave i AdGuard. |
 | Fingerprinting | Rozpoznawanie przeglądarki bez cookies, po tym, co zdradza: jak rysuje canvas, jak jej stos audio zaokrągla liczby, jaki ma ekran i fonty. |
 | Ping kliknięcia linku | Żądanie, które `<a ping="…">` wysyła po kliknięciu linku; mówi analityce strony, który link kliknięto. |
@@ -55,13 +55,13 @@ Projekt kształtują jeszcze dwa cele:
 
 ## 3. Dwa crate'y
 
-Kod jest podzielony na dwa crate'y Rust, a zależność biegnie w jedną stronę: `induckgo` → `induckgo-core`.
+Kod jest podzielony na dwa crate'y Rust, a zależność biegnie w jedną stronę: `ztbrowser` → `ztbrowser-core`.
 
-- **`crates/induckgo-core`** zawiera logikę domenową: budowanie list reguł z TDS, czytanie konfiguracji
+- **`crates/ztbrowser-core`** zawiera logikę domenową: budowanie list reguł z TDS, czytanie konfiguracji
   prywatności, decyzje o upgrade HTTPS, wykrywanie parametrów śledzących, parsowanie linii poleceń, katalogi
   profili i aplikacji webowych, wybór ikon, generowanie plików desktop i nazw pobranych plików. Nie wie nic o
-  GTK ani WebKit, dlatego każdą regułę sprawdzają szybkie testy jednostkowe (`cargo test -p induckgo-core`).
-- **`crates/induckgo`** to aplikacja GTK 4 + libadwaita. Jej typy są adapterami: biorą decyzję od rdzenia i
+  GTK ani WebKit, dlatego każdą regułę sprawdzają szybkie testy jednostkowe (`cargo test -p ztbrowser-core`).
+- **`crates/ztbrowser`** to aplikacja GTK 4 + libadwaita. Jej typy są adapterami: biorą decyzję od rdzenia i
   wykonują ją przez WebKitGTK, libsoup (HTTP) albo GIO (pliki, procesy).
 
 Zasady inżynierskie obu crate'ów (Object Oriented Programming First, obiektowe testy Given/When/Then, jeden
@@ -69,24 +69,24 @@ Zasady inżynierskie obu crate'ów (Object Oriented Programming First, obiektowe
 
 ## 4. Procesy i izolacja
 
-![Każdy profil i każda aplikacja webowa to osobny proces InDuckGo z własną sesją WebKit; wspólny, tylko do odczytu cache danych ochrony; drugie uruchomienie przekazywane przez D-Bus; link do innej witryny kliknięty w aplikacji webowej otwiera się w przeglądarce](../../assets/diagrams/architecture-process-isolation.pl.svg)
+![Każdy profil i każda aplikacja webowa to osobny proces ZTBrowsera z własną sesją WebKit; wspólny, tylko do odczytu cache danych ochrony; drugie uruchomienie przekazywane przez D-Bus; link do innej witryny kliknięty w aplikacji webowej otwiera się w przeglądarce](../../assets/diagrams/architecture-process-isolation.pl.svg)
 
 Każdy profil i każda zainstalowana aplikacja webowa działa jako **osobny proces z własnym identyfikatorem
 aplikacji**:
 
 | Co działa | Identyfikator aplikacji | Katalog profilu |
 |---|---|---|
-| Przeglądarka, profil domyślny | `io.github.induckgo.InDuckGo` | `profiles/default` |
-| Przeglądarka, profil „work” | `io.github.induckgo.InDuckGo.Profile.work` | `profiles/work` |
-| Aplikacja webowa „mBank” | `io.github.induckgo.InDuckGo.WebApp.mbank_pl` | `profiles/app_mbank_pl` |
-| Okno Tor | `io.github.induckgo.InDuckGo.Tor` | brak: sesja żyje w pamięci (§4.1) |
+| Przeglądarka, profil domyślny | `io.github.ztbrowser.ZTBrowser` | `profiles/default` |
+| Przeglądarka, profil „work” | `io.github.ztbrowser.ZTBrowser.Profile.work` | `profiles/work` |
+| Aplikacja webowa „mBank” | `io.github.ztbrowser.ZTBrowser.WebApp.mbank_pl` | `profiles/app_mbank_pl` |
+| Okno Tor | `io.github.ztbrowser.ZTBrowser.Tor` | brak: sesja żyje w pamięci (§4.1) |
 
-`LaunchRequest` (rdzeń) zamienia linię poleceń `induckgo [--profile NAZWA | --web-app ID | --tor] [URL …]` na jeden z
+`LaunchRequest` (rdzeń) zamienia linię poleceń `ztbrowser [--profile NAZWA | --web-app ID | --tor] [URL …]` na jeden z
 tych identyfikatorów. GTK pyta następnie D-Bus, czy ten identyfikator już działa. Jeśli tak, nowa linia
 poleceń trafia do działającego procesu (który otwiera URL w oknie), a nowy proces kończy pracę.
 
 Każdy proces ma dokładnie jedną *sesję sieciową* WebKit, zapisaną w katalogach profilu
-(`~/.local/share/induckgo/profiles/<id>` i `~/.cache/induckgo/profiles/<id>`). Są tam baza cookies, local
+(`~/.local/share/ztbrowser/profiles/<id>` i `~/.cache/ztbrowser/profiles/<id>`). Są tam baza cookies, local
 storage, IndexedDB, cache, favikony i wpisy HSTS. Cookies stron trzecich są odrzucane, a ITP jest włączone.
 Nic z tej sesji nie jest widoczne dla innego profilu ani aplikacji.
 
@@ -95,33 +95,33 @@ najsilniejsza separacja, jaką Linux daje bez kontenerów: awaria, wyciek pamię
 banku nie dotknie przeglądarki. Pulpit widzi też każdą aplikację jako osobny program (własna ikona w doku,
 grupowanie okien przez `StartupWMClass`), a tego właśnie obiecuje „zainstaluj jako aplikację”.
 
-Jedyne wspólne dane to **kanał ochrony** w `~/.cache/induckgo/protections`: TDS, konfiguracja prywatności i
+Jedyne wspólne dane to **kanał ochrony** w `~/.cache/ztbrowser/protections`: TDS, konfiguracja prywatności i
 listy filtrów Guarda (`filter-lists/*.txt`). Czyta je każdy proces. Pobranie podmienia plik atomowo (zapis `nazwa.part`, potem zmiana nazwy), więc proces
 nigdy nie przeczyta pół pliku.
 
-Przed usunięciem profilu albo odinstalowaniem aplikacji InDuckGo pyta D-Bus, czy jej identyfikator nadal
+Przed usunięciem profilu albo odinstalowaniem aplikacji ZTBrowser pyta D-Bus, czy jej identyfikator nadal
 działa (`RunningInstances`), i odmawia usunięcia danych, których używa żywy proces.
 
 ### 4.1 Okno Tor
 
-![Proces okna Tor ma okno przeglądarki ze stroną łączenia, sesję trzymaną w pamięci i klienta HTTP, które czekają na Tora; TorConnection zapisuje konfigurację, uruchamia własny tor InDuckGo i śledzi go przez port kontrolny; cały ruch idzie przez lokalny port SOCKS tor, opcjonalnie przez transport mostu, do sieci Tor; systemowa usługa Tor, systemowy resolver DNS i połączenia bezpośrednie nie są nigdy używane](../../assets/diagrams/architecture-tor-window.pl.svg)
+![Proces okna Tor ma okno przeglądarki ze stroną łączenia, sesję trzymaną w pamięci i klienta HTTP, które czekają na Tora; TorConnection zapisuje konfigurację, uruchamia własny tor ZTBrowsera i śledzi go przez port kontrolny; cały ruch idzie przez lokalny port SOCKS tor, opcjonalnie przez transport mostu, do sieci Tor; systemowa usługa Tor, systemowy resolver DNS i połączenia bezpośrednie nie są nigdy używane](../../assets/diagrams/architecture-tor-window.pl.svg)
 
-`induckgo --tor` (także **New Tor Window** w menu, `Alt+Shift+N` albo akcja w pliku desktop) otwiera **okno
+`ztbrowser --tor` (także **New Tor Window** w menu, `Alt+Shift+N` albo akcja w pliku desktop) otwiera **okno
 Tor**: okno przeglądarki, którego każde żądanie idzie przez Tora, więc odwiedzane strony widzą adres
-przekaźnika wyjściowego Tora zamiast adresu użytkownika. To osobny proces, `io.github.induckgo.InDuckGo.Tor`,
+przekaźnika wyjściowego Tora zamiast adresu użytkownika. To osobny proces, `io.github.ztbrowser.ZTBrowser.Tor`,
 tak jak profil, ale bez katalogu profilu: jego sesja żyje w pamięci i znika razem z procesem.
 
-**Własny Tor InDuckGo, nigdy systemowy.** Proces uruchamia własny program `tor`, z którego nie korzysta nic
+**Własny Tor ZTBrowsera, nigdy systemowy.** Proces uruchamia własny program `tor`, z którego nie korzysta nic
 innego na komputerze; systemowa usługa Tor nie jest potrzebna ani ruszana. `TorPrograms` (rdzeń) szuka `tor`
-najpierw w `lib/induckgo/tor/` obok `bin/` InDuckGo (tam swoją kopię kładą paczka Debiana i AppImage), potem
+najpierw w `lib/ztbrowser/tor/` obok `bin/` ZTBrowsera (tam swoją kopię kładą paczka Debiana i AppImage), potem
 w `/usr/bin`, `/usr/sbin` i `/usr/local/bin`. Nigdy nie przeszukuje `PATH`: program podrzucony do katalogu
 zapisywalnego przez użytkownika, który jest w `PATH`, nie może zostać Torem okna Tor. `TorConfiguration`
 (rdzeń) zapisuje plik konfiguracji, a Tor startuje jako `tor -f <katalog danych>/torrc --defaults-torrc
 /dev/null`, więc ani `/etc/tor/torrc`, ani plik domyślnych ustawień nie mogą go zmienić. Tor działa wyłącznie
 jako klient, sam wybiera wolne porty pętli zwrotnej dla SOCKS i portu kontrolnego (`auto`), zapisuje port
-kontrolny do pliku, na który czeka InDuckGo, chroni port kontrolny plikiem cookie i kończy pracę razem z
-InDuckGo (`__OwningControllerProcess`, a połączenie kontrolne przejmuje go poleceniem `TAKEOWNERSHIP`). Jego
-katalog danych, `~/.local/share/induckgo/tor`, jest trwały: przechowuje strażników wejściowych Tora
+kontrolny do pliku, na który czeka ZTBrowser, chroni port kontrolny plikiem cookie i kończy pracę razem z
+ZTBrowserem (`__OwningControllerProcess`, a połączenie kontrolne przejmuje go poleceniem `TAKEOWNERSHIP`). Jego
+katalog danych, `~/.local/share/ztbrowser/tor`, jest trwały: przechowuje strażników wejściowych Tora
 (wybieranie nowych przy każdym uruchomieniu zwiększałoby szansę trafienia na złośliwego) i zapisany katalog
 przekaźników, dzięki któremu kolejne połączenia trwają sekundy.
 
@@ -138,7 +138,7 @@ omija. `ProfileSession::start_tor` buduje sesję, której wczytania czekają, a�
 trasa przez Tora ustawiona; `HttpClient`, który pobiera dane ochrony, też do tego czasu wstrzymuje żądania.
 Nie ma powrotu do połączenia bezpośredniego. Zawsze, gdy Tor nie jest połączony (zanim połączy się pierwszy
 raz, gdy startuje od nowa z innymi mostami, gdy się zatrzymał), proxy sesji to `ClosedProxy`: port pętli
-zwrotnej, który InDuckGo sam trzyma przez cały czas działania i który od razu zamyka każde połączenie. Adresy
+zwrotnej, który ZTBrowser sam trzyma przez cały czas działania i który od razu zamyka każde połączenie. Adresy
 otwierane w tym czasie czekają na Tora; żądania stron już otwartych (ich własne żądania, przeładowanie,
 kliknięty odnośnik) od razu się nie udają i kończą stroną błędu, której **Try Again** wczytuje je, gdy Tor
 wróci. Żaden inny lokalny program nie przejmie zwolnionego portu Tora, żeby je odczytać. Zmierzone na
@@ -152,7 +152,7 @@ sieci WebKit miały połączenia wyłącznie z portami SOCKS i kontrolnym Tora n
 
 **Nic na dysku.** Sesja WebKit jest efemeryczna: cookies, magazyn, cache i wpisy HSTS żyją w pamięci. Powiększenie
 witryn, witryny z wyłączoną ochroną i wyszukiwarka też są trzymane w pamięci (`StoredFile::discarded`).
-Skompilowane listy reguł i własna kopia danych ochrony okna trafiają do `$XDG_RUNTIME_DIR/induckgo/tor-session`
+Skompilowane listy reguł i własna kopia danych ochrony okna trafiają do `$XDG_RUNTIME_DIR/ztbrowser/tor-session`
 (pamięć, którą system czyści przy wylogowaniu) i są usuwane przy starcie i przy wyjściu, bo listy reguł
 zawierają nazwy odwiedzonych witryn (hosty, którym nie udało się HTTPS, witryny z wyłączoną ochroną). Dane
 ochrony są kopiowane z cache profili bez plików `ETag`, klient okna Tor nigdy nie wysyła `ETag`, a jego
@@ -184,10 +184,10 @@ znajduje programy transportów (`lyrebird` albo `obfs4proxy`, `snowflake-client`
 
 **Paczki.** Paczki dla Arch i Fedory zależą od `tor` z dystrybucji, który sam nie uruchamia usługi
 systemowej. Paczka `tor` Debiana uruchamiałaby przy każdym starcie systemu ogólnosystemową usługę Tor, więc
-paczka InDuckGo dla Debiana zamiast tego niesie własną kompilację `tor` Debiana w `/usr/lib/induckgo/tor`
+paczka ZTBrowsera dla Debiana zamiast tego niesie własną kompilację `tor` Debiana w `/usr/lib/ztbrowser/tor`
 (jej biblioteki są zwykłymi zależnościami paczki) i poleca `obfs4proxy` oraz `snowflake-client`. AppImage
 niesie `tor`, potrzebne mu biblioteki poza biblioteką C, `obfs4proxy` i `snowflake-client`, z licencjami w
-`usr/share/doc/induckgo/third-party`. Zmierzone na AppImage: Tor połączył się bezpośrednio w około 5 s, przez
+`usr/share/doc/ztbrowser/third-party`. Zmierzone na AppImage: Tor połączył się bezpośrednio w około 5 s, przez
 wbudowane mosty obfs4 w około 30 s, a przez Snowflake w około 50 s, i za każdym razem `check.torproject.org`
 potwierdził, że okno korzysta z Tora.
 
@@ -215,7 +215,7 @@ rozpoznaje.
 
 ### 5.2 Trzy listy reguł
 
-Akcja `ignore-previous-rules` w WebKit (wyjątek) anuluje tylko reguły *z tej samej listy*. Dlatego InDuckGo
+Akcja `ignore-previous-rules` w WebKit (wyjątek) anuluje tylko reguły *z tej samej listy*. Dlatego ZTBrowser
 buduje trzy osobne listy, żeby wyjątki jednej funkcji nie wyłączyły innej:
 
 1. **`trackers`**: `ContentBlockerRulesBuilder`, port `TrackerRadarKit` z DuckDuckGo, blokuje żądania stron
@@ -232,7 +232,7 @@ buduje trzy osobne listy, żeby wyjątki jednej funkcji nie wyłączyły innej:
 
 `PageProtections` kompiluje każdą listę przez `UserContentFilterStore` WebKit. Kompilacja listy trackerów
 trwa około sekundy, więc wynik jest trzymany na dysku obok odcisku (hasha) źródła. Niezmieniona lista jest
-wczytywana zamiast kompilowana. InDuckGo Guard dodaje trzy własne listy (§5.6).
+wczytywana zamiast kompilowana. ZTBrowser Guard dodaje trzy własne listy (§5.6).
 
 Nawet niezmieniona lista trackerów kosztuje: zbudowanie jej 7000 reguł i serializacja (4,7 MB JSON-a) tylko po
 to, by policzyć odcisk, zajmuje 0,1–0,2 s procesora, a na obciążonej maszynie więcej. Ta praca idzie na wątek
@@ -255,7 +255,7 @@ Reguły działają, zanim żądanie opuści komputer. Dwie z nich potrzebują po
   do nieudanych hostów profilu, lista `https` jest przebudowana i wczytywany jest `http://`. Ciche cofnięcie do
   HTTP pozwoliłoby atakującemu w sieci zepsuć HTTPS dowolnej witryny i zmusić ją do zwykłego HTTP.
 
-**Strony błędów.** Każda inna porażka dostaje stronę błędu InDuckGo zamiast wbudowanej strony WebKita, która
+**Strony błędów.** Każda inna porażka dostaje stronę błędu ZTBrowsera zamiast wbudowanej strony WebKita, która
 jest gołym nagłówkiem na białym tle. WebKit, libsoup i GLib zgłaszają porażki kodami błędów z kilku domen:
 resolvera, wejścia-wyjścia, TLS oraz własnych błędów sieci i polityk WebKita. `ErrorPageView` (aplikacja)
 zamienia te kody na kilka przyczyn, na które człowiek może zareagować (`FailureCause` w rdzeniu):
@@ -310,7 +310,7 @@ odrzuca wszystkie pozostałe funkcje na samym początku (`pruneConfigFeatures`),
 każda ramka czyta teraz ok. 165 KB konfiguracji zamiast 840 KB (sam `autoconsent` to 520 KB), a skrypt maleje z
 1,36 MB do 0,67 MB. Test odczytuje ten zbiór funkcji z dołączonego bundla, więc aktualizacja C-S-S nie może po
 cichu wyłączyć żadnej funkcji. Wiadomości skryptu trafiają do handlera `contentScopeScripts`. Handler odpowiada `{}` na powiadomienia i
-obiektem błędu na żądania, bo InDuckGo nie implementuje natywnych funkcji, o które proszą.
+obiektem błędu na żądania, bo ZTBrowser nie implementuje natywnych funkcji, o które proszą.
 
 ### 5.5 Ogień
 
@@ -318,7 +318,7 @@ Przycisk Ognia (w nagłówku każdego okna) zamyka pozostałe okna profilu i usu
 (cookies, magazyn, cache, favikony, zoom nadany witrynom) z wyjątkiem wpisów **HSTS**. Te pamiętają, które witryny wymagają HTTPS,
 a ich zapomnienie tylko osłabiłoby następną wizytę. Bieżące okno zaczyna od nowa z pustą kartą.
 
-### 5.6 InDuckGo Guard
+### 5.6 ZTBrowser Guard
 
 ![Listy filtrów są pobierane od wydawców, sprawdzane i trzymane w cache; rdzeń grupuje je w trzy listy reguł Guarda rozpoznawane po odcisku wejścia; PageProtections wczytuje aktualną skompilowaną kopię albo buduje i kompiluje zmienioną listę w wątku roboczym; konfiguracja prywatności jest wzmacniana przed wypełnieniem skryptu content scope; funkcja WebKit wysyła nagłówek GPC](../../assets/diagrams/architecture-guard-pipeline.pl.svg)
 
@@ -328,7 +328,7 @@ Guard zamyka tę lukę i idzie dalej na cztery sposoby: więcej list, reguły dz
 strony, ochrona przed fingerprintingiem, którą DuckDuckGo zostawia wyłączoną, oraz nagłówek GPC.
 
 **Listy filtrów.** `FilterListFeed` pobiera dziewięć list od ich wydawców. Część ich licencji nie pasuje do
-paczki InDuckGo na GPL-3.0-or-later: CC BY-NC-SA 4.0 zabrania użytku komercyjnego, a CC BY-SA 3.0 jest
+paczki ZTBrowsera na GPL-3.0-or-later: CC BY-NC-SA 4.0 zabrania użytku komercyjnego, a CC BY-SA 3.0 jest
 niezgodna z GPL. Dlatego, tak jak TDS, nigdy nie są dołączane:
 
 | Lista | Co blokuje | Licencja |
@@ -397,7 +397,7 @@ strony Guarda (`assets/guard/generic-hiding.js`) działa we własnym świecie sk
 
 1. Na starcie dokumentu sprawdza jedną regułę sondy na listę. WebKit ukrywa sondę tam, gdzie dana lista działa,
    więc o wyjątkach i tarczy użytkownika decyduje sam WebKit.
-2. Zgłasza klasy i id strony do handlera wiadomości `induckgoGuard`.
+2. Zgłasza klasy i id strony do handlera wiadomości `ztbrowserGuard`.
 3. Odpowiedź wstawia do przyjętego arkusza stylów.
 4. Selektory, których nie zawęża żadna klasa ani id, testuje na elementach w miarę ich dodawania.
 
@@ -429,8 +429,8 @@ rejestrowalnej odwiedzanej strony.
 | Przeglądarka (listopad 2026) | Hosty śledzące | Hosty zewnętrzne |
 |---|---|---|
 | Brave 1.98.63, Shields w ustawieniu domyślnym („standard”) | 6 | 82 |
-| InDuckGo przed Guardem (tylko ochrona DuckDuckGo) | 14 | 146 |
-| InDuckGo z Guardem | 3 | 70 |
+| ZTBrowser przed Guardem (tylko ochrona DuckDuckGo) | 14 | 146 |
+| ZTBrowser z Guardem | 3 | 70 |
 
 Przeszły trzy hosty. `pub.doubleverify.com` (BBC) i `securepubads.g.doubleclick.net` (weather.com) przepuścił też
 Brave. Trzeci to `m.stripe.network` (CNN), czyli antyfraudowa weryfikacja płatności Stripe. Wczytanie CNN w Brave
@@ -457,7 +457,7 @@ ikony są pobierane bez cookies, z limitami rozmiaru (manifest 512 KiB, ikona 2 
 PNG i tylko po tym, jak `PngHeader` potwierdzi rozsądne wymiary (najwyżej 2048 px na bok), co zatrzymuje
 „bomby dekompresyjne”. Wybrana ikona jest ponownie kodowana do PNG i zapisywana. Gdy żadna ikona się nie
 pobierze, używana jest favikona, którą WebKit już zdekodował. Wynikiem jest wpis w katalogu, ikona i plik
-desktop, którego linia `Exec=` uruchamia `induckgo --web-app <id>`.
+desktop, którego linia `Exec=` uruchamia `ztbrowser --web-app <id>`.
 
 Po instalacji aplikacja się uruchamia, a przeglądarka przekazuje jej witrynę: każde okno przeglądarki tego
 profilu zamyka kartę, z której zaczęła się instalacja, i każdą kartę ze stroną aplikacji
@@ -508,7 +508,7 @@ przez wskaźnik do tymczasowego, już zwolnionego napisu i wywracało aplikacje 
   Search Engine, zapis w `search-engine.json` profilu). `SearchEngine` decyduje, dokąd trafia wyszukiwanie
   wpisane w pasek adresu lub podane w wierszu poleceń, jaką stronę główną otwiera nowa karta i jaką wyszukiwarkę
   strona błędu proponuje dla błędnie wpisanej nazwy. Wyszukiwanie jest zwykłą nawigacją, więc ochrona działa też
-  na stronach samej wyszukiwarki. Zapisana wyszukiwarka, której InDuckGo nie oferuje, jest czytana jako DuckDuckGo.
+  na stronach samej wyszukiwarki. Zapisana wyszukiwarka, której ZTBrowser nie oferuje, jest czytana jako DuckDuckGo.
 - **Przyciski paska narzędzi**: *Preferences…* (menu okna, `Ctrl+,`) włącza i wyłącza każdy przycisk wokół
   paska adresu osobno w każdym profilu (`ToolbarLayout`, zapis w `toolbar.json` profilu; `ToolbarPreferences`
   dzieli go ze wszystkimi oknami procesu, więc przełącznik działa we wszystkich naraz). Plik wymienia przyciski
@@ -544,7 +544,7 @@ nim polegać.
 | Lista mieści najwyżej 150 000 reguł; pusta lista jest odrzucana („Empty extension”); `url-filter` nie zna alternatywy `\|`. | Guard grupuje listy filtrów w trzy listy i dopasowuje każdą do limitu. |
 | `resource-type: ping` pasuje tylko do `<a ping>`; `navigator.sendBeacon` i `fetch(…, {keepalive})` to `raw`. | Guard blokuje pingi kliknięć linków; beacony tylko po adresie. |
 | Kompilacja trzech list Guarda (91 000, 59 000 i 27 000 reguł) trwa ok. 3, 4 i 1,5 s. | Skompilowane listy są zapisywane i używane ponownie; strony nigdy na nie nie czekają. |
-| Wyłączenie `gtk-enable-animations` wewnątrz aplikacji nie zmienia stronom `prefers-reduced-motion`. | Animacje interfejsu (karty, dialogi, banery, toasty, pasek wyszukiwania) są wyłączone w każdym procesie InDuckGo, więc interfejs reaguje od razu, a witryny nie dowiadują się z tego niczego nowego o użytkowniku. |
+| Wyłączenie `gtk-enable-animations` wewnątrz aplikacji nie zmienia stronom `prefers-reduced-motion`. | Animacje interfejsu (karty, dialogi, banery, toasty, pasek wyszukiwania) są wyłączone w każdym procesie ZTBrowsera, więc interfejs reaguje od razu, a witryny nie dowiadują się z tego niczego nowego o użytkowniku. |
 
 ## 9. Znane ograniczenia
 
@@ -558,9 +558,9 @@ nim polegać.
 | Wszystkie tłumaczenia są maszynowe, także polskie (patrz [Język interfejsu](interface-language.md)). | Brak native speakerów dla 66 języków. | Współtwórcy poprawią pliki `.po`. |
 | Każdy profil jest w doku osobną aplikacją. | Jeden identyfikator aplikacji na proces profilu. | Użytkownicy będą woleli grupowanie. |
 | Logowanie, które w aplikacji webowej zaczyna się od *klikniętego linku* do innej witryny, otwiera się w przeglądarce. | Kliknięte linki poza witrynę celowo opuszczają aplikację (phishing). Większość logowań używa przekierowań lub okien i działa. | Realna aplikacja będzie tego potrzebować; wtedy allowlista per aplikacja. |
-| Okno Tor ukrywa adres użytkownika, ale nie to, że to InDuckGo: jego odcisk (WebKitGTK, rozmiar okna, fonty) różni się od Tor Browsera, którego użytkownicy są upodabniani do siebie. | WebKitGTK nie ma letterboxingu ani łatek ujednolicających Tor Browsera. | Gdy liczy się nieodróżnialność wśród użytkowników Tora, używaj Tor Browsera. |
+| Okno Tor ukrywa adres użytkownika, ale nie to, że to ZTBrowser: jego odcisk (WebKitGTK, rozmiar okna, fonty) różni się od Tor Browsera, którego użytkownicy są upodabniani do siebie. | WebKitGTK nie ma letterboxingu ani łatek ujednolicających Tor Browsera. | Gdy liczy się nieodróżnialność wśród użytkowników Tora, używaj Tor Browsera. |
 | Witryny odwiedzane w jednej tożsamości dzielą obwody Tora (Tor Browser rozdziela je per witryna). | WebKitGTK ustawia jedno proxy, a z nim jeden zestaw danych logowania SOCKS, na sesję. | WebKitGTK udostępni dane logowania proxy per żądanie. |
-| Paczka Debiana i AppImage niosą własny `tor`, aktualizowany z wydaniami InDuckGo, a nie z poprawkami bezpieczeństwa Debiana. | Paczka `tor` Debiana uruchamiałaby ogólnosystemową usługę Tor. | Debian dostarczy program bez włączania usługi. |
+| Paczka Debiana i AppImage niosą własny `tor`, aktualizowany z wydaniami ZTBrowsera, a nie z poprawkami bezpieczeństwa Debiana. | Paczka `tor` Debiana uruchamiałaby ogólnosystemową usługę Tor. | Debian dostarczy program bez włączania usługi. |
 
 ## 10. Granice zaufania
 
@@ -571,11 +571,11 @@ nim polegać.
   kodu.
 - **Strony** nigdy nie widzą skryptu instalatora (izolowany świat). Wiadomości C-S-S dostają tylko stałe
   odpowiedzi, a strony nie mogą otwierać innych aplikacji bez gestu użytkownika.
-- **Pliki** zapisywane przez InDuckGo powstają z uprawnieniami `0600` w katalogach `0700`. Najpierw trafiają do
+- **Pliki** zapisywane przez ZTBrowser powstają z uprawnieniami `0600` w katalogach `0700`. Najpierw trafiają do
   pliku `.part`, a potem dostają docelową nazwę, więc awaria nie zostawi w połowie zapisanego katalogu.
 - **Pliki desktop** generuje `DesktopEntry`, który escapuje nazwy pochodzące ze stron. Tytuł strony nie może
   więc wstrzyknąć do pliku linii takiej jak `Exec=`.
-- **Tor okna Tor** nasłuchuje tylko na pętli zwrotnej, a InDuckGo przyjmuje od niego tylko adresy pętli
+- **Tor okna Tor** nasłuchuje tylko na pętli zwrotnej, a ZTBrowser przyjmuje od niego tylko adresy pętli
   zwrotnej. Jego port kontrolny wymaga cookie, które Tor zapisuje w swoim katalogu danych `0700`. Linie mostów
   są sprawdzane słowo po słowie, zanim trafią do pliku konfiguracji Tora, a `tor` i jego transporty są
   uruchamiane tylko ze stałych katalogów, nigdy wyszukiwane przez `PATH`.

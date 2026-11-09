@@ -1,21 +1,21 @@
 [workspace]
 resolver = "3"
 members = [
-    "crates/induckgo-core",
-    "crates/induckgo",
-    "crates/induckgo-test-report",
-    "crates/induckgo-bench",
-    "crates/induckgo-engine-qt",
-    "crates/induckgo-qt",
+    "crates/ztbrowser-core",
+    "crates/ztbrowser",
+    "crates/ztbrowser-test-report",
+    "crates/ztbrowser-bench",
+    "crates/ztbrowser-engine-qt",
+    "crates/ztbrowser-qt",
 ]
 # Building the Qt crates needs Qt 6 with QtWebEngine, QtWebChannel and Qt Quick's development files installed.
 default-members = [
-    "crates/induckgo-core",
-    "crates/induckgo",
-    "crates/induckgo-test-report",
-    "crates/induckgo-bench",
-    "crates/induckgo-engine-qt",
-    "crates/induckgo-qt",
+    "crates/ztbrowser-core",
+    "crates/ztbrowser",
+    "crates/ztbrowser-test-report",
+    "crates/ztbrowser-bench",
+    "crates/ztbrowser-engine-qt",
+    "crates/ztbrowser-qt",
 ]
 
 [workspace.package]

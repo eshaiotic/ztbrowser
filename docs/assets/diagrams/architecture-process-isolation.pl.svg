@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="800" viewBox="0 0 1440 800" font-family="DejaVu Sans, Noto Sans, sans-serif">
-<title>InDuckGo — jeden proces i jedna izolowana sesja na profil i na aplikację webową</title>
+<title>ZTBrowser — jeden proces i jedna izolowana sesja na profil i na aplikację webową</title>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#37474f"/></marker><marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c62828"/></marker></defs>
 <rect width="1440" height="800" fill="#ffffff"/>
-<text x="720" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#263238">InDuckGo — jeden proces i jedna izolowana sesja na profil i na aplikację webową</text>
+<text x="720" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#263238">ZTBrowser — jeden proces i jedna izolowana sesja na profil i na aplikację webową</text>
 <rect x="40" y="60" width="640" height="100" rx="9" fill="#eceff1" stroke="#546e7a" stroke-width="1.6"/>
-<text x="52" y="82" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Jak uruchamia się InDuckGo</text>
-<text x="52" y="104" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">induckgo [--profile NAZWA | --web-app ID] [URL …]</text>
+<text x="52" y="82" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Jak uruchamia się ZTBrowser</text>
+<text x="52" y="104" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">ztbrowser [--profile NAZWA | --web-app ID] [URL …]</text>
 <text x="52" y="123" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">z terminala, z menu pulpitu (plik .desktop)</text>
-<text x="52" y="142" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">albo przyciskiem „Otwórz” w InDuckGo</text>
+<text x="52" y="142" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">albo przyciskiem „Otwórz” w ZTBrowser</text>
 <rect x="760" y="60" width="640" height="100" rx="9" fill="#eceff1" stroke="#546e7a" stroke-width="1.6"/>
 <text x="772" y="82" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Magistrala sesji D-Bus (GApplication)</text>
 <text x="772" y="104" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">LaunchRequest wybiera identyfikator aplikacji.</text>
@@ -19,43 +19,43 @@
 <text x="1070" y="182" font-size="12" font-weight="bold" text-anchor="end" fill="#37474f">uruchamia proces dla tego ID lub używa działającego</text>
 <rect x="40" y="230" width="380" height="320" rx="9" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.6"/>
 <text x="52" y="252" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Przeglądarka — profil „praca”</text>
-<text x="52" y="274" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">io.github.induckgo.InDuckGo.Profile.work</text>
+<text x="52" y="274" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">io.github.ztbrowser.ZTBrowser.Profile.work</text>
 <rect x="56" y="290" width="348" height="44" rx="9" fill="#eceff1" stroke="#546e7a" stroke-width="1.6"/>
 <text x="68" y="312" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Okna przeglądarki z kartami</text>
 <rect x="56" y="350" width="348" height="120" rx="9" fill="#fff8e1" stroke="#ff8f00" stroke-width="1.6"/>
 <text x="68" y="372" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Izolowana sesja WebKit</text>
 <text x="68" y="394" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">cookies.sqlite, magazyn, cache,</text>
 <text x="68" y="413" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">favikony, uprawnienia</text>
-<text x="68" y="432" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.local/share/induckgo/profiles/work</text>
-<text x="68" y="451" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.cache/induckgo/profiles/work</text>
+<text x="68" y="432" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.local/share/ztbrowser/profiles/work</text>
+<text x="68" y="451" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.cache/ztbrowser/profiles/work</text>
 <path d="M230,190 L230,226" fill="none" stroke="#37474f" stroke-width="1.8" marker-end="url(#arrow)"/>
 <path d="M230,620 L230,554" fill="none" stroke="#37474f" stroke-width="1.8" marker-end="url(#arrow)"/>
 <text x="245" y="594" font-size="12" font-weight="bold" text-anchor="start" fill="#37474f">odczyt</text>
 <rect x="460" y="230" width="380" height="320" rx="9" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.6"/>
 <text x="472" y="252" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Przeglądarka — profil domyślny</text>
-<text x="472" y="274" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">io.github.induckgo.InDuckGo</text>
+<text x="472" y="274" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">io.github.ztbrowser.ZTBrowser</text>
 <rect x="476" y="290" width="348" height="44" rx="9" fill="#eceff1" stroke="#546e7a" stroke-width="1.6"/>
 <text x="488" y="312" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Okna przeglądarki z kartami</text>
 <rect x="476" y="350" width="348" height="120" rx="9" fill="#fff8e1" stroke="#ff8f00" stroke-width="1.6"/>
 <text x="488" y="372" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Izolowana sesja WebKit</text>
 <text x="488" y="394" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">cookies.sqlite, magazyn, cache,</text>
 <text x="488" y="413" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">favikony, uprawnienia</text>
-<text x="488" y="432" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.local/share/induckgo/profiles/default</text>
-<text x="488" y="451" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.cache/induckgo/profiles/default</text>
+<text x="488" y="432" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.local/share/ztbrowser/profiles/default</text>
+<text x="488" y="451" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.cache/ztbrowser/profiles/default</text>
 <path d="M650,190 L650,226" fill="none" stroke="#37474f" stroke-width="1.8" marker-end="url(#arrow)"/>
 <path d="M650,620 L650,554" fill="none" stroke="#37474f" stroke-width="1.8" marker-end="url(#arrow)"/>
 <text x="665" y="594" font-size="12" font-weight="bold" text-anchor="start" fill="#37474f">odczyt</text>
 <rect x="1020" y="230" width="380" height="320" rx="9" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.6"/>
 <text x="1032" y="252" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Aplikacja webowa — mBank</text>
-<text x="1032" y="274" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">io.github.induckgo.InDuckGo.WebApp.mbank_pl</text>
+<text x="1032" y="274" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">io.github.ztbrowser.ZTBrowser.WebApp.mbank_pl</text>
 <rect x="1036" y="290" width="348" height="44" rx="9" fill="#eceff1" stroke="#546e7a" stroke-width="1.6"/>
 <text x="1048" y="312" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Jedno okno, bez paska adresu</text>
 <rect x="1036" y="350" width="348" height="120" rx="9" fill="#fff8e1" stroke="#c62828" stroke-width="3"/>
 <text x="1048" y="372" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Izolowana sesja WebKit</text>
 <text x="1048" y="394" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">cookies.sqlite, magazyn, cache,</text>
 <text x="1048" y="413" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">favikony, uprawnienia</text>
-<text x="1048" y="432" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.local/share/induckgo/profiles/app_mbank_pl</text>
-<text x="1048" y="451" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.cache/induckgo/profiles/app_mbank_pl</text>
+<text x="1048" y="432" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.local/share/ztbrowser/profiles/app_mbank_pl</text>
+<text x="1048" y="451" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.cache/ztbrowser/profiles/app_mbank_pl</text>
 <path d="M1210,190 L1210,226" fill="none" stroke="#37474f" stroke-width="1.8" marker-end="url(#arrow)"/>
 <path d="M1210,620 L1210,554" fill="none" stroke="#37474f" stroke-width="1.8" marker-end="url(#arrow)"/>
 <text x="1225" y="594" font-size="12" font-weight="bold" text-anchor="start" fill="#37474f">odczyt</text>
@@ -67,12 +67,12 @@
 <text x="930" y="298" font-size="12" font-weight="bold" text-anchor="middle" fill="#c62828">w przeglądarce</text>
 <rect x="40" y="624" width="1360" height="74" rx="9" fill="#e0f2f1" stroke="#00897b" stroke-width="1.6"/>
 <text x="52" y="646" font-size="14" font-weight="bold" text-anchor="start" fill="#263238">Wspólne dane ochrony, czytane przez każdy proces</text>
-<text x="52" y="668" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.cache/induckgo/protections — Tracker Data Set + konfiguracja prywatności,</text>
+<text x="52" y="668" font-size="11.5" font-weight="normal" text-anchor="start" fill="#263238" font-family="DejaVu Sans Mono, monospace">~/.cache/ztbrowser/protections — Tracker Data Set + konfiguracja prywatności,</text>
 <text x="52" y="687" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">pobierane z ETag, walidowane, podmieniane atomowo (zapis .part, rename)</text>
 <rect x="40" y="716" width="26" height="16" rx="4" fill="#eceff1" stroke="#546e7a" stroke-width="1.6"/>
 <text x="76" y="729" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">Pulpit / system operacyjny</text>
 <rect x="40" y="740" width="26" height="16" rx="4" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.6"/>
-<text x="76" y="753" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">Osobny proces InDuckGo</text>
+<text x="76" y="753" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">Osobny proces ZTBrowser</text>
 <rect x="40" y="764" width="26" height="16" rx="4" fill="#fff8e1" stroke="#ff8f00" stroke-width="1.6"/>
 <text x="76" y="777" font-size="12.5" font-weight="normal" text-anchor="start" fill="#263238">Dane profilu (nigdy współdzielone)</text>
 <rect x="620" y="716" width="26" height="16" rx="4" fill="#e0f2f1" stroke="#00897b" stroke-width="1.6"/>

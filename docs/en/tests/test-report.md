@@ -1,6 +1,6 @@
 # HTML test report
 
-`./run-tests` runs every InDuckGo test and then always writes a test report:
+`./run-tests` runs every ZTBrowser test and then always writes a test report:
 `tests/reports/test-report-YYYYMMDD-HHmm.html`, named after the local time the run started. The page is one
 self-contained HTML file (no network, no server) that can be opened from disk or attached to a message. Both
 `tests/reports/` and `test-results/` (where the run history lives) are ignored by git, so a report is never
@@ -33,7 +33,7 @@ can read this one.
 
 ```sh
 ./run-tests                    # all tests, then the report; opens it in the browser outside CI
-sudo pacman -S cargo-llvm-cov  # optional: adds induckgo-core's coverage to the report
+sudo pacman -S cargo-llvm-cov  # optional: adds ztbrowser-core's coverage to the report
 ```
 
 `cargo-nextest` is required. Without `cargo-llvm-cov` the script runs `cargo nextest run`, and the coverage
@@ -42,7 +42,7 @@ installs both tools and keeps the report of every run as an artifact for 90 days
 
 ## Where the data comes from
 
-![The report's data flow: ./run-tests runs cargo-nextest directly or through cargo-llvm-cov; the JUnit file, the coverage summary and the run history feed induckgo-test-report, which writes the HTML page](../../assets/diagrams/tests-report-data-flow.en.svg)
+![The report's data flow: ./run-tests runs cargo-nextest directly or through cargo-llvm-cov; the JUnit file, the coverage summary and the run history feed ztbrowser-test-report, which writes the HTML page](../../assets/diagrams/tests-report-data-flow.en.svg)
 
 `./run-tests` takes one of two paths. With `cargo-llvm-cov` installed it runs `cargo llvm-cov nextest`,
 which builds the tests with coverage counting and writes `test-results/coverage-summary.json`. Without it, it
@@ -51,7 +51,7 @@ runs plain `cargo nextest run`. Either way nextest writes `junit.xml`. Its folde
 link: the script deletes both before the run and takes whichever exists afterwards, so a report can never be
 built from a stale file.
 
-`induckgo-test-report` (a workspace crate that is never packaged) then reads the three inputs, records the
+`ztbrowser-test-report` (a workspace crate that is never packaged) then reads the three inputs, records the
 run in the history, and writes the page.
 
 ## Report layout
@@ -70,7 +70,7 @@ From the top:
    the total of all tests, the average, the longest test, and the run's wall-clock time.
 5. **Most frequent failures and most unstable features** — failures are grouped by kind (`assert_eq!`,
    `assert!`, `Option::unwrap`, `Result::unwrap`, timeout, other). A feature is one test binary, such as
-   `induckgo-core::generic_hiding`, which is one domain type.
+   `ztbrowser-core::generic_hiding`, which is one domain type.
 6. **Failed and flaky tests** — shown only when present, with the panic message and where it was raised.
 7. **Features** — every test binary with its result bar, failing ones first.
 8. **Slowest tests** — the top 10.
@@ -80,7 +80,7 @@ truncated, never rounded up, so one failure among thousands is never shown as 10
 
 ## Coverage scope and threshold
 
-Coverage is measured for `induckgo-core` only. The application crate (`induckgo`) is a set of adapters that
+Coverage is measured for `ztbrowser-core` only. The application crate (`ztbrowser`) is a set of adapters that
 carry out the core's decisions in GTK and WebKit, and it has no unit tests by design. Counting it would only
 say that GUI code does not run in a unit test. The report tool itself is left out too. A run's coverage is
 sufficient when **every measured metric is above 90 %**. Branch coverage needs a nightly compiler; when it
@@ -115,7 +115,7 @@ runs per suite. A missing or damaged history starts a new one instead of stoppin
 
 ## Code map
 
-| Module (`crates/induckgo-test-report/src/`) | Responsibility |
+| Module (`crates/ztbrowser-test-report/src/`) | Responsibility |
 |---|---|
 | `junit_results.rs` | Reads nextest's JUnit file into `TestCase`s with status, time and failure. |
 | `failure_message.rs` | Keeps a panic's message and location, and classifies the failure. |
@@ -125,4 +125,4 @@ runs per suite. A missing or damaged history starts a new one instead of stoppin
 | `report_page.rs`, `report_widgets.rs`, `report_page.css` | The HTML page in the template's layout. |
 | `report_command.rs`, `main.rs` | The command: files, git branch and commit, writing the page. |
 
-Tests: `crates/induckgo-test-report/tests/`, one Given/When/Then scenario file per type.
+Tests: `crates/ztbrowser-test-report/tests/`, one Given/When/Then scenario file per type.

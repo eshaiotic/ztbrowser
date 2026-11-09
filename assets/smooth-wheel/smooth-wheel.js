@@ -1,8 +1,8 @@
-// InDuckGo smooth wheel: animates each step of a mouse wheel the way Chromium does.
+// ZTBrowser smooth wheel: animates each step of a mouse wheel the way Chromium does.
 //
 // WebKitGTK moves a wheel step at once and in about 90 ms; this script takes the step over, cancels it and
 // scrolls the same distance in about 180 ms, easing in and out. The distance, the duration and the two curves
-// come from `induckgo_core::scrolling::smooth_wheel_scroll::SmoothWheelScroll`, which tests them.
+// come from `ztbrowser_core::scrolling::smooth_wheel_scroll::SmoothWheelScroll`, which tests them.
 //
 // Only a whole notch of a mouse wheel is animated. A touchpad (fractional deltas) and everything else is left
 // to WebKit, which already scrolls it smoothly: modifier keys (zoom, horizontal scrolling), a page that handled

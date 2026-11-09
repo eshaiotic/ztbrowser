@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: lv\n"
+
+msgid "About ZTBrowser"
+msgstr "Par ZTBrowser"
+
+msgid "Access denied"
+msgstr "Piekļuve liegta"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Vai ļaut vietnei {requesting} izmantot savas sīkdatnes un datus, kamēr esat vietnē {current}?"
+
+msgid "Allow {site} to know your location?"
+msgstr "Vai ļaut vietnei {site} uzzināt jūsu atrašanās vietu?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "Vai ļaut vietnei {site} lasīt jūsu starpliktuves saturu?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "Vai ļaut vietnei {site} rādīt paziņojumus?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "Vai ļaut vietnei {site} izmantot jūsu kameru un mikrofonu?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "Vai ļaut vietnei {site} izmantot jūsu kameru?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "Vai ļaut vietnei {site} izmantot jūsu mikrofonu?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "Vai ļaut vietnei {site} izmantot jūsu ekrānu?"
+
+msgid "App data cleared"
+msgstr "Lietotnes dati notīrīti"
+
+msgid "Appearance"
+msgstr "Izskats"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "Stāsies spēkā nākamreiz, startējot ZTBrowser"
+
+msgid "Asking for relay descriptors"
+msgstr "Tiek pieprasīti releju apraksti"
+
+msgid "Asking for the network status"
+msgstr "Tiek pieprasīts tīkla stāvoklis"
+
+msgid "Back"
+msgstr "Atpakaļ"
+
+msgid "Back and Forward"
+msgstr "Atpakaļ un uz priekšu"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Labākā izvēle visur, kur Tor netiek bloķēts."
+
+msgid "Bridges I provide"
+msgstr "Mani norādītie tilti"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Tilti ir publiski neuzskaitīti Tor releji tīkliem, kas bloķē Tor."
+
+msgid "Browsing data burned"
+msgstr "Pārlūkošanas dati dzēsti"
+
+msgid "Burn Browsing Data"
+msgstr "Dzēst pārlūkošanas datus"
+
+msgid "Burn Browsing Data?"
+msgstr "Vai dzēst pārlūkošanas datus?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Pogas, kas tiek rādītas ap adreses joslu šī profila logos."
+
+msgid "C_lear"
+msgstr "_Notīrīt"
+
+msgid "Cannot Connect to Tor"
+msgstr "Nevar izveidot savienojumu ar Tor"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Nevar piekļūt Tor vadības portam: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Nevar nolasīt Tor vadības sīkdatni: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Nevar noņemt vecā Tor vadības porta failu: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "Nevar saglabāt lejupielādi: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Nevar startēt Tor: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Nevar ierakstīt Tor konfigurāciju: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Nevar rakstīt Tor vadības portā: {error}"
+
+msgid "Certificate for {name}"
+msgstr "Sertifikāts vietnei {name}"
+
+msgid "Check the address for a typo."
+msgstr "Pārbaudiet, vai adresē nav drukas kļūdas."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Pārbaudiet adresi, tostarp porta numuru aiz kola, ja tāds ir."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Pārbaudiet tīkla kabeli vai Wi-Fi savienojumu."
+
+msgid "Check your internet connection."
+msgstr "Pārbaudiet interneta savienojumu."
+
+msgid "Clear App Data…"
+msgstr "Notīrīt lietotnes datus…"
+
+msgid "Clear Data of {name}?"
+msgstr "Vai notīrīt lietotnes {name} datus?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Aizveriet cilnes vai lietotnes, kas nav vajadzīgas, un pēc tam pārlādējiet lapu."
+
+msgid "Close {name} before deleting it"
+msgstr "Aizveriet {name} pirms dzēšanas"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Aizver visas šī profila cilnes un logus un dzēš tā sīkdatnes, vietņu datus, kešatmiņu un vēsturi."
+
+msgid "Connect"
+msgstr "Savienot"
+
+msgid "Connect directly"
+msgstr "Savienot tieši"
+
+msgid "Connected"
+msgstr "Savienots"
+
+msgid "Connected to a relay directory server"
+msgstr "Savienots ar releju direktoriju serveri"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Savienots ar releju ķēžu veidošanai"
+
+msgid "Connected to pluggable transport"
+msgstr "Savienots ar pluggable transport"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Savienots ar pluggable transport ķēžu veidošanai"
+
+msgid "Connected to proxy"
+msgstr "Savienots ar starpniekserveri"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Savienots ar starpniekserveri ķēžu veidošanai"
+
+msgid "Connected to the Tor network"
+msgstr "Savienots ar Tor tīklu"
+
+msgid "Connecting to Tor"
+msgstr "Notiek savienošana ar Tor"
+
+msgid "Connecting to a relay directory server"
+msgstr "Notiek savienošana ar releju direktoriju serveri"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Notiek savienošana ar releju ķēžu veidošanai"
+
+msgid "Connecting to pluggable transport"
+msgstr "Notiek savienošana ar pluggable transport"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Notiek savienošana ar pluggable transport ķēžu veidošanai"
+
+msgid "Connecting to proxy"
+msgstr "Notiek savienošana ar starpniekserveri"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Notiek savienošana ar starpniekserveri ķēžu veidošanai"
+
+msgid "Connection Settings…"
+msgstr "Savienojuma iestatījumi…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, privātuma konfigurācija un TrackerRadarKit noteikumu algoritms."
+
+msgid "Could not install the app: {error}"
+msgstr "Neizdevās instalēt lietotni: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Neizdevās noņemt visu: {error}"
+
+msgid "Delete"
+msgstr "Dzēst"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Dzēst šī profila sīkdatnes, vietņu datus un kešatmiņu"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Maskēti savienojumi ar Tor Browser iebūvētajiem tiltiem."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Maskēti savienojumi ar Tor Browser iebūvētajiem tiltiem. Nepieciešams {package}."
+
+msgid "Download failed: {error}"
+msgstr "Lejupielāde neizdevās: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Lejupielādēts darbības laikā no DuckDuckGo; licence CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "Lejupielādēts: {name}"
+
+msgid "DuckDuckGo protections"
+msgstr "DuckDuckGo aizsardzība"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Katra lietotne darbojas savā logā un procesā ar savām sīkdatnēm un pieteikšanās datiem."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Katrs profils glabā savas sīkdatnes, pieteikšanās datus, vēsturi un kešatmiņu un darbojas kā atsevišķs process."
+
+msgid "Establishing a Tor circuit"
+msgstr "Tiek izveidota Tor ķēde"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Tiek izveidots šifrēts direktorija savienojums"
+
+msgid "File not found"
+msgstr "Fails nav atrasts"
+
+msgid "Find in Page…"
+msgstr "Meklēt lapā…"
+
+msgid "Find in page"
+msgstr "Meklēt lapā"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Rokasspiediens ar releju direktoriju serveri pabeigts"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Rokasspiediens ar releju ķēžu veidošanai pabeigts"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Tiek pabeigts rokasspiediens ar releju direktoriju serveri"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Tiek pabeigts rokasspiediens ar releju ķēžu veidošanai"
+
+msgid "Forward"
+msgstr "Uz priekšu"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "No bridges.torproject.org, pa e-pastu vai no drauga."
+
+msgid "Go to Home Page"
+msgstr "Doties uz sākumlapu"
+
+msgid "Go to the previous or next page"
+msgstr "Doties uz iepriekšējo vai nākamo lapu"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Dodieties uz vietnes sākumlapu un meklējiet lapu no turienes."
+
+msgid "How to Reach Tor"
+msgstr "Kā sasniegt Tor"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Ja lapa pēc pārlādēšanas atkal avarē, iespējams, kļūda ir pašā lapā."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Ja adrese ir pareiza, vietne, iespējams, vairs neeksistē."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Ja jums ir konts šajā vietnē, pierakstieties un mēģiniet vēlreiz."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "Ja izmantojat VPN vai savu DNS serveri, pārbaudiet, vai tas darbojas."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "Ja izmantojat VPN, ugunsmūri vai starpniekserveri, pārbaudiet, vai tas nebloķē vietni."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "ZTBrowser Guard filtru saraksti"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "ZTBrowser nevar atvērt {host}, jo šis dators nav savienots ar tīklu."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser neatrada serveri adresē {host}."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser nesavienojas ar {host} šajā portā."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "ZTBrowser paša Tor veido savienojumu. Nekas neiziet no šī loga, kamēr savienojums nav izveidots."
+
+msgid "Install Site as App"
+msgstr "Instalēt vietni kā lietotni"
+
+msgid "Install Site as App…"
+msgstr "Instalēt vietni kā lietotni…"
+
+msgid "Install as App"
+msgstr "Instalēt kā lietotni"
+
+msgid "Installed Apps"
+msgstr "Instalētās lietotnes"
+
+msgid "Installed Apps…"
+msgstr "Instalētās lietotnes…"
+
+msgid "Installed {name}"
+msgstr "Instalēts: {name}"
+
+msgid "Interface"
+msgstr "Saskarne"
+
+msgid "Issued by {name}"
+msgstr "Izdevējs: {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Iespējams, tas ir pārvietots, pārdēvēts vai izdzēsts."
+
+msgid "Language"
+msgstr "Valoda"
+
+msgid "Load Insecure Page"
+msgstr "Ielādēt nedrošu lapu"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Ielādēt lapu vēlreiz vai pārtraukt ielādi"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Ielādēts pietiekami daudz direktorija informācijas, lai veidotu ķēdes"
+
+msgid "Loading authority certificates"
+msgstr "Tiek ielādēti iestāžu sertifikāti"
+
+msgid "Loading relay descriptors"
+msgstr "Tiek ielādēti releju apraksti"
+
+msgid "Loading the network status"
+msgstr "Tiek ielādēts tīkla stāvoklis"
+
+msgid "Main Menu"
+msgstr "Galvenā izvēlne"
+
+msgid "Manage Profiles…"
+msgstr "Pārvaldīt profilus…"
+
+msgid "New Identity"
+msgstr "Jauna identitāte"
+
+msgid "New Identity?"
+msgstr "Jauna identitāte?"
+
+msgid "New Tab"
+msgstr "Jauna cilne"
+
+msgid "New Tor Window"
+msgstr "Jauns Tor logs"
+
+msgid "New Window"
+msgstr "Jauns logs"
+
+msgid "New identity"
+msgstr "Jauna identitāte"
+
+msgid "New profile name"
+msgstr "Jaunā profila nosaukums"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "Viens tilts katrā rindā, piemēram: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Kā lietotnes var instalēt tikai tīmekļa lapas"
+
+msgid "Open"
+msgstr "Atvērt"
+
+msgid "Open Page in Browser"
+msgstr "Atvērt lapu pārlūkā"
+
+msgid "Open a new tab"
+msgstr "Atvērt jaunu cilni"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Atvērt logu, kura datplūsma iet tikai caur Tor"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Citas lietotnes no Tor loga netiek atvērtas: tās savienotos ārpus Tor."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Lapas netiek atvērtas, kamēr Tor logs nav savienots."
+
+msgid "Paste at least one bridge."
+msgstr "Ielīmējiet vismaz vienu tiltu."
+
+msgid "Preferences"
+msgstr "Iestatījumi"
+
+msgid "Preferences…"
+msgstr "Iestatījumi…"
+
+msgid "Profiles"
+msgstr "Profili"
+
+msgid "Protect This Site"
+msgstr "Aizsargāt šo vietni"
+
+msgid "Protection Shield"
+msgstr "Aizsardzības vairogs"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Neizdevās nolasīt Tor vadības portu: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "Atkārtoti savienojiet VPN, ja to izmantojat."
+
+msgid "Reload"
+msgstr "Pārlādēt"
+
+msgid "Reload Page"
+msgstr "Pārlādēt lapu"
+
+msgid "Reset Zoom"
+msgstr "Atiestatīt tālummaiņu"
+
+msgid "Search Engine"
+msgstr "Meklētājprogramma"
+
+msgid "Search {engine}"
+msgstr "Meklēt ar {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "Meklēt ar {engine} vai ievadīt adresi"
+
+msgid "Show in Folder"
+msgstr "Parādīt mapē"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Izrakstīs jūs un dzēsīs šīs lietotnes sīkdatnes, vietņu datus un kešatmiņu. Nekas cits netiek ietekmēts."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Dažus datus neizdevās izdzēst: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "Ielādējot {host}, radās kļūda."
+
+msgid "Starting"
+msgstr "Notiek startēšana"
+
+msgid "Starting Tor…"
+msgstr "Tiek startēts Tor…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Ieslēgt vai izslēgt izsekotāju aizsardzību šai vietnei"
+
+msgid "System default ({language})"
+msgstr "Sistēmas noklusējums ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "Iestāde, kas izdeva sertifikātu, to ir atsaukusi."
+
+msgid "The bridge line has no address: {line}"
+msgstr "Tilta rindā nav adreses: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "Sertifikātu neizdevās pārbaudīt."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "Sertifikāts ir parakstīts ar algoritmu, kas vairs nav drošs."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "Sertifikāts vēl nav derīgs. Pārbaudiet, vai šī datora datums un laiks ir pareizs."
+
+msgid "The certificate was issued for a different site."
+msgstr "Sertifikāts ir izdots citai vietnei."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "Sertifikātu nav izdevusi iestāde, kurai šis dators uzticas."
+
+msgid "The connection to {host} was interrupted."
+msgstr "Savienojums ar {host} tika pārtraukts."
+
+msgid "The icon at the end of the address bar"
+msgstr "Ikona adreses joslas beigās"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "Valoda mainīsies, kad ZTBrowser tiks restartēts"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "Izvēlņu, dialoglodziņu un ziņojumu valoda visos profilos un tīmekļa lietotnēs."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "Problēma ir vietnes pusē. Mēģiniet vēlreiz pēc dažām minūtēm."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Vietne var būt nepieejama apkopes dēļ. Mēģiniet vēlreiz pēc dažām minūtēm."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Vietne var būt pārslogota. Mēģiniet vēlreiz pēc dažām minūtēm."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "{transport} tiltiem nepieciešama programma, kas nav instalēta; instalējiet {package}"
+
+msgid "There is no file at {path}."
+msgstr "Ceļā {path} nav faila."
+
+msgid "This address is blocked"
+msgstr "Šī adrese ir bloķēta"
+
+msgid "This connection isn’t private"
+msgstr "Šis savienojums nav privāts"
+
+msgid "This page"
+msgstr "Šī lapa"
+
+msgid "This page can’t be found"
+msgstr "Šo lapu nevar atrast"
+
+msgid "This page can’t be loaded"
+msgstr "Šo lapu nevar ielādēt"
+
+msgid "This page crashed"
+msgstr "Šī lapa avarēja"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Šī lapa atrodas citā vietnē un nav daļa no {name}"
+
+msgid "This page isn’t working"
+msgstr "Šī lapa nedarbojas"
+
+msgid "This page ran out of memory"
+msgstr "Šai lapai beigusies atmiņa"
+
+msgid "This site can’t be found"
+msgstr "Šo vietni nevar atrast"
+
+msgid "This site can’t be reached"
+msgstr "Šo vietni nevar sasniegt"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Caur brīvprātīgo pārlūkiem; darbojas vairumā cenzēto tīklu."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Caur brīvprātīgo pārlūkiem; darbojas vairumā cenzēto tīklu. Nepieciešams {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Rīkjoslas pogas"
+
+msgid "Tor Connection"
+msgstr "Tor savienojums"
+
+msgid "Tor Connection…"
+msgstr "Tor savienojums…"
+
+msgid "Tor Window"
+msgstr "Tor logs"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor nevar izmantot ceļu {path}"
+
+msgid "Tor closed its control port"
+msgstr "Tor aizvēra savu vadības portu"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor nevarēja pārslēgt ķēdes: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor neatvēra savu vadības portu"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor nav instalēts. Instalējiet savas distribūcijas tor pakotni; Tor logs startē savu Tor un tam nav vajadzīgs darbojošs Tor pakalpojums."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor neatvēra nevienu lokālo SOCKS portu"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor atteica: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor ziņoja par problēmu"
+
+msgid "Tor stopped."
+msgstr "Tor apstājās."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Tor vadības sīkdatne ir bojāta"
+
+msgid "Tracker Data Set"
+msgstr "Izsekotāju datu kopa"
+
+msgid "Tracker protection on this site"
+msgstr "Izsekotāju aizsardzība šajā vietnē"
+
+msgid "Try Again"
+msgstr "Mēģināt vēlreiz"
+
+msgid "Try again in a few minutes."
+msgstr "Mēģiniet vēlreiz pēc dažām minūtēm."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Izslēdziet lidmašīnas režīmu, ja tas ir ieslēgts."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "Pārvērš ZTBrowser Guard filtru sarakstus par WebKit noteikumiem. Avots: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Atinstalēt"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Nezināms tilta transports: {name}"
+
+msgid "Valid until {date}"
+msgstr "Derīgs līdz {date}"
+
+msgid "Your Bridges"
+msgstr "Jūsu tilti"
+
+msgid "You’re offline"
+msgstr "Jūs esat bezsaistē"
+
+msgid "Zoom In"
+msgstr "Tuvināt"
+
+msgid "Zoom Out"
+msgstr "Tālināt"
+
+msgid "_Allow"
+msgstr "_Atļaut"
+
+msgid "_Burn"
+msgstr "_Dzēst"
+
+msgid "_Cancel"
+msgstr "At_celt"
+
+msgid "_Deny"
+msgstr "_Noraidīt"
+
+msgid "_Install"
+msgstr "_Instalēt"
+
+msgid "_New Identity"
+msgstr "_Jauna identitāte"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) vai obfs4proxy no AUR (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) vai snowflake-pt-client no AUR (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} šobrīd nevar apstrādāt pieprasījumu."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} nevarēja atbildēt uz šo pieprasījumu."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} nepiedāvā drošu savienojumu"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} neļauj jums skatīt šo lapu."
+
+msgid "{host} has no page at this address."
+msgstr "Vietnē {host} šajā adresē nav lapas."
+
+msgid "{host} refused the connection."
+msgstr "{host} noraidīja savienojumu."
+
+msgid "{host} took too long to respond."
+msgstr "{host} atbildēja pārāk ilgi."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} izmantoja vairāk atmiņas, nekā drīkst izmantot lapa, tāpēc ZTBrowser to apturēja."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} tiks atvērta savā logā, un tās sīkdatnes un pieteikšanās dati tiks turēti atsevišķi no pārlūka un visām citām lietotnēm."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — ZTBrowser tīmekļa lietotne"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} nav tilta arguments"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} nav IP adrese ar portu"
+
+msgid "{url} answered {status}"
+msgstr "{url} atbildēja: {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} neatgrieza gaidīto dokumentu"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} ir lielāks, nekā atļauts"
+
+msgid "{url} is not a valid address"
+msgstr "{url} nav derīga adrese"
+
+msgid "© their maintainers"
+msgstr "© to uzturētāji"
+
+msgid "Ask Where to Save Each File"
+msgstr "Vaicāt, kur saglabāt katru failu"
+
+msgid "Choose Folder"
+msgstr "Izvēlēties mapi"
+
+msgid "Download Folder"
+msgstr "Lejupielāžu mape"
+
+msgid "Download failed"
+msgstr "Lejupielāde neizdevās"
+
+msgid "Downloading…"
+msgstr "Lejupielādē…"
+
+msgid "Downloading… {percent}%"
+msgstr "Lejupielādē… {percent}%"
+
+msgid "Downloads"
+msgstr "Lejupielādes"
+
+msgid "Go to Download Folder"
+msgstr "Doties uz lejupielāžu mapi"
+
+msgid "No downloads yet"
+msgstr "Lejupielāžu vēl nav"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Pretējā gadījumā faili tiek saglabāti tieši lejupielāžu mapē"
+
+msgid "Save File"
+msgstr "Saglabāt failu"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Pēdējās piecas lejupielādes un lejupielāžu mape"
+
+msgid "_Save"
+msgstr "_Saglabāt"
+
+msgid "_Select"
+msgstr "_Izvēlēties"
+
+msgid "Show All Downloads"
+msgstr "Rādīt visas lejupielādes"
+
+msgid "Clear List"
+msgstr "Notīrīt sarakstu"
+
+msgid "Remove from List"
+msgstr "Noņemt no saraksta"
+
+msgid "Clear History"
+msgstr "Notīrīt vēsturi"
+
+msgid "Search Downloads"
+msgstr "Meklēt lejupielādēs"
+
+msgid "File Moved or Deleted"
+msgstr "Fails pārvietots vai izdzēsts"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Animē katru peles ritenīša soli. Jau atvērtās lapas ir jāielādē atkārtoti."
+
+msgid "Scrolling"
+msgstr "Ritināšana"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Vienmērīga ritināšana ar peles ritenīti"
+
+msgid "Details"
+msgstr "Sīkāka informācija"
+
+msgid "Legal"
+msgstr "Legāls"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "Šī lietotne nāk bez jebkādas garantijas. Lai uzzinātu vairāk, apmeklējiet {license}."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU Vispārīgā Publiskā Licence 3. versija vai jaunāka"
+
+msgid "Apache License, Version 2.0"
+msgstr "Apache license, 2.0 versija"
+
+msgid "Move to New Window"
+msgstr "Pārvietot uz jaunu logu"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Mozilla publiskā licence 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "BSD trīs klauzulu licence"
+
+msgid "Wide Address Bar"
+msgstr "Plaša adreses josla"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "Adreses josla aizņem visu rīkjoslas vietu; izslēgta tā paliek īsa un centrēta"
+
+msgid "No apps installed yet"
+msgstr "Vēl nav instalēta neviena lietotne"
+
+msgid "Uninstall {name}?"
+msgstr "Atinstalēt {name}?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Izdzēš lietotni kopā ar tās sīkdatnēm, pieteikšanās datiem un datiem. To nevar atsaukt."
+
+msgid "Tab Position"
+msgstr "Cilņu novietojums"
+
+msgid "Top"
+msgstr "Augšā"
+
+msgid "Bottom"
+msgstr "Apakšā"
+
+msgid "Left"
+msgstr "Pa kreisi"
+
+msgid "Right"
+msgstr "Pa labi"
+
+msgid "Window Buttons"
+msgstr "Loga pogas"
+
+msgid "Default"
+msgstr "Noklusējums"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Pievienot profilu"
+
+msgid "Delete profile {name}?"
+msgstr "Dzēst profilu {name}?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Izdzēš profilu kopā ar tā sīkdatnēm, pieteikšanās datiem, vēsturi un kešatmiņu. To nevar atsaukt."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser nav jūsu noklusējuma pārlūks"
+
+msgid "Make Default"
+msgstr "Iestatīt kā noklusējumu"
+
+msgid "Don't Ask Again"
+msgstr "Vairs nejautāt"
+
+msgid "Close"
+msgstr "Aizvērt"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "Neizdevās iestatīt ZTBrowser kā noklusējuma pārlūku: {error}"
+
+msgid "Default Browser"
+msgstr "Noklusējuma pārlūks"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "Citu programmu saites atver ZTBrowser"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Citu programmu saites tiek atvērtas pārlūkā {browser}"
+
+msgid "Another browser opens links from other programs"
+msgstr "Citu programmu saites atver cits pārlūks"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Citu programmu saites var atvērt tikai instalēts ZTBrowser"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Darbvirsma nenorāda, kurš pārlūks atver saites"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "Jautāt, startējot ZTBrowser"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Piedāvāt iestatīt ZTBrowser kā noklusējuma pārlūku, kamēr saites atver cits pārlūks"

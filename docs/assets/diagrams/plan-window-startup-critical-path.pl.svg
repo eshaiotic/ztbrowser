@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="600" viewBox="0 0 1120 600" font-family="DejaVu Sans, Helvetica, Arial, sans-serif">
-<title>Start okna InDuckGo: ścieżka krytyczna i miejsca, w których działają planowane prace</title>
+<title>Start okna ZTBrowser: ścieżka krytyczna i miejsca, w których działają planowane prace</title>
 <defs><marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5b6270"/></marker></defs>
 <rect width="1120" height="600" fill="#fbfbfd"/>
-<text x="24" y="34" font-size="17" font-weight="700" fill="#1f2430">Start okna InDuckGo: ścieżka krytyczna i miejsca, w których działają planowane prace</text>
+<text x="24" y="34" font-size="17" font-weight="700" fill="#1f2430">Start okna ZTBrowser: ścieżka krytyczna i miejsca, w których działają planowane prace</text>
 <text x="24" y="58" font-size="12.5" fill="#5b6270">Zmierzone do pierwszej klatki Wayland: pakiet 0,72 s (mediana z 4), AppImage 1,73 s. Szerokości pól są poglądowe, nie w skali.</text>
 <rect x="16" y="80" width="1088" height="144" rx="10" fill="#f2f3f8" stroke="#e1e3ec"/>
 <text x="28" y="100" font-size="12" font-weight="700" fill="#5b6270">Wątek główny</text>

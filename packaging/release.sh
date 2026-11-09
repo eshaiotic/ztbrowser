@@ -1,5 +1,5 @@
 #!/bin/sh
-# Builds InDuckGo release packages into dist/, with SHA256SUMS.
+# Builds ZTBrowser release packages into dist/, with SHA256SUMS.
 #
 #   arch      pacman package, built here with makepkg (makepkg.conf flags apply: for this machine); uses Arch's Qt
 #   appimage  built in a Fedora 44 container with its own Qt, QtWebEngine and QML modules inside; runs on any
@@ -44,13 +44,13 @@ for format in $formats; do
         BUILDDIR="$repository/target/makepkg" PKGDEST="$repository/dist" makepkg --syncdeps --force)
       ;;
     appimage)
-      in_container "$fedora_image" induckgo-crates-fedora /root/.cargo/registry sh /src/packaging/appimage/build.sh
+      in_container "$fedora_image" ztbrowser-crates-fedora /root/.cargo/registry sh /src/packaging/appimage/build.sh
       ;;
     rpm)
       git -C "$repository" ls-files -z --cached --others --exclude-standard |
-        tar --create --gzip --file="$work/induckgo-$version.tar.gz" --transform="s,^,induckgo-$version/," \
+        tar --create --gzip --file="$work/ztbrowser-$version.tar.gz" --transform="s,^,ztbrowser-$version/," \
           --directory="$repository" --null --files-from=-
-      in_container "$fedora_image" induckgo-crates-fedora /root/.cargo/registry sh /src/packaging/rpm/build.sh
+      in_container "$fedora_image" ztbrowser-crates-fedora /root/.cargo/registry sh /src/packaging/rpm/build.sh
       ;;
     *)
       echo "unknown format: $format (expected arch, appimage or rpm)" >&2

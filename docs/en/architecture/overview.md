@@ -1,6 +1,6 @@
-# InDuckGo Architecture
+# ZTBrowser Architecture
 
-This document explains how InDuckGo is built and why it is built that way. It is written for a reader who
+This document explains how ZTBrowser is built and why it is built that way. It is written for a reader who
 knows some programming but has never worked on a web browser. Every term that is not common knowledge is
 defined in [Vocabulary](#2-vocabulary).
 
@@ -12,7 +12,7 @@ or Firefox-based, and both accept extensions, which are themselves a way to read
 
 DuckDuckGo publishes its tracker protections as open source for its macOS browser: the list of trackers,
 the rules that decide what to block, the per-site exceptions that keep sites working, and the scripts that
-fight fingerprinting. That browser uses **WebKit**, the same engine Linux has as **WebKitGTK**. InDuckGo
+fight fingerprinting. That browser uses **WebKit**, the same engine Linux has as **WebKitGTK**. ZTBrowser
 puts those protections into a WebKitGTK browser for Linux, with **no extension support at all**.
 
 Two more goals shape the design:
@@ -27,9 +27,9 @@ Two more goals shape the design:
 
 | Term | Meaning |
 |---|---|
-| WebKitGTK | The Linux edition of WebKit, the engine that downloads, renders and runs web pages. InDuckGo uses its GTK 4 API, `webkitgtk-6.0`. |
+| WebKitGTK | The Linux edition of WebKit, the engine that downloads, renders and runs web pages. ZTBrowser uses its GTK 4 API, `webkitgtk-6.0`. |
 | Content blocking rule | A JSON rule WebKit compiles and checks before a request leaves the machine: "if the URL matches this pattern, block it" (or upgrade it to HTTPS). Rules are grouped in *rule lists*. |
-| Tracker Data Set (TDS) | DuckDuckGo's list of tracking domains, who owns them and which of their requests are allowed. Licensed CC BY-NC-SA 4.0, so InDuckGo downloads it and never ships it. |
+| Tracker Data Set (TDS) | DuckDuckGo's list of tracking domains, who owns them and which of their requests are allowed. Licensed CC BY-NC-SA 4.0, so ZTBrowser downloads it and never ships it. |
 | Privacy configuration | DuckDuckGo's switchboard: which protection is on, and on which sites it must be off because it breaks them (*exceptions*). |
 | Content Scope Scripts (C-S-S) | DuckDuckGo's JavaScript that runs inside every page and frame to block fingerprinting and announce GPC. Apache-2.0, version 20.0.0 is vendored in `assets/`. |
 | GPC (Global Privacy Control) | A signal telling websites "do not sell or share my data"; legally binding in some US states. |
@@ -39,10 +39,10 @@ Two more goals shape the design:
 | Profile | A separate browser identity with its own cookies, storage, cache, history and site permissions. |
 | Web app (PWA) | A site installed as a desktop application: its own window, icon and menu entry. |
 | Public suffix, registrable domain | `co.uk` and `github.io` are *public suffixes*: anybody can register a name under them. The *registrable domain* is the suffix plus one label (`bbc.co.uk`). Two hosts with the same registrable domain are the *same site*. |
-| Application ID | The D-Bus name of a running GTK application, e.g. `io.github.induckgo.InDuckGo`. GTK starts only one process per ID. |
+| Application ID | The D-Bus name of a running GTK application, e.g. `io.github.ztbrowser.ZTBrowser`. GTK starts only one process per ID. |
 | Desktop entry | A `.desktop` file in `~/.local/share/applications` that puts an application into the desktop's menu. |
 | Fire | The button that erases a profile's browsing data in one click. |
-| InDuckGo Guard | InDuckGo's own protections on top of DuckDuckGo's: community filter lists, the fingerprinting defences DuckDuckGo leaves off, and the GPC header (§5.6). |
+| ZTBrowser Guard | ZTBrowser's own protections on top of DuckDuckGo's: community filter lists, the fingerprinting defences DuckDuckGo leaves off, and the GPC header (§5.6). |
 | Filter list | A text file of blocking and hiding rules in Adblock Plus syntax (`\|\|ads.example^` blocks a domain, `##.ad` hides elements, `@@` marks an exception), maintained by volunteers. uBlock Origin, Brave and AdGuard read the same lists. |
 | Fingerprinting | Recognising a browser without cookies, from what it gives away: how it draws a canvas, how its audio stack rounds numbers, its screen and fonts. |
 | Link-click ping | The request `<a ping="…">` sends when a link is clicked, telling the site's analytics which link it was. |
@@ -53,13 +53,13 @@ Two more goals shape the design:
 
 ## 3. Two crates
 
-The code is split into two Rust crates, and the dependency points one way: `induckgo` → `induckgo-core`.
+The code is split into two Rust crates, and the dependency points one way: `ztbrowser` → `ztbrowser-core`.
 
-- **`crates/induckgo-core`** holds the domain logic: building rule lists from the TDS, reading the privacy
+- **`crates/ztbrowser-core`** holds the domain logic: building rule lists from the TDS, reading the privacy
   configuration, deciding HTTPS upgrades, finding tracking parameters, parsing the command line, cataloguing
   profiles and web apps, choosing icons, writing desktop entries and naming downloads. It knows nothing about
-  GTK or WebKit, so every rule is checked by fast unit tests (`cargo test -p induckgo-core`).
-- **`crates/induckgo`** is the GTK 4 + libadwaita application. Its types are adapters: they take a decision
+  GTK or WebKit, so every rule is checked by fast unit tests (`cargo test -p ztbrowser-core`).
+- **`crates/ztbrowser`** is the GTK 4 + libadwaita application. Its types are adapters: they take a decision
   from the core and carry it out through WebKitGTK, libsoup (HTTP) or GIO (files, processes).
 
 The engineering rules for both crates (Object Oriented Programming First, OO Given/When/Then tests, one
@@ -67,23 +67,23 @@ The engineering rules for both crates (Object Oriented Programming First, OO Giv
 
 ## 4. Processes and isolation
 
-![One InDuckGo process with its own WebKit session for every profile and every web app; a shared, read-only cache of protection data; second launches forwarded over D-Bus; links clicked in a web app to another site opening in the browser](../../assets/diagrams/architecture-process-isolation.en.svg)
+![One ZTBrowser process with its own WebKit session for every profile and every web app; a shared, read-only cache of protection data; second launches forwarded over D-Bus; links clicked in a web app to another site opening in the browser](../../assets/diagrams/architecture-process-isolation.en.svg)
 
 Every profile and every installed web app runs as **its own process with its own application ID**:
 
 | What runs | Application ID | Profile directory |
 |---|---|---|
-| Browser, default profile | `io.github.induckgo.InDuckGo` | `profiles/default` |
-| Browser, profile "work" | `io.github.induckgo.InDuckGo.Profile.work` | `profiles/work` |
-| Web app "mBank" | `io.github.induckgo.InDuckGo.WebApp.mbank_pl` | `profiles/app_mbank_pl` |
-| Tor window | `io.github.induckgo.InDuckGo.Tor` | none: the session lives in memory (§4.1) |
+| Browser, default profile | `io.github.ztbrowser.ZTBrowser` | `profiles/default` |
+| Browser, profile "work" | `io.github.ztbrowser.ZTBrowser.Profile.work` | `profiles/work` |
+| Web app "mBank" | `io.github.ztbrowser.ZTBrowser.WebApp.mbank_pl` | `profiles/app_mbank_pl` |
+| Tor window | `io.github.ztbrowser.ZTBrowser.Tor` | none: the session lives in memory (§4.1) |
 
-`LaunchRequest` (core) turns the command line `induckgo [--profile NAME | --web-app ID | --tor] [URL …]` into one of
+`LaunchRequest` (core) turns the command line `ztbrowser [--profile NAME | --web-app ID | --tor] [URL …]` into one of
 these IDs. GTK then asks D-Bus whether that ID already runs: if it does, the new command line is handed over
 to the running process (which opens the URL in a window) and the new process exits.
 
 Each process owns exactly one WebKit *network session* stored in the profile's directories
-(`~/.local/share/induckgo/profiles/<id>` and `~/.cache/induckgo/profiles/<id>`). It holds the cookie
+(`~/.local/share/ztbrowser/profiles/<id>` and `~/.cache/ztbrowser/profiles/<id>`). It holds the cookie
 database, local storage, IndexedDB, cache, favicons and HSTS records. Third-party cookies are refused and ITP
 is on. Nothing in this session is ever visible to another profile or app.
 
@@ -92,33 +92,33 @@ the strongest separation Linux offers without containers: a crash, a memory leak
 bank app cannot touch the browser. The desktop also sees each app as a separate application (its own dock
 icon, window grouping through `StartupWMClass`), which is what "install as app" promises.
 
-The only shared data is the **protection feed** in `~/.cache/induckgo/protections`: the TDS, the privacy
+The only shared data is the **protection feed** in `~/.cache/ztbrowser/protections`: the TDS, the privacy
 configuration and Guard's filter lists (`filter-lists/*.txt`). Every process reads it. A download replaces a file atomically (write `name.part`, then
 rename), so a process never reads half a file.
 
-Before deleting a profile or uninstalling an app, InDuckGo asks D-Bus whether its application ID is still
+Before deleting a profile or uninstalling an app, ZTBrowser asks D-Bus whether its application ID is still
 running (`RunningInstances`) and refuses to delete data that a live process uses.
 
 ### 4.1 The Tor window
 
-![The Tor window's process holds a browser window with the connection page, a session kept in memory and an HTTP client that both wait for Tor; TorConnection writes the configuration, starts InDuckGo's own tor and follows it over the control port; all traffic goes through tor's local SOCKS port, optionally through a bridge transport, into the Tor network; the system's Tor service, DNS resolver and direct connections are never used](../../assets/diagrams/architecture-tor-window.en.svg)
+![The Tor window's process holds a browser window with the connection page, a session kept in memory and an HTTP client that both wait for Tor; TorConnection writes the configuration, starts ZTBrowser's own tor and follows it over the control port; all traffic goes through tor's local SOCKS port, optionally through a bridge transport, into the Tor network; the system's Tor service, DNS resolver and direct connections are never used](../../assets/diagrams/architecture-tor-window.en.svg)
 
-`induckgo --tor` (also the menu's **New Tor Window**, `Alt+Shift+N`, or the desktop entry's action) opens a
+`ztbrowser --tor` (also the menu's **New Tor Window**, `Alt+Shift+N`, or the desktop entry's action) opens a
 **Tor window**: a browser window whose every request goes through Tor, so the sites it visits see a Tor exit
-relay's address instead of the user's. It is a process of its own, `io.github.induckgo.InDuckGo.Tor`, like a
+relay's address instead of the user's. It is a process of its own, `io.github.ztbrowser.ZTBrowser.Tor`, like a
 profile, but it has no profile directory: its session lives in memory and is gone when the process ends.
 
-**InDuckGo's own Tor, never the system's.** The process starts its own `tor` program and nothing else on the
+**ZTBrowser's own Tor, never the system's.** The process starts its own `tor` program and nothing else on the
 machine uses it; a system-wide Tor service is neither needed nor touched. `TorPrograms` (core) looks for `tor`
-first in `lib/induckgo/tor/` next to InDuckGo's `bin/` (where the Debian package and the AppImage put their
+first in `lib/ztbrowser/tor/` next to ZTBrowser's `bin/` (where the Debian package and the AppImage put their
 copy), then in `/usr/bin`, `/usr/sbin` and `/usr/local/bin`. It never searches `PATH`: a program planted in a
 user-writable directory on the `PATH` must not become the Tor window's Tor. `TorConfiguration` (core) writes
 the configuration file, and Tor starts as `tor -f <data directory>/torrc --defaults-torrc /dev/null`, so
 neither `/etc/tor/torrc` nor a defaults file can change it. Tor runs as a client only, picks free loopback
-ports for SOCKS and control itself (`auto`), writes the control port into a file InDuckGo waits for, protects
-the control port with a cookie file, and exits when InDuckGo does (`__OwningControllerProcess`, and the
+ports for SOCKS and control itself (`auto`), writes the control port into a file ZTBrowser waits for, protects
+the control port with a cookie file, and exits when ZTBrowser does (`__OwningControllerProcess`, and the
 control connection takes ownership with `TAKEOWNERSHIP`). Its data directory,
-`~/.local/share/induckgo/tor`, persists: it keeps Tor's entry guards (choosing new ones every run would make
+`~/.local/share/ztbrowser/tor`, persists: it keeps Tor's entry guards (choosing new ones every run would make
 meeting a malicious one likelier) and the cached relay directory, which makes later connections take seconds.
 
 **Following the connection.** `TorConnection` (app) starts Tor, reads the control port file, proves access
@@ -134,7 +134,7 @@ If Tor fails to start or stops later, the page returns with the reason and **Try
 through Tor is set; the `HttpClient` that downloads protection data holds its requests until then too. There
 is no fallback to a direct connection. Whenever Tor is not connected (before it first connects, while it
 restarts with other bridges, after it stopped) the session's proxy is `ClosedProxy`: a loopback port that
-InDuckGo itself holds for as long as it runs and that closes every connection at once. Addresses opened in
+ZTBrowser itself holds for as long as it runs and that closes every connection at once. Addresses opened in
 the meantime wait for Tor; requests of pages already open (their own requests, a reload, a followed link)
 fail at once and show the error page, whose **Try Again** loads them once Tor is back. No other local program
 can take over a freed Tor port to read them. Measured on the AppImage: after Tor was killed, a request
@@ -148,7 +148,7 @@ network processes held connections only to Tor's SOCKS and control ports on 127.
 **Nothing on disk.** The WebKit session is ephemeral: cookies, storage, cache and HSTS records are kept in
 memory. Site zoom, sites with protections off and the search engine are kept in memory too
 (`StoredFile::discarded`). The compiled rule lists and the window's own copy of the protection data go to
-`$XDG_RUNTIME_DIR/induckgo/tor-session` (memory that the system empties at logout) and are deleted at start
+`$XDG_RUNTIME_DIR/ztbrowser/tor-session` (memory that the system empties at logout) and are deleted at start
 and on quit, because the rule lists name visited sites (hosts that failed over HTTPS, sites with protections
 off). The protection data is copied from the profiles' cache without its `ETag` files, the Tor window's
 client never sends an `ETag`, and its downloads never go into the profiles' cache: a validator that a server
@@ -180,10 +180,10 @@ package to install when one is missing.
 
 **Packages.** The Arch and Fedora packages depend on the distribution's `tor`, which starts no system service
 by itself. Debian's `tor` package would start a system-wide Tor service at every boot, so the Debian package
-carries Debian's own `tor` build in `/usr/lib/induckgo/tor` instead (its libraries are ordinary package
+carries Debian's own `tor` build in `/usr/lib/ztbrowser/tor` instead (its libraries are ordinary package
 dependencies) and recommends `obfs4proxy` and `snowflake-client`. The AppImage carries `tor`, the libraries it
 needs except the C library, `obfs4proxy` and `snowflake-client`, with their licences in
-`usr/share/doc/induckgo/third-party`. Measured on the AppImage: Tor connected directly in about 5 s, through
+`usr/share/doc/ztbrowser/third-party`. Measured on the AppImage: Tor connected directly in about 5 s, through
 the built-in obfs4 bridges in about 30 s and through Snowflake in about 50 s, and `check.torproject.org`
 confirmed each time that the window was using Tor.
 
@@ -210,7 +210,7 @@ which keeps the last good copy of one document and replaces it only with a downl
 
 ### 5.2 Three rule lists
 
-WebKit's `ignore-previous-rules` action (an exception) only cancels rules *of its own list*. InDuckGo
+WebKit's `ignore-previous-rules` action (an exception) only cancels rules *of its own list*. ZTBrowser
 therefore builds three separate lists, so the exceptions of one feature cannot disable another feature:
 
 1. **`trackers`** — `ContentBlockerRulesBuilder`, a port of DuckDuckGo's `TrackerRadarKit`, blocks
@@ -227,7 +227,7 @@ therefore builds three separate lists, so the exceptions of one feature cannot d
 
 `PageProtections` compiles each list with WebKit's `UserContentFilterStore`. Compiling the tracker list takes
 about a second, so the compiled result is kept on disk next to a fingerprint (hash) of the source; an
-unchanged list is loaded instead of compiled. InDuckGo Guard adds three more lists of its own (§5.6).
+unchanged list is loaded instead of compiled. ZTBrowser Guard adds three more lists of its own (§5.6).
 
 Even an unchanged tracker list costs something: building its 7,000 rules and serializing them (4.7 MB of
 JSON) to compute the fingerprint takes 0.1–0.2 s of processor time, more on a busy machine. That work runs
@@ -251,7 +251,7 @@ The rules act before a request leaves the machine. Two of them need help from th
   failed hosts, the `https` list rebuilt and `http://` loaded. Falling back silently would let an attacker on
   the network force any site down to plain HTTP by breaking its HTTPS.
 
-**Error pages.** Every other failure gets an InDuckGo error page instead of WebKit's built-in one, which is a
+**Error pages.** Every other failure gets an ZTBrowser error page instead of WebKit's built-in one, which is a
 bare heading on white. WebKit, libsoup and GLib report failures as error codes from several domains: the
 resolver, I/O, TLS, and WebKit's own network and policy errors. `ErrorPageView` (app) turns these codes into a
 few causes a person can act on (`FailureCause` in core):
@@ -304,7 +304,7 @@ itself discards all other features first thing (`pruneConfigFeatures`), so the r
 frame now reads about 165 KB of configuration instead of 840 KB (`autoconsent` alone is 520 KB) and the script
 shrinks from 1.36 MB to 0.67 MB. A test reads that feature set out of the vendored bundle, so updating C-S-S
 cannot silently drop a feature. Its messages arrive at the `contentScopeScripts` handler, which answers notifications with `{}` and requests
-with an error object, since InDuckGo implements none of the native features they ask for.
+with an error object, since ZTBrowser implements none of the native features they ask for.
 
 ### 5.5 Fire
 
@@ -313,7 +313,7 @@ profile's website data — cookies, storage, cache, favicons, the zoom given to 
 which sites demand HTTPS, and forgetting them would only weaken the next visit. The current window then
 starts over with an empty tab.
 
-### 5.6 InDuckGo Guard
+### 5.6 ZTBrowser Guard
 
 ![Filter lists are downloaded from their publishers, validated and cached; the core groups them into three Guard rule lists identified by a fingerprint of their inputs; PageProtections loads a current compiled copy or builds and compiles a changed list on a worker thread; the privacy configuration is hardened before the content scope script is rendered; a WebKit feature sends the GPC header](../../assets/diagrams/architecture-guard-pipeline.en.svg)
 
@@ -323,7 +323,7 @@ closes that gap and goes past it in four ways: more lists, rules that also apply
 fingerprinting defences DuckDuckGo leaves off, and the GPC header.
 
 **Filter lists.** `FilterListFeed` downloads nine lists from their publishers. Several of their licences do not
-fit InDuckGo's GPL-3.0-or-later package: CC BY-NC-SA 4.0 forbids commercial use and CC BY-SA 3.0 is
+fit ZTBrowser's GPL-3.0-or-later package: CC BY-NC-SA 4.0 forbids commercial use and CC BY-SA 3.0 is
 incompatible with the GPL. So, like the TDS, they are never bundled:
 
 | List | Blocks | Licence |
@@ -391,7 +391,7 @@ instead of 35 ms. So `GuardRuleList` keeps generic hiding out of WebKit and stor
 
 1. At document start it checks one probe rule per list. WebKit hides the probe wherever that list applies, so
    exceptions and the user's shield are decided by WebKit itself.
-2. It reports the classes and ids the page uses to the `induckgoGuard` message handler.
+2. It reports the classes and ids the page uses to the `ztbrowserGuard` message handler.
 3. It inserts the answer into an adopted style sheet.
 4. It tests the selectors that no class or id narrows down on elements as they are added.
 
@@ -421,8 +421,8 @@ tracker when Disconnect's list files it under advertising, analytics, fingerprin
 | Browser (November 2026) | Tracker hosts | Third-party hosts |
 |---|---|---|
 | Brave 1.98.63, Shields at their default ("standard") | 6 | 82 |
-| InDuckGo before Guard (DuckDuckGo protections only) | 14 | 146 |
-| InDuckGo with Guard | 3 | 70 |
+| ZTBrowser before Guard (DuckDuckGo protections only) | 14 | 146 |
+| ZTBrowser with Guard | 3 | 70 |
 
 The three hosts that still got through are `pub.doubleverify.com` (BBC) and `securepubads.g.doubleclick.net`
 (weather.com), which Brave let through as well, and `m.stripe.network` (CNN), Stripe's fraud check for payments.
@@ -448,7 +448,7 @@ icons are downloaded without cookies, with size limits (512 KiB manifest, 2 MiB 
 decoded, and only after `PngHeader` confirmed sane dimensions (at most 2048 px per side), which stops
 "decompression bombs". The chosen icon is re-encoded as PNG and saved. If no icon downloads, the favicon
 WebKit already decoded is used. The result is a catalog entry, an icon and a desktop entry whose `Exec=` line
-runs `induckgo --web-app <id>`.
+runs `ztbrowser --web-app <id>`.
 
 Once installed, the app starts and the browser hands the site over to it: every browser window of the profile
 closes the tab the install started from and every tab showing a page of the app (`InstalledWebApp::is_own_page`:
@@ -498,7 +498,7 @@ temporary string that has already been freed, and it crashed web apps on their f
   Search Engine, saved in the profile's `search-engine.json`). `SearchEngine` decides where a search typed into
   the address bar or passed on the command line goes, which home page a new tab opens, and which engine an error
   page offers for a mistyped name. A search is an ordinary navigation, so the protections apply to the engine's
-  own pages too. A stored engine InDuckGo does not offer reads as DuckDuckGo.
+  own pages too. A stored engine ZTBrowser does not offer reads as DuckDuckGo.
 - **Toolbar buttons**: *Preferences…* (window menu, `Ctrl+,`) switches each button around the address bar on or
   off per profile (`ToolbarLayout`, saved in the profile's `toolbar.json`; `ToolbarPreferences` shares it with
   every window of the process, so a switch takes effect in all of them at once). The file lists the *hidden*
@@ -533,7 +533,7 @@ code depended on it.
 | A list may hold at most 150,000 rules; an empty list is rejected ("Empty extension"); `url-filter` has no `\|` alternation. | Guard groups its filter lists into three lists and fits each under the limit. |
 | `resource-type: ping` matches `<a ping>` reports only; `navigator.sendBeacon` and `fetch(…, {keepalive})` are `raw`. | Guard blocks link-click pings; beacons are blocked by address only. |
 | Compiling Guard's three lists (91,000, 59,000 and 27,000 rules) takes about 3, 4 and 1.5 s. | Compiled lists are stored and reused; pages never wait for them. |
-| Switching off `gtk-enable-animations` inside the application leaves `prefers-reduced-motion` of pages unchanged. | Interface animations (tabs, dialogs, banners, toasts, find bar) are off in every InDuckGo process for a snappier interface, and sites learn nothing new about the user from it. |
+| Switching off `gtk-enable-animations` inside the application leaves `prefers-reduced-motion` of pages unchanged. | Interface animations (tabs, dialogs, banners, toasts, find bar) are off in every ZTBrowser process for a snappier interface, and sites learn nothing new about the user from it. |
 
 ## 9. Known limitations
 
@@ -547,9 +547,9 @@ code depended on it.
 | Every translation is machine-made, Polish included (see [Interface language](interface-language.md)). | No native reviewer for 66 languages. | Contributors correct the `.po` files. |
 | Every profile appears as a separate application in the dock. | One application ID per profile process. | Users prefer grouping. |
 | A sign-in that starts with a *clicked link* to another site inside a web app opens in the browser. | Clicked off-site links leave the app on purpose (phishing). Most sign-ins redirect or use a pop-up and keep working. | A real app needs it; then an allowlist per app. |
-| The Tor window hides the user's address, not the fact that it is InDuckGo: its fingerprint (WebKitGTK, window size, fonts) differs from Tor Browser's, whose users are made to look alike. | WebKitGTK has no letterboxing and none of Tor Browser's uniformity patches. | Use Tor Browser when being indistinguishable among Tor users matters. |
+| The Tor window hides the user's address, not the fact that it is ZTBrowser: its fingerprint (WebKitGTK, window size, fonts) differs from Tor Browser's, whose users are made to look alike. | WebKitGTK has no letterboxing and none of Tor Browser's uniformity patches. | Use Tor Browser when being indistinguishable among Tor users matters. |
 | Sites visited under one identity share Tor circuits (Tor Browser separates them per site). | WebKitGTK sets one proxy, and with it one set of SOCKS credentials, per session. | WebKitGTK offers per-request proxy credentials. |
-| The Debian package and the AppImage carry their own `tor`, updated with InDuckGo releases, not with Debian's security updates. | Debian's `tor` package would start a system-wide Tor service. | Debian ships the program without enabling the service. |
+| The Debian package and the AppImage carry their own `tor`, updated with ZTBrowser releases, not with Debian's security updates. | Debian's `tor` package would start a system-wide Tor service. | Debian ships the program without enabling the service. |
 
 ## 10. Trust boundaries
 
@@ -559,11 +559,11 @@ code depended on it.
   scriptlets, so a hostile list could break sites but never run code in them.
 - **Web pages** never see the installer's collector script (isolated world). C-S-S messages get only fixed
   answers, and pages cannot open other applications without a user gesture.
-- **Files** InDuckGo writes are created with `0600` permissions in `0700` directories. They are written to a
+- **Files** ZTBrowser writes are created with `0600` permissions in `0700` directories. They are written to a
   `.part` file first and renamed into place, so a crash cannot leave a half-written catalog.
 - **Desktop entries** are generated by `DesktopEntry`, which escapes names taken from websites. A page title
   can therefore never inject a line such as `Exec=` into the file.
-- **The Tor window's Tor** listens on loopback only, and InDuckGo accepts only loopback addresses from it. Its
+- **The Tor window's Tor** listens on loopback only, and ZTBrowser accepts only loopback addresses from it. Its
   control port needs the cookie Tor writes into its `0700` data directory. Bridge lines are checked token by
   token before they reach Tor's configuration file, and `tor` and its transports are run only from fixed
   directories, never found through `PATH`.

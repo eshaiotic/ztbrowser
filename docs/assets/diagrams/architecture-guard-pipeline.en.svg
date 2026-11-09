@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1340" height="860" viewBox="0 0 1340 860" font-family="DejaVu Sans, Noto Sans, sans-serif">
-<title>InDuckGo Guard — community filter lists and fingerprinting defences on top of DuckDuckGo</title>
+<title>ZTBrowser Guard — community filter lists and fingerprinting defences on top of DuckDuckGo</title>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#37474f"/></marker></defs>
 <rect width="1340" height="860" fill="#ffffff"/>
-<text x="670" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#263238">InDuckGo Guard — community filter lists and fingerprinting defences on top of DuckDuckGo</text>
+<text x="670" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#263238">ZTBrowser Guard — community filter lists and fingerprinting defences on top of DuckDuckGo</text>
 <rect x="30" y="70" width="300" height="118" rx="9" fill="#ffebee" stroke="#c62828" stroke-width="3" stroke-dasharray="7 4"/>
 <text x="42" y="92" font-size="14" font-weight="bold" fill="#263238">Filter list publishers</text>
 <text x="42" y="114" font-size="12.5" fill="#263238" xml:space="preserve">easylist.to · ublockorigin.github.io</text>
@@ -17,7 +17,7 @@
 <text x="432" y="171" font-size="12.5" fill="#263238" xml:space="preserve">one bad list never stops the rest</text>
 <rect x="810" y="70" width="300" height="99" rx="9" fill="#e0f2f1" stroke="#00897b" stroke-width="1.6"/>
 <text x="822" y="92" font-size="14" font-weight="bold" fill="#263238">Shared cache</text>
-<text x="822" y="114" font-size="12.5" fill="#263238" xml:space="preserve">~/.cache/induckgo/protections/</text>
+<text x="822" y="114" font-size="12.5" fill="#263238" xml:space="preserve">~/.cache/ztbrowser/protections/</text>
 <text x="822" y="133" font-size="12.5" fill="#263238" xml:space="preserve">filter-lists/*.txt (about 6 MB)</text>
 <text x="822" y="152" font-size="12.5" fill="#263238" xml:space="preserve">read by every profile and app</text>
 <path d="M330,120 L416,120" fill="none" stroke="#37474f" stroke-width="1.8" marker-end="url(#arrow)"/>
@@ -96,7 +96,7 @@
 <rect x="30" y="816" width="26" height="16" rx="4" fill="#e1f5fe" stroke="#0277bd" stroke-width="1.6"/>
 <text x="66" y="829" font-size="12.5" fill="#263238">Network and WebKit adapters</text>
 <rect x="590" y="790" width="26" height="16" rx="4" fill="#ede7f6" stroke="#5e35b1" stroke-width="1.6"/>
-<text x="626" y="803" font-size="12.5" fill="#263238">Domain logic (induckgo-core)</text>
+<text x="626" y="803" font-size="12.5" fill="#263238">Domain logic (ztbrowser-core)</text>
 <rect x="590" y="816" width="26" height="16" rx="4" fill="#e0f2f1" stroke="#00897b" stroke-width="1.6"/>
 <text x="626" y="829" font-size="12.5" fill="#263238">Data kept on disk</text>
 </svg>

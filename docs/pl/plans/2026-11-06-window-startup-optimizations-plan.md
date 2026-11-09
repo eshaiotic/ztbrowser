@@ -5,7 +5,7 @@ nie jest zatwierdzone ani rozpoczęte; wdrożenie danej sekcji zaczyna się dopi
 
 ## Problem, prostymi słowami
 
-Po kliknięciu InDuckGo w menu aplikacji musi pojawić się okno. Czas od kliknięcia do pierwszego obrazu na ekranie to
+Po kliknięciu ZTBrowsera w menu aplikacji musi pojawić się okno. Czas od kliknięcia do pierwszego obrazu na ekranie to
 **czas do pierwszej klatki**. To opóźnienie, które człowiek czuje, więc właśnie je ten plan ma skrócić. Przeglądarka
 startuje wolno z przyczyn strukturalnych: zanim pokaże stronę, musi uruchomić toolkit interfejsu (Qt), uruchomić
 Chromium (silnik www działający w kilku procesach) i złożyć reguły prywatności, według których sprawdzane jest każde
@@ -39,7 +39,7 @@ ochrony (żeby nie liczyć pobierania przy pierwszym starcie):
 
 | Wersja | Uruchomień | Mediana | Zakres |
 |---|---|---|---|
-| Paczka Arch (`/usr/bin/induckgo`, budowana z `target-cpu=native` i `lto = "fat"` z profilu Cargo) | 4 | 0,72 s | 0,55–0,89 s |
+| Paczka Arch (`/usr/bin/ztbrowser`, budowana z `target-cpu=native` i `lto = "fat"` z profilu Cargo) | 4 | 0,72 s | 0,55–0,89 s |
 | AppImage 1.2.3 z `dist/` | 4 | 1,73 s | 1,23–2,12 s |
 
 Wcześniej tego samego dnia, w innej serii: paczka 0,61 s, AppImage 1,47 s, a *te same pliki rozpakowane do katalogu*
@@ -58,18 +58,18 @@ wyjściowego), a nie czas do ukazania się strony; strona nie może pojawić si�
 potwierdzić lub poprawić tę interpretację, zanim sekcja 3 zostanie zatwierdzona.
 
 **Czy to osiągalne? Zmierzone dolne granice** (2026-11-06, ten sam protokół co stan wyjściowy, po 6 uruchomień,
-program `qml6` z Qt, więc to dolne granice, a nie prognozy dla własnego kodu startu InDuckGo):
+program `qml6` z Qt, więc to dolne granice, a nie prognozy dla własnego kodu startu ZTBrowsera):
 
 | Minimalny program | Mediana | Zakres |
 |---|---|---|
 | Samo okno Qt Quick | 0,11 s | 0,10–0,15 s |
 | Okno z pustym `WebEngineView` (`about:blank`) | 0,50 s | 0,33–0,54 s |
-| InDuckGo, paczka Arch (stan wyjściowy wyżej) | 0,72 s | 0,55–0,89 s |
+| ZTBrowser, paczka Arch (stan wyjściowy wyżej) | 0,72 s | 0,55–0,89 s |
 
 Co z tego wynika:
 
 1. **Sam QtWebEngine kosztuje około 0,4 s**, zanim okno, które go zawiera, pokaże pierwszą klatkę. Pierwsza klatka
-   czekająca na widok www nie zmieści się więc w 0,3 s, choćby cała reszta była dopracowana; InDuckGo jest już tylko
+   czekająca na widok www nie zmieści się więc w 0,3 s, choćby cała reszta była dopracowana; ZTBrowser jest już tylko
    około 0,2 s ponad gołym oknem z widokiem www.
 2. **Cel jest osiągalny tylko przez pokazanie okna najpierw i uruchomienie silnika www za nim** — pojawia się pasek
    narzędzi i pasek kart, obszar treści jest jeszcze pusty. To sekcja 3, którą cel zamienia z opcji w główną pracę.
@@ -91,7 +91,7 @@ Co z tego wynika:
 - **Silnik Guard powstaje po pobraniu przy pierwszym starcie.** Nakładanie najpierw budowało go z pamięci podręcznej,
   zanim wątek roboczy cokolwiek pobrał, więc pierwszy start działałby z pustymi listami Guard aż do następnego
   sprawdzenia po sześciu godzinach. `ProtectionUpdates::starting_protection` buduje go teraz po pobraniu; dwa testy
-  scenariuszowe w `crates/induckgo-qt/tests/protection_updates.rs` zawodzą, jeśli ta kolejność zostanie utracona.
+  scenariuszowe w `crates/ztbrowser-qt/tests/protection_updates.rs` zawodzą, jeśli ta kolejność zostanie utracona.
 - **Wpis menu nie przesłania już paczki** (commit `d92f9a0`). Wpis zapisany wcześniej przez AppImage miał
   pierwszeństwo przed wpisem zainstalowanej paczki i dalej uruchamiał wolniejszy AppImage; AppImage wycofuje teraz
   swój wpis, gdy paczka ma wpis w całym systemie.
@@ -111,7 +111,7 @@ Co z tego wynika:
 **Co.** Zapisywać monotoniczny czas w nazwanych punktach startu — start procesu, utworzenie `QGuiApplication`,
 otwarcie sesji, start i dołączenie wątku roboczego, powrót z `open_profile`, instalacja polityk, utworzenie okna,
 pierwsza klatka — i wypisywać je, gdy poprosi o to zmienna środowiskowa. Pomiar z logu Wayland, użyty do stanu
-wyjściowego, zamienić w małe, zatwierdzone narzędzie deweloperskie obok `induckgo-test-report`, żeby każdą kolejną
+wyjściowego, zamienić w małe, zatwierdzone narzędzie deweloperskie obok `ztbrowser-test-report`, żeby każdą kolejną
 liczbę dało się odtworzyć.
 
 **Dlaczego.** Stan wyjściowy mówi, że paczka potrzebuje około 0,6 s więcej niż samo okno Qt Quick, ale nie *gdzie*.
@@ -157,7 +157,7 @@ dziś.
 
 ## 4. Sprawdzić, czy QML jest kompilowany z wyprzedzeniem
 
-**Co.** `crates/induckgo-qt/build.rs` wylicza pliki QML interfejsu. Qt potrafi skompilować QML do kodu bajtowego lub
+**Co.** `crates/ztbrowser-qt/build.rs` wylicza pliki QML interfejsu. Qt potrafi skompilować QML do kodu bajtowego lub
 C++ podczas budowania (`qmlcachegen`), żeby start nie parsował i nie kompilował go od nowa; czy nasza budowa to robi,
 jest dziś **nieznane**. Ustalić (kategorie logowania QML w Qt mogą pokazać, czy wczytano skompilowane jednostki),
 a jeśli nie, włączyć.
@@ -169,7 +169,7 @@ czystą, powtarzaną pracą. **Mierzyć** punktem „okno utworzone” z sekcji 
 
 **Co.** AppImage kosztuje około sekundę więcej niż paczka (1,73 s wobec 0,72 s), bo każde uruchomienie montuje
 squashfs przez FUSE i rozpakowuje na żądanie; te same pliki rozpakowane do katalogu startują w 0,65 s. `AppRun`
-mógłby przy pierwszym starcie skopiować drzewo do `${XDG_CACHE_HOME:-~/.cache}/induckgo/appimage-<build>/`
+mógłby przy pierwszym starcie skopiować drzewo do `${XDG_CACHE_HOME:-~/.cache}/ztbrowser/appimage-<build>/`
 (rozpakować do sąsiedniego katalogu, potem zmienić mu nazwę na docelową), a przy kolejnych startach robić `exec`
 z kopii.
 
@@ -182,7 +182,7 @@ to pomaga tylko użytkownikom AppImage.
 ## 6. Zmierzyć ścieżkę przez launcher i drugie uruchomienie
 
 **Co.** Zmierzyć start przez launcher KDE (`kioclient exec <plik desktop>`) w porównaniu z bezpośrednią binarką oraz
-czas od drugiego wywołania `induckgo` do okna już działającej instancji (gniazdo jednej instancji przekazuje
+czas od drugiego wywołania `ztbrowser` do okna już działającej instancji (gniazdo jednej instancji przekazuje
 adresy). Może tu nie być nic do optymalizowania; dopóki nie zmierzono, raport tylko by zgadywał.
 
 ## Reguły, które musi zachować każdy kandydat

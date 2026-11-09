@@ -26,10 +26,10 @@ against 6 for the GTK edition. Three separate causes sat behind those numbers, a
 |---|---|
 | **Tracker Data Set (TDS)** | DuckDuckGo's list of tracking companies and their domains, each with a default action (`block` or `ignore`), categories and per-URL rules. |
 | **Privacy configuration** | DuckDuckGo's per-feature settings, including the *tracker allowlist* and the domains where protection is temporarily off because it broke them. |
-| **Content-blocker rule** | One entry of WebKit's rule format (`trigger` + `action`). InDuckGo builds about 7,000 from the TDS and evaluates them itself in Qt. |
+| **Content-blocker rule** | One entry of WebKit's rule format (`trigger` + `action`). ZTBrowser builds about 7,000 from the TDS and evaluates them itself in Qt. |
 | **Request interceptor** | The hook Chromium calls before it sends a request; it can pass, block or redirect. It sees requests only. |
 | **Preconnect / dns-prefetch** | Page hints that make the browser resolve a name or open a connection early, before any request to that host exists. |
-| **Connection gate** | InDuckGo's decision point for such connections: *may the engine connect to this host?* |
+| **Connection gate** | ZTBrowser's decision point for such connections: *may the engine connect to this host?* |
 | **CONNECT tunnel** | How an HTTP proxy carries a TLS connection: the client names `host:port`, the proxy connects and relays bytes. The proxy learns the host before the handshake starts. |
 | **Fail closed** | When the answer is unknown (policies not installed yet), refuse. |
 | **ETag** | A server's label for a version of a document; sending it back lets the server answer "unchanged" without the body. |
@@ -42,15 +42,15 @@ The work is split along the crate boundary of the project (the domain crate know
 
 | Responsibility | Where | Type |
 |---|---|---|
-| Judge one request | `induckgo-core` | `ContentBlockerRequestPolicy`, `AdvertisingTrackerRequestPolicy` |
-| Remember which hosts the policies allowed | `induckgo-core` | `ConnectionGate`, `ConnectionClock` |
-| Fetch and cache DuckDuckGo's data | `induckgo-core` | `ProtectionFeed`, `CachedDocument`, trait `DocumentFetcher` |
-| Remove resource hints created by scripts | `induckgo-core` + `assets/guard/no-resource-hints.js` | `ResourceHintBlockingScript` |
-| Hold swappable policies | `induckgo-core` | `ReplaceableRequestPolicy`, `ReplaceableCookiePolicy`, `SharedGuardEngine` |
-| Chromium's interceptor and cookie hooks | `induckgo-engine-qt` | `EnginePolicies`, `PolicyDecisions` |
-| Local proxy that enforces the gate | `induckgo-engine-qt` | `GateProxy`, `UpstreamProxy` |
-| Download over Qt's network stack | `induckgo-engine-qt` | `QtDocumentFetcher`, `fetch_bytes` (C++) |
-| Assemble the chain per profile, keep it current | `induckgo-qt` | `ProfilePolicies`, `ProtectionUpdates` |
+| Judge one request | `ztbrowser-core` | `ContentBlockerRequestPolicy`, `AdvertisingTrackerRequestPolicy` |
+| Remember which hosts the policies allowed | `ztbrowser-core` | `ConnectionGate`, `ConnectionClock` |
+| Fetch and cache DuckDuckGo's data | `ztbrowser-core` | `ProtectionFeed`, `CachedDocument`, trait `DocumentFetcher` |
+| Remove resource hints created by scripts | `ztbrowser-core` + `assets/guard/no-resource-hints.js` | `ResourceHintBlockingScript` |
+| Hold swappable policies | `ztbrowser-core` | `ReplaceableRequestPolicy`, `ReplaceableCookiePolicy`, `SharedGuardEngine` |
+| Chromium's interceptor and cookie hooks | `ztbrowser-engine-qt` | `EnginePolicies`, `PolicyDecisions` |
+| Local proxy that enforces the gate | `ztbrowser-engine-qt` | `GateProxy`, `UpstreamProxy` |
+| Download over Qt's network stack | `ztbrowser-engine-qt` | `QtDocumentFetcher`, `fetch_bytes` (C++) |
+| Assemble the chain per profile, keep it current | `ztbrowser-qt` | `ProfilePolicies`, `ProtectionUpdates` |
 
 ## 4. Judging a request
 
@@ -59,7 +59,7 @@ that DuckDuckGo lists as temporarily unprotected) is passed untouched:
 
 1. third-party check — a request from the page's own site is never a tracker request;
 2. **`ContentBlockerRequestPolicy`** — DuckDuckGo's rules, evaluated faithfully (§4.1);
-3. **`AdvertisingTrackerRequestPolicy`** — InDuckGo's stricter overlay (§4.2);
+3. **`AdvertisingTrackerRequestPolicy`** — ZTBrowser's stricter overlay (§4.2);
 4. link cleaning (`utm_*`, `fbclid`, … removed from navigations);
 5. Guard's filter lists (EasyList, EasyPrivacy, uBlock Origin, Peter Lowe's, Polish and cookie-notice lists);
 6. HTTPS upgrade.
@@ -88,7 +88,7 @@ per decision**, 55 ms to build the rules and 92 ms to build Guard's engine, both
 ### 4.2 The stricter overlay
 
 DuckDuckGo's exceptions exist because blocking some tracker URLs once broke something: a video player waiting for an
-advertising script, a bot check. That is the right trade for a tool that must never break a page. InDuckGo's purpose
+advertising script, a bot check. That is the right trade for a tool that must never break a page. ZTBrowser's purpose
 is privacy, so after DuckDuckGo's rules `AdvertisingTrackerRequestPolicy` blocks every third-party request to a
 tracker whose default action is `block` and whose categories include advertising or measurement (*Advertising*,
 *Ad Motivated Tracking*, *Ad Fraud*, *Analytics*, *Audience Measurement*, *Third-Party Analytics Marketing*,
@@ -154,7 +154,7 @@ plain `GET`s with no cookie jar and no identifier.
 | Alternative | Why not |
 |---|---|
 | Block by domain only | Breaks sites DuckDuckGo's exceptions keep working (allegro.pl, forbes.com). |
-| Hand the rules to Chromium | QtWebEngine gives an embedding application the request interceptor and nothing declarative, so the rules must be evaluated in InDuckGo. |
+| Hand the rules to Chromium | QtWebEngine gives an embedding application the request interceptor and nothing declarative, so the rules must be evaluated in ZTBrowser. |
 | Patch Chromium to gate preconnects | Means maintaining a Chromium fork; the proxy needs none. |
 | `--host-resolver-rules` or feature flags to turn preconnect off | Measured: no effect behind the interceptor, and no effect once a proxy is set. |
 | Only the page script | Cannot see hints in the HTML that the parser reads first. |
@@ -184,7 +184,7 @@ fits, a heuristic looks for a dialog whose buttons say "reject all" and presses 
 
 **How it fits together.**
 
-1. `assets/autoconsent/autoconsent.js` (library version 18.0.0 plus `induckgo-entry.ts`, see the README beside it) is
+1. `assets/autoconsent/autoconsent.js` (library version 18.0.0 plus `ztbrowser-entry.ts`, see the README beside it) is
    injected by `CookieNoticeScript` into the page's own world of every frame at document creation. It only listens.
    It runs in the page's world because some rules call the consent manager's JavaScript interface (for example
    `Didomi.setUserDisagreeToAll()`); it keeps every name in one closure and puts nothing on `window`.
@@ -193,7 +193,7 @@ fits, a heuristic looks for a dialog whose buttons say "reject all" and presses 
    consent manager's frame belongs to another site than the one the person is looking at.
 3. Rust answers yes exactly when the shield is on for that site (`GuardPageHiding::rejects_cookie_notices`). The answer
    does not depend on whether the filter lists have been built yet.
-4. On yes, Guard's script dispatches the `induckgo-reject-cookie-notices` event on the document. An event is the one
+4. On yes, Guard's script dispatches the `ztbrowser-reject-cookie-notices` event on the document. An event is the one
    thing the isolated world and the page's world share. The library then starts, once per document: rules first,
    then the heuristic, **only ever rejecting** (`autoAction: 'optOut'`, heuristic mode `reject`).
 
@@ -215,18 +215,18 @@ unparsed string until the event arrives. A rejection that needs a page's own ser
 
 | Subject | Test file (`crates/…/tests/`) |
 |---|---|
-| DuckDuckGo's rule semantics | `induckgo-core/content_blocker_request_policy.rs` (16) |
-| Stricter overlay | `induckgo-core/advertising_tracker_request_policy.rs` (10) |
-| Connection gate | `induckgo-core/connection_gate.rs` (10) |
-| Swappable policies | `induckgo-core/replaceable_policies.rs` (4) |
-| Resource-hint script | `induckgo-core/resource_hint_blocking_script.rs` (5) |
-| Protection feed and cache | `induckgo-core/protection_feed.rs` (9) |
-| The proxy (loopback servers) | `induckgo-engine-qt/gate_proxy.rs` (8), `upstream_proxy.rs` (7) |
-| Interceptor approves allowed hosts | `induckgo-engine-qt/policy_decisions.rs` |
-| Whole browser, headless: tracker image blocked, ordinary one loaded | `induckgo-qt/tracker_blocking.rs` |
-| Cookie-notice script (the bundle's guarantees) | `induckgo-core/cookie_notice_script.rs` (5), `guard_page_script.rs` |
-| Who is asked to reject | `induckgo-qt/guard_page_hiding.rs` |
-| Whole browser: notice rejected, never accepted; left alone when the shield is off | `induckgo-qt/tracker_blocking.rs` |
+| DuckDuckGo's rule semantics | `ztbrowser-core/content_blocker_request_policy.rs` (16) |
+| Stricter overlay | `ztbrowser-core/advertising_tracker_request_policy.rs` (10) |
+| Connection gate | `ztbrowser-core/connection_gate.rs` (10) |
+| Swappable policies | `ztbrowser-core/replaceable_policies.rs` (4) |
+| Resource-hint script | `ztbrowser-core/resource_hint_blocking_script.rs` (5) |
+| Protection feed and cache | `ztbrowser-core/protection_feed.rs` (9) |
+| The proxy (loopback servers) | `ztbrowser-engine-qt/gate_proxy.rs` (8), `upstream_proxy.rs` (7) |
+| Interceptor approves allowed hosts | `ztbrowser-engine-qt/policy_decisions.rs` |
+| Whole browser, headless: tracker image blocked, ordinary one loaded | `ztbrowser-qt/tracker_blocking.rs` |
+| Cookie-notice script (the bundle's guarantees) | `ztbrowser-core/cookie_notice_script.rs` (5), `guard_page_script.rs` |
+| Who is asked to reject | `ztbrowser-qt/guard_page_hiding.rs` |
+| Whole browser: notice rejected, never accepted; left alone when the shield is off | `ztbrowser-qt/tracker_blocking.rs` |
 
 The headless test runs the real browser with a local server as its upstream HTTP proxy that answers for every `.test`
 name, so the page, an ordinary third party and a listed tracker all travel the gate.

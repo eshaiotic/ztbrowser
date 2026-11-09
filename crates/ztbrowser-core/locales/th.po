@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: th\n"
+
+msgid "About ZTBrowser"
+msgstr "เกี่ยวกับ ZTBrowser"
+
+msgid "Access denied"
+msgstr "ปฏิเสธการเข้าถึง"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "อนุญาตให้ {requesting} ใช้คุกกี้และข้อมูลของตนเองขณะที่คุณอยู่ที่ {current} หรือไม่?"
+
+msgid "Allow {site} to know your location?"
+msgstr "อนุญาตให้ {site} ทราบตำแหน่งของคุณหรือไม่?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "อนุญาตให้ {site} อ่านคลิปบอร์ดของคุณหรือไม่?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "อนุญาตให้ {site} แสดงการแจ้งเตือนหรือไม่?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "อนุญาตให้ {site} ใช้กล้องและไมโครโฟนของคุณหรือไม่?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "อนุญาตให้ {site} ใช้กล้องของคุณหรือไม่?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "อนุญาตให้ {site} ใช้ไมโครโฟนของคุณหรือไม่?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "อนุญาตให้ {site} ใช้หน้าจอของคุณหรือไม่?"
+
+msgid "App data cleared"
+msgstr "ล้างข้อมูลแอปแล้ว"
+
+msgid "Appearance"
+msgstr "รูปลักษณ์"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "มีผลเมื่อเปิด ZTBrowser ครั้งถัดไป"
+
+msgid "Asking for relay descriptors"
+msgstr "กำลังขอตัวอธิบายรีเลย์"
+
+msgid "Asking for the network status"
+msgstr "กำลังขอสถานะเครือข่าย"
+
+msgid "Back"
+msgstr "ย้อนกลับ"
+
+msgid "Back and Forward"
+msgstr "ย้อนกลับและไปข้างหน้า"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "เหมาะที่สุดในที่ที่ Tor ไม่ถูกบล็อก"
+
+msgid "Bridges I provide"
+msgstr "บริดจ์ที่ฉันมีเอง"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "บริดจ์คือรีเลย์ Tor ที่ไม่เปิดเผยรายชื่อ สำหรับเครือข่ายที่บล็อก Tor"
+
+msgid "Browsing data burned"
+msgstr "ล้างข้อมูลการเรียกดูแล้ว"
+
+msgid "Burn Browsing Data"
+msgstr "ล้างข้อมูลการเรียกดู"
+
+msgid "Burn Browsing Data?"
+msgstr "ล้างข้อมูลการเรียกดูหรือไม่?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "ปุ่มที่แสดงรอบแถบที่อยู่ในหน้าต่างของโปรไฟล์นี้"
+
+msgid "C_lear"
+msgstr "ล้าง(_L)"
+
+msgid "Cannot Connect to Tor"
+msgstr "เชื่อมต่อกับ Tor ไม่ได้"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "เข้าถึงพอร์ตควบคุมของ Tor ไม่ได้: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "อ่านคุกกี้ควบคุมของ Tor ไม่ได้: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "ลบไฟล์พอร์ตควบคุมเก่าของ Tor ไม่ได้: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "บันทึกไฟล์ที่ดาวน์โหลดไม่ได้: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "เริ่ม Tor ไม่ได้: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "เขียนการกำหนดค่าของ Tor ไม่ได้: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "เขียนไปยังพอร์ตควบคุมของ Tor ไม่ได้: {error}"
+
+msgid "Certificate for {name}"
+msgstr "ใบรับรองสำหรับ {name}"
+
+msgid "Check the address for a typo."
+msgstr "ตรวจสอบว่าพิมพ์ที่อยู่ผิดหรือไม่"
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "ตรวจสอบที่อยู่ รวมถึงหมายเลขพอร์ตหลังเครื่องหมายทวิภาค (ถ้ามี)"
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "ตรวจสอบสายเครือข่ายหรือการเชื่อมต่อ Wi-Fi"
+
+msgid "Check your internet connection."
+msgstr "ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ"
+
+msgid "Clear App Data…"
+msgstr "ล้างข้อมูลแอป…"
+
+msgid "Clear Data of {name}?"
+msgstr "ล้างข้อมูลของ {name} หรือไม่?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "ปิดแท็บหรือแอปที่ไม่ได้ใช้ แล้วโหลดหน้าใหม่"
+
+msgid "Close {name} before deleting it"
+msgstr "ปิด {name} ก่อนลบ"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "ปิดแท็บและหน้าต่างทั้งหมดของโปรไฟล์นี้ และลบคุกกี้ ข้อมูลเว็บไซต์ แคช และประวัติ"
+
+msgid "Connect"
+msgstr "เชื่อมต่อ"
+
+msgid "Connect directly"
+msgstr "เชื่อมต่อโดยตรง"
+
+msgid "Connected"
+msgstr "เชื่อมต่อแล้ว"
+
+msgid "Connected to a relay directory server"
+msgstr "เชื่อมต่อกับเซิร์ฟเวอร์ไดเรกทอรีรีเลย์แล้ว"
+
+msgid "Connected to a relay to build circuits"
+msgstr "เชื่อมต่อกับรีเลย์เพื่อสร้างวงจรแล้ว"
+
+msgid "Connected to pluggable transport"
+msgstr "เชื่อมต่อกับ pluggable transport แล้ว"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "เชื่อมต่อกับ pluggable transport เพื่อสร้างวงจรแล้ว"
+
+msgid "Connected to proxy"
+msgstr "เชื่อมต่อกับพร็อกซีแล้ว"
+
+msgid "Connected to proxy to build circuits"
+msgstr "เชื่อมต่อกับพร็อกซีเพื่อสร้างวงจรแล้ว"
+
+msgid "Connected to the Tor network"
+msgstr "เชื่อมต่อกับเครือข่าย Tor แล้ว"
+
+msgid "Connecting to Tor"
+msgstr "กำลังเชื่อมต่อกับ Tor"
+
+msgid "Connecting to a relay directory server"
+msgstr "กำลังเชื่อมต่อกับเซิร์ฟเวอร์ไดเรกทอรีรีเลย์"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "กำลังเชื่อมต่อกับรีเลย์เพื่อสร้างวงจร"
+
+msgid "Connecting to pluggable transport"
+msgstr "กำลังเชื่อมต่อกับ pluggable transport"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "กำลังเชื่อมต่อกับ pluggable transport เพื่อสร้างวงจร"
+
+msgid "Connecting to proxy"
+msgstr "กำลังเชื่อมต่อกับพร็อกซี"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "กำลังเชื่อมต่อกับพร็อกซีเพื่อสร้างวงจร"
+
+msgid "Connection Settings…"
+msgstr "การตั้งค่าการเชื่อมต่อ…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, การกำหนดค่าความเป็นส่วนตัว และอัลกอริทึมกฎ TrackerRadarKit"
+
+msgid "Could not install the app: {error}"
+msgstr "ติดตั้งแอปไม่ได้: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "ลบทุกอย่างไม่ได้: {error}"
+
+msgid "Delete"
+msgstr "ลบ"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "ลบคุกกี้ ข้อมูลเว็บไซต์ และแคชของโปรไฟล์นี้"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "การเชื่อมต่อแบบพรางตัวไปยังบริดจ์ในตัวของ Tor Browser"
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "การเชื่อมต่อแบบพรางตัวไปยังบริดจ์ในตัวของ Tor Browser ต้องใช้ {package}"
+
+msgid "Download failed: {error}"
+msgstr "ดาวน์โหลดล้มเหลว: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "ดาวน์โหลดจาก DuckDuckGo ขณะทำงาน ใช้สัญญาอนุญาต CC BY-NC-SA 4.0"
+
+msgid "Downloaded {name}"
+msgstr "ดาวน์โหลด {name} แล้ว"
+
+msgid "DuckDuckGo protections"
+msgstr "การป้องกันของ DuckDuckGo"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "แต่ละแอปทำงานในหน้าต่างและโพรเซสของตัวเอง พร้อมคุกกี้และการเข้าสู่ระบบของตัวเอง"
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "แต่ละโปรไฟล์เก็บคุกกี้ การเข้าสู่ระบบ ประวัติ และแคชของตัวเอง และทำงานเป็นโพรเซสแยกต่างหาก"
+
+msgid "Establishing a Tor circuit"
+msgstr "กำลังสร้างวงจร Tor"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "กำลังสร้างการเชื่อมต่อไดเรกทอรีที่เข้ารหัส"
+
+msgid "File not found"
+msgstr "ไม่พบไฟล์"
+
+msgid "Find in Page…"
+msgstr "ค้นหาในหน้า…"
+
+msgid "Find in page"
+msgstr "ค้นหาในหน้า"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "จับมือกับเซิร์ฟเวอร์ไดเรกทอรีรีเลย์เสร็จแล้ว"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "จับมือกับรีเลย์เพื่อสร้างวงจรเสร็จแล้ว"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "กำลังจับมือกับเซิร์ฟเวอร์ไดเรกทอรีรีเลย์ให้เสร็จ"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "กำลังจับมือกับรีเลย์เพื่อสร้างวงจรให้เสร็จ"
+
+msgid "Forward"
+msgstr "ไปข้างหน้า"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "จาก bridges.torproject.org ทางอีเมล หรือจากเพื่อน"
+
+msgid "Go to Home Page"
+msgstr "ไปที่หน้าแรก"
+
+msgid "Go to the previous or next page"
+msgstr "ไปยังหน้าก่อนหน้าหรือหน้าถัดไป"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "ไปที่หน้าแรกของเว็บไซต์ แล้วหาหน้านั้นจากที่นั่น"
+
+msgid "How to Reach Tor"
+msgstr "วิธีเชื่อมต่อกับ Tor"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "หากโหลดใหม่แล้วยังขัดข้องอีก ตัวหน้าเองอาจมีปัญหา"
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "หากที่อยู่ถูกต้อง เว็บไซต์อาจไม่มีอยู่แล้ว"
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "หากคุณมีบัญชีบนเว็บไซต์นี้ ให้ลงชื่อเข้าใช้แล้วลองอีกครั้ง"
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "หากคุณใช้ VPN หรือเซิร์ฟเวอร์ DNS ของคุณเอง ให้ตรวจสอบว่าทำงานปกติ"
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "หากคุณใช้ VPN ไฟร์วอลล์ หรือพร็อกซี ให้ตรวจสอบว่าไม่ได้บล็อกเว็บไซต์"
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "รายการตัวกรอง ZTBrowser Guard"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "ZTBrowser เปิด {host} ไม่ได้ เพราะคอมพิวเตอร์เครื่องนี้ไม่ได้เชื่อมต่อกับเครือข่าย"
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser ไม่พบเซิร์ฟเวอร์ที่ {host}"
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser ไม่เชื่อมต่อกับ {host} ผ่านพอร์ตนี้"
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "Tor ของ ZTBrowser เองกำลังเชื่อมต่อ จะไม่มีสิ่งใดออกจากหน้าต่างนี้จนกว่าจะเชื่อมต่อเสร็จ"
+
+msgid "Install Site as App"
+msgstr "ติดตั้งเว็บไซต์เป็นแอป"
+
+msgid "Install Site as App…"
+msgstr "ติดตั้งเว็บไซต์เป็นแอป…"
+
+msgid "Install as App"
+msgstr "ติดตั้งเป็นแอป"
+
+msgid "Installed Apps"
+msgstr "แอปที่ติดตั้งแล้ว"
+
+msgid "Installed Apps…"
+msgstr "แอปที่ติดตั้งแล้ว…"
+
+msgid "Installed {name}"
+msgstr "ติดตั้ง {name} แล้ว"
+
+msgid "Interface"
+msgstr "อินเทอร์เฟซ"
+
+msgid "Issued by {name}"
+msgstr "ออกโดย {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "อาจถูกย้าย เปลี่ยนชื่อ หรือลบไปแล้ว"
+
+msgid "Language"
+msgstr "ภาษา"
+
+msgid "Load Insecure Page"
+msgstr "โหลดหน้าที่ไม่ปลอดภัย"
+
+msgid "Load the page again, or stop loading it"
+msgstr "โหลดหน้าใหม่ หรือหยุดการโหลด"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "โหลดข้อมูลไดเรกทอรีเพียงพอสำหรับสร้างวงจรแล้ว"
+
+msgid "Loading authority certificates"
+msgstr "กำลังโหลดใบรับรองของผู้ออกใบรับรอง"
+
+msgid "Loading relay descriptors"
+msgstr "กำลังโหลดตัวอธิบายรีเลย์"
+
+msgid "Loading the network status"
+msgstr "กำลังโหลดสถานะเครือข่าย"
+
+msgid "Main Menu"
+msgstr "เมนูหลัก"
+
+msgid "Manage Profiles…"
+msgstr "จัดการโปรไฟล์…"
+
+msgid "New Identity"
+msgstr "ตัวตนใหม่"
+
+msgid "New Identity?"
+msgstr "เปลี่ยนเป็นตัวตนใหม่หรือไม่?"
+
+msgid "New Tab"
+msgstr "แท็บใหม่"
+
+msgid "New Tor Window"
+msgstr "หน้าต่าง Tor ใหม่"
+
+msgid "New Window"
+msgstr "หน้าต่างใหม่"
+
+msgid "New identity"
+msgstr "ตัวตนใหม่"
+
+msgid "New profile name"
+msgstr "ชื่อโปรไฟล์ใหม่"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "หนึ่งบริดจ์ต่อหนึ่งบรรทัด เช่น obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "ติดตั้งเป็นแอปได้เฉพาะหน้าเว็บเท่านั้น"
+
+msgid "Open"
+msgstr "เปิด"
+
+msgid "Open Page in Browser"
+msgstr "เปิดหน้านี้ในเบราว์เซอร์"
+
+msgid "Open a new tab"
+msgstr "เปิดแท็บใหม่"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "เปิดหน้าต่างที่การรับส่งข้อมูลทั้งหมดผ่าน Tor เท่านั้น"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "แอปพลิเคชันอื่นจะไม่เปิดจากหน้าต่าง Tor เพราะจะเชื่อมต่อนอก Tor"
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "หน้าเว็บจะยังไม่เปิดจนกว่าหน้าต่าง Tor จะเชื่อมต่อแล้ว"
+
+msgid "Paste at least one bridge."
+msgstr "วางบริดจ์อย่างน้อยหนึ่งรายการ"
+
+msgid "Preferences"
+msgstr "การตั้งค่า"
+
+msgid "Preferences…"
+msgstr "การตั้งค่า…"
+
+msgid "Profiles"
+msgstr "โปรไฟล์"
+
+msgid "Protect This Site"
+msgstr "ปกป้องเว็บไซต์นี้"
+
+msgid "Protection Shield"
+msgstr "โล่ป้องกัน"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "อ่านพอร์ตควบคุมของ Tor ล้มเหลว: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "เชื่อมต่อ VPN ของคุณอีกครั้ง หากคุณใช้อยู่"
+
+msgid "Reload"
+msgstr "โหลดใหม่"
+
+msgid "Reload Page"
+msgstr "โหลดหน้าใหม่"
+
+msgid "Reset Zoom"
+msgstr "รีเซ็ตการซูม"
+
+msgid "Search Engine"
+msgstr "เครื่องมือค้นหา"
+
+msgid "Search {engine}"
+msgstr "ค้นหาด้วย {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "ค้นหาด้วย {engine} หรือป้อนที่อยู่"
+
+msgid "Show in Folder"
+msgstr "แสดงในโฟลเดอร์"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "ออกจากระบบและลบคุกกี้ ข้อมูลเว็บไซต์ และแคชของแอปนี้ ไม่กระทบสิ่งอื่น"
+
+msgid "Some data could not be deleted: {error}"
+msgstr "ลบข้อมูลบางส่วนไม่ได้: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "เกิดข้อผิดพลาดขณะโหลด {host}"
+
+msgid "Starting"
+msgstr "กำลังเริ่ม"
+
+msgid "Starting Tor…"
+msgstr "กำลังเริ่ม Tor…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "ปิดหรือเปิดการป้องกันตัวติดตามสำหรับเว็บไซต์"
+
+msgid "System default ({language})"
+msgstr "ค่าเริ่มต้นของระบบ ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "ผู้ออกใบรับรองได้เพิกถอนใบรับรองนี้แล้ว"
+
+msgid "The bridge line has no address: {line}"
+msgstr "บรรทัดบริดจ์ไม่มีที่อยู่: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "ตรวจสอบใบรับรองไม่ได้"
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "ใบรับรองถูกลงนามด้วยอัลกอริทึมที่ไม่ปลอดภัยอีกต่อไป"
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "ใบรับรองยังไม่มีผลใช้งาน ตรวจสอบว่าวันที่และเวลาของคอมพิวเตอร์เครื่องนี้ถูกต้อง"
+
+msgid "The certificate was issued for a different site."
+msgstr "ใบรับรองนี้ออกให้เว็บไซต์อื่น"
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "ใบรับรองนี้ไม่ได้ออกโดยผู้ออกใบรับรองที่คอมพิวเตอร์เครื่องนี้เชื่อถือ"
+
+msgid "The connection to {host} was interrupted."
+msgstr "การเชื่อมต่อกับ {host} ถูกขัดจังหวะ"
+
+msgid "The icon at the end of the address bar"
+msgstr "ไอคอนที่ปลายแถบที่อยู่"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "ภาษาจะเปลี่ยนเมื่อเปิด ZTBrowser ใหม่"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "ภาษาของเมนู กล่องโต้ตอบ และข้อความ ในทุกโปรไฟล์และเว็บแอป"
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "ปัญหาอยู่ที่ฝั่งเว็บไซต์ ลองอีกครั้งในอีกสักครู่"
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "เว็บไซต์อาจปิดปรับปรุงอยู่ ลองอีกครั้งในอีกสักครู่"
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "เว็บไซต์อาจมีผู้ใช้งานหนาแน่นเกินไป ลองอีกครั้งในอีกสักครู่"
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "บริดจ์ {transport} ต้องใช้โปรแกรมที่ยังไม่ได้ติดตั้ง โปรดติดตั้ง {package}"
+
+msgid "There is no file at {path}."
+msgstr "ไม่มีไฟล์ที่ {path}"
+
+msgid "This address is blocked"
+msgstr "ที่อยู่นี้ถูกบล็อก"
+
+msgid "This connection isn’t private"
+msgstr "การเชื่อมต่อนี้ไม่เป็นส่วนตัว"
+
+msgid "This page"
+msgstr "หน้านี้"
+
+msgid "This page can’t be found"
+msgstr "ไม่พบหน้านี้"
+
+msgid "This page can’t be loaded"
+msgstr "โหลดหน้านี้ไม่ได้"
+
+msgid "This page crashed"
+msgstr "หน้านี้ขัดข้อง"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "หน้านี้อยู่ในเว็บไซต์อื่น ไม่ใช่ส่วนหนึ่งของ {name}"
+
+msgid "This page isn’t working"
+msgstr "หน้านี้ไม่ทำงาน"
+
+msgid "This page ran out of memory"
+msgstr "หน้านี้หน่วยความจำไม่พอ"
+
+msgid "This site can’t be found"
+msgstr "ไม่พบเว็บไซต์นี้"
+
+msgid "This site can’t be reached"
+msgstr "เข้าถึงเว็บไซต์นี้ไม่ได้"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "ผ่านเบราว์เซอร์ของอาสาสมัคร ใช้ได้กับเครือข่ายที่ถูกเซ็นเซอร์ส่วนใหญ่"
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "ผ่านเบราว์เซอร์ของอาสาสมัคร ใช้ได้กับเครือข่ายที่ถูกเซ็นเซอร์ส่วนใหญ่ ต้องใช้ {package}"
+
+msgid "Toolbar Buttons"
+msgstr "ปุ่มบนแถบเครื่องมือ"
+
+msgid "Tor Connection"
+msgstr "การเชื่อมต่อ Tor"
+
+msgid "Tor Connection…"
+msgstr "การเชื่อมต่อ Tor…"
+
+msgid "Tor Window"
+msgstr "หน้าต่าง Tor"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor ใช้เส้นทาง {path} ไม่ได้"
+
+msgid "Tor closed its control port"
+msgstr "Tor ปิดพอร์ตควบคุมของตน"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor สลับวงจรไม่ได้: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor ไม่ได้เปิดพอร์ตควบคุมของตน"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "ไม่ได้ติดตั้ง Tor โปรดติดตั้งแพ็กเกจ tor ของดิสทริบิวชันของคุณ หน้าต่าง Tor จะเริ่ม Tor ของตัวเองและไม่ต้องมีบริการ Tor ทำงานอยู่"
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor ไม่ได้เปิดพอร์ต SOCKS ในเครื่อง"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor ปฏิเสธ: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor รายงานปัญหา"
+
+msgid "Tor stopped."
+msgstr "Tor หยุดทำงานแล้ว"
+
+msgid "Tor's control cookie is damaged"
+msgstr "คุกกี้ควบคุมของ Tor เสียหาย"
+
+msgid "Tracker Data Set"
+msgstr "ชุดข้อมูลตัวติดตาม"
+
+msgid "Tracker protection on this site"
+msgstr "การป้องกันตัวติดตามบนเว็บไซต์นี้"
+
+msgid "Try Again"
+msgstr "ลองอีกครั้ง"
+
+msgid "Try again in a few minutes."
+msgstr "ลองอีกครั้งในอีกสักครู่"
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "ปิดโหมดเครื่องบิน หากเปิดอยู่"
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "แปลงรายการตัวกรองของ ZTBrowser Guard เป็นกฎของ WebKit ที่มา: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "ถอนการติดตั้ง"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "ไม่รู้จักทรานสปอร์ตของบริดจ์: {name}"
+
+msgid "Valid until {date}"
+msgstr "ใช้ได้ถึง {date}"
+
+msgid "Your Bridges"
+msgstr "บริดจ์ของคุณ"
+
+msgid "You’re offline"
+msgstr "คุณออฟไลน์อยู่"
+
+msgid "Zoom In"
+msgstr "ขยาย"
+
+msgid "Zoom Out"
+msgstr "ย่อ"
+
+msgid "_Allow"
+msgstr "อนุญาต(_A)"
+
+msgid "_Burn"
+msgstr "ล้าง(_B)"
+
+msgid "_Cancel"
+msgstr "ยกเลิก(_C)"
+
+msgid "_Deny"
+msgstr "ปฏิเสธ(_D)"
+
+msgid "_Install"
+msgstr "ติดตั้ง(_I)"
+
+msgid "_New Identity"
+msgstr "ตัวตนใหม่(_N)"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) หรือ obfs4proxy จาก AUR (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) หรือ snowflake-pt-client จาก AUR (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "ขณะนี้ {host} ไม่สามารถจัดการคำขอได้"
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} ตอบสนองคำขอนี้ไม่ได้"
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} ไม่มีการเชื่อมต่อที่ปลอดภัย"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} ไม่อนุญาตให้คุณดูหน้านี้"
+
+msgid "{host} has no page at this address."
+msgstr "{host} ไม่มีหน้าที่ที่อยู่นี้"
+
+msgid "{host} refused the connection."
+msgstr "{host} ปฏิเสธการเชื่อมต่อ"
+
+msgid "{host} took too long to respond."
+msgstr "{host} ใช้เวลาตอบสนองนานเกินไป"
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} ใช้หน่วยความจำมากกว่าที่หน้าเว็บควรใช้ ZTBrowser จึงหยุดหน้านั้น"
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} จะเปิดในหน้าต่างของตัวเอง โดยแยกคุกกี้และการเข้าสู่ระบบจากเบราว์เซอร์และแอปอื่นทั้งหมด"
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — เว็บแอป ZTBrowser"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} ไม่ใช่อาร์กิวเมนต์ของบริดจ์"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} ไม่ใช่ที่อยู่ IP และพอร์ต"
+
+msgid "{url} answered {status}"
+msgstr "{url} ตอบกลับ {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} ไม่ส่งเอกสารที่คาดไว้กลับมา"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} มีขนาดใหญ่เกินที่อนุญาต"
+
+msgid "{url} is not a valid address"
+msgstr "{url} ไม่ใช่ที่อยู่ที่ถูกต้อง"
+
+msgid "© their maintainers"
+msgstr "© ผู้ดูแลของแต่ละโครงการ"
+
+msgid "Ask Where to Save Each File"
+msgstr "ถามว่าจะบันทึกแต่ละไฟล์ที่ใด"
+
+msgid "Choose Folder"
+msgstr "เลือกโฟลเดอร์"
+
+msgid "Download Folder"
+msgstr "โฟลเดอร์ดาวน์โหลด"
+
+msgid "Download failed"
+msgstr "ดาวน์โหลดไม่สำเร็จ"
+
+msgid "Downloading…"
+msgstr "กำลังดาวน์โหลด…"
+
+msgid "Downloading… {percent}%"
+msgstr "กำลังดาวน์โหลด… {percent}%"
+
+msgid "Downloads"
+msgstr "การดาวน์โหลด"
+
+msgid "Go to Download Folder"
+msgstr "ไปที่โฟลเดอร์ดาวน์โหลด"
+
+msgid "No downloads yet"
+msgstr "ยังไม่มีการดาวน์โหลด"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "มิฉะนั้นไฟล์จะถูกบันทึกลงในโฟลเดอร์ดาวน์โหลดโดยตรง"
+
+msgid "Save File"
+msgstr "บันทึกไฟล์"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "การดาวน์โหลดล่าสุดห้ารายการและโฟลเดอร์ดาวน์โหลด"
+
+msgid "_Save"
+msgstr "บันทึก(_S)"
+
+msgid "_Select"
+msgstr "เลือก(_S)"
+
+msgid "Show All Downloads"
+msgstr "แสดงการดาวน์โหลดทั้งหมด"
+
+msgid "Clear List"
+msgstr "ล้างรายการ"
+
+msgid "Remove from List"
+msgstr "นำออกจากรายการ"
+
+msgid "Clear History"
+msgstr "ล้างประวัติ"
+
+msgid "Search Downloads"
+msgstr "ค้นหาการดาวน์โหลด"
+
+msgid "File Moved or Deleted"
+msgstr "ไฟล์ถูกย้ายหรือลบแล้ว"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "แสดงภาพเคลื่อนไหวทุกขั้นของการหมุนล้อเมาส์ หน้าที่เปิดอยู่แล้วต้องโหลดซ้ำ"
+
+msgid "Scrolling"
+msgstr "การเลื่อน"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "เลื่อนด้วยล้อเมาส์แบบนุ่มนวล"
+
+msgid "Details"
+msgstr "รายละเอียด"
+
+msgid "Legal"
+msgstr "ข้อมูลทางกฎหมาย"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "แอปพลิเคชันนี้ไม่มีการรับประกันใดๆ ทั้งสิ้น ดูรายละเอียดเพิ่มเติมได้ที่ {license}"
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License เวอร์ชัน 3 ขึ้นไป"
+
+msgid "Apache License, Version 2.0"
+msgstr "Apache License เวอร์ชัน 2.0"
+
+msgid "Move to New Window"
+msgstr "ย้ายไปยังหน้าต่างใหม่"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Mozilla Public License 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "สัญญาอนุญาต BSD แบบ 3 ข้อ"
+
+msgid "Wide Address Bar"
+msgstr "แถบที่อยู่แบบกว้าง"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "แถบที่อยู่จะเต็มพื้นที่ว่างทั้งหมดบนแถบเครื่องมือ หากปิดไว้ จะสั้นและอยู่ตรงกลาง"
+
+msgid "No apps installed yet"
+msgstr "ยังไม่มีแอปที่ติดตั้ง"
+
+msgid "Uninstall {name}?"
+msgstr "ถอนการติดตั้ง {name} ไหม"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "ลบแอปพร้อมคุกกี้ การเข้าสู่ระบบ และข้อมูลของแอป การดำเนินการนี้ไม่สามารถยกเลิกได้"
+
+msgid "Tab Position"
+msgstr "ตำแหน่งแท็บ"
+
+msgid "Top"
+msgstr "ด้านบน"
+
+msgid "Bottom"
+msgstr "ด้านล่าง"
+
+msgid "Left"
+msgstr "ซ้าย"
+
+msgid "Right"
+msgstr "ขวา"
+
+msgid "Window Buttons"
+msgstr "ปุ่มหน้าต่าง"
+
+msgid "Default"
+msgstr "ค่าเริ่มต้น"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "เพิ่มโปรไฟล์"
+
+msgid "Delete profile {name}?"
+msgstr "ลบโปรไฟล์ {name} ไหม"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "ลบโปรไฟล์พร้อมคุกกี้ การเข้าสู่ระบบ ประวัติ และแคชของโปรไฟล์ การดำเนินการนี้ไม่สามารถยกเลิกได้"
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser ไม่ใช่เบราว์เซอร์เริ่มต้นของคุณ"
+
+msgid "Make Default"
+msgstr "ตั้งเป็นค่าเริ่มต้น"
+
+msgid "Don't Ask Again"
+msgstr "ไม่ต้องถามอีก"
+
+msgid "Close"
+msgstr "ปิด"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "ไม่สามารถตั้ง ZTBrowser เป็นเบราว์เซอร์เริ่มต้นได้: {error}"
+
+msgid "Default Browser"
+msgstr "เบราว์เซอร์เริ่มต้น"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "ZTBrowser เปิดลิงก์จากโปรแกรมอื่น"
+
+msgid "Links from other programs open in {browser}"
+msgstr "ลิงก์จากโปรแกรมอื่นจะเปิดใน {browser}"
+
+msgid "Another browser opens links from other programs"
+msgstr "เบราว์เซอร์อื่นเปิดลิงก์จากโปรแกรมอื่น"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "มีเพียง ZTBrowser ที่ติดตั้งแล้วเท่านั้นที่เปิดลิงก์จากโปรแกรมอื่นได้"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "เดสก์ท็อปไม่ได้ระบุว่าเบราว์เซอร์ใดเปิดลิงก์"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "ถามเมื่อ ZTBrowser เริ่มทำงาน"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "เสนอให้ตั้ง ZTBrowser เป็นเบราว์เซอร์เริ่มต้นขณะที่เบราว์เซอร์อื่นเปิดลิงก์"

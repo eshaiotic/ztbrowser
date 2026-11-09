@@ -1,4 +1,4 @@
-# InDuckGo — project index
+# ZTBrowser — project index
 
 Privacy-first WebKitGTK browser for Linux, written in Rust, built on DuckDuckGo's open-source protections.
 This file is an index; the content lives in the linked documents.
@@ -16,12 +16,16 @@ This file is an index; the content lives in the linked documents.
 - [Język interfejsu (PL)](docs/pl/architecture/interface-language.md) — polish mirror of the interface-language document.
 - [Downloads](docs/en/architecture/downloads.md) — save-folder choice, recent-downloads list, toolbar button and menu entry.
 - [Pobieranie plików (PL)](docs/pl/architecture/downloads.md) — polish mirror of the downloads document.
+- [Default browser](docs/en/architecture/default-browser.md) — offered once a start, never imposed: xdg-settings on a thread, bar, preferences, `./install`.
+- [Domyślna przeglądarka (PL)](docs/pl/architecture/default-browser.md) — polish mirror of the default-browser document.
 - [Smooth wheel scrolling](docs/en/architecture/smooth-wheel-scrolling.md) — Chromium-like animation of each mouse-wheel step: page script, core curves, preference, measurements.
 - [Płynne przewijanie kółkiem (PL)](docs/pl/architecture/smooth-wheel-scrolling.md) — polish mirror of the smooth-wheel-scrolling document.
 - [Web apps (Qt edition)](docs/en/architecture/web-apps-qt.md) — install a site as an app: icon pipeline, desktop identity, single instance, app window.
 - [Aplikacje internetowe (PL)](docs/pl/architecture/web-apps-qt.md) — polish mirror of the web-apps document.
 - [Tracker protection (Qt edition)](docs/en/architecture/qt-protection.md) — faithful DuckDuckGo rule evaluation, stricter ad overlay, connection gate (local proxy against preconnect), protection feed, first start and cookie-notice rejection.
 - [Ochrona przed trackerami (Qt, PL)](docs/pl/architecture/qt-protection.md) — polish mirror of the Qt tracker-protection document.
+- [Moving from InDuckGo](docs/en/architecture/induckgo-migration.md) — former name ≤ 1.2.4: data folders and menu entries moved at start, never under a running InDuckGo.
+- [Przejście z InDuckGo (PL)](docs/pl/architecture/induckgo-migration.md) — polish mirror of the InDuckGo migration document.
 - `docs/assets/diagrams/` — SVG + PNG diagrams, one file per language (`.en` / `.pl`).
 
 ## Plans
@@ -31,7 +35,7 @@ This file is an index; the content lives in the linked documents.
 
 ## Reports
 
-- [Tracking comparison](docs/en/reports/tracking-comparison.md) — InDuckGo vs Chrome vs Brave: telemetry, trackers, fingerprinting (measured).
+- [Tracking comparison](docs/en/reports/tracking-comparison.md) — ZTBrowser vs Chrome vs Brave: telemetry, trackers, fingerprinting (measured).
 - [Porównanie śledzenia (PL)](docs/pl/reports/tracking-comparison.md) — polish mirror of the tracking comparison.
 - [Tracking summary (HTML)](docs/en/reports/tracking-summary.html) — one-page tracker and ad blocking summary for non-technical readers.
 - [Podsumowanie dla PO (HTML, PL)](docs/pl/reports/tracking-summary.html) — polish mirror of the tracking summary.
@@ -42,20 +46,20 @@ This file is an index; the content lives in the linked documents.
 
 ## Code map
 
-- `crates/induckgo-core` — domain logic without GTK/WebKit: protection rules, request policies, connection gate, protection feed, Guard filter lists, profiles, web apps, zoom, launch, Tor.
-- `crates/induckgo-core/tests` — one OO scenario test file per domain type.
-- `crates/induckgo-test-report` — dev tool behind `./run-tests`: nextest JUnit + llvm-cov → HTML test report (not packaged).
-- `crates/induckgo` — GTK 4 + libadwaita app: adapters that carry out core decisions in WebKitGTK/libsoup/GIO.
+- `crates/ztbrowser-core` — domain logic without GTK/WebKit: protection rules, request policies, connection gate, protection feed, Guard filter lists, profiles, web apps, zoom, launch, Tor.
+- `crates/ztbrowser-core/tests` — one OO scenario test file per domain type.
+- `crates/ztbrowser-test-report` — dev tool behind `./run-tests`: nextest JUnit + llvm-cov → HTML test report (not packaged).
+- `crates/ztbrowser` — GTK 4 + libadwaita app: adapters that carry out core decisions in WebKitGTK/libsoup/GIO.
 - `assets/` — vendored Content Scope Scripts (Apache-2.0) and autoconsent (MPL-2.0, rebuild recipe in its README), Guard's page script, app icons and the error page template; never the TDS or filter lists.
 - `packaging/` — PKGBUILD, rpm spec, AppImage build and assembly (Fedora container), desktop entry and AppStream metadata.
 
 ## Commands
 
-- `cargo test -p induckgo-core` — fast domain tests.
+- `cargo test -p ztbrowser-core` — fast domain tests.
 - `./run-tests` — all tests via cargo-nextest + HTML report in `tests/reports/` ([format](docs/en/tests/test-report.md)).
 - `cargo clippy --all-targets` — lints (pedantic, `unsafe_code` forbidden).
 - `cargo audit` — dependency vulnerability check (zero-vulnerability policy).
-- `cargo run -p induckgo -- [--profile NAME | --web-app ID | --tor] [URL…]` — run the browser, a web app or the Tor window.
+- `cargo run -p ztbrowser -- [--profile NAME | --web-app ID | --tor] [URL…]` — run the browser, a web app or the Tor window.
 - `packaging/release.sh [arch] [appimage] [rpm]` — release packages into `dist/` (AppImage/rpm in a Fedora container; no deb: Debian's Qt is below the engine floor).
 - `./install` / `./uninstall [--purge]` — install or remove the system package (Arch: built with makepkg).
 - `git tag vX.Y.Z && git push origin vX.Y.Z` — `.github/workflows/release.yml` publishes the GitHub release (tag = Cargo version).
@@ -69,3 +73,4 @@ This file is an index; the content lives in the linked documents.
 - Tor window (`--tor`): never let it load before Tor is connected or fall back to a direct connection (architecture §4.1).
 - Qt edition icons: never rely on `icon.color` of a Controls button (Plasma's Breeze style ignores it for plain SVGs, so icons vanish on a dark bar); draw them with `TintedIcon` (`IconButton` does; test `tests/icon_button_tinting.rs`).
 - Qt edition: every Chromium connection goes through the in-process gate proxy (`--proxy-server`), so `--host-resolver-rules` does nothing; a test or tool that must reach a fake host names it through `http_proxy`/`https_proxy` (see `tests/tracker_blocking.rs`).
+- Former name InDuckGo (≤ 1.2.4): the `induckgo` / `InDuckGo` literals in `induckgo_migration.rs`, packaging `replaces`/`Obsoletes`, metainfo `<replaces>` and `./uninstall --purge` are deliberate; never rename them.

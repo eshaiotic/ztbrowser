@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: cs\n"
+
+msgid "About ZTBrowser"
+msgstr "O aplikaci ZTBrowser"
+
+msgid "Access denied"
+msgstr "Přístup odepřen"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Povolit webu {requesting} používat své soubory cookie a data, když jste na webu {current}?"
+
+msgid "Allow {site} to know your location?"
+msgstr "Povolit webu {site} zjistit vaši polohu?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "Povolit webu {site} číst vaši schránku?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "Povolit webu {site} zobrazovat oznámení?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "Povolit webu {site} používat vaši kameru a mikrofon?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "Povolit webu {site} používat vaši kameru?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "Povolit webu {site} používat váš mikrofon?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "Povolit webu {site} používat vaši obrazovku?"
+
+msgid "App data cleared"
+msgstr "Data aplikace byla vymazána"
+
+msgid "Appearance"
+msgstr "Vzhled"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "Projeví se při dalším spuštění ZTBrowser"
+
+msgid "Asking for relay descriptors"
+msgstr "Žádost o popisy uzlů"
+
+msgid "Asking for the network status"
+msgstr "Žádost o stav sítě"
+
+msgid "Back"
+msgstr "Zpět"
+
+msgid "Back and Forward"
+msgstr "Zpět a vpřed"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Nejlepší všude tam, kde Tor není blokován."
+
+msgid "Bridges I provide"
+msgstr "Mosty, které poskytuji"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Mosty jsou neveřejné uzly Toru pro sítě, které Tor blokují."
+
+msgid "Browsing data burned"
+msgstr "Data prohlížení byla vymazána"
+
+msgid "Burn Browsing Data"
+msgstr "Vymazat data prohlížení"
+
+msgid "Burn Browsing Data?"
+msgstr "Vymazat data prohlížení?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Tlačítka zobrazená kolem adresního řádku v oknech tohoto profilu."
+
+msgid "C_lear"
+msgstr "Vy_mazat"
+
+msgid "Cannot Connect to Tor"
+msgstr "Nelze se připojit k Toru"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Řídicí port Toru není dostupný: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Nelze přečíst řídicí cookie Toru: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Nelze odstranit starý soubor řídicího portu Toru: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "Stažený soubor nelze uložit: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Tor nelze spustit: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Konfiguraci Toru nelze zapsat: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Do řídicího portu Toru nelze zapisovat: {error}"
+
+msgid "Certificate for {name}"
+msgstr "Certifikát pro {name}"
+
+msgid "Check the address for a typo."
+msgstr "Zkontrolujte, zda se v adrese nevyskytuje překlep."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Zkontrolujte adresu, včetně čísla portu za dvojtečkou, pokud nějaké je."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Zkontrolujte síťový kabel nebo připojení Wi-Fi."
+
+msgid "Check your internet connection."
+msgstr "Zkontrolujte připojení k internetu."
+
+msgid "Clear App Data…"
+msgstr "Vymazat data aplikace…"
+
+msgid "Clear Data of {name}?"
+msgstr "Vymazat data aplikace {name}?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Zavřete karty nebo aplikace, které nepotřebujete, a stránku znovu načtěte."
+
+msgid "Close {name} before deleting it"
+msgstr "Před smazáním zavřete {name}"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Zavře všechny karty a okna tohoto profilu a smaže jeho soubory cookie, data webů, mezipaměť a historii."
+
+msgid "Connect"
+msgstr "Připojit"
+
+msgid "Connect directly"
+msgstr "Připojit přímo"
+
+msgid "Connected"
+msgstr "Připojeno"
+
+msgid "Connected to a relay directory server"
+msgstr "Připojeno k adresářovému serveru uzlů"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Připojeno k uzlu pro vytváření okruhů"
+
+msgid "Connected to pluggable transport"
+msgstr "Připojeno k zásuvnému transportu"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Připojeno k zásuvnému transportu pro vytváření okruhů"
+
+msgid "Connected to proxy"
+msgstr "Připojeno k proxy serveru"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Připojeno k proxy serveru pro vytváření okruhů"
+
+msgid "Connected to the Tor network"
+msgstr "Připojeno k síti Tor"
+
+msgid "Connecting to Tor"
+msgstr "Připojování k Toru"
+
+msgid "Connecting to a relay directory server"
+msgstr "Připojování k adresářovému serveru uzlů"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Připojování k uzlu pro vytváření okruhů"
+
+msgid "Connecting to pluggable transport"
+msgstr "Připojování k zásuvnému transportu"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Připojování k zásuvnému transportu pro vytváření okruhů"
+
+msgid "Connecting to proxy"
+msgstr "Připojování k proxy serveru"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Připojování k proxy serveru pro vytváření okruhů"
+
+msgid "Connection Settings…"
+msgstr "Nastavení připojení…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, konfigurace soukromí a algoritmus pravidel TrackerRadarKit."
+
+msgid "Could not install the app: {error}"
+msgstr "Aplikaci se nepodařilo nainstalovat: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Nepodařilo se odstranit vše: {error}"
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Smazat soubory cookie, data webů a mezipaměť tohoto profilu"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Maskovaná spojení s vestavěnými mosty prohlížeče Tor Browser."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Maskovaná spojení s vestavěnými mosty prohlížeče Tor Browser. Vyžaduje {package}."
+
+msgid "Download failed: {error}"
+msgstr "Stahování selhalo: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Stahuje se za běhu z DuckDuckGo; licence CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "Staženo: {name}"
+
+msgid "DuckDuckGo protections"
+msgstr "Ochrany DuckDuckGo"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Každá aplikace běží ve vlastním okně a procesu, s vlastními soubory cookie a přihlášeními."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Každý profil uchovává vlastní soubory cookie, přihlášení, historii a mezipaměť a běží jako samostatný proces."
+
+msgid "Establishing a Tor circuit"
+msgstr "Vytváření okruhu Tor"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Navazování šifrovaného adresářového spojení"
+
+msgid "File not found"
+msgstr "Soubor nenalezen"
+
+msgid "Find in Page…"
+msgstr "Hledat na stránce…"
+
+msgid "Find in page"
+msgstr "Hledat na stránce"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Dokončen handshake s adresářovým serverem uzlů"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Dokončen handshake s uzlem pro vytváření okruhů"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Dokončování handshaku s adresářovým serverem uzlů"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Dokončování handshaku s uzlem pro vytváření okruhů"
+
+msgid "Forward"
+msgstr "Vpřed"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "Z bridges.torproject.org, e-mailem nebo od přítele."
+
+msgid "Go to Home Page"
+msgstr "Přejít na domovskou stránku"
+
+msgid "Go to the previous or next page"
+msgstr "Přejít na předchozí nebo další stránku"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Přejděte na domovskou stránku webu a hledejte stránku odtud."
+
+msgid "How to Reach Tor"
+msgstr "Jak se připojit k Toru"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Pokud po opětovném načtení spadne znovu, může být vadná samotná stránka."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Pokud je adresa správná, web už možná neexistuje."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Pokud na tomto webu máte účet, přihlaste se a zkuste to znovu."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "Pokud používáte VPN nebo vlastní server DNS, zkontrolujte, zda funguje."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "Pokud používáte VPN, firewall nebo proxy, zkontrolujte, zda web neblokuje."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "Filtrační seznamy ZTBrowser Guard"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "ZTBrowser nemůže otevřít {host}, protože tento počítač není připojen k síti."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser nenašel server na adrese {host}."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser se k {host} na tomto portu nepřipojuje."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "Připojuje se vlastní Tor aplikace ZTBrowser. Z tohoto okna nic neodejde, dokud se nepřipojí."
+
+msgid "Install Site as App"
+msgstr "Nainstalovat web jako aplikaci"
+
+msgid "Install Site as App…"
+msgstr "Nainstalovat web jako aplikaci…"
+
+msgid "Install as App"
+msgstr "Nainstalovat jako aplikaci"
+
+msgid "Installed Apps"
+msgstr "Nainstalované aplikace"
+
+msgid "Installed Apps…"
+msgstr "Nainstalované aplikace…"
+
+msgid "Installed {name}"
+msgstr "Nainstalováno: {name}"
+
+msgid "Interface"
+msgstr "Rozhraní"
+
+msgid "Issued by {name}"
+msgstr "Vydal: {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Mohl být přesunut, přejmenován nebo smazán."
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid "Load Insecure Page"
+msgstr "Načíst nezabezpečenou stránku"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Načíst stránku znovu nebo zastavit načítání"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Načteno dost adresářových informací pro vytváření okruhů"
+
+msgid "Loading authority certificates"
+msgstr "Načítání certifikátů autorit"
+
+msgid "Loading relay descriptors"
+msgstr "Načítání popisů uzlů"
+
+msgid "Loading the network status"
+msgstr "Načítání stavu sítě"
+
+msgid "Main Menu"
+msgstr "Hlavní nabídka"
+
+msgid "Manage Profiles…"
+msgstr "Spravovat profily…"
+
+msgid "New Identity"
+msgstr "Nová identita"
+
+msgid "New Identity?"
+msgstr "Nová identita?"
+
+msgid "New Tab"
+msgstr "Nová karta"
+
+msgid "New Tor Window"
+msgstr "Nové okno Tor"
+
+msgid "New Window"
+msgstr "Nové okno"
+
+msgid "New identity"
+msgstr "Nová identita"
+
+msgid "New profile name"
+msgstr "Název nového profilu"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "Jeden most na řádek, například: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Jako aplikace lze nainstalovat jen webové stránky"
+
+msgid "Open"
+msgstr "Otevřít"
+
+msgid "Open Page in Browser"
+msgstr "Otevřít stránku v prohlížeči"
+
+msgid "Open a new tab"
+msgstr "Otevřít novou kartu"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Otevřít okno, jehož provoz prochází pouze přes Tor"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Jiné aplikace se z okna Tor neotevírají: připojovaly by se mimo Tor."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Stránky zůstanou neotevřené, dokud se okno Tor nepřipojí."
+
+msgid "Paste at least one bridge."
+msgstr "Vložte alespoň jeden most."
+
+msgid "Preferences"
+msgstr "Nastavení"
+
+msgid "Preferences…"
+msgstr "Nastavení…"
+
+msgid "Profiles"
+msgstr "Profily"
+
+msgid "Protect This Site"
+msgstr "Chránit tento web"
+
+msgid "Protection Shield"
+msgstr "Štít ochrany"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Čtení z řídicího portu Toru selhalo: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "Znovu připojte VPN, pokud ji používáte."
+
+msgid "Reload"
+msgstr "Znovu načíst"
+
+msgid "Reload Page"
+msgstr "Znovu načíst stránku"
+
+msgid "Reset Zoom"
+msgstr "Obnovit velikost"
+
+msgid "Search Engine"
+msgstr "Vyhledávač"
+
+msgid "Search {engine}"
+msgstr "Hledat pomocí {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "Hledejte pomocí {engine} nebo zadejte adresu"
+
+msgid "Show in Folder"
+msgstr "Zobrazit ve složce"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Odhlásí vás a smaže soubory cookie, data webů a mezipaměť této aplikace. Nic dalšího se nezmění."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Některá data se nepodařilo smazat: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "Při načítání {host} se něco pokazilo."
+
+msgid "Starting"
+msgstr "Spouštění"
+
+msgid "Starting Tor…"
+msgstr "Spouštění Toru…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Zapnout nebo vypnout ochranu před sledovači pro tento web"
+
+msgid "System default ({language})"
+msgstr "Výchozí v systému ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "Autorita, která certifikát vydala, jej odvolala."
+
+msgid "The bridge line has no address: {line}"
+msgstr "Řádek mostu neobsahuje adresu: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "Certifikát se nepodařilo ověřit."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "Certifikát je podepsán algoritmem, který už není bezpečný."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "Certifikát ještě není platný. Zkontrolujte, zda má tento počítač správné datum a čas."
+
+msgid "The certificate was issued for a different site."
+msgstr "Certifikát byl vydán pro jiný web."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "Certifikát nevydala autorita, které tento počítač důvěřuje."
+
+msgid "The connection to {host} was interrupted."
+msgstr "Spojení s {host} bylo přerušeno."
+
+msgid "The icon at the end of the address bar"
+msgstr "Ikona na konci adresního řádku"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "Jazyk se změní po restartu ZTBrowser"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "Jazyk nabídek, dialogů a zpráv v každém profilu i webové aplikaci."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "Problém je na straně webu. Zkuste to znovu za několik minut."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Web může být vypnutý kvůli údržbě. Zkuste to znovu za několik minut."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Web může být přetížený. Zkuste to znovu za několik minut."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "Mosty {transport} vyžadují program, který není nainstalován; nainstalujte {package}"
+
+msgid "There is no file at {path}."
+msgstr "Na cestě {path} není žádný soubor."
+
+msgid "This address is blocked"
+msgstr "Tato adresa je blokována"
+
+msgid "This connection isn’t private"
+msgstr "Toto připojení není soukromé"
+
+msgid "This page"
+msgstr "Tato stránka"
+
+msgid "This page can’t be found"
+msgstr "Tato stránka nebyla nalezena"
+
+msgid "This page can’t be loaded"
+msgstr "Tuto stránku nelze načíst"
+
+msgid "This page crashed"
+msgstr "Tato stránka spadla"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Tato stránka je na jiném webu, není součástí {name}"
+
+msgid "This page isn’t working"
+msgstr "Tato stránka nefunguje"
+
+msgid "This page ran out of memory"
+msgstr "Této stránce došla paměť"
+
+msgid "This site can’t be found"
+msgstr "Tento web nebyl nalezen"
+
+msgid "This site can’t be reached"
+msgstr "Tento web není dostupný"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Přes prohlížeče dobrovolníků; funguje ve většině cenzurovaných sítí."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Přes prohlížeče dobrovolníků; funguje ve většině cenzurovaných sítí. Vyžaduje {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Tlačítka panelu nástrojů"
+
+msgid "Tor Connection"
+msgstr "Připojení k Toru"
+
+msgid "Tor Connection…"
+msgstr "Připojení k Toru…"
+
+msgid "Tor Window"
+msgstr "Okno Tor"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor nemůže použít cestu {path}"
+
+msgid "Tor closed its control port"
+msgstr "Tor zavřel svůj řídicí port"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor nemohl přepnout okruhy: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor neotevřel svůj řídicí port"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor není nainstalován. Nainstalujte balíček tor své distribuce; okno Tor spouští vlastní Tor a nevyžaduje spuštěnou službu Tor."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor neotevřel žádný místní port SOCKS"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor odmítl: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor ohlásil problém"
+
+msgid "Tor stopped."
+msgstr "Tor se zastavil."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Řídicí cookie Toru je poškozená"
+
+msgid "Tracker Data Set"
+msgstr "Sada dat o sledovačích"
+
+msgid "Tracker protection on this site"
+msgstr "Ochrana před sledovači na tomto webu"
+
+msgid "Try Again"
+msgstr "Zkusit znovu"
+
+msgid "Try again in a few minutes."
+msgstr "Zkuste to znovu za několik minut."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Pokud je zapnutý režim letadla, vypněte ho."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "Převádí filtrační seznamy ZTBrowser Guard na pravidla WebKit. Zdroj: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Odinstalovat"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Neznámý transport mostu: {name}"
+
+msgid "Valid until {date}"
+msgstr "Platný do {date}"
+
+msgid "Your Bridges"
+msgstr "Vaše mosty"
+
+msgid "You’re offline"
+msgstr "Jste offline"
+
+msgid "Zoom In"
+msgstr "Přiblížit"
+
+msgid "Zoom Out"
+msgstr "Oddálit"
+
+msgid "_Allow"
+msgstr "_Povolit"
+
+msgid "_Burn"
+msgstr "_Vymazat"
+
+msgid "_Cancel"
+msgstr "_Zrušit"
+
+msgid "_Deny"
+msgstr "Z_amítnout"
+
+msgid "_Install"
+msgstr "_Nainstalovat"
+
+msgid "_New Identity"
+msgstr "_Nová identita"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) nebo obfs4proxy z AUR (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) nebo snowflake-pt-client z AUR (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} teď nemůže požadavek zpracovat."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} nemohl na tento požadavek odpovědět."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} nenabízí zabezpečené připojení"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} vám nepovoluje zobrazit tuto stránku."
+
+msgid "{host} has no page at this address."
+msgstr "{host} nemá na této adrese žádnou stránku."
+
+msgid "{host} refused the connection."
+msgstr "{host} odmítl připojení."
+
+msgid "{host} took too long to respond."
+msgstr "{host} neodpověděl včas."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} použil více paměti, než smí stránka využít, proto ji ZTBrowser zastavil."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} se otevře ve vlastním okně, se soubory cookie a přihlášeními oddělenými od prohlížeče i všech ostatních aplikací."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — webová aplikace ZTBrowser"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} není argument mostu"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} není adresa IP a port"
+
+msgid "{url} answered {status}"
+msgstr "{url} odpověděla stavem {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} nevrátila očekávaný dokument"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} je větší, než je povoleno"
+
+msgid "{url} is not a valid address"
+msgstr "{url} není platná adresa"
+
+msgid "© their maintainers"
+msgstr "© jejich správci"
+
+msgid "Ask Where to Save Each File"
+msgstr "Ptát se, kam uložit každý soubor"
+
+msgid "Choose Folder"
+msgstr "Vybrat složku"
+
+msgid "Download Folder"
+msgstr "Složka pro stahování"
+
+msgid "Download failed"
+msgstr "Stahování selhalo"
+
+msgid "Downloading…"
+msgstr "Stahování…"
+
+msgid "Downloading… {percent}%"
+msgstr "Stahování… {percent} %"
+
+msgid "Downloads"
+msgstr "Stahování"
+
+msgid "Go to Download Folder"
+msgstr "Přejít do složky pro stahování"
+
+msgid "No downloads yet"
+msgstr "Zatím žádná stažení"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Jinak se soubory ukládají přímo do složky pro stahování"
+
+msgid "Save File"
+msgstr "Uložit soubor"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Pět posledních stažení a složka pro stahování"
+
+msgid "_Save"
+msgstr "_Uložit"
+
+msgid "_Select"
+msgstr "_Vybrat"
+
+msgid "Show All Downloads"
+msgstr "Zobrazit všechna stažení"
+
+msgid "Clear List"
+msgstr "Vymazat seznam"
+
+msgid "Remove from List"
+msgstr "Odebrat ze seznamu"
+
+msgid "Clear History"
+msgstr "Vymazat historii"
+
+msgid "Search Downloads"
+msgstr "Hledat ve stažených souborech"
+
+msgid "File Moved or Deleted"
+msgstr "Soubor byl přesunut nebo odstraněn"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Animuje každý krok kolečka myši. Již otevřené stránky je třeba znovu načíst."
+
+msgid "Scrolling"
+msgstr "Posouvání"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Plynulé posouvání kolečkem myši"
+
+msgid "Details"
+msgstr "Podrobnosti"
+
+msgid "Legal"
+msgstr "Právní ustanovení"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "Tato aplikace je šířena bez jakýchkoliv záruk. Podrobnosti viz {license}."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, verze 3 nebo novější"
+
+msgid "Apache License, Version 2.0"
+msgstr "Apache License, verze 2.0"
+
+msgid "Move to New Window"
+msgstr "Přesunout do nového okna"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Mozilla Public License 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "BSD 3-Clause License"
+
+msgid "Wide Address Bar"
+msgstr "Široký adresní řádek"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "Adresní řádek zabere všechno místo na panelu nástrojů; vypnuto zůstane krátký a uprostřed"
+
+msgid "No apps installed yet"
+msgstr "Zatím není nainstalována žádná aplikace"
+
+msgid "Uninstall {name}?"
+msgstr "Odinstalovat {name}?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Smaže aplikaci spolu s jejími cookies, přihlášeními a daty. Tuto akci nelze vrátit zpět."
+
+msgid "Tab Position"
+msgstr "Umístění karet"
+
+msgid "Top"
+msgstr "Nahoře"
+
+msgid "Bottom"
+msgstr "Dole"
+
+msgid "Left"
+msgstr "Vlevo"
+
+msgid "Right"
+msgstr "Vpravo"
+
+msgid "Window Buttons"
+msgstr "Tlačítka okna"
+
+msgid "Default"
+msgstr "Výchozí"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Přidat profil"
+
+msgid "Delete profile {name}?"
+msgstr "Smazat profil {name}?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Smaže profil spolu s jeho cookies, přihlášeními, historií a mezipamětí. Tuto akci nelze vrátit zpět."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser není váš výchozí prohlížeč"
+
+msgid "Make Default"
+msgstr "Nastavit jako výchozí"
+
+msgid "Don't Ask Again"
+msgstr "Už se neptat"
+
+msgid "Close"
+msgstr "Zavřít"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "ZTBrowser se nepodařilo nastavit jako výchozí prohlížeč: {error}"
+
+msgid "Default Browser"
+msgstr "Výchozí prohlížeč"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "Odkazy z jiných programů otevírá ZTBrowser"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Odkazy z jiných programů otevírá {browser}"
+
+msgid "Another browser opens links from other programs"
+msgstr "Odkazy z jiných programů otevírá jiný prohlížeč"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Odkazy z jiných programů může otevírat jen nainstalovaný ZTBrowser"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Pracovní prostředí neuvádí, který prohlížeč otevírá odkazy"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "Ptát se při spuštění ZTBrowser"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Nabízet nastavení ZTBrowser jako výchozího prohlížeče, když odkazy otevírá jiný prohlížeč"

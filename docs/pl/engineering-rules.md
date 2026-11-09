@@ -1,11 +1,11 @@
-# Zasady inżynierskie InDuckGo
+# Zasady inżynierskie ZTBrowsera
 
-Te zasady dotyczą wyłącznie InDuckGo i uzupełniają reguły globalne z `~/.claude/rules/general.md`.
+Te zasady dotyczą wyłącznie ZTBrowsera i uzupełniają reguły globalne z `~/.claude/rules/general.md`.
 W razie sprzeczności w tym repozytorium obowiązuje ten dokument.
 
 ## 1. Object Oriented Programming First
 
-InDuckGo jest pisany w Ruście. Rust nie ma klas ani dziedziczenia, ale ma wszystko, czego trzeba do
+ZTBrowser jest pisany w Ruście. Rust nie ma klas ani dziedziczenia, ale ma wszystko, czego trzeba do
 programowania obiektowego: **struktury i enumy przechowują stan**, **bloki `impl` przypisują do tego stanu
 zachowanie**, **traity wyrażają polimorfizm**, a **widoczność (`pub` albo prywatne) daje hermetyzację**.
 Korzystamy z tego świadomie i konsekwentnie. Chodzi o to, żeby każde zachowanie miało oczywistego
@@ -44,7 +44,7 @@ właściciela: na pytanie „kto za to odpowiada?” odpowiedzią zawsze jest ja
   wariant dostaje własną implementację. Unikamy dopasowywania znacznika typu w wielu miejscach.
 - Na granicach (porty) zależymy od traitów. Crate domenowy definiuje, czego potrzebuje (np. „zapisz gdzieś
   JSON”), a crate aplikacji dostarcza adaptery (dysk, WebKit, GTK). To zasada odwrócenia zależności
-  (Dependency Inversion) i dzięki niej `induckgo-core` nie zależy od GTK ani WebKit.
+  (Dependency Inversion) i dzięki niej `ztbrowser-core` nie zależy od GTK ani WebKit.
 - Rust nie ma dziedziczenia. Zachowanie współdzielimy przez **kompozycję** (struktura zawiera inną
   strukturę) i domyślne metody traitów.
 
@@ -71,10 +71,10 @@ z czasem życia krótkotrwałych wartości w testach.
 
 ## 2. Granice crate'ów
 
-- `crates/induckgo-core` zawiera logikę domenową niezależną od przeglądarki i nie zależy od żadnego
+- `crates/ztbrowser-core` zawiera logikę domenową niezależną od przeglądarki i nie zależy od żadnego
   crate'a GUI ani WebKit.
-- `crates/induckgo` to aplikacja GTK4 / libadwaita / WebKitGTK, która dopasowuje rdzeń do platformy.
-- Zależności wskazują tylko do środka: `induckgo` → `induckgo-core`, nigdy odwrotnie.
+- `crates/ztbrowser` to aplikacja GTK4 / libadwaita / WebKitGTK, która dopasowuje rdzeń do platformy.
+- Zależności wskazują tylko do środka: `ztbrowser` → `ztbrowser-core`, nigdy odwrotnie.
 
 ## 3. Importy
 

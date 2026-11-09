@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fil\n"
+
+msgid "About ZTBrowser"
+msgstr "Tungkol sa ZTBrowser"
+
+msgid "Access denied"
+msgstr "Tinanggihan ang access"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Payagan ang {requesting} na gamitin ang sarili nitong cookies at data habang nasa {current} ka?"
+
+msgid "Allow {site} to know your location?"
+msgstr "Payagan ang {site} na malaman ang iyong lokasyon?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "Payagan ang {site} na basahin ang iyong clipboard?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "Payagan ang {site} na magpakita ng mga notification?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "Payagan ang {site} na gamitin ang iyong camera at mikropono?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "Payagan ang {site} na gamitin ang iyong camera?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "Payagan ang {site} na gamitin ang iyong mikropono?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "Payagan ang {site} na gamitin ang iyong screen?"
+
+msgid "App data cleared"
+msgstr "Nabura ang data ng app"
+
+msgid "Appearance"
+msgstr "Hitsura"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "Ilalapat sa susunod na pagsisimula ng ZTBrowser"
+
+msgid "Asking for relay descriptors"
+msgstr "Humihingi ng mga relay descriptor"
+
+msgid "Asking for the network status"
+msgstr "Humihingi ng status ng network"
+
+msgid "Back"
+msgstr "Bumalik"
+
+msgid "Back and Forward"
+msgstr "Bumalik at Sumulong"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Pinakamainam kung saan hindi naka-block ang Tor."
+
+msgid "Bridges I provide"
+msgstr "Mga bridge na ako ang nagbibigay"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Ang mga bridge ay mga hindi nakalistang Tor relay para sa mga network na nagba-block ng Tor."
+
+msgid "Browsing data burned"
+msgstr "Nabura ang data sa pagba-browse"
+
+msgid "Burn Browsing Data"
+msgstr "Burahin ang Data sa Pagba-browse"
+
+msgid "Burn Browsing Data?"
+msgstr "Burahin ang Data sa Pagba-browse?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Mga button na ipinapakita sa paligid ng address bar sa mga window ng profile na ito."
+
+msgid "C_lear"
+msgstr "_Linisin"
+
+msgid "Cannot Connect to Tor"
+msgstr "Hindi makakonekta sa Tor"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Hindi maabot ang control port ng Tor: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Hindi mabasa ang control cookie ng Tor: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Hindi maalis ang lumang file ng control port ng Tor: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "Hindi ma-save ang download: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Hindi masimulan ang Tor: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Hindi maisulat ang configuration ng Tor: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Hindi makapagsulat sa control port ng Tor: {error}"
+
+msgid "Certificate for {name}"
+msgstr "Certificate para sa {name}"
+
+msgid "Check the address for a typo."
+msgstr "Tingnan kung may typo ang address."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Tingnan ang address, kasama ang port number pagkatapos ng colon, kung mayroon."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Tingnan ang network cable o ang koneksyon sa Wi-Fi."
+
+msgid "Check your internet connection."
+msgstr "Tingnan ang iyong koneksyon sa internet."
+
+msgid "Clear App Data…"
+msgstr "Burahin ang Data ng App…"
+
+msgid "Clear Data of {name}?"
+msgstr "Burahin ang Data ng {name}?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Isara ang mga tab o app na hindi mo kailangan, pagkatapos ay i-reload ang pahina."
+
+msgid "Close {name} before deleting it"
+msgstr "Isara ang {name} bago ito burahin"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Isinasara nito ang lahat ng tab at window ng profile na ito at binubura ang mga cookie, data ng site, cache at history nito."
+
+msgid "Connect"
+msgstr "Kumonekta"
+
+msgid "Connect directly"
+msgstr "Direktang kumonekta"
+
+msgid "Connected"
+msgstr "Nakakonekta"
+
+msgid "Connected to a relay directory server"
+msgstr "Nakakonekta sa isang relay directory server"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Nakakonekta sa isang relay para bumuo ng mga circuit"
+
+msgid "Connected to pluggable transport"
+msgstr "Nakakonekta sa pluggable transport"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Nakakonekta sa pluggable transport para bumuo ng mga circuit"
+
+msgid "Connected to proxy"
+msgstr "Nakakonekta sa proxy"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Nakakonekta sa proxy para bumuo ng mga circuit"
+
+msgid "Connected to the Tor network"
+msgstr "Nakakonekta sa network ng Tor"
+
+msgid "Connecting to Tor"
+msgstr "Kumokonekta sa Tor"
+
+msgid "Connecting to a relay directory server"
+msgstr "Kumokonekta sa isang relay directory server"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Kumokonekta sa isang relay para bumuo ng mga circuit"
+
+msgid "Connecting to pluggable transport"
+msgstr "Kumokonekta sa pluggable transport"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Kumokonekta sa pluggable transport para bumuo ng mga circuit"
+
+msgid "Connecting to proxy"
+msgstr "Kumokonekta sa proxy"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Kumokonekta sa proxy para bumuo ng mga circuit"
+
+msgid "Connection Settings…"
+msgstr "Mga Setting ng Koneksyon…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, ang privacy configuration at ang TrackerRadarKit rule algorithm."
+
+msgid "Could not install the app: {error}"
+msgstr "Hindi ma-install ang app: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Hindi maalis ang lahat: {error}"
+
+msgid "Delete"
+msgstr "Burahin"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Burahin ang mga cookie, data ng site at cache ng profile na ito"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Mga disguised na koneksyon sa mga built-in na bridge ng Tor Browser."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Mga disguised na koneksyon sa mga built-in na bridge ng Tor Browser. Kailangan ang {package}."
+
+msgid "Download failed: {error}"
+msgstr "Nabigo ang pag-download: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Dina-download sa oras ng pagpapatakbo mula sa DuckDuckGo; lisensyado sa ilalim ng CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "Na-download ang {name}"
+
+msgid "DuckDuckGo protections"
+msgstr "Mga proteksyon ng DuckDuckGo"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Tumatakbo ang bawat app sa sarili nitong window at process, na may sarili nitong cookies at mga login."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Pinapanatili ng bawat profile ang sarili nitong cookies, mga login, history at cache, at tumatakbo bilang hiwalay na process."
+
+msgid "Establishing a Tor circuit"
+msgstr "Bumubuo ng Tor circuit"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Bumubuo ng naka-encrypt na koneksyon sa directory"
+
+msgid "File not found"
+msgstr "Hindi nahanap ang file"
+
+msgid "Find in Page…"
+msgstr "Maghanap sa Pahina…"
+
+msgid "Find in page"
+msgstr "Maghanap sa pahina"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Tapos na ang handshake sa isang relay directory server"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Tapos na ang handshake sa isang relay para bumuo ng mga circuit"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Tinatapos ang handshake sa isang relay directory server"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Tinatapos ang handshake sa isang relay para bumuo ng mga circuit"
+
+msgid "Forward"
+msgstr "Sumulong"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "Mula sa bridges.torproject.org, sa e-mail o mula sa isang kaibigan."
+
+msgid "Go to Home Page"
+msgstr "Pumunta sa Home Page"
+
+msgid "Go to the previous or next page"
+msgstr "Pumunta sa nakaraan o susunod na pahina"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Pumunta sa home page ng site at hanapin ang pahina mula roon."
+
+msgid "How to Reach Tor"
+msgstr "Paano Maabot ang Tor"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Kung mag-crash ulit ito pagkatapos mag-reload, maaaring sira ang mismong pahina."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Kung tama ang address, maaaring wala na ang site."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Kung may account ka sa site na ito, mag-sign in at subukan muli."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "Kung gumagamit ka ng VPN o sarili mong DNS server, tiyaking gumagana ito."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "Kung gumagamit ka ng VPN, firewall o proxy, tiyaking hindi nito bina-block ang site."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "Mga filter list ng ZTBrowser Guard"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "Hindi mabuksan ng ZTBrowser ang {host} dahil hindi nakakonekta sa network ang computer na ito."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "Walang nakitang server ang ZTBrowser sa {host}."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "Hindi kumokonekta ang ZTBrowser sa {host} sa port na ito."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "Kumokonekta ang sariling Tor ng ZTBrowser. Walang lalabas sa window na ito hangga't hindi ito nakakonekta."
+
+msgid "Install Site as App"
+msgstr "I-install ang Site bilang App"
+
+msgid "Install Site as App…"
+msgstr "I-install ang Site bilang App…"
+
+msgid "Install as App"
+msgstr "I-install bilang App"
+
+msgid "Installed Apps"
+msgstr "Mga Naka-install na App"
+
+msgid "Installed Apps…"
+msgstr "Mga Naka-install na App…"
+
+msgid "Installed {name}"
+msgstr "Na-install ang {name}"
+
+msgid "Interface"
+msgstr "Interface"
+
+msgid "Issued by {name}"
+msgstr "Inilabas ng {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Maaaring inilipat, pinalitan ng pangalan o binura ito."
+
+msgid "Language"
+msgstr "Wika"
+
+msgid "Load Insecure Page"
+msgstr "I-load ang Hindi Ligtas na Pahina"
+
+msgid "Load the page again, or stop loading it"
+msgstr "I-load muli ang pahina, o ihinto ang pag-load"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Nakapag-load ng sapat na impormasyon ng directory para bumuo ng mga circuit"
+
+msgid "Loading authority certificates"
+msgstr "Nilo-load ang mga authority certificate"
+
+msgid "Loading relay descriptors"
+msgstr "Nilo-load ang mga relay descriptor"
+
+msgid "Loading the network status"
+msgstr "Nilo-load ang status ng network"
+
+msgid "Main Menu"
+msgstr "Pangunahing Menu"
+
+msgid "Manage Profiles…"
+msgstr "Pamahalaan ang mga Profile…"
+
+msgid "New Identity"
+msgstr "Bagong Identity"
+
+msgid "New Identity?"
+msgstr "Bagong Identity?"
+
+msgid "New Tab"
+msgstr "Bagong Tab"
+
+msgid "New Tor Window"
+msgstr "Bagong Tor Window"
+
+msgid "New Window"
+msgstr "Bagong Window"
+
+msgid "New identity"
+msgstr "Bagong identity"
+
+msgid "New profile name"
+msgstr "Pangalan ng bagong profile"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "Isang bridge bawat linya, halimbawa: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Mga web page lang ang maaaring i-install bilang app"
+
+msgid "Open"
+msgstr "Buksan"
+
+msgid "Open Page in Browser"
+msgstr "Buksan ang Pahina sa Browser"
+
+msgid "Open a new tab"
+msgstr "Magbukas ng bagong tab"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Magbukas ng window na dumadaan lang sa Tor ang trapiko"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Hindi nagbubukas ang ibang application mula sa Tor window: kokonekta ang mga ito sa labas ng Tor."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Hindi bubuksan ang mga pahina hangga't hindi nakakonekta ang Tor window."
+
+msgid "Paste at least one bridge."
+msgstr "Mag-paste ng kahit isang bridge."
+
+msgid "Preferences"
+msgstr "Mga Kagustuhan"
+
+msgid "Preferences…"
+msgstr "Mga Kagustuhan…"
+
+msgid "Profiles"
+msgstr "Mga Profile"
+
+msgid "Protect This Site"
+msgstr "Protektahan ang Site na Ito"
+
+msgid "Protection Shield"
+msgstr "Protection Shield"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Nabigo ang pagbasa sa control port ng Tor: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "Muling ikonekta ang iyong VPN, kung gumagamit ka nito."
+
+msgid "Reload"
+msgstr "I-reload"
+
+msgid "Reload Page"
+msgstr "I-reload ang Pahina"
+
+msgid "Reset Zoom"
+msgstr "I-reset ang Zoom"
+
+msgid "Search Engine"
+msgstr "Search Engine"
+
+msgid "Search {engine}"
+msgstr "Maghanap sa {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "Maghanap sa {engine} o maglagay ng address"
+
+msgid "Show in Folder"
+msgstr "Ipakita sa Folder"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Sine-sign out ka nito at binubura ang mga cookie, data ng site at cache ng app na ito. Walang ibang maaapektuhan."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "May data na hindi nabura: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "May nangyaring mali habang nilo-load ang {host}."
+
+msgid "Starting"
+msgstr "Nagsisimula"
+
+msgid "Starting Tor…"
+msgstr "Sinisimulan ang Tor…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "I-off o i-on ang proteksyon laban sa tracker para sa site"
+
+msgid "System default ({language})"
+msgstr "Default ng system ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "Binawi na ng awtoridad na nag-isyu ng certificate ang certificate."
+
+msgid "The bridge line has no address: {line}"
+msgstr "Walang address ang linya ng bridge: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "Hindi ma-verify ang certificate."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "Nilagdaan ang certificate gamit ang algorithm na hindi na ligtas."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "Hindi pa wasto ang certificate. Tiyaking tama ang petsa at oras ng computer na ito."
+
+msgid "The certificate was issued for a different site."
+msgstr "Inisyu ang certificate para sa ibang site."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "Hindi inisyu ang certificate ng awtoridad na pinagkakatiwalaan ng computer na ito."
+
+msgid "The connection to {host} was interrupted."
+msgstr "Naantala ang koneksyon sa {host}."
+
+msgid "The icon at the end of the address bar"
+msgstr "Ang icon sa dulo ng address bar"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "Magbabago ang wika kapag nag-restart ang ZTBrowser"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "Ang wika ng mga menu, dialog at mensahe, sa bawat profile at web app."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "Nasa panig ng site ang problema. Subukan muli sa loob ng ilang minuto."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Maaaring naka-down ang site para sa maintenance. Subukan muli sa loob ng ilang minuto."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Maaaring overloaded ang site. Subukan muli sa loob ng ilang minuto."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "Kailangan ng mga {transport} bridge ng program na hindi naka-install; i-install ang {package}"
+
+msgid "There is no file at {path}."
+msgstr "Walang file sa {path}."
+
+msgid "This address is blocked"
+msgstr "Naka-block ang address na ito"
+
+msgid "This connection isn’t private"
+msgstr "Hindi pribado ang koneksyong ito"
+
+msgid "This page"
+msgstr "Ang pahinang ito"
+
+msgid "This page can’t be found"
+msgstr "Hindi mahanap ang pahinang ito"
+
+msgid "This page can’t be loaded"
+msgstr "Hindi ma-load ang pahinang ito"
+
+msgid "This page crashed"
+msgstr "Nag-crash ang pahinang ito"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Nasa ibang site ang pahinang ito, hindi bahagi ng {name}"
+
+msgid "This page isn’t working"
+msgstr "Hindi gumagana ang pahinang ito"
+
+msgid "This page ran out of memory"
+msgstr "Naubusan ng memory ang pahinang ito"
+
+msgid "This site can’t be found"
+msgstr "Hindi mahanap ang site na ito"
+
+msgid "This site can’t be reached"
+msgstr "Hindi maabot ang site na ito"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Sa pamamagitan ng mga browser ng mga boluntaryo; gumagana sa karamihan ng mga network na may censorship."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Sa pamamagitan ng mga browser ng mga boluntaryo; gumagana sa karamihan ng mga network na may censorship. Kailangan ang {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Mga Button ng Toolbar"
+
+msgid "Tor Connection"
+msgstr "Koneksyon sa Tor"
+
+msgid "Tor Connection…"
+msgstr "Koneksyon sa Tor…"
+
+msgid "Tor Window"
+msgstr "Tor Window"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Hindi magagamit ng Tor ang path na {path}"
+
+msgid "Tor closed its control port"
+msgstr "Isinara ng Tor ang control port nito"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Hindi nakapagpalit ng circuit ang Tor: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Hindi binuksan ng Tor ang control port nito"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Hindi naka-install ang Tor. I-install ang tor package ng iyong distribution; sinisimulan ng Tor window ang sarili nitong Tor at hindi nito kailangan ng tumatakbong Tor service."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Walang binuksang lokal na SOCKS port ang Tor"
+
+msgid "Tor refused: {reason}"
+msgstr "Tumanggi ang Tor: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Nag-ulat ng problema ang Tor"
+
+msgid "Tor stopped."
+msgstr "Huminto ang Tor."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Sira ang control cookie ng Tor"
+
+msgid "Tracker Data Set"
+msgstr "Tracker Data Set"
+
+msgid "Tracker protection on this site"
+msgstr "Proteksyon laban sa tracker sa site na ito"
+
+msgid "Try Again"
+msgstr "Subukan Muli"
+
+msgid "Try again in a few minutes."
+msgstr "Subukan muli sa loob ng ilang minuto."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "I-off ang airplane mode, kung naka-on ito."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "Ginagawang mga rule ng WebKit ang mga filter list ng ZTBrowser Guard. Pinagmulan: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "I-uninstall"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Hindi kilalang bridge transport: {name}"
+
+msgid "Valid until {date}"
+msgstr "Wasto hanggang {date}"
+
+msgid "Your Bridges"
+msgstr "Ang Iyong mga Bridge"
+
+msgid "You’re offline"
+msgstr "Offline ka"
+
+msgid "Zoom In"
+msgstr "Mag-zoom In"
+
+msgid "Zoom Out"
+msgstr "Mag-zoom Out"
+
+msgid "_Allow"
+msgstr "_Payagan"
+
+msgid "_Burn"
+msgstr "_Burahin"
+
+msgid "_Cancel"
+msgstr "_Kanselahin"
+
+msgid "_Deny"
+msgstr "_Tanggihan"
+
+msgid "_Install"
+msgstr "_I-install"
+
+msgid "_New Identity"
+msgstr "Bagong _Identity"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) o obfs4proxy mula sa AUR (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) o snowflake-pt-client mula sa AUR (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "Hindi kayang asikasuhin ng {host} ang request ngayon."
+
+msgid "{host} couldn’t answer this request."
+msgstr "Hindi nasagot ng {host} ang request na ito."
+
+msgid "{host} does not offer a secure connection"
+msgstr "Hindi nag-aalok ang {host} ng ligtas na koneksyon"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "Hindi ka pinapayagan ng {host} na makita ang pahinang ito."
+
+msgid "{host} has no page at this address."
+msgstr "Walang pahina ang {host} sa address na ito."
+
+msgid "{host} refused the connection."
+msgstr "Tinanggihan ng {host} ang koneksyon."
+
+msgid "{host} took too long to respond."
+msgstr "Masyadong natagalan ang {host} sa pagtugon."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "Gumamit ang {host} ng mas maraming memory kaysa sa pinapayagan sa isang pahina, kaya itinigil ito ng ZTBrowser."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "Magbubukas ang {host} sa sarili nitong window, na magkahiwalay ang cookies at mga login sa browser at sa bawat ibang app."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — web app ng ZTBrowser"
+
+msgid "{text} is not a bridge argument"
+msgstr "Hindi argumento ng bridge ang {text}"
+
+msgid "{text} is not an IP address and port"
+msgstr "Hindi IP address at port ang {text}"
+
+msgid "{url} answered {status}"
+msgstr "Sumagot ang {url} ng {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "Hindi ibinalik ng {url} ang inaasahang dokumento"
+
+msgid "{url} is larger than allowed"
+msgstr "Mas malaki ang {url} kaysa sa pinapayagan"
+
+msgid "{url} is not a valid address"
+msgstr "Hindi wastong address ang {url}"
+
+msgid "© their maintainers"
+msgstr "© ang kanilang mga maintainer"
+
+msgid "Ask Where to Save Each File"
+msgstr "Itanong kung saan ise-save ang bawat file"
+
+msgid "Choose Folder"
+msgstr "Pumili ng folder"
+
+msgid "Download Folder"
+msgstr "Folder ng mga download"
+
+msgid "Download failed"
+msgstr "Nabigo ang pag-download"
+
+msgid "Downloading…"
+msgstr "Nagda-download…"
+
+msgid "Downloading… {percent}%"
+msgstr "Nagda-download… {percent}%"
+
+msgid "Downloads"
+msgstr "Mga download"
+
+msgid "Go to Download Folder"
+msgstr "Pumunta sa folder ng mga download"
+
+msgid "No downloads yet"
+msgstr "Wala pang mga download"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Kung hindi, direktang mapupunta ang mga file sa folder ng mga download"
+
+msgid "Save File"
+msgstr "I-save ang file"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Ang limang pinakabagong download, at ang folder ng mga download"
+
+msgid "_Save"
+msgstr "I-_save"
+
+msgid "_Select"
+msgstr "_Piliin"
+
+msgid "Show All Downloads"
+msgstr "Ipakita ang Lahat ng Download"
+
+msgid "Clear List"
+msgstr "I-clear ang Listahan"
+
+msgid "Remove from List"
+msgstr "Alisin sa Listahan"
+
+msgid "Clear History"
+msgstr "I-clear ang History"
+
+msgid "Search Downloads"
+msgstr "Maghanap sa Mga Download"
+
+msgid "File Moved or Deleted"
+msgstr "Inilipat o Binura ang File"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Ina-animate ang bawat hakbang ng gulong ng mouse. Kailangang i-reload ang mga pahinang bukas na."
+
+msgid "Scrolling"
+msgstr "Pag-scroll"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Maayos na pag-scroll gamit ang gulong ng mouse"
+
+msgid "Details"
+msgstr "Mga Detalye"
+
+msgid "Legal"
+msgstr "Ligal"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "Walang anumang warranty na kasama sa aplikasyong ito. Sumangguni sa {license} para sa higit pang detalye."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, bersyon 3 o mas bago"
+
+msgid "Apache License, Version 2.0"
+msgstr "Apache License, Bersyon 2.0"
+
+msgid "Move to New Window"
+msgstr "Ilipat sa bagong window"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Mozilla Public License 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "BSD 3-Clause License"
+
+msgid "Wide Address Bar"
+msgstr "Malapad na address bar"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "Pinupunan ng address bar ang buong espasyo sa toolbar; kapag naka-off, nananatili itong maikli at nasa gitna"
+
+msgid "No apps installed yet"
+msgstr "Wala pang naka-install na app"
+
+msgid "Uninstall {name}?"
+msgstr "I-uninstall ang {name}?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Binubura ang app kasama ang mga cookie, login at data nito. Hindi na ito mababawi."
+
+msgid "Tab Position"
+msgstr "Posisyon ng mga tab"
+
+msgid "Top"
+msgstr "Itaas"
+
+msgid "Bottom"
+msgstr "Ibaba"
+
+msgid "Left"
+msgstr "Kaliwa"
+
+msgid "Right"
+msgstr "Kanan"
+
+msgid "Window Buttons"
+msgstr "Mga button ng window"
+
+msgid "Default"
+msgstr "Default"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Magdagdag ng profile"
+
+msgid "Delete profile {name}?"
+msgstr "Burahin ang profile na {name}?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Binubura ang profile kasama ang mga cookie, login, history at cache nito. Hindi na ito mababawi."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "Hindi ang ZTBrowser ang iyong default na browser"
+
+msgid "Make Default"
+msgstr "Gawing Default"
+
+msgid "Don't Ask Again"
+msgstr "Huwag Nang Itanong Muli"
+
+msgid "Close"
+msgstr "Isara"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "Hindi magawang default na browser ang ZTBrowser: {error}"
+
+msgid "Default Browser"
+msgstr "Default na Browser"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "Binubuksan ng ZTBrowser ang mga link mula sa ibang programa"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Nagbubukas sa {browser} ang mga link mula sa ibang programa"
+
+msgid "Another browser opens links from other programs"
+msgstr "Ibang browser ang nagbubukas ng mga link mula sa ibang programa"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Ang naka-install na ZTBrowser lang ang makapagbubukas ng mga link mula sa ibang programa"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Hindi sinasabi ng desktop kung aling browser ang nagbubukas ng mga link"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "Magtanong Kapag Nagsimula ang ZTBrowser"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Mag-alok na gawing default na browser ang ZTBrowser habang ibang browser ang nagbubukas ng mga link"

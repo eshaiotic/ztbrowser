@@ -1,0 +1,890 @@
+# Messages of ZTBrowser's interface, written in English. Translate each msgid into the msgstr below it;
+# keep every {placeholder} exactly as written (it may move within the sentence).
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "About ZTBrowser"
+msgstr ""
+
+msgid "Access denied"
+msgstr ""
+
+msgid "Add Profile"
+msgstr ""
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr ""
+
+msgid "Allow {site} to know your location?"
+msgstr ""
+
+msgid "Allow {site} to read your clipboard?"
+msgstr ""
+
+msgid "Allow {site} to show notifications?"
+msgstr ""
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr ""
+
+msgid "Allow {site} to use your camera?"
+msgstr ""
+
+msgid "Allow {site} to use your microphone?"
+msgstr ""
+
+msgid "Allow {site} to use your screen?"
+msgstr ""
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr ""
+
+msgid "Another browser opens links from other programs"
+msgstr ""
+
+msgid "Apache License, Version 2.0"
+msgstr ""
+
+msgid "App data cleared"
+msgstr ""
+
+msgid "Appearance"
+msgstr ""
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr ""
+
+msgid "Ask When ZTBrowser Starts"
+msgstr ""
+
+msgid "Ask Where to Save Each File"
+msgstr ""
+
+msgid "Asking for relay descriptors"
+msgstr ""
+
+msgid "Asking for the network status"
+msgstr ""
+
+msgid "BSD 3-Clause License"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Back and Forward"
+msgstr ""
+
+msgid "Best wherever Tor is not blocked."
+msgstr ""
+
+msgid "Bottom"
+msgstr ""
+
+msgid "Bridges I provide"
+msgstr ""
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr ""
+
+msgid "Browsing data burned"
+msgstr ""
+
+msgid "Burn Browsing Data"
+msgstr ""
+
+msgid "Burn Browsing Data?"
+msgstr ""
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr ""
+
+msgid "C_lear"
+msgstr ""
+
+msgid "Cannot Connect to Tor"
+msgstr ""
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr ""
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr ""
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr ""
+
+msgid "Cannot save download: {error}"
+msgstr ""
+
+msgid "Cannot start Tor: {error}"
+msgstr ""
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr ""
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr ""
+
+msgid "Certificate for {name}"
+msgstr ""
+
+msgid "Check the address for a typo."
+msgstr ""
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr ""
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr ""
+
+msgid "Check your internet connection."
+msgstr ""
+
+msgid "Choose Folder"
+msgstr ""
+
+msgid "Clear App Data…"
+msgstr ""
+
+msgid "Clear Data of {name}?"
+msgstr ""
+
+msgid "Clear History"
+msgstr ""
+
+msgid "Clear List"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr ""
+
+msgid "Close {name} before deleting it"
+msgstr ""
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr ""
+
+msgid "Connect"
+msgstr ""
+
+msgid "Connect directly"
+msgstr ""
+
+msgid "Connected"
+msgstr ""
+
+msgid "Connected to a relay directory server"
+msgstr ""
+
+msgid "Connected to a relay to build circuits"
+msgstr ""
+
+msgid "Connected to pluggable transport"
+msgstr ""
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr ""
+
+msgid "Connected to proxy"
+msgstr ""
+
+msgid "Connected to proxy to build circuits"
+msgstr ""
+
+msgid "Connected to the Tor network"
+msgstr ""
+
+msgid "Connecting to Tor"
+msgstr ""
+
+msgid "Connecting to a relay directory server"
+msgstr ""
+
+msgid "Connecting to a relay to build circuits"
+msgstr ""
+
+msgid "Connecting to pluggable transport"
+msgstr ""
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr ""
+
+msgid "Connecting to proxy"
+msgstr ""
+
+msgid "Connecting to proxy to build circuits"
+msgstr ""
+
+msgid "Connection Settings…"
+msgstr ""
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr ""
+
+msgid "Could not install the app: {error}"
+msgstr ""
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr ""
+
+msgid "Could not remove everything: {error}"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Default Browser"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete profile {name}?"
+msgstr ""
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr ""
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr ""
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr ""
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr ""
+
+msgid "Don't Ask Again"
+msgstr ""
+
+msgid "Download Folder"
+msgstr ""
+
+msgid "Download failed"
+msgstr ""
+
+msgid "Download failed: {error}"
+msgstr ""
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr ""
+
+msgid "Downloaded {name}"
+msgstr ""
+
+msgid "Downloading…"
+msgstr ""
+
+msgid "Downloading… {percent}%"
+msgstr ""
+
+msgid "Downloads"
+msgstr ""
+
+msgid "DuckDuckGo protections"
+msgstr ""
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr ""
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr ""
+
+msgid "Establishing a Tor circuit"
+msgstr ""
+
+msgid "Establishing an encrypted directory connection"
+msgstr ""
+
+msgid "File Moved or Deleted"
+msgstr ""
+
+msgid "File not found"
+msgstr ""
+
+msgid "Find in Page…"
+msgstr ""
+
+msgid "Find in page"
+msgstr ""
+
+msgid "Finished handshake with a relay directory server"
+msgstr ""
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr ""
+
+msgid "Finishing handshake with a relay directory server"
+msgstr ""
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr ""
+
+msgid "Forward"
+msgstr ""
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr ""
+
+msgid "GNU General Public License, version 3 or later"
+msgstr ""
+
+msgid "Go to Download Folder"
+msgstr ""
+
+msgid "Go to Home Page"
+msgstr ""
+
+msgid "Go to the previous or next page"
+msgstr ""
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr ""
+
+msgid "How to Reach Tor"
+msgstr ""
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr ""
+
+msgid "If the address is right, the site may no longer exist."
+msgstr ""
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr ""
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr ""
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr ""
+
+msgid "Install Site as App"
+msgstr ""
+
+msgid "Install Site as App…"
+msgstr ""
+
+msgid "Install as App"
+msgstr ""
+
+msgid "Installed Apps"
+msgstr ""
+
+msgid "Installed Apps…"
+msgstr ""
+
+msgid "Installed {name}"
+msgstr ""
+
+msgid "Interface"
+msgstr ""
+
+msgid "Issued by {name}"
+msgstr ""
+
+msgid "It may have been moved, renamed or deleted."
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Legal"
+msgstr ""
+
+msgid "Links from other programs open in {browser}"
+msgstr ""
+
+msgid "Load Insecure Page"
+msgstr ""
+
+msgid "Load the page again, or stop loading it"
+msgstr ""
+
+msgid "Loaded enough directory information to build circuits"
+msgstr ""
+
+msgid "Loading authority certificates"
+msgstr ""
+
+msgid "Loading relay descriptors"
+msgstr ""
+
+msgid "Loading the network status"
+msgstr ""
+
+msgid "Main Menu"
+msgstr ""
+
+msgid "Make Default"
+msgstr ""
+
+msgid "Manage Profiles…"
+msgstr ""
+
+msgid "Move to New Window"
+msgstr ""
+
+msgid "Mozilla Public License 2.0"
+msgstr ""
+
+msgid "New Identity"
+msgstr ""
+
+msgid "New Identity?"
+msgstr ""
+
+msgid "New Tab"
+msgstr ""
+
+msgid "New Tor Window"
+msgstr ""
+
+msgid "New Window"
+msgstr ""
+
+msgid "New identity"
+msgstr ""
+
+msgid "New profile name"
+msgstr ""
+
+msgid "No apps installed yet"
+msgstr ""
+
+msgid "No downloads yet"
+msgstr ""
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr ""
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr ""
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr ""
+
+msgid "Only web pages can be installed as apps"
+msgstr ""
+
+msgid "Open"
+msgstr ""
+
+msgid "Open Page in Browser"
+msgstr ""
+
+msgid "Open a new tab"
+msgstr ""
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr ""
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr ""
+
+msgid "Otherwise files go straight to the download folder"
+msgstr ""
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr ""
+
+msgid "Paste at least one bridge."
+msgstr ""
+
+msgid "Preferences"
+msgstr ""
+
+msgid "Preferences…"
+msgstr ""
+
+msgid "Profiles"
+msgstr ""
+
+msgid "Protect This Site"
+msgstr ""
+
+msgid "Protection Shield"
+msgstr ""
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr ""
+
+msgid "Reconnect your VPN, if you use one."
+msgstr ""
+
+msgid "Reload"
+msgstr ""
+
+msgid "Reload Page"
+msgstr ""
+
+msgid "Remove from List"
+msgstr ""
+
+msgid "Reset Zoom"
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "Save File"
+msgstr ""
+
+msgid "Scrolling"
+msgstr ""
+
+msgid "Search Downloads"
+msgstr ""
+
+msgid "Search Engine"
+msgstr ""
+
+msgid "Search {engine}"
+msgstr ""
+
+msgid "Search {engine} or enter address"
+msgstr ""
+
+msgid "Show All Downloads"
+msgstr ""
+
+msgid "Show in Folder"
+msgstr ""
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr ""
+
+msgid "Smooth mouse wheel scrolling"
+msgstr ""
+
+msgid "Some data could not be deleted: {error}"
+msgstr ""
+
+msgid "Something went wrong while loading {host}."
+msgstr ""
+
+msgid "Starting"
+msgstr ""
+
+msgid "Starting Tor…"
+msgstr ""
+
+msgid "Switch tracker protection off or on for the site"
+msgstr ""
+
+msgid "System default ({language})"
+msgstr ""
+
+msgid "Tab Position"
+msgstr ""
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr ""
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr ""
+
+msgid "The bridge line has no address: {line}"
+msgstr ""
+
+msgid "The certificate could not be verified."
+msgstr ""
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr ""
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr ""
+
+msgid "The certificate was issued for a different site."
+msgstr ""
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr ""
+
+msgid "The connection to {host} was interrupted."
+msgstr ""
+
+msgid "The desktop does not say which browser opens links"
+msgstr ""
+
+msgid "The five latest downloads, and the download folder"
+msgstr ""
+
+msgid "The icon at the end of the address bar"
+msgstr ""
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr ""
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr ""
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr ""
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr ""
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr ""
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr ""
+
+msgid "There is no file at {path}."
+msgstr ""
+
+msgid "This address is blocked"
+msgstr ""
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr ""
+
+msgid "This connection isn’t private"
+msgstr ""
+
+msgid "This page"
+msgstr ""
+
+msgid "This page can’t be found"
+msgstr ""
+
+msgid "This page can’t be loaded"
+msgstr ""
+
+msgid "This page crashed"
+msgstr ""
+
+msgid "This page is on another site, not part of {name}"
+msgstr ""
+
+msgid "This page isn’t working"
+msgstr ""
+
+msgid "This page ran out of memory"
+msgstr ""
+
+msgid "This site can’t be found"
+msgstr ""
+
+msgid "This site can’t be reached"
+msgstr ""
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr ""
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr ""
+
+msgid "Toolbar Buttons"
+msgstr ""
+
+msgid "Top"
+msgstr ""
+
+msgid "Tor Connection"
+msgstr ""
+
+msgid "Tor Connection…"
+msgstr ""
+
+msgid "Tor Window"
+msgstr ""
+
+msgid "Tor cannot use the path {path}"
+msgstr ""
+
+msgid "Tor closed its control port"
+msgstr ""
+
+msgid "Tor could not switch circuits: {error}"
+msgstr ""
+
+msgid "Tor did not open its control port"
+msgstr ""
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr ""
+
+msgid "Tor opened no local SOCKS port"
+msgstr ""
+
+msgid "Tor refused: {reason}"
+msgstr ""
+
+msgid "Tor reported a problem"
+msgstr ""
+
+msgid "Tor stopped."
+msgstr ""
+
+msgid "Tor's control cookie is damaged"
+msgstr ""
+
+msgid "Tracker Data Set"
+msgstr ""
+
+msgid "Tracker protection on this site"
+msgstr ""
+
+msgid "Try Again"
+msgstr ""
+
+msgid "Try again in a few minutes."
+msgstr ""
+
+msgid "Turn off airplane mode, if it is on."
+msgstr ""
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr ""
+
+msgid "Uninstall"
+msgstr ""
+
+msgid "Uninstall {name}?"
+msgstr ""
+
+msgid "Unknown bridge transport: {name}"
+msgstr ""
+
+msgid "Valid until {date}"
+msgstr ""
+
+msgid "Wide Address Bar"
+msgstr ""
+
+msgid "Window Buttons"
+msgstr ""
+
+msgid "Your Bridges"
+msgstr ""
+
+msgid "You’re offline"
+msgstr ""
+
+msgid "ZTBrowser Guard filter lists"
+msgstr ""
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr ""
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr ""
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr ""
+
+msgid "ZTBrowser is not your default browser"
+msgstr ""
+
+msgid "ZTBrowser opens links from other programs"
+msgstr ""
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr ""
+
+msgid "Zoom In"
+msgstr ""
+
+msgid "Zoom Out"
+msgstr ""
+
+msgid "_Allow"
+msgstr ""
+
+msgid "_Burn"
+msgstr ""
+
+msgid "_Cancel"
+msgstr ""
+
+msgid "_Deny"
+msgstr ""
+
+msgid "_Install"
+msgstr ""
+
+msgid "_New Identity"
+msgstr ""
+
+msgid "_Save"
+msgstr ""
+
+msgid "_Select"
+msgstr ""
+
+msgid "macOS"
+msgstr ""
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr ""
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr ""
+
+msgid "{host} can’t handle the request right now."
+msgstr ""
+
+msgid "{host} couldn’t answer this request."
+msgstr ""
+
+msgid "{host} does not offer a secure connection"
+msgstr ""
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr ""
+
+msgid "{host} has no page at this address."
+msgstr ""
+
+msgid "{host} refused the connection."
+msgstr ""
+
+msgid "{host} took too long to respond."
+msgstr ""
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr ""
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr ""
+
+msgid "{host} — ZTBrowser web app"
+msgstr ""
+
+msgid "{text} is not a bridge argument"
+msgstr ""
+
+msgid "{text} is not an IP address and port"
+msgstr ""
+
+msgid "{url} answered {status}"
+msgstr ""
+
+msgid "{url} did not return the expected document"
+msgstr ""
+
+msgid "{url} is larger than allowed"
+msgstr ""
+
+msgid "{url} is not a valid address"
+msgstr ""
+
+msgid "© their maintainers"
+msgstr ""

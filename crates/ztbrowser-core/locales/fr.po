@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "About ZTBrowser"
+msgstr "À propos de ZTBrowser"
+
+msgid "Access denied"
+msgstr "Accès refusé"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Autoriser {requesting} à utiliser ses cookies et ses données pendant que vous êtes sur {current} ?"
+
+msgid "Allow {site} to know your location?"
+msgstr "Autoriser {site} à connaître votre position ?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "Autoriser {site} à lire votre presse-papiers ?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "Autoriser {site} à afficher des notifications ?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "Autoriser {site} à utiliser votre caméra et votre microphone ?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "Autoriser {site} à utiliser votre caméra ?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "Autoriser {site} à utiliser votre microphone ?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "Autoriser {site} à utiliser votre écran ?"
+
+msgid "App data cleared"
+msgstr "Données de l’application vidées"
+
+msgid "Appearance"
+msgstr "Apparence"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "S’applique au prochain démarrage de ZTBrowser"
+
+msgid "Asking for relay descriptors"
+msgstr "Demande des descripteurs de relais"
+
+msgid "Asking for the network status"
+msgstr "Demande de l’état du réseau"
+
+msgid "Back"
+msgstr "Précédent"
+
+msgid "Back and Forward"
+msgstr "Précédent et suivant"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Idéal partout où Tor n’est pas bloqué."
+
+msgid "Bridges I provide"
+msgstr "Ponts que je fournis"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Les ponts sont des relais Tor non répertoriés, destinés aux réseaux qui bloquent Tor."
+
+msgid "Browsing data burned"
+msgstr "Données de navigation effacées"
+
+msgid "Burn Browsing Data"
+msgstr "Effacer les données de navigation"
+
+msgid "Burn Browsing Data?"
+msgstr "Effacer les données de navigation ?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Boutons affichés autour de la barre d’adresse dans les fenêtres de ce profil."
+
+msgid "C_lear"
+msgstr "_Vider"
+
+msgid "Cannot Connect to Tor"
+msgstr "Impossible de se connecter à Tor"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Impossible d’atteindre le port de contrôle de Tor : {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Impossible de lire le cookie de contrôle de Tor : {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Impossible de supprimer l’ancien fichier du port de contrôle de Tor : {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "Impossible d’enregistrer le téléchargement : {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Impossible de démarrer Tor : {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Impossible d’écrire la configuration de Tor : {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Impossible d’écrire sur le port de contrôle de Tor : {error}"
+
+msgid "Certificate for {name}"
+msgstr "Certificat de {name}"
+
+msgid "Check the address for a typo."
+msgstr "Vérifiez que l’adresse ne contient pas de faute de frappe."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Vérifiez l’adresse, y compris le numéro de port après les deux-points, s’il y en a un."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Vérifiez le câble réseau ou la connexion Wi-Fi."
+
+msgid "Check your internet connection."
+msgstr "Vérifiez votre connexion internet."
+
+msgid "Clear App Data…"
+msgstr "Vider les données de l’application…"
+
+msgid "Clear Data of {name}?"
+msgstr "Vider les données de {name} ?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Fermez les onglets ou les applications dont vous n’avez pas besoin, puis rechargez la page."
+
+msgid "Close {name} before deleting it"
+msgstr "Fermez {name} avant de le supprimer"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Ferme tous les onglets et toutes les fenêtres de ce profil, puis supprime ses cookies, ses données de site, son cache et son historique."
+
+msgid "Connect"
+msgstr "Se connecter"
+
+msgid "Connect directly"
+msgstr "Se connecter directement"
+
+msgid "Connected"
+msgstr "Connecté"
+
+msgid "Connected to a relay directory server"
+msgstr "Connecté à un serveur d’annuaire de relais"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Connecté à un relais pour construire des circuits"
+
+msgid "Connected to pluggable transport"
+msgstr "Connecté au transport enfichable"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Connecté au transport enfichable pour construire des circuits"
+
+msgid "Connected to proxy"
+msgstr "Connecté au proxy"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Connecté au proxy pour construire des circuits"
+
+msgid "Connected to the Tor network"
+msgstr "Connecté au réseau Tor"
+
+msgid "Connecting to Tor"
+msgstr "Connexion à Tor"
+
+msgid "Connecting to a relay directory server"
+msgstr "Connexion à un serveur d’annuaire de relais"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Connexion à un relais pour construire des circuits"
+
+msgid "Connecting to pluggable transport"
+msgstr "Connexion au transport enfichable"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Connexion au transport enfichable pour construire des circuits"
+
+msgid "Connecting to proxy"
+msgstr "Connexion au proxy"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Connexion au proxy pour construire des circuits"
+
+msgid "Connection Settings…"
+msgstr "Paramètres de connexion…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, la configuration de confidentialité et l’algorithme de règles TrackerRadarKit."
+
+msgid "Could not install the app: {error}"
+msgstr "Impossible d’installer l’application : {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Impossible de tout supprimer : {error}"
+
+msgid "Delete"
+msgstr "Supprimer"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Supprimer les cookies, les données de site et le cache de ce profil"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Connexions déguisées vers les ponts intégrés de Tor Browser."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Connexions déguisées vers les ponts intégrés de Tor Browser. Nécessite {package}."
+
+msgid "Download failed: {error}"
+msgstr "Échec du téléchargement : {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Téléchargé à l’exécution depuis DuckDuckGo ; sous licence CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "{name} téléchargé"
+
+msgid "DuckDuckGo protections"
+msgstr "Protections DuckDuckGo"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Chaque application s’exécute dans sa propre fenêtre et son propre processus, avec ses propres cookies et ses propres connexions."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Chaque profil conserve ses propres cookies, connexions, historique et cache, et s’exécute dans un processus distinct."
+
+msgid "Establishing a Tor circuit"
+msgstr "Établissement d’un circuit Tor"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Établissement d’une connexion chiffrée à l’annuaire"
+
+msgid "File not found"
+msgstr "Fichier introuvable"
+
+msgid "Find in Page…"
+msgstr "Rechercher dans la page…"
+
+msgid "Find in page"
+msgstr "Rechercher dans la page"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Négociation terminée avec un serveur d’annuaire de relais"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Négociation terminée avec un relais pour construire des circuits"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Fin de la négociation avec un serveur d’annuaire de relais"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Fin de la négociation avec un relais pour construire des circuits"
+
+msgid "Forward"
+msgstr "Suivant"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "Depuis bridges.torproject.org, par e-mail ou auprès d’un ami."
+
+msgid "Go to Home Page"
+msgstr "Aller à la page d’accueil"
+
+msgid "Go to the previous or next page"
+msgstr "Aller à la page précédente ou suivante"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Allez sur la page d’accueil du site et cherchez la page à partir de là."
+
+msgid "How to Reach Tor"
+msgstr "Comment atteindre Tor"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Si elle plante de nouveau après le rechargement, la page elle-même est peut-être défectueuse."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Si l’adresse est correcte, le site n’existe peut-être plus."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Si vous avez un compte sur ce site, connectez-vous et réessayez."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "Si vous utilisez un VPN ou votre propre serveur DNS, vérifiez qu’il fonctionne."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "Si vous utilisez un VPN, un pare-feu ou un proxy, vérifiez qu’il ne bloque pas le site."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "Listes de filtres de ZTBrowser Guard"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "ZTBrowser ne peut pas ouvrir {host}, car cet ordinateur n’est pas connecté à un réseau."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser n’a trouvé aucun serveur à l’adresse {host}."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser ne se connecte pas à {host} sur ce port."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "Le Tor propre à ZTBrowser est en cours de connexion. Rien ne sort de cette fenêtre tant qu’il n’est pas connecté."
+
+msgid "Install Site as App"
+msgstr "Installer le site comme application"
+
+msgid "Install Site as App…"
+msgstr "Installer le site comme application…"
+
+msgid "Install as App"
+msgstr "Installer comme application"
+
+msgid "Installed Apps"
+msgstr "Applications installées"
+
+msgid "Installed Apps…"
+msgstr "Applications installées…"
+
+msgid "Installed {name}"
+msgstr "{name} installé"
+
+msgid "Interface"
+msgstr "Interface"
+
+msgid "Issued by {name}"
+msgstr "Émis par {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Il a peut-être été déplacé, renommé ou supprimé."
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "Load Insecure Page"
+msgstr "Charger la page non sécurisée"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Recharger la page ou arrêter son chargement"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Informations d’annuaire suffisantes chargées pour construire des circuits"
+
+msgid "Loading authority certificates"
+msgstr "Chargement des certificats d’autorité"
+
+msgid "Loading relay descriptors"
+msgstr "Chargement des descripteurs de relais"
+
+msgid "Loading the network status"
+msgstr "Chargement de l’état du réseau"
+
+msgid "Main Menu"
+msgstr "Menu principal"
+
+msgid "Manage Profiles…"
+msgstr "Gérer les profils…"
+
+msgid "New Identity"
+msgstr "Nouvelle identité"
+
+msgid "New Identity?"
+msgstr "Nouvelle identité ?"
+
+msgid "New Tab"
+msgstr "Nouvel onglet"
+
+msgid "New Tor Window"
+msgstr "Nouvelle fenêtre Tor"
+
+msgid "New Window"
+msgstr "Nouvelle fenêtre"
+
+msgid "New identity"
+msgstr "Nouvelle identité"
+
+msgid "New profile name"
+msgstr "Nom du nouveau profil"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "Un pont par ligne, par exemple : obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Seules les pages web peuvent être installées comme applications"
+
+msgid "Open"
+msgstr "Ouvrir"
+
+msgid "Open Page in Browser"
+msgstr "Ouvrir la page dans le navigateur"
+
+msgid "Open a new tab"
+msgstr "Ouvrir un nouvel onglet"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Ouvrir une fenêtre dont le trafic passe uniquement par Tor"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Les autres applications ne s’ouvrent pas depuis la fenêtre Tor : elles se connecteraient en dehors de Tor."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Les pages ne s’ouvrent pas tant que la fenêtre Tor n’est pas connectée."
+
+msgid "Paste at least one bridge."
+msgstr "Collez au moins un pont."
+
+msgid "Preferences"
+msgstr "Préférences"
+
+msgid "Preferences…"
+msgstr "Préférences…"
+
+msgid "Profiles"
+msgstr "Profils"
+
+msgid "Protect This Site"
+msgstr "Protéger ce site"
+
+msgid "Protection Shield"
+msgstr "Bouclier de protection"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Échec de la lecture du port de contrôle de Tor : {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "Reconnectez votre VPN, si vous en utilisez un."
+
+msgid "Reload"
+msgstr "Actualiser"
+
+msgid "Reload Page"
+msgstr "Actualiser la page"
+
+msgid "Reset Zoom"
+msgstr "Réinitialiser le zoom"
+
+msgid "Search Engine"
+msgstr "Moteur de recherche"
+
+msgid "Search {engine}"
+msgstr "Rechercher avec {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "Rechercher avec {engine} ou saisir une adresse"
+
+msgid "Show in Folder"
+msgstr "Afficher dans le dossier"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Vous déconnecte et supprime les cookies, les données de site et le cache de cette application. Rien d’autre n’est modifié."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Certaines données n’ont pas pu être supprimées : {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "Un problème est survenu lors du chargement de {host}."
+
+msgid "Starting"
+msgstr "Démarrage"
+
+msgid "Starting Tor…"
+msgstr "Démarrage de Tor…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Activer ou désactiver la protection contre les traqueurs pour le site"
+
+msgid "System default ({language})"
+msgstr "Langue du système ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "L’autorité qui a émis le certificat l’a révoqué."
+
+msgid "The bridge line has no address: {line}"
+msgstr "La ligne de pont ne contient aucune adresse : {line}"
+
+msgid "The certificate could not be verified."
+msgstr "Le certificat n’a pas pu être vérifié."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "Le certificat est signé avec un algorithme qui n’est plus sûr."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "Le certificat n’est pas encore valide. Vérifiez que la date et l’heure de cet ordinateur sont correctes."
+
+msgid "The certificate was issued for a different site."
+msgstr "Le certificat a été émis pour un autre site."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "Le certificat n’a pas été émis par une autorité à laquelle cet ordinateur fait confiance."
+
+msgid "The connection to {host} was interrupted."
+msgstr "La connexion à {host} a été interrompue."
+
+msgid "The icon at the end of the address bar"
+msgstr "L’icône à la fin de la barre d’adresse"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "La langue change au redémarrage de ZTBrowser"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "La langue des menus, des boîtes de dialogue et des messages, dans tous les profils et toutes les applications web."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "Le problème vient du site. Réessayez dans quelques minutes."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Le site est peut-être en maintenance. Réessayez dans quelques minutes."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Le site est peut-être surchargé. Réessayez dans quelques minutes."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "Les ponts {transport} nécessitent un programme qui n’est pas installé ; installez {package}"
+
+msgid "There is no file at {path}."
+msgstr "Il n’y a aucun fichier à l’emplacement {path}."
+
+msgid "This address is blocked"
+msgstr "Cette adresse est bloquée"
+
+msgid "This connection isn’t private"
+msgstr "Cette connexion n’est pas privée"
+
+msgid "This page"
+msgstr "Cette page"
+
+msgid "This page can’t be found"
+msgstr "Cette page est introuvable"
+
+msgid "This page can’t be loaded"
+msgstr "Cette page ne peut pas être chargée"
+
+msgid "This page crashed"
+msgstr "Cette page a planté"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Cette page se trouve sur un autre site et ne fait pas partie de {name}"
+
+msgid "This page isn’t working"
+msgstr "Cette page ne fonctionne pas"
+
+msgid "This page ran out of memory"
+msgstr "Cette page a manqué de mémoire"
+
+msgid "This site can’t be found"
+msgstr "Ce site est introuvable"
+
+msgid "This site can’t be reached"
+msgstr "Ce site est inaccessible"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Via les navigateurs de volontaires ; fonctionne sur la plupart des réseaux censurés."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Via les navigateurs de volontaires ; fonctionne sur la plupart des réseaux censurés. Nécessite {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Boutons de la barre d’outils"
+
+msgid "Tor Connection"
+msgstr "Connexion à Tor"
+
+msgid "Tor Connection…"
+msgstr "Connexion à Tor…"
+
+msgid "Tor Window"
+msgstr "Fenêtre Tor"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor ne peut pas utiliser le chemin {path}"
+
+msgid "Tor closed its control port"
+msgstr "Tor a fermé son port de contrôle"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor n’a pas pu changer de circuit : {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor n’a pas ouvert son port de contrôle"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor n’est pas installé. Installez le paquet tor de votre distribution ; la fenêtre Tor démarre son propre Tor et n’a besoin d’aucun service Tor en cours d’exécution."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor n’a ouvert aucun port SOCKS local"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor a refusé : {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor a signalé un problème"
+
+msgid "Tor stopped."
+msgstr "Tor s’est arrêté."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Le cookie de contrôle de Tor est endommagé"
+
+msgid "Tracker Data Set"
+msgstr "Jeu de données des traqueurs"
+
+msgid "Tracker protection on this site"
+msgstr "Protection contre les traqueurs sur ce site"
+
+msgid "Try Again"
+msgstr "Réessayer"
+
+msgid "Try again in a few minutes."
+msgstr "Réessayez dans quelques minutes."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Désactivez le mode avion, s’il est activé."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "Convertit les listes de filtres de ZTBrowser Guard en règles WebKit. Source : https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Désinstaller"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Transport de pont inconnu : {name}"
+
+msgid "Valid until {date}"
+msgstr "Valide jusqu’au {date}"
+
+msgid "Your Bridges"
+msgstr "Vos ponts"
+
+msgid "You’re offline"
+msgstr "Vous êtes hors ligne"
+
+msgid "Zoom In"
+msgstr "Zoom avant"
+
+msgid "Zoom Out"
+msgstr "Zoom arrière"
+
+msgid "_Allow"
+msgstr "_Autoriser"
+
+msgid "_Burn"
+msgstr "_Effacer"
+
+msgid "_Cancel"
+msgstr "_Annuler"
+
+msgid "_Deny"
+msgstr "_Refuser"
+
+msgid "_Install"
+msgstr "_Installer"
+
+msgid "_New Identity"
+msgstr "_Nouvelle identité"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) ou obfs4proxy depuis l’AUR (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) ou snowflake-pt-client depuis l’AUR (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} ne peut pas traiter la requête pour le moment."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} n’a pas pu répondre à cette requête."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} ne propose pas de connexion sécurisée"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} ne vous autorise pas à voir cette page."
+
+msgid "{host} has no page at this address."
+msgstr "{host} n’a aucune page à cette adresse."
+
+msgid "{host} refused the connection."
+msgstr "{host} a refusé la connexion."
+
+msgid "{host} took too long to respond."
+msgstr "{host} a mis trop de temps à répondre."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} a utilisé plus de mémoire qu’une page n’y est autorisée, alors ZTBrowser l’a arrêtée."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} s’ouvrira dans sa propre fenêtre, avec des cookies et des connexions séparés du navigateur et de toutes les autres applications."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — application web ZTBrowser"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} n’est pas un argument de pont"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} n’est pas une adresse IP suivie d’un port"
+
+msgid "{url} answered {status}"
+msgstr "{url} a répondu {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} n’a pas renvoyé le document attendu"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} dépasse la taille autorisée"
+
+msgid "{url} is not a valid address"
+msgstr "{url} n’est pas une adresse valide"
+
+msgid "© their maintainers"
+msgstr "© leurs mainteneurs"
+
+msgid "Ask Where to Save Each File"
+msgstr "Demander où enregistrer chaque fichier"
+
+msgid "Choose Folder"
+msgstr "Choisir un dossier"
+
+msgid "Download Folder"
+msgstr "Dossier de téléchargement"
+
+msgid "Download failed"
+msgstr "Échec du téléchargement"
+
+msgid "Downloading…"
+msgstr "Téléchargement…"
+
+msgid "Downloading… {percent}%"
+msgstr "Téléchargement… {percent} %"
+
+msgid "Downloads"
+msgstr "Téléchargements"
+
+msgid "Go to Download Folder"
+msgstr "Aller au dossier de téléchargement"
+
+msgid "No downloads yet"
+msgstr "Aucun téléchargement pour le moment"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Sinon, les fichiers sont enregistrés directement dans le dossier de téléchargement"
+
+msgid "Save File"
+msgstr "Enregistrer le fichier"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Les cinq derniers téléchargements et le dossier de téléchargement"
+
+msgid "_Save"
+msgstr "_Enregistrer"
+
+msgid "_Select"
+msgstr "_Sélectionner"
+
+msgid "Show All Downloads"
+msgstr "Afficher tous les téléchargements"
+
+msgid "Clear List"
+msgstr "Vider la liste"
+
+msgid "Remove from List"
+msgstr "Retirer de la liste"
+
+msgid "Clear History"
+msgstr "Effacer l’historique"
+
+msgid "Search Downloads"
+msgstr "Rechercher dans les téléchargements"
+
+msgid "File Moved or Deleted"
+msgstr "Fichier déplacé ou supprimé"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Anime chaque cran de la molette de la souris. Les pages déjà ouvertes doivent être rechargées."
+
+msgid "Scrolling"
+msgstr "Défilement"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Défilement fluide à la molette de la souris"
+
+msgid "Details"
+msgstr "Détails"
+
+msgid "Legal"
+msgstr "Mentions légales"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "Ce programme est fourni sans aucune garantie. Pour plus de détails, visitez {license}."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "Licence publique générale GNU, version 3 ou ultérieure"
+
+msgid "Apache License, Version 2.0"
+msgstr "Licence Apache, version 2.0"
+
+msgid "Move to New Window"
+msgstr "Déplacer vers une nouvelle fenêtre"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Licence Publique Mozilla 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "Licence BSD à 3 clauses"
+
+msgid "Wide Address Bar"
+msgstr "Barre d'adresse large"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "La barre d'adresse occupe toute la place de la barre d'outils ; désactivée, elle reste courte et centrée"
+
+msgid "No apps installed yet"
+msgstr "Aucune application installée pour le moment"
+
+msgid "Uninstall {name}?"
+msgstr "Désinstaller {name} ?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Supprime l'application avec ses cookies, ses connexions et ses données. Cette action est irréversible."
+
+msgid "Tab Position"
+msgstr "Position des onglets"
+
+msgid "Top"
+msgstr "En haut"
+
+msgid "Bottom"
+msgstr "En bas"
+
+msgid "Left"
+msgstr "À gauche"
+
+msgid "Right"
+msgstr "À droite"
+
+msgid "Window Buttons"
+msgstr "Boutons de la fenêtre"
+
+msgid "Default"
+msgstr "Par défaut"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Ajouter un profil"
+
+msgid "Delete profile {name}?"
+msgstr "Supprimer le profil {name} ?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Supprime le profil avec ses cookies, ses connexions, son historique et son cache. Cette action est irréversible."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser n’est pas votre navigateur par défaut"
+
+msgid "Make Default"
+msgstr "Définir par défaut"
+
+msgid "Don't Ask Again"
+msgstr "Ne plus demander"
+
+msgid "Close"
+msgstr "Fermer"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "Impossible de définir ZTBrowser comme navigateur par défaut : {error}"
+
+msgid "Default Browser"
+msgstr "Navigateur par défaut"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "ZTBrowser ouvre les liens des autres programmes"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Les liens des autres programmes s’ouvrent dans {browser}"
+
+msgid "Another browser opens links from other programs"
+msgstr "Un autre navigateur ouvre les liens des autres programmes"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Seul un ZTBrowser installé peut ouvrir les liens des autres programmes"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Le bureau n’indique pas quel navigateur ouvre les liens"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "Demander au démarrage de ZTBrowser"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Proposer de définir ZTBrowser comme navigateur par défaut tant qu’un autre navigateur ouvre les liens"

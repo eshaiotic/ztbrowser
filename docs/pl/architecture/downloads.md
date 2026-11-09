@@ -1,6 +1,6 @@
 # Pobieranie plików
 
-InDuckGo zapisuje pobrany plik tam, gdzie chce użytkownik, nigdy nie nadpisuje istniejącego pliku i trzyma pięć
+ZTBrowser zapisuje pobrany plik tam, gdzie chce użytkownik, nigdy nie nadpisuje istniejącego pliku i trzyma pięć
 ostatnich pobrań pod ręką (przycisk na pasku narzędzi i pozycja w menu głównym otwierają tę samą listę) oraz całą
 historię w menedżerze.
 
@@ -24,7 +24,7 @@ sprawdzić, jak daleko zaszło duże pobieranie.
 
 ![Pobranie przechodzi z WebKit przez tracker i centrum do listy](../../assets/diagrams/architecture-downloads.pl.svg)
 
-- **`induckgo-core`** zawiera decyzje, bez GTK: `DownloadFileName` czyści nazwę podaną przez stronę i szuka
+- **`ztbrowser-core`** zawiera decyzje, bez GTK: `DownloadFileName` czyści nazwę podaną przez stronę i szuka
   wolnej ścieżki, `DownloadSettings` to dwa zapisywane wybory (pytać, gdzie zapisać; folder pobierania), a
   `DownloadHistory` to historia (najwyżej 500 pozycji) ze stanem każdej (w toku, ukończone, nieudane);
   `latest_after` zwraca kilka pozycji pokazywanych w oknie po jego własnym „Wyczyść listę” (trwające pobranie zostaje widoczne).

@@ -1,37 +1,37 @@
 [English](README.md) | **Polski**
 
 <p align="center">
-  <img src="assets/icons/io.github.induckgo.InDuckGo.svg" alt="InDuckGo: indygo tarcza z białą kaczką" width="160">
+  <img src="assets/icons/io.github.ztbrowser.ZTBrowser.svg" alt="ZTBrowser: fioletowa tarcza z białym łańcuchem" width="160">
 </p>
 
-# InDuckGo
+# ZTBrowser
 
 **Przeglądarka dla Linuksa, w której prywatność jest na pierwszym miejscu.** Odtwarza ochronę z otwartej
 przeglądarki DuckDuckGo dla macOS na silniku **QtWebEngine** (Chromium, silnik Chrome i Brave), z interfejsem
 **Qt 6 Quick** i rdzeniem domenowym napisanym w **Rust**. Bez telemetrii, bez rozszerzeń do pilnowania, każdy
 profil i każda zainstalowana aplikacja webowa są od siebie odizolowane.
 
-[![tests](https://github.com/eshaiotic/induckgo/actions/workflows/tests.yml/badge.svg)](https://github.com/eshaiotic/induckgo/actions/workflows/tests.yml)
-[![release](https://img.shields.io/github/v/release/eshaiotic/induckgo?color=6A5ACD)](https://github.com/eshaiotic/induckgo/releases/latest)
+[![tests](https://github.com/eshaiotic/ztbrowser/actions/workflows/tests.yml/badge.svg)](https://github.com/eshaiotic/ztbrowser/actions/workflows/tests.yml)
+[![release](https://img.shields.io/github/v/release/eshaiotic/ztbrowser?color=6A5ACD)](https://github.com/eshaiotic/ztbrowser/releases/latest)
 ![cargo nextest](https://img.shields.io/badge/cargo%20nextest-899%20test%C3%B3w-success)
 ![stack](https://img.shields.io/badge/stack-Rust%20%E2%80%A2%20Qt%206%20%E2%80%A2%20QtWebEngine-8E7FE8)
 ![telemetria](https://img.shields.io/badge/telemetria-brak-FFB300)
 [![licencja](https://img.shields.io/badge/licencja-GPL--3.0--or--later-2E1A87)](LICENSE)
 
-InDuckGo to niezależny projekt. Nie jest powiązany z Duck Duck Go, Inc. ani przez nią wspierany.
+ZTBrowser to niezależny projekt. Nie jest powiązany z Duck Duck Go, Inc. ani przez nią wspierany.
 
 ---
 
 ## Zmierzone wobec Chrome i Brave, porównane z DuckDuckGo
 
-2026-11-06 świeże profile Brave 1.98 (Chromium 156) i InDuckGo 1.2.3 działały jednocześnie, każdy we własnym oknie,
+2026-11-06 świeże profile Brave 1.98 (Chromium 156) i ZTBrowsera 1.2.3 działały jednocześnie, każdy we własnym oknie,
 za proxy zapisującym wyłącznie nazwy hostów: 5 minut bezczynności, potem po 20 sekund na każdym z 12 popularnych
-serwisów. Trackery ocenia neutralna lista (Disconnect), każdy serwer liczony raz na serwis. InDuckGo uruchomiono dwa
+serwisów. Trackery ocenia neutralna lista (Disconnect), każdy serwer liczony raz na serwis. ZTBrowser uruchomiono dwa
 razy: ze świeżym profilem (bez danych ochrony, więc pobiera je przy pierwszym uruchomieniu) i z danymi już na dysku.
 Google Chrome 157 zmierzono tak samo 2026-11-05, w dwóch przebiegach, które pokazują, jak bardzo wynik waha się
 między uruchomieniami.
 
-| | Chrome 157 | Brave 1.98 | InDuckGo, świeży profil | InDuckGo, dane ochrony na dysku |
+| | Chrome 157 | Brave 1.98 | ZTBrowser, świeży profil | ZTBrowser, dane ochrony na dysku |
 |---|---|---|---|---|
 | Trackery przepuszczone na 12 serwisach | 111 / 109 | 8 | **1** | **1** |
 | … w tym serwery reklamowe | 90 / 88 | 3 | **0** | **0** |
@@ -39,16 +39,16 @@ między uruchomieniami.
 
 Dwie liczby w komórce Chrome to jego pierwszy i drugi przebieg.
 
-**Jak to czytać.** InDuckGo przepuszcza najmniej trackerów, zarówno na świeżym profilu, jak i z danymi ochrony już na
+**Jak to czytać.** ZTBrowser przepuszcza najmniej trackerów, zarówno na świeżym profilu, jak i z danymi ochrony już na
 dysku: 1 na 12 serwisach, wobec 8 w Brave i 109 lub 111 w Chrome. Tym jednym jest `m.stripe.network` (płatności),
 które reguły DuckDuckGo dopuszczają, bo jego zablokowanie psuje płacenie; z tego samego powodu dopuszczone jest okno
 logowania Google (`accounts.google.com`, `www.google.com`), gdy serwis je pokazuje. Strony nadal się wczytują.
 Osiąga to dzięki własnym regułom DuckDuckGo ocenianym tak, jak ocenia je DuckDuckGo, ostrzejszej warstwie dla
 trackerów reklamowych i analitycznych, lokalnej bramce, która odrzuca połączenia otwierane przez stronę, zanim wyśle
 jakiekolwiek żądanie (`preconnect`, którego filtry żądań nie widzą), oraz pobieraniu reguł przy pierwszym
-uruchomieniu. Koszt pobierania widać w ruchu bezczynności: InDuckGo łączył się ze stroną startową DuckDuckGo, jej
+uruchomieniu. Koszt pobierania widać w ruchu bezczynności: ZTBrowser łączył się ze stroną startową DuckDuckGo, jej
 hostem pingu i sześcioma hostami serwującymi dane ochrony (13 połączeń z 8 hostami); Chrome z Google, a Brave z
-własnymi serwerami (ping użycia, P3A). Odcisku przeglądarki nie zmierzono: InDuckGo nie ma jeszcze ochrony przed
+własnymi serwerami (ping użycia, P3A). Odcisku przeglądarki nie zmierzono: ZTBrowser nie ma jeszcze ochrony przed
 fingerprintingiem. Chrome 157 i Brave 1.98 to różne wersje Chromium, 157 i 156, a Chrome zmierzono 2026-11-05.
 Jedno uruchomienie z jednego kraju w jednej sieci to nie ranking; metoda i ograniczenia są w
 [porównaniu śledzenia](docs/pl/reports/tracking-comparison.md).
@@ -56,15 +56,15 @@ Jedno uruchomienie z jednego kraju w jednej sieci to nie ranking; metoda i ogran
 ### Porównanie z przeglądarką DuckDuckGo
 
 DuckDuckGo nie wydaje przeglądarki na Linuksa (tylko Windows, macOS, iOS i Androida), więc jej przeglądarki **nie
-mierzono**. Tabela zestawia InDuckGo z tym, co DuckDuckGo mówi o własnej przeglądarce, w liście funkcji ze
+mierzono**. Tabela zestawia ZTBrowser z tym, co DuckDuckGo mówi o własnej przeglądarce, w liście funkcji ze
 [strony porównania](https://duckduckgo.com/compare-privacy) („See how DuckDuckGo compares”) i na
 [stronie pomocy o ochronie przed śledzeniem](https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections),
 obie czytane w listopadzie 2026. Kolumna DuckDuckGo to jego własne twierdzenia, dla aplikacji na Windows i macOS
-(gdzie się różnią, nazwano macOS); kolumna InDuckGo to to, co InDuckGo robi, sprawdzone w kodzie.
+(gdzie się różnią, nazwano macOS); kolumna ZTBrowser to to, co ZTBrowser robi, sprawdzone w kodzie.
 Niezależne liczby o przeglądarce DuckDuckGo są na [privacytests.org](https://privacytests.org/), które testuje
-DuckDuckGo, Brave i Chrome na komputerach i nie testuje InDuckGo.
+DuckDuckGo, Brave i Chrome na komputerach i nie testuje ZTBrowsera.
 
-| | Przeglądarka DuckDuckGo mówi | InDuckGo |
+| | Przeglądarka DuckDuckGo mówi | ZTBrowser |
 |---|---|---|
 | **Skrypty śledzące** | | |
 | Blokuje trackery stron trzecich, zanim się wczytają | tak, według swojej listy trackerów | tak, według tej samej listy i list filtrów Guarda, także w żądaniach do domeny samego serwisu; reguły są pobierane przy pierwszym uruchomieniu i odświeżane (okno raz na nie czeka) |
@@ -96,7 +96,7 @@ DuckDuckGo, Brave i Chrome na komputerach i nie testuje InDuckGo.
 | Usuwa dane osobowe z serwisów brokerów danych, pomaga odzyskać tożsamość | w płatnej subskrypcji (usługa tożsamości dla mieszkańców USA) | nie; zaplanowane, zob. *Następne wydanie* niżej |
 | Działa na Linuksie | nie | tak |
 
-W skrócie: przeglądarka DuckDuckGo wygrywa gotowymi ochronami, a InDuckGo tym, czego nie zrobi (telemetria,
+W skrócie: przeglądarka DuckDuckGo wygrywa gotowymi ochronami, a ZTBrowser tym, czego nie zrobi (telemetria,
 wyjątki dla kliknięć w reklamy, płatne poziomy) i działaniem na Linuksie; luka w gotowych ochronach to praca, która
 stoi przed tym projektem, a nie coś, co powyższe liczby ukrywają.
 
@@ -104,22 +104,22 @@ stoi przed tym projektem, a nie coś, co powyższe liczby ukrywają.
 
 ## Przed czym chroni
 
-InDuckGo działa na **QtWebEngine** (Chromium), a interfejs jest w Qt Quick. Ostatnia kolumna mówi, czy dana
+ZTBrowser działa na **QtWebEngine** (Chromium), a interfejs jest w Qt Quick. Ostatnia kolumna mówi, czy dana
 ochrona jest wdrożona.
 
 | Ochrona | Jak działa | Stan |
 |---|---|---|
 | Trackery stron trzecich | Tracker Data Set DuckDuckGo rozstrzyga, żądanie po żądaniu, które żądania stron trzecich są odrzucane (port `TrackerRadarKit`). | działa; pobierane przy pierwszym uruchomieniu, odświeżane co 6 godzin |
 | Psucie stron | Konfiguracja prywatności DuckDuckGo dostarcza wyjątki dla serwisów, żeby działały; przycisk tarczy (w aplikacji webowej: *Chroń tę witrynę* w menu) wyłącza ochronę dla jednego serwisu. | działa |
-| Fingerprinting, GPC | Content Scope Scripts DuckDuckGo działają w każdej ramce; InDuckGo Guard włącza obronę canvas, audio, ekranu i referera, którą DuckDuckGo zostawia wyłączoną, i wysyła nagłówek `Sec-GPC: 1`. | jeszcze nie |
-| Reklamy, trackery, komunikaty o cookies | InDuckGo Guard pobiera listy EasyList, EasyPrivacy, uBlock Origin, Petera Lowe'a, polskie i listy komunikatów o cookies, i stosuje je także do własnych zapytań serwisu. | działa; pobierane razem z resztą danych |
+| Fingerprinting, GPC | Content Scope Scripts DuckDuckGo działają w każdej ramce; ZTBrowser Guard włącza obronę canvas, audio, ekranu i referera, którą DuckDuckGo zostawia wyłączoną, i wysyła nagłówek `Sec-GPC: 1`. | jeszcze nie |
+| Reklamy, trackery, komunikaty o cookies | ZTBrowser Guard pobiera listy EasyList, EasyPrivacy, uBlock Origin, Petera Lowe'a, polskie i listy komunikatów o cookies, i stosuje je także do własnych zapytań serwisu. | działa; pobierane razem z resztą danych |
 | Okna zgody na cookies | Biblioteka autoconsent DuckDuckGo rozpoznaje okna zgody setek dostawców (także Facebooka) i od razu naciska *odrzuć*; nigdy nie akceptuje. Pomijana dla serwisu z wyłączoną tarczą ([szczegóły](docs/pl/architecture/qt-protection.md)). | działa |
 | Ciasteczka między serwisami | Ciasteczka stron trzecich z listy trackerów są odrzucane; profil *Strict*, który odrzuca wszystkie, istnieje w kodzie, ale nie ma jeszcze interfejsu. | działa |
 | Linki śledzące | Nawigacja z `utm_*`, `fbclid`, `gclid`, ... jest zatrzymywana, zanim opuści komputer, i ładowana od nowa bez nich. | działa |
 | Zwykłe HTTP | Nawigacje są podnoszone do HTTPS. | działa |
 | Pozostawione dane | Przycisk Wymaż dane przeglądania jednym kliknięciem kasuje ciasteczka, magazyn, pamięć podręczną i favikony profilu. | działa |
 | Mieszanie tożsamości | Każdy profil i każda zainstalowana aplikacja webowa działa jako osobny proces z własnymi ciasteczkami i danymi. | działa |
-| Twój adres IP | Okno Tor wysyła wszystko przez własnego Tora InDuckGo; jego sesja żyje tylko w pamięci. | jeszcze nie |
+| Twój adres IP | Okno Tor wysyła wszystko przez własnego Tora ZTBrowsera; jego sesja żyje tylko w pamięci. | jeszcze nie |
 
 Rozszerzeń nie ma — celowo.
 
@@ -130,28 +130,35 @@ aplikacji nigdy nie spotyka obcych stron. *Zainstalowane aplikacje…* w menu po
 Otwórz i Odinstaluj.
 
 **Okno Tor (jeszcze niedostępne).** Jest planowane jako okno, którego każde żądanie idzie przez Tora, więc serwisy
-widzą przekaźnik wyjściowy Tora zamiast Twojego adresu, przez własnego `tora` InDuckGo, a nie ogólnosystemową
+widzą przekaźnik wyjściowy Tora zamiast Twojego adresu, przez własnego `tora` ZTBrowsera, a nie ogólnosystemową
 usługę, bez powrotu do połączenia bezpośredniego i bez zapisu czegokolwiek na dysku. Ukryje Twój adres, ale nie to,
-że używasz InDuckGo: gdy liczy się nieodróżnialność wśród użytkowników Tora, używaj Tor Browsera.
+że używasz ZTBrowser: gdy liczy się nieodróżnialność wśród użytkowników Tora, używaj Tor Browsera.
 
 **Preferencje** (`Ctrl+,`), osobno w każdym profilu: które przyciski pokazuje pasek narzędzi, czy pasek adresu
 jest szeroki, czy krótki i wyśrodkowany, **gdzie są karty** (*Położenie kart*: góra, dół, lewo lub prawo; domyślnie
 góra), **jak wyglądają przyciski okna** (*Przyciski okna*: domyślne okrągłe po prawej albo trzy kolorowe kropki po
 lewej jak w macOS), płynne przewijanie kółkiem, folder pobierania i język interfejsu (68 języków).
 
+**Domyślna przeglądarka.** Dopóki linki z innych programów (poczty, komunikatora, dokumentów) otwiera inna
+przeglądarka, pierwsze okno raz pyta na pasku pod paskiem narzędzi, czy mają się otwierać w ZTBrowserze. Nic się nie
+zmienia, dopóki nie wybierzesz *Ustaw jako domyślną*, a *Nie pytaj więcej* wyłącza pasek na dobre. *Preferencje →
+Interfejs* pokazują, która przeglądarka otwiera linki, proponują tę samą zmianę i pozwalają włączyć pytanie przy
+starcie z powrotem. Zmianę wykonuje systemowe `xdg-settings`, więc działa w KDE Plasma, GNOME, Xfce i innych
+środowiskach; wersja uruchomiona ze źródeł nie ma wpisu w menu i nie może zostać wybrana.
+
 ---
 
 ## Jak wycinamy śledzenie i co to potwierdza
 
 Strona, reklamodawca albo sam producent przeglądarki mogą Cię śledzić na siedem sposobów. Tabela nazywa każdy
-z nich, mechanizm użyty przeciwko niemu przez InDuckGo, miejsce tego mechanizmu w kodzie i test lub pomiar,
+z nich, mechanizm użyty przeciwko niemu przez ZTBrowser, miejsce tego mechanizmu w kodzie i test lub pomiar,
 który go sprawdza. Decyzje mieszkają w niezależnej od silnika bibliotece domenowej; czego jeszcze brakuje,
 wymienia [tabela ochron](#przed-czym-chroni) wyżej i
 [plan migracji](docs/pl/plans/2026-11-04-qtwebengine-migration-plan.md).
 
-| Sposób śledzenia | Co robi InDuckGo | Kod (`crates/induckgo-core/src`) | Sprawdza to |
+| Sposób śledzenia | Co robi ZTBrowser | Kod (`crates/ztbrowser-core/src`) | Sprawdza to |
 |---|---|---|---|
-| Przeglądarka raportuje do producenta | W ogóle nie ma kodu telemetrii: żadnego pingu użycia, raportów awarii, ziarna eksperymentów ani konta. Jedyne połączenia, jakie program sam nawiązuje, to zwykłe `GET` po dane ochronne, bez ciasteczek i bez identyfikatora. | `protection/`, `guard/` (tylko pobieranie) | Ruch bezczynności zmierzony na poziomie nazw hostów: InDuckGo łączy się z 8 hostami: stroną startową DuckDuckGo, jej hostem pingu i sześcioma serwującymi dane ochrony ([raport §4.5](docs/pl/reports/tracking-comparison.md)) |
+| Przeglądarka raportuje do producenta | W ogóle nie ma kodu telemetrii: żadnego pingu użycia, raportów awarii, ziarna eksperymentów ani konta. Jedyne połączenia, jakie program sam nawiązuje, to zwykłe `GET` po dane ochronne, bez ciasteczek i bez identyfikatora. | `protection/`, `guard/` (tylko pobieranie) | Ruch bezczynności zmierzony na poziomie nazw hostów: ZTBrowser łączy się z 8 hostami: stroną startową DuckDuckGo, jej hostem pingu i sześcioma serwującymi dane ochrony ([raport §4.5](docs/pl/reports/tracking-comparison.md)) |
 | Trackery stron trzecich | Tracker Data Set DuckDuckGo rozstrzyga każde żądanie (przechwytywacz żądań w QtWebEngine oraz lokalna bramka połączeń odrzucająca podpowiedzi `preconnect`), razem z wyjątkami DuckDuckGo dla poszczególnych witryn, by strony działały. Ostrzejsza warstwa obejmuje trackery reklamowe i analityczne. | `protection/tracker_data_set.rs`, `protection/content_blocker_rules_builder.rs`, `network/content_blocker_request_policy.rs`, `network/advertising_tracker_request_policy.rs`, `network/connection_gate.rs` | Testy scenariuszowe `tracker_data_set`, `content_blocker_rules_builder`, `content_blocker_request_policy`, `advertising_tracker_request_policy`, `connection_gate`, `rule_exceptions`, `gate_proxy`, `tracker_blocking` ([architektura](docs/pl/architecture/qt-protection.md)) |
 | Reklamy i trackery, których pierwsza lista nie zna | Guard pobiera dziewięć list społeczności (EasyList, EasyPrivacy, uBlock Origin, Petera Lowe'a, polskie i listy komunikatów o ciasteczkach), kompiluje je i stosuje także do żądań własnej witryny. Komunikaty o ciasteczkach są odrzucane (autoconsent), a gdy to się nie uda, ukrywane. | `guard/guard_engine.rs`, `guard/guard_rule_list.rs`, `network/guard_request_policy.rs` | Testy `guard_engine`, `guard_rule_list`, `guard_request_policy`, `cookie_notice_script`, `tracker_blocking`; trackery na 12 stronach zmierzone wyżej |
 | Ciasteczka i zapisane identyfikatory | Ciasteczka stron trzecich z listy trackerów są odrzucane, każdy profil i aplikacja internetowa to osobny proces z własnym magazynem, a Wymaż dane przeglądania kasuje profil jednym kliknięciem. | `storage/cookie_policy.rs`, `storage/tracker_cookie_policy.rs`, `storage/burn_planner.rs` | Testy `cookie_policies`, `burn_planner` |
@@ -167,23 +174,23 @@ clippy i `cargo audit` w CI) uruchamia się przy każdym wypchnięciu.
 ### Dowody
 
 Pomiar stojący za [pierwszą tabelą](#zmierzone-wobec-chrome-i-brave-porównane-z-duckduckgo) uruchomił 2026-11-06
-obok siebie Brave 1.98 i InDuckGo 1.2.3 (Chrome 157 — 2026-11-05), na świeżych profilach, każdy we własnym oknie,
+obok siebie Brave 1.98 i ZTBrowser 1.2.3 (Chrome 157 — 2026-11-05), na świeżych profilach, każdy we własnym oknie,
 przez proxy zapisujące wyłącznie nazwy hostów. Liczby, powtórzone tu obok mechanizmów:
 
-- **Trackery osiągnięte na 12 stronach:** Chrome 111 i 109 w dwóch przebiegach, Brave 8, InDuckGo 1 na świeżym
+- **Trackery osiągnięte na 12 stronach:** Chrome 111 i 109 w dwóch przebiegach, Brave 8, ZTBrowser 1 na świeżym
   profilu i 1 z danymi ochrony na dysku, według listy Disconnect, której żadna z nich nie używa.
 - **Wysłane do producenta w 5 minut bezczynności:** Chrome łączył się wyłącznie z Google (14 hostów), Brave
-  głównie z własnymi serwerami (ping użycia, P3A; 12 hostów), InDuckGo ze stroną startową DuckDuckGo, jej hostem
+  głównie z własnymi serwerami (ping użycia, P3A; 12 hostów), ZTBrowser ze stroną startową DuckDuckGo, jej hostem
   pingu i sześcioma hostami serwującymi dane ochrony (8 hostów).
 - **Metoda, ograniczenia i przepis na powtórzenie pomiaru:** [porównanie śledzenia](docs/pl/reports/tracking-comparison.md), §3 i §8.
 
 ### Czego to nie dowodzi
 
-Pomiar potwierdza, że „InDuckGo nie daje własnemu producentowi nic do roboty, a gdy ma dane ochrony na miejscu,
-daje trackerom niewiele”. Nie potwierdza, że „InDuckGo jest bardziej anonimowy niż Brave lub DuckDuckGo”, i projekt
+Pomiar potwierdza, że „ZTBrowser nie daje własnemu producentowi nic do roboty, a gdy ma dane ochrony na miejscu,
+daje trackerom niewiele”. Nie potwierdza, że „ZTBrowser jest bardziej anonimowy niż Brave lub DuckDuckGo”, i projekt
 tego nie twierdzi.
 
-- **Przewaga na jednej próbce to nie prawo.** InDuckGo blokuje tu mocniej niż Brave, bo stosuje ostrzejszą
+- **Przewaga na jednej próbce to nie prawo.** ZTBrowser blokuje tu mocniej niż Brave, bo stosuje ostrzejszą
   warstwę dla trackerów reklamowych i analitycznych oraz odrzuca `preconnect`; ta sama ostrość może zepsuć stronę,
   którą łagodniejsze tarcze Brave zostawiają działającą, a lekarstwem jest przełącznik tarczy dla witryny. Okna
   logowania i trackery płatności są celowo zostawione wyjątkom DuckDuckGo.
@@ -191,13 +198,13 @@ tego nie twierdzi.
   między wczytaniami, a okno logowania Google serwis pokazuje w jednych przebiegach, w innych nie.
 - **Przeglądarki DuckDuckGo nie zmierzono**, bo nie istnieje na Linuksa.
   [Tabela funkcji](#porównanie-z-przeglądarką-duckduckgo) porównuje udokumentowane zachowanie, nie ruch.
-- **Blokowanie to nie anonimowość.** InDuckGo to silnik Chromium jak Brave i Chrome, co dobrze robi na wtapianie się
-  w tłum, ale InDuckGo nie zmienia jeszcze tego, co serwis może odczytać o przeglądarce: brak szumu odcisku, brak
+- **Blokowanie to nie anonimowość.** ZTBrowser to silnik Chromium jak Brave i Chrome, co dobrze robi na wtapianie się
+  w tłum, ale ZTBrowser nie zmienia jeszcze tego, co serwis może odczytać o przeglądarce: brak szumu odcisku, brak
   GPC. Zainstalowane czcionki pozostają widoczne, tak jak w Brave i Chrome.
 - **Brak ostrzeżeń przed phishingiem i złośliwym oprogramowaniem** (brak Safe Browsing), brak aliasów e-mail i
-  VPN na razie. Planowane okno Tor ukryje Twój adres, nie fakt używania InDuckGo; gdy liczy się
+  VPN na razie. Planowane okno Tor ukryje Twój adres, nie fakt używania ZTBrowsera; gdy liczy się
   nieodróżnialność, użyj Tor Browser.
-- **Brakuje niezależnej weryfikacji:** [privacytests.org](https://privacytests.org/) nie testuje InDuckGo.
+- **Brakuje niezależnej weryfikacji:** [privacytests.org](https://privacytests.org/) nie testuje ZTBrowsera.
 
 ---
 
@@ -214,54 +221,55 @@ przeglądarki i GPC, okna Tor, pytań o uprawnienia, przywracania sesji, zakład
 
 Zaplanowane, niezaczęte i do zaprojektowania przed budową: usuwanie Twoich danych osobowych z serwisów brokerów
 danych, pomoc w odzyskaniu tożsamości, gdy zostanie skradziona, oraz VPN — wszystko za darmo. DuckDuckGo sprzedaje te
-trzy rzeczy w płatnej subskrypcji; InDuckGo chce je dać bez opłat. Potrzebują serwerów lub partnerów i ustaleń
+trzy rzeczy w płatnej subskrypcji; ZTBrowser chce je dać bez opłat. Potrzebują serwerów lub partnerów i ustaleń
 prawnych, więc nie ma daty.
 
-W przyszłości InDuckGo będzie częścią nowej dystrybucji Linuksa. Pozostanie samodzielnym projektem i zachowa
+W przyszłości ZTBrowser będzie częścią nowej dystrybucji Linuksa. Pozostanie samodzielnym projektem i zachowa
 paczki dla innych dystrybucji.
 
 ---
 
 ## Instalacja
 
-Pobierz paczkę z [najnowszego wydania](https://github.com/eshaiotic/induckgo/releases/latest).
+Pobierz paczkę z [najnowszego wydania](https://github.com/eshaiotic/ztbrowser/releases/latest).
 
 | Plik | Dla |
 |---|---|
-| `induckgo-*.fc44.x86_64.rpm` | Fedora 44 |
-| `induckgo-*-x86_64.pkg.tar.zst` | Arch Linux, CachyOS, EndeavourOS, Manjaro |
-| `InDuckGo-*-x86_64.AppImage` | każda inna dystrybucja z glibc 2.43 lub nowszą (około 230 MB: zawiera Chromium 140) |
+| `ztbrowser-*.fc44.x86_64.rpm` | Fedora 44 |
+| `ztbrowser-*-x86_64.pkg.tar.zst` | Arch Linux, CachyOS, EndeavourOS, Manjaro |
+| `ZTBrowser-*-x86_64.AppImage` | każda inna dystrybucja z glibc 2.43 lub nowszą (około 230 MB: zawiera Chromium 140) |
 
 Każde wydanie ma `SHA256SUMS` i atestację pochodzenia (build provenance), która dowodzi, że plik zbudował
 GitHub Actions tego repozytorium:
 
 ```sh
 sha256sum --check --ignore-missing SHA256SUMS
-gh attestation verify InDuckGo-*-x86_64.AppImage --repo eshaiotic/induckgo
+gh attestation verify ZTBrowser-*-x86_64.AppImage --repo eshaiotic/ztbrowser
 ```
 
 Paczki rpm i pacmana korzystają z systemowych Qt i QtWebEngine, więc silnik przeglądarki dostaje aktualizacje
-bezpieczeństwa Twojej dystrybucji; zależą od pakietów Qt Quick, QtWebChannel, QtWebEngine i SVG, które menedżer
+bezpieczeństwa Twojej dystrybucji; zależą od pakietów Qt Quick, QtWebChannel, QtWebEngine, SVG i xdg-utils, które menedżer
 pakietów doinstaluje. AppImage niesie własne Qt i QtWebEngine (Chromium), grafikę bierze z hosta, a aktualizacje
-silnika dostaje tylko z nowym wydaniem InDuckGo. Nie wymaga instalacji:
-`chmod +x InDuckGo-*-x86_64.AppImage && ./InDuckGo-*-x86_64.AppImage`. Pulpity z Waylandem biorą ikonę okna z
+silnika dostaje tylko z nowym wydaniem ZTBrowsera. Nie wymaga instalacji:
+`chmod +x ZTBrowser-*-x86_64.AppImage && ./ZTBrowser-*-x86_64.AppImage`. Pulpity z Waylandem biorą ikonę okna z
 zainstalowanego pliku `.desktop`, którego AppImage nie ma, więc przy starcie zapisuje go sobie sam
-(`~/.local/share/applications/io.github.induckgo.InDuckGo.desktop` i ikonę obok, wskazujące plik AppImage; po
+(`~/.local/share/applications/io.github.ztbrowser.ZTBrowser.desktop` i ikonę obok, wskazujące plik AppImage; po
 przeniesieniu pliku uruchom go jeszcze raz). Wpis menu uruchamia ten plik później, więc wskazuje prawdziwy plik
 (po rozwiązaniu dowiązań) i powstaje tylko wtedy, gdy ten plik i każdy katalog nad nim, aż do Twojego katalogu
 domowego, należą do roota lub do Ciebie, a grupa ani inni nie mogą do nich pisać (nic pod `/tmp` ani innym katalogiem
 współdzielonym nie spełnia tego warunku). Wpis znika, gdy jego plik przestaje spełniać warunek albo gdy zainstalujesz
 paczkę (Twój wpis ma pierwszeństwo przed systemowym, więc bez tego menu dalej uruchamiałoby AppImage zamiast paczki; wpis
 znika przy następnym starcie AppImage, a do tego czasu usuń go ręcznie). Wpisu napisanego przez Ciebie nigdy nie
-ruszamy (wygenerowany ma `X-InDuckGo-AppImage=<path>`), a przy zainstalowanej paczce nic nie powstaje. Nie ma jeszcze okna
+ruszamy (wygenerowany ma `X-ZTBrowser-AppImage=<path>`), a przy zainstalowanej paczce nic nie powstaje. Nie ma jeszcze okna
 Tor, więc żadna paczka nie dociąga Tora.
 
 Z kopii tego repozytorium:
 
 ```sh
-./install                 # Arch: buduje paczkę pacmana i ją instaluje; Fedora: instaluje dist/
+./install                 # Arch: buduje paczkę pacmana i ją instaluje; Fedora: instaluje dist/;
+                          # potem pyta, czy ZTBrowser ma być domyślną przeglądarką (domyślnie: nie)
 ./uninstall               # usuwa paczkę; profile i aplikacje webowe zostają
-./uninstall --purge       # kasuje też wszystkie dane InDuckGo i skróty aplikacji webowych
+./uninstall --purge       # kasuje też wszystkie dane ZTBrowsera i skróty aplikacji webowych
 ```
 
 ---
@@ -275,7 +283,7 @@ packaging/release.sh appimage rpm   # albo tylko wybrane: arch, appimage, rpm
 
 AppImage i `.rpm` powstają w kontenerze Fedory 44 (rootless podman albo `CONTAINER_ENGINE=docker`), więc linkują
 się z bibliotekami systemów, na które są przeznaczone, i niosą albo używają Chromium 140. Nie ma `.deb`: Qt
-WebEngine Debiana 13 (Qt 6.8, Chromium 122) jest starszy niż próg silnika InDuckGo, a żaden stabilny Debian ani
+WebEngine Debiana 13 (Qt 6.8, Chromium 122) jest starszy niż próg silnika ZTBrowsera, a żaden stabilny Debian ani
 Ubuntu nie ma nowszego. Paczkę dla Archa buduje `makepkg` na hoście, z flagami jego `makepkg.conf` (bez
 optymalizacji w czasie łączenia, której linker Rusta nie czyta w części C++). Runtime AppImage jest przypięty do
 wydania i sprawdzany po SHA-256.
@@ -289,32 +297,32 @@ atestacjami. Tag musi zgadzać się z wersją w `Cargo.toml`.
 
 ## Uruchamianie ze źródeł
 
-InDuckGo potrzebuje Qt 6 z QtWebEngine, QtWebChannel i Quick Controls (na Archu: `qt6-base qt6-declarative
+ZTBrowser potrzebuje Qt 6 z QtWebEngine, QtWebChannel i Quick Controls (na Archu: `qt6-base qt6-declarative
 qt6-webengine qt6-webchannel qt6-svg`), kompilatora C++ i Rusta.
 
 ```sh
 sudo pacman -S --needed rust qt6-base qt6-declarative qt6-webengine qt6-webchannel qt6-svg
-cargo run --release -p induckgo-qt                          # przeglądarka, profil domyślny
-cargo run --release -p induckgo-qt -- --profile work        # przeglądarka, profil "work"
-cargo run --release -p induckgo-qt -- https://example.com/  # otwórz stronę
+cargo run --release -p ztbrowser-qt                          # przeglądarka, profil domyślny
+cargo run --release -p ztbrowser-qt -- --profile work        # przeglądarka, profil "work"
+cargo run --release -p ztbrowser-qt -- https://example.com/  # otwórz stronę
 ```
 
-Zainstalowane aplikacje webowe uruchamia się z menu aplikacji pulpitu (`induckgo-qt --web-app <id>`).
+Zainstalowane aplikacje webowe uruchamia się z menu aplikacji pulpitu (`ztbrowser-qt --web-app <id>`).
 
 ---
 
 ## Testy
 
 Stos: **cargo-nextest** — 899 obiektowych scenariuszy Given/When/Then: 683 dla domeny w
-`crates/induckgo-core/tests/` (82 plików, jeden na typ domenowy), 146 dla interfejsu Qt i jego adaptera silnika, 61 dla
-narzędzia raportu w `crates/induckgo-test-report/tests/` i 9 dla narzędzia benchmarków w
-`crates/induckgo-bench/tests/`. CI uruchamia je wszystkie w kontenerze Arch z Qt 6, testy Qt pod Xvfb z Mesą (QtWebEngine potrzebuje kontekstu
+`crates/ztbrowser-core/tests/` (82 plików, jeden na typ domenowy), 146 dla interfejsu Qt i jego adaptera silnika, 61 dla
+narzędzia raportu w `crates/ztbrowser-test-report/tests/` i 9 dla narzędzia benchmarków w
+`crates/ztbrowser-bench/tests/`. CI uruchamia je wszystkie w kontenerze Arch z Qt 6, testy Qt pod Xvfb z Mesą (QtWebEngine potrzebuje kontekstu
 OpenGL nawet bez okna); same testy Qt uruchom przez
-`xvfb-run -a cargo test -p induckgo-qt -p induckgo-engine-qt` (albo `QT_QPA_PLATFORM=offscreen` na pulpicie).
+`xvfb-run -a cargo test -p ztbrowser-qt -p ztbrowser-engine-qt` (albo `QT_QPA_PLATFORM=offscreen` na pulpicie).
 
 ```sh
 ./run-tests                     # wszystkie testy + raport HTML w tests/reports/ (otwiera się w przeglądarce)
-cargo test -p induckgo-core     # tylko testy domeny (szybkie, bez Qt)
+cargo test -p ztbrowser-core     # tylko testy domeny (szybkie, bez Qt)
 cargo clippy --all-targets      # linty (pedantic, unsafe zabroniony)
 cargo fmt --check               # formatowanie
 cargo audit                     # podatności zależności (polityka zero podatności)
@@ -322,11 +330,11 @@ cargo audit                     # podatności zależności (polityka zero podatn
 
 **Raport testów:** `./run-tests` zawsze zapisuje `tests/reports/test-report-YYYYMMDD-HHmm.html` — dashboard
 historii przebiegów z ostatnim przebiegiem, ostatnimi 20 przebiegami, rankingami błędów, funkcjonalnościami i
-najwolniejszymi testami, a gdy zainstalowany jest `cargo-llvm-cov`, także z pokryciem `induckgo-core`. Zobacz
+najwolniejszymi testami, a gdy zainstalowany jest `cargo-llvm-cov`, także z pokryciem `ztbrowser-core`. Zobacz
 [Raport testów HTML](docs/pl/tests/test-report.md).
 
 **Architektura testów:**
-- Domena (`induckgo-core`) nie zależy od Qt, więc każda decyzja ochrony — budowanie reguł,
+- Domena (`ztbrowser-core`) nie zależy od Qt, więc każda decyzja ochrony — budowanie reguł,
   konwersja list filtrów, podnoszenie do HTTPS, czyszczenie linków, profile, aplikacje webowe, zoom — jest
   testowana bez ekranu.
 - Każdy scenariusz to obiekt: `given_…` go buduje, `when_…` wykonuje akcję i zwraca wynik, `then_…` sprawdza
@@ -342,15 +350,15 @@ najwolniejszymi testami, a gdy zainstalowany jest `cargo-llvm-cov`, także z pok
 ## Struktura projektu
 
 ```
-crates/induckgo-core/    logika domeny bez Qt: reguły ochrony, listy filtrów Guarda,
+crates/ztbrowser-core/    logika domeny bez Qt: reguły ochrony, listy filtrów Guarda,
                          profile, aplikacje webowe, zoom, uruchamianie, położenie kart i styl przycisków okna
-crates/induckgo-core/tests/
+crates/ztbrowser-core/tests/
                          jeden plik scenariuszy OO na typ domenowy
-crates/induckgo-qt/      przeglądarka: interfejs Qt Quick (QML) na QtWebEngine, spięty z Rustem przez cxx-qt
-crates/induckgo-engine-qt/
+crates/ztbrowser-qt/      przeglądarka: interfejs Qt Quick (QML) na QtWebEngine, spięty z Rustem przez cxx-qt
+crates/ztbrowser-engine-qt/
                          adapter QtWebEngine: polityki żądań i ciasteczek, przekładka w C++
-crates/induckgo/         aplikacja GTK 4 + libadwaita na WebKitGTK, zostaje, dopóki okno Tor i ochrona przed odciskiem przeglądarki nie powstaną w wersji Qt
-crates/induckgo-test-report/
+crates/ztbrowser/         aplikacja GTK 4 + libadwaita na WebKitGTK, zostaje, dopóki okno Tor i ochrona przed odciskiem przeglądarki nie powstaną w wersji Qt
+crates/ztbrowser-test-report/
                          narzędzie deweloperskie za ./run-tests: raport testów HTML (nie trafia do paczek)
 assets/                  dołączone Content Scope Scripts (Apache-2.0) i autoconsent (MPL-2.0), skrypt strony Guarda, ikony,
                          szablon strony błędu; nigdy Tracker Data Set ani listy filtrów
@@ -365,7 +373,7 @@ docs/en, docs/pl         architektura, zasady inżynierskie i raporty (kanoniczn
 
 ## Licencja
 
-InDuckGo to wolne oprogramowanie na licencji [GNU General Public License w wersji 3 lub późniejszej](LICENSE)
+ZTBrowser to wolne oprogramowanie na licencji [GNU General Public License w wersji 3 lub późniejszej](LICENSE)
 (`GPL-3.0-or-later`). Atrybucje są w [NOTICE](NOTICE).
 
 ### Licencje danych stron trzecich
@@ -373,8 +381,8 @@ InDuckGo to wolne oprogramowanie na licencji [GNU General Public License w wersj
 - Content Scope Scripts 20.0.0 — Apache-2.0, dołączone w `assets/content-scope-scripts` razem z licencją.
 - Konfiguracja prywatności — Apache-2.0, pobierana w czasie działania.
 - Tracker Data Set — **CC BY-NC-SA 4.0** (niekomercyjna), pobierany w czasie działania, nigdy nie commitowany.
-- Listy filtrów InDuckGo Guard — GPL-3.0, CC BY-SA 3.0, CC BY 3.0, CC BY-NC-SA 4.0 lub warunki wydawcy,
+- Listy filtrów ZTBrowser Guard — GPL-3.0, CC BY-SA 3.0, CC BY 3.0, CC BY-NC-SA 4.0 lub warunki wydawcy,
   pobierane w czasie działania, nigdy nie commitowane.
 - adblock-rust 0.13.5 — MPL-2.0, wkompilowany bez zmian (źródło: <https://github.com/brave/adblock-rust>).
-- autoconsent 18.0.0 — MPL-2.0, spakowany z własnym punktem wejścia InDuckGo w `assets/autoconsent` (licencja, źródło
+- autoconsent 18.0.0 — MPL-2.0, spakowany z własnym punktem wejścia ZTBrowsera w `assets/autoconsent` (licencja, źródło
   punktu wejścia i przepis na przebudowę obok; źródło biblioteki: <https://github.com/duckduckgo/autoconsent>).

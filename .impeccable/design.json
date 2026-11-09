@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-11-03T07:06:27+00:00",
-  "title": "Design System: InDuckGo",
+  "title": "Design System: ZTBrowser",
   "extensions": {
     "colorMeta": {
       "ink": {
@@ -108,7 +108,7 @@
       },
       "amber": {
         "role": "secondary",
-        "displayName": "InDuckGo Amber",
+        "displayName": "ZTBrowser Amber",
         "canonical": "#ffb300",
         "oklch": "oklch(81.8% 0.171 77.9)",
         "tonalRamp": [
@@ -606,7 +606,7 @@
           "docs/en/reports/tracking-summary.html"
         ],
         "heroField": "radial-gradient(120% 140% at 0% 0%, #2e1a87 0%, #1e1060 55%, #120a3d 100%)",
-        "font": "InDuckGo Sans: embedded WOFF2 subset of Adwaita Sans (Latin and Polish), SIL OFL 1.1, weights 100-900"
+        "font": "ZTBrowser Sans: embedded WOFF2 subset of Adwaita Sans (Latin and Polish), SIL OFL 1.1, weights 100-900"
       },
       "operate": {
         "files": [
@@ -641,7 +641,7 @@
       {
         "name": "bar-stagger",
         "value": "0.12s",
-        "purpose": "Delay step between lanes, in the order Chrome, Brave, InDuckGo."
+        "purpose": "Delay step between lanes, in the order Chrome, Brave, ZTBrowser."
       }
     ],
     "breakpoints": [
@@ -660,33 +660,33 @@
       "name": "Race lanes",
       "kind": "custom",
       "refersTo": "race-track",
-      "description": "Signature hero comparison on the indigo field: one lane per browser, count at hero scale, amber for InDuckGo only.",
-      "html": "<div class=\"ds-race\" role=\"img\" aria-label=\"Ad and tracking servers on 12 sites: Chrome 94, Brave 5, InDuckGo 2\"><div class=\"ds-lane ds-chrome\"><div class=\"ds-who\">Chrome<small>version 156</small></div><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:100%\"></div></div><div class=\"ds-count\">94</div></div><div class=\"ds-lane ds-brave\"><div class=\"ds-who\">Brave<small>version 1.98</small></div><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:5.3%\"></div></div><div class=\"ds-count\">5</div></div><div class=\"ds-lane ds-us\"><div class=\"ds-who\"><svg class=\"ds-mark\" viewBox=\"0 0 1280 1280\" width=\"26\" height=\"26\" aria-hidden=\"true\"><defs><linearGradient id=\"ds-mark-rim\" x1=\"470\" y1=\"40\" x2=\"780\" y2=\"1230\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#8270df\"/><stop offset=\".5\" stop-color=\"#5941b7\"/><stop offset=\"1\" stop-color=\"#24115e\"/></linearGradient><linearGradient id=\"ds-mark-shield\" x1=\"420\" y1=\"110\" x2=\"780\" y2=\"1170\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#6046c2\"/><stop offset=\".55\" stop-color=\"#482797\"/><stop offset=\"1\" stop-color=\"#351475\"/></linearGradient><linearGradient id=\"ds-mark-bill\" x1=\"785\" y1=\"486\" x2=\"1028\" y2=\"643\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#ffb900\"/><stop offset=\"1\" stop-color=\"#ffc900\"/></linearGradient></defs><path fill=\"url(#ds-mark-rim)\" d=\"M626 38 1124 216V600C1124 887 943 1077 626 1230 310 1076 130 886 130 600V216Z\"/><path fill=\"url(#ds-mark-shield)\" d=\"M626 107 1070 256V600C1070 853 911 1030 626 1167 342 1030 184 852 184 600V256Z\"/><path fill=\"#fff\" d=\"M572 252C708 250 798 349 830 475L799 677C752 770 673 824 570 823 411 823 285 696 285 540 285 388 417 254 572 252Z\"/><path fill=\"url(#ds-mark-bill)\" d=\"M830 474C881 520 948 537 1009 544 1037 547 1054 563 1050 581 1045 609 988 628 935 641 873 656 830 660 799 678 779 653 771 623 772 593 773 544 793 500 830 474Z\"/><circle cx=\"655\" cy=\"458\" r=\"53.5\" fill=\"#301466\"/><circle cx=\"673\" cy=\"439\" r=\"15.5\" fill=\"#fff\"/><path fill=\"#fff\" d=\"M296 805C387 885 502 931 626 931 750 931 865 885 955 805 897 921 770 993 626 993 482 993 355 921 296 805Z\"/></svg>InDuckGo<small>version 1.0 with Guard</small></div><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:2.1%\"></div></div><div class=\"ds-count\">2</div></div></div>",
-      "css": ".ds-race { display: grid; gap: 18px; padding: 40px 28px; color: #fff; font: 17px/1.6 \"InDuckGo Sans\", \"Adwaita Sans\", system-ui, sans-serif; background: radial-gradient(120% 140% at 0% 0%, var(--indigo, #2e1a87) 0%, var(--ink, #1e1060) 55%, #120a3d 100%); } .ds-lane { display: grid; grid-template-columns: 150px 1fr 96px; align-items: center; gap: 18px; } .ds-who { font-weight: 700; font-size: 19px; } .ds-who small { display: block; font-weight: 400; font-size: 14px; color: #bdb5f2; } .ds-mark { vertical-align: -6px; margin-right: 8px; } .ds-track { height: 46px; border-radius: 10px; background: rgb(255 255 255 / 9%); overflow: hidden; } .ds-fill { height: 100%; border-radius: 10px; min-width: 10px; transform-origin: left; animation: ds-grow 1.1s cubic-bezier(.16, 1, .3, 1) both; } .ds-count { font-size: 44px; font-weight: 800; line-height: 1; text-align: right; font-variant-numeric: tabular-nums; } .ds-chrome .ds-fill { background: var(--chrome, #b9b5c9); } .ds-brave .ds-fill { background: var(--brave, #ff7a45); animation-delay: .12s; } .ds-us .ds-fill { background: var(--amber, #ffb300); animation-delay: .24s; } .ds-us .ds-who, .ds-us .ds-count { color: var(--amber, #ffb300); } @keyframes ds-grow { from { transform: scaleX(0); } } @media (prefers-reduced-motion: reduce) { .ds-fill { animation: none; } }"
+      "description": "Signature hero comparison on the indigo field: one lane per browser, count at hero scale, amber for ZTBrowser only.",
+      "html": "<div class=\"ds-race\" role=\"img\" aria-label=\"Ad and tracking servers on 12 sites: Chrome 94, Brave 5, ZTBrowser 2\"><div class=\"ds-lane ds-chrome\"><div class=\"ds-who\">Chrome<small>version 156</small></div><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:100%\"></div></div><div class=\"ds-count\">94</div></div><div class=\"ds-lane ds-brave\"><div class=\"ds-who\">Brave<small>version 1.98</small></div><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:5.3%\"></div></div><div class=\"ds-count\">5</div></div><div class=\"ds-lane ds-us\"><div class=\"ds-who\"><svg class=\"ds-mark\" viewBox=\"0 0 1254 1254\" width=\"26\" height=\"26\" aria-hidden=\"true\"><path fill=\"#864ce3\" d=\"M626 51L106.3 261.9Q97 265.6 97 275.6V472.3C97 814.1 309 1089.2 626 1215C943 1089.2 1155 814.1 1155 472.3V275.6Q1155 265.6 1145.7 261.9Z\"/><path fill=\"#4d0c96\" d=\"M626 97L148.3 290.8Q139 294.6 139 304.6V495.8C139 787.3 335.9 1054.4 626 1171C916.1 1054.4 1113 787.3 1113 495.8V304.6Q1113 294.6 1103.7 290.8Z\"/><g transform=\"rotate(-45 643 622.5)\" fill=\"none\"><path transform=\"rotate(2.1 792.7 635.1)\" stroke=\"#fff\" stroke-width=\"85.6\" d=\"M704.9 487.8H880.5C961.9 487.8 1027.8 553.7 1027.8 635.1C1027.8 716.5 961.9 782.4 880.5 782.4H704.9C623.5 782.4 557.6 716.5 557.6 635.1C557.6 553.7 623.5 487.8 704.9 487.8Z\"/><path transform=\"rotate(3.3 478.9 611.4)\" stroke=\"#4d0c96\" stroke-width=\"123.4\" d=\"M399.6 469H558.3C636.9 469 700.7 532.8 700.7 611.4C700.7 690 636.9 753.8 558.3 753.8H399.6C321 753.8 257.2 690 257.2 611.4C257.2 532.8 321 469 399.6 469Z\"/><path transform=\"rotate(3.3 478.9 611.4)\" stroke=\"#fff\" stroke-width=\"83.4\" d=\"M399.6 469H558.3C636.9 469 700.7 532.8 700.7 611.4C700.7 690 636.9 753.8 558.3 753.8H399.6C321 753.8 257.2 690 257.2 611.4C257.2 532.8 321 469 399.6 469Z\"/><path transform=\"rotate(2.1 792.7 635.1)\" stroke=\"#4d0c96\" stroke-width=\"125.6\" d=\"M759.9 782.4H704.9C628.5 782.4 564.8 724 558.2 647.9\"/><path transform=\"rotate(2.1 792.7 635.1)\" stroke=\"#fff\" stroke-width=\"85.6\" d=\"M769.9 782.4H704.9C623.5 782.4 557.6 716.5 557.6 635.1\"/></g></svg>ZTBrowser<small>version 1.0 with Guard</small></div><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:2.1%\"></div></div><div class=\"ds-count\">2</div></div></div>",
+      "css": ".ds-race { display: grid; gap: 18px; padding: 40px 28px; color: #fff; font: 17px/1.6 \"ZTBrowser Sans\", \"Adwaita Sans\", system-ui, sans-serif; background: radial-gradient(120% 140% at 0% 0%, var(--indigo, #2e1a87) 0%, var(--ink, #1e1060) 55%, #120a3d 100%); } .ds-lane { display: grid; grid-template-columns: 150px 1fr 96px; align-items: center; gap: 18px; } .ds-who { font-weight: 700; font-size: 19px; } .ds-who small { display: block; font-weight: 400; font-size: 14px; color: #bdb5f2; } .ds-mark { vertical-align: -6px; margin-right: 8px; } .ds-track { height: 46px; border-radius: 10px; background: rgb(255 255 255 / 9%); overflow: hidden; } .ds-fill { height: 100%; border-radius: 10px; min-width: 10px; transform-origin: left; animation: ds-grow 1.1s cubic-bezier(.16, 1, .3, 1) both; } .ds-count { font-size: 44px; font-weight: 800; line-height: 1; text-align: right; font-variant-numeric: tabular-nums; } .ds-chrome .ds-fill { background: var(--chrome, #b9b5c9); } .ds-brave .ds-fill { background: var(--brave, #ff7a45); animation-delay: .12s; } .ds-us .ds-fill { background: var(--amber, #ffb300); animation-delay: .24s; } .ds-us .ds-who, .ds-us .ds-count { color: var(--amber, #ffb300); } @keyframes ds-grow { from { transform: scaleX(0); } } @media (prefers-reduced-motion: reduce) { .ds-fill { animation: none; } }"
     },
     {
       "name": "Compact comparison rows",
       "kind": "custom",
       "refersTo": "mini-track",
-      "description": "Bars on paper for one sub-measure; InDuckGo's label and count in Logo Indigo.",
-      "html": "<div class=\"ds-mini\"><h3>Ad servers</h3><div class=\"ds-row ds-chrome\"><span>Chrome</span><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:100%\"></div></div><b>75</b></div><div class=\"ds-row ds-brave\"><span>Brave</span><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:5.3%\"></div></div><b>4</b></div><div class=\"ds-row ds-us\"><span>InDuckGo</span><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:1.3%\"></div></div><b>1</b></div></div>",
-      "css": ".ds-mini { display: grid; gap: 10px; max-width: 480px; padding: 24px; background: #fff; color: #1d1a33; font: 17px/1.6 \"InDuckGo Sans\", \"Adwaita Sans\", system-ui, sans-serif; } .ds-mini h3 { margin: 0 0 4px; font-size: 18px; } .ds-row { display: grid; grid-template-columns: 92px 1fr 44px; align-items: center; gap: 12px; } .ds-track { height: 24px; border-radius: 6px; background: var(--mist, #f4f2fc); overflow: hidden; } .ds-fill { height: 100%; border-radius: 6px; min-width: 6px; } .ds-row b { text-align: right; font-size: 19px; font-variant-numeric: tabular-nums; } .ds-chrome .ds-fill { background: var(--chrome, #b9b5c9); } .ds-brave .ds-fill { background: var(--brave, #ff7a45); } .ds-us .ds-fill { background: var(--amber, #ffb300); } .ds-us span, .ds-us b { color: var(--indigo, #2e1a87); font-weight: 700; }"
+      "description": "Bars on paper for one sub-measure; ZTBrowser's label and count in Logo Indigo.",
+      "html": "<div class=\"ds-mini\"><h3>Ad servers</h3><div class=\"ds-row ds-chrome\"><span>Chrome</span><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:100%\"></div></div><b>75</b></div><div class=\"ds-row ds-brave\"><span>Brave</span><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:5.3%\"></div></div><b>4</b></div><div class=\"ds-row ds-us\"><span>ZTBrowser</span><div class=\"ds-track\"><div class=\"ds-fill\" style=\"width:1.3%\"></div></div><b>1</b></div></div>",
+      "css": ".ds-mini { display: grid; gap: 10px; max-width: 480px; padding: 24px; background: #fff; color: #1d1a33; font: 17px/1.6 \"ZTBrowser Sans\", \"Adwaita Sans\", system-ui, sans-serif; } .ds-mini h3 { margin: 0 0 4px; font-size: 18px; } .ds-row { display: grid; grid-template-columns: 92px 1fr 44px; align-items: center; gap: 12px; } .ds-track { height: 24px; border-radius: 6px; background: var(--mist, #f4f2fc); overflow: hidden; } .ds-fill { height: 100%; border-radius: 6px; min-width: 6px; } .ds-row b { text-align: right; font-size: 19px; font-variant-numeric: tabular-nums; } .ds-chrome .ds-fill { background: var(--chrome, #b9b5c9); } .ds-brave .ds-fill { background: var(--brave, #ff7a45); } .ds-us .ds-fill { background: var(--amber, #ffb300); } .ds-us span, .ds-us b { color: var(--indigo, #2e1a87); font-weight: 700; }"
     },
     {
       "name": "Comparison table",
       "kind": "card",
-      "refersTo": "comparison-cell-induckgo",
-      "description": "Yes/no behaviour facts per browser; InDuckGo's column carries the mist wash; green/red dots judge facts, not browsers.",
-      "html": "<table class=\"ds-table\"><thead><tr><th></th><th>Chrome</th><th>Brave</th><th class=\"ds-us\">InDuckGo</th></tr></thead><tbody><tr><th>Third-party tracking cookies</th><td class=\"ds-no\">allowed</td><td class=\"ds-yes\">blocked</td><td class=\"ds-us ds-yes\">blocked</td></tr><tr><th>Global Privacy Control signal</th><td class=\"ds-no\">no</td><td class=\"ds-yes\">yes</td><td class=\"ds-us ds-yes\">yes</td></tr></tbody></table>",
-      "css": ".ds-table { width: 100%; border-collapse: collapse; font: 16px/1.6 \"InDuckGo Sans\", \"Adwaita Sans\", system-ui, sans-serif; color: #1d1a33; background: #fff; } .ds-table th, .ds-table td { text-align: left; padding: 14px 12px; border-bottom: 1px solid var(--line, #e1ddf2); vertical-align: top; } .ds-table thead th { font-size: 14px; color: var(--muted, #575270); font-weight: 600; } .ds-table thead th.ds-us { color: var(--indigo, #2e1a87); } .ds-table tbody th { font-weight: 600; width: 34%; } .ds-table td.ds-us { background: var(--mist, #f4f2fc); color: var(--ink, #1e1060); font-weight: 600; } .ds-yes::before, .ds-no::before { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; content: \"\"; vertical-align: 1px; } .ds-yes::before { background: var(--good, #17703a); } .ds-no::before { background: var(--bad, #b3261e); }"
+      "refersTo": "comparison-cell-ztbrowser",
+      "description": "Yes/no behaviour facts per browser; ZTBrowser's column carries the mist wash; green/red dots judge facts, not browsers.",
+      "html": "<table class=\"ds-table\"><thead><tr><th></th><th>Chrome</th><th>Brave</th><th class=\"ds-us\">ZTBrowser</th></tr></thead><tbody><tr><th>Third-party tracking cookies</th><td class=\"ds-no\">allowed</td><td class=\"ds-yes\">blocked</td><td class=\"ds-us ds-yes\">blocked</td></tr><tr><th>Global Privacy Control signal</th><td class=\"ds-no\">no</td><td class=\"ds-yes\">yes</td><td class=\"ds-us ds-yes\">yes</td></tr></tbody></table>",
+      "css": ".ds-table { width: 100%; border-collapse: collapse; font: 16px/1.6 \"ZTBrowser Sans\", \"Adwaita Sans\", system-ui, sans-serif; color: #1d1a33; background: #fff; } .ds-table th, .ds-table td { text-align: left; padding: 14px 12px; border-bottom: 1px solid var(--line, #e1ddf2); vertical-align: top; } .ds-table thead th { font-size: 14px; color: var(--muted, #575270); font-weight: 600; } .ds-table thead th.ds-us { color: var(--indigo, #2e1a87); } .ds-table tbody th { font-weight: 600; width: 34%; } .ds-table td.ds-us { background: var(--mist, #f4f2fc); color: var(--ink, #1e1060); font-weight: 600; } .ds-yes::before, .ds-no::before { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; content: \"\"; vertical-align: 1px; } .ds-yes::before { background: var(--good, #17703a); } .ds-no::before { background: var(--bad, #b3261e); }"
     },
     {
       "name": "Weakness band",
       "kind": "card",
       "refersTo": "weakness-band",
-      "description": "Full-bleed warm band that states where InDuckGo is weaker, at body size.",
-      "html": "<section class=\"ds-gaps\"><h2>Where InDuckGo is still weaker</h2><ul><li><b>No phishing or malware warnings.</b> Chrome and Brave have Safe Browsing; WebKitGTK has no such service.</li><li><b>A rare engine.</b> Few people use WebKitGTK on Linux, so a site can notice it.</li></ul></section>",
-      "css": ".ds-gaps { background: var(--weakness-wash, #fff7e0); color: #1d1a33; padding: 44px 28px 40px; font: 17px/1.6 \"InDuckGo Sans\", \"Adwaita Sans\", system-ui, sans-serif; } .ds-gaps h2 { margin: 0 0 8px; color: #5c3d00; font-size: clamp(24px, 3vw, 30px); line-height: 1.2; letter-spacing: -0.01em; } .ds-gaps ul { margin: 18px 0 0; padding-left: 22px; max-width: 72ch; } .ds-gaps li { margin-bottom: 12px; } .ds-gaps li::marker { color: #b97800; }"
+      "description": "Full-bleed warm band that states where ZTBrowser is weaker, at body size.",
+      "html": "<section class=\"ds-gaps\"><h2>Where ZTBrowser is still weaker</h2><ul><li><b>No phishing or malware warnings.</b> Chrome and Brave have Safe Browsing; WebKitGTK has no such service.</li><li><b>A rare engine.</b> Few people use WebKitGTK on Linux, so a site can notice it.</li></ul></section>",
+      "css": ".ds-gaps { background: var(--weakness-wash, #fff7e0); color: #1d1a33; padding: 44px 28px 40px; font: 17px/1.6 \"ZTBrowser Sans\", \"Adwaita Sans\", system-ui, sans-serif; } .ds-gaps h2 { margin: 0 0 8px; color: #5c3d00; font-size: clamp(24px, 3vw, 30px); line-height: 1.2; letter-spacing: -0.01em; } .ds-gaps ul { margin: 18px 0 0; padding-left: 22px; max-width: 72ch; } .ds-gaps li { margin-bottom: 12px; } .ds-gaps li::marker { color: #b97800; }"
     },
     {
       "name": "Report link",
@@ -694,7 +694,7 @@
       "refersTo": "link",
       "description": "Indigo underlined link with the amber keyboard focus ring.",
       "html": "<p class=\"ds-method\">Details are in the <a class=\"ds-link\" href=\"#\">full report with method and sources</a>.</p>",
-      "css": ".ds-method { color: var(--muted, #575270); font: 15px/1.6 \"InDuckGo Sans\", \"Adwaita Sans\", system-ui, sans-serif; max-width: 75ch; } .ds-link { color: var(--indigo, #2e1a87); text-underline-offset: 3px; } .ds-link:focus-visible { outline: 3px solid var(--amber, #ffb300); outline-offset: 3px; border-radius: 3px; }"
+      "css": ".ds-method { color: var(--muted, #575270); font: 15px/1.6 \"ZTBrowser Sans\", \"Adwaita Sans\", system-ui, sans-serif; max-width: 75ch; } .ds-link { color: var(--indigo, #2e1a87); text-underline-offset: 3px; } .ds-link:focus-visible { outline: 3px solid var(--amber, #ffb300); outline-offset: 3px; border-radius: 3px; }"
     },
     {
       "name": "Operate button",
@@ -723,10 +723,10 @@
   ],
   "narrative": {
     "northStar": "The Honest Scoreboard",
-    "overview": "InDuckGo has two kinds of web surface, and they deliberately do not wear the same clothes. **Persuasion surfaces** are the HTML reports the author shares with people who evaluate the browser (today `docs/pl/reports/tracking-summary.html` and its English mirror `docs/en/reports/tracking-summary.html`). They behave like a scoreboard: a deep indigo field taken from the logo, measured counts at hero scale, every browser in its own recognisable colour, and the logo's amber reserved for InDuckGo alone. Nothing decorates the data; the bars and their printed figures are the composition, and the page states where InDuckGo is weaker in a band of its own instead of in fine print.\n\n**Operate surfaces** are pages the browser itself shows while someone is working, today the error pages rendered from `assets/error-page/error-page.html`. They step back into GNOME's libadwaita world: near-neutral greys written as alpha over near-black, a light and a dark scheme, the desktop's own accent colour delivered at runtime, pill buttons and the system face. A failed page load is not a moment to advertise, so these pages carry no brand colour at all.\n\nWhat ties the two together is the shield. Both surfaces draw the same shield geometry with identical path data from `assets/icons/io.github.induckgo.InDuckGo.svg`: the report shows it in the full indigo gradient with its amber beak beside InDuckGo's bar, and the error page shows it as a ghost-grey silhouette whose round badge takes the state colour (accent, danger or warning). Brand colour belongs to the claim; the operate surface belongs to the user's desktop. Density is calm on both: a 17px or 15px body, measures between 62ch and 75ch, generous vertical rhythm, and a plain, factual voice.\n\n**Provenance.** No concept roll (concept-seed) was run for the report surface because the user imposed a time limit on 2026-11-02; its form was chosen directly (a data-led report with comparison bars at hero scale). The North Star name is the documenter's reading of the report's direction contract, recorded from the built pages; no separate language interview was held in this pass.",
+    "overview": "ZTBrowser has two kinds of web surface, and they deliberately do not wear the same clothes. **Persuasion surfaces** are the HTML reports the author shares with people who evaluate the browser (today `docs/pl/reports/tracking-summary.html` and its English mirror `docs/en/reports/tracking-summary.html`). They behave like a scoreboard: a deep indigo field taken from the logo, measured counts at hero scale, every browser in its own recognisable colour, and the logo's amber reserved for ZTBrowser alone. Nothing decorates the data; the bars and their printed figures are the composition, and the page states where ZTBrowser is weaker in a band of its own instead of in fine print.\n\n**Operate surfaces** are pages the browser itself shows while someone is working, today the error pages rendered from `assets/error-page/error-page.html`. They step back into GNOME's libadwaita world: near-neutral greys written as alpha over near-black, a light and a dark scheme, the desktop's own accent colour delivered at runtime, pill buttons and the system face. A failed page load is not a moment to advertise, so these pages carry no brand colour at all.\n\nWhat ties the two together is the shield. Both surfaces draw the same shield geometry with identical path data from `assets/icons/io.github.ztbrowser.ZTBrowser.svg`: the report shows the full logo (a purple shield with a white chain) beside ZTBrowser's bar, and the error page shows it as a ghost-grey silhouette with the chain cut out, whose round badge takes the state colour (accent, danger or warning). Brand colour belongs to the claim; the operate surface belongs to the user's desktop. Density is calm on both: a 17px or 15px body, measures between 62ch and 75ch, generous vertical rhythm, and a plain, factual voice.\n\n**Provenance.** No concept roll (concept-seed) was run for the report surface because the user imposed a time limit on 2026-11-02; its form was chosen directly (a data-led report with comparison bars at hero scale). The North Star name is the documenter's reading of the report's direction contract, recorded from the built pages; no separate language interview was held in this pass.",
     "keyCharacteristics": [
       "Two surface families: a branded persuasion surface and a native, GNOME-like operate surface.",
-      "The deep indigo field and amber exist only on persuasion surfaces; amber marks InDuckGo and nothing else.",
+      "The deep indigo field and amber exist only on persuasion surfaces; amber marks ZTBrowser and nothing else.",
       "Numbers are the heaviest type on a report, always tabular, always printed beside their bar.",
       "Flat everywhere: depth comes from tonal fields and washes, never from shadows.",
       "Self-contained pages: fonts embedded or taken from the system, no network assets.",
@@ -735,12 +735,12 @@
     "rules": [
       {
         "name": "The Amber Is Us Rule",
-        "body": "Full-strength amber (#ffb300) marks only InDuckGo: its bar, its name and count on the field, and the logo's beak. The single functional exception is the keyboard focus ring. A competitor, a headline, a link or a button never turns amber.",
+        "body": "Full-strength amber (#ffb300) marks only ZTBrowser: its bar and its name and count on the field. The single functional exception is the keyboard focus ring. A competitor, a headline, a link or a button never turns amber.",
         "section": "colors"
       },
       {
         "name": "The Indigo On Paper Rule",
-        "body": "Amber text is legible on the field (9.0:1 on ink) and illegible on paper (1.6:1 on mist). When InDuckGo's name or figure sits on paper, it speaks in Logo Indigo (#2e1a87), and its table column gets the Lilac Mist wash.",
+        "body": "Amber text is legible on the field (9.0:1 on ink) and illegible on paper (1.6:1 on mist). When ZTBrowser's name or figure sits on paper, it speaks in Logo Indigo (#2e1a87), and its table column gets the Lilac Mist wash.",
         "section": "colors"
       },
       {
@@ -771,16 +771,16 @@
     ],
     "dos": [
       "**Do** draw every measured comparison as bars with the count printed beside each bar in tabular figures, the largest value at 100% of the track.",
-      "**Do** order browsers Chrome, Brave, InDuckGo in every chart and table.",
+      "**Do** order browsers Chrome, Brave, ZTBrowser in every chart and table.",
       "**Do** place the measurement date and sources directly under a measured chart, and link the full method from the page.",
-      "**Do** give InDuckGo's weaknesses their own Weakness Wash band at body size.",
-      "**Do** switch InDuckGo's text to Logo Indigo (#2e1a87) whenever it sits on paper or mist.",
+      "**Do** give ZTBrowser's weaknesses their own Weakness Wash band at body size.",
+      "**Do** switch ZTBrowser's text to Logo Indigo (#2e1a87) whenever it sits on paper or mist.",
       "**Do** draw the shield from the logo's own path data on every surface.",
       "**Do** take the accent and the light or dark scheme from the desktop on operate surfaces.",
       "**Do** stop the bar growth under `prefers-reduced-motion` and force exact colours in print."
     ],
     "donts": [
-      "**Don't** use amber (#ffb300) on a competitor, a headline, a link or a button; it marks InDuckGo and the focus ring only.",
+      "**Don't** use amber (#ffb300) on a competitor, a headline, a link or a button; it marks ZTBrowser and the focus ring only.",
       "**Don't** set amber text on paper or mist.",
       "**Don't** colour a browser red or green; those colours judge yes/no facts.",
       "**Don't** bring indigo, amber or the embedded face into an error page.",

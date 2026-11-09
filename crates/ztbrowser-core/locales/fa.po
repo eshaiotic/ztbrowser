@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fa\n"
+
+msgid "About ZTBrowser"
+msgstr "درباره ZTBrowser"
+
+msgid "Access denied"
+msgstr "دسترسی رد شد"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "به {requesting} اجازه می‌دهید هنگامی که در {current} هستید از کوکی‌ها و داده‌های خود استفاده کند؟"
+
+msgid "Allow {site} to know your location?"
+msgstr "به {site} اجازه می‌دهید از مکان شما مطلع شود؟"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "به {site} اجازه می‌دهید کلیپ‌بورد شما را بخواند؟"
+
+msgid "Allow {site} to show notifications?"
+msgstr "به {site} اجازه می‌دهید اعلان نمایش دهد؟"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "به {site} اجازه می‌دهید از دوربین و میکروفون شما استفاده کند؟"
+
+msgid "Allow {site} to use your camera?"
+msgstr "به {site} اجازه می‌دهید از دوربین شما استفاده کند؟"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "به {site} اجازه می‌دهید از میکروفون شما استفاده کند؟"
+
+msgid "Allow {site} to use your screen?"
+msgstr "به {site} اجازه می‌دهید از صفحه‌نمایش شما استفاده کند؟"
+
+msgid "App data cleared"
+msgstr "داده‌های برنامه پاک شد"
+
+msgid "Appearance"
+msgstr "ظاهر"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "در اجرای بعدی ZTBrowser اعمال می‌شود"
+
+msgid "Asking for relay descriptors"
+msgstr "درخواست توصیفگرهای رله‌ها"
+
+msgid "Asking for the network status"
+msgstr "درخواست وضعیت شبکه"
+
+msgid "Back"
+msgstr "بازگشت"
+
+msgid "Back and Forward"
+msgstr "بازگشت و جلو"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "بهترین گزینه در هر جا که Tor مسدود نیست."
+
+msgid "Bridges I provide"
+msgstr "پل‌هایی که خودم فراهم می‌کنم"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "پل‌ها رله‌های فهرست‌نشدهٔ Tor برای شبکه‌هایی هستند که Tor را مسدود می‌کنند."
+
+msgid "Browsing data burned"
+msgstr "داده‌های مرور پاک شد"
+
+msgid "Burn Browsing Data"
+msgstr "پاک‌کردن داده‌های مرور"
+
+msgid "Burn Browsing Data?"
+msgstr "داده‌های مرور پاک شود؟"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "دکمه‌هایی که در پنجره‌های این نمایه در اطراف نوار نشانی نمایش داده می‌شوند."
+
+msgid "C_lear"
+msgstr "پاک‌کردن(_L)"
+
+msgid "Cannot Connect to Tor"
+msgstr "اتصال به Tor ممکن نیست"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "دسترسی به درگاه کنترل Tor ممکن نیست: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "خواندن کوکی کنترل Tor ممکن نیست: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "حذف فایل قدیمی درگاه کنترل Tor ممکن نیست: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "ذخیرهٔ بارگیری ممکن نیست: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "اجرای Tor ممکن نیست: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "نوشتن پیکربندی Tor ممکن نیست: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "نوشتن در درگاه کنترل Tor ممکن نیست: {error}"
+
+msgid "Certificate for {name}"
+msgstr "گواهی برای {name}"
+
+msgid "Check the address for a typo."
+msgstr "نشانی را از نظر غلط تایپی بررسی کنید."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "نشانی را بررسی کنید، از جمله شمارهٔ درگاه پس از دونقطه، اگر وجود دارد."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "کابل شبکه یا اتصال Wi-Fi را بررسی کنید."
+
+msgid "Check your internet connection."
+msgstr "اتصال اینترنت خود را بررسی کنید."
+
+msgid "Clear App Data…"
+msgstr "پاک‌کردن داده‌های برنامه…"
+
+msgid "Clear Data of {name}?"
+msgstr "داده‌های {name} پاک شود؟"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "زبانه‌ها یا برنامه‌هایی را که لازم ندارید ببندید و سپس صفحه را دوباره بارگذاری کنید."
+
+msgid "Close {name} before deleting it"
+msgstr "پیش از حذف {name} آن را ببندید"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "همهٔ زبانه‌ها و پنجره‌های این نمایه را می‌بندد و کوکی‌ها، داده‌های سایت‌ها، حافظهٔ نهان و تاریخچهٔ آن را حذف می‌کند."
+
+msgid "Connect"
+msgstr "اتصال"
+
+msgid "Connect directly"
+msgstr "اتصال مستقیم"
+
+msgid "Connected"
+msgstr "متصل"
+
+msgid "Connected to a relay directory server"
+msgstr "متصل به کارساز فهرست رله‌ها"
+
+msgid "Connected to a relay to build circuits"
+msgstr "متصل به یک رله برای ساخت مدارها"
+
+msgid "Connected to pluggable transport"
+msgstr "متصل به ترابری قابل‌اتصال"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "متصل به ترابری قابل‌اتصال برای ساخت مدارها"
+
+msgid "Connected to proxy"
+msgstr "متصل به پراکسی"
+
+msgid "Connected to proxy to build circuits"
+msgstr "متصل به پراکسی برای ساخت مدارها"
+
+msgid "Connected to the Tor network"
+msgstr "متصل به شبکهٔ Tor"
+
+msgid "Connecting to Tor"
+msgstr "در حال اتصال به Tor"
+
+msgid "Connecting to a relay directory server"
+msgstr "در حال اتصال به کارساز فهرست رله‌ها"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "در حال اتصال به یک رله برای ساخت مدارها"
+
+msgid "Connecting to pluggable transport"
+msgstr "در حال اتصال به ترابری قابل‌اتصال"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "در حال اتصال به ترابری قابل‌اتصال برای ساخت مدارها"
+
+msgid "Connecting to proxy"
+msgstr "در حال اتصال به پراکسی"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "در حال اتصال به پراکسی برای ساخت مدارها"
+
+msgid "Connection Settings…"
+msgstr "تنظیمات اتصال…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts، پیکربندی حریم خصوصی و الگوریتم قوانین TrackerRadarKit."
+
+msgid "Could not install the app: {error}"
+msgstr "نصب برنامه ممکن نشد: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "حذف همه‌چیز ممکن نشد: {error}"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "حذف کوکی‌ها، داده‌های سایت‌ها و حافظهٔ نهان این نمایه"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "اتصال‌های پنهان‌شده به پل‌های داخلی Tor Browser."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "اتصال‌های پنهان‌شده به پل‌های داخلی Tor Browser. به {package} نیاز دارد."
+
+msgid "Download failed: {error}"
+msgstr "بارگیری ناموفق بود: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "هنگام اجرا از DuckDuckGo بارگیری می‌شود؛ دارای مجوز CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "{name} بارگیری شد"
+
+msgid "DuckDuckGo protections"
+msgstr "محافظت‌های DuckDuckGo"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "هر برنامه در پنجره و فرایند مخصوص خود اجرا می‌شود و کوکی‌ها و ورودهای مخصوص به خود را دارد."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "هر نمایه کوکی‌ها، ورودها، تاریخچه و حافظهٔ نهان خود را نگه می‌دارد و به‌صورت یک فرایند جداگانه اجرا می‌شود."
+
+msgid "Establishing a Tor circuit"
+msgstr "در حال برقراری مدار Tor"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "در حال برقراری اتصال رمزگذاری‌شده به فهرست"
+
+msgid "File not found"
+msgstr "فایل پیدا نشد"
+
+msgid "Find in Page…"
+msgstr "یافتن در صفحه…"
+
+msgid "Find in page"
+msgstr "یافتن در صفحه"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "دست‌دهی با کارساز فهرست رله‌ها پایان یافت"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "دست‌دهی با یک رله برای ساخت مدارها پایان یافت"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "در حال پایان دادن به دست‌دهی با کارساز فهرست رله‌ها"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "در حال پایان دادن به دست‌دهی با یک رله برای ساخت مدارها"
+
+msgid "Forward"
+msgstr "جلو"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "از bridges.torproject.org، با ایمیل یا از طریق یک دوست."
+
+msgid "Go to Home Page"
+msgstr "رفتن به صفحهٔ خانه"
+
+msgid "Go to the previous or next page"
+msgstr "رفتن به صفحهٔ قبلی یا بعدی"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "به صفحهٔ اصلی سایت بروید و صفحه را از آنجا پیدا کنید."
+
+msgid "How to Reach Tor"
+msgstr "نحوهٔ دسترسی به Tor"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "اگر پس از بارگذاری دوباره باز هم از کار افتاد، ممکن است خود صفحه خراب باشد."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "اگر نشانی درست است، ممکن است سایت دیگر وجود نداشته باشد."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "اگر در این سایت حساب دارید، وارد شوید و دوباره تلاش کنید."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "اگر از VPN یا کارساز DNS شخصی استفاده می‌کنید، بررسی کنید که کار کند."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "اگر از VPN، دیوار آتش یا پراکسی استفاده می‌کنید، بررسی کنید که سایت را مسدود نکرده باشد."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "فهرست‌های فیلتر ZTBrowser Guard"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "ZTBrowser نمی‌تواند {host} را باز کند، زیرا این رایانه به شبکه متصل نیست."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser کارسازی در {host} پیدا نکرد."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser از این درگاه به {host} متصل نمی‌شود."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "Tor اختصاصی ZTBrowser در حال اتصال است. تا برقراری اتصال هیچ چیز از این پنجره خارج نمی‌شود."
+
+msgid "Install Site as App"
+msgstr "نصب سایت به‌عنوان برنامه"
+
+msgid "Install Site as App…"
+msgstr "نصب سایت به‌عنوان برنامه…"
+
+msgid "Install as App"
+msgstr "نصب به‌عنوان برنامه"
+
+msgid "Installed Apps"
+msgstr "برنامه‌های نصب‌شده"
+
+msgid "Installed Apps…"
+msgstr "برنامه‌های نصب‌شده…"
+
+msgid "Installed {name}"
+msgstr "{name} نصب شد"
+
+msgid "Interface"
+msgstr "رابط کاربری"
+
+msgid "Issued by {name}"
+msgstr "صادرشده توسط {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "ممکن است جابه‌جا شده، تغییر نام داده یا حذف شده باشد."
+
+msgid "Language"
+msgstr "زبان"
+
+msgid "Load Insecure Page"
+msgstr "بارگذاری صفحهٔ ناامن"
+
+msgid "Load the page again, or stop loading it"
+msgstr "بارگذاری دوبارهٔ صفحه یا توقف بارگذاری"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "اطلاعات کافی از فهرست برای ساخت مدارها بارگذاری شد"
+
+msgid "Loading authority certificates"
+msgstr "در حال بارگذاری گواهی‌های مراجع"
+
+msgid "Loading relay descriptors"
+msgstr "در حال بارگذاری توصیفگرهای رله‌ها"
+
+msgid "Loading the network status"
+msgstr "در حال بارگذاری وضعیت شبکه"
+
+msgid "Main Menu"
+msgstr "منوی اصلی"
+
+msgid "Manage Profiles…"
+msgstr "مدیریت نمایه‌ها…"
+
+msgid "New Identity"
+msgstr "هویت جدید"
+
+msgid "New Identity?"
+msgstr "هویت جدید؟"
+
+msgid "New Tab"
+msgstr "زبانهٔ جدید"
+
+msgid "New Tor Window"
+msgstr "پنجرهٔ جدید Tor"
+
+msgid "New Window"
+msgstr "پنجرهٔ جدید"
+
+msgid "New identity"
+msgstr "هویت جدید"
+
+msgid "New profile name"
+msgstr "نام نمایهٔ جدید"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "هر پل در یک خط، برای مثال: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "فقط صفحه‌های وب را می‌توان به‌عنوان برنامه نصب کرد"
+
+msgid "Open"
+msgstr "باز کردن"
+
+msgid "Open Page in Browser"
+msgstr "باز کردن صفحه در مرورگر"
+
+msgid "Open a new tab"
+msgstr "باز کردن زبانهٔ جدید"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "باز کردن پنجره‌ای که ترافیکش فقط از طریق Tor می‌گذرد"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "برنامه‌های دیگر از پنجرهٔ Tor باز نمی‌شوند، زیرا بیرون از Tor متصل می‌شدند."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "تا زمانی که پنجرهٔ Tor متصل نشود، صفحه‌ها باز نمی‌شوند."
+
+msgid "Paste at least one bridge."
+msgstr "دست‌کم یک پل را جای‌گذاری کنید."
+
+msgid "Preferences"
+msgstr "ترجیحات"
+
+msgid "Preferences…"
+msgstr "ترجیحات…"
+
+msgid "Profiles"
+msgstr "نمایه‌ها"
+
+msgid "Protect This Site"
+msgstr "محافظت از این سایت"
+
+msgid "Protection Shield"
+msgstr "سپر محافظت"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "خواندن درگاه کنترل Tor ناموفق بود: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "اگر از VPN استفاده می‌کنید، دوباره آن را متصل کنید."
+
+msgid "Reload"
+msgstr "بارگذاری دوباره"
+
+msgid "Reload Page"
+msgstr "بارگذاری دوبارهٔ صفحه"
+
+msgid "Reset Zoom"
+msgstr "بازنشانی بزرگ‌نمایی"
+
+msgid "Search Engine"
+msgstr "موتور جست‌وجو"
+
+msgid "Search {engine}"
+msgstr "جست‌وجو در {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "جست‌وجو در {engine} یا وارد کردن نشانی"
+
+msgid "Show in Folder"
+msgstr "نمایش در پوشه"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "شما را خارج می‌کند و کوکی‌ها، داده‌های سایت‌ها و حافظهٔ نهان این برنامه را حذف می‌کند. چیز دیگری تغییر نمی‌کند."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "حذف بخشی از داده‌ها ممکن نشد: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "هنگام بارگذاری {host} مشکلی پیش آمد."
+
+msgid "Starting"
+msgstr "در حال راه‌اندازی"
+
+msgid "Starting Tor…"
+msgstr "در حال راه‌اندازی Tor…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "روشن یا خاموش کردن محافظت در برابر ردیاب‌ها برای این سایت"
+
+msgid "System default ({language})"
+msgstr "پیش‌فرض سامانه ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "مرجعی که گواهی را صادر کرده آن را باطل کرده است."
+
+msgid "The bridge line has no address: {line}"
+msgstr "خط پل نشانی ندارد: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "اعتبارسنجی گواهی ممکن نشد."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "گواهی با الگوریتمی امضا شده که دیگر امن نیست."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "گواهی هنوز معتبر نیست. بررسی کنید که تاریخ و ساعت این رایانه درست باشد."
+
+msgid "The certificate was issued for a different site."
+msgstr "گواهی برای سایت دیگری صادر شده است."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "گواهی را مرجعی صادر نکرده که این رایانه به آن اعتماد دارد."
+
+msgid "The connection to {host} was interrupted."
+msgstr "اتصال به {host} قطع شد."
+
+msgid "The icon at the end of the address bar"
+msgstr "نمادی که در انتهای نوار نشانی قرار دارد"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "زبان پس از راه‌اندازی دوبارهٔ ZTBrowser تغییر می‌کند"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "زبان منوها، پنجره‌های گفت‌وگو و پیام‌ها، در هر نمایه و برنامهٔ وب."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "مشکل از سمت سایت است. چند دقیقهٔ دیگر دوباره تلاش کنید."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "ممکن است سایت برای تعمیر و نگهداری از دسترس خارج شده باشد. چند دقیقهٔ دیگر دوباره تلاش کنید."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "ممکن است سایت بیش از حد شلوغ باشد. چند دقیقهٔ دیگر دوباره تلاش کنید."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "پل‌های {transport} به برنامه‌ای نیاز دارند که نصب نشده است؛ {package} را نصب کنید"
+
+msgid "There is no file at {path}."
+msgstr "فایلی در {path} وجود ندارد."
+
+msgid "This address is blocked"
+msgstr "این نشانی مسدود است"
+
+msgid "This connection isn’t private"
+msgstr "این اتصال خصوصی نیست"
+
+msgid "This page"
+msgstr "این صفحه"
+
+msgid "This page can’t be found"
+msgstr "این صفحه پیدا نشد"
+
+msgid "This page can’t be loaded"
+msgstr "این صفحه بارگذاری نشد"
+
+msgid "This page crashed"
+msgstr "این صفحه از کار افتاد"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "این صفحه در سایت دیگری است و بخشی از {name} نیست"
+
+msgid "This page isn’t working"
+msgstr "این صفحه کار نمی‌کند"
+
+msgid "This page ran out of memory"
+msgstr "حافظهٔ این صفحه تمام شد"
+
+msgid "This site can’t be found"
+msgstr "این سایت پیدا نشد"
+
+msgid "This site can’t be reached"
+msgstr "دسترسی به این سایت ممکن نیست"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "از طریق مرورگر داوطلبان؛ در بیشتر شبکه‌های سانسورشده کار می‌کند."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "از طریق مرورگر داوطلبان؛ در بیشتر شبکه‌های سانسورشده کار می‌کند. به {package} نیاز دارد."
+
+msgid "Toolbar Buttons"
+msgstr "دکمه‌های نوار ابزار"
+
+msgid "Tor Connection"
+msgstr "اتصال Tor"
+
+msgid "Tor Connection…"
+msgstr "اتصال Tor…"
+
+msgid "Tor Window"
+msgstr "پنجرهٔ Tor"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor نمی‌تواند از مسیر {path} استفاده کند"
+
+msgid "Tor closed its control port"
+msgstr "Tor درگاه کنترل خود را بست"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor نتوانست مدارها را تعویض کند: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor درگاه کنترل خود را باز نکرد"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor نصب نشده است. بستهٔ tor توزیع خود را نصب کنید؛ پنجرهٔ Tor خودش یک Tor را اجرا می‌کند و به سرویس Tor در حال اجرا نیازی ندارد."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor هیچ درگاه SOCKS محلی باز نکرد"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor نپذیرفت: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor مشکلی را گزارش کرد"
+
+msgid "Tor stopped."
+msgstr "Tor متوقف شد."
+
+msgid "Tor's control cookie is damaged"
+msgstr "کوکی کنترل Tor آسیب دیده است"
+
+msgid "Tracker Data Set"
+msgstr "مجموعه‌داده‌های ردیاب‌ها"
+
+msgid "Tracker protection on this site"
+msgstr "محافظت در برابر ردیاب‌ها در این سایت"
+
+msgid "Try Again"
+msgstr "تلاش دوباره"
+
+msgid "Try again in a few minutes."
+msgstr "چند دقیقهٔ دیگر دوباره تلاش کنید."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "اگر حالت هواپیما روشن است، آن را خاموش کنید."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "فهرست‌های فیلتر ZTBrowser Guard را به قوانین WebKit تبدیل می‌کند. منبع: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "حذف نصب"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "ترابری پل ناشناخته: {name}"
+
+msgid "Valid until {date}"
+msgstr "معتبر تا {date}"
+
+msgid "Your Bridges"
+msgstr "پل‌های شما"
+
+msgid "You’re offline"
+msgstr "شما آفلاین هستید"
+
+msgid "Zoom In"
+msgstr "بزرگ‌نمایی"
+
+msgid "Zoom Out"
+msgstr "کوچک‌نمایی"
+
+msgid "_Allow"
+msgstr "اجازه(_A)"
+
+msgid "_Burn"
+msgstr "پاک‌کردن(_B)"
+
+msgid "_Cancel"
+msgstr "لغو(_C)"
+
+msgid "_Deny"
+msgstr "رد(_D)"
+
+msgid "_Install"
+msgstr "نصب(_I)"
+
+msgid "_New Identity"
+msgstr "هویت جدید(_N)"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (در Debian و Ubuntu)، obfs4 (در Fedora) یا obfs4proxy از AUR (در Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (در Debian و Ubuntu) یا snowflake-pt-client از AUR (در Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} در حال حاضر نمی‌تواند درخواست را پردازش کند."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} نتوانست به این درخواست پاسخ دهد."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} اتصال امن ارائه نمی‌دهد"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} به شما اجازهٔ دیدن این صفحه را نمی‌دهد."
+
+msgid "{host} has no page at this address."
+msgstr "{host} در این نشانی صفحه‌ای ندارد."
+
+msgid "{host} refused the connection."
+msgstr "{host} اتصال را نپذیرفت."
+
+msgid "{host} took too long to respond."
+msgstr "{host} برای پاسخ‌دادن زمان زیادی گرفت."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} بیش از حد مجاز یک صفحه حافظه مصرف کرد، بنابراین ZTBrowser آن را متوقف کرد."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} در پنجرهٔ مخصوص خود باز می‌شود و کوکی‌ها و ورودهای آن از مرورگر و هر برنامهٔ دیگر جدا نگه داشته می‌شود."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — برنامهٔ وب ZTBrowser"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} آرگومان پل نیست"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} نشانی IP و درگاه نیست"
+
+msgid "{url} answered {status}"
+msgstr "{url} با {status} پاسخ داد"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} سند مورد انتظار را برنگرداند"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} بزرگ‌تر از حد مجاز است"
+
+msgid "{url} is not a valid address"
+msgstr "{url} نشانی معتبری نیست"
+
+msgid "© their maintainers"
+msgstr "© نگه‌دارندگان آن‌ها"
+
+msgid "Ask Where to Save Each File"
+msgstr "پرسیدن محل ذخیره هر پرونده"
+
+msgid "Choose Folder"
+msgstr "انتخاب پوشه"
+
+msgid "Download Folder"
+msgstr "پوشه بارگیری"
+
+msgid "Download failed"
+msgstr "بارگیری ناموفق بود"
+
+msgid "Downloading…"
+msgstr "در حال بارگیری…"
+
+msgid "Downloading… {percent}%"
+msgstr "در حال بارگیری… {percent}%"
+
+msgid "Downloads"
+msgstr "بارگیری‌ها"
+
+msgid "Go to Download Folder"
+msgstr "رفتن به پوشه بارگیری"
+
+msgid "No downloads yet"
+msgstr "هنوز بارگیری‌ای وجود ندارد"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "در غیر این صورت پرونده‌ها مستقیماً در پوشه بارگیری ذخیره می‌شوند"
+
+msgid "Save File"
+msgstr "ذخیره پرونده"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "پنج بارگیری اخیر و پوشه بارگیری"
+
+msgid "_Save"
+msgstr "ذخیره(_S)"
+
+msgid "_Select"
+msgstr "انتخاب(_S)"
+
+msgid "Show All Downloads"
+msgstr "نمایش همه بارگیری‌ها"
+
+msgid "Clear List"
+msgstr "پاک کردن فهرست"
+
+msgid "Remove from List"
+msgstr "حذف از فهرست"
+
+msgid "Clear History"
+msgstr "پاک کردن تاریخچه"
+
+msgid "Search Downloads"
+msgstr "جستجو در بارگیری‌ها"
+
+msgid "File Moved or Deleted"
+msgstr "پرونده جابه‌جا یا حذف شده است"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "هر گام چرخ ماوس را متحرک می‌کند. صفحه‌هایی که از قبل باز هستند نیاز به بارگذاری مجدد دارند."
+
+msgid "Scrolling"
+msgstr "پیمایش"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "پیمایش نرم با چرخ ماوس"
+
+msgid "Details"
+msgstr "جزییات"
+
+msgid "Legal"
+msgstr "حقوقی"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "این برنامه بی هیچ ضمانتی می‌آید. برای جزییات {license} را ببینید."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "نگارش ۳ یا بالاتر پروانهٔ جامع همگانی گنو"
+
+msgid "Apache License, Version 2.0"
+msgstr "نگارش ۲٫۰ پروانهٔ آپاچی"
+
+msgid "Move to New Window"
+msgstr "انتقال به پنجره جدید"
+
+msgid "Mozilla Public License 2.0"
+msgstr "نگارش ۲٫۰ پروانهٔ همگانی موزیلا"
+
+msgid "BSD 3-Clause License"
+msgstr "پروانهٔ سه بندی بی‌اس‌دی"
+
+msgid "Wide Address Bar"
+msgstr "نوار آدرس پهن"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "نوار آدرس تمام فضای نوار ابزار را پر می‌کند؛ در حالت خاموش کوتاه و در مرکز می‌ماند"
+
+msgid "No apps installed yet"
+msgstr "هنوز هیچ برنامه‌ای نصب نشده است"
+
+msgid "Uninstall {name}?"
+msgstr "{name} حذف شود؟"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "برنامه را همراه با کوکی‌ها، ورودها و داده‌هایش حذف می‌کند. این کار قابل بازگشت نیست."
+
+msgid "Tab Position"
+msgstr "جای زبانه‌ها"
+
+msgid "Top"
+msgstr "بالا"
+
+msgid "Bottom"
+msgstr "پایین"
+
+msgid "Left"
+msgstr "چپ"
+
+msgid "Right"
+msgstr "راست"
+
+msgid "Window Buttons"
+msgstr "دکمه‌های پنجره"
+
+msgid "Default"
+msgstr "پیش‌فرض"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "افزودن نمایه"
+
+msgid "Delete profile {name}?"
+msgstr "نمایه {name} حذف شود؟"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "نمایه را همراه با کوکی‌ها، ورودها، تاریخچه و حافظه نهان آن حذف می‌کند. این کار قابل بازگشت نیست."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser مرورگر پیش‌فرض شما نیست"
+
+msgid "Make Default"
+msgstr "تنظیم به‌عنوان پیش‌فرض"
+
+msgid "Don't Ask Again"
+msgstr "دیگر نپرس"
+
+msgid "Close"
+msgstr "بستن"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "تنظیم ZTBrowser به‌عنوان مرورگر پیش‌فرض ممکن نشد: {error}"
+
+msgid "Default Browser"
+msgstr "مرورگر پیش‌فرض"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "ZTBrowser پیوندهای برنامه‌های دیگر را باز می‌کند"
+
+msgid "Links from other programs open in {browser}"
+msgstr "پیوندهای برنامه‌های دیگر در {browser} باز می‌شوند"
+
+msgid "Another browser opens links from other programs"
+msgstr "مرورگر دیگری پیوندهای برنامه‌های دیگر را باز می‌کند"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "فقط ZTBrowser نصب‌شده می‌تواند پیوندهای برنامه‌های دیگر را باز کند"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "میزکار نمی‌گوید کدام مرورگر پیوندها را باز می‌کند"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "پرسیدن هنگام شروع ZTBrowser"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "پیشنهاد تنظیم ZTBrowser به‌عنوان مرورگر پیش‌فرض وقتی مرورگر دیگری پیوندها را باز می‌کند"

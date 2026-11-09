@@ -1,10 +1,10 @@
-# InDuckGo 1.2.0 on QtWebEngine — Implementation Plan
+# ZTBrowser 1.2.0 on QtWebEngine — Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Replace the WebKitGTK front end with a QtWebEngine (Chromium) front end that matches Brave's scrolling speed and keeps and extends InDuckGo's protections.
+**Goal:** Replace the WebKitGTK front end with a QtWebEngine (Chromium) front end that matches Brave's scrolling speed and keeps and extends ZTBrowser's protections.
 
-**Architecture:** `induckgo-core` gains engine-neutral *ports* (request, cookie, script, storage, burn decisions). A new adapter crate `induckgo-engine-qt` (Rust + a small C++ shim) implements them on QtWebEngine; a new crate `induckgo-qt` is the QML application bound by `cxx-qt`. The GTK crate keeps building until the benchmark gate passes, then is removed.
+**Architecture:** `ztbrowser-core` gains engine-neutral *ports* (request, cookie, script, storage, burn decisions). A new adapter crate `ztbrowser-engine-qt` (Rust + a small C++ shim) implements them on QtWebEngine; a new crate `ztbrowser-qt` is the QML application bound by `cxx-qt`. The GTK crate keeps building until the benchmark gate passes, then is removed.
 
 **Tech Stack:** Rust 2024 (workspace rules: pedantic clippy, `unsafe_code` forbidden in *our* crates), Qt 6.12 / QtWebEngine (Chromium 140), QML, `cxx-qt` 0.10, `adblock` crate (already used), cargo-nextest.
 
@@ -15,7 +15,7 @@
 - Branch `feature/1.2.0`; `main` and v1.1.2 untouched until the §8 gate passes.
 - Rust, plus the smallest C++ shim (≈ 300–500 lines) for Qt classes without Rust bindings.
 - `docs/en/engineering-rules.md`: object-oriented Rust (every function belongs to a type), scenario-struct Given/When/Then tests, one symbol per import line, imports from the defining module, no `mod.rs` re-exports, files ≤ 1000 lines, no `Helper/Util/Manager/…` names.
-- `induckgo-core` has no Qt, GTK or engine types. New ports live there.
+- `ztbrowser-core` has no Qt, GTK or engine types. New ports live there.
 - QtWebEngine sandbox, site isolation and GPU process stay ON; `--no-sandbox` only in tests.
 - DuckDuckGo data (Tracker Radar, lists, privacy configuration, reference tests) is CC BY-NC-SA 4.0: fetched at run time/CI time, never committed or packaged.
 - Interface: same features, words and layout as 1.1.2; may follow the system (KDE/Qt) theme. All UI text comes from the existing 66 `tr!` catalogues through a `cxx-qt` object, never Qt `.ts/.qm`.
@@ -36,14 +36,14 @@
 
 ## File Structure
 
-- `crates/induckgo-core/src/network/` (new): `request_policy.rs`, `request_decision.rs`, `network_request.rs`, `third_party_policy.rs`.
-- `crates/induckgo-core/src/storage/` (new): `cookie_policy.rs`, `cookie_decision.rs`, `data_burner.rs`.
-- `crates/induckgo-core/src/engine/` (new): `engine_version.rs` (minimum-version rule), `page_script.rs`, `page_script_catalog.rs`.
-- `crates/induckgo-core/src/privacy/` (new): `fingerprint_profile.rs`, `strict_profile.rs`, `resolver_settings.rs`, `tor_circuit_isolation.rs`.
-- `crates/induckgo-core/tests/*.rs`: one scenario file per new type.
-- `crates/induckgo-engine-qt/` (new): `build.rs`, `src/*.rs` (adapters), `cpp/*.cpp|*.h` (the shim: interceptor, cookie filter, scheme handlers).
-- `crates/induckgo-qt/` (new): `build.rs`, `src/*.rs` (cxx-qt objects), `qml/*.qml` (UI).
-- `crates/induckgo-bench/` (new): benchmark harness, replaces `/tmp/spike`.
+- `crates/ztbrowser-core/src/network/` (new): `request_policy.rs`, `request_decision.rs`, `network_request.rs`, `third_party_policy.rs`.
+- `crates/ztbrowser-core/src/storage/` (new): `cookie_policy.rs`, `cookie_decision.rs`, `data_burner.rs`.
+- `crates/ztbrowser-core/src/engine/` (new): `engine_version.rs` (minimum-version rule), `page_script.rs`, `page_script_catalog.rs`.
+- `crates/ztbrowser-core/src/privacy/` (new): `fingerprint_profile.rs`, `strict_profile.rs`, `resolver_settings.rs`, `tor_circuit_isolation.rs`.
+- `crates/ztbrowser-core/tests/*.rs`: one scenario file per new type.
+- `crates/ztbrowser-engine-qt/` (new): `build.rs`, `src/*.rs` (adapters), `cpp/*.cpp|*.h` (the shim: interceptor, cookie filter, scheme handlers).
+- `crates/ztbrowser-qt/` (new): `build.rs`, `src/*.rs` (cxx-qt objects), `qml/*.qml` (UI).
+- `crates/ztbrowser-bench/` (new): benchmark harness, replaces `/tmp/spike`.
 - `packaging/` (modified): Qt dependencies, AppImage bundling.
 
 ---
@@ -51,17 +51,17 @@
 ### Task 1: Benchmark harness in the repository
 
 **Files:**
-- Create: `crates/induckgo-bench/{Cargo.toml,src/main.rs,src/scroll_scenario.rs,src/frame_statistics.rs,src/benchmark_server.rs}`, `crates/induckgo-bench/pages/scroll.html`
-- Test: `crates/induckgo-bench/src/frame_statistics.rs` (unit tests in-file are allowed for a dev tool; core rules apply to core only)
+- Create: `crates/ztbrowser-bench/{Cargo.toml,src/main.rs,src/scroll_scenario.rs,src/frame_statistics.rs,src/benchmark_server.rs}`, `crates/ztbrowser-bench/pages/scroll.html`
+- Test: `crates/ztbrowser-bench/src/frame_statistics.rs` (unit tests in-file are allowed for a dev tool; core rules apply to core only)
 - Modify: `Cargo.toml` (workspace members)
 
 **Interfaces:**
-- Produces: `FrameStatistics::from_gaps_ms(&[f64]) -> FrameStatistics` with `frames_per_second() -> f64`, `percentile_gap_ms(percent: u32) -> f64`, `frames_longer_than_ms(f64) -> usize`. `ScrollScenario::new(url, viewport: (u32,u32), duration_s)`; CLI `induckgo-bench --engine <chromium|qt|webkit> --url … --size 2560x1440`.
+- Produces: `FrameStatistics::from_gaps_ms(&[f64]) -> FrameStatistics` with `frames_per_second() -> f64`, `percentile_gap_ms(percent: u32) -> f64`, `frames_longer_than_ms(f64) -> usize`. `ScrollScenario::new(url, viewport: (u32,u32), duration_s)`; CLI `ztbrowser-bench --engine <chromium|qt|webkit> --url … --size 2560x1440`.
 
 - [x] **Step 1: Write failing tests** `should_report_60_fps_for_16_7_ms_gaps`, `should_count_frames_longer_than_33_ms`, `should_return_p95_of_sorted_gaps` using the Chromium numbers of spec §1 as fixtures.
-- [x] **Step 2: Run** `cargo test -p induckgo-bench` — Expected: FAIL (types missing).
+- [x] **Step 2: Run** `cargo test -p ztbrowser-bench` — Expected: FAIL (types missing).
 - [x] **Step 3: Implement** `FrameStatistics` (sorted gaps, nearest-rank percentile).
-- [x] **Step 4: Run** `cargo test -p induckgo-bench` — Expected: PASS.
+- [x] **Step 4: Run** `cargo test -p ztbrowser-bench` — Expected: PASS.
 - [x] **Step 5: Implement** the page `scroll.html` (rAF loop recording frame gaps while `scrollBy` steps run for `duration_s`, posts the array to the local server) and `BenchmarkServer` (std `TcpListener`, serves the page, stores the POSTed array). Port the measurement method of the throwaway `/tmp/spike` harness (8 s scripted scroll).
 - [x] **Step 6: Commit** `git commit -m "Add the in-repository scroll benchmark harness"`.
 
@@ -93,9 +93,9 @@
   - `ThirdPartyPolicy::new(strict: bool, allow_list: &SiteAllowList)`, `decide(&NetworkRequest) -> RequestDecision` (default-deny when strict).
 
 - [x] **Step 1: Failing tests** (scenario structs): `should_block_known_tracker_request`, `should_redirect_http_to_https_when_upgrade_list_matches`, `should_pass_when_site_is_unprotected`, `should_block_cname_cloaked_tracker_on_the_same_site`, `should_block_sub_resource_of_unknown_page_in_strict_mode`, `should_protect_navigation_from_unprotected_page_to_other_site`, `should_pass_non_network_schemes`, `should_block_third_party_in_strict_mode`, `should_pass_third_party_on_site_allow_list`, `should_treat_missing_first_party_as_first_party`.
-- [x] **Step 2: Run** `cargo test -p induckgo-core --test request_policy` — Expected: FAIL.
+- [x] **Step 2: Run** `cargo test -p ztbrowser-core --test request_policy` — Expected: FAIL.
 - [x] **Step 3: Implement** the types; decision order: unprotected site → pass; non-network scheme → pass; strict third-party; tracker/Guard block; HTTPS upgrade; parameter cleaning. Allocation-free fast path (borrowed `&str`, pre-built lookup tables).
-- [x] **Step 4: Run** same command — Expected: PASS; also `cargo clippy -p induckgo-core --all-targets`.
+- [x] **Step 4: Run** same command — Expected: PASS; also `cargo clippy -p ztbrowser-core --all-targets`.
 - [x] **Step 5: Commit.**
 
 ### Task 4: Core ports — cookies, burn, page scripts, engine version
@@ -109,40 +109,40 @@
 - [x] **Step 2–4:** run (FAIL) → implement → run (PASS).
 - [x] **Step 5: Commit.**
 
-### Task 5: `induckgo-engine-qt` — adapter and C++ shim
+### Task 5: `ztbrowser-engine-qt` — adapter and C++ shim
 
-**Files:** Create `crates/induckgo-engine-qt/{Cargo.toml,build.rs,src/lib.rs,src/request_interceptor.rs,src/cookie_filter.rs,src/script_installer.rs,src/profile_factory.rs,src/engine_version_probe.rs,cpp/shim.h,cpp/shim.cpp}`; tests in `tests/`.
+**Files:** Create `crates/ztbrowser-engine-qt/{Cargo.toml,build.rs,src/lib.rs,src/request_interceptor.rs,src/cookie_filter.rs,src/script_installer.rs,src/profile_factory.rs,src/engine_version_probe.rs,cpp/shim.h,cpp/shim.cpp}`; tests in `tests/`.
 
 **Interfaces:**
 - Consumes: Task 3/4 ports.
 - Produces: `ProfileFactory::persistent(&ProfileDirectories) -> QtProfile`, `QtProfile::install(policy: Arc<dyn RequestPolicy>, cookies: Arc<dyn CookiePolicy>, scripts: &[PageScript])`; `EngineVersionProbe::current() -> EngineVersion`. Shim exposes a C-compatible `extern "C"` callback table (`decide_request`, `allow_cookie`) — the only boundary; Rust side contains no `unsafe` in our crates (the `cxx` bridge generates it; the crate opts out of the `forbid` with a documented crate-level `deny` for the generated code only if `cxx-qt` requires it — record in the spec).
 
 - [x] **Step 1: Failing integration test** `should_block_tracker_and_report_decision_counts` using the Task 2 page: engine loads it headless (`QT_QPA_PLATFORM=offscreen`), interceptor blocks the tracker URL and the test reads counters.
-- [x] **Step 2:** `cargo test -p induckgo-engine-qt` — Expected FAIL.
+- [x] **Step 2:** `cargo test -p ztbrowser-engine-qt` — Expected FAIL.
 - [x] **Step 3: Implement** the shim (interceptor and cookie filter subclasses) and Rust adapters. Decision path allocation-free after warm-up.
 - [x] **Step 4:** run — Expected PASS; run Task 1 benchmark again with the interceptor active (must still pass the gate).
 - [x] **Step 5: Commit.**
 
-### Task 6: `induckgo-qt` — application shell
+### Task 6: `ztbrowser-qt` — application shell
 
-**Files:** Create `crates/induckgo-qt/{Cargo.toml,build.rs,src/main.rs,src/browser_model.rs,src/tab_model.rs,src/address_bar_model.rs,src/interface_messages.rs}`, `qml/{BrowserWindow,TabStrip,Toolbar,AddressBar,MainMenu}.qml`.
+**Files:** Create `crates/ztbrowser-qt/{Cargo.toml,build.rs,src/main.rs,src/browser_model.rs,src/tab_model.rs,src/address_bar_model.rs,src/interface_messages.rs}`, `qml/{BrowserWindow,TabStrip,Toolbar,AddressBar,MainMenu}.qml`.
 
-**Interfaces:** Consumes: existing `induckgo_core::navigation`, `profile`, `language` types and the `tr!` catalogues. Produces: QML-visible `BrowserModel` (open/close tab, navigate, back/forward, reload), `InterfaceMessages.text(key: QString) -> QString`.
+**Interfaces:** Consumes: existing `ztbrowser_core::navigation`, `profile`, `language` types and the `tr!` catalogues. Produces: QML-visible `BrowserModel` (open/close tab, navigate, back/forward, reload), `InterfaceMessages.text(key: QString) -> QString`.
 
 - [x] **Step 1: Failing test** `should_resolve_polish_message_through_the_bridge` (model-level, no window) and `should_open_and_close_tabs` (`TabModel`).
 - [x] **Step 2–4:** run (FAIL) → implement → run (PASS).
 - [x] **Step 5: Manual check:** `QT_QPA_PLATFORM=offscreen` smoke test that the window loads `https://example.com` and renders (screenshot via `grabToImage` saved by the test).
 - [x] **Step 6: Commit.**
 
-*Deviation (recorded at delivery):* tab state lives in QML (`TabBar` + one `WebEngineView` per tab) because the engine owns every tab's history and title; a Rust `TabModel` would only mirror it (YAGNI). Rust exposes `BrowserBridge` (address resolution, interface text, page scripts). The end-to-end test is `crates/induckgo-qt/tests/tracker_blocking.rs`, which starts the real binary headless.
+*Deviation (recorded at delivery):* tab state lives in QML (`TabBar` + one `WebEngineView` per tab) because the engine owns every tab's history and title; a Rust `TabModel` would only mirror it (YAGNI). Rust exposes `BrowserBridge` (address resolution, interface text, page scripts). The end-to-end test is `crates/ztbrowser-qt/tests/tracker_blocking.rs`, which starts the real binary headless.
 
 ### Task 7: Everyday features
 
-Downloads (list, manager, clear — reuse `download_history`/`download_settings`), permissions prompt, zoom (reuse `page_zoom`, `site_zoom`), find in page, preferences (interface language page, smooth wheel, protection switches), per-site "protection off", error page. One sub-commit per feature, each with a failing core/model test first (`should_clear_finished_downloads`, `should_remember_site_zoom`, `should_ask_permission_once_per_origin`). Interfaces: engine-neutral models in `induckgo-qt/src/*_model.rs` over existing core types.
+Downloads (list, manager, clear — reuse `download_history`/`download_settings`), permissions prompt, zoom (reuse `page_zoom`, `site_zoom`), find in page, preferences (interface language page, smooth wheel, protection switches), per-site "protection off", error page. One sub-commit per feature, each with a failing core/model test first (`should_clear_finished_downloads`, `should_remember_site_zoom`, `should_ask_permission_once_per_origin`). Interfaces: engine-neutral models in `ztbrowser-qt/src/*_model.rs` over existing core types.
 
 ### Task 8: Protections end-to-end
 
-Wire Task 3/4 ports into profiles (default and *Strict*), install Content Scope Scripts, Guard hiding, smooth wheel and DDG overlays (Duck Player, Click to Load, autoconsent) as `QWebEngineScript`s in their own world; Strict profile UI with *Allow here* toolbar button and `SiteAllowList` persisted via `StoredFile`-equivalent in core. Tests: `should_keep_overlay_script_in_isolated_world`, reference-test runner (`crates/induckgo-core/tests/privacy_reference.rs`, fetches suites at CI time, skipped with a clear message offline), `should_persist_site_allow_list`.
+Wire Task 3/4 ports into profiles (default and *Strict*), install Content Scope Scripts, Guard hiding, smooth wheel and DDG overlays (Duck Player, Click to Load, autoconsent) as `QWebEngineScript`s in their own world; Strict profile UI with *Allow here* toolbar button and `SiteAllowList` persisted via `StoredFile`-equivalent in core. Tests: `should_keep_overlay_script_in_isolated_world`, reference-test runner (`crates/ztbrowser-core/tests/privacy_reference.rs`, fetches suites at CI time, skipped with a clear message offline), `should_persist_site_allow_list`.
 
 ### Task 9: Fingerprint profile, WebRTC limits, resolver settings
 
@@ -150,7 +150,7 @@ Wire Task 3/4 ports into profiles (default and *Strict*), install Content Scope 
 
 ### Task 10: Tor window and per-site isolation
 
-Separate process `induckgo-qt --tor` launching Chromium with the flags in Global Constraints; reuse `tor_connection`, `tor_control_port`, `tor_settings` types from core/GTK crate moved into core (pure move). `TorCircuitIsolation::credentials_for(site) -> (String, String)` gives each registrable domain its own SOCKS username/password (stream isolation). Tests: `should_give_each_site_its_own_socks_credentials`, `should_not_load_page_before_tor_is_connected`, leak test `should_not_resolve_names_outside_proxy` (blocked DNS on a network namespace or `--host-resolver-rules` assertion using a canary hostname).
+Separate process `ztbrowser-qt --tor` launching Chromium with the flags in Global Constraints; reuse `tor_connection`, `tor_control_port`, `tor_settings` types from core/GTK crate moved into core (pure move). `TorCircuitIsolation::credentials_for(site) -> (String, String)` gives each registrable domain its own SOCKS username/password (stream isolation). Tests: `should_give_each_site_its_own_socks_credentials`, `should_not_load_page_before_tor_is_connected`, leak test `should_not_resolve_names_outside_proxy` (blocked DNS on a network namespace or `--host-resolver-rules` assertion using a canary hostname).
 
 ### Task 11: Web apps, profiles, burn data
 
@@ -168,7 +168,7 @@ Arch PKGBUILD, rpm spec, deb: depend on distribution `qt6-webengine`; AppImage b
 
 ### Task 14: Benchmarks, sign-off, GTK removal, release
 
-Run Task 1 harness on Brave, QtWebEngine and InDuckGo-Qt at 2560×1440 and 3840×2160; write `docs/{en,pl}/reports/performance-analysis.md` §5; check every row of spec §8. When all pass: delete `crates/induckgo`, move shared pieces, update `CLAUDE.md` index and architecture docs (EN + PL, new diagrams), bump to 1.2.0, merge to `main`, tag `v1.2.0`. If any §8 row fails, stop and report to the owner — do not delete the GTK crate.
+Run Task 1 harness on Brave, QtWebEngine and ZTBrowser-Qt at 2560×1440 and 3840×2160; write `docs/{en,pl}/reports/performance-analysis.md` §5; check every row of spec §8. When all pass: delete `crates/ztbrowser`, move shared pieces, update `CLAUDE.md` index and architecture docs (EN + PL, new diagrams), bump to 1.2.0, merge to `main`, tag `v1.2.0`. If any §8 row fails, stop and report to the owner — do not delete the GTK crate.
 
 ---
 

@@ -20,18 +20,18 @@ static, self-contained HTML/CSS with no external assets:
   project's author is the first such user.
 - **Non-technical decision makers who evaluate the browser,** for example the author's Product Owner.
   - The author shares an HTML page with them, and they read it on their own.
-  - What they compare is how well InDuckGo blocks tracking scripts and ads, against Chrome and Brave
+  - What they compare is how well ZTBrowser blocks tracking scripts and ads, against Chrome and Brave
     (confirmed 2026-11-02).
 
 ## Product Purpose
 
-InDuckGo is a privacy-first browser for Linux. It is built on DuckDuckGo's open-source protections:
+ZTBrowser is a privacy-first browser for Linux. It is built on DuckDuckGo's open-source protections:
 
 - the Tracker Data Set;
 - the privacy configuration;
 - Content Scope Scripts.
 
-InDuckGo Guard adds the rest on top:
+ZTBrowser Guard adds the rest on top:
 
 - community filter lists;
 - fingerprinting noise;
@@ -67,15 +67,15 @@ banking or Gmail.
 
 ## Brand Commitments
 
-- **Name:** InDuckGo.
-- **Colours:** indigo (the logo's rim runs from `#24115E` to `#8270DF`) with an amber accent (the beak, `#FFB900` to `#FFC900`; `#FFB300` in the reports).
-- **Affiliation:** InDuckGo is not affiliated with DuckDuckGo, and says so wherever DuckDuckGo is named.
+- **Name:** ZTBrowser.
+- **Colours:** purple (the logo's shield face `#4D0C96`, its rim `#864CE3`, a white chain); the reports add an amber accent (`#FFB300`) that marks ZTBrowser.
+- **Affiliation:** ZTBrowser is not affiliated with DuckDuckGo, and says so wherever DuckDuckGo is named.
 - **Voice:** plain and factual. It states weaknesses openly.
 
 ## Evidence on Hand
 
 - `docs/en/reports/tracking-comparison.md` (Polish mirror in `docs/pl/`), measured 2026-11-02:
-  - trackers on 12 sites: Chrome 94, Brave 5, InDuckGo 2;
+  - trackers on 12 sites: Chrome 94, Brave 5, ZTBrowser 2;
   - ad servers: 75, 4 and 1;
   - what each browser sends home while idle;
   - fingerprint behaviour.
@@ -85,6 +85,6 @@ banking or Gmail.
 ## Product Principles
 
 1. Measure before claiming. Every number links to how it was measured.
-2. Say plainly where InDuckGo is weaker.
+2. Say plainly where ZTBrowser is weaker.
 3. The browser itself sends nothing about the user.
 4. Protection must not break the sites people depend on, such as banks and mail.

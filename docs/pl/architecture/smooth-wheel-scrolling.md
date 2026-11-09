@@ -1,6 +1,6 @@
 # Płynne przewijanie kółkiem myszy
 
-InDuckGo animuje każdy ząbek kółka myszy tak jak Chromium: 120 px w około 180 ms, z łagodnym startem i
+ZTBrowser animuje każdy ząbek kółka myszy tak jak Chromium: 120 px w około 180 ms, z łagodnym startem i
 hamowaniem, zamiast gwałtownych 93 px w około 90 ms w WebKitGTK.
 
 ## 1. Problem
@@ -9,7 +9,7 @@ WebKitGTK przewija ząbek kółka od razu, w sześciu–siedmiu klatkach, a pier
 wygląda to jak szarpnięcie: strona „skacze” przy każdym ząbku, mimo że liczba klatek jest w porządku. WebKit nie ma
 ustawienia długości ani kształtu tej animacji, a wymiana silnika (QtWebEngine, CEF) została zmierzona i odrzucona:
 QtWebEngine nie daje animacji Chromium, a silnik Chromium oznaczałby przepisanie interfejsu i całej warstwy
-ochrony. Dlatego InDuckGo odtwarza animację sam.
+ochrony. Dlatego ZTBrowser odtwarza animację sam.
 
 ## 2. Słownik
 
@@ -24,7 +24,7 @@ ochrony. Dlatego InDuckGo odtwarza animację sam.
 
 ![Ząbek kółka przechodzi ze zdarzenia wheel przez skrypt strony do przewijania klatka po klatce](../../assets/diagrams/architecture-smooth-wheel.pl.svg)
 
-- **`induckgo-core`** zawiera liczby: `SmoothWheelScroll` (120 px na ząbek, 180 ms, dwie tabele postępu zbudowane
+- **`ztbrowser-core`** zawiera liczby: `SmoothWheelScroll` (120 px na ząbek, 180 ms, dwie tabele postępu zbudowane
   z `CubicBezierEasing`) oraz `ScrollingPreferences` (`smoothWheel`, domyślnie włączone). Ich testy
   (`tests/smooth_wheel_scroll.rs`, `tests/cubic_bezier_easing.rs`, `tests/scrolling_preferences.rs`) utrwalają
   zmierzony profil Chromium: pierwsza klatka przesuwa najwyżej 4 px, żadna klatka więcej niż 22 px, szczyt wypada w
@@ -59,7 +59,7 @@ Jeden ząbek w tym samym teście (zdarzenia kółka X11 przez XTest, piksele prz
 |---|---|---|---|---|
 | WebKitGTK (przed) | 86–93 | 6–7 | ~90 ms | 5,12,34,21,10,3,1 |
 | Brave / Chromium | 120 | 11–12 | 167–183 ms | 2,5,10,13,16,18,17,15,12,7,4,1 |
-| InDuckGo (płynne kółko) | 120 | 11–12 | 161–183 ms | 1,6,9,14,17,18,18,15,12,7,2,1 |
+| ZTBrowser (płynne kółko) | 120 | 11–12 | 161–183 ms | 1,6,9,14,17,18,18,15,12,7,2,1 |
 
 Sprawdzone też: strona z `scroll-behavior: smooth`, przewijane pudełko wewnątrz strony (przewija się najpierw
 ono) oraz 15 ząbków co 40 ms (ciągły ruch, bez zatrzymania między ząbkami).

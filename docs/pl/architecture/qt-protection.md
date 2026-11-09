@@ -26,10 +26,10 @@ Pierwsza wersja Qt przepuszczała na 12 serwisach 90 trackerów ze świeżym pro
 |---|---|
 | **Tracker Data Set (TDS)** | Lista firm śledzących i ich domen od DuckDuckGo; każda pozycja ma domyślną akcję (`block` albo `ignore`), kategorie i reguły dla poszczególnych adresów. |
 | **Konfiguracja prywatności** | Ustawienia funkcji od DuckDuckGo, w tym *lista dozwolonych trackerów* i domeny, na których ochrona jest tymczasowo wyłączona, bo je psuła. |
-| **Reguła blokowania treści** | Jeden wpis formatu reguł WebKit (`trigger` + `action`). InDuckGo buduje z TDS około 7000 takich reguł i w Qt sam je ocenia. |
+| **Reguła blokowania treści** | Jeden wpis formatu reguł WebKit (`trigger` + `action`). ZTBrowser buduje z TDS około 7000 takich reguł i w Qt sam je ocenia. |
 | **Przechwytywacz żądań** | Haczyk, który Chromium wywołuje przed wysłaniem żądania; może przepuścić, zablokować lub przekierować. Widzi wyłącznie żądania. |
 | **Preconnect / dns-prefetch** | Podpowiedzi strony, które każą przeglądarce wcześnie rozwiązać nazwę lub otworzyć połączenie, zanim istnieje jakiekolwiek żądanie do tego hosta. |
-| **Bramka połączeń** | Punkt decyzyjny InDuckGo dla takich połączeń: *czy silnik może połączyć się z tym hostem?* |
+| **Bramka połączeń** | Punkt decyzyjny ZTBrowsera dla takich połączeń: *czy silnik może połączyć się z tym hostem?* |
 | **Tunel CONNECT** | Sposób, w jaki proxy HTTP przenosi połączenie TLS: klient podaje `host:port`, proxy łączy się i przekazuje bajty. Proxy zna host, zanim zacznie się uścisk dłoni. |
 | **Zamknięte domyślnie (fail closed)** | Gdy odpowiedź jest nieznana (polityki jeszcze nie zainstalowane), odmawiamy. |
 | **ETag** | Etykieta wersji dokumentu nadawana przez serwer; odesłana z powrotem pozwala serwerowi odpowiedzieć „bez zmian” bez treści. |
@@ -42,15 +42,15 @@ Praca jest podzielona wzdłuż granicy crate'ów projektu (crate domenowy nic ni
 
 | Odpowiedzialność | Gdzie | Typ |
 |---|---|---|
-| Ocena jednego żądania | `induckgo-core` | `ContentBlockerRequestPolicy`, `AdvertisingTrackerRequestPolicy` |
-| Pamięć o hostach, które polityki dopuściły | `induckgo-core` | `ConnectionGate`, `ConnectionClock` |
-| Pobieranie i buforowanie danych DuckDuckGo | `induckgo-core` | `ProtectionFeed`, `CachedDocument`, trait `DocumentFetcher` |
-| Usuwanie podpowiedzi zasobów tworzonych przez skrypty | `induckgo-core` + `assets/guard/no-resource-hints.js` | `ResourceHintBlockingScript` |
-| Wymienialne polityki | `induckgo-core` | `ReplaceableRequestPolicy`, `ReplaceableCookiePolicy`, `SharedGuardEngine` |
-| Haczyki Chromium: przechwytywacz i ciasteczka | `induckgo-engine-qt` | `EnginePolicies`, `PolicyDecisions` |
-| Lokalne proxy egzekwujące bramkę | `induckgo-engine-qt` | `GateProxy`, `UpstreamProxy` |
-| Pobieranie przez sieć Qt | `induckgo-engine-qt` | `QtDocumentFetcher`, `fetch_bytes` (C++) |
-| Składanie łańcucha dla profilu i utrzymanie go w aktualności | `induckgo-qt` | `ProfilePolicies`, `ProtectionUpdates` |
+| Ocena jednego żądania | `ztbrowser-core` | `ContentBlockerRequestPolicy`, `AdvertisingTrackerRequestPolicy` |
+| Pamięć o hostach, które polityki dopuściły | `ztbrowser-core` | `ConnectionGate`, `ConnectionClock` |
+| Pobieranie i buforowanie danych DuckDuckGo | `ztbrowser-core` | `ProtectionFeed`, `CachedDocument`, trait `DocumentFetcher` |
+| Usuwanie podpowiedzi zasobów tworzonych przez skrypty | `ztbrowser-core` + `assets/guard/no-resource-hints.js` | `ResourceHintBlockingScript` |
+| Wymienialne polityki | `ztbrowser-core` | `ReplaceableRequestPolicy`, `ReplaceableCookiePolicy`, `SharedGuardEngine` |
+| Haczyki Chromium: przechwytywacz i ciasteczka | `ztbrowser-engine-qt` | `EnginePolicies`, `PolicyDecisions` |
+| Lokalne proxy egzekwujące bramkę | `ztbrowser-engine-qt` | `GateProxy`, `UpstreamProxy` |
+| Pobieranie przez sieć Qt | `ztbrowser-engine-qt` | `QtDocumentFetcher`, `fetch_bytes` (C++) |
+| Składanie łańcucha dla profilu i utrzymanie go w aktualności | `ztbrowser-qt` | `ProfilePolicies`, `ProtectionUpdates` |
 
 ## 4. Ocena żądania
 
@@ -59,7 +59,7 @@ Praca jest podzielona wzdłuż granicy crate'ów projektu (crate domenowy nic ni
 
 1. sprawdzenie „osoba trzecia” — żądanie z własnego serwisu strony nigdy nie jest żądaniem trackera;
 2. **`ContentBlockerRequestPolicy`** — reguły DuckDuckGo, oceniane wiernie (§4.1);
-3. **`AdvertisingTrackerRequestPolicy`** — ostrzejsza nakładka InDuckGo (§4.2);
+3. **`AdvertisingTrackerRequestPolicy`** — ostrzejsza nakładka ZTBrowsera (§4.2);
 4. czyszczenie linków (`utm_*`, `fbclid`, … usuwane z nawigacji);
 5. listy filtrów Guard (EasyList, EasyPrivacy, uBlock Origin, Peter Lowe, listy polskie i ukrywające komunikaty o ciasteczkach);
 6. upgrade do HTTPS.
@@ -90,7 +90,7 @@ i uruchamia tylko te nieliczne reguły, które mogą pasować, oraz garstkę bez
 
 Wyjątki DuckDuckGo istnieją, bo zablokowanie niektórych adresów trackerów kiedyś coś psuło: odtwarzacz wideo czekający
 na skrypt reklamowy, kontrolę antybotową. To słuszny kompromis dla narzędzia, które nie może zepsuć żadnej strony.
-Celem InDuckGo jest prywatność, więc po regułach DuckDuckGo `AdvertisingTrackerRequestPolicy` blokuje każde żądanie
+Celem ZTBrowsera jest prywatność, więc po regułach DuckDuckGo `AdvertisingTrackerRequestPolicy` blokuje każde żądanie
 osoby trzeciej do trackera, którego domyślną akcją jest `block`, a kategorie obejmują reklamę lub pomiar
 (*Advertising*, *Ad Motivated Tracking*, *Ad Fraud*, *Analytics*, *Audience Measurement*, *Third-Party Analytics
 Marketing*, *Action Pixels*, *Session Replay*), niezależnie od strony. Trackery, które są także czymś, czego strona
@@ -155,7 +155,7 @@ pamięcią podręczną i bez niej). To zwykłe `GET` bez ciasteczek i bez identy
 | Alternatywa | Dlaczego nie |
 |---|---|
 | Blokowanie wyłącznie po domenie | Psuje serwisy, które wyjątki DuckDuckGo utrzymują przy życiu (allegro.pl, forbes.com). |
-| Oddanie reguł Chromium | QtWebEngine daje aplikacji osadzającej przechwytywacz żądań i nic deklaratywnego, więc reguły trzeba oceniać w InDuckGo. |
+| Oddanie reguł Chromium | QtWebEngine daje aplikacji osadzającej przechwytywacz żądań i nic deklaratywnego, więc reguły trzeba oceniać w ZTBrowserze. |
 | Łatanie Chromium, by bramkować preconnecty | Oznacza utrzymywanie forka Chromium; proxy go nie potrzebuje. |
 | `--host-resolver-rules` lub flagi funkcji wyłączające preconnect | Zmierzone: brak efektu za przechwytywaczem i brak efektu po ustawieniu proxy. |
 | Sam skrypt strony | Nie widzi podpowiedzi w HTML, które parser czyta jako pierwsze. |
@@ -184,7 +184,7 @@ pasuje, heurystyka szuka okna, którego przyciski mówią „odrzuć wszystkie",
 
 **Jak to się łączy.**
 
-1. `assets/autoconsent/autoconsent.js` (biblioteka w wersji 18.0.0 plus `induckgo-entry.ts`, zob. README obok) jest
+1. `assets/autoconsent/autoconsent.js` (biblioteka w wersji 18.0.0 plus `ztbrowser-entry.ts`, zob. README obok) jest
    wstrzykiwany przez `CookieNoticeScript` do własnego świata strony w każdej ramce przy tworzeniu dokumentu. Na razie
    tylko nasłuchuje. Działa w świecie strony, bo niektóre reguły wywołują interfejs JavaScript platformy zgód (na przykład
    `Didomi.setUserDisagreeToAll()`); wszystkie nazwy trzyma w jednym domknięciu i nic nie dopisuje do `window`.
@@ -193,7 +193,7 @@ pasuje, heurystyka szuka okna, którego przyciski mówią „odrzuć wszystkie",
    platformy zgód należy do innego serwisu niż ten, który ogląda osoba.
 3. Rust odpowiada „tak" dokładnie wtedy, gdy tarcza jest włączona dla tego serwisu (`GuardPageHiding::rejects_cookie_notices`).
    Odpowiedź nie zależy od tego, czy listy filtrów zostały już zbudowane.
-4. Przy „tak" skrypt Guard wysyła na dokumencie zdarzenie `induckgo-reject-cookie-notices`. Zdarzenie to jedyna rzecz,
+4. Przy „tak" skrypt Guard wysyła na dokumencie zdarzenie `ztbrowser-reject-cookie-notices`. Zdarzenie to jedyna rzecz,
    którą odizolowany świat i świat strony dzielą. Biblioteka startuje wtedy raz na dokument: najpierw reguły, potem
    heurystyka, **zawsze wyłącznie odrzucając** (`autoAction: 'optOut'`, tryb heurystyki `reject`).
 
@@ -214,18 +214,18 @@ nieparsowanym tekstem do chwili zdarzenia. Odrzucenie wymagające własnej rundy
 
 | Przedmiot | Plik testu (`crates/…/tests/`) |
 |---|---|
-| Semantyka reguł DuckDuckGo | `induckgo-core/content_blocker_request_policy.rs` (16) |
-| Ostrzejsza nakładka | `induckgo-core/advertising_tracker_request_policy.rs` (10) |
-| Bramka połączeń | `induckgo-core/connection_gate.rs` (10) |
-| Wymienialne polityki | `induckgo-core/replaceable_policies.rs` (4) |
-| Skrypt podpowiedzi zasobów | `induckgo-core/resource_hint_blocking_script.rs` (5) |
-| Strumień ochrony i pamięć podręczna | `induckgo-core/protection_feed.rs` (9) |
-| Proxy (serwery na pętli zwrotnej) | `induckgo-engine-qt/gate_proxy.rs` (8), `upstream_proxy.rs` (7) |
-| Przechwytywacz zatwierdza dopuszczone hosty | `induckgo-engine-qt/policy_decisions.rs` |
-| Cała przeglądarka bez okna: obraz trackera zablokowany, zwykły wczytany | `induckgo-qt/tracker_blocking.rs` |
-| Skrypt okien cookies (gwarancje pakietu) | `induckgo-core/cookie_notice_script.rs` (5), `guard_page_script.rs` |
-| Komu każe się odrzucać | `induckgo-qt/guard_page_hiding.rs` |
-| Cała przeglądarka: okno odrzucone, nigdy zaakceptowane; zostawione, gdy tarcza wyłączona | `induckgo-qt/tracker_blocking.rs` |
+| Semantyka reguł DuckDuckGo | `ztbrowser-core/content_blocker_request_policy.rs` (16) |
+| Ostrzejsza nakładka | `ztbrowser-core/advertising_tracker_request_policy.rs` (10) |
+| Bramka połączeń | `ztbrowser-core/connection_gate.rs` (10) |
+| Wymienialne polityki | `ztbrowser-core/replaceable_policies.rs` (4) |
+| Skrypt podpowiedzi zasobów | `ztbrowser-core/resource_hint_blocking_script.rs` (5) |
+| Strumień ochrony i pamięć podręczna | `ztbrowser-core/protection_feed.rs` (9) |
+| Proxy (serwery na pętli zwrotnej) | `ztbrowser-engine-qt/gate_proxy.rs` (8), `upstream_proxy.rs` (7) |
+| Przechwytywacz zatwierdza dopuszczone hosty | `ztbrowser-engine-qt/policy_decisions.rs` |
+| Cała przeglądarka bez okna: obraz trackera zablokowany, zwykły wczytany | `ztbrowser-qt/tracker_blocking.rs` |
+| Skrypt okien cookies (gwarancje pakietu) | `ztbrowser-core/cookie_notice_script.rs` (5), `guard_page_script.rs` |
+| Komu każe się odrzucać | `ztbrowser-qt/guard_page_hiding.rs` |
+| Cała przeglądarka: okno odrzucone, nigdy zaakceptowane; zostawione, gdy tarcza wyłączona | `ztbrowser-qt/tracker_blocking.rs` |
 
 Test bez okna uruchamia prawdziwą przeglądarkę z lokalnym serwerem jako jej nadrzędnym proxy HTTP, który odpowiada za każdą
 nazwę `.test`, więc strona, zwykła osoba trzecia i tracker z listy przechodzą przez bramkę.

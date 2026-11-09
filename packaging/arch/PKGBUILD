@@ -1,21 +1,26 @@
 # Maintainer: Michał Ligus <eshaiotic@eshaiotic.io>
 #
-# Builds InDuckGo from the repository this file lives in: the working tree as it is, uncommitted changes
+# Builds ZTBrowser from the repository this file lives in: the working tree as it is, uncommitted changes
 # included. Usually run through ./install or packaging/release.sh; by hand: cd packaging/arch && makepkg -si
 # The flags of /etc/makepkg.conf apply, so the package may be tuned for this machine's processor.
 
-pkgname=induckgo
+pkgname=ztbrowser
 pkgver=1.2.4
 pkgrel=1
 pkgdesc="Privacy-first browser on QtWebEngine (Chromium), built on DuckDuckGo's open-source tracker protections"
 arch=('x86_64' 'aarch64')
 license=('GPL-3.0-or-later')
-# QtWebEngine is Chromium: the engine's security fixes arrive with Arch's qt6-webengine, not with InDuckGo.
+# QtWebEngine is Chromium: the engine's security fixes arrive with Arch's qt6-webengine, not with ZTBrowser.
 # qt6-svg draws the interface's icons, qt6-declarative holds Qt Quick with its Controls, Dialogs and Effects,
-# qt6-webchannel the bridge between the page and the browser.
+# qt6-webchannel the bridge between the page and the browser, xdg-utils the xdg-settings that makes ZTBrowser the
+# default browser when the person asks for it.
 depends=('gcc-libs' 'glibc' 'hicolor-icon-theme' 'qt6-base' 'qt6-declarative' 'qt6-svg' 'qt6-webchannel'
-         'qt6-webengine')
+         'qt6-webengine' 'xdg-utils')
 makedepends=('cargo')
+# ZTBrowser was called InDuckGo up to 1.2.4: installing ZTBrowser removes the InDuckGo package, and the first
+# start moves InDuckGo's data over (crates/ztbrowser-qt/src/induckgo_migration.rs).
+conflicts=('induckgo')
+replaces=('induckgo')
 # The release profile strips symbols, so a separate debug package would be empty. makepkg's link-time
 # optimisation flags would make the C++ part of the Qt bridge unreadable for Rust's linker (undefined symbols).
 options=('!debug' '!lto')
@@ -37,21 +42,21 @@ prepare() {
 build() {
   cd "$_repository"
   export RUSTUP_TOOLCHAIN=stable CARGO_TARGET_DIR="$srcdir/target"
-  cargo build --frozen --release -p induckgo-qt
+  cargo build --frozen --release -p ztbrowser-qt
 }
 
 check() {
   cd "$_repository"
   export RUSTUP_TOOLCHAIN=stable CARGO_TARGET_DIR="$srcdir/target"
-  cargo test --frozen -p induckgo-core
+  cargo test --frozen -p ztbrowser-core
 }
 
 package() {
   cd "$_repository"
-  install -Dm0755 "$srcdir/target/release/induckgo-qt" "$pkgdir/usr/bin/induckgo"
-  install -Dm0644 packaging/linux/io.github.induckgo.InDuckGo.desktop -t "$pkgdir/usr/share/applications"
-  install -Dm0644 packaging/linux/io.github.induckgo.InDuckGo.metainfo.xml -t "$pkgdir/usr/share/metainfo"
-  install -Dm0644 assets/icons/io.github.induckgo.InDuckGo.svg -t "$pkgdir/usr/share/icons/hicolor/scalable/apps"
+  install -Dm0755 "$srcdir/target/release/ztbrowser-qt" "$pkgdir/usr/bin/ztbrowser"
+  install -Dm0644 packaging/linux/io.github.ztbrowser.ZTBrowser.desktop -t "$pkgdir/usr/share/applications"
+  install -Dm0644 packaging/linux/io.github.ztbrowser.ZTBrowser.metainfo.xml -t "$pkgdir/usr/share/metainfo"
+  install -Dm0644 assets/icons/io.github.ztbrowser.ZTBrowser.svg -t "$pkgdir/usr/share/icons/hicolor/scalable/apps"
   install -Dm0644 NOTICE -t "$pkgdir/usr/share/licenses/$pkgname"
   install -Dm0644 README.md -t "$pkgdir/usr/share/doc/$pkgname"
 }

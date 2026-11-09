@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: sv\n"
+
+msgid "About ZTBrowser"
+msgstr "Om ZTBrowser"
+
+msgid "Access denied"
+msgstr "Åtkomst nekad"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Tillåt att {requesting} använder sina cookies och sin data medan du är på {current}?"
+
+msgid "Allow {site} to know your location?"
+msgstr "Tillåt att {site} får veta din plats?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "Tillåt att {site} läser ditt urklipp?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "Tillåt att {site} visar aviseringar?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "Tillåt att {site} använder din kamera och din mikrofon?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "Tillåt att {site} använder din kamera?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "Tillåt att {site} använder din mikrofon?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "Tillåt att {site} använder din skärm?"
+
+msgid "App data cleared"
+msgstr "Appdata rensad"
+
+msgid "Appearance"
+msgstr "Utseende"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "Tillämpas nästa gång ZTBrowser startar"
+
+msgid "Asking for relay descriptors"
+msgstr "Begär relädeskriptorer"
+
+msgid "Asking for the network status"
+msgstr "Begär nätverksstatus"
+
+msgid "Back"
+msgstr "Bakåt"
+
+msgid "Back and Forward"
+msgstr "Bakåt och framåt"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Bäst överallt där Tor inte är blockerat."
+
+msgid "Bridges I provide"
+msgstr "Mina egna broar"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Broar är olistade Tor-reläer för nätverk som blockerar Tor."
+
+msgid "Browsing data burned"
+msgstr "Webbdata rensad"
+
+msgid "Burn Browsing Data"
+msgstr "Rensa webbdata"
+
+msgid "Burn Browsing Data?"
+msgstr "Rensa webbdata?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Knappar som visas runt adressfältet i den här profilens fönster."
+
+msgid "C_lear"
+msgstr "_Rensa"
+
+msgid "Cannot Connect to Tor"
+msgstr "Kan inte ansluta till Tor"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Kan inte nå Tors kontrollport: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Kan inte läsa Tors kontrollcookie: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Kan inte ta bort Tors gamla kontrollportfil: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "Kan inte spara nedladdningen: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Kan inte starta Tor: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Kan inte skriva Tors konfiguration: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Kan inte skriva till Tors kontrollport: {error}"
+
+msgid "Certificate for {name}"
+msgstr "Certifikat för {name}"
+
+msgid "Check the address for a typo."
+msgstr "Kontrollera att adressen inte innehåller stavfel."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Kontrollera adressen, inklusive portnumret efter kolonet, om det finns något."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Kontrollera nätverkskabeln eller wifi-anslutningen."
+
+msgid "Check your internet connection."
+msgstr "Kontrollera din internetanslutning."
+
+msgid "Clear App Data…"
+msgstr "Rensa appdata…"
+
+msgid "Clear Data of {name}?"
+msgstr "Rensa data för {name}?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Stäng flikar eller appar som du inte behöver och ladda sedan om sidan."
+
+msgid "Close {name} before deleting it"
+msgstr "Stäng {name} innan du raderar den"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Stänger alla flikar och fönster i den här profilen och raderar dess cookies, webbplatsdata, cache och historik."
+
+msgid "Connect"
+msgstr "Anslut"
+
+msgid "Connect directly"
+msgstr "Anslut direkt"
+
+msgid "Connected"
+msgstr "Ansluten"
+
+msgid "Connected to a relay directory server"
+msgstr "Ansluten till en reläkatalogserver"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Ansluten till ett relä för att bygga kretsar"
+
+msgid "Connected to pluggable transport"
+msgstr "Ansluten till pluggable transport"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Ansluten till pluggable transport för att bygga kretsar"
+
+msgid "Connected to proxy"
+msgstr "Ansluten till proxy"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Ansluten till proxy för att bygga kretsar"
+
+msgid "Connected to the Tor network"
+msgstr "Ansluten till Tor-nätverket"
+
+msgid "Connecting to Tor"
+msgstr "Ansluter till Tor"
+
+msgid "Connecting to a relay directory server"
+msgstr "Ansluter till en reläkatalogserver"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Ansluter till ett relä för att bygga kretsar"
+
+msgid "Connecting to pluggable transport"
+msgstr "Ansluter till pluggable transport"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Ansluter till pluggable transport för att bygga kretsar"
+
+msgid "Connecting to proxy"
+msgstr "Ansluter till proxy"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Ansluter till proxy för att bygga kretsar"
+
+msgid "Connection Settings…"
+msgstr "Anslutningsinställningar…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, integritetskonfigurationen och regelalgoritmen i TrackerRadarKit."
+
+msgid "Could not install the app: {error}"
+msgstr "Det gick inte att installera appen: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Det gick inte att ta bort allt: {error}"
+
+msgid "Delete"
+msgstr "Radera"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Radera den här profilens cookies, webbplatsdata och cache"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Förklädda anslutningar till Tor Browsers inbyggda broar."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Förklädda anslutningar till Tor Browsers inbyggda broar. Kräver {package}."
+
+msgid "Download failed: {error}"
+msgstr "Nedladdningen misslyckades: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Laddas ned från DuckDuckGo vid körning; licensierad under CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "Laddade ned {name}"
+
+msgid "DuckDuckGo protections"
+msgstr "DuckDuckGo-skydd"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Varje app körs i ett eget fönster och en egen process, med egna cookies och inloggningar."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Varje profil har egna cookies, inloggningar, historik och cache och körs som en separat process."
+
+msgid "Establishing a Tor circuit"
+msgstr "Upprättar en Tor-krets"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Upprättar en krypterad katalogförbindelse"
+
+msgid "File not found"
+msgstr "Filen hittades inte"
+
+msgid "Find in Page…"
+msgstr "Sök på sidan…"
+
+msgid "Find in page"
+msgstr "Sök på sidan"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Handskakningen med en reläkatalogserver är klar"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Handskakningen med ett relä för att bygga kretsar är klar"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Slutför handskakningen med en reläkatalogserver"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Slutför handskakningen med ett relä för att bygga kretsar"
+
+msgid "Forward"
+msgstr "Framåt"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "Från bridges.torproject.org, via e-post eller från en vän."
+
+msgid "Go to Home Page"
+msgstr "Gå till startsidan"
+
+msgid "Go to the previous or next page"
+msgstr "Gå till föregående eller nästa sida"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Gå till webbplatsens startsida och leta efter sidan därifrån."
+
+msgid "How to Reach Tor"
+msgstr "Så når du Tor"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Om den kraschar igen efter omladdning kan själva sidan vara trasig."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Om adressen är rätt kan webbplatsen ha upphört att finnas."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Om du har ett konto på den här webbplatsen kan du logga in och försöka igen."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "Om du använder ett VPN eller en egen DNS-server, kontrollera att det fungerar."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "Om du använder ett VPN, en brandvägg eller en proxy, kontrollera att den inte blockerar webbplatsen."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "Filterlistor för ZTBrowser Guard"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "ZTBrowser kan inte öppna {host} eftersom den här datorn inte är ansluten till ett nätverk."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser kunde inte hitta någon server på {host}."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser ansluter inte till {host} på den här porten."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "ZTBrowsers egen Tor ansluter. Ingenting lämnar det här fönstret förrän den är ansluten."
+
+msgid "Install Site as App"
+msgstr "Installera webbplatsen som app"
+
+msgid "Install Site as App…"
+msgstr "Installera webbplatsen som app…"
+
+msgid "Install as App"
+msgstr "Installera som app"
+
+msgid "Installed Apps"
+msgstr "Installerade appar"
+
+msgid "Installed Apps…"
+msgstr "Installerade appar…"
+
+msgid "Installed {name}"
+msgstr "Installerade {name}"
+
+msgid "Interface"
+msgstr "Gränssnitt"
+
+msgid "Issued by {name}"
+msgstr "Utfärdat av {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Den kan ha flyttats, bytt namn eller raderats."
+
+msgid "Language"
+msgstr "Språk"
+
+msgid "Load Insecure Page"
+msgstr "Ladda osäker sida"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Ladda om sidan eller sluta ladda den"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Tillräckligt mycket katalogdata har lästs in för att bygga kretsar"
+
+msgid "Loading authority certificates"
+msgstr "Läser in myndighetscertifikat"
+
+msgid "Loading relay descriptors"
+msgstr "Läser in relädeskriptorer"
+
+msgid "Loading the network status"
+msgstr "Läser in nätverksstatus"
+
+msgid "Main Menu"
+msgstr "Huvudmeny"
+
+msgid "Manage Profiles…"
+msgstr "Hantera profiler…"
+
+msgid "New Identity"
+msgstr "Ny identitet"
+
+msgid "New Identity?"
+msgstr "Ny identitet?"
+
+msgid "New Tab"
+msgstr "Ny flik"
+
+msgid "New Tor Window"
+msgstr "Nytt Tor-fönster"
+
+msgid "New Window"
+msgstr "Nytt fönster"
+
+msgid "New identity"
+msgstr "Ny identitet"
+
+msgid "New profile name"
+msgstr "Namn på ny profil"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "En brygga per rad, till exempel: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Bara webbsidor kan installeras som appar"
+
+msgid "Open"
+msgstr "Öppna"
+
+msgid "Open Page in Browser"
+msgstr "Öppna sidan i webbläsaren"
+
+msgid "Open a new tab"
+msgstr "Öppna en ny flik"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Öppna ett fönster vars trafik bara går genom Tor"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Andra program öppnas inte från Tor-fönstret: de skulle ansluta utanför Tor."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Sidor förblir oöppnade tills Tor-fönstret är anslutet."
+
+msgid "Paste at least one bridge."
+msgstr "Klistra in minst en brygga."
+
+msgid "Preferences"
+msgstr "Inställningar"
+
+msgid "Preferences…"
+msgstr "Inställningar…"
+
+msgid "Profiles"
+msgstr "Profiler"
+
+msgid "Protect This Site"
+msgstr "Skydda den här webbplatsen"
+
+msgid "Protection Shield"
+msgstr "Skyddssköld"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Det gick inte att läsa från Tors kontrollport: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "Anslut ditt VPN igen, om du använder ett."
+
+msgid "Reload"
+msgstr "Ladda om"
+
+msgid "Reload Page"
+msgstr "Ladda om sidan"
+
+msgid "Reset Zoom"
+msgstr "Återställ zoom"
+
+msgid "Search Engine"
+msgstr "Sökmotor"
+
+msgid "Search {engine}"
+msgstr "Sök med {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "Sök med {engine} eller ange adress"
+
+msgid "Show in Folder"
+msgstr "Visa i mapp"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Loggar ut dig och raderar den här appens cookies, webbplatsdata och cache. Inget annat påverkas."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Vissa data kunde inte raderas: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "Något gick fel när {host} laddades."
+
+msgid "Starting"
+msgstr "Startar"
+
+msgid "Starting Tor…"
+msgstr "Startar Tor…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Stäng av eller slå på spårningsskyddet för webbplatsen"
+
+msgid "System default ({language})"
+msgstr "Systemstandard ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "Utfärdaren av certifikatet har återkallat det."
+
+msgid "The bridge line has no address: {line}"
+msgstr "Bryggraden saknar adress: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "Certifikatet kunde inte verifieras."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "Certifikatet är signerat med en algoritm som inte längre är säker."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "Certifikatet är inte giltigt ännu. Kontrollera att datum och tid på den här datorn stämmer."
+
+msgid "The certificate was issued for a different site."
+msgstr "Certifikatet utfärdades för en annan webbplats."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "Certifikatet utfärdades inte av en utfärdare som den här datorn litar på."
+
+msgid "The connection to {host} was interrupted."
+msgstr "Anslutningen till {host} avbröts."
+
+msgid "The icon at the end of the address bar"
+msgstr "Ikonen i slutet av adressfältet"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "Språket ändras när ZTBrowser startas om"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "Språket för menyer, dialogrutor och meddelanden, i alla profiler och webbappar."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "Problemet ligger hos webbplatsen. Försök igen om några minuter."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Webbplatsen kan vara nere för underhåll. Försök igen om några minuter."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Webbplatsen kan vara överbelastad. Försök igen om några minuter."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "{transport}-broarna kräver ett program som inte är installerat; installera {package}"
+
+msgid "There is no file at {path}."
+msgstr "Det finns ingen fil på {path}."
+
+msgid "This address is blocked"
+msgstr "Den här adressen är blockerad"
+
+msgid "This connection isn’t private"
+msgstr "Den här anslutningen är inte privat"
+
+msgid "This page"
+msgstr "Den här sidan"
+
+msgid "This page can’t be found"
+msgstr "Den här sidan hittades inte"
+
+msgid "This page can’t be loaded"
+msgstr "Den här sidan kan inte laddas"
+
+msgid "This page crashed"
+msgstr "Den här sidan kraschade"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Den här sidan finns på en annan webbplats och ingår inte i {name}"
+
+msgid "This page isn’t working"
+msgstr "Den här sidan fungerar inte"
+
+msgid "This page ran out of memory"
+msgstr "Den här sidan fick slut på minne"
+
+msgid "This site can’t be found"
+msgstr "Den här webbplatsen hittades inte"
+
+msgid "This site can’t be reached"
+msgstr "Den här webbplatsen kan inte nås"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Via frivilligas webbläsare; fungerar på de flesta censurerade nätverk."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Via frivilligas webbläsare; fungerar på de flesta censurerade nätverk. Kräver {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Verktygsfältsknappar"
+
+msgid "Tor Connection"
+msgstr "Tor-anslutning"
+
+msgid "Tor Connection…"
+msgstr "Tor-anslutning…"
+
+msgid "Tor Window"
+msgstr "Tor-fönster"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor kan inte använda sökvägen {path}"
+
+msgid "Tor closed its control port"
+msgstr "Tor stängde sin kontrollport"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor kunde inte byta krets: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor öppnade inte sin kontrollport"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor är inte installerat. Installera din distributions tor-paket; Tor-fönstret startar sin egen Tor och behöver ingen Tor-tjänst som körs."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor öppnade ingen lokal SOCKS-port"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor avvisade: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor rapporterade ett problem"
+
+msgid "Tor stopped."
+msgstr "Tor stoppades."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Tors kontrollcookie är skadad"
+
+msgid "Tracker Data Set"
+msgstr "Spårardatauppsättning"
+
+msgid "Tracker protection on this site"
+msgstr "Spårningsskydd på den här webbplatsen"
+
+msgid "Try Again"
+msgstr "Försök igen"
+
+msgid "Try again in a few minutes."
+msgstr "Försök igen om några minuter."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Stäng av flygplansläget, om det är på."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "Omvandlar ZTBrowser Guards filterlistor till WebKit-regler. Källa: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Avinstallera"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Okänd bryggtransport: {name}"
+
+msgid "Valid until {date}"
+msgstr "Giltigt till {date}"
+
+msgid "Your Bridges"
+msgstr "Dina broar"
+
+msgid "You’re offline"
+msgstr "Du är offline"
+
+msgid "Zoom In"
+msgstr "Zooma in"
+
+msgid "Zoom Out"
+msgstr "Zooma ut"
+
+msgid "_Allow"
+msgstr "_Tillåt"
+
+msgid "_Burn"
+msgstr "_Rensa"
+
+msgid "_Cancel"
+msgstr "_Avbryt"
+
+msgid "_Deny"
+msgstr "_Neka"
+
+msgid "_Install"
+msgstr "_Installera"
+
+msgid "_New Identity"
+msgstr "_Ny identitet"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) eller obfs4proxy från AUR (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) eller snowflake-pt-client från AUR (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} kan inte hantera förfrågan just nu."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} kunde inte besvara den här förfrågan."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} erbjuder ingen säker anslutning"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} tillåter inte att du ser den här sidan."
+
+msgid "{host} has no page at this address."
+msgstr "{host} har ingen sida på den här adressen."
+
+msgid "{host} refused the connection."
+msgstr "{host} avvisade anslutningen."
+
+msgid "{host} took too long to respond."
+msgstr "{host} tog för lång tid på sig att svara."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} använde mer minne än en sida får använda, så ZTBrowser stoppade den."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} öppnas i ett eget fönster, med cookies och inloggningar som hålls åtskilda från webbläsaren och alla andra appar."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — ZTBrowser-webbapp"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} är inte ett bryggargument"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} är inte en IP-adress med port"
+
+msgid "{url} answered {status}"
+msgstr "{url} svarade {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} returnerade inte det förväntade dokumentet"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} är större än tillåtet"
+
+msgid "{url} is not a valid address"
+msgstr "{url} är inte en giltig adress"
+
+msgid "© their maintainers"
+msgstr "© deras underhållare"
+
+msgid "Ask Where to Save Each File"
+msgstr "Fråga var varje fil ska sparas"
+
+msgid "Choose Folder"
+msgstr "Välj mapp"
+
+msgid "Download Folder"
+msgstr "Nedladdningsmapp"
+
+msgid "Download failed"
+msgstr "Nedladdningen misslyckades"
+
+msgid "Downloading…"
+msgstr "Laddar ned…"
+
+msgid "Downloading… {percent}%"
+msgstr "Laddar ned… {percent} %"
+
+msgid "Downloads"
+msgstr "Nedladdningar"
+
+msgid "Go to Download Folder"
+msgstr "Gå till nedladdningsmappen"
+
+msgid "No downloads yet"
+msgstr "Inga nedladdningar ännu"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Annars sparas filer direkt i nedladdningsmappen"
+
+msgid "Save File"
+msgstr "Spara fil"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "De fem senaste nedladdningarna och nedladdningsmappen"
+
+msgid "_Save"
+msgstr "_Spara"
+
+msgid "_Select"
+msgstr "_Välj"
+
+msgid "Show All Downloads"
+msgstr "Visa alla hämtningar"
+
+msgid "Clear List"
+msgstr "Rensa listan"
+
+msgid "Remove from List"
+msgstr "Ta bort från listan"
+
+msgid "Clear History"
+msgstr "Rensa historik"
+
+msgid "Search Downloads"
+msgstr "Sök i hämtningar"
+
+msgid "File Moved or Deleted"
+msgstr "Filen flyttades eller raderades"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Animerar varje steg på mushjulet. Sidor som redan är öppna måste laddas om."
+
+msgid "Scrolling"
+msgstr "Rullning"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Mjuk rullning med mushjulet"
+
+msgid "Details"
+msgstr "Detaljer"
+
+msgid "Legal"
+msgstr "Juridisk information"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "Detta program levereras utan någon form av garanti. Se {license} för detaljer."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, version 3 eller senare"
+
+msgid "Apache License, Version 2.0"
+msgstr "Apache License, Version 2.0"
+
+msgid "Move to New Window"
+msgstr "Flytta till nytt fönster"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Mozilla Public License 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "BSD 3-Clause License"
+
+msgid "Wide Address Bar"
+msgstr "Bred adressfält"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "Adressfältet fyller hela utrymmet i verktygsfältet; avstängt förblir det kort och centrerat"
+
+msgid "No apps installed yet"
+msgstr "Inga appar är installerade ännu"
+
+msgid "Uninstall {name}?"
+msgstr "Avinstallera {name}?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Tar bort appen med dess cookies, inloggningar och data. Det går inte att ångra."
+
+msgid "Tab Position"
+msgstr "Flikarnas placering"
+
+msgid "Top"
+msgstr "Överst"
+
+msgid "Bottom"
+msgstr "Nederst"
+
+msgid "Left"
+msgstr "Vänster"
+
+msgid "Right"
+msgstr "Höger"
+
+msgid "Window Buttons"
+msgstr "Fönsterknappar"
+
+msgid "Default"
+msgstr "Standard"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Lägg till profil"
+
+msgid "Delete profile {name}?"
+msgstr "Ta bort profilen {name}?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Tar bort profilen med dess cookies, inloggningar, historik och cache. Det går inte att ångra."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser är inte din standardwebbläsare"
+
+msgid "Make Default"
+msgstr "Gör till standard"
+
+msgid "Don't Ask Again"
+msgstr "Fråga inte igen"
+
+msgid "Close"
+msgstr "Stäng"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "Det gick inte att göra ZTBrowser till standardwebbläsare: {error}"
+
+msgid "Default Browser"
+msgstr "Standardwebbläsare"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "ZTBrowser öppnar länkar från andra program"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Länkar från andra program öppnas i {browser}"
+
+msgid "Another browser opens links from other programs"
+msgstr "En annan webbläsare öppnar länkar från andra program"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Bara en installerad ZTBrowser kan öppna länkar från andra program"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Skrivbordet anger inte vilken webbläsare som öppnar länkar"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "Fråga när ZTBrowser startar"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Erbjud att göra ZTBrowser till standardwebbläsare medan en annan webbläsare öppnar länkar"

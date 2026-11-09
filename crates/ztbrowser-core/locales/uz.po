@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: uz\n"
+
+msgid "About ZTBrowser"
+msgstr "ZTBrowser haqida"
+
+msgid "Access denied"
+msgstr "Kirish taqiqlangan"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "{requesting} saytining, siz {current} saytida bo‘lganingizda, o‘z kukilari va ma’lumotlaridan foydalanishiga ruxsat berilsinmi?"
+
+msgid "Allow {site} to know your location?"
+msgstr "{site} saytining joylashuvingizni bilishiga ruxsat berilsinmi?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "{site} saytining almashish buferingizni o‘qishiga ruxsat berilsinmi?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "{site} saytining bildirishnomalar ko‘rsatishiga ruxsat berilsinmi?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "{site} saytining kamerangiz va mikrofoningizdan foydalanishiga ruxsat berilsinmi?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "{site} saytining kamerangizdan foydalanishiga ruxsat berilsinmi?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "{site} saytining mikrofoningizdan foydalanishiga ruxsat berilsinmi?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "{site} saytining ekraningizdan foydalanishiga ruxsat berilsinmi?"
+
+msgid "App data cleared"
+msgstr "Ilova ma’lumotlari tozalandi"
+
+msgid "Appearance"
+msgstr "Ko‘rinish"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "ZTBrowser keyingi safar ishga tushganda qo‘llanadi"
+
+msgid "Asking for relay descriptors"
+msgstr "Rele tavsiflari so‘ralmoqda"
+
+msgid "Asking for the network status"
+msgstr "Tarmoq holati so‘ralmoqda"
+
+msgid "Back"
+msgstr "Orqaga"
+
+msgid "Back and Forward"
+msgstr "Orqaga va oldinga"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Tor bloklanmagan har qanday joyda eng yaxshisi."
+
+msgid "Bridges I provide"
+msgstr "Men taqdim etadigan ko‘priklar"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Ko‘priklar — Tor bloklangan tarmoqlar uchun ro‘yxatga kiritilmagan Tor relelari."
+
+msgid "Browsing data burned"
+msgstr "Brauzer ma’lumotlari o‘chirildi"
+
+msgid "Burn Browsing Data"
+msgstr "Brauzer ma’lumotlarini o‘chirish"
+
+msgid "Burn Browsing Data?"
+msgstr "Brauzer ma’lumotlari o‘chirilsinmi?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Ushbu profil oynalarida manzil satri atrofida ko‘rsatiladigan tugmalar."
+
+msgid "C_lear"
+msgstr "_Tozalash"
+
+msgid "Cannot Connect to Tor"
+msgstr "Tor tarmog‘iga ulanib bo‘lmadi"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Tor boshqaruv portiga yetib bo‘lmadi: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Tor boshqaruv kukisini o‘qib bo‘lmadi: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Eski Tor boshqaruv porti faylini olib tashlab bo‘lmadi: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "Yuklab olingan faylni saqlab bo‘lmadi: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Torni ishga tushirib bo‘lmadi: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Tor sozlamalarini yozib bo‘lmadi: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Tor boshqaruv portiga yozib bo‘lmadi: {error}"
+
+msgid "Certificate for {name}"
+msgstr "{name} uchun sertifikat"
+
+msgid "Check the address for a typo."
+msgstr "Manzilda xato yo‘qligini tekshiring."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Manzilni, agar bor bo‘lsa, ikki nuqtadan keyingi port raqami bilan birga tekshiring."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Tarmoq kabelini yoki Wi-Fi ulanishini tekshiring."
+
+msgid "Check your internet connection."
+msgstr "Internetga ulanishingizni tekshiring."
+
+msgid "Clear App Data…"
+msgstr "Ilova ma’lumotlarini tozalash…"
+
+msgid "Clear Data of {name}?"
+msgstr "{name} ma’lumotlari tozalansinmi?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Keraksiz varaqlar yoki ilovalarni yoping, so‘ng sahifani qayta yuklang."
+
+msgid "Close {name} before deleting it"
+msgstr "O‘chirishdan oldin {name} ilovasini yoping"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Ushbu profilning barcha varaq va oynalarini yopadi hamda kukilari, sayt ma’lumotlari, keshi va tarixini o‘chiradi."
+
+msgid "Connect"
+msgstr "Ulanish"
+
+msgid "Connect directly"
+msgstr "To‘g‘ridan-to‘g‘ri ulanish"
+
+msgid "Connected"
+msgstr "Ulandi"
+
+msgid "Connected to a relay directory server"
+msgstr "Rele katalogi serveriga ulandi"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Zanjirlar qurish uchun releyga ulandi"
+
+msgid "Connected to pluggable transport"
+msgstr "Ulanuvchi transport moduliga ulandi"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Zanjirlar qurish uchun ulanuvchi transport moduliga ulandi"
+
+msgid "Connected to proxy"
+msgstr "Proksiga ulandi"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Zanjirlar qurish uchun proksiga ulandi"
+
+msgid "Connected to the Tor network"
+msgstr "Tor tarmog‘iga ulandi"
+
+msgid "Connecting to Tor"
+msgstr "Tor tarmog‘iga ulanmoqda"
+
+msgid "Connecting to a relay directory server"
+msgstr "Rele katalogi serveriga ulanmoqda"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Zanjirlar qurish uchun releyga ulanmoqda"
+
+msgid "Connecting to pluggable transport"
+msgstr "Ulanuvchi transport moduliga ulanmoqda"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Zanjirlar qurish uchun ulanuvchi transport moduliga ulanmoqda"
+
+msgid "Connecting to proxy"
+msgstr "Proksiga ulanmoqda"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Zanjirlar qurish uchun proksiga ulanmoqda"
+
+msgid "Connection Settings…"
+msgstr "Ulanish sozlamalari…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, maxfiylik konfiguratsiyasi va TrackerRadarKit qoida algoritmi."
+
+msgid "Could not install the app: {error}"
+msgstr "Ilovani o‘rnatib bo‘lmadi: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Hammasini olib tashlab bo‘lmadi: {error}"
+
+msgid "Delete"
+msgstr "O‘chirish"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Ushbu profilning kukilari, sayt ma’lumotlari va keshini o‘chirish"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Tor Browserning o‘rnatilgan ko‘priklariga yashirin ulanishlar."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Tor Browserning o‘rnatilgan ko‘priklariga yashirin ulanishlar. Kerak: {package}."
+
+msgid "Download failed: {error}"
+msgstr "Yuklab olish muvaffaqiyatsiz tugadi: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Ishlash vaqtida DuckDuckGo’dan yuklab olinadi; CC BY-NC-SA 4.0 litsenziyasi bilan."
+
+msgid "Downloaded {name}"
+msgstr "{name} yuklab olindi"
+
+msgid "DuckDuckGo protections"
+msgstr "DuckDuckGo himoyalari"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Har bir ilova o‘z oynasi va jarayonida, o‘z kukilari va hisoblariga kirishlari bilan ishlaydi."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Har bir profil o‘z kukilari, hisoblariga kirishlari, tarixi va keshini saqlaydi va alohida jarayon sifatida ishlaydi."
+
+msgid "Establishing a Tor circuit"
+msgstr "Tor zanjiri o‘rnatilmoqda"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Shifrlangan katalog ulanishi o‘rnatilmoqda"
+
+msgid "File not found"
+msgstr "Fayl topilmadi"
+
+msgid "Find in Page…"
+msgstr "Sahifadan qidirish…"
+
+msgid "Find in page"
+msgstr "Sahifadan qidirish"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Rele katalogi serveri bilan qo‘l siqish yakunlandi"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Zanjirlar qurish uchun rele bilan qo‘l siqish yakunlandi"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Rele katalogi serveri bilan qo‘l siqish yakunlanmoqda"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Zanjirlar qurish uchun rele bilan qo‘l siqish yakunlanmoqda"
+
+msgid "Forward"
+msgstr "Oldinga"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "bridges.torproject.org saytidan, elektron pochta orqali yoki do‘stingizdan."
+
+msgid "Go to Home Page"
+msgstr "Bosh sahifaga o‘tish"
+
+msgid "Go to the previous or next page"
+msgstr "Oldingi yoki keyingi sahifaga o‘tish"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Saytning bosh sahifasiga o‘ting va sahifani o‘sha yerdan qidiring."
+
+msgid "How to Reach Tor"
+msgstr "Torga qanday ulanish mumkin"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Qayta yuklangandan keyin yana ishdan chiqsa, sahifaning o‘zi buzuq bo‘lishi mumkin."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Manzil to‘g‘ri bo‘lsa, sayt endi mavjud emasdir."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Bu saytda hisobingiz bo‘lsa, kiring va qayta urinib ko‘ring."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "VPN yoki o‘z DNS serveringizdan foydalansangiz, ishlayotganini tekshiring."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "VPN, xavfsizlik devori yoki proksidan foydalansangiz, saytni bloklamayotganini tekshiring."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "ZTBrowser Guard filtr ro‘yxatlari"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "Bu kompyuter tarmoqqa ulanmagani uchun ZTBrowser {host} manzilini ocha olmaydi."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser {host} manzilida server topa olmadi."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser bu portda {host} manziliga ulanmaydi."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "ZTBrowser’ning o‘z Tori ulanmoqda. U ulanmaguncha bu oynadan hech narsa chiqmaydi."
+
+msgid "Install Site as App"
+msgstr "Saytni ilova sifatida o‘rnatish"
+
+msgid "Install Site as App…"
+msgstr "Saytni ilova sifatida o‘rnatish…"
+
+msgid "Install as App"
+msgstr "Ilova sifatida o‘rnatish"
+
+msgid "Installed Apps"
+msgstr "O‘rnatilgan ilovalar"
+
+msgid "Installed Apps…"
+msgstr "O‘rnatilgan ilovalar…"
+
+msgid "Installed {name}"
+msgstr "{name} o‘rnatildi"
+
+msgid "Interface"
+msgstr "Interfeys"
+
+msgid "Issued by {name}"
+msgstr "Bergan: {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "U ko‘chirilgan, nomi o‘zgartirilgan yoki o‘chirilgan bo‘lishi mumkin."
+
+msgid "Language"
+msgstr "Til"
+
+msgid "Load Insecure Page"
+msgstr "Xavfsiz bo‘lmagan sahifani yuklash"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Sahifani qayta yuklash yoki yuklashni to‘xtatish"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Zanjirlar qurish uchun katalog haqida yetarli ma’lumot yuklandi"
+
+msgid "Loading authority certificates"
+msgstr "Vakolatli organ sertifikatlari yuklanmoqda"
+
+msgid "Loading relay descriptors"
+msgstr "Rele tavsiflari yuklanmoqda"
+
+msgid "Loading the network status"
+msgstr "Tarmoq holati yuklanmoqda"
+
+msgid "Main Menu"
+msgstr "Asosiy menyu"
+
+msgid "Manage Profiles…"
+msgstr "Profillarni boshqarish…"
+
+msgid "New Identity"
+msgstr "Yangi kimlik"
+
+msgid "New Identity?"
+msgstr "Yangi kimlik olinsinmi?"
+
+msgid "New Tab"
+msgstr "Yangi varaq"
+
+msgid "New Tor Window"
+msgstr "Yangi Tor oynasi"
+
+msgid "New Window"
+msgstr "Yangi oyna"
+
+msgid "New identity"
+msgstr "Yangi kimlik"
+
+msgid "New profile name"
+msgstr "Yangi profil nomi"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "Har bir qatorda bitta ko‘prik, masalan: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Faqat veb-sahifalarni ilova sifatida o‘rnatish mumkin"
+
+msgid "Open"
+msgstr "Ochish"
+
+msgid "Open Page in Browser"
+msgstr "Sahifani brauzerda ochish"
+
+msgid "Open a new tab"
+msgstr "Yangi varaq ochish"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Trafigi faqat Tor orqali o‘tadigan oynani ochish"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Boshqa ilovalar Tor oynasidan ochilmaydi: ular Tordan tashqarida ulanardi."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Tor oynasi ulanmaguncha sahifalar ochilmaydi."
+
+msgid "Paste at least one bridge."
+msgstr "Kamida bitta ko‘prikni joylashtiring."
+
+msgid "Preferences"
+msgstr "Sozlamalar"
+
+msgid "Preferences…"
+msgstr "Sozlamalar…"
+
+msgid "Profiles"
+msgstr "Profillar"
+
+msgid "Protect This Site"
+msgstr "Bu saytni himoya qilish"
+
+msgid "Protection Shield"
+msgstr "Himoya qalqoni"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Tor boshqaruv portini o‘qish muvaffaqiyatsiz tugadi: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "VPN ishlatsangiz, uni qayta ulang."
+
+msgid "Reload"
+msgstr "Qayta yuklash"
+
+msgid "Reload Page"
+msgstr "Sahifani qayta yuklash"
+
+msgid "Reset Zoom"
+msgstr "Masshtabni tiklash"
+
+msgid "Search Engine"
+msgstr "Qidiruv tizimi"
+
+msgid "Search {engine}"
+msgstr "{engine} orqali qidirish"
+
+msgid "Search {engine} or enter address"
+msgstr "{engine} orqali qidiring yoki manzil kiriting"
+
+msgid "Show in Folder"
+msgstr "Jildda ko‘rsatish"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Hisobingizdan chiqaradi va bu ilovaning kukilari, sayt ma’lumotlari va keshini o‘chiradi. Boshqa hech narsaga ta’sir qilmaydi."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Ayrim ma’lumotlarni o‘chirib bo‘lmadi: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "{host} yuklanayotganda nimadir xato ketdi."
+
+msgid "Starting"
+msgstr "Ishga tushmoqda"
+
+msgid "Starting Tor…"
+msgstr "Tor ishga tushmoqda…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Sayt uchun kuzatuvchilardan himoyani o‘chirish yoki yoqish"
+
+msgid "System default ({language})"
+msgstr "Tizim standarti ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "Sertifikatni bergan organ uni bekor qilgan."
+
+msgid "The bridge line has no address: {line}"
+msgstr "Ko‘prik qatorida manzil yo‘q: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "Sertifikatni tekshirib bo‘lmadi."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "Sertifikat endi xavfsiz bo‘lmagan algoritm bilan imzolangan."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "Sertifikat hali amal qilmaydi. Bu kompyuterning sana va vaqti to‘g‘riligini tekshiring."
+
+msgid "The certificate was issued for a different site."
+msgstr "Sertifikat boshqa sayt uchun berilgan."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "Sertifikatni bu kompyuter ishonadigan organ bermagan."
+
+msgid "The connection to {host} was interrupted."
+msgstr "{host} bilan ulanish uzildi."
+
+msgid "The icon at the end of the address bar"
+msgstr "Manzil satri oxiridagi belgi"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "Til ZTBrowser qayta ishga tushirilganda o‘zgaradi"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "Menyular, muloqot oynalari va xabarlar tili, har bir profil va veb-ilovada."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "Muammo saytning o‘z tomonida. Bir necha daqiqadan keyin qayta urinib ko‘ring."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Sayt texnik xizmat ko‘rsatilayotgani uchun ishlamayotgan bo‘lishi mumkin. Bir necha daqiqadan keyin qayta urinib ko‘ring."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Sayt haddan tashqari yuklangan bo‘lishi mumkin. Bir necha daqiqadan keyin qayta urinib ko‘ring."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "{transport} ko‘priklari o‘rnatilmagan dasturni talab qiladi; {package} ni o‘rnating"
+
+msgid "There is no file at {path}."
+msgstr "{path} manzilida fayl yo‘q."
+
+msgid "This address is blocked"
+msgstr "Bu manzil bloklangan"
+
+msgid "This connection isn’t private"
+msgstr "Bu ulanish shaxsiy emas"
+
+msgid "This page"
+msgstr "Bu sahifa"
+
+msgid "This page can’t be found"
+msgstr "Bu sahifa topilmadi"
+
+msgid "This page can’t be loaded"
+msgstr "Bu sahifani yuklab bo‘lmadi"
+
+msgid "This page crashed"
+msgstr "Bu sahifa ishdan chiqdi"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Bu sahifa boshqa saytda, {name} tarkibiga kirmaydi"
+
+msgid "This page isn’t working"
+msgstr "Bu sahifa ishlamayapti"
+
+msgid "This page ran out of memory"
+msgstr "Bu sahifaning xotirasi tugadi"
+
+msgid "This site can’t be found"
+msgstr "Bu sayt topilmadi"
+
+msgid "This site can’t be reached"
+msgstr "Bu saytga yetib bo‘lmadi"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Ko‘ngillilar brauzerlari orqali; ko‘pchilik senzura qilingan tarmoqlarda ishlaydi."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Ko‘ngillilar brauzerlari orqali; ko‘pchilik senzura qilingan tarmoqlarda ishlaydi. Kerak: {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Asboblar paneli tugmalari"
+
+msgid "Tor Connection"
+msgstr "Tor ulanishi"
+
+msgid "Tor Connection…"
+msgstr "Tor ulanishi…"
+
+msgid "Tor Window"
+msgstr "Tor oynasi"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor {path} yo‘lidan foydalana olmaydi"
+
+msgid "Tor closed its control port"
+msgstr "Tor boshqaruv portini yopdi"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor zanjirlarni almashtira olmadi: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor boshqaruv portini ochmadi"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor o‘rnatilmagan. Distributivingizning tor paketini o‘rnating; Tor oynasi o‘zining Torini ishga tushiradi va ishlayotgan Tor xizmatini talab qilmaydi."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor mahalliy SOCKS portini ochmadi"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor rad etdi: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor muammo haqida xabar berdi"
+
+msgid "Tor stopped."
+msgstr "Tor to‘xtadi."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Tor boshqaruv kukisi shikastlangan"
+
+msgid "Tracker Data Set"
+msgstr "Kuzatuvchilar ma’lumotlar to‘plami"
+
+msgid "Tracker protection on this site"
+msgstr "Bu saytda kuzatuvchilardan himoya"
+
+msgid "Try Again"
+msgstr "Qayta urinish"
+
+msgid "Try again in a few minutes."
+msgstr "Bir necha daqiqadan keyin qayta urinib ko‘ring."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Samolyot rejimi yoqilgan bo‘lsa, o‘chiring."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "ZTBrowser Guard filtr ro‘yxatlarini WebKit qoidalariga aylantiradi. Manba: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Olib tashlash"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Noma’lum ko‘prik transporti: {name}"
+
+msgid "Valid until {date}"
+msgstr "{date} gacha amal qiladi"
+
+msgid "Your Bridges"
+msgstr "Sizning ko‘priklaringiz"
+
+msgid "You’re offline"
+msgstr "Siz oflaynsiz"
+
+msgid "Zoom In"
+msgstr "Kattalashtirish"
+
+msgid "Zoom Out"
+msgstr "Kichraytirish"
+
+msgid "_Allow"
+msgstr "_Ruxsat berish"
+
+msgid "_Burn"
+msgstr "_O‘chirish"
+
+msgid "_Cancel"
+msgstr "_Bekor qilish"
+
+msgid "_Deny"
+msgstr "Ra_d etish"
+
+msgid "_Install"
+msgstr "_O‘rnatish"
+
+msgid "_New Identity"
+msgstr "_Yangi kimlik"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) yoki AUR’dagi obfs4proxy (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) yoki AUR’dagi snowflake-pt-client (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} hozir so‘rovni qayta ishlay olmaydi."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} bu so‘rovga javob bera olmadi."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} xavfsiz ulanishni taklif qilmaydi"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} bu sahifani ko‘rishingizga ruxsat bermaydi."
+
+msgid "{host} has no page at this address."
+msgstr "{host} saytida bu manzilda sahifa yo‘q."
+
+msgid "{host} refused the connection."
+msgstr "{host} ulanishni rad etdi."
+
+msgid "{host} took too long to respond."
+msgstr "{host} javob berishga juda uzoq vaqt oldi."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} bir sahifaga ruxsat etilgandan ko‘proq xotira ishlatgani uchun ZTBrowser uni to‘xtatdi."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} o‘z oynasida ochiladi; kukilari va hisoblariga kirishlari brauzerdan va boshqa har bir ilovadan alohida saqlanadi."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — ZTBrowser veb-ilovasi"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} ko‘prik argumenti emas"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} IP manzil va port emas"
+
+msgid "{url} answered {status}"
+msgstr "{url} quyidagicha javob berdi: {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} kutilgan hujjatni qaytarmadi"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} ruxsat etilganidan katta"
+
+msgid "{url} is not a valid address"
+msgstr "{url} yaroqli manzil emas"
+
+msgid "© their maintainers"
+msgstr "© ularning mualliflari"
+
+msgid "Ask Where to Save Each File"
+msgstr "Har bir faylni qayerga saqlashni so‘rash"
+
+msgid "Choose Folder"
+msgstr "Jildni tanlash"
+
+msgid "Download Folder"
+msgstr "Yuklab olishlar jildi"
+
+msgid "Download failed"
+msgstr "Yuklab olish bajarilmadi"
+
+msgid "Downloading…"
+msgstr "Yuklab olinmoqda…"
+
+msgid "Downloading… {percent}%"
+msgstr "Yuklab olinmoqda… {percent}%"
+
+msgid "Downloads"
+msgstr "Yuklab olishlar"
+
+msgid "Go to Download Folder"
+msgstr "Yuklab olishlar jildiga o‘tish"
+
+msgid "No downloads yet"
+msgstr "Hozircha yuklab olishlar yo‘q"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Aks holda fayllar to‘g‘ridan-to‘g‘ri yuklab olishlar jildiga saqlanadi"
+
+msgid "Save File"
+msgstr "Faylni saqlash"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Oxirgi beshta yuklab olish va yuklab olishlar jildi"
+
+msgid "_Save"
+msgstr "_Saqlash"
+
+msgid "_Select"
+msgstr "_Tanlash"
+
+msgid "Show All Downloads"
+msgstr "Barcha yuklab olishlarni ko‘rsatish"
+
+msgid "Clear List"
+msgstr "Ro‘yxatni tozalash"
+
+msgid "Remove from List"
+msgstr "Ro‘yxatdan olib tashlash"
+
+msgid "Clear History"
+msgstr "Tarixni tozalash"
+
+msgid "Search Downloads"
+msgstr "Yuklab olishlardan qidirish"
+
+msgid "File Moved or Deleted"
+msgstr "Fayl ko‘chirilgan yoki o‘chirilgan"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Sichqoncha g‘ildiragining har bir qadamini animatsiya qiladi. Allaqachon ochilgan sahifalarni qayta yuklash kerak."
+
+msgid "Scrolling"
+msgstr "Aylantirish"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Sichqoncha g‘ildiragi bilan silliq aylantirish"
+
+msgid "Details"
+msgstr "Tafsilotlar"
+
+msgid "Legal"
+msgstr "Huquqiy"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "Ushbu dastur mutlaqo kafolatsiz keladi. Tafsilotlar uchun {license}ga qarang."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, versiya 3 yoki undan keyingisi"
+
+msgid "Apache License, Version 2.0"
+msgstr "Apache License, versiya 2.0"
+
+msgid "Move to New Window"
+msgstr "Yangi oynaga o‘tkazish"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Mozilla Public License 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "BSD 3-Clause License"
+
+msgid "Wide Address Bar"
+msgstr "Keng manzil paneli"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "Manzil paneli asboblar panelidagi barcha bo‘sh joyni egallaydi; o‘chirilsa, qisqa va o‘rtada qoladi"
+
+msgid "No apps installed yet"
+msgstr "Hali hech qanday ilova o‘rnatilmagan"
+
+msgid "Uninstall {name}?"
+msgstr "{name} o‘chirilsinmi?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Ilovani cookie fayllari, kirishlari va ma’lumotlari bilan birga o‘chiradi. Buni qaytarib bo‘lmaydi."
+
+msgid "Tab Position"
+msgstr "Varaqlar joyi"
+
+msgid "Top"
+msgstr "Yuqori"
+
+msgid "Bottom"
+msgstr "Pastki"
+
+msgid "Left"
+msgstr "Chap"
+
+msgid "Right"
+msgstr "O‘ng"
+
+msgid "Window Buttons"
+msgstr "Oyna tugmalari"
+
+msgid "Default"
+msgstr "Standart"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Profil qo‘shish"
+
+msgid "Delete profile {name}?"
+msgstr "{name} profili o‘chirilsinmi?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Profilni cookie fayllari, kirishlari, tarixi va keshi bilan birga o‘chiradi. Buni qaytarib bo‘lmaydi."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser standart brauzeringiz emas"
+
+msgid "Make Default"
+msgstr "Standart qilish"
+
+msgid "Don't Ask Again"
+msgstr "Boshqa so‘ramaslik"
+
+msgid "Close"
+msgstr "Yopish"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "ZTBrowser standart brauzer qilinmadi: {error}"
+
+msgid "Default Browser"
+msgstr "Standart brauzer"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "Boshqa dasturlardagi havolalarni ZTBrowser ochadi"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Boshqa dasturlardagi havolalar {browser} orqali ochiladi"
+
+msgid "Another browser opens links from other programs"
+msgstr "Boshqa dasturlardagi havolalarni boshqa brauzer ochadi"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Boshqa dasturlardagi havolalarni faqat o‘rnatilgan ZTBrowser ocha oladi"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Ish stoli havolalarni qaysi brauzer ochishini aytmaydi"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "ZTBrowser ishga tushganda so‘rash"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Havolalarni boshqa brauzer ochayotganda ZTBrowserni standart brauzer qilishni taklif qilish"

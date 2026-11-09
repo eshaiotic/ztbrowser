@@ -1,6 +1,6 @@
 # Raport testów HTML
 
-`./run-tests` uruchamia wszystkie testy InDuckGo, a potem zawsze zapisuje raport:
+`./run-tests` uruchamia wszystkie testy ZTBrowsera, a potem zawsze zapisuje raport:
 `tests/reports/test-report-YYYYMMDD-HHmm.html`, nazwany według lokalnego czasu startu przebiegu. Strona to
 jeden samodzielny plik HTML (bez sieci, bez serwera), który można otworzyć z dysku albo dołączyć do
 wiadomości. Katalogi `tests/reports/` i `test-results/` (tam leży historia przebiegów) są ignorowane przez
@@ -37,7 +37,7 @@ kto zna jeden raport, przeczyta też ten.
 
 ```sh
 ./run-tests                    # wszystkie testy, potem raport; poza CI otwiera go w przeglądarce
-sudo pacman -S cargo-llvm-cov  # opcjonalnie: dodaje do raportu pokrycie induckgo-core
+sudo pacman -S cargo-llvm-cov  # opcjonalnie: dodaje do raportu pokrycie ztbrowser-core
 ```
 
 `cargo-nextest` jest wymagany. Bez `cargo-llvm-cov` skrypt uruchamia `cargo nextest run`, a karta pokrycia
@@ -47,7 +47,7 @@ padną.
 
 ## Skąd biorą się dane
 
-![Przepływ danych raportu: ./run-tests uruchamia cargo-nextest bezpośrednio albo przez cargo-llvm-cov; plik JUnit, podsumowanie pokrycia i historia przebiegów zasilają induckgo-test-report, który zapisuje stronę HTML](../../assets/diagrams/tests-report-data-flow.pl.svg)
+![Przepływ danych raportu: ./run-tests uruchamia cargo-nextest bezpośrednio albo przez cargo-llvm-cov; plik JUnit, podsumowanie pokrycia i historia przebiegów zasilają ztbrowser-test-report, który zapisuje stronę HTML](../../assets/diagrams/tests-report-data-flow.pl.svg)
 
 `./run-tests` idzie jedną z dwóch dróg. Gdy `cargo-llvm-cov` jest zainstalowany, uruchamia
 `cargo llvm-cov nextest`, który buduje testy z liczeniem pokrycia i zapisuje
@@ -56,7 +56,7 @@ nextest zapisuje `junit.xml`. Jego katalog zależy od drogi (`target/llvm-cov-ta
 `target/nextest/report/`), co czyni go najsłabszym ogniwem: skrypt kasuje oba pliki przed przebiegiem i bierze
 ten, który istnieje po nim, więc raport nigdy nie powstanie ze starego pliku.
 
-Następnie `induckgo-test-report` (crate workspace, który nigdy nie trafia do paczek) czyta trzy wejścia,
+Następnie `ztbrowser-test-report` (crate workspace, który nigdy nie trafia do paczek) czyta trzy wejścia,
 zapisuje przebieg w historii i generuje stronę.
 
 ## Układ raportu
@@ -75,7 +75,7 @@ Od góry:
    suma wszystkich testów, średnia, najdłuższy test i czas całego przebiegu.
 5. **Najczęstsze błędy i najbardziej niestabilne funkcjonalności** — błędy są grupowane według rodzaju
    (`assert_eq!`, `assert!`, `Option::unwrap`, `Result::unwrap`, timeout, inny). Funkcjonalność to jeden plik
-   wykonywalny testów, np. `induckgo-core::generic_hiding`, czyli jeden typ domenowy.
+   wykonywalny testów, np. `ztbrowser-core::generic_hiding`, czyli jeden typ domenowy.
 6. **Testy nieudane i niestabilne** — tylko gdy występują, z komunikatem paniki i miejscem jej wystąpienia.
 7. **Funkcjonalności** — każdy plik testów z paskiem wyników, nieudane najpierw.
 8. **Najwolniejsze testy** — pierwsza dziesiątka.
@@ -85,7 +85,7 @@ zaokrąglane w górę, więc jeden błąd na tysiące testów nigdy nie pokaże 
 
 ## Zakres i próg pokrycia
 
-Pokrycie jest mierzone tylko dla `induckgo-core`. Crate aplikacji (`induckgo`) to zestaw adapterów, które
+Pokrycie jest mierzone tylko dla `ztbrowser-core`. Crate aplikacji (`ztbrowser`) to zestaw adapterów, które
 wykonują decyzje domeny w GTK i WebKicie, i celowo nie ma testów jednostkowych. Liczenie go mówiłoby tylko
 tyle, że kod GUI nie działa w teście jednostkowym. Samo narzędzie raportu też jest pominięte. Pokrycie
 przebiegu jest wystarczające, gdy **każda zmierzona metryka jest powyżej 90 %**. Pokrycie rozgałęzień
@@ -122,7 +122,7 @@ zamiast zatrzymywać raport.
 
 ## Mapa kodu
 
-| Moduł (`crates/induckgo-test-report/src/`) | Odpowiedzialność |
+| Moduł (`crates/ztbrowser-test-report/src/`) | Odpowiedzialność |
 |---|---|
 | `junit_results.rs` | Czyta plik JUnit nextesta jako `TestCase` ze statusem, czasem i błędem. |
 | `failure_message.rs` | Zachowuje komunikat i miejsce paniki oraz klasyfikuje błąd. |
@@ -132,4 +132,4 @@ zamiast zatrzymywać raport.
 | `report_page.rs`, `report_widgets.rs`, `report_page.css` | Strona HTML w układzie szablonu. |
 | `report_command.rs`, `main.rs` | Polecenie: pliki, gałąź i commit z gita, zapis strony. |
 
-Testy: `crates/induckgo-test-report/tests/`, jeden plik scenariuszy Given/When/Then na typ.
+Testy: `crates/ztbrowser-test-report/tests/`, jeden plik scenariuszy Given/When/Then na typ.

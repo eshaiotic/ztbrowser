@@ -1,4 +1,4 @@
-InDuckGo
+ZTBrowser
 Copyright 2026 Michał Ligus
 
 Licensed under the GNU General Public License, version 3 or (at your option) any later version (see LICENSE).
@@ -9,35 +9,35 @@ Copyright (c) 2010-2021 Duck Duck Go, Inc., licensed under the Apache License, V
   - Content Scope Scripts 20.0.0, distributed unmodified in assets/content-scope-scripts
     (licence in assets/content-scope-scripts/LICENSE.md);
   - TrackerRadarKit and parts of the DuckDuckGo macOS browser, whose rule building, link cleaning and
-    HTTPS upgrade logic crates/induckgo-core ports to Rust.
+    HTTPS upgrade logic crates/ztbrowser-core ports to Rust.
 
 This product includes adblock-rust 0.13.5 by Brave Software, Inc., licensed under the Mozilla Public
 License, Version 2.0, compiled in unmodified. Its source code is available at
 https://github.com/brave/adblock-rust and https://crates.io/crates/adblock.
 
 This product includes autoconsent 18.0.0 by Duck Duck Go, Inc., licensed under the Mozilla Public License,
-Version 2.0, bundled together with InDuckGo's own entry point (assets/autoconsent/induckgo-entry.ts). Its
+Version 2.0, bundled together with ZTBrowser's own entry point (assets/autoconsent/ztbrowser-entry.ts). Its
 source code is available at https://github.com/duckduckgo/autoconsent; the licence is in assets/autoconsent/LICENSE.
 
 The Tor window runs tor by The Tor Project, Inc. (BSD-3-Clause, https://gitlab.torproject.org/tpo/core/tor):
 the distribution's own package on Arch Linux and Fedora; inside the Debian package and the AppImage, Debian's
-build of it, unmodified, in usr/lib/induckgo/tor. The AppImage also carries Debian's builds of obfs4proxy
+build of it, unmodified, in usr/lib/ztbrowser/tor. The AppImage also carries Debian's builds of obfs4proxy
 (BSD-2-Clause) and snowflake-client (BSD-3-Clause) and the libraries tor needs; their licences are in
-usr/share/doc/induckgo/third-party. crates/induckgo-core/src/tor/built_in_bridges.rs copies the built-in
+usr/share/doc/ztbrowser/third-party. crates/ztbrowser-core/src/tor/built_in_bridges.rs copies the built-in
 bridge lines of Tor Browser (tor-browser-build, BSD-3-Clause). "Tor" is a trademark of The Tor Project, Inc.;
-InDuckGo is not affiliated with or endorsed by The Tor Project.
+ZTBrowser is not affiliated with or endorsed by The Tor Project.
 
-The Qt window (crates/induckgo-qt/icons/adwaita) draws the symbolic icons of GNOME's Adwaita icon theme,
+The Qt window (crates/ztbrowser-qt/icons/adwaita) draws the symbolic icons of GNOME's Adwaita icon theme,
 dual-licensed CC BY-SA 3.0 or LGPL-3.0-only (we use them under LGPL-3.0-only, compatible with GPL-3.0). The
 source of one icon is a rendered copy; the pictures are unchanged apart from colouring at run time.
 
-Data downloaded at run time, not distributed with InDuckGo:
+Data downloaded at run time, not distributed with ZTBrowser:
 
   - DuckDuckGo Tracker Data Set, licensed CC BY-NC-SA 4.0 (non-commercial use only);
   - DuckDuckGo privacy configuration, licensed under the Apache License, Version 2.0;
-  - InDuckGo Guard's filter lists, from their publishers: EasyList and EasyPrivacy (GPL-3.0 or CC BY-SA 3.0),
+  - ZTBrowser Guard's filter lists, from their publishers: EasyList and EasyPrivacy (GPL-3.0 or CC BY-SA 3.0),
     EasyList Cookie List (CC BY 3.0), uBlock Origin's filter lists (GPL-3.0), Peter Lowe's Ad and tracking
     server list (terms at https://pgl.yoyo.org/adservers/), Polish Filters (CC BY-NC-SA 4.0).
 
-"DuckDuckGo" is a trademark of Duck Duck Go, Inc. InDuckGo is an independent project, not affiliated with
+"DuckDuckGo" is a trademark of Duck Duck Go, Inc. ZTBrowser is an independent project, not affiliated with
 or endorsed by Duck Duck Go, Inc.

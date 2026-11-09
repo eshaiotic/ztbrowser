@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="600" viewBox="0 0 1120 600" font-family="DejaVu Sans, Helvetica, Arial, sans-serif">
-<title>Window start-up of InDuckGo: the critical path and where the planned work acts</title>
+<title>Window start-up of ZTBrowser: the critical path and where the planned work acts</title>
 <defs><marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5b6270"/></marker></defs>
 <rect width="1120" height="600" fill="#fbfbfd"/>
-<text x="24" y="34" font-size="17" font-weight="700" fill="#1f2430">Window start-up of InDuckGo: the critical path and where the planned work acts</text>
+<text x="24" y="34" font-size="17" font-weight="700" fill="#1f2430">Window start-up of ZTBrowser: the critical path and where the planned work acts</text>
 <text x="24" y="58" font-size="12.5" fill="#5b6270">Measured to the first Wayland frame: package 0.72 s (median of 4), AppImage 1.73 s. Box widths are illustrative, not to scale.</text>
 <rect x="16" y="80" width="1088" height="144" rx="10" fill="#f2f3f8" stroke="#e1e3ec"/>
 <text x="28" y="100" font-size="12" font-weight="700" fill="#5b6270">Main thread</text>

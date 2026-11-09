@@ -1,0 +1,43 @@
+<RCC>
+  <qresource prefix="/icons">
+    <!-- Adwaita draws this icon with an embedded mask that Qt cannot render, so it is the rendered picture (the reader sniffs the format, not the name). -->
+    <file alias="appearance.svg">icons/adwaita/preferences-desktop-appearance-symbolic.png</file>
+    <file alias="apps.svg">icons/adwaita/view-app-grid-symbolic.svg</file>
+    <file alias="back.svg">icons/adwaita/go-previous-symbolic.svg</file>
+    <file alias="chevron-right.svg">icons/adwaita/pan-end-symbolic.svg</file>
+    <file alias="check.svg">icons/adwaita/object-select-symbolic.svg</file>
+    <file alias="close.svg">icons/adwaita/window-close-symbolic.svg</file>
+    <file alias="down.svg">icons/adwaita/pan-down-symbolic.svg</file>
+    <file alias="download.svg">icons/adwaita/folder-download-symbolic.svg</file>
+    <file alias="folder.svg">icons/adwaita/folder-open-symbolic.svg</file>
+    <file alias="forward.svg">icons/adwaita/go-next-symbolic.svg</file>
+    <file alias="info.svg">icons/adwaita/help-about-symbolic.svg</file>
+    <file alias="locale.svg">icons/adwaita/preferences-desktop-locale-symbolic.svg</file>
+    <file alias="lock.svg">icons/adwaita/channel-secure-symbolic.svg</file>
+    <file alias="maximize.svg">icons/adwaita/window-maximize-symbolic.svg</file>
+    <file alias="menu.svg">icons/adwaita/open-menu-symbolic.svg</file>
+    <file alias="minimize.svg">icons/adwaita/window-minimize-symbolic.svg</file>
+    <file alias="minus.svg">icons/adwaita/zoom-out-symbolic.svg</file>
+    <file alias="new-tab.svg">icons/adwaita/tab-new-symbolic.svg</file>
+    <file alias="open.svg">icons/adwaita/document-open-symbolic.svg</file>
+    <file alias="person.svg">icons/adwaita/avatar-default-symbolic.svg</file>
+    <file alias="reload.svg">icons/adwaita/view-refresh-symbolic.svg</file>
+    <file alias="restore.svg">icons/adwaita/window-restore-symbolic.svg</file>
+    <file alias="search.svg">icons/adwaita/edit-find-symbolic.svg</file>
+    <file alias="settings.svg">icons/adwaita/preferences-system-symbolic.svg</file>
+    <file alias="shield-off.svg">icons/adwaita/security-low-symbolic.svg</file>
+    <file alias="shield-on.svg">icons/adwaita/security-high-symbolic.svg</file>
+    <file alias="stop.svg">icons/adwaita/process-stop-symbolic.svg</file>
+    <file alias="trash.svg">icons/adwaita/edit-delete-symbolic.svg</file>
+    <file alias="up.svg">icons/adwaita/pan-up-symbolic.svg</file>
+    <file alias="users.svg">icons/adwaita/system-users-symbolic.svg</file>
+    <file alias="warning.svg">icons/adwaita/channel-insecure-symbolic.svg</file>
+    <file alias="window.svg">icons/adwaita/window-new-symbolic.svg</file>
+    <file alias="zoom-in.svg">icons/adwaita/zoom-in-symbolic.svg</file>
+    <file alias="zoom-out.svg">icons/adwaita/zoom-out-symbolic.svg</file>
+    <file alias="app.svg">../../assets/icons/io.github.ztbrowser.ZTBrowser.svg</file>
+    <file alias="fire.svg">../../assets/icons/ztbrowser-fire-symbolic.svg</file>
+    <file alias="tor.svg">../../assets/icons/ztbrowser-tor-symbolic.svg</file>
+    <file alias="install-app.svg">../../assets/icons/ztbrowser-install-app-symbolic.svg</file>
+  </qresource>
+</RCC>

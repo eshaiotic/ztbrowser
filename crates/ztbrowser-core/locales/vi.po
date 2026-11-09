@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: vi\n"
+
+msgid "About ZTBrowser"
+msgstr "Giới thiệu ZTBrowser"
+
+msgid "Access denied"
+msgstr "Truy cập bị từ chối"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Cho phép {requesting} dùng cookie và dữ liệu của chính nó khi bạn đang ở {current}?"
+
+msgid "Allow {site} to know your location?"
+msgstr "Cho phép {site} biết vị trí của bạn?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "Cho phép {site} đọc khay nhớ tạm của bạn?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "Cho phép {site} hiển thị thông báo?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "Cho phép {site} dùng camera và micrô của bạn?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "Cho phép {site} dùng camera của bạn?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "Cho phép {site} dùng micrô của bạn?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "Cho phép {site} dùng màn hình của bạn?"
+
+msgid "App data cleared"
+msgstr "Đã xóa dữ liệu ứng dụng"
+
+msgid "Appearance"
+msgstr "Diện mạo"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "Áp dụng vào lần ZTBrowser khởi động tiếp theo"
+
+msgid "Asking for relay descriptors"
+msgstr "Đang yêu cầu bộ mô tả rơ-le"
+
+msgid "Asking for the network status"
+msgstr "Đang yêu cầu trạng thái mạng"
+
+msgid "Back"
+msgstr "Quay lại"
+
+msgid "Back and Forward"
+msgstr "Lùi và tiến"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Tốt nhất ở nơi Tor không bị chặn."
+
+msgid "Bridges I provide"
+msgstr "Cầu nối do tôi cung cấp"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "Cầu nối là các rơ-le Tor không công khai, dành cho những mạng chặn Tor."
+
+msgid "Browsing data burned"
+msgstr "Đã xóa dữ liệu duyệt web"
+
+msgid "Burn Browsing Data"
+msgstr "Xóa dữ liệu duyệt web"
+
+msgid "Burn Browsing Data?"
+msgstr "Xóa dữ liệu duyệt web?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "Các nút hiển thị quanh thanh địa chỉ trong cửa sổ của hồ sơ này."
+
+msgid "C_lear"
+msgstr "_Xóa"
+
+msgid "Cannot Connect to Tor"
+msgstr "Không thể kết nối với Tor"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Không thể truy cập cổng điều khiển của Tor: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Không thể đọc cookie điều khiển của Tor: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Không thể xóa tệp cổng điều khiển cũ của Tor: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "Không thể lưu tệp tải xuống: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Không thể khởi động Tor: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Không thể ghi cấu hình của Tor: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Không thể ghi vào cổng điều khiển của Tor: {error}"
+
+msgid "Certificate for {name}"
+msgstr "Chứng chỉ của {name}"
+
+msgid "Check the address for a typo."
+msgstr "Hãy kiểm tra xem địa chỉ có bị gõ sai không."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Hãy kiểm tra địa chỉ, kể cả số cổng sau dấu hai chấm nếu có."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Hãy kiểm tra cáp mạng hoặc kết nối Wi-Fi."
+
+msgid "Check your internet connection."
+msgstr "Hãy kiểm tra kết nối internet của bạn."
+
+msgid "Clear App Data…"
+msgstr "Xóa dữ liệu ứng dụng…"
+
+msgid "Clear Data of {name}?"
+msgstr "Xóa dữ liệu của {name}?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Hãy đóng bớt các thẻ hoặc ứng dụng không cần, rồi tải lại trang."
+
+msgid "Close {name} before deleting it"
+msgstr "Hãy đóng {name} trước khi xóa"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Đóng mọi thẻ và cửa sổ của hồ sơ này, đồng thời xóa cookie, dữ liệu trang web, bộ nhớ đệm và lịch sử của hồ sơ."
+
+msgid "Connect"
+msgstr "Kết nối"
+
+msgid "Connect directly"
+msgstr "Kết nối trực tiếp"
+
+msgid "Connected"
+msgstr "Đã kết nối"
+
+msgid "Connected to a relay directory server"
+msgstr "Đã kết nối với máy chủ thư mục rơ-le"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Đã kết nối với một rơ-le để xây dựng mạch"
+
+msgid "Connected to pluggable transport"
+msgstr "Đã kết nối với pluggable transport"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Đã kết nối với pluggable transport để xây dựng mạch"
+
+msgid "Connected to proxy"
+msgstr "Đã kết nối với proxy"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Đã kết nối với proxy để xây dựng mạch"
+
+msgid "Connected to the Tor network"
+msgstr "Đã kết nối với mạng Tor"
+
+msgid "Connecting to Tor"
+msgstr "Đang kết nối với Tor"
+
+msgid "Connecting to a relay directory server"
+msgstr "Đang kết nối với máy chủ thư mục rơ-le"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Đang kết nối với một rơ-le để xây dựng mạch"
+
+msgid "Connecting to pluggable transport"
+msgstr "Đang kết nối với pluggable transport"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Đang kết nối với pluggable transport để xây dựng mạch"
+
+msgid "Connecting to proxy"
+msgstr "Đang kết nối với proxy"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Đang kết nối với proxy để xây dựng mạch"
+
+msgid "Connection Settings…"
+msgstr "Cài đặt kết nối…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, cấu hình quyền riêng tư và thuật toán quy tắc TrackerRadarKit."
+
+msgid "Could not install the app: {error}"
+msgstr "Không thể cài đặt ứng dụng: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Không thể xóa hết mọi thứ: {error}"
+
+msgid "Delete"
+msgstr "Xóa"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "Xóa cookie, dữ liệu trang web và bộ nhớ đệm của hồ sơ này"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Các kết nối được ngụy trang tới những cầu nối tích hợp sẵn của Tor Browser."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Các kết nối được ngụy trang tới những cầu nối tích hợp sẵn của Tor Browser. Cần {package}."
+
+msgid "Download failed: {error}"
+msgstr "Tải xuống thất bại: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Được tải từ DuckDuckGo khi chạy; cấp phép theo CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "Đã tải xuống {name}"
+
+msgid "DuckDuckGo protections"
+msgstr "Các biện pháp bảo vệ của DuckDuckGo"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Mỗi ứng dụng chạy trong cửa sổ và tiến trình riêng, với cookie và thông tin đăng nhập riêng."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Mỗi hồ sơ giữ cookie, thông tin đăng nhập, lịch sử và bộ nhớ đệm riêng, và chạy như một tiến trình tách biệt."
+
+msgid "Establishing a Tor circuit"
+msgstr "Đang thiết lập một mạch Tor"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Đang thiết lập kết nối thư mục được mã hóa"
+
+msgid "File not found"
+msgstr "Không tìm thấy tệp"
+
+msgid "Find in Page…"
+msgstr "Tìm trong trang…"
+
+msgid "Find in page"
+msgstr "Tìm trong trang"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "Đã hoàn tất bắt tay với máy chủ thư mục rơ-le"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "Đã hoàn tất bắt tay với một rơ-le để xây dựng mạch"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Đang hoàn tất bắt tay với máy chủ thư mục rơ-le"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Đang hoàn tất bắt tay với một rơ-le để xây dựng mạch"
+
+msgid "Forward"
+msgstr "Tiến"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "Từ bridges.torproject.org, qua e-mail hoặc từ một người bạn."
+
+msgid "Go to Home Page"
+msgstr "Về trang chủ"
+
+msgid "Go to the previous or next page"
+msgstr "Đến trang trước hoặc trang sau"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Hãy vào trang chủ của trang web rồi tìm trang đó từ đây."
+
+msgid "How to Reach Tor"
+msgstr "Cách kết nối với Tor"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Nếu tải lại mà trang vẫn sập, có thể chính trang đó bị lỗi."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Nếu địa chỉ đúng, có thể trang web không còn tồn tại."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Nếu bạn có tài khoản trên trang web này, hãy đăng nhập rồi thử lại."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "Nếu bạn dùng VPN hoặc máy chủ DNS riêng, hãy kiểm tra xem nó có hoạt động không."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "Nếu bạn dùng VPN, tường lửa hoặc proxy, hãy kiểm tra xem nó có đang chặn trang web không."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "Danh sách bộ lọc của ZTBrowser Guard"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "ZTBrowser không thể mở {host} vì máy tính này chưa kết nối mạng."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser không tìm thấy máy chủ nào tại {host}."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser không kết nối tới {host} qua cổng này."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "Tor riêng của ZTBrowser đang kết nối. Sẽ không có gì rời khỏi cửa sổ này cho đến khi kết nối xong."
+
+msgid "Install Site as App"
+msgstr "Cài trang web thành ứng dụng"
+
+msgid "Install Site as App…"
+msgstr "Cài trang web thành ứng dụng…"
+
+msgid "Install as App"
+msgstr "Cài thành ứng dụng"
+
+msgid "Installed Apps"
+msgstr "Ứng dụng đã cài"
+
+msgid "Installed Apps…"
+msgstr "Ứng dụng đã cài…"
+
+msgid "Installed {name}"
+msgstr "Đã cài {name}"
+
+msgid "Interface"
+msgstr "Giao diện"
+
+msgid "Issued by {name}"
+msgstr "Do {name} cấp"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Có thể nó đã bị di chuyển, đổi tên hoặc xóa."
+
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+msgid "Load Insecure Page"
+msgstr "Tải trang không an toàn"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Tải lại trang, hoặc dừng tải"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Đã tải đủ thông tin thư mục để xây dựng mạch"
+
+msgid "Loading authority certificates"
+msgstr "Đang tải chứng chỉ của tổ chức cấp phát"
+
+msgid "Loading relay descriptors"
+msgstr "Đang tải bộ mô tả rơ-le"
+
+msgid "Loading the network status"
+msgstr "Đang tải trạng thái mạng"
+
+msgid "Main Menu"
+msgstr "Trình đơn chính"
+
+msgid "Manage Profiles…"
+msgstr "Quản lý hồ sơ…"
+
+msgid "New Identity"
+msgstr "Danh tính mới"
+
+msgid "New Identity?"
+msgstr "Chuyển sang danh tính mới?"
+
+msgid "New Tab"
+msgstr "Thẻ mới"
+
+msgid "New Tor Window"
+msgstr "Cửa sổ Tor mới"
+
+msgid "New Window"
+msgstr "Cửa sổ mới"
+
+msgid "New identity"
+msgstr "Danh tính mới"
+
+msgid "New profile name"
+msgstr "Tên hồ sơ mới"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "Mỗi dòng một cầu nối, ví dụ: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Chỉ có thể cài các trang web thành ứng dụng"
+
+msgid "Open"
+msgstr "Mở"
+
+msgid "Open Page in Browser"
+msgstr "Mở trang trong trình duyệt"
+
+msgid "Open a new tab"
+msgstr "Mở thẻ mới"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Mở một cửa sổ mà lưu lượng chỉ đi qua Tor"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Các ứng dụng khác không mở từ cửa sổ Tor, vì chúng sẽ kết nối bên ngoài Tor."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Các trang sẽ chưa được mở cho đến khi cửa sổ Tor kết nối xong."
+
+msgid "Paste at least one bridge."
+msgstr "Hãy dán ít nhất một cầu nối."
+
+msgid "Preferences"
+msgstr "Tùy chọn"
+
+msgid "Preferences…"
+msgstr "Tùy chọn…"
+
+msgid "Profiles"
+msgstr "Hồ sơ"
+
+msgid "Protect This Site"
+msgstr "Bảo vệ trang web này"
+
+msgid "Protection Shield"
+msgstr "Khiên bảo vệ"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Đọc cổng điều khiển của Tor thất bại: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "Hãy kết nối lại VPN, nếu bạn dùng."
+
+msgid "Reload"
+msgstr "Tải lại"
+
+msgid "Reload Page"
+msgstr "Tải lại trang"
+
+msgid "Reset Zoom"
+msgstr "Đặt lại thu phóng"
+
+msgid "Search Engine"
+msgstr "Công cụ tìm kiếm"
+
+msgid "Search {engine}"
+msgstr "Tìm trên {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "Tìm trên {engine} hoặc nhập địa chỉ"
+
+msgid "Show in Folder"
+msgstr "Hiện trong thư mục"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Đăng xuất bạn và xóa cookie, dữ liệu trang web và bộ nhớ đệm của ứng dụng này. Không ảnh hưởng gì khác."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Không thể xóa một số dữ liệu: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "Đã xảy ra lỗi khi tải {host}."
+
+msgid "Starting"
+msgstr "Đang khởi động"
+
+msgid "Starting Tor…"
+msgstr "Đang khởi động Tor…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Tắt hoặc bật tính năng chặn trình theo dõi cho trang web"
+
+msgid "System default ({language})"
+msgstr "Mặc định hệ thống ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "Tổ chức đã cấp chứng chỉ đã thu hồi nó."
+
+msgid "The bridge line has no address: {line}"
+msgstr "Dòng cầu nối không có địa chỉ: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "Không thể xác minh chứng chỉ."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "Chứng chỉ được ký bằng một thuật toán không còn an toàn."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "Chứng chỉ chưa có hiệu lực. Hãy kiểm tra xem ngày và giờ của máy tính này có đúng không."
+
+msgid "The certificate was issued for a different site."
+msgstr "Chứng chỉ được cấp cho một trang web khác."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "Chứng chỉ không do một tổ chức cấp phát mà máy tính này tin cậy cấp."
+
+msgid "The connection to {host} was interrupted."
+msgstr "Kết nối tới {host} đã bị gián đoạn."
+
+msgid "The icon at the end of the address bar"
+msgstr "Biểu tượng ở cuối thanh địa chỉ"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "Ngôn ngữ sẽ đổi khi ZTBrowser được khởi động lại"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "Ngôn ngữ của trình đơn, hộp thoại và thông báo, trong mọi hồ sơ và ứng dụng web."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "Sự cố nằm ở phía trang web. Hãy thử lại sau vài phút."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "Trang web có thể đang ngừng hoạt động để bảo trì. Hãy thử lại sau vài phút."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "Trang web có thể đang quá tải. Hãy thử lại sau vài phút."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "Các cầu nối {transport} cần một chương trình chưa được cài; hãy cài {package}"
+
+msgid "There is no file at {path}."
+msgstr "Không có tệp nào tại {path}."
+
+msgid "This address is blocked"
+msgstr "Địa chỉ này bị chặn"
+
+msgid "This connection isn’t private"
+msgstr "Kết nối này không riêng tư"
+
+msgid "This page"
+msgstr "Trang này"
+
+msgid "This page can’t be found"
+msgstr "Không tìm thấy trang này"
+
+msgid "This page can’t be loaded"
+msgstr "Không thể tải trang này"
+
+msgid "This page crashed"
+msgstr "Trang này đã bị sập"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Trang này nằm ở một trang web khác, không thuộc {name}"
+
+msgid "This page isn’t working"
+msgstr "Trang này không hoạt động"
+
+msgid "This page ran out of memory"
+msgstr "Trang này đã hết bộ nhớ"
+
+msgid "This site can’t be found"
+msgstr "Không tìm thấy trang web này"
+
+msgid "This site can’t be reached"
+msgstr "Không thể truy cập trang web này"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Qua trình duyệt của các tình nguyện viên; hoạt động trên hầu hết các mạng bị kiểm duyệt."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Qua trình duyệt của các tình nguyện viên; hoạt động trên hầu hết các mạng bị kiểm duyệt. Cần {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Nút trên thanh công cụ"
+
+msgid "Tor Connection"
+msgstr "Kết nối Tor"
+
+msgid "Tor Connection…"
+msgstr "Kết nối Tor…"
+
+msgid "Tor Window"
+msgstr "Cửa sổ Tor"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor không thể dùng đường dẫn {path}"
+
+msgid "Tor closed its control port"
+msgstr "Tor đã đóng cổng điều khiển của nó"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor không thể chuyển mạch: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor đã không mở cổng điều khiển của nó"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor chưa được cài. Hãy cài gói tor của bản phân phối của bạn; cửa sổ Tor tự khởi động Tor riêng và không cần dịch vụ Tor đang chạy."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor không mở cổng SOCKS cục bộ nào"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor từ chối: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor báo có sự cố"
+
+msgid "Tor stopped."
+msgstr "Tor đã dừng."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Cookie điều khiển của Tor bị hỏng"
+
+msgid "Tracker Data Set"
+msgstr "Bộ dữ liệu trình theo dõi"
+
+msgid "Tracker protection on this site"
+msgstr "Chặn trình theo dõi trên trang web này"
+
+msgid "Try Again"
+msgstr "Thử lại"
+
+msgid "Try again in a few minutes."
+msgstr "Hãy thử lại sau vài phút."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Hãy tắt chế độ máy bay, nếu đang bật."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "Chuyển các danh sách bộ lọc của ZTBrowser Guard thành quy tắc WebKit. Nguồn: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Gỡ cài đặt"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Không rõ phương thức vận chuyển cầu nối: {name}"
+
+msgid "Valid until {date}"
+msgstr "Có hiệu lực đến {date}"
+
+msgid "Your Bridges"
+msgstr "Cầu nối của bạn"
+
+msgid "You’re offline"
+msgstr "Bạn đang ngoại tuyến"
+
+msgid "Zoom In"
+msgstr "Phóng to"
+
+msgid "Zoom Out"
+msgstr "Thu nhỏ"
+
+msgid "_Allow"
+msgstr "_Cho phép"
+
+msgid "_Burn"
+msgstr "_Xóa"
+
+msgid "_Cancel"
+msgstr "_Hủy"
+
+msgid "_Deny"
+msgstr "_Từ chối"
+
+msgid "_Install"
+msgstr "_Cài đặt"
+
+msgid "_New Identity"
+msgstr "Danh tính _mới"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) hoặc obfs4proxy từ AUR (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) hoặc snowflake-pt-client từ AUR (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} hiện không thể xử lý yêu cầu."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} không thể trả lời yêu cầu này."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} không cung cấp kết nối an toàn"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} không cho phép bạn xem trang này."
+
+msgid "{host} has no page at this address."
+msgstr "{host} không có trang nào tại địa chỉ này."
+
+msgid "{host} refused the connection."
+msgstr "{host} đã từ chối kết nối."
+
+msgid "{host} took too long to respond."
+msgstr "{host} phản hồi quá lâu."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} đã dùng nhiều bộ nhớ hơn mức một trang được phép, nên ZTBrowser đã dừng nó."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} sẽ mở trong cửa sổ riêng, với cookie và thông tin đăng nhập tách biệt khỏi trình duyệt và mọi ứng dụng khác."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — ứng dụng web ZTBrowser"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} không phải là đối số của cầu nối"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} không phải là địa chỉ IP và cổng"
+
+msgid "{url} answered {status}"
+msgstr "{url} đã trả lời {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} không trả về tài liệu như mong đợi"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} lớn hơn mức cho phép"
+
+msgid "{url} is not a valid address"
+msgstr "{url} không phải là địa chỉ hợp lệ"
+
+msgid "© their maintainers"
+msgstr "© những người bảo trì của chúng"
+
+msgid "Ask Where to Save Each File"
+msgstr "Hỏi nơi lưu từng tệp"
+
+msgid "Choose Folder"
+msgstr "Chọn thư mục"
+
+msgid "Download Folder"
+msgstr "Thư mục tải xuống"
+
+msgid "Download failed"
+msgstr "Tải xuống không thành công"
+
+msgid "Downloading…"
+msgstr "Đang tải xuống…"
+
+msgid "Downloading… {percent}%"
+msgstr "Đang tải xuống… {percent}%"
+
+msgid "Downloads"
+msgstr "Tải xuống"
+
+msgid "Go to Download Folder"
+msgstr "Đến thư mục tải xuống"
+
+msgid "No downloads yet"
+msgstr "Chưa có tệp nào được tải xuống"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Nếu không, tệp sẽ được lưu thẳng vào thư mục tải xuống"
+
+msgid "Save File"
+msgstr "Lưu tệp"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Năm tệp tải xuống gần nhất và thư mục tải xuống"
+
+msgid "_Save"
+msgstr "_Lưu"
+
+msgid "_Select"
+msgstr "_Chọn"
+
+msgid "Show All Downloads"
+msgstr "Hiện tất cả tệp tải xuống"
+
+msgid "Clear List"
+msgstr "Xóa danh sách"
+
+msgid "Remove from List"
+msgstr "Xóa khỏi danh sách"
+
+msgid "Clear History"
+msgstr "Xóa lịch sử"
+
+msgid "Search Downloads"
+msgstr "Tìm kiếm tệp tải xuống"
+
+msgid "File Moved or Deleted"
+msgstr "Tệp đã bị di chuyển hoặc xóa"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Tạo hiệu ứng cho từng bước của con lăn chuột. Các trang đã mở cần được tải lại."
+
+msgid "Scrolling"
+msgstr "Cuộn"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Cuộn mượt bằng con lăn chuột"
+
+msgid "Details"
+msgstr "Details"
+
+msgid "Legal"
+msgstr "Legal"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "This application comes with absolutely no warranty. See the {license} for details."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "Giấy phép Công GNU phiên bản 3 hay mới hơn"
+
+msgid "Apache License, Version 2.0"
+msgstr "Giấy phép Apache, Phiên bản 2.0"
+
+msgid "Move to New Window"
+msgstr "Chuyển sang cửa sổ mới"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Giấy phép Công Mozilla 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "Mệnh đề 3 giấy phép BSD"
+
+msgid "Wide Address Bar"
+msgstr "Thanh địa chỉ rộng"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "Thanh địa chỉ chiếm toàn bộ chỗ trống trên thanh công cụ; khi tắt, thanh này ngắn và nằm ở giữa"
+
+msgid "No apps installed yet"
+msgstr "Chưa cài đặt ứng dụng nào"
+
+msgid "Uninstall {name}?"
+msgstr "Gỡ cài đặt {name}?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Xóa ứng dụng cùng cookie, thông tin đăng nhập và dữ liệu của nó. Không thể hoàn tác."
+
+msgid "Tab Position"
+msgstr "Vị trí thẻ"
+
+msgid "Top"
+msgstr "Trên"
+
+msgid "Bottom"
+msgstr "Dưới"
+
+msgid "Left"
+msgstr "Trái"
+
+msgid "Right"
+msgstr "Phải"
+
+msgid "Window Buttons"
+msgstr "Nút cửa sổ"
+
+msgid "Default"
+msgstr "Mặc định"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Thêm hồ sơ"
+
+msgid "Delete profile {name}?"
+msgstr "Xóa hồ sơ {name}?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Xóa hồ sơ cùng cookie, thông tin đăng nhập, lịch sử và bộ nhớ đệm của nó. Không thể hoàn tác."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser không phải là trình duyệt mặc định của bạn"
+
+msgid "Make Default"
+msgstr "Đặt làm mặc định"
+
+msgid "Don't Ask Again"
+msgstr "Không hỏi lại"
+
+msgid "Close"
+msgstr "Đóng"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "Không thể đặt ZTBrowser làm trình duyệt mặc định: {error}"
+
+msgid "Default Browser"
+msgstr "Trình duyệt mặc định"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "ZTBrowser mở các liên kết từ chương trình khác"
+
+msgid "Links from other programs open in {browser}"
+msgstr "Các liên kết từ chương trình khác mở trong {browser}"
+
+msgid "Another browser opens links from other programs"
+msgstr "Một trình duyệt khác mở các liên kết từ chương trình khác"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "Chỉ ZTBrowser đã cài đặt mới có thể mở các liên kết từ chương trình khác"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Màn hình nền không cho biết trình duyệt nào mở liên kết"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "Hỏi khi ZTBrowser khởi động"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Đề xuất đặt ZTBrowser làm trình duyệt mặc định khi một trình duyệt khác đang mở liên kết"

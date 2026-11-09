@@ -1,4 +1,4 @@
-// InDuckGo Guard: resource hints that open a connection without any request.
+// ZTBrowser Guard: resource hints that open a connection without any request.
 //
 // <link rel="preconnect"> and rel="dns-prefetch" make the browser open a connection to a host (and tell it
 // the visitor's address) before a request exists, so no request filter ever gets to refuse it. Sites and

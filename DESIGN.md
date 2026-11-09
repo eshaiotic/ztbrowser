@@ -1,5 +1,5 @@
 ---
-name: InDuckGo
+name: ZTBrowser
 description: Privacy-first Linux browser whose shared reports are measured scoreboards on a deep indigo field, and whose error pages stay native to GNOME.
 colors:
   ink: "#1e1060"
@@ -47,46 +47,46 @@ colors:
   operate-warning-dark: "#cd9309"
 typography:
   display:
-    fontFamily: "InDuckGo Sans, Adwaita Sans, system-ui, sans-serif"
+    fontFamily: "ZTBrowser Sans, Adwaita Sans, system-ui, sans-serif"
     fontSize: "clamp(32px, 5.2vw, 56px)"
     fontWeight: 700
     lineHeight: 1.06
     letterSpacing: "-0.02em"
   figure:
-    fontFamily: "InDuckGo Sans, Adwaita Sans, system-ui, sans-serif"
+    fontFamily: "ZTBrowser Sans, Adwaita Sans, system-ui, sans-serif"
     fontSize: "44px"
     fontWeight: 800
     lineHeight: 1
     fontFeature: "tnum"
   figure-compact:
-    fontFamily: "InDuckGo Sans, Adwaita Sans, system-ui, sans-serif"
+    fontFamily: "ZTBrowser Sans, Adwaita Sans, system-ui, sans-serif"
     fontSize: "19px"
     fontWeight: 700
     lineHeight: 1.6
     fontFeature: "tnum"
   headline:
-    fontFamily: "InDuckGo Sans, Adwaita Sans, system-ui, sans-serif"
+    fontFamily: "ZTBrowser Sans, Adwaita Sans, system-ui, sans-serif"
     fontSize: "clamp(24px, 3vw, 30px)"
     fontWeight: 700
     lineHeight: 1.2
     letterSpacing: "-0.01em"
   title:
-    fontFamily: "InDuckGo Sans, Adwaita Sans, system-ui, sans-serif"
+    fontFamily: "ZTBrowser Sans, Adwaita Sans, system-ui, sans-serif"
     fontSize: "18px"
     fontWeight: 700
     lineHeight: 1.6
   lead:
-    fontFamily: "InDuckGo Sans, Adwaita Sans, system-ui, sans-serif"
+    fontFamily: "ZTBrowser Sans, Adwaita Sans, system-ui, sans-serif"
     fontSize: "19px"
     fontWeight: 400
     lineHeight: 1.6
   body:
-    fontFamily: "InDuckGo Sans, Adwaita Sans, system-ui, sans-serif"
+    fontFamily: "ZTBrowser Sans, Adwaita Sans, system-ui, sans-serif"
     fontSize: "17px"
     fontWeight: 400
     lineHeight: 1.6
   label:
-    fontFamily: "InDuckGo Sans, Adwaita Sans, system-ui, sans-serif"
+    fontFamily: "ZTBrowser Sans, Adwaita Sans, system-ui, sans-serif"
     fontSize: "14px"
     fontWeight: 400
     lineHeight: 1.6
@@ -133,7 +133,7 @@ components:
     backgroundColor: "{colors.field-track}"
     rounded: "{rounded.bar}"
     height: "46px"
-  race-fill-induckgo:
+  race-fill-ztbrowser:
     backgroundColor: "{colors.amber}"
     rounded: "{rounded.bar}"
     height: "46px"
@@ -145,7 +145,7 @@ components:
     backgroundColor: "{colors.chrome}"
     rounded: "{rounded.bar}"
     height: "46px"
-  race-count-induckgo:
+  race-count-ztbrowser:
     textColor: "{colors.amber}"
     typography: "{typography.figure}"
   race-count:
@@ -155,13 +155,13 @@ components:
     backgroundColor: "{colors.mist}"
     rounded: "{rounded.bar-compact}"
     height: "24px"
-  mini-figure-induckgo:
+  mini-figure-ztbrowser:
     textColor: "{colors.indigo}"
     typography: "{typography.figure-compact}"
   comparison-cell:
     textColor: "{colors.text}"
     padding: "14px 12px"
-  comparison-cell-induckgo:
+  comparison-cell-ztbrowser:
     backgroundColor: "{colors.mist}"
     textColor: "{colors.ink}"
     padding: "14px 12px"
@@ -206,23 +206,23 @@ components:
     height: "40px"
 ---
 
-# Design System: InDuckGo
+# Design System: ZTBrowser
 
 ## Overview
 
 **Creative North Star: "The Honest Scoreboard"**
 
-InDuckGo has two kinds of web surface, and they deliberately do not wear the same clothes. **Persuasion surfaces** are the HTML reports the author shares with people who evaluate the browser (today `docs/pl/reports/tracking-summary.html` and its English mirror `docs/en/reports/tracking-summary.html`). They behave like a scoreboard: a deep indigo field taken from the logo, measured counts at hero scale, every browser in its own recognisable colour, and the logo's amber reserved for InDuckGo alone. Nothing decorates the data; the bars and their printed figures are the composition, and the page states where InDuckGo is weaker in a band of its own instead of in fine print.
+ZTBrowser has two kinds of web surface, and they deliberately do not wear the same clothes. **Persuasion surfaces** are the HTML reports the author shares with people who evaluate the browser (today `docs/pl/reports/tracking-summary.html` and its English mirror `docs/en/reports/tracking-summary.html`). They behave like a scoreboard: a deep indigo field taken from the logo, measured counts at hero scale, every browser in its own recognisable colour, and the logo's amber reserved for ZTBrowser alone. Nothing decorates the data; the bars and their printed figures are the composition, and the page states where ZTBrowser is weaker in a band of its own instead of in fine print.
 
 **Operate surfaces** are pages the browser itself shows while someone is working, today the error pages rendered from `assets/error-page/error-page.html`. They step back into GNOME's libadwaita world: near-neutral greys written as alpha over near-black, a light and a dark scheme, the desktop's own accent colour delivered at runtime, pill buttons and the system face. A failed page load is not a moment to advertise, so these pages carry no brand colour at all.
 
-What ties the two together is the shield. Both surfaces draw the same shield geometry with identical path data from `assets/icons/io.github.induckgo.InDuckGo.svg`: the report shows it in the full indigo gradient with its amber beak beside InDuckGo's bar, and the error page shows it as a ghost-grey silhouette whose round badge takes the state colour (accent, danger or warning). Brand colour belongs to the claim; the operate surface belongs to the user's desktop. Density is calm on both: a 17px or 15px body, measures between 62ch and 75ch, generous vertical rhythm, and a plain, factual voice.
+What ties the two together is the shield. Both surfaces draw the same shield geometry with identical path data from `assets/icons/io.github.ztbrowser.ZTBrowser.svg`: the report shows the full logo (a purple shield with a white chain) beside ZTBrowser's bar, and the error page shows it as a ghost-grey silhouette with the chain cut out, whose round badge takes the state colour (accent, danger or warning). Brand colour belongs to the claim; the operate surface belongs to the user's desktop. Density is calm on both: a 17px or 15px body, measures between 62ch and 75ch, generous vertical rhythm, and a plain, factual voice.
 
 **Provenance.** No concept roll (concept-seed) was run for the report surface because the user imposed a time limit on 2026-11-02; its form was chosen directly (a data-led report with comparison bars at hero scale). The North Star name is the documenter's reading of the report's direction contract, recorded from the built pages; no separate language interview was held in this pass.
 
 **Key Characteristics:**
 - Two surface families: a branded persuasion surface and a native, GNOME-like operate surface.
-- The deep indigo field and amber exist only on persuasion surfaces; amber marks InDuckGo and nothing else.
+- The deep indigo field and amber exist only on persuasion surfaces; amber marks ZTBrowser and nothing else.
 - Numbers are the heaviest type on a report, always tabular, always printed beside their bar.
 - Flat everywhere: depth comes from tonal fields and washes, never from shadows.
 - Self-contained pages: fonts embedded or taken from the system, no network assets.
@@ -230,17 +230,17 @@ What ties the two together is the shield. Both surfaces draw the same shield geo
 
 ## Colors
 
-A deep indigo field with one warm amber voice for InDuckGo, competitors in their own colours, cool lilac-tinted neutrals on paper, and a separate libadwaita-neutral palette for the operate surface.
+A deep indigo field with one warm amber voice for ZTBrowser, competitors in their own colours, cool lilac-tinted neutrals on paper, and a separate libadwaita-neutral palette for the operate surface.
 
 ### Primary
-- **Deep Indigo Ink** (#1e1060): the dominant colour of the hero field, the colour of every section headline on paper, and the text colour of InDuckGo's highlighted table column. The logo's rim darkens to its near neighbour, #24115e.
-- **Logo Indigo** (#2e1a87): the origin of the hero field's radial gradient and the colour of links. On paper it is InDuckGo's text colour in charts and table headers (11.7:1 on mist), standing in for amber where amber would be illegible.
+- **Deep Indigo Ink** (#1e1060): the dominant colour of the hero field, the colour of every section headline on paper, and the text colour of ZTBrowser's highlighted table column. The logo's shield face is a brighter purple of the same family (#4d0c96).
+- **Logo Indigo** (#2e1a87): the origin of the hero field's radial gradient and the colour of links. On paper it is ZTBrowser's text colour in charts and table headers (11.7:1 on mist), standing in for amber where amber would be illegible.
 - **Field Floor** (#120a3d): the outermost stop of the hero field gradient, so the field darkens away from the top-left corner where the headline sits.
 - **Field Track** (rgb(255 255 255 / 9%)): the empty lane behind each hero bar; a faint white glaze so the track reads as a slot in the field rather than a box on top of it.
 
 ### Secondary
-- **InDuckGo Amber** (#ffb300): InDuckGo's own mark. It fills InDuckGo's bars, colours InDuckGo's name and count on the field (9.0:1 on ink), and is the keyboard focus ring for links. The logo's beak is the same amber, a touch lighter (#ffb900 to #ffc900).
-- **Logo Lilac** (#8e7fe8): a lighter neighbour of the top of the logo's rim (#8270df); in the report it is the text-selection background.
+- **ZTBrowser Amber** (#ffb300): ZTBrowser's own mark. It fills ZTBrowser's bars, colours ZTBrowser's name and count on the field (9.0:1 on ink), and is the keyboard focus ring for links. The logo itself has no amber; amber is the reports' own signal for ZTBrowser.
+- **Logo Lilac** (#8e7fe8): a softer neighbour of the logo's rim (#864ce3); in the report it is the text-selection background.
 
 ### Tertiary
 - **Brave Ember** (#ff7a45): Brave's bars, close to Brave's own orange so a reader recognises it without a legend.
@@ -248,7 +248,7 @@ A deep indigo field with one warm amber voice for InDuckGo, competitors in their
 
 ### Neutral
 - **Paper** (#ffffff): the report's page background below the hero, and the text colour on the field.
-- **Lilac Mist** (#f4f2fc): the track behind compact bars and the wash behind InDuckGo's table column.
+- **Lilac Mist** (#f4f2fc): the track behind compact bars and the wash behind ZTBrowser's table column.
 - **Indigo Night Text** (#1d1a33): body text on paper; a near-black tinted toward the brand hue.
 - **Dusk Muted** (#575270): section intros, table headers, the method paragraph and the footer (7.4:1 on paper).
 - **Hairline Lilac** (#e1ddf2): the 1px rules between table rows and above the footer.
@@ -257,7 +257,7 @@ A deep indigo field with one warm amber voice for InDuckGo, competitors in their
 
 ### Status and the weakness band
 - **Fact Green** (#17703a) and **Fact Red** (#b3261e): the 9px dots beside yes/no facts in the comparison table, and the text colour of those cells on narrow screens. They judge a fact ("sends usage data: yes"), never a browser.
-- **Weakness Wash** (#fff7e0), **Weakness Ink** (#5c3d00) and **Weakness Marker** (#b97800): the warm band that lists where InDuckGo is weaker; the wash is the band, the ink is its headline (9.3:1 on the wash), the marker colours the list bullets. It is a tint of InDuckGo's own amber, because the weaknesses are InDuckGo's.
+- **Weakness Wash** (#fff7e0), **Weakness Ink** (#5c3d00) and **Weakness Marker** (#b97800): the warm band that lists where ZTBrowser is weaker; the wash is the band, the ink is its headline (9.3:1 on the wash), the marker colours the list bullets. It is a tint of ZTBrowser's own amber, because the weaknesses are ZTBrowser's.
 
 ### Operate surface (error pages)
 - **Desktop Accent** (runtime; #3584e4 is libadwaita's stock blue): written into `--accent` from the style manager's `accent_color_rgba()` each time a page renders. It fills the primary button and the illustration badge for ordinary failures.
@@ -269,9 +269,9 @@ A deep indigo field with one warm amber voice for InDuckGo, competitors in their
 - **Warning** (#e5a50a / #cd9309 dark): crashes; the badge glyph turns 80% black for contrast on yellow.
 
 ### Named Rules
-**The Amber Is Us Rule.** Full-strength amber (#ffb300) marks only InDuckGo: its bar, its name and count on the field, and the logo's beak. The single functional exception is the keyboard focus ring. A competitor, a headline, a link or a button never turns amber.
+**The Amber Is Us Rule.** Full-strength amber (#ffb300) marks only ZTBrowser: its bar and its name and count on the field. The single functional exception is the keyboard focus ring. A competitor, a headline, a link or a button never turns amber.
 
-**The Indigo On Paper Rule.** Amber text is legible on the field (9.0:1 on ink) and illegible on paper (1.6:1 on mist). When InDuckGo's name or figure sits on paper, it speaks in Logo Indigo (#2e1a87), and its table column gets the Lilac Mist wash.
+**The Indigo On Paper Rule.** Amber text is legible on the field (9.0:1 on ink) and illegible on paper (1.6:1 on mist). When ZTBrowser's name or figure sits on paper, it speaks in Logo Indigo (#2e1a87), and its table column gets the Lilac Mist wash.
 
 **The Their Own Colours Rule.** Each competitor appears in a colour a reader already associates with it (Brave in ember orange, Chrome in neutral grey). Red and green are reserved for yes/no facts and are never used to colour a browser.
 
@@ -279,8 +279,8 @@ A deep indigo field with one warm amber voice for InDuckGo, competitors in their
 
 ## Typography
 
-**Display Font:** InDuckGo Sans, an embedded subset of Adwaita Sans (Latin and Polish; Inter-derived, SIL Open Font License 1.1), variable weight 100 to 900 (with Adwaita Sans, system-ui, sans-serif)
-**Body Font:** InDuckGo Sans on persuasion surfaces; system-ui, Cantarell, Noto Sans on operate surfaces
+**Display Font:** ZTBrowser Sans, an embedded subset of Adwaita Sans (Latin and Polish; Inter-derived, SIL Open Font License 1.1), variable weight 100 to 900 (with Adwaita Sans, system-ui, sans-serif)
+**Body Font:** ZTBrowser Sans on persuasion surfaces; system-ui, Cantarell, Noto Sans on operate surfaces
 **Label/Mono Font:** ui-monospace with DejaVu Sans Mono (report) or Source Code Pro and Noto Sans Mono (error pages)
 
 **Character:** One sans family carries the whole hierarchy through size and weight alone. It is GNOME's own face, so the report about a GNOME browser speaks in the browser's voice; the subset is embedded so a shared file renders the same on a reader's Windows or macOS machine, with no network fetch. Operate surfaces do not embed it: they use whatever face the desktop uses, as a native page should.
@@ -305,7 +305,7 @@ A deep indigo field with one warm amber voice for InDuckGo, competitors in their
 
 ## Layout
 
-**Persuasion surface.** A single centred column at most 1040px wide with a 28px gutter (20px under 760px). The hero is a full-bleed indigo field with 64px above and 56px below its content (44px and 40px on narrow screens). Below it, sections follow a 56px top rhythm. Every measured chart is a stack of lanes on an 18px gap; a hero lane is a three-column grid (150px browser name, flexible track, 96px count), and under 760px it reflows to name and count on one row over a full-width 30px track. Bar length is proportional to the count, with the largest value at 100% of the track; the fill keeps a 10px minimum (6px for compact bars) so a single-digit value never disappears. Compact charts sit in a two-column split with a 48px gap that becomes one column with a 32px gap. The comparison table keeps a 640px minimum width inside a horizontal scroller on desktop; under 760px each row becomes a stacked block with a 92px browser-label column, the headers hidden and each cell labelled from its `data-browser` attribute. Browsers always appear in the same order, Chrome, Brave, InDuckGo, in every chart and table. A measurement source line (date and sites) sits directly under the hero chart, and a method section with a link to the full report closes the page. In print the colours are forced exact and sections avoid breaking across pages.
+**Persuasion surface.** A single centred column at most 1040px wide with a 28px gutter (20px under 760px). The hero is a full-bleed indigo field with 64px above and 56px below its content (44px and 40px on narrow screens). Below it, sections follow a 56px top rhythm. Every measured chart is a stack of lanes on an 18px gap; a hero lane is a three-column grid (150px browser name, flexible track, 96px count), and under 760px it reflows to name and count on one row over a full-width 30px track. Bar length is proportional to the count, with the largest value at 100% of the track; the fill keeps a 10px minimum (6px for compact bars) so a single-digit value never disappears. Compact charts sit in a two-column split with a 48px gap that becomes one column with a 32px gap. The comparison table keeps a 640px minimum width inside a horizontal scroller on desktop; under 760px each row becomes a stacked block with a 92px browser-label column, the headers hidden and each cell labelled from its `data-browser` attribute. Browsers always appear in the same order, Chrome, Brave, ZTBrowser, in every chart and table. A measurement source line (date and sites) sits directly under the hero chart, and a method section with a link to the full report closes the page. In print the colours are forced exact and sections avoid breaking across pages.
 
 **Operate surface.** A single left-aligned column at most 640px wide, with top padding of max(12vh, 48px), a 40px gutter and 64px below (40px, 24px and 48px under 520px). The order is fixed: illustration (104px, 88px narrow), headline, lead, points, actions on a 12px wrapping row 36px below the text, then the raw detail 44px further down.
 
@@ -326,20 +326,20 @@ Gently rounded bars carry the report: hero tracks and fills share a 10px radius 
 The hero comparison: one lane per browser, the measured count at hero scale.
 - **Track:** Field Track glaze, 46px tall (30px narrow), 10px radius.
 - **Fill:** solid browser colour, 10px radius, 10px minimum width, width proportional to the count.
-- **Name:** 700 at 19px with the browser version below in 14px Field Muted; InDuckGo's name is preceded by the 26px logo mark and turns amber.
-- **Count:** Figure style, right-aligned; Paper for competitors, amber for InDuckGo.
-- **Motion:** fills grow from the left over 1.1s on cubic-bezier(.16, 1, .3, 1), staggered by 0.12s in the order Chrome, Brave, InDuckGo; no animation under `prefers-reduced-motion` or in print.
+- **Name:** 700 at 19px with the browser version below in 14px Field Muted; ZTBrowser's name is preceded by the 26px logo mark and turns amber.
+- **Count:** Figure style, right-aligned; Paper for competitors, amber for ZTBrowser.
+- **Motion:** fills grow from the left over 1.1s on cubic-bezier(.16, 1, .3, 1), staggered by 0.12s in the order Chrome, Brave, ZTBrowser; no animation under `prefers-reduced-motion` or in print.
 - **Accessibility:** the whole chart is one `role="img"` with an `aria-label` stating every count in words.
 
 ### Compact comparison rows
 - **Row:** 92px name, flexible track, 44px count on a 12px gap.
 - **Track:** Lilac Mist, 24px tall, 6px radius; fills in the browser colours with a 6px minimum width.
-- **InDuckGo row:** name and count in Logo Indigo at 700 (the Indigo On Paper Rule).
+- **ZTBrowser row:** name and count in Logo Indigo at 700 (the Indigo On Paper Rule).
 
 ### Comparison table
 - **Cells:** 16px text, 14px by 12px padding, 1px Hairline Lilac rule below each row.
-- **Headers:** 14px, 600, Dusk Muted; InDuckGo's header in Logo Indigo.
-- **InDuckGo column:** Lilac Mist wash, Deep Indigo Ink text at 600.
+- **Headers:** 14px, 600, Dusk Muted; ZTBrowser's header in Logo Indigo.
+- **ZTBrowser column:** Lilac Mist wash, Deep Indigo Ink text at 600.
 - **Facts:** a Fact Green or Fact Red dot before each value; on narrow screens the dot gives way to a browser label and the cell text takes the fact colour.
 
 ### Weakness band
@@ -361,24 +361,24 @@ The hero comparison: one lane per browser, the measured count at hero scale.
 - **Focus:** a 2px outline at 2px offset in the accent at 55% opacity.
 
 ### Error header
-- **Illustration:** the logo's shield in Ghost, its face cut out in the background colour, its beak and eye in Ghost Strong, and a round badge at the lower right carrying one of eight stroked glyphs (search, offline, alert, clock, lock, file, blocked, crash) in white.
-- **Tone:** the badge is the Desktop Accent for ordinary failures, Danger for security failures and Warning for crashes; on a crash the shield's eye becomes a crossed stroke.
+- **Illustration:** the logo's shield in Ghost with its chain cut out (an SVG mask, so the page background shows through in either scheme), and a round badge at the lower right carrying one of eight stroked glyphs (search, offline, alert, clock, lock, file, blocked, crash) in white.
+- **Tone:** the badge is the Desktop Accent for ordinary failures, Danger for security failures and Warning for crashes.
 - **Text:** Operate Title, then the lead in Operate Body, then muted bullet points.
 
 ## Do's and Don'ts
 
 ### Do:
 - **Do** draw every measured comparison as bars with the count printed beside each bar in tabular figures, the largest value at 100% of the track.
-- **Do** order browsers Chrome, Brave, InDuckGo in every chart and table.
+- **Do** order browsers Chrome, Brave, ZTBrowser in every chart and table.
 - **Do** place the measurement date and sources directly under a measured chart, and link the full method from the page.
-- **Do** give InDuckGo's weaknesses their own Weakness Wash band at body size.
-- **Do** switch InDuckGo's text to Logo Indigo (#2e1a87) whenever it sits on paper or mist.
+- **Do** give ZTBrowser's weaknesses their own Weakness Wash band at body size.
+- **Do** switch ZTBrowser's text to Logo Indigo (#2e1a87) whenever it sits on paper or mist.
 - **Do** draw the shield from the logo's own path data on every surface.
 - **Do** take the accent and the light or dark scheme from the desktop on operate surfaces.
 - **Do** stop the bar growth under `prefers-reduced-motion` and force exact colours in print.
 
 ### Don't:
-- **Don't** use amber (#ffb300) on a competitor, a headline, a link or a button; it marks InDuckGo and the focus ring only.
+- **Don't** use amber (#ffb300) on a competitor, a headline, a link or a button; it marks ZTBrowser and the focus ring only.
 - **Don't** set amber text on paper or mist.
 - **Don't** colour a browser red or green; those colours judge yes/no facts.
 - **Don't** bring indigo, amber or the embedded face into an error page.

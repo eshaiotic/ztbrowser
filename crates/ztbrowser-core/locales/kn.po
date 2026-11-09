@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: kn\n"
+
+msgid "About ZTBrowser"
+msgstr "ZTBrowser ಕುರಿತು"
+
+msgid "Access denied"
+msgstr "ಪ್ರವೇಶ ನಿರಾಕರಿಸಲಾಗಿದೆ"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "ನೀವು {current} ನಲ್ಲಿರುವಾಗ {requesting} ತನ್ನ ಕುಕೀಗಳು ಮತ್ತು ಡೇಟಾವನ್ನು ಬಳಸಲು ಅನುಮತಿಸಬೇಕೇ?"
+
+msgid "Allow {site} to know your location?"
+msgstr "{site} ಗೆ ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ತಿಳಿಯಲು ಅನುಮತಿಸಬೇಕೇ?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "{site} ಗೆ ನಿಮ್ಮ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಓದಲು ಅನುಮತಿಸಬೇಕೇ?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "{site} ಗೆ ಅಧಿಸೂಚನೆಗಳನ್ನು ತೋರಿಸಲು ಅನುಮತಿಸಬೇಕೇ?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "{site} ಗೆ ನಿಮ್ಮ ಕ್ಯಾಮೆರಾ ಮತ್ತು ಮೈಕ್ರೊಫೋನ್ ಬಳಸಲು ಅನುಮತಿಸಬೇಕೇ?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "{site} ಗೆ ನಿಮ್ಮ ಕ್ಯಾಮೆರಾ ಬಳಸಲು ಅನುಮತಿಸಬೇಕೇ?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "{site} ಗೆ ನಿಮ್ಮ ಮೈಕ್ರೊಫೋನ್ ಬಳಸಲು ಅನುಮತಿಸಬೇಕೇ?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "{site} ಗೆ ನಿಮ್ಮ ಪರದೆಯನ್ನು ಬಳಸಲು ಅನುಮತಿಸಬೇಕೇ?"
+
+msgid "App data cleared"
+msgstr "ಆ್ಯಪ್ ಡೇಟಾ ತೆರವುಗೊಳಿಸಲಾಗಿದೆ"
+
+msgid "Appearance"
+msgstr "ಗೋಚರತೆ"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "ZTBrowser ಮುಂದಿನ ಬಾರಿ ಪ್ರಾರಂಭವಾದಾಗ ಅನ್ವಯವಾಗುತ್ತದೆ"
+
+msgid "Asking for relay descriptors"
+msgstr "ರಿಲೇ ಡಿಸ್ಕ್ರಿಪ್ಟರ್‌ಗಳನ್ನು ಕೇಳಲಾಗುತ್ತಿದೆ"
+
+msgid "Asking for the network status"
+msgstr "ನೆಟ್‌ವರ್ಕ್ ಸ್ಥಿತಿಯನ್ನು ಕೇಳಲಾಗುತ್ತಿದೆ"
+
+msgid "Back"
+msgstr "ಹಿಂದೆ"
+
+msgid "Back and Forward"
+msgstr "ಹಿಂದೆ ಮತ್ತು ಮುಂದೆ"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Tor ಅನ್ನು ನಿರ್ಬಂಧಿಸದ ಎಲ್ಲೆಡೆ ಉತ್ತಮ."
+
+msgid "Bridges I provide"
+msgstr "ನಾನು ಒದಗಿಸುವ ಬ್ರಿಡ್ಜ್‌ಗಳು"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "ಬ್ರಿಡ್ಜ್‌ಗಳು Tor ಅನ್ನು ನಿರ್ಬಂಧಿಸುವ ನೆಟ್‌ವರ್ಕ್‌ಗಳಿಗಾಗಿ ಇರುವ, ಪಟ್ಟಿ ಮಾಡದ Tor ರಿಲೇಗಳು."
+
+msgid "Browsing data burned"
+msgstr "ಬ್ರೌಸಿಂಗ್ ಡೇಟಾ ಅಳಿಸಲಾಗಿದೆ"
+
+msgid "Burn Browsing Data"
+msgstr "ಬ್ರೌಸಿಂಗ್ ಡೇಟಾ ಅಳಿಸಿ"
+
+msgid "Burn Browsing Data?"
+msgstr "ಬ್ರೌಸಿಂಗ್ ಡೇಟಾ ಅಳಿಸಬೇಕೇ?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "ಈ ಪ್ರೊಫೈಲ್‌ನ ವಿಂಡೋಗಳಲ್ಲಿ ವಿಳಾಸ ಪಟ್ಟಿಯ ಸುತ್ತ ತೋರಿಸಲಾಗುವ ಬಟನ್‌ಗಳು."
+
+msgid "C_lear"
+msgstr "ತೆರವುಗೊಳಿಸಿ(_L)"
+
+msgid "Cannot Connect to Tor"
+msgstr "Tor ಗೆ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Tor ನ ಕಂಟ್ರೋಲ್ ಪೋರ್ಟ್ ತಲುಪಲು ಸಾಧ್ಯವಿಲ್ಲ: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Tor ನ ಕಂಟ್ರೋಲ್ ಕುಕೀ ಓದಲು ಸಾಧ್ಯವಿಲ್ಲ: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Tor ನ ಹಳೆಯ ಕಂಟ್ರೋಲ್ ಪೋರ್ಟ್ ಫೈಲ್ ತೆಗೆದುಹಾಕಲು ಸಾಧ್ಯವಿಲ್ಲ: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "ಡೌನ್‌ಲೋಡ್ ಉಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Tor ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Tor ನ ಸಂರಚನೆಯನ್ನು ಬರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Tor ನ ಕಂಟ್ರೋಲ್ ಪೋರ್ಟ್‌ಗೆ ಬರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ: {error}"
+
+msgid "Certificate for {name}"
+msgstr "{name} ಗಾಗಿ ಪ್ರಮಾಣಪತ್ರ"
+
+msgid "Check the address for a typo."
+msgstr "ವಿಳಾಸದಲ್ಲಿ ಕಾಗುಣಿತ ತಪ್ಪಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "ವಿಳಾಸವನ್ನು ಪರಿಶೀಲಿಸಿ; ಕೊಲೊನ್ ನಂತರ ಪೋರ್ಟ್ ಸಂಖ್ಯೆ ಇದ್ದರೆ ಅದನ್ನೂ ಪರಿಶೀಲಿಸಿ."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "ನೆಟ್‌ವರ್ಕ್ ಕೇಬಲ್ ಅಥವಾ Wi-Fi ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ."
+
+msgid "Check your internet connection."
+msgstr "ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ."
+
+msgid "Clear App Data…"
+msgstr "ಆ್ಯಪ್ ಡೇಟಾ ತೆರವುಗೊಳಿಸಿ…"
+
+msgid "Clear Data of {name}?"
+msgstr "{name} ನ ಡೇಟಾ ತೆರವುಗೊಳಿಸಬೇಕೇ?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "ನಿಮಗೆ ಬೇಡವಾದ ಟ್ಯಾಬ್‌ಗಳು ಅಥವಾ ಆ್ಯಪ್‌ಗಳನ್ನು ಮುಚ್ಚಿ, ನಂತರ ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ."
+
+msgid "Close {name} before deleting it"
+msgstr "{name} ಅನ್ನು ಅಳಿಸುವ ಮೊದಲು ಅದನ್ನು ಮುಚ್ಚಿ"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "ಈ ಪ್ರೊಫೈಲ್‌ನ ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳು ಮತ್ತು ವಿಂಡೋಗಳನ್ನು ಮುಚ್ಚುತ್ತದೆ ಹಾಗೂ ಅದರ ಕುಕೀಗಳು, ಸೈಟ್ ಡೇಟಾ, ಕ್ಯಾಷ್ ಮತ್ತು ಇತಿಹಾಸವನ್ನು ಅಳಿಸುತ್ತದೆ."
+
+msgid "Connect"
+msgstr "ಸಂಪರ್ಕಿಸಿ"
+
+msgid "Connect directly"
+msgstr "ನೇರವಾಗಿ ಸಂಪರ್ಕಿಸಿ"
+
+msgid "Connected"
+msgstr "ಸಂಪರ್ಕಗೊಂಡಿದೆ"
+
+msgid "Connected to a relay directory server"
+msgstr "ರಿಲೇ ಡೈರೆಕ್ಟರಿ ಸರ್ವರ್‌ಗೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
+
+msgid "Connected to a relay to build circuits"
+msgstr "ಸರ್ಕ್ಯೂಟ್‌ಗಳನ್ನು ರಚಿಸಲು ಒಂದು ರಿಲೇಗೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
+
+msgid "Connected to pluggable transport"
+msgstr "ಪ್ಲಗಬಲ್ ಟ್ರಾನ್ಸ್‌ಪೋರ್ಟ್‌ಗೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "ಸರ್ಕ್ಯೂಟ್‌ಗಳನ್ನು ರಚಿಸಲು ಪ್ಲಗಬಲ್ ಟ್ರಾನ್ಸ್‌ಪೋರ್ಟ್‌ಗೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
+
+msgid "Connected to proxy"
+msgstr "ಪ್ರಾಕ್ಸಿಗೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
+
+msgid "Connected to proxy to build circuits"
+msgstr "ಸರ್ಕ್ಯೂಟ್‌ಗಳನ್ನು ರಚಿಸಲು ಪ್ರಾಕ್ಸಿಗೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
+
+msgid "Connected to the Tor network"
+msgstr "Tor ನೆಟ್‌ವರ್ಕ್‌ಗೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
+
+msgid "Connecting to Tor"
+msgstr "Tor ಗೆ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ"
+
+msgid "Connecting to a relay directory server"
+msgstr "ರಿಲೇ ಡೈರೆಕ್ಟರಿ ಸರ್ವರ್‌ಗೆ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "ಸರ್ಕ್ಯೂಟ್‌ಗಳನ್ನು ರಚಿಸಲು ಒಂದು ರಿಲೇಗೆ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ"
+
+msgid "Connecting to pluggable transport"
+msgstr "ಪ್ಲಗಬಲ್ ಟ್ರಾನ್ಸ್‌ಪೋರ್ಟ್‌ಗೆ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "ಸರ್ಕ್ಯೂಟ್‌ಗಳನ್ನು ರಚಿಸಲು ಪ್ಲಗಬಲ್ ಟ್ರಾನ್ಸ್‌ಪೋರ್ಟ್‌ಗೆ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ"
+
+msgid "Connecting to proxy"
+msgstr "ಪ್ರಾಕ್ಸಿಗೆ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "ಸರ್ಕ್ಯೂಟ್‌ಗಳನ್ನು ರಚಿಸಲು ಪ್ರಾಕ್ಸಿಗೆ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ"
+
+msgid "Connection Settings…"
+msgstr "ಸಂಪರ್ಕ ಸೆಟ್ಟಿಂಗ್‌ಗಳು…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, ಗೌಪ್ಯತೆ ಸಂರಚನೆ ಮತ್ತು TrackerRadarKit ನಿಯಮ ಅಲ್ಗಾರಿದಮ್."
+
+msgid "Could not install the app: {error}"
+msgstr "ಆ್ಯಪ್ ಅನ್ನು ಸ್ಥಾಪಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "ಎಲ್ಲವನ್ನೂ ತೆಗೆದುಹಾಕಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ: {error}"
+
+msgid "Delete"
+msgstr "ಅಳಿಸಿ"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "ಈ ಪ್ರೊಫೈಲ್‌ನ ಕುಕೀಗಳು, ಸೈಟ್ ಡೇಟಾ ಮತ್ತು ಕ್ಯಾಷ್ ಅಳಿಸಿ"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Tor Browser ನ ಅಂತರ್ನಿರ್ಮಿತ ಬ್ರಿಡ್ಜ್‌ಗಳಿಗೆ ವೇಷ ಮರೆಸಿದ ಸಂಪರ್ಕಗಳು."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Tor Browser ನ ಅಂತರ್ನಿರ್ಮಿತ ಬ್ರಿಡ್ಜ್‌ಗಳಿಗೆ ವೇಷ ಮರೆಸಿದ ಸಂಪರ್ಕಗಳು. ಇದಕ್ಕೆ {package} ಬೇಕು."
+
+msgid "Download failed: {error}"
+msgstr "ಡೌನ್‌ಲೋಡ್ ವಿಫಲವಾಗಿದೆ: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "ರನ್ ಆಗುವಾಗ DuckDuckGo ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತದೆ; ಪರವಾನಗಿ CC BY-NC-SA 4.0."
+
+msgid "Downloaded {name}"
+msgstr "{name} ಡೌನ್‌ಲೋಡ್ ಆಗಿದೆ"
+
+msgid "DuckDuckGo protections"
+msgstr "DuckDuckGo ರಕ್ಷಣೆಗಳು"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "ಪ್ರತಿ ಆ್ಯಪ್ ತನ್ನದೇ ಆದ ವಿಂಡೋ ಮತ್ತು ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಚಲಿಸುತ್ತದೆ, ಅದರ ಕುಕೀಗಳು ಮತ್ತು ಲಾಗಿನ್‌ಗಳೂ ಪ್ರತ್ಯೇಕವಾಗಿರುತ್ತವೆ."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "ಪ್ರತಿ ಪ್ರೊಫೈಲ್ ತನ್ನದೇ ಆದ ಕುಕೀಗಳು, ಲಾಗಿನ್‌ಗಳು, ಇತಿಹಾಸ ಮತ್ತು ಕ್ಯಾಷ್ ಅನ್ನು ಇಟ್ಟುಕೊಂಡಿರುತ್ತದೆ ಹಾಗೂ ಪ್ರತ್ಯೇಕ ಪ್ರಕ್ರಿಯೆಯಾಗಿ ಚಲಿಸುತ್ತದೆ."
+
+msgid "Establishing a Tor circuit"
+msgstr "Tor ಸರ್ಕ್ಯೂಟ್ ಸ್ಥಾಪಿಸಲಾಗುತ್ತಿದೆ"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡಿದ ಡೈರೆಕ್ಟರಿ ಸಂಪರ್ಕ ಸ್ಥಾಪಿಸಲಾಗುತ್ತಿದೆ"
+
+msgid "File not found"
+msgstr "ಫೈಲ್ ಕಂಡುಬಂದಿಲ್ಲ"
+
+msgid "Find in Page…"
+msgstr "ಪುಟದಲ್ಲಿ ಹುಡುಕಿ…"
+
+msgid "Find in page"
+msgstr "ಪುಟದಲ್ಲಿ ಹುಡುಕಿ"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "ರಿಲೇ ಡೈರೆಕ್ಟರಿ ಸರ್ವರ್‌ನೊಂದಿಗೆ ಹ್ಯಾಂಡ್‌ಶೇಕ್ ಪೂರ್ಣಗೊಂಡಿದೆ"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "ಸರ್ಕ್ಯೂಟ್‌ಗಳನ್ನು ರಚಿಸಲು ರಿಲೇಯೊಂದಿಗೆ ಹ್ಯಾಂಡ್‌ಶೇಕ್ ಪೂರ್ಣಗೊಂಡಿದೆ"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "ರಿಲೇ ಡೈರೆಕ್ಟರಿ ಸರ್ವರ್‌ನೊಂದಿಗೆ ಹ್ಯಾಂಡ್‌ಶೇಕ್ ಪೂರ್ಣಗೊಳ್ಳುತ್ತಿದೆ"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "ಸರ್ಕ್ಯೂಟ್‌ಗಳನ್ನು ರಚಿಸಲು ರಿಲೇಯೊಂದಿಗೆ ಹ್ಯಾಂಡ್‌ಶೇಕ್ ಪೂರ್ಣಗೊಳ್ಳುತ್ತಿದೆ"
+
+msgid "Forward"
+msgstr "ಮುಂದೆ"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "bridges.torproject.org ನಿಂದ, ಇಮೇಲ್ ಮೂಲಕ ಅಥವಾ ಸ್ನೇಹಿತರಿಂದ."
+
+msgid "Go to Home Page"
+msgstr "ಮುಖಪುಟಕ್ಕೆ ಹೋಗಿ"
+
+msgid "Go to the previous or next page"
+msgstr "ಹಿಂದಿನ ಅಥವಾ ಮುಂದಿನ ಪುಟಕ್ಕೆ ಹೋಗಿ"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "ಸೈಟ್‌ನ ಮುಖಪುಟಕ್ಕೆ ಹೋಗಿ, ಅಲ್ಲಿಂದ ಈ ಪುಟವನ್ನು ಹುಡುಕಿ."
+
+msgid "How to Reach Tor"
+msgstr "Tor ಅನ್ನು ಹೇಗೆ ತಲುಪುವುದು"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "ಮರುಲೋಡ್ ಮಾಡಿದ ನಂತರವೂ ಮತ್ತೆ ಕ್ರ್ಯಾಶ್ ಆದರೆ, ಪುಟದಲ್ಲೇ ದೋಷವಿರಬಹುದು."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "ವಿಳಾಸ ಸರಿಯಾಗಿದ್ದರೆ, ಸೈಟ್ ಇನ್ನು ಅಸ್ತಿತ್ವದಲ್ಲಿ ಇಲ್ಲದಿರಬಹುದು."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "ಈ ಸೈಟ್‌ನಲ್ಲಿ ನಿಮ್ಮ ಖಾತೆ ಇದ್ದರೆ, ಸೈನ್ ಇನ್ ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "ನೀವು VPN ಅಥವಾ ನಿಮ್ಮದೇ DNS ಸರ್ವರ್ ಬಳಸುತ್ತಿದ್ದರೆ, ಅದು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "ನೀವು VPN, ಫೈರ್‌ವಾಲ್ ಅಥವಾ ಪ್ರಾಕ್ಸಿ ಬಳಸುತ್ತಿದ್ದರೆ, ಅದು ಸೈಟ್ ಅನ್ನು ನಿರ್ಬಂಧಿಸುತ್ತಿಲ್ಲ ಎಂದು ಪರಿಶೀಲಿಸಿ."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "ZTBrowser Guard ಫಿಲ್ಟರ್ ಪಟ್ಟಿಗಳು"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "ಈ ಕಂಪ್ಯೂಟರ್ ನೆಟ್‌ವರ್ಕ್‌ಗೆ ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲದ ಕಾರಣ ZTBrowser {host} ಅನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser ಗೆ {host} ನಲ್ಲಿ ಸರ್ವರ್ ಕಂಡುಬಂದಿಲ್ಲ."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser ಈ ಪೋರ್ಟ್‌ನಲ್ಲಿ {host} ಗೆ ಸಂಪರ್ಕಿಸುವುದಿಲ್ಲ."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "ZTBrowser ನ ಸ್ವಂತ Tor ಸಂಪರ್ಕಿಸುತ್ತಿದೆ. ಅದು ಸಂಪರ್ಕಗೊಳ್ಳುವವರೆಗೆ ಈ ವಿಂಡೋದಿಂದ ಏನೂ ಹೊರಹೋಗುವುದಿಲ್ಲ."
+
+msgid "Install Site as App"
+msgstr "ಸೈಟ್ ಅನ್ನು ಆ್ಯಪ್ ಆಗಿ ಸ್ಥಾಪಿಸಿ"
+
+msgid "Install Site as App…"
+msgstr "ಸೈಟ್ ಅನ್ನು ಆ್ಯಪ್ ಆಗಿ ಸ್ಥಾಪಿಸಿ…"
+
+msgid "Install as App"
+msgstr "ಆ್ಯಪ್ ಆಗಿ ಸ್ಥಾಪಿಸಿ"
+
+msgid "Installed Apps"
+msgstr "ಸ್ಥಾಪಿಸಲಾದ ಆ್ಯಪ್‌ಗಳು"
+
+msgid "Installed Apps…"
+msgstr "ಸ್ಥಾಪಿಸಲಾದ ಆ್ಯಪ್‌ಗಳು…"
+
+msgid "Installed {name}"
+msgstr "{name} ಸ್ಥಾಪನೆಯಾಗಿದೆ"
+
+msgid "Interface"
+msgstr "ಇಂಟರ್‌ಫೇಸ್"
+
+msgid "Issued by {name}"
+msgstr "ನೀಡಿದವರು: {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "ಇದನ್ನು ಸರಿಸಿರಬಹುದು, ಹೆಸರು ಬದಲಿಸಿರಬಹುದು ಅಥವಾ ಅಳಿಸಿರಬಹುದು."
+
+msgid "Language"
+msgstr "ಭಾಷೆ"
+
+msgid "Load Insecure Page"
+msgstr "ಅಸುರಕ್ಷಿತ ಪುಟವನ್ನು ಲೋಡ್ ಮಾಡಿ"
+
+msgid "Load the page again, or stop loading it"
+msgstr "ಪುಟವನ್ನು ಮತ್ತೆ ಲೋಡ್ ಮಾಡಿ, ಅಥವಾ ಲೋಡ್ ಆಗುವುದನ್ನು ನಿಲ್ಲಿಸಿ"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "ಸರ್ಕ್ಯೂಟ್‌ಗಳನ್ನು ರಚಿಸಲು ಸಾಕಷ್ಟು ಡೈರೆಕ್ಟರಿ ಮಾಹಿತಿ ಲೋಡ್ ಆಗಿದೆ"
+
+msgid "Loading authority certificates"
+msgstr "ಪ್ರಾಧಿಕಾರ ಪ್ರಮಾಣಪತ್ರಗಳು ಲೋಡ್ ಆಗುತ್ತಿವೆ"
+
+msgid "Loading relay descriptors"
+msgstr "ರಿಲೇ ಡಿಸ್ಕ್ರಿಪ್ಟರ್‌ಗಳು ಲೋಡ್ ಆಗುತ್ತಿವೆ"
+
+msgid "Loading the network status"
+msgstr "ನೆಟ್‌ವರ್ಕ್ ಸ್ಥಿತಿ ಲೋಡ್ ಆಗುತ್ತಿದೆ"
+
+msgid "Main Menu"
+msgstr "ಮುಖ್ಯ ಮೆನು"
+
+msgid "Manage Profiles…"
+msgstr "ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಿ…"
+
+msgid "New Identity"
+msgstr "ಹೊಸ ಗುರುತು"
+
+msgid "New Identity?"
+msgstr "ಹೊಸ ಗುರುತು ಬೇಕೇ?"
+
+msgid "New Tab"
+msgstr "ಹೊಸ ಟ್ಯಾಬ್"
+
+msgid "New Tor Window"
+msgstr "ಹೊಸ Tor ವಿಂಡೋ"
+
+msgid "New Window"
+msgstr "ಹೊಸ ವಿಂಡೋ"
+
+msgid "New identity"
+msgstr "ಹೊಸ ಗುರುತು"
+
+msgid "New profile name"
+msgstr "ಹೊಸ ಪ್ರೊಫೈಲ್ ಹೆಸರು"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "ಪ್ರತಿ ಸಾಲಿಗೆ ಒಂದು ಬ್ರಿಡ್ಜ್, ಉದಾಹರಣೆಗೆ: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "ವೆಬ್ ಪುಟಗಳನ್ನು ಮಾತ್ರ ಆ್ಯಪ್‌ಗಳಾಗಿ ಸ್ಥಾಪಿಸಬಹುದು"
+
+msgid "Open"
+msgstr "ತೆರೆಯಿರಿ"
+
+msgid "Open Page in Browser"
+msgstr "ಪುಟವನ್ನು ಬ್ರೌಸರ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ"
+
+msgid "Open a new tab"
+msgstr "ಹೊಸ ಟ್ಯಾಬ್ ತೆರೆಯಿರಿ"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "ಟ್ರಾಫಿಕ್ ಕೇವಲ Tor ಮೂಲಕ ಹೋಗುವ ವಿಂಡೋವನ್ನು ತೆರೆಯಿರಿ"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Tor ವಿಂಡೋದಿಂದ ಇತರ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ತೆರೆಯುವುದಿಲ್ಲ: ಅವು Tor ಹೊರಗಿನಿಂದ ಸಂಪರ್ಕಿಸುತ್ತಿದ್ದವು."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Tor ವಿಂಡೋ ಸಂಪರ್ಕಗೊಳ್ಳುವವರೆಗೆ ಪುಟಗಳು ತೆರೆಯುವುದಿಲ್ಲ."
+
+msgid "Paste at least one bridge."
+msgstr "ಕನಿಷ್ಠ ಒಂದು ಬ್ರಿಡ್ಜ್ ಅನ್ನು ಅಂಟಿಸಿ."
+
+msgid "Preferences"
+msgstr "ಆದ್ಯತೆಗಳು"
+
+msgid "Preferences…"
+msgstr "ಆದ್ಯತೆಗಳು…"
+
+msgid "Profiles"
+msgstr "ಪ್ರೊಫೈಲ್‌ಗಳು"
+
+msgid "Protect This Site"
+msgstr "ಈ ಸೈಟ್ ಅನ್ನು ರಕ್ಷಿಸಿ"
+
+msgid "Protection Shield"
+msgstr "ರಕ್ಷಣಾ ಕವಚ"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Tor ನ ಕಂಟ್ರೋಲ್ ಪೋರ್ಟ್ ಓದುವುದು ವಿಫಲವಾಗಿದೆ: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "VPN ಬಳಸುತ್ತಿದ್ದರೆ, ಅದನ್ನು ಮತ್ತೆ ಸಂಪರ್ಕಿಸಿ."
+
+msgid "Reload"
+msgstr "ಮರುಲೋಡ್ ಮಾಡಿ"
+
+msgid "Reload Page"
+msgstr "ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ"
+
+msgid "Reset Zoom"
+msgstr "ಜೂಮ್ ಮರುಹೊಂದಿಸಿ"
+
+msgid "Search Engine"
+msgstr "ಸರ್ಚ್ ಇಂಜಿನ್"
+
+msgid "Search {engine}"
+msgstr "{engine} ನಲ್ಲಿ ಹುಡುಕಿ"
+
+msgid "Search {engine} or enter address"
+msgstr "{engine} ನಲ್ಲಿ ಹುಡುಕಿ ಅಥವಾ ವಿಳಾಸ ನಮೂದಿಸಿ"
+
+msgid "Show in Folder"
+msgstr "ಫೋಲ್ಡರ್‌ನಲ್ಲಿ ತೋರಿಸಿ"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "ನಿಮ್ಮನ್ನು ಸೈನ್ ಔಟ್ ಮಾಡುತ್ತದೆ ಮತ್ತು ಈ ಆ್ಯಪ್‌ನ ಕುಕೀಗಳು, ಸೈಟ್ ಡೇಟಾ ಹಾಗೂ ಕ್ಯಾಷ್ ಅನ್ನು ಅಳಿಸುತ್ತದೆ. ಬೇರೆ ಯಾವುದಕ್ಕೂ ಪರಿಣಾಮವಾಗುವುದಿಲ್ಲ."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "ಕೆಲವು ಡೇಟಾವನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "{host} ಅನ್ನು ಲೋಡ್ ಮಾಡುವಾಗ ಏನೋ ತಪ್ಪಾಗಿದೆ."
+
+msgid "Starting"
+msgstr "ಪ್ರಾರಂಭವಾಗುತ್ತಿದೆ"
+
+msgid "Starting Tor…"
+msgstr "Tor ಪ್ರಾರಂಭವಾಗುತ್ತಿದೆ…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "ಸೈಟ್‌ಗಾಗಿ ಟ್ರ್ಯಾಕರ್ ರಕ್ಷಣೆಯನ್ನು ಆಫ್ ಅಥವಾ ಆನ್ ಮಾಡಿ"
+
+msgid "System default ({language})"
+msgstr "ಸಿಸ್ಟಂ ಡೀಫಾಲ್ಟ್ ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ನೀಡಿದ ಪ್ರಾಧಿಕಾರವು ಅದನ್ನು ರದ್ದುಗೊಳಿಸಿದೆ."
+
+msgid "The bridge line has no address: {line}"
+msgstr "ಬ್ರಿಡ್ಜ್ ಸಾಲಿನಲ್ಲಿ ವಿಳಾಸವಿಲ್ಲ: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "ಪ್ರಮಾಣಪತ್ರಕ್ಕೆ ಇನ್ನು ಸುರಕ್ಷಿತವಲ್ಲದ ಅಲ್ಗಾರಿದಮ್‌ನಿಂದ ಸಹಿ ಮಾಡಲಾಗಿದೆ."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "ಪ್ರಮಾಣಪತ್ರ ಇನ್ನೂ ಮಾನ್ಯವಾಗಿಲ್ಲ. ಈ ಕಂಪ್ಯೂಟರ್‌ನ ದಿನಾಂಕ ಮತ್ತು ಸಮಯ ಸರಿಯಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ."
+
+msgid "The certificate was issued for a different site."
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ಬೇರೆ ಸೈಟ್‌ಗಾಗಿ ನೀಡಲಾಗಿತ್ತು."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ಈ ಕಂಪ್ಯೂಟರ್ ನಂಬುವ ಪ್ರಾಧಿಕಾರವು ನೀಡಿಲ್ಲ."
+
+msgid "The connection to {host} was interrupted."
+msgstr "{host} ಗೆ ಸಂಪರ್ಕ ಅಡಚಣೆಯಾಯಿತು."
+
+msgid "The icon at the end of the address bar"
+msgstr "ವಿಳಾಸ ಪಟ್ಟಿಯ ಕೊನೆಯಲ್ಲಿರುವ ಐಕಾನ್"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "ZTBrowser ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿದಾಗ ಭಾಷೆ ಬದಲಾಗುತ್ತದೆ"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "ಪ್ರತಿ ಪ್ರೊಫೈಲ್ ಮತ್ತು ವೆಬ್ ಆ್ಯಪ್‌ನಲ್ಲಿ ಮೆನುಗಳು, ಸಂವಾದಗಳು ಮತ್ತು ಸಂದೇಶಗಳ ಭಾಷೆ."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "ಸಮಸ್ಯೆ ಸೈಟ್‌ನ ಕಡೆಯಿದೆ. ಕೆಲವು ನಿಮಿಷಗಳ ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "ಸೈಟ್ ನಿರ್ವಹಣೆಗಾಗಿ ಸ್ಥಗಿತಗೊಂಡಿರಬಹುದು. ಕೆಲವು ನಿಮಿಷಗಳ ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "ಸೈಟ್ ಮೇಲೆ ಅತಿಯಾದ ಭಾರವಿರಬಹುದು. ಕೆಲವು ನಿಮಿಷಗಳ ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "{transport} ಬ್ರಿಡ್ಜ್‌ಗಳಿಗೆ ಸ್ಥಾಪಿಸದ ಒಂದು ಪ್ರೋಗ್ರಾಂ ಬೇಕು; {package} ಅನ್ನು ಸ್ಥಾಪಿಸಿ"
+
+msgid "There is no file at {path}."
+msgstr "{path} ನಲ್ಲಿ ಯಾವುದೇ ಫೈಲ್ ಇಲ್ಲ."
+
+msgid "This address is blocked"
+msgstr "ಈ ವಿಳಾಸವನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ"
+
+msgid "This connection isn’t private"
+msgstr "ಈ ಸಂಪರ್ಕ ಖಾಸಗಿಯಾಗಿಲ್ಲ"
+
+msgid "This page"
+msgstr "ಈ ಪುಟ"
+
+msgid "This page can’t be found"
+msgstr "ಈ ಪುಟ ಕಂಡುಬರುತ್ತಿಲ್ಲ"
+
+msgid "This page can’t be loaded"
+msgstr "ಈ ಪುಟವನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ"
+
+msgid "This page crashed"
+msgstr "ಈ ಪುಟ ಕ್ರ್ಯಾಶ್ ಆಗಿದೆ"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "ಈ ಪುಟ ಬೇರೆ ಸೈಟ್‌ನಲ್ಲಿದೆ, {name} ನ ಭಾಗವಲ್ಲ"
+
+msgid "This page isn’t working"
+msgstr "ಈ ಪುಟ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿಲ್ಲ"
+
+msgid "This page ran out of memory"
+msgstr "ಈ ಪುಟದ ಮೆಮೊರಿ ಖಾಲಿಯಾಗಿದೆ"
+
+msgid "This site can’t be found"
+msgstr "ಈ ಸೈಟ್ ಕಂಡುಬರುತ್ತಿಲ್ಲ"
+
+msgid "This site can’t be reached"
+msgstr "ಈ ಸೈಟ್ ಅನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಿಲ್ಲ"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "ಸ್ವಯಂಸೇವಕರ ಬ್ರೌಸರ್‌ಗಳ ಮೂಲಕ; ಹೆಚ್ಚಿನ ಸೆನ್ಸಾರ್ ಮಾಡಿದ ನೆಟ್‌ವರ್ಕ್‌ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "ಸ್ವಯಂಸೇವಕರ ಬ್ರೌಸರ್‌ಗಳ ಮೂಲಕ; ಹೆಚ್ಚಿನ ಸೆನ್ಸಾರ್ ಮಾಡಿದ ನೆಟ್‌ವರ್ಕ್‌ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಇದಕ್ಕೆ {package} ಬೇಕು."
+
+msgid "Toolbar Buttons"
+msgstr "ಟೂಲ್‌ಬಾರ್ ಬಟನ್‌ಗಳು"
+
+msgid "Tor Connection"
+msgstr "Tor ಸಂಪರ್ಕ"
+
+msgid "Tor Connection…"
+msgstr "Tor ಸಂಪರ್ಕ…"
+
+msgid "Tor Window"
+msgstr "Tor ವಿಂಡೋ"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor ಪಥ {path} ಅನ್ನು ಬಳಸಲು ಸಾಧ್ಯವಿಲ್ಲ"
+
+msgid "Tor closed its control port"
+msgstr "Tor ತನ್ನ ಕಂಟ್ರೋಲ್ ಪೋರ್ಟ್ ಅನ್ನು ಮುಚ್ಚಿತು"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor ಸರ್ಕ್ಯೂಟ್‌ಗಳನ್ನು ಬದಲಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor ತನ್ನ ಕಂಟ್ರೋಲ್ ಪೋರ್ಟ್ ಅನ್ನು ತೆರೆಯಲಿಲ್ಲ"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor ಸ್ಥಾಪಿತವಾಗಿಲ್ಲ. ನಿಮ್ಮ ಡಿಸ್ಟ್ರಿಬ್ಯೂಷನ್‌ನ tor ಪ್ಯಾಕೇಜ್ ಅನ್ನು ಸ್ಥಾಪಿಸಿ; Tor ವಿಂಡೋ ತನ್ನದೇ Tor ಅನ್ನು ಪ್ರಾರಂಭಿಸುತ್ತದೆ, ಆದ್ದರಿಂದ ಯಾವುದೇ Tor ಸೇವೆ ಚಾಲನೆಯಲ್ಲಿರಬೇಕಾಗಿಲ್ಲ."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor ಯಾವುದೇ ಸ್ಥಳೀಯ SOCKS ಪೋರ್ಟ್ ಅನ್ನು ತೆರೆಯಲಿಲ್ಲ"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor ನಿರಾಕರಿಸಿತು: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor ಒಂದು ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿದೆ"
+
+msgid "Tor stopped."
+msgstr "Tor ನಿಂತಿದೆ."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Tor ನ ಕಂಟ್ರೋಲ್ ಕುಕೀ ಹಾನಿಗೊಂಡಿದೆ"
+
+msgid "Tracker Data Set"
+msgstr "ಟ್ರ್ಯಾಕರ್ ಡೇಟಾ ಸೆಟ್"
+
+msgid "Tracker protection on this site"
+msgstr "ಈ ಸೈಟ್‌ನಲ್ಲಿ ಟ್ರ್ಯಾಕರ್ ರಕ್ಷಣೆ"
+
+msgid "Try Again"
+msgstr "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+
+msgid "Try again in a few minutes."
+msgstr "ಕೆಲವು ನಿಮಿಷಗಳ ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "ಏರ್‌ಪ್ಲೇನ್ ಮೋಡ್ ಆನ್ ಇದ್ದರೆ, ಅದನ್ನು ಆಫ್ ಮಾಡಿ."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "ZTBrowser Guard ನ ಫಿಲ್ಟರ್ ಪಟ್ಟಿಗಳನ್ನು WebKit ನಿಯಮಗಳಾಗಿ ಪರಿವರ್ತಿಸುತ್ತದೆ. ಮೂಲ: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "ಅನ್‌ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "ಅಜ್ಞಾತ ಬ್ರಿಡ್ಜ್ ಟ್ರಾನ್ಸ್‌ಪೋರ್ಟ್: {name}"
+
+msgid "Valid until {date}"
+msgstr "{date} ವರೆಗೆ ಮಾನ್ಯ"
+
+msgid "Your Bridges"
+msgstr "ನಿಮ್ಮ ಬ್ರಿಡ್ಜ್‌ಗಳು"
+
+msgid "You’re offline"
+msgstr "ನೀವು ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿದ್ದೀರಿ"
+
+msgid "Zoom In"
+msgstr "ಜೂಮ್ ಇನ್"
+
+msgid "Zoom Out"
+msgstr "ಜೂಮ್ ಔಟ್"
+
+msgid "_Allow"
+msgstr "ಅನುಮತಿಸಿ(_A)"
+
+msgid "_Burn"
+msgstr "ಅಳಿಸಿ(_B)"
+
+msgid "_Cancel"
+msgstr "ರದ್ದುಮಾಡಿ(_C)"
+
+msgid "_Deny"
+msgstr "ನಿರಾಕರಿಸಿ(_D)"
+
+msgid "_Install"
+msgstr "ಸ್ಥಾಪಿಸಿ(_I)"
+
+msgid "_New Identity"
+msgstr "ಹೊಸ ಗುರುತು(_N)"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) ಅಥವಾ AUR ನಿಂದ obfs4proxy (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) ಅಥವಾ AUR ನಿಂದ snowflake-pt-client (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} ಈಗ ವಿನಂತಿಯನ್ನು ನಿರ್ವಹಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} ಈ ವಿನಂತಿಗೆ ಉತ್ತರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} ಸುರಕ್ಷಿತ ಸಂಪರ್ಕವನ್ನು ನೀಡುವುದಿಲ್ಲ"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "{host} ಈ ಪುಟವನ್ನು ನೋಡಲು ನಿಮಗೆ ಅನುಮತಿಸುವುದಿಲ್ಲ."
+
+msgid "{host} has no page at this address."
+msgstr "{host} ನಲ್ಲಿ ಈ ವಿಳಾಸದಲ್ಲಿ ಯಾವುದೇ ಪುಟವಿಲ್ಲ."
+
+msgid "{host} refused the connection."
+msgstr "{host} ಸಂಪರ್ಕವನ್ನು ನಿರಾಕರಿಸಿದೆ."
+
+msgid "{host} took too long to respond."
+msgstr "{host} ಪ್ರತಿಕ್ರಿಯಿಸಲು ತುಂಬಾ ಸಮಯ ತೆಗೆದುಕೊಂಡಿತು."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "{host} ಒಂದು ಪುಟಕ್ಕೆ ಅನುಮತಿಸಿದ್ದಕ್ಕಿಂತ ಹೆಚ್ಚು ಮೆಮೊರಿ ಬಳಸಿತು, ಆದ್ದರಿಂದ ZTBrowser ಅದನ್ನು ನಿಲ್ಲಿಸಿತು."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} ತನ್ನದೇ ವಿಂಡೋದಲ್ಲಿ ತೆರೆಯುತ್ತದೆ, ಅದರ ಕುಕೀಗಳು ಮತ್ತು ಲಾಗಿನ್‌ಗಳನ್ನು ಬ್ರೌಸರ್ ಹಾಗೂ ಇತರ ಎಲ್ಲಾ ಆ್ಯಪ್‌ಗಳಿಂದ ಪ್ರತ್ಯೇಕವಾಗಿ ಇರಿಸಲಾಗುತ್ತದೆ."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — ZTBrowser ವೆಬ್ ಆ್ಯಪ್"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} ಬ್ರಿಡ್ಜ್ ಆರ್ಗ್ಯುಮೆಂಟ್ ಅಲ್ಲ"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} IP ವಿಳಾಸ ಮತ್ತು ಪೋರ್ಟ್ ಅಲ್ಲ"
+
+msgid "{url} answered {status}"
+msgstr "{url} {status} ಎಂದು ಉತ್ತರಿಸಿದೆ"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} ನಿರೀಕ್ಷಿತ ದಾಖಲೆಯನ್ನು ಹಿಂತಿರುಗಿಸಲಿಲ್ಲ"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} ಅನುಮತಿಸಿದ ಗಾತ್ರಕ್ಕಿಂತ ದೊಡ್ಡದಾಗಿದೆ"
+
+msgid "{url} is not a valid address"
+msgstr "{url} ಮಾನ್ಯ ವಿಳಾಸವಲ್ಲ"
+
+msgid "© their maintainers"
+msgstr "© ಅವುಗಳ ನಿರ್ವಾಹಕರು"
+
+msgid "Ask Where to Save Each File"
+msgstr "ಪ್ರತಿ ಫೈಲ್ ಅನ್ನು ಎಲ್ಲಿ ಉಳಿಸಬೇಕು ಎಂದು ಕೇಳಿ"
+
+msgid "Choose Folder"
+msgstr "ಫೋಲ್ಡರ್ ಆಯ್ಕೆಮಾಡಿ"
+
+msgid "Download Folder"
+msgstr "ಡೌನ್‌ಲೋಡ್ ಫೋಲ್ಡರ್"
+
+msgid "Download failed"
+msgstr "ಡೌನ್‌ಲೋಡ್ ವಿಫಲವಾಗಿದೆ"
+
+msgid "Downloading…"
+msgstr "ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ…"
+
+msgid "Downloading… {percent}%"
+msgstr "ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ… {percent}%"
+
+msgid "Downloads"
+msgstr "ಡೌನ್‌ಲೋಡ್‌ಗಳು"
+
+msgid "Go to Download Folder"
+msgstr "ಡೌನ್‌ಲೋಡ್ ಫೋಲ್ಡರ್‌ಗೆ ಹೋಗಿ"
+
+msgid "No downloads yet"
+msgstr "ಇನ್ನೂ ಯಾವುದೇ ಡೌನ್‌ಲೋಡ್‌ಗಳಿಲ್ಲ"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "ಇಲ್ಲದಿದ್ದರೆ ಫೈಲ್‌ಗಳು ನೇರವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಫೋಲ್ಡರ್‌ಗೆ ಹೋಗುತ್ತವೆ"
+
+msgid "Save File"
+msgstr "ಫೈಲ್ ಉಳಿಸಿ"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "ಇತ್ತೀಚಿನ ಐದು ಡೌನ್‌ಲೋಡ್‌ಗಳು ಮತ್ತು ಡೌನ್‌ಲೋಡ್ ಫೋಲ್ಡರ್"
+
+msgid "_Save"
+msgstr "ಉಳಿಸಿ(_S)"
+
+msgid "_Select"
+msgstr "ಆಯ್ಕೆಮಾಡಿ(_S)"
+
+msgid "Show All Downloads"
+msgstr "ಎಲ್ಲಾ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ತೋರಿಸಿ"
+
+msgid "Clear List"
+msgstr "ಪಟ್ಟಿಯನ್ನು ತೆರವುಗೊಳಿಸಿ"
+
+msgid "Remove from List"
+msgstr "ಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಹಾಕಿ"
+
+msgid "Clear History"
+msgstr "ಇತಿಹಾಸವನ್ನು ತೆರವುಗೊಳಿಸಿ"
+
+msgid "Search Downloads"
+msgstr "ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಹುಡುಕಿ"
+
+msgid "File Moved or Deleted"
+msgstr "ಫೈಲ್ ಸ್ಥಳಾಂತರಿಸಲಾಗಿದೆ ಅಥವಾ ಅಳಿಸಲಾಗಿದೆ"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "ಮೌಸ್ ವೀಲ್‌ನ ಪ್ರತಿ ಹಂತವನ್ನೂ ಅನಿಮೇಟ್ ಮಾಡುತ್ತದೆ. ಈಗಾಗಲೇ ತೆರೆದಿರುವ ಪುಟಗಳನ್ನು ಮರುಲೋಡ್ ಮಾಡಬೇಕು."
+
+msgid "Scrolling"
+msgstr "ಸ್ಕ್ರೋಲಿಂಗ್"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "ಮೌಸ್ ವೀಲ್ ಸುಗಮ ಸ್ಕ್ರೋಲಿಂಗ್"
+
+msgid "Details"
+msgstr "Details"
+
+msgid "Legal"
+msgstr "Legal"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "This application comes with absolutely no warranty. See the {license} for details."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, version 3 or later"
+
+msgid "Apache License, Version 2.0"
+msgstr "Apache License, Version 2.0"
+
+msgid "Move to New Window"
+msgstr "ಹೊಸ ವಿಂಡೋಗೆ ಸರಿಸಿ"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Mozilla Public License 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "BSD 3-Clause License"
+
+msgid "Wide Address Bar"
+msgstr "ಅಗಲವಾದ ವಿಳಾಸ ಪಟ್ಟಿ"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "ವಿಳಾಸ ಪಟ್ಟಿ ಟೂಲ್‌ಬಾರ್‌ನ ಎಲ್ಲಾ ಜಾಗವನ್ನು ತುಂಬುತ್ತದೆ; ಆಫ್ ಮಾಡಿದರೆ ಅದು ಚಿಕ್ಕದಾಗಿ ಮತ್ತು ಮಧ್ಯದಲ್ಲಿ ಇರುತ್ತದೆ"
+
+msgid "No apps installed yet"
+msgstr "ಇನ್ನೂ ಯಾವುದೇ ಅಪ್ಲಿಕೇಶನ್ ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ"
+
+msgid "Uninstall {name}?"
+msgstr "{name} ಅನ್ನು ಅಸ್ಥಾಪಿಸಬೇಕೆ?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಅದರ ಕುಕೀಗಳು, ಲಾಗಿನ್‌ಗಳು ಮತ್ತು ಡೇಟಾದೊಂದಿಗೆ ಅಳಿಸುತ್ತದೆ. ಇದನ್ನು ಹಿಂತಿರುಗಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
+
+msgid "Tab Position"
+msgstr "ಟ್ಯಾಬ್‌ಗಳ ಸ್ಥಾನ"
+
+msgid "Top"
+msgstr "ಮೇಲೆ"
+
+msgid "Bottom"
+msgstr "ಕೆಳಗೆ"
+
+msgid "Left"
+msgstr "ಎಡ"
+
+msgid "Right"
+msgstr "ಬಲ"
+
+msgid "Window Buttons"
+msgstr "ವಿಂಡೋ ಬಟನ್‌ಗಳು"
+
+msgid "Default"
+msgstr "ಡೀಫಾಲ್ಟ್"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "ಪ್ರೊಫೈಲ್ ಸೇರಿಸಿ"
+
+msgid "Delete profile {name}?"
+msgstr "ಪ್ರೊಫೈಲ್ {name} ಅನ್ನು ಅಳಿಸಬೇಕೆ?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "ಪ್ರೊಫೈಲ್ ಅನ್ನು ಅದರ ಕುಕೀಗಳು, ಲಾಗಿನ್‌ಗಳು, ಇತಿಹಾಸ ಮತ್ತು ಕ್ಯಾಶ್‌ನೊಂದಿಗೆ ಅಳಿಸುತ್ತದೆ. ಇದನ್ನು ಹಿಂತಿರುಗಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser ನಿಮ್ಮ ಡೀಫಾಲ್ಟ್ ಬ್ರೌಸರ್ ಅಲ್ಲ"
+
+msgid "Make Default"
+msgstr "ಡೀಫಾಲ್ಟ್ ಮಾಡಿ"
+
+msgid "Don't Ask Again"
+msgstr "ಮತ್ತೆ ಕೇಳಬೇಡಿ"
+
+msgid "Close"
+msgstr "ಮುಚ್ಚಿ"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "ZTBrowser ಅನ್ನು ಡೀಫಾಲ್ಟ್ ಬ್ರೌಸರ್ ಮಾಡಲು ಆಗಲಿಲ್ಲ: {error}"
+
+msgid "Default Browser"
+msgstr "ಡೀಫಾಲ್ಟ್ ಬ್ರೌಸರ್"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "ಇತರ ಪ್ರೋಗ್ರಾಂಗಳ ಲಿಂಕ್‌ಗಳನ್ನು ZTBrowser ತೆರೆಯುತ್ತದೆ"
+
+msgid "Links from other programs open in {browser}"
+msgstr "ಇತರ ಪ್ರೋಗ್ರಾಂಗಳ ಲಿಂಕ್‌ಗಳು {browser} ನಲ್ಲಿ ತೆರೆಯುತ್ತವೆ"
+
+msgid "Another browser opens links from other programs"
+msgstr "ಇತರ ಪ್ರೋಗ್ರಾಂಗಳ ಲಿಂಕ್‌ಗಳನ್ನು ಬೇರೆ ಬ್ರೌಸರ್ ತೆರೆಯುತ್ತದೆ"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿದ ZTBrowser ಮಾತ್ರ ಇತರ ಪ್ರೋಗ್ರಾಂಗಳ ಲಿಂಕ್‌ಗಳನ್ನು ತೆರೆಯಬಲ್ಲದು"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "ಯಾವ ಬ್ರೌಸರ್ ಲಿಂಕ್‌ಗಳನ್ನು ತೆರೆಯುತ್ತದೆ ಎಂದು ಡೆಸ್ಕ್‌ಟಾಪ್ ಹೇಳುವುದಿಲ್ಲ"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "ZTBrowser ಪ್ರಾರಂಭವಾದಾಗ ಕೇಳಿ"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "ಬೇರೆ ಬ್ರೌಸರ್ ಲಿಂಕ್‌ಗಳನ್ನು ತೆರೆಯುತ್ತಿರುವಾಗ ZTBrowser ಅನ್ನು ಡೀಫಾಲ್ಟ್ ಬ್ರೌಸರ್ ಮಾಡಲು ಸೂಚಿಸಿ"

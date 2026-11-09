@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Application
+Name=ZTBrowser
+GenericName=Web Browser
+GenericName[pl]=Przeglądarka WWW
+Comment=Browse the web with DuckDuckGo's open-source tracker protections
+Comment[pl]=Przeglądaj internet z otwartą ochroną przed śledzeniem DuckDuckGo
+Exec=ztbrowser %U
+Icon=io.github.ztbrowser.ZTBrowser
+Terminal=false
+StartupNotify=true
+StartupWMClass=ZTBrowser
+Categories=Network;WebBrowser;Qt;
+Keywords=web;browser;internet;privacy;tracker;duckduckgo;
+Keywords[pl]=www;przeglądarka;internet;prywatność;śledzenie;duckduckgo;
+MimeType=text/html;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
+Actions=new-window;
+
+[Desktop Action new-window]
+Name=New Window
+Name[pl]=Nowe okno
+Exec=ztbrowser

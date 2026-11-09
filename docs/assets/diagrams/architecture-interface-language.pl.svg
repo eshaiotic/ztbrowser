@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="520" viewBox="0 0 1500 520" font-family="DejaVu Sans, sans-serif">
 <rect width="100%" height="100%" fill="#fff"/>
 <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker></defs>
-<text x="40" y="46" font-size="24" font-weight="bold" fill="#111827">Jak InDuckGo wybiera i stosuje język interfejsu</text>
+<text x="40" y="46" font-size="24" font-weight="bold" fill="#111827">Jak ZTBrowser wybiera i stosuje język interfejsu</text>
 <rect x="40" y="110" width="224" height="190" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
 <text x="152.0" y="140" font-size="13" font-weight="bold" text-anchor="middle" fill="#111827">interface.json</text>
 <text x="152.0" y="168" font-size="11.5" text-anchor="middle" fill="#374151">Wybór użytkownika:</text>

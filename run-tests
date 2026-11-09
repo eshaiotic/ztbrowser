@@ -1,7 +1,7 @@
 #!/bin/sh
-# Runs every InDuckGo test with cargo-nextest and always writes the HTML test report to
+# Runs every ZTBrowser test with cargo-nextest and always writes the HTML test report to
 # tests/reports/test-report-YYYYMMDD-HHmm.html (run history in test-results/; both ignored by git).
-# With cargo-llvm-cov installed (pacman -S cargo-llvm-cov) the report also shows induckgo-core's coverage.
+# With cargo-llvm-cov installed (pacman -S cargo-llvm-cov) the report also shows ztbrowser-core's coverage.
 # Exits with the tests' status once the report is written. Outside CI the report opens in the browser.
 #
 # Usage: ./run-tests
@@ -29,8 +29,8 @@ if cargo llvm-cov --version >/dev/null 2>&1; then
     export LLVM_COV LLVM_PROFDATA
   fi
   cargo llvm-cov nextest --profile report $workspace \
-    --exclude-from-report induckgo --exclude-from-report induckgo-test-report \
-    --exclude-from-report induckgo-engine-qt --exclude-from-report induckgo-qt \
+    --exclude-from-report ztbrowser --exclude-from-report ztbrowser-test-report \
+    --exclude-from-report ztbrowser-engine-qt --exclude-from-report ztbrowser-qt \
     --json --summary-only --output-path "$coverage" || status=$?
 else
   echo "run-tests: cargo-llvm-cov is not installed, the report shows no coverage (pacman -S cargo-llvm-cov)" >&2
@@ -39,7 +39,7 @@ fi
 
 junit=$coverage_junit
 [ -f "$junit" ] || junit=$nextest_junit
-report=$(cargo run --quiet --locked -p induckgo-test-report -- --junit "$junit" --coverage "$coverage")
+report=$(cargo run --quiet --locked -p ztbrowser-test-report -- --junit "$junit" --coverage "$coverage")
 echo "$report"
 if [ -z "${CI:-}" ] && command -v xdg-open >/dev/null 2>&1; then
   xdg-open "${report#Raport HTML: }" >/dev/null 2>&1 &

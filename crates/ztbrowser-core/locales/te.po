@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: te\n"
+
+msgid "About ZTBrowser"
+msgstr "ZTBrowser గురించి"
+
+msgid "Access denied"
+msgstr "యాక్సెస్ నిరాకరించబడింది"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "మీరు {current}లో ఉన్నప్పుడు {requesting} తన కుక్కీలను, డేటాను ఉపయోగించడానికి అనుమతించాలా?"
+
+msgid "Allow {site} to know your location?"
+msgstr "మీ స్థానాన్ని {site} తెలుసుకోవడానికి అనుమతించాలా?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "మీ క్లిప్‌బోర్డ్‌ను {site} చదవడానికి అనుమతించాలా?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "{site} నోటిఫికేషన్‌లను చూపడానికి అనుమతించాలా?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "మీ కెమెరాను, మైక్రోఫోన్‌ను {site} ఉపయోగించడానికి అనుమతించాలా?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "మీ కెమెరాను {site} ఉపయోగించడానికి అనుమతించాలా?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "మీ మైక్రోఫోన్‌ను {site} ఉపయోగించడానికి అనుమతించాలా?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "మీ స్క్రీన్‌ను {site} ఉపయోగించడానికి అనుమతించాలా?"
+
+msgid "App data cleared"
+msgstr "యాప్ డేటా తొలగించబడింది"
+
+msgid "Appearance"
+msgstr "రూపురేఖలు"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "ZTBrowser తదుపరిసారి ప్రారంభమైనప్పుడు వర్తిస్తుంది"
+
+msgid "Asking for relay descriptors"
+msgstr "రిలే వివరణల కోసం అడుగుతోంది"
+
+msgid "Asking for the network status"
+msgstr "నెట్‌వర్క్ స్థితి కోసం అడుగుతోంది"
+
+msgid "Back"
+msgstr "వెనుకకు"
+
+msgid "Back and Forward"
+msgstr "వెనుకకు మరియు ముందుకు"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Tor బ్లాక్ చేయబడని చోట్ల ఉత్తమం."
+
+msgid "Bridges I provide"
+msgstr "నేను అందించే బ్రిడ్జ్‌లు"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "బ్రిడ్జ్‌లు అంటే Torను బ్లాక్ చేసే నెట్‌వర్క్‌ల కోసం జాబితాలో లేని Tor రిలేలు."
+
+msgid "Browsing data burned"
+msgstr "బ్రౌజింగ్ డేటా తొలగించబడింది"
+
+msgid "Burn Browsing Data"
+msgstr "బ్రౌజింగ్ డేటాను తొలగించు"
+
+msgid "Burn Browsing Data?"
+msgstr "బ్రౌజింగ్ డేటాను తొలగించాలా?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "ఈ ప్రొఫైల్ విండోలలో చిరునామా బార్ చుట్టూ చూపే బటన్‌లు."
+
+msgid "C_lear"
+msgstr "తొలగించు(_L)"
+
+msgid "Cannot Connect to Tor"
+msgstr "Torకు కనెక్ట్ కాలేకపోయింది"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "Tor కంట్రోల్ పోర్ట్‌ను చేరుకోలేకపోయాము: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "Tor కంట్రోల్ కుక్కీని చదవలేకపోయాము: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "Tor పాత కంట్రోల్ పోర్ట్ ఫైల్‌ను తీసివేయలేకపోయాము: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "డౌన్‌లోడ్‌ను సేవ్ చేయలేకపోయాము: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "Torను ప్రారంభించలేకపోయాము: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "Tor కాన్ఫిగరేషన్‌ను రాయలేకపోయాము: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Tor కంట్రోల్ పోర్ట్‌కు రాయలేకపోయాము: {error}"
+
+msgid "Certificate for {name}"
+msgstr "{name} కోసం సర్టిఫికెట్"
+
+msgid "Check the address for a typo."
+msgstr "చిరునామాలో అక్షర దోషం ఉందేమో చూడండి."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "చిరునామాను పరిశీలించండి, కోలన్ తర్వాత పోర్ట్ నంబర్ ఉంటే అది కూడా చూడండి."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "నెట్‌వర్క్ కేబుల్‌ను లేదా Wi-Fi కనెక్షన్‌ను పరిశీలించండి."
+
+msgid "Check your internet connection."
+msgstr "మీ ఇంటర్నెట్ కనెక్షన్‌ను పరిశీలించండి."
+
+msgid "Clear App Data…"
+msgstr "యాప్ డేటాను తొలగించు…"
+
+msgid "Clear Data of {name}?"
+msgstr "{name} డేటాను తొలగించాలా?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "అవసరం లేని ట్యాబ్‌లను లేదా యాప్‌లను మూసివేసి, ఆపై పేజీని మళ్లీ లోడ్ చేయండి."
+
+msgid "Close {name} before deleting it"
+msgstr "{name}ను తొలగించే ముందు దాన్ని మూసివేయండి"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "ఈ ప్రొఫైల్‌లోని అన్ని ట్యాబ్‌లను, విండోలను మూసివేసి, దాని కుక్కీలను, సైట్ డేటాను, కాష్‌ను, చరిత్రను తొలగిస్తుంది."
+
+msgid "Connect"
+msgstr "కనెక్ట్ చేయి"
+
+msgid "Connect directly"
+msgstr "నేరుగా కనెక్ట్ చేయి"
+
+msgid "Connected"
+msgstr "కనెక్ట్ అయింది"
+
+msgid "Connected to a relay directory server"
+msgstr "రిలే డైరెక్టరీ సర్వర్‌కు కనెక్ట్ అయింది"
+
+msgid "Connected to a relay to build circuits"
+msgstr "సర్క్యూట్‌లను నిర్మించడానికి రిలేకు కనెక్ట్ అయింది"
+
+msgid "Connected to pluggable transport"
+msgstr "pluggable transportకు కనెక్ట్ అయింది"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "సర్క్యూట్‌లను నిర్మించడానికి pluggable transportకు కనెక్ట్ అయింది"
+
+msgid "Connected to proxy"
+msgstr "ప్రాక్సీకి కనెక్ట్ అయింది"
+
+msgid "Connected to proxy to build circuits"
+msgstr "సర్క్యూట్‌లను నిర్మించడానికి ప్రాక్సీకి కనెక్ట్ అయింది"
+
+msgid "Connected to the Tor network"
+msgstr "Tor నెట్‌వర్క్‌కు కనెక్ట్ అయింది"
+
+msgid "Connecting to Tor"
+msgstr "Torకు కనెక్ట్ అవుతోంది"
+
+msgid "Connecting to a relay directory server"
+msgstr "రిలే డైరెక్టరీ సర్వర్‌కు కనెక్ట్ అవుతోంది"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "సర్క్యూట్‌లను నిర్మించడానికి రిలేకు కనెక్ట్ అవుతోంది"
+
+msgid "Connecting to pluggable transport"
+msgstr "pluggable transportకు కనెక్ట్ అవుతోంది"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "సర్క్యూట్‌లను నిర్మించడానికి pluggable transportకు కనెక్ట్ అవుతోంది"
+
+msgid "Connecting to proxy"
+msgstr "ప్రాక్సీకి కనెక్ట్ అవుతోంది"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "సర్క్యూట్‌లను నిర్మించడానికి ప్రాక్సీకి కనెక్ట్ అవుతోంది"
+
+msgid "Connection Settings…"
+msgstr "కనెక్షన్ సెట్టింగ్‌లు…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, గోప్యతా కాన్ఫిగరేషన్ మరియు TrackerRadarKit నియమ అల్గారిథమ్."
+
+msgid "Could not install the app: {error}"
+msgstr "యాప్‌ను ఇన్‌స్టాల్ చేయలేకపోయాము: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "అన్నింటినీ తీసివేయలేకపోయాము: {error}"
+
+msgid "Delete"
+msgstr "తొలగించు"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "ఈ ప్రొఫైల్ కుక్కీలను, సైట్ డేటాను, కాష్‌ను తొలగించు"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Tor Browser అంతర్నిర్మిత బ్రిడ్జ్‌లకు మారువేషంలో కనెక్షన్‌లు."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Tor Browser అంతర్నిర్మిత బ్రిడ్జ్‌లకు మారువేషంలో కనెక్షన్‌లు. {package} అవసరం."
+
+msgid "Download failed: {error}"
+msgstr "డౌన్‌లోడ్ విఫలమైంది: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "రన్ టైమ్‌లో DuckDuckGo నుండి డౌన్‌లోడ్ అవుతుంది; CC BY-NC-SA 4.0 లైసెన్స్ కింద ఉంది."
+
+msgid "Downloaded {name}"
+msgstr "{name} డౌన్‌లోడ్ అయింది"
+
+msgid "DuckDuckGo protections"
+msgstr "DuckDuckGo రక్షణలు"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "ప్రతి యాప్ తన సొంత విండోలో, ప్రక్రియలో, తన సొంత కుక్కీలు మరియు లాగిన్‌లతో నడుస్తుంది."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "ప్రతి ప్రొఫైల్ తన సొంత కుక్కీలను, లాగిన్‌లను, చరిత్రను, కాష్‌ను ఉంచుకుని, ప్రత్యేక ప్రక్రియగా నడుస్తుంది."
+
+msgid "Establishing a Tor circuit"
+msgstr "Tor సర్క్యూట్‌ను ఏర్పరుస్తోంది"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "ఎన్‌క్రిప్ట్ చేయబడిన డైరెక్టరీ కనెక్షన్‌ను ఏర్పరుస్తోంది"
+
+msgid "File not found"
+msgstr "ఫైల్ కనబడలేదు"
+
+msgid "Find in Page…"
+msgstr "పేజీలో కనుగొను…"
+
+msgid "Find in page"
+msgstr "పేజీలో కనుగొను"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "రిలే డైరెక్టరీ సర్వర్‌తో హ్యాండ్‌షేక్ పూర్తయింది"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "సర్క్యూట్‌లను నిర్మించడానికి రిలేతో హ్యాండ్‌షేక్ పూర్తయింది"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "రిలే డైరెక్టరీ సర్వర్‌తో హ్యాండ్‌షేక్ పూర్తి చేస్తోంది"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "సర్క్యూట్‌లను నిర్మించడానికి రిలేతో హ్యాండ్‌షేక్ పూర్తి చేస్తోంది"
+
+msgid "Forward"
+msgstr "ముందుకు"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "bridges.torproject.org నుండి, ఇ-మెయిల్ ద్వారా లేదా స్నేహితుని నుండి."
+
+msgid "Go to Home Page"
+msgstr "హోమ్ పేజీకి వెళ్ళు"
+
+msgid "Go to the previous or next page"
+msgstr "మునుపటి లేదా తదుపరి పేజీకి వెళ్ళు"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "సైట్ హోమ్ పేజీకి వెళ్లి, అక్కడి నుండి ఆ పేజీని వెతకండి."
+
+msgid "How to Reach Tor"
+msgstr "Torను చేరుకునే విధానం"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "మళ్లీ లోడ్ చేసిన తర్వాత కూడా క్రాష్ అయితే, పేజీలోనే లోపం ఉండవచ్చు."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "చిరునామా సరైనదైతే, ఆ సైట్ ఇకపై ఉండకపోవచ్చు."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "ఈ సైట్‌లో మీకు ఖాతా ఉంటే, సైన్ ఇన్ చేసి మళ్లీ ప్రయత్నించండి."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "మీరు VPN లేదా మీ సొంత DNS సర్వర్ ఉపయోగిస్తుంటే, అది పనిచేస్తోందో లేదో పరిశీలించండి."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "మీరు VPN, ఫైర్‌వాల్ లేదా ప్రాక్సీ ఉపయోగిస్తుంటే, అది సైట్‌ను బ్లాక్ చేయడం లేదని పరిశీలించండి."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "ZTBrowser Guard ఫిల్టర్ జాబితాలు"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "ఈ కంప్యూటర్ నెట్‌వర్క్‌కు కనెక్ట్ కాలేదు కాబట్టి ZTBrowser {host}ను తెరవలేకపోతోంది."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "ZTBrowser {host} వద్ద సర్వర్‌ను కనుగొనలేకపోయింది."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "ZTBrowser ఈ పోర్ట్‌లో {host}కు కనెక్ట్ కాదు."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "ZTBrowser సొంత Tor కనెక్ట్ అవుతోంది. అది కనెక్ట్ అయ్యే వరకు ఈ విండో నుండి ఏదీ బయటకు వెళ్లదు."
+
+msgid "Install Site as App"
+msgstr "సైట్‌ను యాప్‌గా ఇన్‌స్టాల్ చేయి"
+
+msgid "Install Site as App…"
+msgstr "సైట్‌ను యాప్‌గా ఇన్‌స్టాల్ చేయి…"
+
+msgid "Install as App"
+msgstr "యాప్‌గా ఇన్‌స్టాల్ చేయి"
+
+msgid "Installed Apps"
+msgstr "ఇన్‌స్టాల్ చేసిన యాప్‌లు"
+
+msgid "Installed Apps…"
+msgstr "ఇన్‌స్టాల్ చేసిన యాప్‌లు…"
+
+msgid "Installed {name}"
+msgstr "{name} ఇన్‌స్టాల్ అయింది"
+
+msgid "Interface"
+msgstr "ఇంటర్‌ఫేస్"
+
+msgid "Issued by {name}"
+msgstr "{name} జారీ చేసింది"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "దీన్ని తరలించి ఉండవచ్చు, పేరు మార్చి ఉండవచ్చు లేదా తొలగించి ఉండవచ్చు."
+
+msgid "Language"
+msgstr "భాష"
+
+msgid "Load Insecure Page"
+msgstr "సురక్షితం కాని పేజీని లోడ్ చేయి"
+
+msgid "Load the page again, or stop loading it"
+msgstr "పేజీని మళ్లీ లోడ్ చేయండి, లేదా లోడ్ చేయడం ఆపండి"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "సర్క్యూట్‌లను నిర్మించడానికి తగినంత డైరెక్టరీ సమాచారం లోడ్ అయింది"
+
+msgid "Loading authority certificates"
+msgstr "అథారిటీ సర్టిఫికెట్‌లను లోడ్ చేస్తోంది"
+
+msgid "Loading relay descriptors"
+msgstr "రిలే వివరణలను లోడ్ చేస్తోంది"
+
+msgid "Loading the network status"
+msgstr "నెట్‌వర్క్ స్థితిని లోడ్ చేస్తోంది"
+
+msgid "Main Menu"
+msgstr "ప్రధాన మెనూ"
+
+msgid "Manage Profiles…"
+msgstr "ప్రొఫైల్‌లను నిర్వహించు…"
+
+msgid "New Identity"
+msgstr "కొత్త గుర్తింపు"
+
+msgid "New Identity?"
+msgstr "కొత్త గుర్తింపు కావాలా?"
+
+msgid "New Tab"
+msgstr "కొత్త ట్యాబ్"
+
+msgid "New Tor Window"
+msgstr "కొత్త Tor విండో"
+
+msgid "New Window"
+msgstr "కొత్త విండో"
+
+msgid "New identity"
+msgstr "కొత్త గుర్తింపు"
+
+msgid "New profile name"
+msgstr "కొత్త ప్రొఫైల్ పేరు"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "ఒక్కో లైనుకు ఒక బ్రిడ్జ్, ఉదాహరణకు: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "వెబ్ పేజీలను మాత్రమే యాప్‌లుగా ఇన్‌స్టాల్ చేయవచ్చు"
+
+msgid "Open"
+msgstr "తెరువు"
+
+msgid "Open Page in Browser"
+msgstr "పేజీని బ్రౌజర్‌లో తెరువు"
+
+msgid "Open a new tab"
+msgstr "కొత్త ట్యాబ్‌ను తెరువు"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "ట్రాఫిక్ అంతా Tor ద్వారా మాత్రమే వెళ్లే విండోను తెరువు"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "ఇతర అప్లికేషన్‌లు Tor విండో నుండి తెరుచుకోవు: అవి Tor బయట కనెక్ట్ అవుతాయి."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Tor విండో కనెక్ట్ అయ్యే వరకు పేజీలు తెరవబడవు."
+
+msgid "Paste at least one bridge."
+msgstr "కనీసం ఒక బ్రిడ్జ్‌ను అతికించండి."
+
+msgid "Preferences"
+msgstr "ప్రాధాన్యతలు"
+
+msgid "Preferences…"
+msgstr "ప్రాధాన్యతలు…"
+
+msgid "Profiles"
+msgstr "ప్రొఫైల్‌లు"
+
+msgid "Protect This Site"
+msgstr "ఈ సైట్‌ను రక్షించు"
+
+msgid "Protection Shield"
+msgstr "రక్షణ కవచం"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "Tor కంట్రోల్ పోర్ట్‌ను చదవడం విఫలమైంది: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "మీరు VPN ఉపయోగిస్తుంటే, దాన్ని మళ్లీ కనెక్ట్ చేయండి."
+
+msgid "Reload"
+msgstr "మళ్లీ లోడ్ చేయి"
+
+msgid "Reload Page"
+msgstr "పేజీని మళ్లీ లోడ్ చేయి"
+
+msgid "Reset Zoom"
+msgstr "జూమ్‌ను రీసెట్ చేయి"
+
+msgid "Search Engine"
+msgstr "శోధన ఇంజిన్"
+
+msgid "Search {engine}"
+msgstr "{engine}లో శోధించు"
+
+msgid "Search {engine} or enter address"
+msgstr "{engine}లో శోధించండి లేదా చిరునామాను నమోదు చేయండి"
+
+msgid "Show in Folder"
+msgstr "ఫోల్డర్‌లో చూపు"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "మిమ్మల్ని సైన్ అవుట్ చేసి, ఈ యాప్ కుక్కీలను, సైట్ డేటాను, కాష్‌ను తొలగిస్తుంది. మరేదీ ప్రభావితం కాదు."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "కొంత డేటాను తొలగించలేకపోయాము: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "{host}ను లోడ్ చేస్తున్నప్పుడు ఏదో తప్పు జరిగింది."
+
+msgid "Starting"
+msgstr "ప్రారంభమవుతోంది"
+
+msgid "Starting Tor…"
+msgstr "Torను ప్రారంభిస్తోంది…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "ఈ సైట్‌కు ట్రాకర్ రక్షణను ఆఫ్ లేదా ఆన్ చేయండి"
+
+msgid "System default ({language})"
+msgstr "సిస్టమ్ డిఫాల్ట్ ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "సర్టిఫికెట్‌ను జారీ చేసిన అథారిటీ దాన్ని రద్దు చేసింది."
+
+msgid "The bridge line has no address: {line}"
+msgstr "బ్రిడ్జ్ లైన్‌లో చిరునామా లేదు: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "సర్టిఫికెట్‌ను ధృవీకరించలేకపోయాము."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "సర్టిఫికెట్ ఇకపై సురక్షితం కాని అల్గారిథమ్‌తో సంతకం చేయబడింది."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "సర్టిఫికెట్ ఇంకా చెల్లుబాటు కాదు. ఈ కంప్యూటర్ తేదీ, సమయం సరిగ్గా ఉన్నాయో లేదో పరిశీలించండి."
+
+msgid "The certificate was issued for a different site."
+msgstr "సర్టిఫికెట్ వేరే సైట్ కోసం జారీ చేయబడింది."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "ఈ కంప్యూటర్ నమ్మే అథారిటీ ఈ సర్టిఫికెట్‌ను జారీ చేయలేదు."
+
+msgid "The connection to {host} was interrupted."
+msgstr "{host}కు కనెక్షన్ అంతరాయం కలిగింది."
+
+msgid "The icon at the end of the address bar"
+msgstr "చిరునామా బార్ చివరన ఉన్న చిహ్నం"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "ZTBrowser మళ్లీ ప్రారంభమైనప్పుడు భాష మారుతుంది"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "ప్రతి ప్రొఫైల్‌లో, ప్రతి వెబ్ యాప్‌లో మెనూలు, డైలాగ్‌లు మరియు సందేశాల భాష."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "సమస్య సైట్ వైపు ఉంది. కొన్ని నిమిషాల తర్వాత మళ్లీ ప్రయత్నించండి."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "నిర్వహణ కోసం సైట్ నిలిపివేయబడి ఉండవచ్చు. కొన్ని నిమిషాల తర్వాత మళ్లీ ప్రయత్నించండి."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "సైట్ ఓవర్‌లోడ్ అయి ఉండవచ్చు. కొన్ని నిమిషాల తర్వాత మళ్లీ ప్రయత్నించండి."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "{transport} బ్రిడ్జ్‌లకు ఇన్‌స్టాల్ చేయని ప్రోగ్రామ్ అవసరం; {package}ను ఇన్‌స్టాల్ చేయండి"
+
+msgid "There is no file at {path}."
+msgstr "{path} వద్ద ఫైల్ లేదు."
+
+msgid "This address is blocked"
+msgstr "ఈ చిరునామా బ్లాక్ చేయబడింది"
+
+msgid "This connection isn’t private"
+msgstr "ఈ కనెక్షన్ ప్రైవేట్ కాదు"
+
+msgid "This page"
+msgstr "ఈ పేజీ"
+
+msgid "This page can’t be found"
+msgstr "ఈ పేజీ కనబడలేదు"
+
+msgid "This page can’t be loaded"
+msgstr "ఈ పేజీని లోడ్ చేయలేకపోయాము"
+
+msgid "This page crashed"
+msgstr "ఈ పేజీ క్రాష్ అయింది"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "ఈ పేజీ వేరే సైట్‌లో ఉంది, {name}లో భాగం కాదు"
+
+msgid "This page isn’t working"
+msgstr "ఈ పేజీ పనిచేయడం లేదు"
+
+msgid "This page ran out of memory"
+msgstr "ఈ పేజీకి మెమరీ అయిపోయింది"
+
+msgid "This site can’t be found"
+msgstr "ఈ సైట్ కనబడలేదు"
+
+msgid "This site can’t be reached"
+msgstr "ఈ సైట్‌ను చేరుకోలేకపోయాము"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "వాలంటీర్ల బ్రౌజర్‌ల ద్వారా; సెన్సార్ చేయబడిన చాలా నెట్‌వర్క్‌లలో పనిచేస్తుంది."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "వాలంటీర్ల బ్రౌజర్‌ల ద్వారా; సెన్సార్ చేయబడిన చాలా నెట్‌వర్క్‌లలో పనిచేస్తుంది. {package} అవసరం."
+
+msgid "Toolbar Buttons"
+msgstr "టూల్‌బార్ బటన్‌లు"
+
+msgid "Tor Connection"
+msgstr "Tor కనెక్షన్"
+
+msgid "Tor Connection…"
+msgstr "Tor కనెక్షన్…"
+
+msgid "Tor Window"
+msgstr "Tor విండో"
+
+msgid "Tor cannot use the path {path}"
+msgstr "Tor {path} మార్గాన్ని ఉపయోగించలేదు"
+
+msgid "Tor closed its control port"
+msgstr "Tor తన కంట్రోల్ పోర్ట్‌ను మూసివేసింది"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "Tor సర్క్యూట్‌లను మార్చలేకపోయింది: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "Tor తన కంట్రోల్ పోర్ట్‌ను తెరవలేదు"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "Tor ఇన్‌స్టాల్ చేయబడలేదు. మీ డిస్ట్రిబ్యూషన్ tor ప్యాకేజీని ఇన్‌స్టాల్ చేయండి; Tor విండో తన సొంత Torను ప్రారంభిస్తుంది, Tor సర్వీస్ నడుస్తూ ఉండనవసరం లేదు."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "Tor స్థానిక SOCKS పోర్ట్‌ను తెరవలేదు"
+
+msgid "Tor refused: {reason}"
+msgstr "Tor తిరస్కరించింది: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "Tor ఒక సమస్యను నివేదించింది"
+
+msgid "Tor stopped."
+msgstr "Tor ఆగిపోయింది."
+
+msgid "Tor's control cookie is damaged"
+msgstr "Tor కంట్రోల్ కుక్కీ పాడైపోయింది"
+
+msgid "Tracker Data Set"
+msgstr "ట్రాకర్ డేటా సెట్"
+
+msgid "Tracker protection on this site"
+msgstr "ఈ సైట్‌లో ట్రాకర్ రక్షణ"
+
+msgid "Try Again"
+msgstr "మళ్లీ ప్రయత్నించు"
+
+msgid "Try again in a few minutes."
+msgstr "కొన్ని నిమిషాల తర్వాత మళ్లీ ప్రయత్నించండి."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "ఎయిర్‌ప్లేన్ మోడ్ ఆన్‌లో ఉంటే, దాన్ని ఆఫ్ చేయండి."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "ZTBrowser Guard ఫిల్టర్ జాబితాలను WebKit నియమాలుగా మారుస్తుంది. మూలం: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "అన్‌ఇన్‌స్టాల్ చేయి"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "తెలియని బ్రిడ్జ్ ట్రాన్స్‌పోర్ట్: {name}"
+
+msgid "Valid until {date}"
+msgstr "{date} వరకు చెల్లుతుంది"
+
+msgid "Your Bridges"
+msgstr "మీ బ్రిడ్జ్‌లు"
+
+msgid "You’re offline"
+msgstr "మీరు ఆఫ్‌లైన్‌లో ఉన్నారు"
+
+msgid "Zoom In"
+msgstr "జూమ్ ఇన్"
+
+msgid "Zoom Out"
+msgstr "జూమ్ అవుట్"
+
+msgid "_Allow"
+msgstr "అనుమతించు(_A)"
+
+msgid "_Burn"
+msgstr "తొలగించు(_B)"
+
+msgid "_Cancel"
+msgstr "రద్దు చేయి(_C)"
+
+msgid "_Deny"
+msgstr "తిరస్కరించు(_D)"
+
+msgid "_Install"
+msgstr "ఇన్‌స్టాల్ చేయి(_I)"
+
+msgid "_New Identity"
+msgstr "కొత్త గుర్తింపు(_N)"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) లేదా AUR నుండి obfs4proxy (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) లేదా AUR నుండి snowflake-pt-client (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "{host} ప్రస్తుతం ఈ అభ్యర్థనను నిర్వహించలేకపోతోంది."
+
+msgid "{host} couldn’t answer this request."
+msgstr "{host} ఈ అభ్యర్థనకు సమాధానం ఇవ్వలేకపోయింది."
+
+msgid "{host} does not offer a secure connection"
+msgstr "{host} సురక్షిత కనెక్షన్‌ను అందించడం లేదు"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "ఈ పేజీని చూడటానికి {host} మిమ్మల్ని అనుమతించడం లేదు."
+
+msgid "{host} has no page at this address."
+msgstr "ఈ చిరునామా వద్ద {host}లో పేజీ లేదు."
+
+msgid "{host} refused the connection."
+msgstr "{host} కనెక్షన్‌ను తిరస్కరించింది."
+
+msgid "{host} took too long to respond."
+msgstr "{host} స్పందించడానికి చాలా సమయం తీసుకుంది."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "ఒక పేజీ ఉపయోగించగలిగిన దానికంటే ఎక్కువ మెమరీని {host} ఉపయోగించింది, కాబట్టి ZTBrowser దాన్ని ఆపివేసింది."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "{host} తన సొంత విండోలో తెరుచుకుంటుంది; దాని కుక్కీలు, లాగిన్‌లు బ్రౌజర్ నుండి మరియు ఇతర యాప్‌లన్నింటి నుండి వేరుగా ఉంచబడతాయి."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — ZTBrowser వెబ్ యాప్"
+
+msgid "{text} is not a bridge argument"
+msgstr "{text} బ్రిడ్జ్ ఆర్గ్యుమెంట్ కాదు"
+
+msgid "{text} is not an IP address and port"
+msgstr "{text} IP చిరునామా మరియు పోర్ట్ కాదు"
+
+msgid "{url} answered {status}"
+msgstr "{url} {status} అని సమాధానమిచ్చింది"
+
+msgid "{url} did not return the expected document"
+msgstr "{url} ఆశించిన డాక్యుమెంట్‌ను తిరిగి ఇవ్వలేదు"
+
+msgid "{url} is larger than allowed"
+msgstr "{url} అనుమతించిన దానికంటే పెద్దది"
+
+msgid "{url} is not a valid address"
+msgstr "{url} చెల్లుబాటు అయ్యే చిరునామా కాదు"
+
+msgid "© their maintainers"
+msgstr "© వాటి నిర్వాహకులు"
+
+msgid "Ask Where to Save Each File"
+msgstr "ప్రతి ఫైల్‌ను ఎక్కడ సేవ్ చేయాలో అడగండి"
+
+msgid "Choose Folder"
+msgstr "ఫోల్డర్‌ను ఎంచుకోండి"
+
+msgid "Download Folder"
+msgstr "డౌన్‌లోడ్ ఫోల్డర్"
+
+msgid "Download failed"
+msgstr "డౌన్‌లోడ్ విఫలమైంది"
+
+msgid "Downloading…"
+msgstr "డౌన్‌లోడ్ అవుతోంది…"
+
+msgid "Downloading… {percent}%"
+msgstr "డౌన్‌లోడ్ అవుతోంది… {percent}%"
+
+msgid "Downloads"
+msgstr "డౌన్‌లోడ్‌లు"
+
+msgid "Go to Download Folder"
+msgstr "డౌన్‌లోడ్ ఫోల్డర్‌కు వెళ్లండి"
+
+msgid "No downloads yet"
+msgstr "ఇంకా డౌన్‌లోడ్‌లు లేవు"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "లేకపోతే ఫైల్‌లు నేరుగా డౌన్‌లోడ్ ఫోల్డర్‌కు వెళ్తాయి"
+
+msgid "Save File"
+msgstr "ఫైల్‌ను సేవ్ చేయండి"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "తాజా ఐదు డౌన్‌లోడ్‌లు మరియు డౌన్‌లోడ్ ఫోల్డర్"
+
+msgid "_Save"
+msgstr "సేవ్(_S)"
+
+msgid "_Select"
+msgstr "ఎంచుకోండి(_C)"
+
+msgid "Show All Downloads"
+msgstr "అన్ని డౌన్‌లోడ్‌లను చూపు"
+
+msgid "Clear List"
+msgstr "జాబితాను క్లియర్ చేయి"
+
+msgid "Remove from List"
+msgstr "జాబితా నుండి తీసివేయి"
+
+msgid "Clear History"
+msgstr "చరిత్రను క్లియర్ చేయి"
+
+msgid "Search Downloads"
+msgstr "డౌన్‌లోడ్‌లను శోధించు"
+
+msgid "File Moved or Deleted"
+msgstr "ఫైల్ తరలించబడింది లేదా తొలగించబడింది"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "మౌస్ వీల్ ప్రతి అడుగును యానిమేట్ చేస్తుంది. ఇప్పటికే తెరిచి ఉన్న పేజీలను మళ్లీ లోడ్ చేయాలి."
+
+msgid "Scrolling"
+msgstr "స్క్రోలింగ్"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "మౌస్ వీల్‌తో సున్నితమైన స్క్రోలింగ్"
+
+msgid "Details"
+msgstr "Details"
+
+msgid "Legal"
+msgstr "Legal"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "This application comes with absolutely no warranty. See the {license} for details."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU జనరల్ పబ్లిక్ లైసెన్స్, వర్షన్ 3 లేదా తరువాతది"
+
+msgid "Apache License, Version 2.0"
+msgstr "Apache License, Version 2.0"
+
+msgid "Move to New Window"
+msgstr "కొత్త విండోకు తరలించండి"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Mozilla Public License 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "BSD 3-Clause License"
+
+msgid "Wide Address Bar"
+msgstr "వెడల్పైన చిరునామా బార్"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "చిరునామా బార్ టూల్‌బార్‌లోని మొత్తం స్థలాన్ని నింపుతుంది; ఆఫ్ చేస్తే అది చిన్నగా, మధ్యలో ఉంటుంది"
+
+msgid "No apps installed yet"
+msgstr "ఇంకా ఏ యాప్‌లు ఇన్‌స్టాల్ చేయలేదు"
+
+msgid "Uninstall {name}?"
+msgstr "{name}ని అన్‌ఇన్‌స్టాల్ చేయాలా?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "యాప్‌ను దాని కుకీలు, లాగిన్‌లు మరియు డేటాతో పాటు తొలగిస్తుంది. దీన్ని రద్దు చేయలేరు."
+
+msgid "Tab Position"
+msgstr "ట్యాబ్‌ల స్థానం"
+
+msgid "Top"
+msgstr "పైన"
+
+msgid "Bottom"
+msgstr "కింద"
+
+msgid "Left"
+msgstr "ఎడమ"
+
+msgid "Right"
+msgstr "కుడి"
+
+msgid "Window Buttons"
+msgstr "విండో బటన్‌లు"
+
+msgid "Default"
+msgstr "డిఫాల్ట్"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "ప్రొఫైల్‌ను జోడించండి"
+
+msgid "Delete profile {name}?"
+msgstr "ప్రొఫైల్ {name}ను తొలగించాలా?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "ప్రొఫైల్‌ను దాని కుకీలు, లాగిన్‌లు, చరిత్ర మరియు కాష్‌తో పాటు తొలగిస్తుంది. దీన్ని రద్దు చేయలేరు."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "ZTBrowser మీ డిఫాల్ట్ బ్రౌజర్ కాదు"
+
+msgid "Make Default"
+msgstr "డిఫాల్ట్‌గా చేయి"
+
+msgid "Don't Ask Again"
+msgstr "మళ్లీ అడగవద్దు"
+
+msgid "Close"
+msgstr "మూసివేయి"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "ZTBrowser‌ను డిఫాల్ట్ బ్రౌజర్‌గా చేయలేకపోయాము: {error}"
+
+msgid "Default Browser"
+msgstr "డిఫాల్ట్ బ్రౌజర్"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "ఇతర ప్రోగ్రామ్‌ల లింక్‌లను ZTBrowser తెరుస్తుంది"
+
+msgid "Links from other programs open in {browser}"
+msgstr "ఇతర ప్రోగ్రామ్‌ల లింక్‌లు {browser}లో తెరుచుకుంటాయి"
+
+msgid "Another browser opens links from other programs"
+msgstr "ఇతర ప్రోగ్రామ్‌ల లింక్‌లను వేరే బ్రౌజర్ తెరుస్తుంది"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "ఇన్‌స్టాల్ చేసిన ZTBrowser మాత్రమే ఇతర ప్రోగ్రామ్‌ల లింక్‌లను తెరవగలదు"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "లింక్‌లను ఏ బ్రౌజర్ తెరుస్తుందో డెస్క్‌టాప్ చెప్పడం లేదు"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "ZTBrowser ప్రారంభమైనప్పుడు అడుగు"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "వేరే బ్రౌజర్ లింక్‌లను తెరుస్తున్నప్పుడు ZTBrowser‌ను డిఫాల్ట్ బ్రౌజర్‌గా చేయమని సూచించు"

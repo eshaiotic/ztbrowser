@@ -1,12 +1,12 @@
-# Analiza wydajności: gdzie InDuckGo traci czas i co zmienić
+# Analiza wydajności: gdzie ZTBrowser traci czas i co zmienić
 
-Zmierzone 4 listopada 2026 (09:00–10:40 CET) na jednej maszynie z Linuksem, dla InDuckGo 1.1.0. Ten dokument to
+Zmierzone 4 listopada 2026 (09:00–10:40 CET) na jednej maszynie z Linuksem, dla ZTBrowsera 1.1.0. Ten dokument to
 analiza i lista propozycji. **W kodzie nic nie zmieniono**; przy każdej propozycji jest opisane, jak sprawdzić jej
 efekt, zanim zostanie przyjęta.
 
 ## 1. Na co odpowiada ten raport
 
-Cel postawiony InDuckGo: ma sprawiać wrażenie co najmniej tak szybkiego jak przeglądarka na macOS. Strony
+Cel postawiony ZTBrowserowi: ma sprawiać wrażenie co najmniej tak szybkiego jak przeglądarka na macOS. Strony
 pojawiają się szybko, a samo okno (karty, menu, przewijanie, zmiana rozmiaru) nigdy nie szarpie. Z tego wynikają
 trzy pytania.
 
@@ -14,7 +14,7 @@ trzy pytania.
    (GTK z Qt) na tym samym kompozytorze KDE.
 2. **Czy renderowanie stron jest wolne i czy korzysta z karty graficznej tak, jak powinno?** Pytanie o pamięć
    wideo (VRAM), pamięć systemową (RAM) i magistralę PCI Express ma odpowiedź w §4.3 i §4.5.
-3. **Jaki narzut InDuckGo dokłada ponad WebKit** (listy filtrów, ochrony, kod w Ruście)?
+3. **Jaki narzut ZTBrowser dokłada ponad WebKit** (listy filtrów, ochrony, kod w Ruście)?
 
 Krótka odpowiedź jest w §5, propozycje uszeregowane według zysku w §6. To, czego nie dało się zmierzyć, i czego
 liczby nie dowodzą, jest w §7.
@@ -23,7 +23,7 @@ liczby nie dowodzą, jest w §7.
 
 | Termin | Znaczenie |
 |---|---|
-| GTK 4, libadwaita | Toolkit, z którego zbudowane jest okno InDuckGo. WebKitGTK, jedyny port WebKita na Linuksa, go wymaga, więc nie da się go wymienić bez wymiany silnika (patrz przegląd architektury). |
+| GTK 4, libadwaita | Toolkit, z którego zbudowane jest okno ZTBrowsera. WebKitGTK, jedyny port WebKita na Linuksa, go wymaga, więc nie da się go wymienić bez wymiany silnika (patrz przegląd architektury). |
 | Qt, Qt Quick, Qt Widgets | Toolkit KDE. Tu użyty tylko jako miara: jak szybko może pojawić się trywialne okno na tym pulpicie? |
 | Kompozytor (KWin) | Program, który układa okna wszystkich aplikacji na ekranie. W KDE to KWin. |
 | Wayland | Protokół między aplikacjami a kompozytorem. Okno jest „narysowane”, gdy aplikacja wyśle kompozytorowi pierwszy bufor. |
@@ -53,7 +53,7 @@ Uruchamiano program i brano czas jego pierwszego `wl_surface.attach` z niepustym
 
 **Czas do strony.** Malutki lokalny serwer WWW serwował stronę, która po dwóch pierwszych klatkach animacji po
 zdarzeniu `load` zgłasza się z powrotem. Czas od uruchomienia przeglądarki do tego zgłoszenia to czas do strony.
-Tę samą stronę i metodę zastosowano dla InDuckGo, Brave i gołego okna WebKitGTK (`WebKit.WebView`, bez ochron).
+Tę samą stronę i metodę zastosowano dla ZTBrowsera, Brave i gołego okna WebKitGTK (`WebKit.WebView`, bez ochron).
 
 **Koszt animacji.** Strona animująca element na całe okno przez `requestAnimationFrame` przez sześć sekund;
 strona liczy klatki, a czas procesora wszystkich procesów przeglądarki jest czytany z `/proc`. Uruchamiane
@@ -78,8 +78,8 @@ Binarka do profilowania była zbudowana profilem release plus symbole (ta sama o
 
 | Program | Czas do pierwszego okna | Czas do strony | Pamięć w spoczynku (PSS) |
 |---|---|---|---|
-| InDuckGo, nowa karta (ustawienia domyślne) | 380–660 ms | 630–1060 ms | 656 MB, 3 procesy + pomocnicze piaskownicy |
-| InDuckGo, strona lokalna | | | 475 MB |
+| ZTBrowser, nowa karta (ustawienia domyślne) | 380–660 ms | 630–1060 ms | 656 MB, 3 procesy + pomocnicze piaskownicy |
+| ZTBrowser, strona lokalna | | | 475 MB |
 | Gołe okno WebKitGTK (Python, `about:blank`) | 950 ms (z uruchomieniem Pythona) | 540–920 ms | 341 MB |
 | Brave, nowy profil | 405–950 ms | 330–555 ms | 385 MB (strona lokalna) |
 
@@ -88,7 +88,7 @@ Dwa fakty ważą więcej niż same liczby.
 - **Proces strony startuje w tej samej chwili, w której pojawia się pierwsze okno, a nie wcześniej.** Na osi
   czasu procesów `WebKitWebProcess` i jego piaskownica (`bwrap`, `xdg-dbus-proxy`) powstają 25–40 ms po pierwszej
   klatce. Czas od okna do strony (ok. 200–250 ms) to w większości start tego procesu.
-- **Własny narzut InDuckGo ponad gołe okno WebKit to ok. 100–200 ms do strony i ok. 90 MB pamięci** (475 MB
+- **Własny narzut ZTBrowsera ponad gołe okno WebKit to ok. 100–200 ms do strony i ok. 90 MB pamięci** (475 MB
   wobec 385 MB Brave na tej samej stronie; proces główny trzyma ok. 160 MB pamięci prywatnej wobec ok. 90 MB
   w gołym oknie). Ochrony (skrypty content-scope, skompilowane listy reguł, dane o trackerach) tłumaczą to
   wiarygodnie, ale nie rozbito tego na funkcje: patrz §7.
@@ -100,10 +100,10 @@ Dwa fakty ważą więcej niż same liczby.
 | Qt Widgets (KCalc) | 80–150 ms |
 | Qt Quick (puste okno) | 176–275 ms |
 | GTK 4 + libadwaita (program w C, puste okno) | 319–472 ms (mediana 325) |
-| InDuckGo | 378–397 ms (ta sama seria, renderer domyślny) |
+| ZTBrowser | 378–397 ms (ta sama seria, renderer domyślny) |
 
 GTK 4 pokazuje pierwsze okno na tej maszynie o ok. 100–200 ms wolniej niż Qt i nie robi tego aplikacja: program
-w C z jedną etykietą i paskiem nagłówka potrzebuje tych samych 325 ms. InDuckGo dokłada do tej podłogi tylko ok.
+w C z jedną etykietą i paskiem nagłówka potrzebuje tych samych 325 ms. ZTBrowser dokłada do tej podłogi tylko ok.
 65 ms przy domyślnym rendererze. Toolkit kosztuje więc stałą, skromną kwotę, której program nie usunie, a pytanie
 sprowadza się do jego konfiguracji (§4.3). Qt wystartowałby szybciej, ale o szybkości przeglądarki nie decyduje
 toolkit interfejsu; a Slint w ogóle nie potrafi osadzić WebKitGTK.
@@ -142,23 +142,23 @@ Speedometer 3.1, ta sama maszyna, ten sam kompozytor:
 
 | Silnik | Uruchomienia | Średnia |
 |---|---|---|
-| WebKitGTK 2.54.2 (gołe okno, więc bez ochron InDuckGo) | 14,7; 17,5; 14,1 | 15,4 |
+| WebKitGTK 2.54.2 (gołe okno, więc bez ochron ZTBrowsera) | 14,7; 17,5; 14,1 | 15,4 |
 | Brave 1.98.63 (Chromium 156) | 21,8; 19,5 | 20,7 |
 
 WebKit na Linuksie jest w tym benchmarku o ok. 25 % wolniejszy od Chromium. Ta różnica leży w silniku, którego
-InDuckGo nie kontroluje; może tylko podążać za aktualizacjami WebKitGTK w dystrybucji (§6, propozycja 6).
+ZTBrowser nie kontroluje; może tylko podążać za aktualizacjami WebKitGTK w dystrybucji (§6, propozycja 6).
 
 ### 4.5 Pamięć
 
 | Proces | PSS, nowa karta | PSS, strona lokalna |
 |---|---|---|
-| `induckgo` (interfejs, ochrony) | 458 MB przy pierwszym uruchomieniu, 302 MB po ustabilizowaniu | 268 MB |
+| `ztbrowser` (interfejs, ochrony) | 458 MB przy pierwszym uruchomieniu, 302 MB po ustabilizowaniu | 268 MB |
 | `WebKitWebProcess` | 296–315 MB | 172 MB |
 | `WebKitNetworkProcess` | 45 MB | 35 MB |
 | Razem | 656 MB (po ustabilizowaniu) | 475 MB |
 
 Nowa karta ładuje prawdziwą stronę wyszukiwarki, dlatego jej proces strony jest większy niż dla trywialnej strony
-lokalnej. Pamięć nie jest tym, przez co InDuckGo sprawia wrażenie wolnego: 125 GB RAM leży bezczynnie, a wynik
+lokalnej. Pamięć nie jest tym, przez co ZTBrowser sprawia wrażenie wolnego: 125 GB RAM leży bezczynnie, a wynik
 mieści się w granicach 25 % wyniku Brave na tej samej stronie.
 
 ### 4.6 Ciężka prawdziwa strona: https://www.bpxglobal.com/ (znaleziona przyczyna)
@@ -175,7 +175,7 @@ prywatnym kompozytorze.
 | Brave 1.98 | 59,5 | 16,7 ms | 58–67 % |
 | WebKitGTK, domyślny renderer GTK (Vulkan) | 38–48 | 35–50 ms | **181–219 %** |
 | WebKitGTK, renderer OpenGL (`gl`/`ngl`) | 49–60 | 19–35 ms | 56–66 % |
-| InDuckGo w spoczynku na stronie (wideo gra) | | | 30–40 % (goły WebKitGTK: 50–61 %) |
+| ZTBrowser w spoczynku na stronie (wideo gra) | | | 30–40 % (goły WebKitGTK: 50–61 %) |
 
 **Przyczyna.** `GDK_DEBUG=dmabuf` pokazuje dla każdej klatki (828–955 wierszy w osiem sekund): `Vulkan driver does not
 support format XR24:0x0300000000e08014`, a po nim `Used GskGLRenderer for downloading 1600x900 dmabuf`.
@@ -190,10 +190,10 @@ myszy).
 
 **Nie jest przyczyną.** Wideo w tle (przebiegi z nim i bez niego wahają się tak samo, a maszyna dekoduje H.264 na
 karcie: `nvh264dec` i `vah264dec` mają wyższy priorytet niż `avdec_h264`); dekodowanie programowe (wyłączenie
-dekoderów sprzętowych niczego wymiernie nie zmieniło); ochrony InDuckGo (w spoczynku na tej stronie zużywa mniej niż
+dekoderów sprzętowych niczego wymiernie nie zmieniło); ochrony ZTBrowsera (w spoczynku na tej stronie zużywa mniej niż
 goły WebKitGTK, bo blokuje trackery); liczba wątków malowania Skia i `WEBKIT_DISABLE_COMPOSITING_MODE` (bez zysku).
 
-**Druga przyczyna (znaleziona po pierwszej poprawce): skrypt strony Guarda.** Z rendererem OpenGL InDuckGo nadal
+**Druga przyczyna (znaleziona po pierwszej poprawce): skrypt strony Guarda.** Z rendererem OpenGL ZTBrowser nadal
 przewijał tę stronę z prędkością 4 klatek/s, z przerwami 0,8–1,4 s, podczas gdy goły WebKitGTK dawał 47 klatek/s.
 Główny wątek procesu strony był zajęty w 95 % (goły: 35 %). Wyłączanie po jednej warstwie (tymczasowy build,
 niezachowany) wskazało winowajcę:
@@ -222,7 +222,7 @@ obliczone `display`.
 Prywatny kompozytor to wirtualne wyjście 60 Hz napędzane zegarem, więc część może być artefaktem pomiaru; trzeba to
 potwierdzić na prawdziwej sesji, zanim zrobimy coś więcej.
 
-**Zastosowano.** Propozycja 1 (§6): InDuckGo uruchamia się teraz raz ponownie z rendererem OpenGL GTK (`gl` od GTK
+**Zastosowano.** Propozycja 1 (§6): ZTBrowser uruchamia się teraz raz ponownie z rendererem OpenGL GTK (`gl` od GTK
 4.16, wcześniej `ngl`), chyba że `GSK_RENDERER` jest już ustawione. W prawdziwej aplikacji log pokazuje `Using
 renderer 'GskGLRenderer'` i zero wierszy `downloading`; po wymuszeniu `GSK_RENDERER=vulkan` wracają 919.
 
@@ -231,13 +231,13 @@ renderer 'GskGLRenderer'` i zero wierszy `downloading`; po wymuszeniu `GSK_RENDE
 1. **Największy pojedynczy koszt to wybór konfiguracji, a nie kod.** Domyślny renderer GTK pali ok. 75 % rdzenia
    na trywialnej animacji, gdzie `ngl` pali 7 %. Każde przewijanie, zmiana rozmiaru czy wideo w oknie idzie tą
    ścieżką.
-2. **Toolkit ma stałą podłogę startu ok. 325 ms** (GTK 4) wobec 120–230 ms dla Qt. InDuckGo dokłada do niej tylko
+2. **Toolkit ma stałą podłogę startu ok. 325 ms** (GTK 4) wobec 120–230 ms dla Qt. ZTBrowser dokłada do niej tylko
    ok. 65 ms; reszta czasu do pierwszego okna to toolkit.
 3. **Strona pojawia się 200–250 ms po oknie, bo proces strony jest startowany dopiero wtedy.** Ten start może
    nakładać się na budowę okna.
-4. **WebKit jest ok. 25 % za Chromium w surowej szybkości JavaScriptu na tym sprzęcie.** InDuckGo tego nie zmieni.
+4. **WebKit jest ok. 25 % za Chromium w surowej szybkości JavaScriptu na tym sprzęcie.** ZTBrowser tego nie zmieni.
 5. **Karta graficzna, VRAM i PCIe są już używane we właściwy sposób.** Nie ma tam nic do odblokowania.
-6. **Własny narzut InDuckGo jest umiarkowany** (100–200 ms do strony, ok. 90 MB), realny, ale drugorzędny.
+6. **Własny narzut ZTBrowsera jest umiarkowany** (100–200 ms do strony, ok. 90 MB), realny, ale drugorzędny.
 
 ## 6. Propozycje, uszeregowane według spodziewanego zysku
 
@@ -245,7 +245,7 @@ renderer 'GskGLRenderer'` i zero wierszy `downloading`; po wymuszeniu `GSK_RENDE
 |---|---|---|---|---|
 | 1 | **Zastosowano (§4.6).** Używać renderera OpenGL GSK (`gl`, przed GTK 4.16 `ngl`), chyba że użytkownik sam ustawił `GSK_RENDERER`. | Ok. 10× mniejsze użycie procesora w oknie, stabilne 60 fps, ok. 100 ms szybsze pierwsze okno. | Mały. Przy `unsafe_code = forbid` program nie może wywołać `set_var`, więc uruchamia się sam raz jeszcze z ustawioną zmienną (bezpieczne `CommandExt::exec`); pliki `.desktop` i `AppRun` w AppImage też ją ustawiają. Tam, gdzie OpenGL nie działa, GTK wraca sam do innego renderera. | Powtórzyć §4.3 na prawdziwej sesji KDE (prawdziwy monitor, może 144 Hz, obie karty: NVIDIA i Intel), także z przewijaną prawdziwą stroną. |
 | 2 | Tworzyć widok WWW i zaczynać ładowanie pierwszej strony przed zbudowaniem reszty okna, żeby `WebKitWebProcess` startował równolegle z układem GTK. | Do 200 ms do strony. | Mały do średniego: zmienia się kolejność startu w `BrowserWindow`; okno Tor nadal nie może niczego ładować, zanim Tor się połączy. | Czas do strony (§3) przed i po, po 10 uruchomień. |
-| 3 | Znaleźć te 90 MB i 100–200 ms, które InDuckGo dokłada ponad gołe okno WebKit, profilując buildem z symbolami (profiler próbkujący, np. `perf` lub `samply`, plus profiler sterty). | Nieznany do czasu profilowania; kandydaci to dane o trackerach i listy reguł trzymane w procesie interfejsu oraz skrypty wstrzykiwane do każdej ramki. | Wymaga zainstalowania `perf` lub `samply` i profilera sterty (niedostępne na maszynie pomiarowej). | Te same pomiary pamięci i czasu do strony. |
+| 3 | Znaleźć te 90 MB i 100–200 ms, które ZTBrowser dokłada ponad gołe okno WebKit, profilując buildem z symbolami (profiler próbkujący, np. `perf` lub `samply`, plus profiler sterty). | Nieznany do czasu profilowania; kandydaci to dane o trackerach i listy reguł trzymane w procesie interfejsu oraz skrypty wstrzykiwane do każdej ramki. | Wymaga zainstalowania `perf` lub `samply` i profilera sterty (niedostępne na maszynie pomiarowej). | Te same pomiary pamięci i czasu do strony. |
 | 4 | Nie wprowadzać renderera `cairo` do produktu. | Unika pułapki: startuje najszybciej i zajmuje najmniej pamięci, ale pali cały rdzeń na animację. | Brak. | Już zmierzone. |
 | 5 | Nie wymuszać dyskretnego GPU dla treści stron (`DRI_PRIME`). | Unika kosztu baterii bez zysku: kompozytor już renderuje tu na karcie NVIDIA; na laptopie, gdzie tak nie jest, wymuszenie przeniosłoby każdą klatkę przez PCIe. | Brak. | Niepotrzebne. |
 | 6 | Śledzić wydania WebKitGTK i udokumentować minimalną wersję; każdą aktualizację sprawdzać procedurą Speedometera z §3. | Tyle, ile zyska WebKit. | Brak po stronie kodu. | Speedometer 3.1 przed i po. |
@@ -258,14 +258,14 @@ oczekuje się, żeby zmienił szybkość w mierzalny sposób.
 ## 7. Czego nie zmierzono i granice tych liczb
 
 - **macOS nie był dostępny.** „Porównywalny z macOS” nie da się tu zweryfikować. Safari na Apple silicon to inny
-  build silnika na innym sprzęcie; ten raport mierzy InDuckGo względem Brave na tej samej maszynie, i to jest
+  build silnika na innym sprzęcie; ten raport mierzy ZTBrowser względem Brave na tej samej maszynie, i to jest
   dostępne uczciwe porównanie. Dojście do szybkości macOS jest ograniczone przez linuksowy port WebKit i przez
   sprzęt, a żadna z powyższych propozycji tego nie obiecuje.
 - **Kompozytor był wirtualny** (1920×1080, 60 Hz) na tym samym GPU co prawdziwy pulpit. Prawdziwy monitor
   o wyższym odświeżaniu, dwa monitory i skalowanie ułamkowe mogą zachowywać się inaczej; propozycję 1 trzeba
   potwierdzić na prawdziwej sesji użytkownika, zanim zostanie przyjęta.
 - **Brak profilu na poziomie funkcji.** `perf`, `strace`, `heaptrack` i `hyperfine` nie są zainstalowane na
-  maszynie pomiarowej, więc narzut z §4.1 przypisano przez porównanie (InDuckGo z gołym oknem), a nie przez
+  maszynie pomiarowej, więc narzut z §4.1 przypisano przez porównanie (ZTBrowser z gołym oknem), a nie przez
   profilowanie.
 - **Opóźnienie interfejsu na klatkę** (menu, przełączanie kart, zmiana rozmiaru) przybliżono testem animacji,
   nie mierzono na prawdziwym interfejsie.

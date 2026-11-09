@@ -1,4 +1,4 @@
-// InDuckGo Guard: generic element hiding, applied lazily.
+// ZTBrowser Guard: generic element hiding, applied lazily.
 //
 // Runs at document start in every frame, in a script world of its own: the page can neither see this script
 // nor call its message handler. Generic selectors (`##.ad-banner`, naming no site) stay out of WebKit's rule

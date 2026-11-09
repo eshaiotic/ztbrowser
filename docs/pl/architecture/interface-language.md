@@ -1,6 +1,6 @@
 # Język interfejsu
 
-Menu, okna dialogowe, komunikaty i strony błędów InDuckGo mówią w jednym języku naraz: wybranym w
+Menu, okna dialogowe, komunikaty i strony błędów ZTBrowsera mówią w jednym języku naraz: wybranym w
 *Preferencje → Interface* albo, domyślnie, w języku pulpitu. Ten dokument wyjaśnia, dlaczego to wymagało czegoś
 więcej niż przetłumaczenia napisów, jak język jest wybierany i stosowany oraz jak dodać lub poprawić język.
 
@@ -9,7 +9,7 @@ więcej niż przetłumaczenia napisów, jak język jest wybierany i stosowany or
 Przed tą pracą interfejs był tylko po angielsku (przegląd architektury §9). Na polskim pulpicie i tak wychodziła
 mieszanka, bo w jednym oknie biorą udział trzy różne zbiory tekstów:
 
-1. **Własne teksty InDuckGo** (pozycje menu, pasek narzędzi, dialogi, strona błędu): wszystkie po angielsku.
+1. **Własne teksty ZTBrowsera** (pozycje menu, pasek narzędzi, dialogi, strona błędu): wszystkie po angielsku.
 2. **Teksty GTK i libadwaita** (przyciski okna „O programie”, „Anuluj”, elementy dialogów): tłumaczy je GTK
    według języka *systemu*, czyli po polsku.
 3. **Teksty WebKit** (menu kontekstowe strony, okna certyfikatów i plików): też tłumaczone przez WebKit według
@@ -41,12 +41,12 @@ języków niż w przeglądarce, z której przychodzi. Każdy jest wypisany swoim
 (`pt-BR`, `pt-PT`), chiński (`zh-CN`, `zh-TW`) i serbski (`sr`, `sr-Latn`) mają osobne tłumaczenia, bo ich
 warianty różnią się w codziennych słowach.
 
-![Jak InDuckGo wybiera i stosuje język interfejsu](../../assets/diagrams/architecture-interface-language.pl.svg)
+![Jak ZTBrowser wybiera i stosuje język interfejsu](../../assets/diagrams/architecture-interface-language.pl.svg)
 
 ## 4. Jak język jest wybierany
 
 **Wybór.** `LanguageChoice` to albo *System* (domyślnie), albo *Fixed(język)*, zapisany w `interface.json`
-w katalogu danych InDuckGo. Jeden plik obsługuje każdy profil i aplikację webową, bo człowiek mówi jednym
+w katalogu danych ZTBrowsera. Jeden plik obsługuje każdy profil i aplikację webową, bo człowiek mówi jednym
 językiem, a nie jednym na profil.
 
 **Podążanie za systemem.** Lista języków systemu (najbardziej pożądane pierwsze, tak jak podaje GLib, np.
@@ -56,7 +56,7 @@ to brazylijski; `es_MX` i inne kraje Ameryki Łacińskiej dostają `es-419`; `zh
 chiński tradycyjny; `sr@latin` to serbski w alfabecie łacińskim; `nn` i `no` to norweski bokmål; `tl` to filipiński;
 stare kody `iw` i `in` to hebrajski i indonezyjski. Jeśli nic nie pasuje, interfejs jest po angielsku (USA).
 
-**Stosowanie.** Na początku każdego procesu InDuckGo, zanim GTK cokolwiek utworzy:
+**Stosowanie.** Na początku każdego procesu ZTBrowsera, zanim GTK cokolwiek utworzy:
 
 1. `InterfaceLanguageSetting::activate` czyta wybór i ustala język.
 2. Dla języka *ustalonego* proces sprawia, że GTK, libadwaita i WebKit mówią nim, ustawiając `LANGUAGE`. Program
@@ -68,7 +68,7 @@ stare kody `iw` i `in` to hebrajski i indonezyjski. Jeśli nic nie pasuje, inter
 
 Zmiana w preferencjach zapisuje się od razu i działa od następnego uruchomienia: każde okno, menu i dialog jest
 budowane w języku swojego procesu, a przebudowywanie żywych okien byłoby drugą ścieżką kodu dla czegoś, co zmienia
-się rzadko. Preferencje mówią o tym wprost („Applies the next time InDuckGo starts”, w wybranym języku).
+się rzadko. Preferencje mówią o tym wprost („Applies the next time ZTBrowser starts”, w wybranym języku).
 
 Strona błędu też podąża za językiem: `<html lang="…" dir="…">` jest wypełniane z niego, a arabski, perski,
 hebrajski i urdu dostają stronę od prawej do lewej.
@@ -86,19 +86,19 @@ Zasady, które utrzymują tłumaczenia przy życiu:
   się między językami.
 - Wartości trafiają do **nazwanych symboli zastępczych**, żeby tłumacz mógł je przesuwać.
 - **Bez form liczby mnogiej**: zdanie przeformułowuje się zamiast liczyć.
-- **Nazwy marek i protokołów** zostają bez zmian (InDuckGo, DuckDuckGo, Tor, Snowflake, obfs4, nazwy list).
+- **Nazwy marek i protokołów** zostają bez zmian (ZTBrowser, DuckDuckGo, Tor, Snowflake, obfs4, nazwy list).
 - Komunikat przychodzący z zewnątrz (błąd GLib lub WebKit, własny wiersz logu Tora, nazwa profilu) to dane,
   a nie interfejs, i jest pokazywany tak, jak przyszedł.
 
 ## 6. Dodawanie lub poprawianie języka
 
-Każdy język to jeden plik, `crates/induckgo-core/locales/<tag>.po`, wkompilowany podczas budowania; dodanie pliku
+Każdy język to jeden plik, `crates/ztbrowser-core/locales/<tag>.po`, wkompilowany podczas budowania; dodanie pliku
 dodaje język do programu. `locales/template.pot` wylicza wszystkie komunikaty dla tłumaczy.
 
 1. Po dodaniu lub zmianie komunikatu w kodzie przepisz szablon:
-   `INDUCKGO_BLESS_TEMPLATE=1 cargo test -p induckgo-core --test message_catalogues`.
+   `ZTBROWSER_BLESS_TEMPLATE=1 cargo test -p ztbrowser-core --test message_catalogues`.
 2. Dodaj nowy komunikat do każdego pliku `.po` (tłumacze mogą zacząć od szablonu).
-3. `cargo test -p induckgo-core` musi przejść. Jego testy (`tests/message_catalogues.rs`) padają, gdy katalogowi
+3. `cargo test -p ztbrowser-core` musi przejść. Jego testy (`tests/message_catalogues.rs`) padają, gdy katalogowi
    brakuje komunikatu, trzyma on taki, którego kod już nie używa, albo gubi lub wymyśla `{symbol}`; to właśnie
    pilnuje, żeby okno nigdy nie mieszało dwóch języków.
 
@@ -108,6 +108,6 @@ dodaje język do programu. `locales/template.pot` wylicza wszystkie komunikaty d
 |---|---|---|
 | Każde tłumaczenie (66 języków, także polski) jest maszynowe i nie czytał go native speaker. | Nie było recenzenta dla 66 języków. | Współtwórca poprawi plik `.po`; zmiana kodu nie jest potrzebna. |
 | Zmiana języka działa od następnego uruchomienia. | Każdy widżet budowany jest raz, w języku procesu. | Przełączanie na żywo będzie warte drugiej ścieżki kodu. |
-| Wpisy `.desktop` i opis AppStream podążają za językiem *systemu*, nie za wyborem. | Czyta je pulpit, a nie InDuckGo. | Pakowanie wygeneruje je dla każdego języka. |
+| Wpisy `.desktop` i opis AppStream podążają za językiem *systemu*, nie za wyborem. | Czyta je pulpit, a nie ZTBrowser. | Pakowanie wygeneruje je dla każdego języka. |
 | Gdy locale systemu to `C` (brak `LANG`), system ignoruje `LANGUAGE`, a teksty GTK zostają po angielsku. | gettext honoruje `LANGUAGE` tylko dla prawdziwego locale. | Nigdy się tego nie spodziewamy na sesji pulpitu. |
 | Własne komunikaty Tora o starcie są tłumaczone dla kroków, które Tor dokumentuje; nieznany krok, ostrzeżenia Tora i jego wiersze logu zostają tak, jak napisał Tor. | Pochodzą z programu `tor`. | Tor zacznie oferować przetłumaczone teksty stanu. |

@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: hu\n"
+
+msgid "About ZTBrowser"
+msgstr "A ZTBrowser névjegye"
+
+msgid "Access denied"
+msgstr "Hozzáférés megtagadva"
+
+msgid "Allow {requesting} to use its cookies and data while you are on {current}?"
+msgstr "Engedélyezi, hogy a(z) {requesting} használja a sütijeit és adatait, amíg a(z) {current} oldalon van?"
+
+msgid "Allow {site} to know your location?"
+msgstr "Engedélyezi, hogy a(z) {site} megtudja a tartózkodási helyét?"
+
+msgid "Allow {site} to read your clipboard?"
+msgstr "Engedélyezi, hogy a(z) {site} olvassa a vágólapját?"
+
+msgid "Allow {site} to show notifications?"
+msgstr "Engedélyezi, hogy a(z) {site} értesítéseket jelenítsen meg?"
+
+msgid "Allow {site} to use your camera and microphone?"
+msgstr "Engedélyezi, hogy a(z) {site} használja a kameráját és a mikrofonját?"
+
+msgid "Allow {site} to use your camera?"
+msgstr "Engedélyezi, hogy a(z) {site} használja a kameráját?"
+
+msgid "Allow {site} to use your microphone?"
+msgstr "Engedélyezi, hogy a(z) {site} használja a mikrofonját?"
+
+msgid "Allow {site} to use your screen?"
+msgstr "Engedélyezi, hogy a(z) {site} használja a képernyőjét?"
+
+msgid "App data cleared"
+msgstr "Az alkalmazás adatai törölve"
+
+msgid "Appearance"
+msgstr "Megjelenés"
+
+msgid "Applies the next time ZTBrowser starts"
+msgstr "A ZTBrowser következő indításakor lép érvénybe"
+
+msgid "Asking for relay descriptors"
+msgstr "Relé-leírók lekérése"
+
+msgid "Asking for the network status"
+msgstr "A hálózat állapotának lekérése"
+
+msgid "Back"
+msgstr "Vissza"
+
+msgid "Back and Forward"
+msgstr "Vissza és előre"
+
+msgid "Best wherever Tor is not blocked."
+msgstr "Mindenhol a legjobb, ahol a Tor nincs letiltva."
+
+msgid "Bridges I provide"
+msgstr "Általam megadott hidak"
+
+msgid "Bridges are unlisted Tor relays for networks that block Tor."
+msgstr "A hidak nem nyilvános Tor-relék olyan hálózatokhoz, amelyek blokkolják a Tort."
+
+msgid "Browsing data burned"
+msgstr "Böngészési adatok törölve"
+
+msgid "Burn Browsing Data"
+msgstr "Böngészési adatok törlése"
+
+msgid "Burn Browsing Data?"
+msgstr "Böngészési adatok törlése?"
+
+msgid "Buttons shown around the address bar in this profile's windows."
+msgstr "A profil ablakaiban a címsor körül megjelenő gombok."
+
+msgid "C_lear"
+msgstr "_Törlés"
+
+msgid "Cannot Connect to Tor"
+msgstr "Nem lehet csatlakozni a Torhoz"
+
+msgid "Cannot reach Tor's control port: {error}"
+msgstr "A Tor vezérlőportja nem érhető el: {error}"
+
+msgid "Cannot read Tor's control cookie: {error}"
+msgstr "A Tor vezérlősütije nem olvasható: {error}"
+
+msgid "Cannot remove Tor's old control port file: {error}"
+msgstr "A Tor régi vezérlőport-fájlja nem távolítható el: {error}"
+
+msgid "Cannot save download: {error}"
+msgstr "A letöltés nem menthető: {error}"
+
+msgid "Cannot start Tor: {error}"
+msgstr "A Tor nem indítható el: {error}"
+
+msgid "Cannot write Tor's configuration: {error}"
+msgstr "A Tor beállításai nem írhatók ki: {error}"
+
+msgid "Cannot write to Tor's control port: {error}"
+msgstr "Nem lehet írni a Tor vezérlőportjára: {error}"
+
+msgid "Certificate for {name}"
+msgstr "Tanúsítvány a következőhöz: {name}"
+
+msgid "Check the address for a typo."
+msgstr "Ellenőrizze, hogy nem gépelte-e el a címet."
+
+msgid "Check the address, including the port number after the colon, if there is one."
+msgstr "Ellenőrizze a címet, beleértve a kettőspont utáni portszámot is, ha van."
+
+msgid "Check the network cable or the Wi-Fi connection."
+msgstr "Ellenőrizze a hálózati kábelt vagy a Wi-Fi-kapcsolatot."
+
+msgid "Check your internet connection."
+msgstr "Ellenőrizze az internetkapcsolatát."
+
+msgid "Clear App Data…"
+msgstr "Alkalmazásadatok törlése…"
+
+msgid "Clear Data of {name}?"
+msgstr "Törli a(z) {name} adatait?"
+
+msgid "Close tabs or apps you don’t need, then reload the page."
+msgstr "Zárja be a szükségtelen lapokat vagy alkalmazásokat, majd töltse újra az oldalt."
+
+msgid "Close {name} before deleting it"
+msgstr "Zárja be a(z) {name} alkalmazást a törlés előtt"
+
+msgid "Closes all tabs and windows of this profile and deletes its cookies, site data, cache and history."
+msgstr "Bezárja a profil összes lapját és ablakát, és törli a sütiket, a webhelyadatokat, a gyorsítótárat és az előzményeket."
+
+msgid "Connect"
+msgstr "Csatlakozás"
+
+msgid "Connect directly"
+msgstr "Közvetlen csatlakozás"
+
+msgid "Connected"
+msgstr "Csatlakozva"
+
+msgid "Connected to a relay directory server"
+msgstr "Csatlakozva egy relékatalógus-kiszolgálóhoz"
+
+msgid "Connected to a relay to build circuits"
+msgstr "Csatlakozva egy relére az áramkörök építéséhez"
+
+msgid "Connected to pluggable transport"
+msgstr "Csatlakozva a csatlakoztatható átvitelhez"
+
+msgid "Connected to pluggable transport to build circuits"
+msgstr "Csatlakozva a csatlakoztatható átvitelhez az áramkörök építéséhez"
+
+msgid "Connected to proxy"
+msgstr "Csatlakozva a proxyhoz"
+
+msgid "Connected to proxy to build circuits"
+msgstr "Csatlakozva a proxyhoz az áramkörök építéséhez"
+
+msgid "Connected to the Tor network"
+msgstr "Csatlakozva a Tor-hálózathoz"
+
+msgid "Connecting to Tor"
+msgstr "Csatlakozás a Torhoz"
+
+msgid "Connecting to a relay directory server"
+msgstr "Csatlakozás egy relékatalógus-kiszolgálóhoz"
+
+msgid "Connecting to a relay to build circuits"
+msgstr "Csatlakozás egy relére az áramkörök építéséhez"
+
+msgid "Connecting to pluggable transport"
+msgstr "Csatlakozás a csatlakoztatható átvitelhez"
+
+msgid "Connecting to pluggable transport to build circuits"
+msgstr "Csatlakozás a csatlakoztatható átvitelhez az áramkörök építéséhez"
+
+msgid "Connecting to proxy"
+msgstr "Csatlakozás a proxyhoz"
+
+msgid "Connecting to proxy to build circuits"
+msgstr "Csatlakozás a proxyhoz az áramkörök építéséhez"
+
+msgid "Connection Settings…"
+msgstr "Kapcsolatbeállítások…"
+
+msgid "Content Scope Scripts, the privacy configuration and the TrackerRadarKit rule algorithm."
+msgstr "Content Scope Scripts, az adatvédelmi konfiguráció és a TrackerRadarKit szabályalgoritmus."
+
+msgid "Could not install the app: {error}"
+msgstr "Az alkalmazás nem telepíthető: {error}"
+
+msgid "Could not remove everything: {error}"
+msgstr "Nem sikerült mindent eltávolítani: {error}"
+
+msgid "Delete"
+msgstr "Törlés"
+
+msgid "Delete this profile's cookies, site data and cache"
+msgstr "A profil sütijeinek, webhelyadatainak és gyorsítótárának törlése"
+
+msgid "Disguised connections to Tor Browser's built-in bridges."
+msgstr "Álcázott kapcsolatok a Tor Browser beépített hídjaihoz."
+
+msgid "Disguised connections to Tor Browser's built-in bridges. Needs {package}."
+msgstr "Álcázott kapcsolatok a Tor Browser beépített hídjaihoz. Szükséges hozzá: {package}."
+
+msgid "Download failed: {error}"
+msgstr "A letöltés nem sikerült: {error}"
+
+msgid "Downloaded at run time from DuckDuckGo; licensed CC BY-NC-SA 4.0."
+msgstr "Futásidőben töltődik le a DuckDuckGo-tól; CC BY-NC-SA 4.0 licenc alatt."
+
+msgid "Downloaded {name}"
+msgstr "Letöltve: {name}"
+
+msgid "DuckDuckGo protections"
+msgstr "DuckDuckGo-védelmek"
+
+msgid "Each app runs in its own window and process, with cookies and logins of its own."
+msgstr "Minden alkalmazás a saját ablakában és folyamatában fut, saját sütikkel és bejelentkezésekkel."
+
+msgid "Each profile keeps its own cookies, logins, history and cache, and runs as a separate process."
+msgstr "Minden profil saját sütiket, bejelentkezéseket, előzményeket és gyorsítótárat tart fenn, és külön folyamatként fut."
+
+msgid "Establishing a Tor circuit"
+msgstr "Tor-áramkör létesítése"
+
+msgid "Establishing an encrypted directory connection"
+msgstr "Titkosított katalóguskapcsolat létesítése"
+
+msgid "File not found"
+msgstr "A fájl nem található"
+
+msgid "Find in Page…"
+msgstr "Keresés az oldalon…"
+
+msgid "Find in page"
+msgstr "Keresés az oldalon"
+
+msgid "Finished handshake with a relay directory server"
+msgstr "A kézfogás befejeződött egy relékatalógus-kiszolgálóval"
+
+msgid "Finished handshake with a relay to build circuits"
+msgstr "A kézfogás befejeződött egy relével az áramkörök építéséhez"
+
+msgid "Finishing handshake with a relay directory server"
+msgstr "Kézfogás befejezése egy relékatalógus-kiszolgálóval"
+
+msgid "Finishing handshake with a relay to build circuits"
+msgstr "Kézfogás befejezése egy relével az áramkörök építéséhez"
+
+msgid "Forward"
+msgstr "Előre"
+
+msgid "From bridges.torproject.org, by e-mail or from a friend."
+msgstr "A bridges.torproject.org oldalról, e-mailben vagy egy ismerőstől."
+
+msgid "Go to Home Page"
+msgstr "Ugrás a kezdőlapra"
+
+msgid "Go to the previous or next page"
+msgstr "Ugrás az előző vagy a következő oldalra"
+
+msgid "Go to the site’s home page and look for the page from there."
+msgstr "Menjen a webhely kezdőlapjára, és onnan keresse meg az oldalt."
+
+msgid "How to Reach Tor"
+msgstr "A Tor elérése"
+
+msgid "If it crashes again after reloading, the page itself may be broken."
+msgstr "Ha az újratöltés után ismét összeomlik, lehet, hogy maga az oldal hibás."
+
+msgid "If the address is right, the site may no longer exist."
+msgstr "Ha a cím helyes, a webhely talán már nem létezik."
+
+msgid "If you have an account on this site, sign in and try again."
+msgstr "Ha van fiókja ezen a webhelyen, jelentkezzen be, és próbálja újra."
+
+msgid "If you use a VPN or your own DNS server, check that it works."
+msgstr "Ha VPN-t vagy saját DNS-kiszolgálót használ, ellenőrizze, hogy működik-e."
+
+msgid "If you use a VPN, firewall or proxy, check that it isn’t blocking the site."
+msgstr "Ha VPN-t, tűzfalat vagy proxyt használ, ellenőrizze, hogy nem blokkolja-e a webhelyet."
+
+msgid "ZTBrowser Guard filter lists"
+msgstr "ZTBrowser Guard szűrőlisták"
+
+msgid "ZTBrowser can’t open {host} because this computer isn’t connected to a network."
+msgstr "A ZTBrowser nem tudja megnyitni a(z) {host} oldalt, mert ez a számítógép nem csatlakozik hálózathoz."
+
+msgid "ZTBrowser couldn’t find a server at {host}."
+msgstr "A ZTBrowser nem talált kiszolgálót a(z) {host} címen."
+
+msgid "ZTBrowser doesn’t connect to {host} on this port."
+msgstr "A ZTBrowser nem csatlakozik a(z) {host} kiszolgálóhoz ezen a porton."
+
+msgid "ZTBrowser's own Tor is connecting. Nothing leaves this window until it is connected."
+msgstr "A ZTBrowser saját Torja csatlakozik. Semmi sem hagyja el ezt az ablakot, amíg nem csatlakozott."
+
+msgid "Install Site as App"
+msgstr "Webhely telepítése alkalmazásként"
+
+msgid "Install Site as App…"
+msgstr "Webhely telepítése alkalmazásként…"
+
+msgid "Install as App"
+msgstr "Telepítés alkalmazásként"
+
+msgid "Installed Apps"
+msgstr "Telepített alkalmazások"
+
+msgid "Installed Apps…"
+msgstr "Telepített alkalmazások…"
+
+msgid "Installed {name}"
+msgstr "Telepítve: {name}"
+
+msgid "Interface"
+msgstr "Felület"
+
+msgid "Issued by {name}"
+msgstr "Kiállította: {name}"
+
+msgid "It may have been moved, renamed or deleted."
+msgstr "Lehet, hogy áthelyezték, átnevezték vagy törölték."
+
+msgid "Language"
+msgstr "Nyelv"
+
+msgid "Load Insecure Page"
+msgstr "Nem biztonságos oldal betöltése"
+
+msgid "Load the page again, or stop loading it"
+msgstr "Az oldal újratöltése vagy a betöltés leállítása"
+
+msgid "Loaded enough directory information to build circuits"
+msgstr "Elegendő katalógusinformáció betöltve az áramkörök építéséhez"
+
+msgid "Loading authority certificates"
+msgstr "Hitelesítésszolgáltatói tanúsítványok betöltése"
+
+msgid "Loading relay descriptors"
+msgstr "Relé-leírók betöltése"
+
+msgid "Loading the network status"
+msgstr "A hálózat állapotának betöltése"
+
+msgid "Main Menu"
+msgstr "Főmenü"
+
+msgid "Manage Profiles…"
+msgstr "Profilok kezelése…"
+
+msgid "New Identity"
+msgstr "Új személyazonosság"
+
+msgid "New Identity?"
+msgstr "Új személyazonosság?"
+
+msgid "New Tab"
+msgstr "Új lap"
+
+msgid "New Tor Window"
+msgstr "Új Tor-ablak"
+
+msgid "New Window"
+msgstr "Új ablak"
+
+msgid "New identity"
+msgstr "Új személyazonosság"
+
+msgid "New profile name"
+msgstr "Új profil neve"
+
+msgid "One bridge per line, for example: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+msgstr "Soronként egy híd, például: obfs4 192.0.2.1:443 FINGERPRINT cert=… iat-mode=0"
+
+msgid "Only web pages can be installed as apps"
+msgstr "Csak weboldalak telepíthetők alkalmazásként"
+
+msgid "Open"
+msgstr "Megnyitás"
+
+msgid "Open Page in Browser"
+msgstr "Oldal megnyitása a böngészőben"
+
+msgid "Open a new tab"
+msgstr "Új lap megnyitása"
+
+msgid "Open a window whose traffic goes only through Tor"
+msgstr "Olyan ablak megnyitása, amelynek a forgalma kizárólag a Toron megy át"
+
+msgid "Other applications do not open from the Tor window: they would connect outside Tor."
+msgstr "Más alkalmazások nem nyílnak meg a Tor-ablakból: a Tor megkerülésével csatlakoznának."
+
+msgid "Pages stay unopened until the Tor window is connected."
+msgstr "Az oldalak nem nyílnak meg, amíg a Tor-ablak nem csatlakozott."
+
+msgid "Paste at least one bridge."
+msgstr "Illesszen be legalább egy hidat."
+
+msgid "Preferences"
+msgstr "Beállítások"
+
+msgid "Preferences…"
+msgstr "Beállítások…"
+
+msgid "Profiles"
+msgstr "Profilok"
+
+msgid "Protect This Site"
+msgstr "A webhely védelme"
+
+msgid "Protection Shield"
+msgstr "Védelmi pajzs"
+
+msgid "Reading Tor's control port failed: {error}"
+msgstr "A Tor vezérlőportjának olvasása nem sikerült: {error}"
+
+msgid "Reconnect your VPN, if you use one."
+msgstr "Csatlakoztassa újra a VPN-t, ha használ ilyet."
+
+msgid "Reload"
+msgstr "Újratöltés"
+
+msgid "Reload Page"
+msgstr "Oldal újratöltése"
+
+msgid "Reset Zoom"
+msgstr "Nagyítás visszaállítása"
+
+msgid "Search Engine"
+msgstr "Keresőmotor"
+
+msgid "Search {engine}"
+msgstr "Keresés itt: {engine}"
+
+msgid "Search {engine} or enter address"
+msgstr "Keresés itt: {engine}, vagy adjon meg címet"
+
+msgid "Show in Folder"
+msgstr "Megjelenítés a mappában"
+
+msgid "Signs you out and deletes this app's cookies, site data and cache. Nothing else is affected."
+msgstr "Kijelentkezteti, és törli az alkalmazás sütijeit, webhelyadatait és gyorsítótárát. Semmi más nem változik."
+
+msgid "Some data could not be deleted: {error}"
+msgstr "Egyes adatok nem törölhetők: {error}"
+
+msgid "Something went wrong while loading {host}."
+msgstr "Hiba történt a(z) {host} betöltése közben."
+
+msgid "Starting"
+msgstr "Indítás"
+
+msgid "Starting Tor…"
+msgstr "A Tor indítása…"
+
+msgid "Switch tracker protection off or on for the site"
+msgstr "Követővédelem ki- vagy bekapcsolása a webhelyen"
+
+msgid "System default ({language})"
+msgstr "Rendszer alapértelmezése ({language})"
+
+msgid "The authority that issued the certificate has revoked it."
+msgstr "A tanúsítványt kiállító hitelesítésszolgáltató visszavonta azt."
+
+msgid "The bridge line has no address: {line}"
+msgstr "A hídsornak nincs címe: {line}"
+
+msgid "The certificate could not be verified."
+msgstr "A tanúsítvány nem ellenőrizhető."
+
+msgid "The certificate is signed with an algorithm that is no longer safe."
+msgstr "A tanúsítvány aláírása már nem biztonságos algoritmussal készült."
+
+msgid "The certificate isn’t valid yet. Check that this computer’s date and time are right."
+msgstr "A tanúsítvány még nem érvényes. Ellenőrizze, hogy a számítógép dátuma és ideje helyes-e."
+
+msgid "The certificate was issued for a different site."
+msgstr "A tanúsítványt másik webhelyre állították ki."
+
+msgid "The certificate wasn’t issued by an authority this computer trusts."
+msgstr "A tanúsítványt nem olyan hitelesítésszolgáltató állította ki, amelyben ez a számítógép megbízik."
+
+msgid "The connection to {host} was interrupted."
+msgstr "A kapcsolat a(z) {host} kiszolgálóval megszakadt."
+
+msgid "The icon at the end of the address bar"
+msgstr "Az ikon a címsor végén"
+
+msgid "The language changes when ZTBrowser is restarted"
+msgstr "A nyelv a ZTBrowser újraindításakor változik meg"
+
+msgid "The language of menus, dialogs and messages, in every profile and web app."
+msgstr "A menük, párbeszédablakok és üzenetek nyelve minden profilban és webalkalmazásban."
+
+msgid "The problem is on the site’s side. Try again in a few minutes."
+msgstr "A hiba a webhely oldalán van. Próbálja újra néhány perc múlva."
+
+msgid "The site may be down for maintenance. Try again in a few minutes."
+msgstr "A webhely lehet, hogy karbantartás miatt nem elérhető. Próbálja újra néhány perc múlva."
+
+msgid "The site may be overloaded. Try again in a few minutes."
+msgstr "A webhely lehet, hogy túlterhelt. Próbálja újra néhány perc múlva."
+
+msgid "The {transport} bridges need a program that is not installed; install {package}"
+msgstr "A(z) {transport} hidakhoz olyan program kell, amely nincs telepítve; telepítse: {package}"
+
+msgid "There is no file at {path}."
+msgstr "Nincs fájl itt: {path}."
+
+msgid "This address is blocked"
+msgstr "Ez a cím le van tiltva"
+
+msgid "This connection isn’t private"
+msgstr "Ez a kapcsolat nem privát"
+
+msgid "This page"
+msgstr "Ez az oldal"
+
+msgid "This page can’t be found"
+msgstr "Ez az oldal nem található"
+
+msgid "This page can’t be loaded"
+msgstr "Ez az oldal nem tölthető be"
+
+msgid "This page crashed"
+msgstr "Ez az oldal összeomlott"
+
+msgid "This page is on another site, not part of {name}"
+msgstr "Ez az oldal egy másik webhelyen van, nem része ennek: {name}"
+
+msgid "This page isn’t working"
+msgstr "Ez az oldal nem működik"
+
+msgid "This page ran out of memory"
+msgstr "Ennek az oldalnak elfogyott a memóriája"
+
+msgid "This site can’t be found"
+msgstr "Ez a webhely nem található"
+
+msgid "This site can’t be reached"
+msgstr "Ez a webhely nem érhető el"
+
+msgid "Through volunteers' browsers; works on most censored networks."
+msgstr "Önkéntesek böngészőin keresztül; a legtöbb cenzúrázott hálózaton működik."
+
+msgid "Through volunteers' browsers; works on most censored networks. Needs {package}."
+msgstr "Önkéntesek böngészőin keresztül; a legtöbb cenzúrázott hálózaton működik. Szükséges hozzá: {package}."
+
+msgid "Toolbar Buttons"
+msgstr "Eszköztár gombjai"
+
+msgid "Tor Connection"
+msgstr "Tor-kapcsolat"
+
+msgid "Tor Connection…"
+msgstr "Tor-kapcsolat…"
+
+msgid "Tor Window"
+msgstr "Tor-ablak"
+
+msgid "Tor cannot use the path {path}"
+msgstr "A Tor nem használhatja ezt az útvonalat: {path}"
+
+msgid "Tor closed its control port"
+msgstr "A Tor bezárta a vezérlőportját"
+
+msgid "Tor could not switch circuits: {error}"
+msgstr "A Tor nem tudott áramkört váltani: {error}"
+
+msgid "Tor did not open its control port"
+msgstr "A Tor nem nyitotta meg a vezérlőportját"
+
+msgid "Tor is not installed. Install your distribution's tor package; the Tor window starts its own Tor and needs no Tor service running."
+msgstr "A Tor nincs telepítve. Telepítse a disztribúció tor csomagját; a Tor-ablak a saját Torját indítja, ezért nincs szükség futó Tor-szolgáltatásra."
+
+msgid "Tor opened no local SOCKS port"
+msgstr "A Tor nem nyitott helyi SOCKS-portot"
+
+msgid "Tor refused: {reason}"
+msgstr "A Tor elutasította: {reason}"
+
+msgid "Tor reported a problem"
+msgstr "A Tor hibát jelentett"
+
+msgid "Tor stopped."
+msgstr "A Tor leállt."
+
+msgid "Tor's control cookie is damaged"
+msgstr "A Tor vezérlősütije sérült"
+
+msgid "Tracker Data Set"
+msgstr "Követőadatkészlet"
+
+msgid "Tracker protection on this site"
+msgstr "Követővédelem ezen a webhelyen"
+
+msgid "Try Again"
+msgstr "Újrapróbálás"
+
+msgid "Try again in a few minutes."
+msgstr "Próbálja újra néhány perc múlva."
+
+msgid "Turn off airplane mode, if it is on."
+msgstr "Kapcsolja ki a repülőgép-módot, ha be van kapcsolva."
+
+msgid "Turns ZTBrowser Guard's filter lists into WebKit rules. Source: https://github.com/brave/adblock-rust"
+msgstr "A ZTBrowser Guard szűrőlistáit WebKit-szabályokká alakítja. Forrás: https://github.com/brave/adblock-rust"
+
+msgid "Uninstall"
+msgstr "Eltávolítás"
+
+msgid "Unknown bridge transport: {name}"
+msgstr "Ismeretlen hídátvitel: {name}"
+
+msgid "Valid until {date}"
+msgstr "Érvényes eddig: {date}"
+
+msgid "Your Bridges"
+msgstr "Az Ön hidai"
+
+msgid "You’re offline"
+msgstr "Ön offline van"
+
+msgid "Zoom In"
+msgstr "Nagyítás"
+
+msgid "Zoom Out"
+msgstr "Kicsinyítés"
+
+msgid "_Allow"
+msgstr "_Engedélyezés"
+
+msgid "_Burn"
+msgstr "_Törlés"
+
+msgid "_Cancel"
+msgstr "_Mégse"
+
+msgid "_Deny"
+msgstr "_Tiltás"
+
+msgid "_Install"
+msgstr "_Telepítés"
+
+msgid "_New Identity"
+msgstr "_Új személyazonosság"
+
+msgid "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) or obfs4proxy from the AUR (Arch)"
+msgstr "obfs4proxy (Debian, Ubuntu), obfs4 (Fedora) vagy az AUR-ból származó obfs4proxy (Arch)"
+
+msgid "snowflake-client (Debian, Ubuntu) or snowflake-pt-client from the AUR (Arch)"
+msgstr "snowflake-client (Debian, Ubuntu) vagy az AUR-ból származó snowflake-pt-client (Arch)"
+
+msgid "{host} can’t handle the request right now."
+msgstr "A(z) {host} jelenleg nem tudja kezelni a kérést."
+
+msgid "{host} couldn’t answer this request."
+msgstr "A(z) {host} nem tudott válaszolni erre a kérésre."
+
+msgid "{host} does not offer a secure connection"
+msgstr "A(z) {host} nem kínál biztonságos kapcsolatot"
+
+msgid "{host} doesn’t allow you to see this page."
+msgstr "A(z) {host} nem engedi, hogy lássa ezt az oldalt."
+
+msgid "{host} has no page at this address."
+msgstr "A(z) {host} webhelyen nincs oldal ezen a címen."
+
+msgid "{host} refused the connection."
+msgstr "A(z) {host} elutasította a kapcsolatot."
+
+msgid "{host} took too long to respond."
+msgstr "A(z) {host} túl sokáig válaszolt."
+
+msgid "{host} used more memory than a page may use, so ZTBrowser stopped it."
+msgstr "A(z) {host} több memóriát használt, mint amennyit egy oldal használhat, ezért a ZTBrowser leállította."
+
+msgid "{host} will open in its own window, with cookies and logins kept apart from the browser and every other app."
+msgstr "A(z) {host} a saját ablakában nyílik meg, a böngészőtől és minden más alkalmazástól elkülönített sütikkel és bejelentkezésekkel."
+
+msgid "{host} — ZTBrowser web app"
+msgstr "{host} — ZTBrowser webalkalmazás"
+
+msgid "{text} is not a bridge argument"
+msgstr "A(z) {text} nem hídargumentum"
+
+msgid "{text} is not an IP address and port"
+msgstr "A(z) {text} nem IP-cím és port"
+
+msgid "{url} answered {status}"
+msgstr "A(z) {url} ezt válaszolta: {status}"
+
+msgid "{url} did not return the expected document"
+msgstr "A(z) {url} nem a várt dokumentumot adta vissza"
+
+msgid "{url} is larger than allowed"
+msgstr "A(z) {url} nagyobb a megengedettnél"
+
+msgid "{url} is not a valid address"
+msgstr "A(z) {url} nem érvényes cím"
+
+msgid "© their maintainers"
+msgstr "© karbantartóik"
+
+msgid "Ask Where to Save Each File"
+msgstr "Kérdezzen rá minden fájl mentési helyére"
+
+msgid "Choose Folder"
+msgstr "Mappa kiválasztása"
+
+msgid "Download Folder"
+msgstr "Letöltési mappa"
+
+msgid "Download failed"
+msgstr "A letöltés sikertelen"
+
+msgid "Downloading…"
+msgstr "Letöltés…"
+
+msgid "Downloading… {percent}%"
+msgstr "Letöltés… {percent}%"
+
+msgid "Downloads"
+msgstr "Letöltések"
+
+msgid "Go to Download Folder"
+msgstr "Ugrás a letöltési mappába"
+
+msgid "No downloads yet"
+msgstr "Még nincsenek letöltések"
+
+msgid "Otherwise files go straight to the download folder"
+msgstr "Ellenkező esetben a fájlok közvetlenül a letöltési mappába kerülnek"
+
+msgid "Save File"
+msgstr "Fájl mentése"
+
+msgid "The five latest downloads, and the download folder"
+msgstr "Az öt legutóbbi letöltés és a letöltési mappa"
+
+msgid "_Save"
+msgstr "_Mentés"
+
+msgid "_Select"
+msgstr "_Kiválasztás"
+
+msgid "Show All Downloads"
+msgstr "Összes letöltés megjelenítése"
+
+msgid "Clear List"
+msgstr "Lista törlése"
+
+msgid "Remove from List"
+msgstr "Eltávolítás a listából"
+
+msgid "Clear History"
+msgstr "Előzmények törlése"
+
+msgid "Search Downloads"
+msgstr "Keresés a letöltések között"
+
+msgid "File Moved or Deleted"
+msgstr "A fájl áthelyezve vagy törölve"
+
+msgid "Animates every step of the mouse wheel. Pages that are already open need a reload."
+msgstr "Animálja az egérgörgő minden lépését. A már megnyitott oldalakat újra kell tölteni."
+
+msgid "Scrolling"
+msgstr "Görgetés"
+
+msgid "Smooth mouse wheel scrolling"
+msgstr "Egyenletes görgetés az egérgörgővel"
+
+msgid "Details"
+msgstr "Részletek"
+
+msgid "Legal"
+msgstr "Jogi információk"
+
+msgid "This application comes with absolutely no warranty. See the {license} for details."
+msgstr "Erre az alkalmazásra egyáltalán nem vonatkozik garancia. További részletek a(z) {license} szövegében."
+
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, 3-as vagy későbbi verzió"
+
+msgid "Apache License, Version 2.0"
+msgstr "Apache License, 2.0-s verzió"
+
+msgid "Move to New Window"
+msgstr "Áthelyezés új ablakba"
+
+msgid "Mozilla Public License 2.0"
+msgstr "Mozilla Public License 2.0"
+
+msgid "BSD 3-Clause License"
+msgstr "BSD 3 cikkelyes licenc"
+
+msgid "Wide Address Bar"
+msgstr "Széles címsor"
+
+msgid "The address bar fills all the room in the toolbar; off keeps it short and centred"
+msgstr "A címsor kitölti az eszköztár teljes szabad helyét; kikapcsolva rövid és középre igazított marad"
+
+msgid "No apps installed yet"
+msgstr "Még nincs telepített alkalmazás"
+
+msgid "Uninstall {name}?"
+msgstr "Eltávolítja a(z) {name} alkalmazást?"
+
+msgid "Deletes the app with its cookies, logins and data. This cannot be undone."
+msgstr "Törli az alkalmazást a sütikkel, bejelentkezésekkel és adatokkal együtt. Ez nem vonható vissza."
+
+msgid "Tab Position"
+msgstr "Fülek helye"
+
+msgid "Top"
+msgstr "Fent"
+
+msgid "Bottom"
+msgstr "Lent"
+
+msgid "Left"
+msgstr "Balra"
+
+msgid "Right"
+msgstr "Jobbra"
+
+msgid "Window Buttons"
+msgstr "Ablakgombok"
+
+msgid "Default"
+msgstr "Alapértelmezett"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Add Profile"
+msgstr "Profil hozzáadása"
+
+msgid "Delete profile {name}?"
+msgstr "Törli a(z) {name} profilt?"
+
+msgid "Deletes the profile with its cookies, logins, history and cache. This cannot be undone."
+msgstr "Törli a profilt a sütikkel, bejelentkezésekkel, előzményekkel és gyorsítótárral együtt. Ez nem vonható vissza."
+
+msgid "ZTBrowser is not your default browser"
+msgstr "A ZTBrowser nem az alapértelmezett böngészője"
+
+msgid "Make Default"
+msgstr "Beállítás alapértelmezettként"
+
+msgid "Don't Ask Again"
+msgstr "Ne kérdezze újra"
+
+msgid "Close"
+msgstr "Bezárás"
+
+msgid "Could not make ZTBrowser the default browser: {error}"
+msgstr "A ZTBrowser nem állítható be alapértelmezett böngészőként: {error}"
+
+msgid "Default Browser"
+msgstr "Alapértelmezett böngésző"
+
+msgid "ZTBrowser opens links from other programs"
+msgstr "A más programokból érkező hivatkozásokat a ZTBrowser nyitja meg"
+
+msgid "Links from other programs open in {browser}"
+msgstr "A más programokból érkező hivatkozások ebben nyílnak meg: {browser}"
+
+msgid "Another browser opens links from other programs"
+msgstr "A más programokból érkező hivatkozásokat egy másik böngésző nyitja meg"
+
+msgid "Only an installed ZTBrowser can open links from other programs"
+msgstr "A más programokból érkező hivatkozásokat csak telepített ZTBrowser nyithatja meg"
+
+msgid "The desktop does not say which browser opens links"
+msgstr "Az asztali környezet nem árulja el, melyik böngésző nyitja meg a hivatkozásokat"
+
+msgid "Ask When ZTBrowser Starts"
+msgstr "Kérdezés a ZTBrowser indításakor"
+
+msgid "Offer to make ZTBrowser the default browser while another browser opens links"
+msgstr "Felajánlja, hogy a ZTBrowser legyen az alapértelmezett böngésző, amíg egy másik böngésző nyitja meg a hivatkozásokat"

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1340" height="760" viewBox="0 0 1340 760" font-family="DejaVu Sans, Noto Sans, sans-serif">
-<title>InDuckGo Guard — ogólne ukrywanie elementów, stosowane leniwie</title>
+<title>ZTBrowser Guard — ogólne ukrywanie elementów, stosowane leniwie</title>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#37474f"/></marker></defs>
 <rect width="1340" height="760" fill="#ffffff"/>
-<text x="670" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#263238">InDuckGo Guard — ogólne ukrywanie elementów, stosowane leniwie</text>
+<text x="670" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#263238">ZTBrowser Guard — ogólne ukrywanie elementów, stosowane leniwie</text>
 <rect x="470" y="60" width="400" height="118" rx="9" fill="#ede7f6" stroke="#5e35b1" stroke-width="1.6"/>
 <text x="482" y="82" font-size="14" font-weight="bold" fill="#263238" xml:space="preserve">GuardRuleList (core)</text>
 <text x="482" y="101" font-size="12.5" fill="#263238" xml:space="preserve">konwertuje każdą listę Guarda przez adblock;</text>
@@ -13,7 +13,7 @@
 <text x="42" y="262" font-size="14" font-weight="bold" fill="#263238" xml:space="preserve">Skompilowana lista WebKit</text>
 <text x="42" y="281" font-size="12.5" fill="#263238" xml:space="preserve">blokowanie + ukrywanie dla witryn,</text>
 <text x="42" y="300" font-size="12.5" fill="#263238" xml:space="preserve">plus jedna reguła sondy na listę:</text>
-<text x="42" y="319" font-size="12.5" font-family="DejaVu Sans Mono, monospace" fill="#263238" xml:space="preserve">induckgo-guard-probe.guard-ads</text>
+<text x="42" y="319" font-size="12.5" font-family="DejaVu Sans Mono, monospace" fill="#263238" xml:space="preserve">ztbrowser-guard-probe.guard-ads</text>
 <text x="42" y="338" font-size="12.5" fill="#263238" xml:space="preserve">ukryta wszędzie, gdzie lista działa</text>
 <rect x="910" y="240" width="400" height="118" rx="9" fill="#e0f2f1" stroke="#00897b" stroke-width="1.6"/>
 <text x="922" y="262" font-size="14" font-weight="bold" font-family="DejaVu Sans Mono, monospace" fill="#263238" xml:space="preserve">guard-*.generic-hiding.json</text>
@@ -28,7 +28,7 @@
 <rect x="30" y="430" width="650" height="230" rx="9" fill="#ffebee" stroke="#c62828" stroke-width="3" stroke-dasharray="7 4"/>
 <text x="666" y="453" font-size="14" font-weight="bold" text-anchor="end" fill="#b71c1c">Proces strony — renderuje wrogie treści</text>
 <rect x="50" y="468" width="610" height="176" rx="9" fill="#e1f5fe" stroke="#0277bd" stroke-width="1.6"/>
-<text x="62" y="490" font-size="14" font-weight="bold" fill="#263238" xml:space="preserve">Skrypt strony Guarda — izolowany świat "induckgo-guard"</text>
+<text x="62" y="490" font-size="14" font-weight="bold" fill="#263238" xml:space="preserve">Skrypt strony Guarda — izolowany świat "ztbrowser-guard"</text>
 <text x="62" y="509" font-size="12.5" fill="#263238" xml:space="preserve">1. na starcie dokumentu, przed skryptami strony: dodaje sondę,</text>
 <text x="62" y="528" font-size="12.5" fill="#263238" xml:space="preserve">    zostawia listy, dla których WebKit ją ukrył (wyjątki, tarcza)</text>
 <text x="62" y="547" font-size="12.5" fill="#263238" xml:space="preserve">2. zgłasza klasy i id, których strona używa, w miarę jak rośnie</text>
@@ -36,7 +36,7 @@
 <text x="62" y="585" font-size="12.5" fill="#263238" xml:space="preserve">4. testuje pozostałe selektory na później dodanych elementach</text>
 <rect x="910" y="430" width="400" height="230" rx="9" fill="#e1f5fe" stroke="#0277bd" stroke-width="1.6"/>
 <text x="922" y="452" font-size="14" font-weight="bold" fill="#263238" xml:space="preserve">PageProtections (proces UI)</text>
-<text x="922" y="471" font-size="12.5" fill="#263238" xml:space="preserve">handler wiadomości "induckgoGuard",</text>
+<text x="922" y="471" font-size="12.5" fill="#263238" xml:space="preserve">handler wiadomości "ztbrowserGuard",</text>
 <text x="922" y="490" font-size="12.5" fill="#263238" xml:space="preserve">dostępny tylko ze świata Guarda</text>
 <rect x="930" y="510" width="360" height="80" rx="9" fill="#ede7f6" stroke="#5e35b1" stroke-width="1.6"/>
 <text x="942" y="532" font-size="14" font-weight="bold" fill="#263238" xml:space="preserve">GenericHidingRequest (core)</text>
@@ -55,7 +55,7 @@
 <rect x="30" y="716" width="26" height="16" rx="4" fill="#e1f5fe" stroke="#0277bd" stroke-width="1.6"/>
 <text x="66" y="729" font-size="12.5" fill="#263238">Adaptery WebKit i UI</text>
 <rect x="590" y="690" width="26" height="16" rx="4" fill="#ede7f6" stroke="#5e35b1" stroke-width="1.6"/>
-<text x="626" y="703" font-size="12.5" fill="#263238">Logika domeny (induckgo-core)</text>
+<text x="626" y="703" font-size="12.5" fill="#263238">Logika domeny (ztbrowser-core)</text>
 <rect x="590" y="716" width="26" height="16" rx="4" fill="#e0f2f1" stroke="#00897b" stroke-width="1.6"/>
 <text x="626" y="729" font-size="12.5" fill="#263238">Dane na dysku</text>
 </svg>

@@ -1,11 +1,11 @@
-# InDuckGo Engineering Rules
+# ZTBrowser Engineering Rules
 
-These rules are specific to InDuckGo and add to the global rules in `~/.claude/rules/general.md`. When the
+These rules are specific to ZTBrowser and add to the global rules in `~/.claude/rules/general.md`. When the
 two conflict, this document wins inside this repository.
 
 ## 1. Object Oriented Programming First
 
-InDuckGo is written in Rust. Rust has no classes or inheritance, but it has everything needed to program
+ZTBrowser is written in Rust. Rust has no classes or inheritance, but it has everything needed to program
 in an object-oriented way: **structs and enums own state**, **`impl` blocks attach behaviour to that
 state**, **traits express polymorphism**, and **privacy (`pub` vs. private) gives encapsulation**. We
 use these deliberately and consistently. The goal is that every piece of behaviour has an obvious owner:
@@ -43,7 +43,7 @@ when you ask "who is responsible for this?", the answer is always a type.
   each variant its own implementation, instead of matching on a type tag in many places.
 - Depend on traits at boundaries (ports): the domain crate defines what it needs (for example "store
   JSON somewhere"), the application crate provides adapters (disk, WebKit, GTK). This is the Dependency
-  Inversion Principle and keeps `induckgo-core` free of GTK and WebKit.
+  Inversion Principle and keeps `ztbrowser-core` free of GTK and WebKit.
 - Rust has no inheritance; reuse behaviour through **composition** (a struct holding another struct) and
   trait default methods.
 
@@ -70,9 +70,9 @@ lifetime problems with short-lived values in tests.
 
 ## 2. Crate boundaries
 
-- `crates/induckgo-core` holds browser-independent domain logic and depends on no GUI or WebKit crate.
-- `crates/induckgo` is the GTK4 / libadwaita / WebKitGTK application and adapts the core to the platform.
-- Dependencies point inward only: `induckgo` → `induckgo-core`, never the other way.
+- `crates/ztbrowser-core` holds browser-independent domain logic and depends on no GUI or WebKit crate.
+- `crates/ztbrowser` is the GTK4 / libadwaita / WebKitGTK application and adapts the core to the platform.
+- Dependencies point inward only: `ztbrowser` → `ztbrowser-core`, never the other way.
 
 ## 3. Imports
 

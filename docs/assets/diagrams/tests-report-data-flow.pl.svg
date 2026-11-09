@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1340" height="790" viewBox="0 0 1340 790" font-family="DejaVu Sans, Noto Sans, sans-serif">
-<title>Raport testów InDuckGo — skąd bierze dane</title>
+<title>Raport testów ZTBrowser — skąd bierze dane</title>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#37474f"/></marker></defs>
 <rect width="1340" height="790" fill="#ffffff"/>
-<text x="670.0" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#263238">Raport testów InDuckGo — skąd bierze dane</text>
+<text x="670.0" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#263238">Raport testów ZTBrowser — skąd bierze dane</text>
 <rect x="470" y="56" width="400" height="84" rx="9" fill="#e1f5fe" stroke="#0277bd" stroke-width="1.6"/>
 <text x="482" y="79" font-size="14" font-weight="bold" font-family="DejaVu Sans Mono, monospace" fill="#263238" xml:space="preserve">./run-tests</text>
 <text x="482" y="99" font-size="12.5" fill="#263238" xml:space="preserve">skrypt startowy: uruchamia testy, potem</text>
@@ -14,7 +14,7 @@
 <rect x="830" y="206" width="400" height="84" rx="9" fill="#e1f5fe" stroke="#0277bd" stroke-width="1.6" stroke-dasharray="7 4"/>
 <text x="842" y="229" font-size="14" font-weight="bold" font-family="DejaVu Sans Mono, monospace" fill="#263238" xml:space="preserve">cargo llvm-cov nextest</text>
 <text x="842" y="249" font-size="12.5" fill="#263238" xml:space="preserve">te same testy z instrumentacją; mierzy</text>
-<text x="842" y="268" font-size="12.5" fill="#263238" xml:space="preserve">tylko induckgo-core (narzędzie opcjonalne)</text>
+<text x="842" y="268" font-size="12.5" fill="#263238" xml:space="preserve">tylko ztbrowser-core (narzędzie opcjonalne)</text>
 <rect x="30" y="370" width="400" height="103" rx="9" fill="#e0f2f1" stroke="#b71c1c" stroke-width="2.6"/>
 <text x="42" y="393" font-size="14" font-weight="bold" font-family="DejaVu Sans Mono, monospace" fill="#263238" xml:space="preserve">junit.xml</text>
 <text x="42" y="413" font-size="12.5" fill="#263238" xml:space="preserve">każdy test: status, czas, powtórki,</text>
@@ -23,13 +23,13 @@
 <rect x="470" y="370" width="400" height="84" rx="9" fill="#e0f2f1" stroke="#00897b" stroke-width="1.6"/>
 <text x="482" y="393" font-size="14" font-weight="bold" font-family="DejaVu Sans Mono, monospace" fill="#263238" xml:space="preserve">coverage-summary.json</text>
 <text x="482" y="413" font-size="12.5" fill="#263238" xml:space="preserve">test-results/ · linie, funkcje,</text>
-<text x="482" y="432" font-size="12.5" fill="#263238" xml:space="preserve">regiony induckgo-core</text>
+<text x="482" y="432" font-size="12.5" fill="#263238" xml:space="preserve">regiony ztbrowser-core</text>
 <rect x="910" y="370" width="400" height="84" rx="9" fill="#e0f2f1" stroke="#00897b" stroke-width="1.6"/>
 <text x="922" y="393" font-size="14" font-weight="bold" font-family="DejaVu Sans Mono, monospace" fill="#263238" xml:space="preserve">test-run-history.json</text>
 <text x="922" y="413" font-size="12.5" fill="#263238" xml:space="preserve">test-results/ · do 200 przebiegów,</text>
 <text x="922" y="432" font-size="12.5" fill="#263238" xml:space="preserve">jeden wpis na przebieg</text>
 <rect x="470" y="540" width="400" height="84" rx="9" fill="#ede7f6" stroke="#5e35b1" stroke-width="1.6"/>
-<text x="482" y="563" font-size="14" font-weight="bold" font-family="DejaVu Sans Mono, monospace" fill="#263238" xml:space="preserve">induckgo-test-report</text>
+<text x="482" y="563" font-size="14" font-weight="bold" font-family="DejaVu Sans Mono, monospace" fill="#263238" xml:space="preserve">ztbrowser-test-report</text>
 <text x="482" y="583" font-size="12.5" fill="#263238" xml:space="preserve">JunitResults · CoverageSummary · RunHistory</text>
 <text x="482" y="602" font-size="12.5" fill="#263238" xml:space="preserve">→ TestRunReport → ReportPage</text>
 <rect x="470" y="680" width="400" height="84" rx="9" fill="#e0f2f1" stroke="#00897b" stroke-width="1.6"/>
@@ -54,7 +54,7 @@
 <rect x="960" y="690" width="26" height="16" rx="3" fill="#e1f5fe" stroke="#0277bd" stroke-width="1.6"/>
 <text x="996" y="703" font-size="12.5" fill="#263238">Narzędzie</text>
 <rect x="960" y="712" width="26" height="16" rx="3" fill="#ede7f6" stroke="#5e35b1" stroke-width="1.6"/>
-<text x="996" y="725" font-size="12.5" fill="#263238">Kod InDuckGo</text>
+<text x="996" y="725" font-size="12.5" fill="#263238">Kod ZTBrowser</text>
 <rect x="960" y="734" width="26" height="16" rx="3" fill="#e0f2f1" stroke="#00897b" stroke-width="1.6"/>
 <text x="996" y="747" font-size="12.5" fill="#263238">Plik</text>
 <rect x="960" y="756" width="26" height="16" rx="3" fill="#ffffff" stroke="#b71c1c" stroke-width="2.6"/>

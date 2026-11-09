@@ -1,4 +1,4 @@
-// InDuckGo Guard: hides the elements the community filter lists name (cookie notices, ads, banners).
+// ZTBrowser Guard: hides the elements the community filter lists name (cookie notices, ads, banners).
 //
 // Runs at document start in every frame, in an isolated script world: the page can neither see this script nor
 // reach the web channel it asks. The browser answers with the selectors the lists name for the page's address
@@ -12,7 +12,7 @@
   "use strict";
   if (!(document instanceof HTMLDocument) || typeof QWebChannel === "undefined" || !qt?.webChannelTransport) return;
   const FLUSH_DELAY_MS = 50;
-  const REJECT_COOKIE_NOTICES_EVENT = "induckgo-reject-cookie-notices";
+  const REJECT_COOKIE_NOTICES_EVENT = "ztbrowser-reject-cookie-notices";
   const sheet = new CSSStyleSheet();
   const hidden = new Set();
   const reportedNames = new Set();

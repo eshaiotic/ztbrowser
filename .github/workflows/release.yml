@@ -1,4 +1,4 @@
-# Publishes a GitHub release with every InDuckGo package when a version tag (v1.2.3) is pushed.
+# Publishes a GitHub release with every ZTBrowser package when a version tag (v1.2.3) is pushed.
 #
 # The packages are built by the same scripts as a local `packaging/release.sh`: the AppImage and the .rpm in a
 # Fedora 44 container, the pacman package with makepkg in an Arch Linux
@@ -48,7 +48,7 @@ jobs:
     steps:
       # Every `depends` entry of the PKGBUILD must be installed here: makepkg runs as an unprivileged user
       # that cannot install missing ones (exit code 8), which is how `tor` broke the 1.1.0 release.
-      - name: Install build tools and InDuckGo's libraries
+      - name: Install build tools and ZTBrowser's libraries
         run: >-
           pacman -Syu --noconfirm --needed base-devel git rust cargo-audit
           hicolor-icon-theme qt6-base qt6-declarative qt6-svg qt6-webchannel qt6-webengine
@@ -104,6 +104,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: >-
           gh release create "$GITHUB_REF_NAME" dist/*
-          --title "InDuckGo ${GITHUB_REF_NAME#v}"
+          --title "ZTBrowser ${GITHUB_REF_NAME#v}"
           --notes-file .github/release-notes.md
           --generate-notes

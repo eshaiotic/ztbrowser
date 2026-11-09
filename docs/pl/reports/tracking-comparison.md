@@ -1,10 +1,10 @@
-# Porównanie śledzenia: InDuckGo, Google Chrome i Brave
+# Porównanie śledzenia: ZTBrowser, Google Chrome i Brave
 
 Pomiar wykonany 2 listopada 2026 (21:53–22:10 CET) na jednym komputerze z Linuksem w Polsce. Fakty o
 ustawieniach domyślnych i politykach producentów sprawdzono tego samego dnia w ich źródłach. Każdy fakt ma
 link.
 
-**Którego InDuckGo dotyczy pomiar.** Sekcje 1–8 mierzyły edycję WebKitGTK (wersje przed 1.2.0). InDuckGo jest teraz
+**Którego ZTBrowsera dotyczy pomiar.** Sekcje 1–8 mierzyły edycję WebKitGTK (wersje przed 1.2.0). ZTBrowser jest teraz
 zbudowany na QtWebEngine; jego wyniki z 5 listopada 2026 są w [§4.4](#44-edycja-qt-5-listopada-2026), a mechanizmy,
 które za nimi stoją, w [Ochronie przed trackerami w edycji Qt](../architecture/qt-protection.md).
 
@@ -45,7 +45,7 @@ sprawdzić i powtórzyć.
 |---|---|---|
 | Google Chrome | 156.0.8078.79 | Oficjalny `.deb` Google, rozpakowany do `/tmp` (bez instalacji) |
 | Brave | 1.98.63 (Chromium 156) | Pakiet Arch `brave-bin` |
-| InDuckGo | 1.0.0 z Guardem (commit `0934be1`) | Wydany AppImage; WebKitGTK 2.54.2 z systemu |
+| ZTBrowser | 1.0.0 z Guardem (commit `0934be1`) | Wydany AppImage; WebKitGTK 2.54.2 z systemu |
 
 **Warunki.**
 
@@ -70,7 +70,7 @@ sprawdzić i powtórzyć.
    witryny.
 
 **Kto rozstrzyga, co jest trackerem.** Neutralna lista: lista trackerów Disconnect, ta sama, której używa
-Firefox (kategorie Advertising, Analytics, Fingerprinting, Social, Cryptomining). To nie są listy InDuckGo
+Firefox (kategorie Advertising, Analytics, Fingerprinting, Social, Cryptomining). To nie są listy ZTBrowsera
 ani Brave. Trackera należącego do samej odwiedzanej witryny (np. trackera Google na stronie Google) się nie
 liczy.
 
@@ -90,7 +90,7 @@ liczy.
 Hosty, z którymi przeglądarki połączyły się w ciągu 5 minut bezczynności, zanim otwarto jakąkolwiek
 witrynę.
 
-| | Chrome | Brave | InDuckGo |
+| | Chrome | Brave | ZTBrowser |
 |---|---|---|---|
 | Połączenia | 46 | 43 | 20 |
 | Różne hosty | 15 | 12 | 8 |
@@ -131,7 +131,7 @@ Statystyki użycia i raporty awarii są na Linuksie **domyślnie włączone** (t
   aktualizacje rozszerzeń nadal idą do Google
   ([Deviations from Chromium](https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove))).
 
-**InDuckGo** nie wysyła żadnej telemetrii: nie ma pingu użycia, raportów awarii ani ziarna eksperymentów.
+**ZTBrowser** nie wysyła żadnej telemetrii: nie ma pingu użycia, raportów awarii ani ziarna eksperymentów.
 Jego 20 połączeń dzieli się na dwie grupy.
 
 - **Dane ochrony, pobierane przez sam program (8 połączeń).**
@@ -143,7 +143,7 @@ Jego 20 połączeń dzieli się na dwie grupy.
   - Przy odświeżaniu przeglądarka odsyła `ETag` serwera (znacznik wersji), żeby nie pobierać ponownie
     niezmienionych plików. Dla tych statycznych plików ten znacznik oznacza wersję pliku.
 - **Strona startowa (12 połączeń).**
-  - Sześć połączeń poszło do `duckduckgo.com`. InDuckGo otwiera stronę główną wybranej wyszukiwarki, a
+  - Sześć połączeń poszło do `duckduckgo.com`. ZTBrowser otwiera stronę główną wybranej wyszukiwarki, a
     domyślna jest DuckDuckGo.
   - Siedem poszło do `improving.duckduckgo.com`: to własne, anonimowe piksele statystyk DuckDuckGo, wysłane
     przez tę stronę. Poszły w pierwszych 3 sekundach świeżego profilu, zanim listy Guarda skończyły się
@@ -156,7 +156,7 @@ Jego 20 połączeń dzieli się na dwie grupy.
 Każda komórka to hosty trackerów / wszystkie hosty stron trzecich, z którymi przeglądarka połączyła się,
 gdy witryna była otwarta.
 
-| Witryna | Chrome | Brave | InDuckGo |
+| Witryna | Chrome | Brave | ZTBrowser |
 |---|---|---|---|
 | onet.pl | 9 / 30 | 0 / 12 | 0 / 12 |
 | wp.pl | 2 / 8 | 0 / 5 | 0 / 2 |
@@ -174,7 +174,7 @@ gdy witryna była otwarta.
 
 Te same hosty trackerów, podzielone według kategorii Disconnect:
 
-| | Chrome | Brave | InDuckGo |
+| | Chrome | Brave | ZTBrowser |
 |---|---|---|---|
 | Reklama | 75 | 4 | 1 |
 | Analityka i inne kategorie | 19 | 1 | 1 |
@@ -190,7 +190,7 @@ Te same hosty trackerów, podzielone według kategorii Disconnect:
   - reklamy Amazon, Taboola, Permutive i Quantcast.
 - **5 trackerów w Brave:** `securepubads.g.doubleclick.net` (dwa razy), `pub.doubleverify.com`,
   `micro.rubiconproject.com` i `m.stripe.network`.
-- **2 trackery w InDuckGo:** `securepubads.g.doubleclick.net` i `pub.doubleverify.com`.
+- **2 trackery w ZTBrowserze:** `securepubads.g.doubleclick.net` i `pub.doubleverify.com`.
 - Wcześniejszy pomiar tym samym zestawem (przegląd architektury §5.6: Brave 6 / 82, Guard 3 / 70) daje tę
   samą kolejność. Różnice jednego czy dwóch hostów między przebiegami mieszczą się w tym, jak bardzo strony
   zmieniają się między kolejnymi wczytaniami.
@@ -205,7 +205,7 @@ Ta sama strona testowa odczytała wartości, których używają skrypty fingerpr
 Odcisk, który jest taki sam na różnych witrynach, pozwala dwóm niezwiązanym stronom rozpoznać tę samą
 osobę.
 
-| Wartość | Chrome | Brave | InDuckGo |
+| Wartość | Chrome | Brave | ZTBrowser |
 |---|---|---|---|
 | Rysowanie canvas | wszędzie takie samo | inne na każdej witrynie, takie samo po restarcie | inne na każdej witrynie i w każdej sesji |
 | Przetwarzanie dźwięku | wszędzie takie samo | inne na każdej witrynie, takie samo po restarcie | inne na każdej witrynie i w każdej sesji |
@@ -223,7 +223,7 @@ osobę.
 - **Brave** losuje wartości osobno dla każdej witryny. Według dokumentacji ziarno losowania jest osobne dla
   każdej sesji i witryny ([wiki](https://github.com/brave/brave-browser/wiki/Fingerprinting-Protections)). W
   tym pomiarze ta sama witryna dostała jednak **te same wartości po restarcie** na tym samym profilu.
-- **InDuckGo** zmieniało szum (Content Scope Scripts DuckDuckGo, włączone przez Guarda) zarówno między
+- **ZTBrowser** zmieniał szum (Content Scope Scripts DuckDuckGo, włączone przez Guarda) zarówno między
   witrynami, jak i między sesjami.
 - **Żadna przeglądarka nie ukryła zainstalowanych czcionek.**
 - WebGL nie dało się porównać, bo Chromium blokuje go na wirtualnym ekranie bez GPU.
@@ -261,17 +261,17 @@ uruchomieniu) i z danymi już na dysku.
   się w rozrzucie dwóch przebiegów. Odcisku przeglądarki nie mierzono dla edycji Qt, która nie ma jeszcze ochrony przed
   nim.
 
-### 4.5 InDuckGo 1.2.3 i Brave, 6 listopada 2026
+### 4.5 ZTBrowser 1.2.3 i Brave, 6 listopada 2026
 
 Te same 12 serwisów, po 20 sekund, z proxy zapisującym nazwy hostów i tym samym sędzią (lista Disconnect, każdy serwer
-liczony raz na serwis). Brave 1.98 (Chromium 156) i InDuckGo 1.2.3 (wydany AppImage) działały jednocześnie, każdy ze
-świeżym profilem, własnym oknem na wirtualnym ekranie i prywatnym katalogiem domowym; InDuckGo uruchomiono dwa razy, ze
+liczony raz na serwis). Brave 1.98 (Chromium 156) i ZTBrowser 1.2.3 (wydany AppImage) działały jednocześnie, każdy ze
+świeżym profilem, własnym oknem na wirtualnym ekranie i prywatnym katalogiem domowym; ZTBrowser uruchomiono dwa razy, ze
 świeżym profilem i z danymi ochrony już na dysku. Każdy serwis otwierano, uruchamiając przeglądarkę ponownie z jego
-adresem, co otwiera nową kartę; wcześniejsze karty zostawały otwarte. Ruch bezczynności InDuckGo zmierzono osobno na
+adresem, co otwiera nową kartę; wcześniejsze karty zostawały otwarte. Ruch bezczynności ZTBrowsera zmierzono osobno na
 jego stronie startowej (5 minut, oba profile). Chrome 157 nie był uruchamiany ponownie; jego kolumna w README to
 przebieg z 2026-11-05.
 
-| Serwis | Brave | InDuckGo (oba profile) |
+| Serwis | Brave | ZTBrowser (oba profile) |
 |---|---|---|
 | onet.pl | 1 (`onet.hit.gemius.pl`) | 0 |
 | gazeta.pl | 1 (`gazeta.hit.gemius.pl`) | 0 |
@@ -288,18 +288,18 @@ przebieg z 2026-11-05.
 
 - **Ten jeden:** `m.stripe.network`, które reguły DuckDuckGo dopuszczają celowo, bo jego zablokowanie psuje płacenie.
 - **Okno logowania Google** (`accounts.google.com`, `www.google.com`), które na edition.cnn.com i weather.com
-  pojawiło się w przebiegu z 2026-11-05, w tym przebiegu się nie pojawiło. Dwa buildy InDuckGo uruchomione obok siebie
+  pojawiło się w przebiegu z 2026-11-05, w tym przebiegu się nie pojawiło. Dwa buildy ZTBrowsera uruchomione obok siebie
   na tych dwóch serwisach dały identyczne hosty, więc różnica leży w serwisach, nie w przeglądarce.
-- **Ruch bezczynności InDuckGo** to strona startowa DuckDuckGo, jej host pingu (`improving.duckduckgo.com`) i sześć
+- **Ruch bezczynności ZTBrowsera** to strona startowa DuckDuckGo, jej host pingu (`improving.duckduckgo.com`) i sześć
   hostów serwujących dane ochrony; liczby są takie same ze świeżym profilem i z danymi na dysku, bo pierwsze
   uruchomienie pobiera dane, zanim otworzy się okno.
 - **Ograniczenia.** Jeden przebieg, jedna maszyna, jedna sieć; kolumna Chrome jest o dzień starsza od pozostałych;
   karty wcześniejszych serwisów zostają otwarte, gdy ładuje się następny. Odcisku przeglądarki nie zmierzono:
-  InDuckGo nie ma jeszcze ochrony przed fingerprintingiem.
+  ZTBrowser nie ma jeszcze ochrony przed fingerprintingiem.
 
 ## 5. Ustawienia domyślne i polityki
 
-| | Chrome | Brave | InDuckGo |
+| | Chrome | Brave | ZTBrowser |
 |---|---|---|---|
 | Statystyki użycia do producenta | włączone (wyłącza się samemu) | codzienny ping i P3A włączone (wyłącza się samemu) | brak |
 | To, co wpisujesz w pasek adresu | wysyłane do wyszukiwarki w trakcie pisania, z ciasteczkami ([pomoc](https://support.google.com/chrome/answer/13730681)) | w Polsce domyślnie wyłączone; włączane przy pierwszym uruchomieniu w 12 krajach ([kod](https://github.com/brave/brave-core/blob/master/browser/search_engines/search_engine_provider_util.cc)) | nic nie wychodzi przed Enterem |
@@ -318,35 +318,35 @@ domyślne):
 - Brave 1.97 zaliczył **108 ze 146** testów.
 - Chrome 156 zaliczył **31 ze 146**.
 - Autor serwisu, jak sam ujawnia, pracował w Brave w latach 2022–2025.
-- InDuckGo nie jest tam testowane.
+- ZTBrowser nie jest tam testowany.
 
 ([privacytests.org](https://privacytests.org/), [o autorze](https://privacytests.org/about.html))
 
 ## 6. Podsumowanie
 
-| Pytanie | Chrome | Brave | InDuckGo |
+| Pytanie | Chrome | Brave | ZTBrowser |
 |---|---|---|---|
 | Czy sama przeglądarka raportuje producentowi? | tak, do Google, domyślnie | tak, do Brave, domyślnie, z założenia z ochroną prywatności | nie |
 | Trackery osiągnięte na 12 witrynach | 94 | 5 | 2 |
 | Ten sam odcisk palca na dwóch różnych witrynach? | tak | nie, ale jedna witryna zobaczyła te same wartości po restarcie | nie, a do tego zmienia się w każdej sesji; rzadki silnik nadal wyróżnia (§7) |
 | Czy ostrzega przed phishingiem i złośliwym oprogramowaniem? | tak | tak | nie |
 
-- **InDuckGo a Chrome.** Tu nie ma porównania. Chrome domyślnie raportuje do Google i przepuszcza każdy
+- **ZTBrowser a Chrome.** Tu nie ma porównania. Chrome domyślnie raportuje do Google i przepuszcza każdy
   tracker: 94 hosty trackerów na 12 witrynach. Dopuszcza ciasteczka stron trzecich i nie broni przed
   fingerprintingiem, na który polityka reklamowa Google pozwala od 2025.
-- **InDuckGo a Brave.** W tym pomiarze InDuckGo dotarło do mniejszej liczby trackerów (2 wobec 5) i nie
+- **ZTBrowser a Brave.** W tym pomiarze ZTBrowser dotarł do mniejszej liczby trackerów (2 wobec 5) i nie
   wysłało niczego własnemu producentowi. Brave wysyła codzienny ping i P3A, z datą instalacji, kodem
-  polecenia i liczbą wyszukiwań. InDuckGo zmieniało też odcisk palca między sesjami, a Brave zostawiał go
+  polecenia i liczbą wyszukiwań. ZTBrowser zmieniał też odcisk palca między sesjami, a Brave zostawiał go
   bez zmian.
 - **Gdzie Brave jest mocniejszy** (§7): ostrzeżenia przed phishingiem, dużo większy tłum, w którym można się
-  ukryć, i kilka zabezpieczeń, których InDuckGo nie ma.
+  ukryć, i kilka zabezpieczeń, których ZTBrowser nie ma.
 
-## 7. Gdzie InDuckGo jest słabsze i co by tę lukę zamknęło
+## 7. Gdzie ZTBrowser jest słabszy i co by tę lukę zamknęło
 
 | Luka | Dlaczego | Co by ją zamknęło |
 |---|---|---|
 | Brak ostrzeżeń przed phishingiem i złośliwym oprogramowaniem | WebKitGTK nie ma Safe Browsing. To luka bezpieczeństwa, nie śledzenia. | Sprawdzanie odwiedzanych hostów według listy, z wyszukiwaniem chroniącym prywatność. Potrzebne jest źródło danych z licencją, która na to pozwala. |
-| Rzadka przeglądarka się wyróżnia | User-Agent WebKitGTK na Linuksie ma niewiele osób, więc sam silnik zawęża krąg podejrzanych. Brave wygląda jak Chrome, jedna z miliardów przeglądarek. Szum zmienia wartości, ale nie silnik. | W InDuckGo nie da się sprawić, żeby WebKitGTK był popularny. Udawanie User-Agenta Chrome psułoby strony, które rozpoznają silnik po innych cechach. |
+| Rzadka przeglądarka się wyróżnia | User-Agent WebKitGTK na Linuksie ma niewiele osób, więc sam silnik zawęża krąg podejrzanych. Brave wygląda jak Chrome, jedna z miliardów przeglądarek. Szum zmienia wartości, ale nie silnik. | W ZTBrowserze nie da się sprawić, żeby WebKitGTK był popularny. Udawanie User-Agenta Chrome psułoby strony, które rozpoznają silnik po innych cechach. |
 | Widać zainstalowane czcionki | WebKitGTK nie daje sposobu na ograniczenie czcionek. Brave i Chrome w tym teście wypadły tak samo. | API w WebKitGTK, jeśli się pojawi (przegląd architektury §9). |
 | Ruch strony startowej | Stroną startową jest strona główna wyszukiwarki: domyślnie anonimowe piksele DuckDuckGo, a przy wybranym Google pomiary Google. | Lokalna strona startowa z polem wyszukiwania, która nic nie wysyła, dopóki użytkownik nie zacznie szukać. |
 | Brak odkrywania CNAME w czasie działania, debouncingu i przekierowania z AMP | Blokery treści WebKit nie widzą odpowiedzi DNS. Blokowane są tylko trackery ukryte za CNAME, które wymienia DuckDuckGo, także w żądaniach do własnej domeny strony. Część śledzenia przez przekierowania (bounce tracking) obsługuje ITP z WebKit. | WebKitGTK nie daje dostępu do DNS. Przekierowanie z AMP mogłoby korzystać z konfiguracji `ampLinks` DuckDuckGo. |
@@ -360,7 +360,7 @@ Na potrzeby tego pomiaru zestaw narzędzi trzymano poza repozytorium (w `/tmp`).
   nigdy nie przechwytuje TLS.
 - **Skrypty uruchomieniowe dla każdej przeglądarki.** Każdy startuje przeglądarkę ze świeżym profilem pod
   `xvfb-run -a dbus-run-session`, czeka 5 minut bezczynności, a potem otwiera każdą witrynę na 20 sekund.
-  Chrome i Brave są sterowane przez punkt DevTools; InDuckGo jest uruchamiane z każdym adresem.
+  Chrome i Brave są sterowane przez punkt DevTools; ZTBrowser jest uruchamiany z każdym adresem.
 - **Analiza.** Skrypt, który klasyfikuje hosty według `services.json` z Disconnect i Public Suffix List.
 - **Sonda fingerprintingu.** Strona, która odczytuje wartości z §4.3 i wysyła je do lokalnego serwera.
 
